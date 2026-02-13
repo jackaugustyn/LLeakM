@@ -1,0 +1,8 @@
+# LLM SSE Side-Channel Harness (LLeakM)
+# Python 3.10+
+
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0
+requests>=2.28.0
+torch>=2.0.0
+transformers>=4.30.0
