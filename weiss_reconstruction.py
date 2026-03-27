@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -25,6 +26,9 @@ FIRST_SENTENCES_MODEL = "royweiss1/T5_FirstSentences"
 MIDDLE_SENTENCES_MODEL = "royweiss1/T5_MiddleSentences"
 
 LOG_DIR = os.environ.get("LOG_DIR", "./logs")
+MIN_SEGMENT_TOKENS = 10
+DEFAULT_MAX_LENGTH = 80
+_MODEL_CACHE: dict[str, tuple] = {}
 
 
 def frame_lengths_to_token_lengths(frame_lengths: list[int]) -> list[int]:
@@ -67,43 +71,50 @@ def heuristic_sentences_from_lengths(lengths: list[int]) -> list[list[int]]:
     """
     Heurystyczny podział sekwencji długości tokenów na zdania.
 
-    Bazuje na heurystyce z GPT_Keylogger: przy ≥10 tokenach w serii,
-    token długości 1 (np. kropka) może oznaczać koniec zdania.
+    Implementuje opis z papera:
+    1) split po tokenach długości 1 (interpunkcja),
+    2) segmenty <10 tokenów są łączone z kolejnym segmentem,
+    3) edge-case dla sekwencji listy (3,1,1) przenoszony na początek
+       kolejnego segmentu.
     """
     if not lengths:
         return []
 
-    sentences: list[list[int]] = []
-    remaining = lengths.copy()
-    index = 0
-    tokens_in_streak = 0
+    # Krok 1: split po tokenach interpunkcyjnych (ti == 1)
+    rough_segments: list[list[int]] = []
+    current: list[int] = []
+    for tok_len in lengths:
+        current.append(tok_len)
+        if tok_len == 1:
+            rough_segments.append(current)
+            current = []
+    if current:
+        rough_segments.append(current)
 
-    while index < len(remaining):
-        if tokens_in_streak >= 10 and remaining[index] == 1:
-            prev_len = remaining[index - 1] if index > 0 else 0
-            if prev_len == 3:
-                sentences.append(remaining[: index + 1].copy())
-                remaining = remaining[index + 1 :]
-                index = 0
-                tokens_in_streak = 0
-            elif prev_len == 1:
-                sentences.append(remaining[: index].copy())
-                remaining = remaining[index:]
-                index = 0
-                tokens_in_streak = 0
-            else:
-                sentences.append(remaining[: index + 1].copy())
-                remaining = remaining[index + 1 :]
-                index = 0
-                tokens_in_streak = 0
-        else:
-            index += 1
-            tokens_in_streak += 1
+    if not rough_segments:
+        return []
 
-    if remaining:
-        sentences.append(remaining)
+    # Krok 2: edge-case list ":\n\n1." => (3,1,1), przenosimy na kolejne zdanie.
+    for idx in range(len(rough_segments) - 1):
+        seg = rough_segments[idx]
+        if len(seg) >= 3 and seg[-3:] == [3, 1, 1]:
+            rough_segments[idx] = seg[:-3]
+            rough_segments[idx + 1] = [3, 1, 1] + rough_segments[idx + 1]
 
-    return sentences
+    rough_segments = [seg for seg in rough_segments if seg]
+
+    # Krok 3: merge segmentów krótszych niż 10 tokenów z następnym.
+    merged: list[list[int]] = []
+    i = 0
+    while i < len(rough_segments):
+        segment = rough_segments[i].copy()
+        while len(segment) < MIN_SEGMENT_TOKENS and i + 1 < len(rough_segments):
+            i += 1
+            segment.extend(rough_segments[i])
+        merged.append(segment)
+        i += 1
+
+    return merged
 
 
 def make_input_from_lengths(lengths: list[int]) -> str:
@@ -133,62 +144,123 @@ class ReconstructionResult:
     top_candidates: list[str]
 
 
-def _load_and_generate_first(
-    encodings: list[str],
-    model_name: str = FIRST_SENTENCES_MODEL,
-    max_length: int = 80,
-    num_beams: int = 32,
-) -> list[str]:
+def _generate_with_compat_fallback(model, **gen_kwargs):
     """
-    Rekonstruuje pierwsze zdania przy użyciu modelu T5_FirstSentences.
-    Zwraca listę kandydatów posortowanych względem pewności modelu.
+    Kompatybilne wywołanie generate dla nowych wersji transformers.
+
+    W transformers>=5 Group Beam Search został wydzielony do custom_generate
+    i bez trust_remote_code rzuca ValueError. W takim przypadku przechodzimy
+    na standardowy beam search (bez num_beam_groups / diversity_penalty).
     """
-    from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+    try:
+        return model.generate(**gen_kwargs)
+    except ValueError as exc:
+        msg = str(exc)
+        if "Group Beam Search requires `trust_remote_code=True`" not in msg:
+            raise
 
-    model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
+        fallback_kwargs = dict(gen_kwargs)
+        fallback_kwargs.pop("num_beam_groups", None)
+        fallback_kwargs.pop("diversity_penalty", None)
+        return model.generate(**fallback_kwargs)
 
+
+def _choose_device() -> str:
     try:
         import torch
 
-        device = "cuda" if getattr(torch, "cuda", None) and torch.cuda.is_available() else "cpu"
+        if getattr(torch, "cuda", None) and torch.cuda.is_available():
+            return "cuda"
     except ImportError:
-        device = "cpu"
+        pass
+    return "cpu"
 
+
+def _load_model_bundle(model_name: str):
+    from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+
+    cached = _MODEL_CACHE.get(model_name)
+    if cached is not None:
+        return cached
+
+    model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    device = _choose_device()
     model = model.to(device)
+    bundle = (model, tokenizer, device)
+    _MODEL_CACHE[model_name] = bundle
+    return bundle
+
+
+def _prepare_input(tokenizer, device: str, text: str, max_length: int):
     inputs = tokenizer(
-        encodings,
+        [text],
         max_length=max_length,
         padding=True,
         truncation=True,
         return_tensors="pt",
     )
-    inputs = {k: v.to(device) for k, v in inputs.items()}
+    return {k: v.to(device) for k, v in inputs.items()}
 
-    outputs = model.generate(
-        **inputs,
-        max_length=max_length,
-        output_scores=True,
-        return_dict_in_generate=True,
-        no_repeat_ngram_size=2,
-        top_k=50,
-        num_beam_groups=16,
-        num_beams=num_beams,
-        diversity_penalty=0.8,
-        num_return_sequences=num_beams,
-    )
 
-    sequences = outputs.sequences
-    sequence_scores = outputs.sequences_scores
-    sorted_indices = sequence_scores.argsort(descending=True)
-    sorted_sequences = sequences[sorted_indices]
-    return [tokenizer.decode(seq, skip_special_tokens=True) for seq in sorted_sequences]
+def _sample_and_rank(
+    model,
+    tokenizer,
+    device: str,
+    input_text: str,
+    *,
+    samples: int,
+    max_length: int = DEFAULT_MAX_LENGTH,
+) -> list[tuple[str, float]]:
+    """
+    Generuje `samples` niezależnych próbek i sortuje je wg confidence.
+    Confidence liczymy jako sumę log-prawdopodobieństw tokenów generacji.
+    """
+    inputs = _prepare_input(tokenizer, device, input_text, max_length=max_length)
+    best_per_text: dict[str, float] = {}
+
+    for _ in range(max(1, samples)):
+        outputs = _generate_with_compat_fallback(
+            model,
+            **inputs,
+            max_length=max_length,
+            output_scores=True,
+            return_dict_in_generate=True,
+            no_repeat_ngram_size=2,
+            do_sample=True,
+            top_k=50,
+            temperature=1.0,
+            num_return_sequences=1,
+        )
+
+        sequence = outputs.sequences[0:1]
+        text = tokenizer.decode(sequence[0], skip_special_tokens=True).strip()
+        if not text:
+            continue
+
+        try:
+            transition_scores = model.compute_transition_scores(
+                sequence,
+                outputs.scores,
+                normalize_logits=True,
+            )
+            confidence = float(transition_scores.sum().item())
+        except Exception:
+            confidence = float("-inf")
+
+        existing = best_per_text.get(text)
+        if existing is None or confidence > existing:
+            best_per_text[text] = confidence
+
+    ranked = sorted(best_per_text.items(), key=lambda item: item[1], reverse=True)
+    return ranked
 
 
 def reconstruct(
     token_lengths: list[int],
     num_first_candidates: int = 5,
     max_sentences: int = 5,
+    samples_per_segment: int = 10,
 ) -> ReconstructionResult:
     """
     Rekonstruuje odpowiedź LLM z sekwencji długości tokenów (bajty UTF-8).
@@ -213,18 +285,35 @@ def reconstruct(
             top_candidates=[],
         )
 
-    # Rekonstrukcja pierwszego zdania
+    first_model, first_tokenizer, first_device = _load_model_bundle(FIRST_SENTENCES_MODEL)
+    middle_model, middle_tokenizer, middle_device = _load_model_bundle(MIDDLE_SENTENCES_MODEL)
+
+    # Rekonstrukcja pierwszego segmentu
     first_input = make_input_from_lengths(sentence_lengths[0])
-    candidates = _load_and_generate_first([first_input], num_beams=num_first_candidates)
+    first_ranked = _sample_and_rank(
+        first_model,
+        first_tokenizer,
+        first_device,
+        first_input,
+        samples=max(num_first_candidates, samples_per_segment),
+    )
+    candidates = [text for text, _ in first_ranked]
     best_first = candidates[0] if candidates else ""
-    top_candidates = candidates[:num_first_candidates]
+    top_candidates = candidates[: max(1, num_first_candidates)]
 
     full_parts = [best_first]
     context = best_first
 
     # Rekonstrukcja kolejnych zdań (z kontekstem)
     for sent_lens in sentence_lengths[1:max_sentences]:
-        next_sentence = _generate_middle_sentence(sent_lens, context)
+        next_sentence = _generate_middle_sentence(
+            sent_lens,
+            context,
+            middle_model,
+            middle_tokenizer,
+            middle_device,
+            samples=samples_per_segment,
+        )
         if next_sentence:
             full_parts.append(next_sentence)
             context = next_sentence
@@ -233,49 +322,40 @@ def reconstruct(
 
     return ReconstructionResult(
         first_sentence=best_first,
-        full_text=" ".join(full_parts),
+        full_text=_concat_segments(full_parts),
         sentence_count=len(full_parts),
         top_candidates=top_candidates,
     )
 
 
-def _generate_middle_sentence(lengths: list[int], context: str) -> str:
+def _concat_segments(segments: list[str]) -> str:
+    parts = [s.strip() for s in segments if s and s.strip()]
+    if not parts:
+        return ""
+    text = " ".join(parts)
+    return re.sub(r"\s+([,.;:!?])", r"\1", text)
+
+
+def _generate_middle_sentence(
+    lengths: list[int],
+    context: str,
+    model,
+    tokenizer,
+    device: str,
+    *,
+    samples: int,
+) -> str:
     """Wywołuje model middle sentences z poprawnymi argumentami."""
-    from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
-
     input_str = make_input_with_context(lengths, context)
-    model = AutoModelForSeq2SeqLM.from_pretrained(MIDDLE_SENTENCES_MODEL)
-    tokenizer = AutoTokenizer.from_pretrained(MIDDLE_SENTENCES_MODEL)
-
-    try:
-        import torch
-
-        device = "cuda" if getattr(torch, "cuda", None) and torch.cuda.is_available() else "cpu"
-    except ImportError:
-        device = "cpu"
-
-    model = model.to(device)
-    inputs = tokenizer(
+    ranked = _sample_and_rank(
+        model,
+        tokenizer,
+        device,
         input_str,
-        max_length=80,
-        padding=True,
-        truncation=True,
-        return_tensors="pt",
+        samples=samples,
+        max_length=DEFAULT_MAX_LENGTH,
     )
-    inputs = {k: v.to(device) for k, v in inputs.items()}
-
-    outputs = model.generate(
-        **inputs,
-        max_length=80,
-        length_penalty=1.0,
-        no_repeat_ngram_size=2,
-        top_k=50,
-        num_beam_groups=8,
-        num_beams=16,
-        diversity_penalty=0.8,
-        num_return_sequences=1,
-    )
-    return tokenizer.decode(outputs.sequences[0], skip_special_tokens=True)
+    return ranked[0][0] if ranked else ""
 
 
 def reconstruct_from_frame_lengths(frame_lengths: list[int], **kwargs) -> ReconstructionResult:
@@ -316,7 +396,12 @@ def main() -> None:
         return
 
     print("\nRekonstrukcja (metoda Weiss)...")
-    result = reconstruct(token_lens, num_first_candidates=3, max_sentences=3)
+    result = reconstruct(
+        token_lens,
+        num_first_candidates=3,
+        max_sentences=3,
+        samples_per_segment=10,
+    )
     print(f"\nPierwsze zdanie (najlepsze): {result.first_sentence}")
     print(f"\nPełny tekst ({result.sentence_count} zdań): {result.full_text}")
     print("\nTop 3 kandydatów pierwszego zdania:")

@@ -36,6 +36,7 @@ class StepMeta:
     """Metadata for a single token generation step."""
 
     step: int
+    token_text: str          # Decoded token text emitted in this SSE step.
     token_utf8_len: int      # Token length in UTF-8 bytes.
     sse_frame_utf8_len: int  # Bytes in SSE frame (data: ...\\n\\n).
     t_rel_ms: int            # Relative timestamp in milliseconds.
@@ -46,12 +47,16 @@ class RunLog:
     """Run metadata and per-step details for side-channel analysis."""
 
     run_id: str
+    prompt: str
     model_id: str
     device: str
     max_new_tokens: int
     temperature: float
     top_p: float
     prompt_len_tokens: int
+    generated_tokens: int
+    response_text: str
+    response_utf8_len: int
     steps: list[StepMeta]
 
 
@@ -89,6 +94,19 @@ def _decode_single_token(tok_id: int) -> str:
         skip_special_tokens=False,
         clean_up_tokenization_spaces=False,
     )
+
+
+def _build_input_text(prompt: str) -> str:
+    """
+    Build model-specific prompt text for chat/instruction models.
+
+    - Qwen2.5: explicit `<|im_start|>...` format.
+    - Other models: plain instruction-style prompt.
+    """
+    model_lower = MODEL_ID.lower()
+    if "qwen" in model_lower:
+        return f"<|im_start|>user\n{prompt}<|im_end|>\n<|im_start|>assistant\n"
+    return f"User: {prompt}\nAssistant:"
 
 
 @torch.inference_mode()
@@ -159,8 +177,7 @@ async def generate_sse(
     t0 = time.time()
 
     try:
-        # Qwen2/2.5 chat format (avoids jinja2 dependency from apply_chat_template)
-        input_text = f"<|im_start|>user\n{prompt}<|im_end|>\n<|im_start|>assistant\n"
+        input_text = _build_input_text(prompt)
         enc = _tokenizer(input_text, return_tensors="pt")
         input_ids = enc["input_ids"].to(DEVICE)
         prompt_len_tokens = int(input_ids.shape[-1])
@@ -199,8 +216,10 @@ async def generate_sse(
         steps_meta: list[StepMeta],
         prompt_len_tokens: int,
     ) -> AsyncGenerator[bytes, None]:
+        emitted_tokens: list[str] = []
         for i, tok_id in enumerate(gen_ids):
             tok_str = _decode_single_token(tok_id)
+            emitted_tokens.append(tok_str)
             tok_utf8_len = len(tok_str.encode("utf-8"))
 
             frame = _sse_frame(tok_str)
@@ -210,6 +229,7 @@ async def generate_sse(
             steps_meta.append(
                 StepMeta(
                     step=i,
+                    token_text=tok_str,
                     token_utf8_len=tok_utf8_len,
                     sse_frame_utf8_len=frame_len,
                     t_rel_ms=t_rel_ms,
@@ -221,14 +241,20 @@ async def generate_sse(
 
         yield _sse_frame("[DONE]")
 
+        response_text = "".join(emitted_tokens)
+
         run_log = RunLog(
             run_id=run_id,
+            prompt=prompt,
             model_id=MODEL_ID,
             device=DEVICE,
             max_new_tokens=max_new_tokens,
             temperature=temperature,
             top_p=top_p,
             prompt_len_tokens=prompt_len_tokens,
+            generated_tokens=len(gen_ids),
+            response_text=response_text,
+            response_utf8_len=len(response_text.encode("utf-8")),
             steps=steps_meta,
         )
         log_path = os.path.join(LOG_DIR, f"{run_id}.json")
@@ -243,6 +269,7 @@ async def generate_sse(
         "Cache-Control": "no-cache",
         "Connection": "keep-alive",
         "X-Accel-Buffering": "no",  # Disable nginx buffering when proxied.
+        "X-Run-Id": run_id,
     }
     return StreamingResponse(
         event_stream(),

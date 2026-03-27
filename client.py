@@ -5,7 +5,7 @@ import requests
 URL = "http://127.0.0.1:8000/generate_sse"
 
 DEFAULT_PARAMS = {
-    "prompt": "Napisz krótkie streszczenie o trzech zastosowaniach energii słonecznej.",
+    "prompt": "I have a rash, is it contagious? What details should I monitor before seeing a doctor?",
     "max_new_tokens": 120,
     "temperature": 0.0,
     "top_p": 1.0,
