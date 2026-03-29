@@ -1,0 +1,18 @@
+{
+  "base_url": "http://127.0.0.1:8000/generate_sse",
+  "prompts_dir": "/home/paugustynowicz/LLeakM/experiment_validation/prompts",
+  "log_dir": "logs",
+  "max_prompts": 300,
+  "max_new_tokens": 72,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "samples_per_segment": 2,
+  "max_sentences": 3,
+  "num_first_candidates": 3,
+  "semantic_backend_requested": "tfidf",
+  "semantic_backend_used": "tfidf",
+  "label": "smollm2_1p7b",
+  "victim_model_ids": [
+    "HuggingFaceTB/SmolLM2-1.7B-Instruct"
+  ]
+}
