@@ -1,0 +1,30 @@
+.venv/
+
+# Local/runtime state
+.codex
+__pycache__/
+*.py[cod]
+logs/
+
+# LaTeX build intermediates (final manuscript PDFs are versioned)
+article1/*.aux
+article1/*.bbl
+article1/*.blg
+article1/*.log
+article1/*.out
+article1/t.pdf
+article1/t[0-9]*.pdf
+
+# Intermediate experiment material not used by the manuscript
+experiment_validation/analysis/*.log
+experiment_validation/prompts_remaining_*/
+experiment_validation/results/run_20260325_072116/
+experiment_validation/results/run_20260326_133256_qwen_3b/
+experiment_validation/results/run_20260327_083112_qwen_3b_final/
+experiment_validation/results/run_20260327_143851_qwen_3b_remaining150/
+
+# Local source-paper extracts and superseded working notes
+paper.pdf
+paper.txt
+experiment.txt
+report_LLeakM.md

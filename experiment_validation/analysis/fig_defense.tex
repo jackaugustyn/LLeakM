@@ -1,0 +1,11 @@
+\begin{tikzpicture}\begin{axis}[ybar,bar width=5pt,ymin=0,ylabel={Residual $\phi$},
+symbolic x coords={Qwen2.5-1.5B,Llama-3.2-3B},xtick=data,
+x tick label style={font=\scriptsize},legend style={font=\tiny,at={(0.5,1.02)},anchor=south,legend columns=3},
+enlarge x limits=0.25,ymajorgrids]
+\addplot+[ybar,fill=black!50] coordinates {(Qwen2.5-1.5B,0.3010) (Llama-3.2-3B,0.2576)};\addlegendentry{baseline}
+\addplot+[ybar,fill=blue!40] coordinates {(Qwen2.5-1.5B,0.0293) (Llama-3.2-3B,0.0428)};\addlegendentry{bucket\_8}
+\addplot+[ybar,fill=red!40] coordinates {(Qwen2.5-1.5B,0.1901) (Llama-3.2-3B,0.1674)};\addlegendentry{pad\_32}
+\addplot+[ybar,fill=green!40!black] coordinates {(Qwen2.5-1.5B,0.0928) (Llama-3.2-3B,0.0823)};\addlegendentry{batch\_2}
+\addplot+[ybar,fill=orange!50] coordinates {(Qwen2.5-1.5B,0.0950) (Llama-3.2-3B,0.0832)};\addlegendentry{batch\_4}
+\addplot+[ybar,fill=purple!40] coordinates {(Qwen2.5-1.5B,0.1033) (Llama-3.2-3B,0.1004)};\addlegendentry{rand\_pad\_8}
+\end{axis}\end{tikzpicture}

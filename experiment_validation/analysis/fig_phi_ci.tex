@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+\begin{axis}[ybar, bar width=8pt, ymin=0, ymax=0.40,
+  ylabel={Mean TF-cosine $\phi$},
+  xtick={0,1,2,3,4,5,6},
+  xticklabels={{Qwen2.5-1.5B},{Qwen2.5-3B},{Phi-1.5},{Llama-3.2-3B},{Gemma-2-2B-it},{TinyLlama-1.1B},{Phi-3.5-mini}},
+  x tick label style={rotate=40,anchor=east,font=\scriptsize},
+  enlarge x limits=0.08, ymajorgrids]
+\addplot+[ybar, fill=blue!35] coordinates {(0,0.3242) (1,0.3096) (2,0.2747) (3,0.2538) (4,0.1798) (5,0.0428) (6,0.0239)};
+\end{axis}
+\end{tikzpicture}

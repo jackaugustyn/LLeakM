@@ -1,0 +1,93 @@
+[
+  {
+    "model": "Qwen2.5-1.5B-Instruct",
+    "params": "~1.5B",
+    "kind": "instruct",
+    "family": "Qwen2.5",
+    "n": 300,
+    "mean_tokens": 92.22666666666667,
+    "median_tokens": 96.0,
+    "mean_chars": 463.57,
+    "mean_token_utf8": 5.0340826948098885,
+    "trunc_pct": 95.0,
+    "model_id": ""
+  },
+  {
+    "model": "Qwen2.5-3B-Instruct",
+    "params": "~3B",
+    "kind": "instruct",
+    "family": "Qwen2.5",
+    "n": 300,
+    "mean_tokens": 96,
+    "median_tokens": 96.0,
+    "mean_chars": 481.9633333333333,
+    "mean_token_utf8": 5.031284722222222,
+    "trunc_pct": 100.0,
+    "model_id": ""
+  },
+  {
+    "model": "Llama-3.2-3B-Instruct",
+    "params": "~3B",
+    "kind": "instruct",
+    "family": "Llama",
+    "n": 300,
+    "mean_tokens": 94.74666666666667,
+    "median_tokens": 96.0,
+    "mean_chars": 462.61333333333334,
+    "mean_token_utf8": 4.8826343934703065,
+    "trunc_pct": 96.33333333333333,
+    "model_id": ""
+  },
+  {
+    "model": "Gemma-2-2B-it",
+    "params": "~2B",
+    "kind": "instruct",
+    "family": "Gemma",
+    "n": 300,
+    "mean_tokens": 96,
+    "median_tokens": 96.0,
+    "mean_chars": 434.55333333333334,
+    "mean_token_utf8": 4.526597222222223,
+    "trunc_pct": 100.0,
+    "model_id": ""
+  },
+  {
+    "model": "Phi-1.5",
+    "params": "~1.3B",
+    "kind": "base",
+    "family": "Phi",
+    "n": 300,
+    "mean_tokens": NaN,
+    "median_tokens": NaN,
+    "mean_chars": 496.68666666666667,
+    "mean_token_utf8": NaN,
+    "trunc_pct": 0.0,
+    "model_id": ""
+  },
+  {
+    "model": "TinyLlama-1.1B-Chat",
+    "params": "~1.1B",
+    "kind": "chat",
+    "family": "Llama-like",
+    "n": 300,
+    "mean_tokens": 96,
+    "median_tokens": 96.0,
+    "mean_chars": 331.12333333333333,
+    "mean_token_utf8": 3.449201388888889,
+    "trunc_pct": 100.0,
+    "model_id": ""
+  },
+  {
+    "model": "Phi-3.5-mini-instruct",
+    "params": "~3.8B",
+    "kind": "instruct",
+    "family": "Phi",
+    "n": 300,
+    "mean_tokens": 96,
+    "median_tokens": 96.0,
+    "mean_chars": 342.49,
+    "mean_token_utf8": 3.5676041666666665,
+    "trunc_pct": 100.0,
+    "model_id": ""
+  }
+]

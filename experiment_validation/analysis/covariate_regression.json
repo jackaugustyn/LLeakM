@@ -1,0 +1,18 @@
+{
+  "n": 1800,
+  "r2_full": 0.6459970531920713,
+  "r2_model_only": 0.6419563089132807,
+  "r2_covariates_only": 0.5113905295880291,
+  "reference_model": "Qwen2.5-1.5B-Instruct",
+  "coefficients": {
+    "intercept": 0.29012889217862614,
+    "model:Qwen2.5-3B-Instruct": -0.010809927976128057,
+    "model:Llama-3.2-3B-Instruct": -0.06694838049874505,
+    "model:Gemma-2-2B-it": -0.13437200372814792,
+    "model:TinyLlama-1.1B-Chat": -0.25866637224609385,
+    "model:Phi-3.5-mini-instruct": -0.27892113525114004,
+    "chars/100": -0.017909094135230112,
+    "mean_token_bytes": 0.02902340920315253,
+    "truncated": -0.029469638281197884
+  }
+}

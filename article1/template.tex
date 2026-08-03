@@ -1,0 +1,167 @@
+% Manuscript prepared for Electronics (MDPI).
+% This source is intended to be compiled inside the official MDPI LaTeX template.
+% Replace placeholder author metadata before submission.
+\documentclass[journal,article,submit,pdftex,moreauthors]{Definitions/mdpi}
+
+%====================
+% Metadata
+%====================
+\Title{A Cross-Model Evaluation of LLM Output Reconstruction from Token-Length Traces in Controlled SSE Streaming}
+
+\Author{Author One $^{1,*}$ and Author Two $^{2}$}
+\AuthorNames{Author One and Author Two}
+\address[1]{Department/Institute, University/Organization, City, Country; author1@example.com}
+\address[2]{Department/Institute, University/Organization, City, Country; author2@example.com}
+\corres{Correspondence: author1@example.com}
+
+\firstnote{A companion IEEE TIFS draft (\texttt{tifs\_main.tex}) reports bootstrap confidence intervals, paired significance tests, and a defense evaluation on the same dataset.}
+
+\pubvolume{1}
+\issuenum{1}
+\articlenumber{0}
+\pubyear{2026}
+\copyrightyear{2026}
+\datereceived{}
+\daterevised{}
+\dateaccepted{}
+\datepublished{}
+
+%====================
+% Packages
+%====================
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{threeparttable}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{placeins}
+
+%====================
+% Abstract and keywords
+%====================
+\abstract{Large-language-model (LLM) assistants frequently stream responses token by token using Server-Sent Events (SSE). Observable frame sizes can correlate with token lengths and thereby leak information about the generated text. This paper reports a \emph{controlled} cross-model evaluation of output reconstruction from \emph{idealized} one-token-per-frame SSE length traces across seven open-weight language models (six instruction/chat-tuned models and one base model) under a standardized protocol (300 aligned prompts per model; 2100 samples). A measurement harness enforces a one-token-per-frame mapping and records per-token lengths; a shared Weiss-style T5 pipeline reconstructs text hypotheses. Semantic similarity $\phi$ is recomputed with a single fixed term-frequency cosine backend for every sample. Mean $\phi$ ranges from $0.324$ (Qwen2.5-1.5B-Instruct) to $0.024$ (Phi-3.5-mini-instruct). We interpret the ranking as transferability of a fixed reconstructor onto each model's length traces---not as an intrinsic leakage quantity independent of tokenizer and style---and we report response-length covariates under a shared \texttt{max\_new\_tokens} budget. The study deliberately does \emph{not} claim a full remote TLS traffic attack; bridging idealized length oracles to encrypted-record extraction remains future work. The results show that token-granular streaming metadata is informative enough to support model-dependent reconstruction under controlled observation.}
+
+\keyword{large language models; side-channel analysis; server-sent events; traffic analysis; privacy leakage; token streaming; text reconstruction; AI assistants}
+
+\begin{document}
+
+\section{Introduction}
+Interactive LLM assistants commonly return answers incrementally to reduce perceived latency. A frequent implementation pattern is token streaming over Server-Sent Events (SSE), in which each emitted chunk is encapsulated in a text frame transmitted over an encrypted transport. While encryption protects payload content, it does not necessarily eliminate metadata leakage: observable sizes can correlate with token lengths and thereby reveal information about the generated response~\cite{weiss2024prompt}.
+
+Weiss \emph{et al.} demonstrated token-length side-channel reconstruction on real browser and API traffic, recovering 27\% of responses and inferring the topic for 53\% under their criteria~\cite{weiss2024prompt}. Concurrent work studies merged/batched API outputs~\cite{li2026length} and related streaming metadata attacks~\cite{whisperleak2025}. This paper asks a complementary question: under a controlled, idealized one-token-per-frame observation model, how does reconstruction quality vary across open-weight models when prompts, decoding parameters, reconstructor, and semantic metrics are held fixed?
+
+\textbf{Scope.} We study an \emph{ideal token-length oracle} from an instrumented SSE harness, not a full remote attack on ciphertext records. An on-path observer of TLS/HTTP/2/QUIC traffic typically sees records that may coalesce or fragment SSE frames, add variable overhead, or pass through proxies. Framing the study as a controlled benchmark isolates model-dependent length patterns from transport effects; end-to-end remote extraction is future work.
+
+The contribution of this paper is fourfold. First, we describe a controlled methodology for collecting idealized per-token length traces and reconstructing text from them. Second, we report a comparative evaluation across seven open-weight models with a single fixed semantic backend. Third, we report response-length covariates and interpret the ranking as reconstructor transfer rather than intrinsic ``leakiness.'' Fourth, we release reproducibility artifacts; a companion draft adds confidence intervals, paired tests, and defense measurements on the same data.
+
+\section{Related Work}
+Side-channel attacks infer sensitive information from indirect observables such as timing, size, power, or electromagnetic emanations~\cite{kocher1996timing}. Network-observable metadata has long been shown to be dangerous~\cite{song2001timing,chen2010sidechannel}. Weiss \emph{et al.} introduced token-length side-channel reconstruction against AI assistants, including known-plaintext fine-tuning to the victim's writing style, and evaluated the attack on live ChatGPT and Copilot traffic~\cite{weiss2024prompt}. Li \emph{et al.} study reconstruction when APIs merge multiple tokens into single packets~\cite{li2026length}, raising the novelty bar for length-channel work targeting realistic deployments. Related analyses of streaming metadata further demonstrate that encryption alone is insufficient~\cite{whisperleak2025}. Our contribution is a controlled multi-model benchmark under idealized one-token-per-frame traces rather than a new end-to-end remote exploit.
+
+The reconstruction pipeline uses T5-style text-to-text transformers~\cite{raffel2020exploring}. Evaluation uses normalized Levenshtein distance~\cite{levenshtein1966binary}, ROUGE~\cite{lin2004rouge}, and a fixed term-frequency cosine similarity $\phi$ (cf.\ Sentence-BERT~\cite{reimers2019sentence}).
+
+\section{Materials and Methods}
+\subsection{Threat Model and Experimental Scope}
+We assume an evaluation pipeline that obtains a sequence of per-token UTF-8 lengths and attempts to reconstruct the assistant response. In our harness, those lengths are derived from SSE frames of the form \texttt{data: <token>\textbackslash n\textbackslash n} via $L^{\mathrm{tok}}_t = L^{\mathrm{frame}}_t - 8$, discarding the terminal \texttt{[DONE]} frame. The reconstruction stage is fed length sequences only.
+
+This matches the token-length channel abstraction of Weiss \emph{et al.}~\cite{weiss2024prompt}, but measurements come from an instrumented server that \emph{enforces} one token per SSE frame. The experiment is therefore a controlled reconstruction study under an ideal length oracle. A network adversary would still need to extract comparable lengths from ciphertext records that may merge/split frames, add variable overhead, or carry JSON wrappers---conditions we do not claim to have reproduced.
+
+\subsection{Streaming Harness and Trace Collection}
+The harness implements SSE streaming in a strict one-token-per-frame configuration. For every emitted token it logs token text, token UTF-8 length, SSE frame UTF-8 length, and relative emission timestamp. Token text is logged for auditing and offline metric recomputation; the attack itself uses lengths only.
+\begin{equation}
+L^{\mathrm{tok}}_t = L^{\mathrm{frame}}_t - 8,
+\end{equation}
+where 8 bytes are the fixed SSE overhead (\texttt{data:\ } and \texttt{\textbackslash n\textbackslash n}).
+
+\subsection{Reconstruction Pipeline}
+The inversion pipeline follows a Weiss-style procedure: heuristic segmentation into sentence-like chunks; first-chunk decoding with \texttt{royweiss1/T5\_FirstSentences}; subsequent chunks with \texttt{royweiss1/T5\_MiddleSentences}; candidate ranking by the sum of transition log-probabilities (not length-normalized). We use the \emph{same} public reconstructor checkpoints for every victim and do \emph{not} fine-tune on victim-style known plaintext. Cross-model differences therefore measure \emph{transfer} of this fixed reconstructor onto each model's length traces (tokenizer, whitespace, style, refusals, length distributions), not intrinsic leakage after per-model adaptation~\cite{weiss2024prompt}.
+
+\subsection{Models, Prompt Corpus, and Protocol}
+We evaluate seven open-weight language models: six instruction/chat-tuned models (Qwen2.5-1.5B/3B-Instruct, Llama-3.2-3B-Instruct, Gemma-2-2B-it, TinyLlama-1.1B-Chat, Phi-3.5-mini-instruct) and one base model (Phi-1.5), which is not instruction-tuned or RLHF-aligned according to its model card.
+
+The prompt corpus comprises 15 topical files with 20 prompts each (300 prompts). The same prompts are issued to every model in the same order. Victim decoding is deterministic (\texttt{temperature}$=0.0$, \texttt{top\_p}$=1.0$). The standardized subset fixes $N=300$, \texttt{max\_new\_tokens}$=96$, \texttt{samples\_per\_segment}$=3$, \texttt{max\_sentences}$=3$, and \texttt{num\_first\_candidates}$=3$. A shared token budget does not imply comparable amounts of text across tokenizers.
+
+\subsection{Evaluation Metrics}
+Reconstruction quality uses normalized Levenshtein distance $ed_{\mathrm{norm}}$ ($\downarrow$), ROUGE-1/ROUGE-L precision ($\uparrow$), and cosine semantic similarity $\phi$ ($\uparrow$). We report the semantic recovery rate $\mathrm{SR}@0.5$ ($\uparrow$) as the proportion of samples with $\phi>0.5$ (avoiding the ambiguous acronym ASR). The threshold $0.5$ is a conventional operating point, not a human-calibrated criterion.
+
+A prior mixed campaign computed $\phi$ with Sentence-BERT when available and TF cosine otherwise. We recompute $\phi$ for all 2100 samples with one fixed term-frequency cosine backend so that rankings use a comparable scale.
+
+\section{Results}
+\subsection{Control Covariates}
+Under \texttt{max\_new\_tokens}$=96$, most models truncate at or near the budget (truncation often $95$--$100\%$). Mean UTF-8 bytes per token differ substantially across models (approximately $5.0$ for Qwen2.5 versus approximately $3.5$ for TinyLlama and Phi-3.5-mini). Equal token counts therefore do not imply equal textual content; these covariates confound any cross-model ranking of reconstruction quality.
+
+\subsection{Cross-Model Comparison under Standardized Conditions}
+Table~\ref{tab:main_results} reports the primary comparable subset with recomputed $\phi$. Qwen2.5-1.5B-Instruct achieves the highest mean semantic similarity ($\phi=0.3242$), followed by Qwen2.5-3B-Instruct ($\phi=0.3096$) and Phi-1.5 ($\phi=0.2747$ under the fixed backend). Llama-3.2-3B-Instruct shows intermediate reconstructability ($\phi=0.2538$), Gemma-2-2B-it $\phi=0.1798$, TinyLlama-1.1B-Chat $\phi=0.0428$, and Phi-3.5-mini-instruct the lowest ($\phi=0.0239$). Only Qwen2.5-1.5B-Instruct exceeds an $8\%$ $\mathrm{SR}@0.5$. We emphasize that this ordering is the transfer ranking of one shared reconstructor.
+
+\begin{table*}[ht]
+\centering
+\caption{Primary cross-model comparison for the standardized subset ($N=300$, \texttt{max\_new\_tokens}=96). $\phi$ ($\uparrow$) recomputed with a fixed TF cosine backend; $ed_{\mathrm{norm}}$ ($\downarrow$); ROUGE precision ($\uparrow$); $\mathrm{SR}@0.5$ ($\uparrow$).}
+\label{tab:main_results}
+\begin{tabular}{l c c c c c}
+\toprule
+Model & Params & Kind & $\phi_{\mathrm{mean}}\uparrow$ & $ed_{\mathrm{norm}}\downarrow$ & $\mathrm{SR}@0.5$ \\
+\midrule
+Qwen2.5-1.5B-Instruct & $\sim$1.5B & instruct & 0.3242 & 0.7199 & 8.67\% \\
+Qwen2.5-3B-Instruct & $\sim$3B & instruct & 0.3096 & 0.7300 & 3.00\% \\
+Phi-1.5 & $\sim$1.3B & base & 0.2747 & 0.7426 & 4.33\% \\
+Llama-3.2-3B-Instruct & $\sim$3B & instruct & 0.2538 & 0.7499 & 3.00\% \\
+Gemma-2-2B-it & $\sim$2B & instruct & 0.1798 & 0.7764 & 0.00\% \\
+TinyLlama-1.1B-Chat & $\sim$1.1B & chat & 0.0428 & 0.8026 & 0.00\% \\
+Phi-3.5-mini-instruct & $\sim$3.8B & instruct & 0.0239 & 0.8087 & 0.00\% \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\subsection{Additional Evaluation Models}
+Llama-3.2-3B-Instruct, Gemma-2-2B-it, and Phi-3.5-mini-instruct were included as additional evaluation models spanning distinct families. Under fully completed 300/300 runs, relative reconstructability among them is Llama-3.2-3B $>$ Gemma-2-2B $>$ Phi-3.5-mini-instruct.
+
+\subsection{Topic Sensitivity}
+Table~\ref{tab:topic_sensitivity} reports best- and worst-performing topics by mean $\phi$ for three representative models (20 prompts per topic). Topic sensitivity exists even within a fixed attack pipeline: for Llama-3.2-3B the best topic was \emph{employment} and the worst \emph{safety\_security}; Gemma-2-2B peaked on \emph{beliefs\_values} and was weakest on \emph{financial\_status}.
+
+\begin{table}[ht]
+\centering
+\caption{Topic-level sensitivity based on mean semantic similarity (recomputed $\phi$).}
+\label{tab:topic_sensitivity}
+\begin{tabular}{l l c l c}
+\toprule
+Model & Best Topic & $\phi_{\mathrm{mean}}$ & Worst Topic & $\phi_{\mathrm{mean}}$ \\
+\midrule
+Llama-3.2-3B & employment & 0.3373 & safety\_security & 0.2053 \\
+Gemma-2-2B & beliefs\_values & 0.2090 & financial\_status & 0.1575 \\
+Phi-3.5-mini & financial\_status & 0.0444 & personal\_identity & 0.0073 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Discussion}
+\subsection{Interpretation of Reconstruction Differences}
+Under idealized length traces and a shared reconstructor, reconstruction quality is strongly model dependent. A service that exposes token-granular streaming lengths can enable model-dependent recovery \emph{if} an adversary obtains those lengths. We do not claim a mechanistic explanation: tokenizer behaviour, output style, truncation under a shared budget, and reconstructor training distribution are entangled.
+
+\subsection{Reconstructor Transfer vs.\ Intrinsic Leakage}
+The ranking should be read as transferability of \texttt{royweiss1} checkpoints onto each model's traces. Weiss \emph{et al.} improved reconstruction by fine-tuning to victim style~\cite{weiss2024prompt}. A stronger matrix---shared reconstructor, per-model fine-tuned reconstructors, and cross-model transfer---would separate leakiness of length patterns from compatibility with a particular inversion model.
+
+\subsection{Limitations}
+(1)~Idealized length oracle, not TLS record extraction. (2)~Deterministic victim decoding. (3)~Fixed public reconstructor without per-model adaptation. (4)~TF cosine $\phi$ rather than Sentence-BERT/BERTScore. (5)~$\mathrm{SR}@0.5$ is conventional, not human-calibrated. (6)~High truncation under \texttt{max\_new\_tokens}$=96$. Companion analyses add confidence intervals, paired Wilcoxon tests with Holm correction, and a defense sweep (bucketing, fixed framing, batching, randomized padding); those results are reported in the TIFS draft.
+
+\subsection{Ethical Considerations}
+This work is defensive security research: quantify reconstructability under controlled conditions to motivate safer streaming. Live offensive tooling against third-party services is out of scope.
+
+\section{Conclusions}
+We presented a controlled cross-model evaluation of LLM output reconstruction from idealized SSE token-length traces. Reconstruction quality is strongly model dependent under a shared reconstructor, with Qwen2.5 variants most reconstructable and Phi-3.5-mini-instruct least. Token-granular length metadata is informative under an ideal oracle; encrypted transport alone does not eliminate that channel when lengths are exposed at token granularity. The most important next steps are live encrypted-traffic extraction, per-model reconstructor adaptation, human-calibrated semantic thresholds, and production-facing defense latency measurements.
+
+\appendix
+\section{Artifact-Completeness Rules}
+A run enters comparative analyses only if required files are present and internal sample counts match. Required files: \texttt{config.json}, \texttt{progress.json}, \texttt{samples.jsonl}, \texttt{summary.json}, \texttt{summary.md}, and \texttt{summary\_by\_topic.csv}. Incomplete placeholders are excluded from primary cross-model claims. Run-directory names belong in the reproducibility package, not in the main result tables.
+
+% Uncomment when the MDPI class version supports these macros:
+% \authorcontributions{Conceptualization, Author One and Author Two; methodology, Author One; software, Author One; validation, Author One; formal analysis, Author One and Author Two; investigation, Author One; data curation, Author One; writing---original draft preparation, Author One; writing---review and editing, Author Two; supervision, Author Two.}
+% \funding{This research received no external funding.}
+% \dataavailabilitystatement{Per-sample metrics, analysis scripts, and a SHA-256 artifact manifest accompany the manuscript; a persistent public repository with DOI will be provided at camera-ready.}
+% \conflictsofinterest{The authors declare no conflict of interest.}
+
+\reftitle{References}
+\bibliography{references}
+
+\end{document}
