@@ -1,0 +1,87 @@
+# LLeakM — aktualna specyfikacja eksperymentu
+
+Aktualizacja: 2026-08-03
+
+## Cel
+
+Zmierzyć, ile tekstu generowanego przez różne otwarte modele LLM można odtworzyć z sekwencji długości tokenów obserwowanych w kontrolowanym streamingu SSE, przy zachowaniu tego samego zbioru promptów, protokołu dekodowania, rekonstruktora i metryk.
+
+Badanie izoluje kanał długości tokenów. Serwer emituje jeden token na ramkę i zapisuje jego długość UTF-8. Nie jest to eksperyment end-to-end na zaszyfrowanym ruchu TLS/HTTP2/QUIC.
+
+## Protokół publikacyjny
+
+- 15 tematów x 20 promptów = 300 wyrównanych promptów na model,
+- 7 modeli, łącznie 2100 próbek,
+- `max_new_tokens=96`, `temperature=0`, `top_p=1`,
+- 3 próbki rekonstruktora na segment,
+- maksymalnie 3 zdania i 3 kandydatów pierwszego zdania,
+- wspólny rekonstruktor `royweiss1/T5_FirstSentences` + `royweiss1/T5_MiddleSentences`,
+- seed analiz: `20260706`.
+
+Modele i autorytatywne katalogi przebiegów:
+
+1. Qwen2.5-1.5B-Instruct — `run_20260325_104518_qwen_1_5b`
+2. Qwen2.5-3B-Instruct — `run_20260327_124817_qwen_3b_final_resume`
+3. Llama-3.2-3B-Instruct — `run_20260414_073030_llama_3_2_3b`
+4. Gemma-2-2B-it — `run_20260415_080034_gemma_2_2b_it`
+5. Phi-1.5 (model bazowy, stress test) — `run_20260329_085714_phi_1_5`
+6. TinyLlama-1.1B-Chat — `run_20260325_153010_tinyllama_1_1b`
+7. Phi-3.5-mini-instruct — `run_20260414_111644_phi_3_5_mini`
+
+## Metryka główna
+
+Finalne `phi` jest cosinusem wektorów częstości słów ground truth i rekonstrukcji. To miara podobieństwa leksykalnego, nie semantycznego. `LR@0.5` oznacza udział próbek z `phi > 0.5`.
+
+Dodatkowo raportowane są `ed_norm`, precision ROUGE-1/L, bootstrapowe 95% CI, przedziały Wilsona, sparowane testy Wilcoxona z korektą Holma, effect size oraz regresja kontrolująca długość odpowiedzi i truncation.
+
+## Stan wyników
+
+Wszystkie 7 przebiegów publikacyjnych jest kompletne (po 300 próbek). Średnie `phi` wynosi od 0.3242 dla Qwen2.5-1.5B-Instruct do 0.0239 dla Phi-3.5-mini-instruct. Dziewiętnaście z 21 porównań modeli pozostaje istotnych po korekcie Holma.
+
+Baseline'y informacji w śladzie oraz pięć konfiguracji obron oceniono na 30 promptach dla każdego z dwóch modeli: Qwen2.5-1.5B i Llama-3.2-3B. W żadnej bronionej próbce nie zaobserwowano `LR@0.5`, ale górna granica 95% przedziału Wilsona wynosi około 11.35%, więc nie oznacza to dowodu zerowego ryzyka. Wszystkie 10 porównań obrona-vs-baseline jest istotnych po korekcie Holma.
+
+## Uruchomienie
+
+Serwer:
+
+```bash
+. .venv/bin/activate
+MODEL_ID=<model-id> HF_HUB_OFFLINE=1 \
+  python -m uvicorn app:app --host 127.0.0.1 --port 8000
+```
+
+Zbieranie pojedynczego standardowego przebiegu:
+
+```bash
+HF_HUB_OFFLINE=1 python experiment_validation/scripts/run_validation.py \
+  --max-prompts 300 \
+  --max-new-tokens 96 \
+  --temperature 0 \
+  --top-p 1 \
+  --samples-per-segment 3 \
+  --max-sentences 3 \
+  --num-first-candidates 3 \
+  --label <label>
+```
+
+Analiza:
+
+```bash
+python experiment_validation/scripts/analyze_stats.py
+python experiment_validation/scripts/analyze_extras.py
+python experiment_validation/scripts/make_figures.py
+python experiment_validation/scripts/make_repro_manifest.py
+```
+
+## Źródła prawdy
+
+- wyniki per model: `experiment_validation/analysis/model_stats.json`,
+- wyniki per próbka: `experiment_validation/analysis/per_prompt_phi.csv`,
+- testy par: `experiment_validation/analysis/pairwise_tests.json`,
+- obrony: `experiment_validation/analysis/defense_eval.json`,
+- baseline'y śladu: `experiment_validation/analysis/trace_baselines.json`,
+- sumy SHA-256: `experiment_validation/analysis/repro_manifest.json`,
+- pełny raport: `report_LLeakM.md`,
+- manuskrypt: `article1/tifs_main.tex`.
+
+Pierwotny pojedynczy test medycznego promptu z marca 2026 był smoke testem pipeline'u i nie stanowi podstawy wyników publikacyjnych.
