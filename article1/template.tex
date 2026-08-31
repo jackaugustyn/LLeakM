@@ -14,7 +14,7 @@
 \address[2]{Department/Institute, University/Organization, City, Country; author2@example.com}
 \corres{Correspondence: author1@example.com}
 
-\firstnote{A companion IEEE TIFS draft (\texttt{tifs\_main.tex}) reports bootstrap confidence intervals, paired significance tests, and a defense evaluation on the same dataset.}
+\firstnote{Statistical inference and the defense pilot reported in this manuscript are derived from the accompanying per-sample reproducibility artifacts.}
 
 \pubvolume{1}
 \issuenum{1}
@@ -42,7 +42,7 @@
 %====================
 % Abstract and keywords
 %====================
-\abstract{Large-language-model (LLM) assistants frequently stream responses token by token using Server-Sent Events (SSE). Observable frame sizes can correlate with token lengths and thereby leak information about the generated text. This paper reports a \emph{controlled} cross-model evaluation of output reconstruction from \emph{idealized} one-token-per-frame SSE length traces across seven open-weight language models (six instruction/chat-tuned models and one base model) under a standardized protocol (300 aligned prompts per model; 2100 samples). A measurement harness enforces a one-token-per-frame mapping and records per-token lengths; a shared Weiss-style T5 pipeline reconstructs text hypotheses. Semantic similarity $\phi$ is recomputed with a single fixed term-frequency cosine backend for every sample. Mean $\phi$ ranges from $0.324$ (Qwen2.5-1.5B-Instruct) to $0.024$ (Phi-3.5-mini-instruct). We interpret the ranking as transferability of a fixed reconstructor onto each model's length traces---not as an intrinsic leakage quantity independent of tokenizer and style---and we report response-length covariates under a shared \texttt{max\_new\_tokens} budget. The study deliberately does \emph{not} claim a full remote TLS traffic attack; bridging idealized length oracles to encrypted-record extraction remains future work. The results show that token-granular streaming metadata is informative enough to support model-dependent reconstruction under controlled observation.}
+\abstract{Large-language-model (LLM) assistants frequently stream responses token by token using Server-Sent Events (SSE). Observable frame sizes can correlate with token lengths and thereby leak information about the generated text. This paper reports a \emph{controlled} cross-model evaluation of output reconstruction from \emph{idealized} one-token-per-frame SSE length traces across seven open-weight language models (300 aligned prompts per model; 2100 samples). A shared Weiss-style T5 pipeline reconstructs text hypotheses, which are scored with a fixed term-frequency cosine similarity $\phi$ (lexical overlap, not paraphrase-aware semantic similarity). Mean $\phi$ ranges from $0.324$ for Qwen2.5-1.5B-Instruct (bootstrap 95\% CI $[0.310,0.338]$) to $0.024$ for Phi-3.5-mini-instruct ($[0.020,0.028]$). Paired per-prompt Wilcoxon tests with Holm correction find 19 of 21 cross-model differences significant. A pilot defense evaluation on two models and 30 topic-balanced prompts per model examines length bucketing, fixed framing, two- and four-token batching, and randomized padding against the frozen, non-adaptive reconstructor. All ten defense--baseline comparisons remain significant after Holm correction; observed leakage reductions range from 35.0\% to 90.3\%, and no defended sample exceeds $\phi>0.5$ (Wilson upper bound 11.35\% per cell). These results quantify uncertainty and demonstrate mitigation potential, but do not establish robustness against adaptive attackers or an end-to-end TLS traffic attack.}
 
 \keyword{large language models; side-channel analysis; server-sent events; traffic analysis; privacy leakage; token streaming; text reconstruction; AI assistants}
 
@@ -55,7 +55,7 @@ Weiss \emph{et al.} demonstrated token-length side-channel reconstruction on rea
 
 \textbf{Scope.} We study an \emph{ideal token-length oracle} from an instrumented SSE harness, not a full remote attack on ciphertext records. An on-path observer of TLS/HTTP/2/QUIC traffic typically sees records that may coalesce or fragment SSE frames, add variable overhead, or pass through proxies. Framing the study as a controlled benchmark isolates model-dependent length patterns from transport effects; end-to-end remote extraction is future work.
 
-The contribution of this paper is fourfold. First, we describe a controlled methodology for collecting idealized per-token length traces and reconstructing text from them. Second, we report a comparative evaluation across seven open-weight models with a single fixed semantic backend. Third, we report response-length covariates and interpret the ranking as reconstructor transfer rather than intrinsic ``leakiness.'' Fourth, we release reproducibility artifacts; a companion draft adds confidence intervals, paired tests, and defense measurements on the same data.
+The contribution of this paper is fourfold. First, we describe a controlled methodology for collecting idealized per-token length traces and reconstructing text from them. Second, we report a comparative evaluation across seven open-weight models with a single fixed scoring backend and uncertainty-aware statistical inference. Third, we report response-length covariates and interpret the ranking as reconstructor transfer rather than intrinsic ``leakiness.'' Fourth, we evaluate five defense configurations against a frozen attacker and quantify both leakage reduction and bandwidth/frame-count costs.
 
 \section{Related Work}
 Side-channel attacks infer sensitive information from indirect observables such as timing, size, power, or electromagnetic emanations~\cite{kocher1996timing}. Network-observable metadata has long been shown to be dangerous~\cite{song2001timing,chen2010sidechannel}. Weiss \emph{et al.} introduced token-length side-channel reconstruction against AI assistants, including known-plaintext fine-tuning to the victim's writing style, and evaluated the attack on live ChatGPT and Copilot traffic~\cite{weiss2024prompt}. Li \emph{et al.} study reconstruction when APIs merge multiple tokens into single packets~\cite{li2026length}, raising the novelty bar for length-channel work targeting realistic deployments. Related analyses of streaming metadata further demonstrate that encryption alone is insufficient~\cite{whisperleak2025}. Our contribution is a controlled multi-model benchmark under idealized one-token-per-frame traces rather than a new end-to-end remote exploit.
@@ -88,6 +88,12 @@ Reconstruction quality uses normalized Levenshtein distance $ed_{\mathrm{norm}}$
 
 A prior mixed campaign computed $\phi$ with Sentence-BERT when available and TF cosine otherwise. We recompute $\phi$ for all 2100 samples with one fixed term-frequency cosine backend so that rankings use a comparable scale.
 
+\subsection{Statistical Analysis}
+The prompt index provides a natural pairing across victim models because every model receives the same 300 prompts. For each mean metric we compute a percentile bootstrap 95\% confidence interval using $B=10{,}000$ resamples and seed \texttt{20260706}. Uncertainty for $\mathrm{LR}@0.5$ is reported with a two-sided Wilson 95\% interval. Cross-model differences in per-prompt $\phi$ are tested with two-sided paired Wilcoxon signed-rank tests. Family-wise error over the $\binom{7}{2}=21$ comparisons is controlled with the Holm--Bonferroni procedure at $\alpha=0.05$; rank-biserial correlation is reported as effect size. The same paired procedure is used for ten defense--baseline comparisons, with Holm correction over that family. These tests assess the fixed benchmark population and do not remove confounding by tokenizer or output style~\cite{efron1994bootstrap,wilcoxon1945individual,holm1979simple}.
+
+\subsection{Defense Configurations}
+The defense pilot uses 30 topic-balanced prompts for each of Qwen2.5-1.5B-Instruct and Llama-3.2-3B-Instruct. Five transformations are applied to the observable trace: rounding token-frame lengths to the next 8-byte bucket (\texttt{bucket\_8}); online fixed-width 32-byte framing (\texttt{pad\_32}); grouping two or four consecutive tokens into one observable frame (\texttt{batch\_2}, \texttt{batch\_4}); and seeded uniform random padding of 0--8 bytes (\texttt{rand\_pad\_8}). The reconstructor is frozen and is not retrained on defended traces. Effectiveness is expressed as $100(1-\bar\phi_d/\bar\phi_0)$, while utility cost is summarized by mean byte overhead and mean observable frame count.
+
 \section{Results}
 \subsection{Control Covariates}
 Under \texttt{max\_new\_tokens}$=96$, most models truncate at or near the budget (truncation often $95$--$100\%$). Mean UTF-8 bytes per token differ substantially across models (approximately $5.0$ for Qwen2.5 versus approximately $3.5$ for TinyLlama and Phi-3.5-mini). Equal token counts therefore do not imply equal textual content; these covariates confound any cross-model ranking of reconstruction quality.
@@ -97,22 +103,25 @@ Table~\ref{tab:main_results} reports the primary comparable subset with recomput
 
 \begin{table*}[ht]
 \centering
-\caption{Primary cross-model comparison for the standardized subset ($N=300$, \texttt{max\_new\_tokens}=96). $\phi$ ($\uparrow$) recomputed with a fixed TF cosine backend; $ed_{\mathrm{norm}}$ ($\downarrow$); ROUGE precision ($\uparrow$); $\mathrm{SR}@0.5$ ($\uparrow$).}
+\caption{Primary cross-model comparison ($N=300$). CIs for mean $\phi$ use 10,000 bootstrap resamples; intervals for $\mathrm{LR}@0.5$ are Wilson 95\% intervals.}
 \label{tab:main_results}
 \begin{tabular}{l c c c c c}
 \toprule
-Model & Params & Kind & $\phi_{\mathrm{mean}}\uparrow$ & $ed_{\mathrm{norm}}\downarrow$ & $\mathrm{SR}@0.5$ \\
+Model & $\phi_{\mathrm{mean}}$ & 95\% CI & $ed_{\mathrm{norm}}$ & $\mathrm{LR}@0.5$ & 95\% CI \\
 \midrule
-Qwen2.5-1.5B-Instruct & $\sim$1.5B & instruct & 0.3242 & 0.7199 & 8.67\% \\
-Qwen2.5-3B-Instruct & $\sim$3B & instruct & 0.3096 & 0.7300 & 3.00\% \\
-Phi-1.5 & $\sim$1.3B & base & 0.2747 & 0.7426 & 4.33\% \\
-Llama-3.2-3B-Instruct & $\sim$3B & instruct & 0.2538 & 0.7499 & 3.00\% \\
-Gemma-2-2B-it & $\sim$2B & instruct & 0.1798 & 0.7764 & 0.00\% \\
-TinyLlama-1.1B-Chat & $\sim$1.1B & chat & 0.0428 & 0.8026 & 0.00\% \\
-Phi-3.5-mini-instruct & $\sim$3.8B & instruct & 0.0239 & 0.8087 & 0.00\% \\
+Qwen2.5-1.5B-Instruct & 0.3242 & [0.3097, 0.3380] & 0.7199 & 8.67\% & [5.98, 12.40]\% \\
+Qwen2.5-3B-Instruct & 0.3096 & [0.2977, 0.3214] & 0.7300 & 3.00\% & [1.59, 5.60]\% \\
+Phi-1.5 & 0.2747 & [0.2622, 0.2877] & 0.7426 & 4.33\% & [2.55, 7.27]\% \\
+Llama-3.2-3B-Instruct & 0.2538 & [0.2419, 0.2658] & 0.7499 & 3.00\% & [1.59, 5.60]\% \\
+Gemma-2-2B-it & 0.1798 & [0.1708, 0.1889] & 0.7764 & 0.00\% & [0.00, 1.26]\% \\
+TinyLlama-1.1B-Chat & 0.0428 & [0.0377, 0.0479] & 0.8026 & 0.00\% & [0.00, 1.26]\% \\
+Phi-3.5-mini-instruct & 0.0239 & [0.0201, 0.0280] & 0.8087 & 0.00\% & [0.00, 1.26]\% \\
 \bottomrule
 \end{tabular}
 \end{table*}
+
+\subsection{Inferential Comparison}
+Nineteen of the 21 paired model comparisons remain significant after Holm correction. The two exceptions are Qwen2.5-1.5B versus Qwen2.5-3B (mean paired difference $0.0146$, bootstrap 95\% CI $[-0.0026,0.0314]$, rank-biserial $r=0.089$, $p_{\mathrm{Holm}}=0.1838$) and Llama-3.2-3B versus the non-instruction-tuned Phi-1.5 (difference $-0.0209$, CI $[-0.0375,-0.0043]$, $r=-0.148$, $p_{\mathrm{Holm}}=0.0533$). Representative large contrasts include Qwen2.5-1.5B versus Phi-3.5-mini (difference $0.3002$, $r=1.000$, $p_{\mathrm{Holm}}<0.0001$) and Llama-3.2-3B versus Gemma-2-2B (difference $0.0739$, $r=0.566$, $p_{\mathrm{Holm}}<0.0001$). Thus, most observed differences are not explained by sampling variability over this aligned prompt set, although the tests do not establish causal model effects.
 
 \subsection{Additional Evaluation Models}
 Llama-3.2-3B-Instruct, Gemma-2-2B-it, and Phi-3.5-mini-instruct were included as additional evaluation models spanning distinct families. Under fully completed 300/300 runs, relative reconstructability among them is Llama-3.2-3B $>$ Gemma-2-2B $>$ Phi-3.5-mini-instruct.
@@ -135,6 +144,36 @@ Phi-3.5-mini & financial\_status & 0.0444 & personal\_identity & 0.0073 \\
 \end{tabular}
 \end{table}
 
+\subsection{Effectiveness of Defensive Mechanisms}\label{sec:defense}
+Table~\ref{tab:defenses} reports the defense pilot. Every defense reduces mean $\phi$ significantly relative to its paired baseline after Holm correction ($p_{\mathrm{Holm}}\leq0.000589$). Bucketing produces the strongest consistently low residual leakage (83.4--90.3\% reduction) at 82.4--88.6\% mean byte overhead. Batching reduces leakage by 67.7--69.2\% while halving or quartering the observable frame count and adding no payload-byte-sum overhead under this accounting. Randomized padding reduces leakage by 61.0--65.7\%. Fixed 32-byte framing is least effective in the evaluated online implementation (35.0--36.8\%) and incurs 538--565\% byte overhead.
+
+\begin{table*}[ht]
+\centering
+\caption{Defense effectiveness against the fixed non-adaptive reconstructor ($n=30$ paired prompts per model). Byte overhead excludes unmodeled transport headers and latency.}
+\label{tab:defenses}
+\begin{tabular}{l l c c c c c}
+\toprule
+Model & Defense & Mean $\phi$ & 95\% CI & Reduction & Byte overhead & Mean frames \\
+\midrule
+Qwen2.5-1.5B & baseline & 0.3010 & [0.2537, 0.3508] & -- & 0.0\% & 96 \\
+ & bucket\_8 & 0.0293 & [0.0198, 0.0397] & 90.3\% & 82.4\% & 96 \\
+ & pad\_32 & 0.1901 & [0.1667, 0.2150] & 36.8\% & 538.0\% & 96 \\
+ & batch\_2 & 0.0928 & [0.0791, 0.1072] & 69.2\% & 0.0\% & 48 \\
+ & batch\_4 & 0.0950 & [0.0668, 0.1269] & 68.4\% & 0.0\% & 24 \\
+ & rand\_pad\_8 & 0.1033 & [0.0871, 0.1203] & 65.7\% & 78.5\% & 96 \\
+\midrule
+Llama-3.2-3B & baseline & 0.2576 & [0.2177, 0.2978] & -- & 0.0\% & 96 \\
+ & bucket\_8 & 0.0428 & [0.0305, 0.0563] & 83.4\% & 88.6\% & 96 \\
+ & pad\_32 & 0.1674 & [0.1382, 0.2003] & 35.0\% & 565.1\% & 96 \\
+ & batch\_2 & 0.0823 & [0.0684, 0.0967] & 68.0\% & 0.0\% & 48 \\
+ & batch\_4 & 0.0832 & [0.0615, 0.1055] & 67.7\% & 0.0\% & 24 \\
+ & rand\_pad\_8 & 0.1004 & [0.0834, 0.1186] & 61.0\% & 81.9\% & 96 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+No defended sample exceeds $\phi>0.5$. This observation must not be read as zero risk: with $n=30$ per cell, the Wilson 95\% upper bound is 11.35\%. The pilot therefore supports mitigation against this frozen reconstructor, not a security guarantee against an attacker trained on the transformed trace distribution.
+
 \section{Discussion}
 \subsection{Interpretation of Reconstruction Differences}
 Under idealized length traces and a shared reconstructor, reconstruction quality is strongly model dependent. A service that exposes token-granular streaming lengths can enable model-dependent recovery \emph{if} an adversary obtains those lengths. We do not claim a mechanistic explanation: tokenizer behaviour, output style, truncation under a shared budget, and reconstructor training distribution are entangled.
@@ -143,13 +182,13 @@ Under idealized length traces and a shared reconstructor, reconstruction quality
 The ranking should be read as transferability of \texttt{royweiss1} checkpoints onto each model's traces. Weiss \emph{et al.} improved reconstruction by fine-tuning to victim style~\cite{weiss2024prompt}. A stronger matrix---shared reconstructor, per-model fine-tuned reconstructors, and cross-model transfer---would separate leakiness of length patterns from compatibility with a particular inversion model.
 
 \subsection{Limitations}
-(1)~Idealized length oracle, not TLS record extraction. (2)~Deterministic victim decoding. (3)~Fixed public reconstructor without per-model adaptation. (4)~TF cosine $\phi$ rather than Sentence-BERT/BERTScore. (5)~$\mathrm{SR}@0.5$ is conventional, not human-calibrated. (6)~High truncation under \texttt{max\_new\_tokens}$=96$. Companion analyses add confidence intervals, paired Wilcoxon tests with Holm correction, and a defense sweep (bucketing, fixed framing, batching, randomized padding); those results are reported in the TIFS draft.
+(1)~Idealized length oracle, not TLS record extraction. (2)~Deterministic victim decoding. (3)~Fixed public reconstructor without per-model or defense adaptation. (4)~TF cosine $\phi$ measures lexical overlap rather than semantic correctness. (5)~$\mathrm{LR}@0.5$ is conventional, not human-calibrated. (6)~High truncation under \texttt{max\_new\_tokens}$=96$. (7)~The defense pilot covers only two models and 30 prompts per cell; its byte accounting omits protocol headers, latency, and user-experience costs. Larger multi-seed trials and adaptive attackers are required before deployment claims.
 
 \subsection{Ethical Considerations}
 This work is defensive security research: quantify reconstructability under controlled conditions to motivate safer streaming. Live offensive tooling against third-party services is out of scope.
 
 \section{Conclusions}
-We presented a controlled cross-model evaluation of LLM output reconstruction from idealized SSE token-length traces. Reconstruction quality is strongly model dependent under a shared reconstructor, with Qwen2.5 variants most reconstructable and Phi-3.5-mini-instruct least. Token-granular length metadata is informative under an ideal oracle; encrypted transport alone does not eliminate that channel when lengths are exposed at token granularity. The most important next steps are live encrypted-traffic extraction, per-model reconstructor adaptation, human-calibrated semantic thresholds, and production-facing defense latency measurements.
+We presented a controlled cross-model evaluation of LLM output reconstruction from idealized SSE token-length traces. Bootstrap intervals and multiplicity-corrected paired tests show that most cross-model differences are statistically distinguishable on the aligned prompt corpus. All evaluated defenses significantly reduce leakage against the frozen reconstructor; 8-byte bucketing yields the largest consistent reduction, while batching offers the most favorable measured bandwidth trade-off. These findings are evidence of mitigation potential rather than proof of security. The most important next steps are live encrypted-traffic extraction, adaptive reconstruction on defended traces, human-calibrated semantic evaluation, and production-facing latency and bandwidth measurements.
 
 \appendix
 \section{Artifact-Completeness Rules}
