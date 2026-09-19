@@ -1,6 +1,8 @@
 # LLeakM — LLM Output Reconstruction from Token-Length Traces
 
-LLeakM is a controlled research harness and reproducibility package for studying how much generated LLM text can be reconstructed from token-length traces exposed by token-by-token Server-Sent Events (SSE) streaming. The repository contains the streaming server, a Weiss-style T5 reconstructor, a 300-prompt benchmark, results for seven open-weight victim models, statistical analyses, defense experiments, and IEEE/MDPI manuscript sources.
+Public repository: [https://github.com/jackaugustyn/LLeakM](https://github.com/jackaugustyn/LLeakM)
+
+LLeakM is a controlled research harness and reproducibility package for studying how much generated LLM text can be reconstructed from token-length traces exposed by token-by-token Server-Sent Events (SSE) streaming. The repository contains the streaming server, a Weiss-style T5 reconstructor, a 300-prompt benchmark, results for seven open-weight victim models, statistical analyses, defense experiments, and the MDPI *Electronics* manuscript sources.
 
 ## Scope and threat model
 
@@ -39,8 +41,9 @@ Bootstrap confidence intervals, paired Wilcoxon tests, Holm correction, response
 │   ├── scripts/                        # collection, analysis, baselines, defenses
 │   └── analysis/                       # final tables, statistics, figures, manifest
 ├── article1/
-│   ├── tifs_main.tex / tifs_main.pdf   # IEEE TIFS version
-│   └── template.tex / template.pdf     # MDPI version
+│   ├── template.tex / template.pdf     # MDPI Electronics manuscript
+│   ├── COVER_LETTER.md                 # journal cover letter
+│   └── SUBMISSION_CHECKLIST.md         # remaining submission checks
 ├── report_LLeakM.md                    # current experimental report
 └── experiment.txt                      # concise current experiment specification
 ```
@@ -119,7 +122,6 @@ The defense and trace-baseline scripts require the 60 tracked raw traces for the
 
 ```bash
 cd article1
-latexmk -pdf tifs_main.tex
 latexmk -pdf template.tex
 ```
 
@@ -130,6 +132,16 @@ Generated LaTeX intermediates, `.venv`, caches, non-manuscript runs, and ordinar
 - Human-readable protocol and environment: `experiment_validation/analysis/REPRODUCIBILITY.md`
 - SHA-256 manifest: `experiment_validation/analysis/repro_manifest.json`
 - Full current report: `report_LLeakM.md`
-- Manuscript: `article1/tifs_main.tex`
+- Manuscript: `article1/template.tex`
 
 Nearly all responses hit the 96-token cap, so the benchmark characterizes early-response reconstructability. The fixed lexical metric can reward shared wording even when meaning or entities differ. Live ciphertext extraction, adaptive attackers trained on defended traces, longer generations, multiple reconstruction seeds, and human semantic evaluation remain future work.
+
+## License and citation
+
+This repository is released under the [MIT License](LICENSE). If you use the code, prompts, or experimental artifacts, please cite the accompanying manuscript:
+
+> P. Augustynowicz and S. Jędrzejczak, “Reconstructing LLM Outputs from SSE-Equivalent Length Traces: A Cross-Model Study of Leakage and Defenses,” *Electronics*, 2026. Artifact package: https://github.com/jackaugustyn/LLeakM
+
+Machine-readable citation metadata is in `CITATION.cff`.
+
+This work is defensive security research. The harness is an instrumented length oracle for controlled measurement; it is not a tool for intercepting third-party traffic.

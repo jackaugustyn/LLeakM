@@ -26,7 +26,7 @@ These results measure transferability of a fixed reconstructor across models and
 
 The publication package contains:
 
-- IEEE TIFS and MDPI manuscript sources and compiled PDFs;
+- MDPI Electronics manuscript sources and compiled PDF;
 - 300 prompts across 15 topics;
 - six artifacts for each of the seven standardized model runs;
 - per-sample ground truth, reconstructions, and metrics;
@@ -206,7 +206,8 @@ The defense study is a pilot against a frozen attacker and should be treated as 
 
 ## 12. Authoritative files
 
-- Manuscript: `article1/tifs_main.tex`
+- Manuscript: `article1/template.tex`
+- Public repository: https://github.com/jackaugustyn/LLeakM
 - Standardized run manifest: `experiment_validation/analysis/repro_manifest.json`
 - Model-level results: `experiment_validation/analysis/model_stats.json`
 - Per-prompt final `phi`: `experiment_validation/analysis/per_prompt_phi.csv`

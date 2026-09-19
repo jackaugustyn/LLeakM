@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: If you use this software or dataset, please cite the accompanying manuscript.
+title: "LLeakM: Reconstructing LLM Outputs from Token-Length Traces"
+type: software
+license: MIT
+repository-code: https://github.com/jackaugustyn/LLeakM
+url: https://github.com/jackaugustyn/LLeakM
+authors:
+  - family-names: Augustynowicz
+    given-names: Paweł
+    email: pawel.augustynowicz@wat.edu.pl
+    affiliation: Faculty of Cybernetics, Military University of Technology
+  - family-names: Jędrzejczak
+    given-names: Szymon
+    email: szymon.jedrzejczak@wat.edu.pl
+    affiliation: Faculty of Cybernetics, Military University of Technology
+preferred-citation:
+  type: article
+  title: "Reconstructing LLM Outputs from SSE-Equivalent Length Traces: A Cross-Model Study of Leakage and Defenses"
+  authors:
+    - family-names: Augustynowicz
+      given-names: Paweł
+    - family-names: Jędrzejczak
+      given-names: Szymon
+  year: 2026
+  journal: Electronics
+  notes: Manuscript in preparation

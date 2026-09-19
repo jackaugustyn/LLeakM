@@ -149,4 +149,4 @@ Baseline'y porównują ślad rzeczywisty z sekwencją przetasowaną, stałą i p
 - `analysis/defense_eval.json` — wyniki obron,
 - `analysis/trace_baselines.json` — baseline'y informacji w śladzie.
 
-Ograniczenia interpretacyjne i pełne wyniki opisuje `../report_LLeakM.md` oraz manuskrypt `../article1/tifs_main.tex`.
+Ograniczenia interpretacyjne i pełne wyniki opisuje `../report_LLeakM.md` oraz manuskrypt `../article1/template.tex`. Publiczne repozytorium: https://github.com/jackaugustyn/LLeakM
