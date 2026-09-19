@@ -15,22 +15,22 @@
 - [x] Deposit code, prompts, per-sample outputs, analysis scripts, and the artifact manifest in a stable public repository (`https://github.com/jackaugustyn/LLeakM`).
 - [x] Add the public repository URL to the Data Availability Statement and the main text.
 - [ ] Optionally mint an archival DOI (for example, Zenodo) from a tagged GitHub release and add it to the Data Availability Statement.
-- [ ] Check that released prompts and model outputs contain no personal, confidential, copyrighted, or unsafe material requiring redaction.
-- [ ] Re-run every analysis from a clean environment and verify all table and figure values against the released artifacts.
-- [ ] Preserve package versions, model revisions/commit hashes, tokenizer revisions, hardware details, and random seeds.
+- [x] Check that released prompts and model outputs contain no personal, confidential, copyrighted, or unsafe material requiring redaction. See `experiment_validation/analysis/RELEASE_CONTENT_AUDIT.md`.
+- [x] Re-run every analysis from a clean environment and verify all table and figure values against the released artifacts. See `experiment_validation/analysis/manuscript_number_verification.json`.
+- [x] Preserve package versions, model revisions/commit hashes, tokenizer revisions, hardware details, and random seeds. See `experiment_validation/analysis/REPRODUCIBILITY.md` and `experiment_validation/analysis/env_snapshot.json`.
 - [ ] Consider adding longer-output experiments because the 96-token budget truncates most responses.
 - [ ] Consider evaluating an adaptive attacker trained on defended traces and at least one end-to-end encrypted-traffic capture.
 - [ ] Consider human evaluation or one fixed paraphrase-aware metric to complement lexical overlap.
 
 ## Manuscript checks
 
-- [ ] Confirm every model name, parameter count, license, and cited model-report version.
-- [ ] Verify the stated 95--100% truncation range directly against the final analysis table.
-- [ ] Add model/tokenizer and response-length covariates to the manuscript if space permits.
-- [ ] Review the distinction between application-event lengths and observable TLS/HTTP/2/QUIC records throughout the paper.
-- [ ] Confirm that “SSE-equivalent” in the title accurately reflects the final experimental setup.
-- [ ] Have both authors proofread the English and approve all claims, figures, tables, and supplementary files.
-- [ ] Remove execution identifiers from the appendix if they do not help external reproduction.
+- [x] Confirm every model name, parameter count, license, and cited model-report version. See Table `tab:model_metadata` in `template.tex` and `experiment_validation/analysis/tables_metadata.tex`.
+- [x] Verify the stated 95--100% truncation range directly against the final analysis table. Per-model truncation from `samples.jsonl` `token_count` is 95.0, 100, 96.3, 100, 99.7, 100, 100\% (range 95.0--100\%). See Table `tab:length_covariates`.
+- [x] Add model/tokenizer and response-length covariates to the manuscript if space permits. Added Tables `tab:model_metadata` and `tab:length_covariates`, plus the OLS covariate sentence in the statistical-results section.
+- [x] Review the distinction between application-event lengths and observable TLS/HTTP/2/QUIC records throughout the paper. Abstract, introduction, threat model, figure caption, discussion, and conclusions now state that the traces are laboratory SSE application events, not TLS/HTTP/2/QUIC records.
+- [x] Confirm that “SSE-equivalent” in the title accurately reflects the final experimental setup. The title refers to one-token-per-SSE-event application traces; the abstract defines the term and excludes encrypted-transport extraction.
+- [ ] Have both authors proofread the English and approve all claims, figures, tables, and supplementary files. English was revised in `template.tex`; Szymon Jędrzejczak still needs to read the compiled PDF and approve.
+- [x] Keep appendix execution identifiers because they are the public artifact directory names required for external reproduction (`tab:run_ids`). They were not removed.
 
 ## Electronics submission package
 
