@@ -118,7 +118,7 @@ python experiment_validation/scripts/make_repro_manifest.py
 
 The defense and trace-baseline scripts require the 60 tracked raw traces for the topic-balanced Qwen2.5-1.5B and Llama-3.2-3B subsets. Other runtime logs are intentionally ignored.
 
-## Build the manuscripts
+## Build the manuscript
 
 ```bash
 cd article1
