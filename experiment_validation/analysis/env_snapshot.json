@@ -1,7 +1,109 @@
 {
+  "collection": {
+    "python": "3.12.3",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "packages": {
+      "numpy": "2.4.3",
+      "torch": "2.11.0+cu130",
+      "transformers": "5.3.0",
+      "sentence-transformers": "not installed",
+      "scipy": "not installed",
+      "scikit-learn": "not installed",
+      "requests": "2.32.5",
+      "fastapi": "0.135.2",
+      "uvicorn": "0.42.0"
+    },
+    "note": "Frozen environment used to collect traces and compute the publication statistics."
+  },
+  "analysis_rerun": {
+    "python": "3.10.12",
+    "python_full": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "machine": "x86_64",
+    "packages": {
+      "numpy": "2.2.6",
+      "torch": "2.5.1",
+      "transformers": "4.46.3",
+      "sentence-transformers": "3.3.1",
+      "scipy": "1.8.0",
+      "scikit-learn": "1.2.2",
+      "requests": "2.30.0",
+      "fastapi": "0.128.0",
+      "uvicorn": "0.40.0",
+      "protobuf": "4.23.0",
+      "sentencepiece": "not installed"
+    },
+    "hardware": {
+      "machine": "x86_64",
+      "processor": "x86_64",
+      "cpu_count": 20,
+      "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+      "uname": {
+        "system": "Linux",
+        "node": "Acer",
+        "release": "6.6.87.2-microsoft-standard-WSL2",
+        "version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "machine": "x86_64",
+        "processor": "x86_64"
+      },
+      "mem_total_gb": 7.61,
+      "cpu_model": "12th Gen Intel(R) Core(TM) i7-12700H",
+      "gpus": [
+        {
+          "name": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+          "driver": "610.62",
+          "memory": "8192 MiB",
+          "compute_cap": "8.6"
+        }
+      ],
+      "torch_cuda_available": true,
+      "torch_version": "2.5.1+cu124",
+      "torch_cuda_device": "NVIDIA GeForce RTX 3070 Ti Laptop GPU"
+    },
+    "pythonhashseed": "0",
+    "note": "Host used to re-run publication analyses from released artifacts."
+  },
   "python": "3.12.3",
   "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
-  "numpy": "2.4.3",
-  "torch": "2.11.0+cu130",
-  "transformers": "5.3.0"
+  "machine": "x86_64",
+  "packages": {
+    "numpy": "2.4.3",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.3.0",
+    "sentence-transformers": "not installed",
+    "scipy": "not installed",
+    "scikit-learn": "not installed",
+    "requests": "2.32.5",
+    "fastapi": "0.135.2",
+    "uvicorn": "0.42.0"
+  },
+  "hardware": {
+    "machine": "x86_64",
+    "processor": "x86_64",
+    "cpu_count": 20,
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "uname": {
+      "system": "Linux",
+      "node": "Acer",
+      "release": "6.6.87.2-microsoft-standard-WSL2",
+      "version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+      "machine": "x86_64",
+      "processor": "x86_64"
+    },
+    "mem_total_gb": 7.61,
+    "cpu_model": "12th Gen Intel(R) Core(TM) i7-12700H",
+    "gpus": [
+      {
+        "name": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+        "driver": "610.62",
+        "memory": "8192 MiB",
+        "compute_cap": "8.6"
+      }
+    ],
+    "torch_cuda_available": true,
+    "torch_version": "2.5.1+cu124",
+    "torch_cuda_device": "NVIDIA GeForce RTX 3070 Ti Laptop GPU"
+  },
+  "pythonhashseed": "0"
 }

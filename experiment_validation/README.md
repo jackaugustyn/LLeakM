@@ -15,6 +15,13 @@ Główny zbiór obejmuje:
 - 3 próbki rekonstruktora na segment, maksymalnie 3 zdania i 3 kandydatów pierwszego zdania,
 - seed analiz `20260706`.
 
+Jest to zamrożony snapshot pierwotnego benchmarku. Przed zgłoszeniem artykułu
+należy dodatkowo wykonać opisany niżej protokół odporności: pięć seedów
+rekonstruktora, wspólne seedy między warunkami, wszystkie segmenty odpowiedzi
+oraz atakujący kalibrowany na śladach po zastosowaniu obrony. Skrypty nie
+zastępują brakujących pomiarów deklaracjami — wynik częściowy jest jawnie
+oznaczany `complete: false`.
+
 Phi-1.5 jest modelem bazowym i pełni rolę stress testu. Główne porównania modeli dostrojonych instrukcyjnie/czatowo obejmują pozostałe sześć modeli.
 
 ## Struktura
@@ -81,6 +88,7 @@ HF_HUB_OFFLINE=1 python experiment_validation/scripts/run_validation.py \
   --samples-per-segment 3 \
   --max-sentences 3 \
   --num-first-candidates 3 \
+  --reconstruction-seed 20260706 \
   --label qwen_1_5b
 ```
 
@@ -139,6 +147,71 @@ HF_HUB_OFFLINE=1 python experiment_validation/scripts/defense_eval.py \
 ```
 
 Baseline'y porównują ślad rzeczywisty z sekwencją przetasowaną, stałą i pochodzącą z innego promptu. Obrony obejmują `bucket_8`, `pad_32`, `batch_2`, `batch_4` i `rand_pad_8`. Są oceniane przeciwko zamrożonemu, nieadaptacyjnemu rekonstruktorowi.
+
+## Wzmocniony protokół: wspólne seedy i adaptacyjny atakujący
+
+`scripts/robustness_eval.py` odtwarza zapisane ślady pięć razy, z tym samym
+seedem dekodera dla wszystkich warunków danego promptu. Domyślnie używa po dwa
+prompty z każdego z 15 tematów jako zbiór testowy (30 na model), a pozostałe
+270 jako rozłączny zbiór kalibracyjny. Adaptacyjny atakujący uczy się na nim
+empirycznego odwzorowania MAP ze śladu po obronie do długości czystych; dla
+batchingu uczy się także rozkładów krotek o danej sumie. Nie jest to ponowne
+trenowanie T5 i tak właśnie należy go opisywać w artykule.
+
+Najpierw można sprawdzić plan bez ładowania modeli:
+
+```bash
+python experiment_validation/scripts/robustness_eval.py --plan
+```
+
+Pełny przebieg dwóch modeli pilotażowych:
+
+```bash
+HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 \
+python experiment_validation/scripts/robustness_eval.py
+```
+
+Domyślne `--max-sentences 0` oznacza rekonstrukcję wszystkich dostępnych
+segmentów. Powstają `analysis/robustness_samples.jsonl`, konfiguracja z
+identyfikatorem protokołu oraz `analysis/robustness_eval.json`. Tabela LaTeX
+jest generowana dopiero wtedy, gdy wszystkie oczekiwane komórki są kompletne.
+Wznowienie jest bezpieczne, ponieważ klucz obejmuje model, prompt, obronę,
+wariant atakującego i seed. Opcja `--overwrite` jest celowa i usuwa wyłącznie
+wskazany plik wynikowy.
+
+## Pełne odpowiedzi
+
+Nowa kampania powinna generować do EOS z wyższym bezpiecznikiem długości i
+rekonstruować wszystkie segmenty. `app.py` zapisuje teraz `finish_reason` oraz
+`response_complete`; token EOS nie jest włączany do tekstu ani śladu. Dla
+porównywalności z pierwotną kampanią można zachować format promptu `legacy`:
+
+```bash
+python experiment_validation/scripts/run_model_matrix.py \
+  --models-file experiment_validation/models_publication.json \
+  --prompts 300 \
+  --max-new-tokens 512 \
+  --samples-per-segment 3 \
+  --max-sentences 0 \
+  --num-first-candidates 3 \
+  --prompt-format legacy \
+  --reconstruction-seed 20260706 \
+  --hf-offline
+```
+
+Wyniki pełnych odpowiedzi należy analizować z filtrem `--complete-only`; skrypt
+przerwie pracę, jeśli w którymkolwiek temacie zabraknie wymaganej liczby
+odpowiedzi zakończonych EOS. Katalogi nowych przebiegów podaje się jawnie, np.:
+
+```bash
+python experiment_validation/scripts/robustness_eval.py \
+  --run-spec qwen_full=run_YYYYMMDD_HHMMSS_qwen_1_5b_full \
+  --run-spec llama_full=run_YYYYMMDD_HHMMSS_llama_3_2_3b_full \
+  --complete-only
+```
+
+Nie należy nazywać odpowiedzi „pełną” wyłącznie dlatego, że zwiększono limit:
+do analizy complete-only kwalifikuje ją dopiero `finish_reason=eos`.
 
 ## Reprodukowalność
 

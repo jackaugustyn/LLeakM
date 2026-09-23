@@ -1,0 +1,53 @@
+{
+  "protocol_id": "028a07f6eb2ebdd2",
+  "schema_version": 1,
+  "run_labels": [
+    "qwen_1_5b",
+    "llama_3_2_3b"
+  ],
+  "run_directories": {
+    "qwen_1_5b": "run_full_20260920_qwen_1_5b_full",
+    "llama_3_2_3b": "run_full_20260920_llama_3_2_3b_full"
+  },
+  "models": {
+    "qwen_1_5b": "Qwen/Qwen2.5-1.5B-Instruct",
+    "llama_3_2_3b": "meta-llama/Llama-3.2-3B-Instruct"
+  },
+  "conditions": [
+    "baseline",
+    "bucket_8",
+    "pad_32",
+    "batch_2",
+    "batch_4",
+    "rand_pad_8"
+  ],
+  "attackers": [
+    "frozen",
+    "adaptive"
+  ],
+  "decoder_seeds": [
+    20260706,
+    20260707,
+    20260708,
+    20260709,
+    20260710
+  ],
+  "common_random_numbers": true,
+  "decoder_seed_derivation": "blake2s('decoder', seed_index, prompt_idx)",
+  "trace_seed": 20260920,
+  "test_per_topic": 2,
+  "complete_only": false,
+  "max_test_prompts": 0,
+  "expected_prompts_per_model": 30,
+  "calibration_prompt_counts": {
+    "qwen_1_5b": 270,
+    "llama_3_2_3b": 270
+  },
+  "calibration_draws_rand_pad_8": 16,
+  "minimum_calibration_prompts": 200,
+  "samples_per_segment": 1,
+  "num_first_candidates": 1,
+  "max_sentences": 1,
+  "all_segments": false,
+  "adaptive_attacker": "prompt-disjoint empirical MAP inverse plus unchanged T5 decoder"
+}

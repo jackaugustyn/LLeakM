@@ -16,7 +16,7 @@ Key findings:
 
 1. Mean lexical reconstruction score `phi` varies from 0.3242 for Qwen2.5-1.5B-Instruct to 0.0239 for Phi-3.5-mini-instruct.
 2. Nineteen of 21 paired cross-model differences remain significant after Holm correction.
-3. Model identity retains explanatory power after controlling for response length, mean token bytes, and truncation (`R²=0.646` for the full model versus `0.642` for model indicators alone and `0.511` for covariates alone).
+3. Model identity retains explanatory power after controlling for response length, mean token bytes, and truncation (`R²=0.646` for the full model versus `0.642` for model indicators alone and `0.509` for covariates alone).
 4. Real token-length traces outperform shuffled, constant-length, and cross-prompt controls on the two-model baseline subset.
 5. Five defense configurations substantially reduce reconstruction score against the fixed, non-adaptive reconstructor. No defended sample exceeds `phi > 0.5` in the evaluated subset, although the Wilson upper bound remains about 11.35%.
 
@@ -131,7 +131,7 @@ For the six instruction/chat models (`n=1800`):
 |---|---:|
 | Full model + length controls | 0.646 |
 | Model indicators only | 0.642 |
-| Length/truncation covariates only | 0.511 |
+| Length/truncation covariates only | 0.509 |
 
 The full model improves only slightly over model identity alone, while covariates alone explain substantially less variance. The observed ordering is therefore not reducible to response length statistics, although tokenizer and style remain part of what the fixed reconstructor transfers across.
 

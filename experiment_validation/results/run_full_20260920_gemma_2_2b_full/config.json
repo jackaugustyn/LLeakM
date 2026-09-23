@@ -1,0 +1,21 @@
+{
+  "base_url": "http://127.0.0.1:8010/generate_sse",
+  "prompts_dir": "/home/paugustynowicz/LLeakM/experiment_validation/prompts",
+  "log_dir": "logs",
+  "max_prompts": 300,
+  "max_new_tokens": 512,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "prompt_format": "legacy",
+  "samples_per_segment": 3,
+  "max_sentences": 0,
+  "num_first_candidates": 3,
+  "reconstruction_seed_base": 20260706,
+  "semantic_backend_requested": "auto",
+  "label": "gemma_2_2b_full",
+  "semantic_backend_used": "tfidf",
+  "status": "complete",
+  "victim_model_ids": [
+    "google/gemma-2-2b-it"
+  ]
+}

@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import json
 import os
+import random
 import re
 from dataclasses import dataclass
 from pathlib import Path
@@ -141,7 +142,30 @@ class ReconstructionResult:
     first_sentence: str
     full_text: str
     sentence_count: int
+    available_segment_count: int
     top_candidates: list[str]
+
+
+def seed_reconstructor(seed: int) -> None:
+    """Seed every RNG used by the stochastic reconstruction decoder.
+
+    Calling this at the start of each reconstruction makes it possible to use
+    common random numbers across experimental conditions.  CUDA generators are
+    seeded as well when CUDA is available.
+    """
+    random.seed(seed)
+    try:
+        import numpy as np
+
+        np.random.seed(seed % (2**32 - 1))
+    except ImportError:
+        pass
+
+    import torch
+
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
 
 
 def _generate_with_compat_fallback(model, **gen_kwargs):
@@ -166,11 +190,15 @@ def _generate_with_compat_fallback(model, **gen_kwargs):
 
 
 def _choose_device() -> str:
+    forced = os.environ.get("LLEAKM_RECONSTRUCT_DEVICE", "").strip().lower()
     try:
         import torch
 
-        if getattr(torch, "cuda", None) and torch.cuda.is_available():
-            return "cuda"
+        if forced == "cpu":
+            return "cpu"
+        if forced == "cuda" or (not forced and getattr(torch, "cuda", None) and torch.cuda.is_available()):
+            if getattr(torch, "cuda", None) and torch.cuda.is_available():
+                return "cuda"
     except ImportError:
         pass
     return "cpu"
@@ -187,6 +215,7 @@ def _load_model_bundle(model_name: str):
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     device = _choose_device()
     model = model.to(device)
+    model.eval()
     bundle = (model, tokenizer, device)
     _MODEL_CACHE[model_name] = bundle
     return bundle
@@ -216,41 +245,47 @@ def _sample_and_rank(
     Generuje `samples` niezależnych próbek i sortuje je wg confidence.
     Confidence liczymy jako sumę log-prawdopodobieństw tokenów generacji.
     """
+    import torch
+
     inputs = _prepare_input(tokenizer, device, input_text, max_length=max_length)
     best_per_text: dict[str, float] = {}
+    n_samples = max(1, samples)
 
-    for _ in range(max(1, samples)):
-        outputs = _generate_with_compat_fallback(
-            model,
-            **inputs,
+    with torch.inference_mode():
+        gen_kwargs = dict(
             max_length=max_length,
-            output_scores=True,
             return_dict_in_generate=True,
             no_repeat_ngram_size=2,
             do_sample=True,
             top_k=50,
             temperature=1.0,
-            num_return_sequences=1,
+            num_return_sequences=n_samples,
         )
-
-        sequence = outputs.sequences[0:1]
-        text = tokenizer.decode(sequence[0], skip_special_tokens=True).strip()
-        if not text:
-            continue
-
-        try:
-            transition_scores = model.compute_transition_scores(
-                sequence,
-                outputs.scores,
-                normalize_logits=True,
-            )
-            confidence = float(transition_scores.sum().item())
-        except Exception:
-            confidence = float("-inf")
-
-        existing = best_per_text.get(text)
-        if existing is None or confidence > existing:
-            best_per_text[text] = confidence
+        if n_samples > 1:
+            gen_kwargs["output_scores"] = True
+        outputs = _generate_with_compat_fallback(model, **inputs, **gen_kwargs)
+        sequences = outputs.sequences
+        transition = None
+        if n_samples > 1 and getattr(outputs, "scores", None) is not None:
+            try:
+                transition = model.compute_transition_scores(
+                    sequences,
+                    outputs.scores,
+                    normalize_logits=True,
+                )
+            except Exception:
+                transition = None
+        for i in range(sequences.shape[0]):
+            text = tokenizer.decode(sequences[i], skip_special_tokens=True).strip()
+            if not text:
+                continue
+            if transition is None:
+                confidence = 0.0
+            else:
+                confidence = float(transition[i].sum().item())
+            existing = best_per_text.get(text)
+            if existing is None or confidence > existing:
+                best_per_text[text] = confidence
 
     ranked = sorted(best_per_text.items(), key=lambda item: item[1], reverse=True)
     return ranked
@@ -259,8 +294,9 @@ def _sample_and_rank(
 def reconstruct(
     token_lengths: list[int],
     num_first_candidates: int = 5,
-    max_sentences: int = 5,
+    max_sentences: int | None = 5,
     samples_per_segment: int = 10,
+    seed: int | None = None,
 ) -> ReconstructionResult:
     """
     Rekonstruuje odpowiedź LLM z sekwencji długości tokenów (bajty UTF-8).
@@ -271,19 +307,30 @@ def reconstruct(
     Args:
         token_lengths: Lista długości tokenów w bajtach (np. z frame_lengths).
         num_first_candidates: Ile kandydatów pierwszego zdania zwrócić.
-        max_sentences: Maksymalna liczba rekonstruowanych zdań.
+        max_sentences: Maksymalna liczba rekonstruowanych segmentów. Wartość
+            ``None`` albo liczba niedodatnia oznacza wszystkie segmenty.
+        seed: Opcjonalny seed dekodera. Ten sam seed można zastosować do
+            wszystkich warunków dla danej próbki (common random numbers).
 
     Returns:
         ReconstructionResult z najlepszym pierwszym zdaniem i pełnym tekstem.
     """
+    if seed is not None:
+        seed_reconstructor(seed)
+
     sentence_lengths = heuristic_sentences_from_lengths(token_lengths)
     if not sentence_lengths:
         return ReconstructionResult(
             first_sentence="",
             full_text="",
             sentence_count=0,
+            available_segment_count=0,
             top_candidates=[],
         )
+
+    segment_limit = len(sentence_lengths)
+    if max_sentences is not None and max_sentences > 0:
+        segment_limit = min(segment_limit, max_sentences)
 
     first_model, first_tokenizer, first_device = _load_model_bundle(FIRST_SENTENCES_MODEL)
     middle_model, middle_tokenizer, middle_device = _load_model_bundle(MIDDLE_SENTENCES_MODEL)
@@ -305,7 +352,7 @@ def reconstruct(
     context = best_first
 
     # Rekonstrukcja kolejnych zdań (z kontekstem)
-    for sent_lens in sentence_lengths[1:max_sentences]:
+    for sent_lens in sentence_lengths[1:segment_limit]:
         next_sentence = _generate_middle_sentence(
             sent_lens,
             context,
@@ -324,6 +371,7 @@ def reconstruct(
         first_sentence=best_first,
         full_text=_concat_segments(full_parts),
         sentence_count=len(full_parts),
+        available_segment_count=len(sentence_lengths),
         top_candidates=top_candidates,
     )
 

@@ -173,8 +173,11 @@ class SampleResult:
     prompt: str
     victim_model_id: str
     run_id: str
+    reconstruction_seed: int
     frame_count: int
     token_count: int
+    finish_reason: str
+    response_complete: bool
     response_text: str
     response_first_sentence: str
     pred_first_sentence: str
@@ -220,12 +223,14 @@ def load_prompts(prompts_dir: Path) -> list[PromptCase]:
     return ordered
 
 
-def stream_frame_lengths(base_url: str, prompt: str, max_new_tokens: int, temperature: float, top_p: float, timeout: int) -> tuple[list[int], str]:
+def stream_frame_lengths(base_url: str, prompt: str, max_new_tokens: int, temperature: float,
+                         top_p: float, timeout: int, prompt_format: str = "legacy") -> tuple[list[int], str]:
     params = {
         "prompt": prompt,
         "max_new_tokens": max_new_tokens,
         "temperature": temperature,
         "top_p": top_p,
+        "prompt_format": prompt_format,
     }
 
     frame_lens: list[int] = []
@@ -269,28 +274,38 @@ def pct(cond_count: int, total: int) -> float:
 
 
 def summarize(rows: list[SampleResult]) -> dict:
-    total = len(rows)
+    def metric_block(selected: list[SampleResult]) -> dict:
+        n = len(selected)
+        return {
+            "count": n,
+            "phi_mean": safe_mean(r.phi_cosine for r in selected),
+            "ed_norm_mean": safe_mean(r.ed_norm for r in selected),
+            "rouge1_precision_mean": safe_mean(r.rouge1_precision for r in selected),
+            "rougeL_precision_mean": safe_mean(r.rougeL_precision for r in selected),
+            "first_phi_mean": safe_mean(r.first_phi_cosine for r in selected),
+            "first_ed_norm_mean": safe_mean(r.first_ed_norm for r in selected),
+            "thresholds_percent": {
+                "ED_eq_0": pct(sum(1 for r in selected if r.ed_norm == 0.0), n),
+                "ED_le_0_1": pct(sum(1 for r in selected if r.ed_norm <= 0.1), n),
+                "R1_eq_1": pct(sum(1 for r in selected if r.rouge1_precision >= 1.0), n),
+                "R1_ge_0_9": pct(sum(1 for r in selected if r.rouge1_precision >= 0.9), n),
+                "RL_eq_1": pct(sum(1 for r in selected if r.rougeL_precision >= 1.0), n),
+                "RL_ge_0_9": pct(sum(1 for r in selected if r.rougeL_precision >= 0.9), n),
+                "phi_eq_1": pct(sum(1 for r in selected if r.phi_cosine >= 0.999999), n),
+                "phi_gt_0_9": pct(sum(1 for r in selected if r.phi_cosine > 0.9), n),
+                "ASR_phi_gt_0_5": pct(sum(1 for r in selected if r.phi_cosine > 0.5), n),
+            },
+        }
 
-    summary = {
-        "count": total,
-        "phi_mean": safe_mean(r.phi_cosine for r in rows),
-        "ed_norm_mean": safe_mean(r.ed_norm for r in rows),
-        "rouge1_precision_mean": safe_mean(r.rouge1_precision for r in rows),
-        "rougeL_precision_mean": safe_mean(r.rougeL_precision for r in rows),
-        "first_phi_mean": safe_mean(r.first_phi_cosine for r in rows),
-        "first_ed_norm_mean": safe_mean(r.first_ed_norm for r in rows),
-        "thresholds_percent": {
-            "ED_eq_0": pct(sum(1 for r in rows if r.ed_norm == 0.0), total),
-            "ED_le_0_1": pct(sum(1 for r in rows if r.ed_norm <= 0.1), total),
-            "R1_eq_1": pct(sum(1 for r in rows if r.rouge1_precision >= 1.0), total),
-            "R1_ge_0_9": pct(sum(1 for r in rows if r.rouge1_precision >= 0.9), total),
-            "RL_eq_1": pct(sum(1 for r in rows if r.rougeL_precision >= 1.0), total),
-            "RL_ge_0_9": pct(sum(1 for r in rows if r.rougeL_precision >= 0.9), total),
-            "phi_eq_1": pct(sum(1 for r in rows if r.phi_cosine >= 0.999999), total),
-            "phi_gt_0_9": pct(sum(1 for r in rows if r.phi_cosine > 0.9), total),
-            "ASR_phi_gt_0_5": pct(sum(1 for r in rows if r.phi_cosine > 0.5), total),
-        },
-    }
+    total = len(rows)
+    complete = [row for row in rows if row.response_complete]
+    summary = metric_block(rows)
+    summary.update({
+        "complete_response_count": len(complete),
+        "complete_response_percent": pct(len(complete), total),
+        # This is the only block that may be cited as a complete-answer result.
+        "complete_only": metric_block(complete),
+    })
     return summary
 
 
@@ -354,6 +369,10 @@ def write_outputs(out_dir: Path, rows: list[SampleResult], summary_obj: dict, to
     md.append("## Global Summary")
     md.append("")
     md.append(f"- samples: {summary_obj['count']}")
+    md.append(
+        f"- complete responses (EOS before cap): {summary_obj['complete_response_count']} "
+        f"({summary_obj['complete_response_percent']:.2f}%)"
+    )
     md.append(f"- phi_mean: {summary_obj['phi_mean']:.4f}")
     md.append(f"- ed_norm_mean: {summary_obj['ed_norm_mean']:.4f}")
     md.append(f"- rouge1_precision_mean: {summary_obj['rouge1_precision_mean']:.4f}")
@@ -364,6 +383,16 @@ def write_outputs(out_dir: Path, rows: list[SampleResult], summary_obj: dict, to
     md.append("")
     for k, v in summary_obj["thresholds_percent"].items():
         md.append(f"- {k}: {v:.2f}")
+    md.append("")
+    md.append("## EOS-Complete Responses Only")
+    md.append("")
+    complete = summary_obj["complete_only"]
+    md.append(f"- samples: {complete['count']}")
+    md.append(f"- phi_mean: {complete['phi_mean']:.4f}")
+    md.append(f"- ed_norm_mean: {complete['ed_norm_mean']:.4f}")
+    md.append(f"- rouge1_precision_mean: {complete['rouge1_precision_mean']:.4f}")
+    md.append(f"- rougeL_precision_mean: {complete['rougeL_precision_mean']:.4f}")
+    md.append(f"- ASR (phi > 0.5): {complete['thresholds_percent']['ASR_phi_gt_0_5']:.2f}%")
     md.append("")
     md.append("## Per-Topic")
     md.append("")
@@ -389,12 +418,19 @@ def main() -> None:
     parser.add_argument("--max-new-tokens", type=int, default=96)
     parser.add_argument("--temperature", type=float, default=0.0)
     parser.add_argument("--top-p", type=float, default=1.0)
-    parser.add_argument("--timeout", type=int, default=300)
+    parser.add_argument("--prompt-format", choices=["legacy", "chat_template"], default="legacy")
+    parser.add_argument("--timeout", type=int, default=900)
     parser.add_argument("--samples-per-segment", type=int, default=3)
     parser.add_argument("--max-sentences", type=int, default=3)
     parser.add_argument("--num-first-candidates", type=int, default=3)
+    parser.add_argument(
+        "--reconstruction-seed", type=int, default=20260706,
+        help="base decoder seed; the per-prompt seed is base + 1009*prompt index",
+    )
     parser.add_argument("--semantic-backend", choices=["auto", "minilm", "tfidf"], default="auto")
     parser.add_argument("--label", default="", help="Optional label appended to output run directory name")
+    parser.add_argument("--output-dir", default="", help="fixed run directory (required for reliable resume)")
+    parser.add_argument("--resume", action="store_true", help="resume a checkpointed --output-dir")
     args = parser.parse_args()
 
     prompts_dir = Path(args.prompts_dir)
@@ -409,12 +445,56 @@ def main() -> None:
 
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
     suffix = f"_{args.label}" if args.label else ""
-    out_dir = results_root / f"run_{ts}{suffix}"
+    out_dir = Path(args.output_dir) if args.output_dir else results_root / f"run_{ts}{suffix}"
+    if out_dir.exists() and any(out_dir.iterdir()) and not args.resume:
+        raise SystemExit(f"output directory is not empty: {out_dir}; pass --resume to continue it")
     out_dir.mkdir(parents=True, exist_ok=True)
 
     rows: list[SampleResult] = []
+    sample_path = out_dir / "samples.jsonl"
+    if args.resume and sample_path.exists():
+        with sample_path.open(encoding="utf-8") as handle:
+            for line in handle:
+                if line.strip():
+                    rows.append(SampleResult(**json.loads(line)))
+    completed_indices = {row.idx for row in rows}
 
-    for i, case in enumerate(cases, start=1):
+    requested_config = {
+        "base_url": args.base_url,
+        "prompts_dir": str(prompts_dir),
+        "log_dir": str(log_dir),
+        "max_prompts": len(cases),
+        "max_new_tokens": args.max_new_tokens,
+        "temperature": args.temperature,
+        "top_p": args.top_p,
+        "prompt_format": args.prompt_format,
+        "samples_per_segment": args.samples_per_segment,
+        "max_sentences": args.max_sentences,
+        "num_first_candidates": args.num_first_candidates,
+        "reconstruction_seed_base": args.reconstruction_seed,
+        "semantic_backend_requested": args.semantic_backend,
+        "label": args.label,
+    }
+    config_path = out_dir / "config.json"
+    if args.resume and config_path.exists():
+        previous = json.loads(config_path.read_text(encoding="utf-8"))
+        mismatches = {
+            key: (previous.get(key), value)
+            for key, value in requested_config.items()
+            if key in previous and previous.get(key) != value
+        }
+        if mismatches:
+            raise SystemExit(f"resume configuration mismatch: {mismatches}")
+    config_path.write_text(
+        json.dumps({**requested_config, "status": "running"}, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+    pending_cases = [case for case in cases if case.idx not in completed_indices]
+    if completed_indices:
+        print(f"[resume] loaded {len(rows)} samples; {len(pending_cases)} remain", flush=True)
+
+    for case in pending_cases:
         frame_lens, run_id = stream_frame_lengths(
             args.base_url,
             prompt=case.prompt,
@@ -422,17 +502,25 @@ def main() -> None:
             temperature=args.temperature,
             top_p=args.top_p,
             timeout=args.timeout,
+            prompt_format=args.prompt_format,
         )
 
         raw_log = wait_for_log(log_dir=log_dir, run_id=run_id)
         response_text = raw_log.get("response_text", "")
         victim_model_id = raw_log.get("model_id", "")
+        finish_reason = raw_log.get(
+            "finish_reason",
+            "length" if len(raw_log.get("steps", [])) >= args.max_new_tokens else "legacy_unknown",
+        )
+        response_complete = bool(raw_log.get("response_complete", finish_reason == "eos"))
+        reconstruction_seed = args.reconstruction_seed + case.idx * 1009
 
         result = reconstruct_from_frame_lengths(
             frame_lens,
             num_first_candidates=args.num_first_candidates,
             max_sentences=args.max_sentences,
             samples_per_segment=args.samples_per_segment,
+            seed=reconstruction_seed,
         )
 
         pred_text = result.full_text
@@ -458,8 +546,11 @@ def main() -> None:
             prompt=case.prompt,
             victim_model_id=victim_model_id,
             run_id=run_id,
+            reconstruction_seed=reconstruction_seed,
             frame_count=len(frame_lens),
             token_count=max(0, len(frame_lens) - 1),
+            finish_reason=finish_reason,
+            response_complete=response_complete,
             response_text=response_text,
             response_first_sentence=gt_first,
             pred_first_sentence=pred_first,
@@ -478,35 +569,29 @@ def main() -> None:
             first_rougeL_precision=frl_p,
         )
         rows.append(row)
+        with sample_path.open("a", encoding="utf-8") as handle:
+            handle.write(json.dumps(asdict(row), ensure_ascii=False) + "\n")
+            handle.flush()
 
-        if i % 10 == 0 or i == len(cases):
-            progress_path = out_dir / "progress.json"
-            progress_payload = {
-                "done": i,
-                "total": len(cases),
-                "last_topic": case.topic,
-                "last_run_id": run_id,
-            }
-            progress_path.write_text(json.dumps(progress_payload, ensure_ascii=False, indent=2), encoding="utf-8")
-            print(f"[{i}/{len(cases)}] topic={case.topic} run_id={run_id} phi={phi:.3f} ed={ed_norm:.3f}")
+        done_count = len(rows)
+        progress_path = out_dir / "progress.json"
+        progress_payload = {
+            "done": done_count,
+            "total": len(cases),
+            "last_topic": case.topic,
+            "last_run_id": run_id,
+        }
+        progress_path.write_text(json.dumps(progress_payload, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"[{done_count}/{len(cases)}] topic={case.topic} run_id={run_id} phi={phi:.3f} ed={ed_norm:.3f}", flush=True)
 
     summary_obj = summarize(rows)
     topic_obj = by_topic(rows)
 
     cfg = {
-        "base_url": args.base_url,
-        "prompts_dir": str(prompts_dir),
-        "log_dir": str(log_dir),
-        "max_prompts": len(cases),
-        "max_new_tokens": args.max_new_tokens,
-        "temperature": args.temperature,
-        "top_p": args.top_p,
-        "samples_per_segment": args.samples_per_segment,
-        "max_sentences": args.max_sentences,
-        "num_first_candidates": args.num_first_candidates,
+        **requested_config,
         "semantic_backend_requested": args.semantic_backend,
         "semantic_backend_used": scorer.backend,
-        "label": args.label,
+        "status": "complete",
         "victim_model_ids": sorted({r.victim_model_id for r in rows if r.victim_model_id}),
     }
 

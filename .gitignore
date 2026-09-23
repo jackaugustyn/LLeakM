@@ -1,4 +1,6 @@
 .venv/
+.venv-analysis/
+experiment_validation/_analysis_pkgs/
 
 # Local/runtime state
 .codex
@@ -19,6 +21,7 @@ article1/t[0-9]*.pdf
 article1/Definitions/*-converted-to.pdf
 
 # Intermediate experiment material not used by the manuscript
+experiment_validation/results/run_smoke_*/
 experiment_validation/analysis/*.log
 experiment_validation/prompts_remaining_*/
 experiment_validation/results/run_20260325_072116/

@@ -53,16 +53,17 @@
   },
   {
     "model": "Phi-1.5",
-    "params": "~1.3B",
+    "params": "1.3B",
     "kind": "base",
     "family": "Phi",
     "n": 300,
-    "mean_tokens": NaN,
-    "median_tokens": NaN,
+    "mean_tokens": 95.99333333333334,
+    "median_tokens": 96.0,
     "mean_chars": 496.68666666666667,
-    "mean_token_utf8": NaN,
-    "trunc_pct": 0.0,
-    "model_id": ""
+    "mean_token_utf8": 5.174,
+    "trunc_pct": 99.66666666666667,
+    "model_id": "microsoft/phi-1_5",
+    "note": "token_count from samples.jsonl; mean_token_utf8 is mean_chars/mean_tokens because per-token UTF-8 logs are not stored in this run's samples.jsonl"
   },
   {
     "model": "TinyLlama-1.1B-Chat",

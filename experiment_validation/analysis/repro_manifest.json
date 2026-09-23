@@ -1,13 +1,78 @@
 {
-  "generated_utc": "2026-08-03T10:31:32.280855+00:00",
-  "git_commit": "40b0f9a23ee1141cba5a2cab52e8c2747f69d5ba",
+  "generated_utc": "2026-09-19T09:47:51.860916+00:00",
+  "git_commit": "eef1f7b917a8557bd6601d0775ffc173a39545a7",
   "environment": {
+    "collection": {
+      "python": "3.12.3",
+      "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "machine": "x86_64",
+      "packages": {
+        "numpy": "2.4.3",
+        "torch": "2.11.0+cu130",
+        "transformers": "5.3.0",
+        "sentence-transformers": "not installed",
+        "scipy": "not installed",
+        "scikit-learn": "not installed",
+        "requests": "2.32.5",
+        "fastapi": "0.135.2",
+        "uvicorn": "0.42.0"
+      },
+      "note": "Frozen environment used to collect traces and compute the publication statistics."
+    },
+    "analysis_rerun": {
+      "python": "3.10.12",
+      "python_full": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+      "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+      "machine": "x86_64",
+      "packages": {
+        "numpy": "2.2.6",
+        "torch": "2.5.1",
+        "transformers": "4.46.3",
+        "sentence-transformers": "3.3.1",
+        "scipy": "1.8.0",
+        "scikit-learn": "1.2.2",
+        "requests": "2.30.0",
+        "fastapi": "0.128.0",
+        "uvicorn": "0.40.0",
+        "protobuf": "4.23.0",
+        "sentencepiece": "not installed"
+      },
+      "hardware": {
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "cpu_count": 20,
+        "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+        "uname": {
+          "system": "Linux",
+          "node": "Acer",
+          "release": "6.6.87.2-microsoft-standard-WSL2",
+          "version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+          "machine": "x86_64",
+          "processor": "x86_64"
+        },
+        "mem_total_gb": 7.61,
+        "cpu_model": "12th Gen Intel(R) Core(TM) i7-12700H",
+        "gpus": [
+          {
+            "name": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+            "driver": "610.62",
+            "memory": "8192 MiB",
+            "compute_cap": "8.6"
+          }
+        ],
+        "torch_cuda_available": true,
+        "torch_version": "2.5.1+cu124",
+        "torch_cuda_device": "NVIDIA GeForce RTX 3070 Ti Laptop GPU"
+      },
+      "pythonhashseed": "0",
+      "note": "Host used to re-run publication analyses from released artifacts."
+    },
     "python": "3.12.3",
     "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
     "machine": "x86_64",
     "packages": {
       "numpy": "2.4.3",
-      "torch": "2.11.0",
+      "torch": "2.11.0+cu130",
       "transformers": "5.3.0",
       "sentence-transformers": "not installed",
       "scipy": "not installed",
@@ -15,7 +80,35 @@
       "requests": "2.32.5",
       "fastapi": "0.135.2",
       "uvicorn": "0.42.0"
-    }
+    },
+    "hardware": {
+      "machine": "x86_64",
+      "processor": "x86_64",
+      "cpu_count": 20,
+      "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+      "uname": {
+        "system": "Linux",
+        "node": "Acer",
+        "release": "6.6.87.2-microsoft-standard-WSL2",
+        "version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+        "machine": "x86_64",
+        "processor": "x86_64"
+      },
+      "mem_total_gb": 7.61,
+      "cpu_model": "12th Gen Intel(R) Core(TM) i7-12700H",
+      "gpus": [
+        {
+          "name": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+          "driver": "610.62",
+          "memory": "8192 MiB",
+          "compute_cap": "8.6"
+        }
+      ],
+      "torch_cuda_available": true,
+      "torch_version": "2.5.1+cu124",
+      "torch_cuda_device": "NVIDIA GeForce RTX 3070 Ti Laptop GPU"
+    },
+    "pythonhashseed": "0"
   },
   "victim_models": [
     "Qwen/Qwen2.5-1.5B-Instruct",
@@ -30,6 +123,127 @@
     "royweiss1/T5_FirstSentences",
     "royweiss1/T5_MiddleSentences"
   ],
+  "model_revisions": {
+    "Qwen/Qwen2.5-1.5B-Instruct": {
+      "id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "local_ref": null,
+      "local_snapshots": [],
+      "tokenizer_class": "Qwen2Tokenizer",
+      "tokenizer_revision": null,
+      "source": "not_in_local_cache",
+      "hub_sha_at_audit": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "hub_sha_note": "Hub main SHA at audit time; the original collection snapshot is no longer in the local cache."
+    },
+    "Qwen/Qwen2.5-3B-Instruct": {
+      "id": "Qwen/Qwen2.5-3B-Instruct",
+      "local_ref": null,
+      "local_snapshots": [],
+      "tokenizer_class": "Qwen2Tokenizer",
+      "tokenizer_revision": null,
+      "source": "not_in_local_cache",
+      "hub_sha_at_audit": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "hub_sha_note": "Hub main SHA at audit time; the original collection snapshot is no longer in the local cache."
+    },
+    "meta-llama/Llama-3.2-3B-Instruct": {
+      "id": "meta-llama/Llama-3.2-3B-Instruct",
+      "local_ref": null,
+      "local_snapshots": [],
+      "tokenizer_class": "PreTrainedTokenizerFast",
+      "tokenizer_revision": null,
+      "source": "not_in_local_cache",
+      "hub_sha_at_audit": "0cb88a4f764b7a12671c53f0838cd831a0843b95",
+      "hub_sha_note": "Hub main SHA at audit time; the original collection snapshot is no longer in the local cache."
+    },
+    "google/gemma-2-2b-it": {
+      "id": "google/gemma-2-2b-it",
+      "local_ref": null,
+      "local_snapshots": [],
+      "tokenizer_class": "GemmaTokenizer",
+      "tokenizer_revision": null,
+      "source": "not_in_local_cache",
+      "hub_sha_at_audit": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+      "hub_sha_note": "Hub main SHA at audit time; the original collection snapshot is no longer in the local cache."
+    },
+    "microsoft/phi-1_5": {
+      "id": "microsoft/phi-1_5",
+      "local_ref": "77aa61eeac94fbf33d492b9f2744c98b42d5b5eb",
+      "local_snapshots": [
+        "77aa61eeac94fbf33d492b9f2744c98b42d5b5eb"
+      ],
+      "tokenizer_class": "CodeGenTokenizer",
+      "tokenizer_revision": "77aa61eeac94fbf33d492b9f2744c98b42d5b5eb",
+      "source": "huggingface_hub_cache",
+      "model_type": "phi",
+      "architectures": [
+        "PhiForCausalLM"
+      ]
+    },
+    "TinyLlama/TinyLlama-1.1B-Chat-v1.0": {
+      "id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "local_ref": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+      "local_snapshots": [
+        "fe8a4ea1ffedaf415f4da2f062534de366a451e6"
+      ],
+      "tokenizer_class": "LlamaTokenizer",
+      "tokenizer_revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+      "source": "huggingface_hub_cache",
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM"
+      ]
+    },
+    "microsoft/Phi-3.5-mini-instruct": {
+      "id": "microsoft/Phi-3.5-mini-instruct",
+      "local_ref": "2fe192450127e6a83f7441aef6e3ca586c338b77",
+      "local_snapshots": [
+        "2fe192450127e6a83f7441aef6e3ca586c338b77"
+      ],
+      "tokenizer_class": "LlamaTokenizer",
+      "tokenizer_revision": "2fe192450127e6a83f7441aef6e3ca586c338b77",
+      "source": "huggingface_hub_cache",
+      "model_type": "phi3",
+      "architectures": [
+        "Phi3ForCausalLM"
+      ]
+    }
+  },
+  "reconstruction_revisions": {
+    "royweiss1/T5_FirstSentences": {
+      "id": "royweiss1/T5_FirstSentences",
+      "local_ref": "057cf090b719f5cf89da504babd2122d404e0953",
+      "local_snapshots": [
+        "057cf090b719f5cf89da504babd2122d404e0953"
+      ],
+      "tokenizer_class": "T5Tokenizer",
+      "tokenizer_revision": "057cf090b719f5cf89da504babd2122d404e0953",
+      "source": "huggingface_hub_cache",
+      "model_type": "t5",
+      "architectures": [
+        "T5ForConditionalGeneration"
+      ]
+    },
+    "royweiss1/T5_MiddleSentences": {
+      "id": "royweiss1/T5_MiddleSentences",
+      "local_ref": "07e2b3fc96bc129eb4a2871e58731c07e889cecc",
+      "local_snapshots": [
+        "07e2b3fc96bc129eb4a2871e58731c07e889cecc"
+      ],
+      "tokenizer_class": "T5Tokenizer",
+      "tokenizer_revision": "07e2b3fc96bc129eb4a2871e58731c07e889cecc",
+      "source": "huggingface_hub_cache",
+      "model_type": "t5",
+      "architectures": [
+        "T5ForConditionalGeneration"
+      ]
+    }
+  },
+  "seeds": {
+    "analysis": 20260706,
+    "bootstrap_resamples": 10000,
+    "victim_decoding_temperature": 0.0,
+    "victim_decoding_top_p": 1.0,
+    "note": "Publication statistics use numpy.random.Generator(SEED). Defense reconstruction used per-sample seeds (SEED + idx * 131 + hash(defense) % 9973). Set PYTHONHASHSEED=0 before replaying randomized padding."
+  },
   "seed": 20260706,
   "standardized_protocol": {
     "N": 300,
@@ -251,20 +465,36 @@
       "bytes": 10235
     },
     "experiment_validation/scripts/analyze_stats.py": {
-      "sha256": "d3b98d97780c1a388ffa31d8d8c238c38b8db86a734c7d4343ecb66f57b04e50",
-      "bytes": 13638
+      "sha256": "7ae7dc73758764f225fdafd52721fb6e4df313de067a9e7ed566405341407368",
+      "bytes": 13818
+    },
+    "experiment_validation/scripts/analyze_extras.py": {
+      "sha256": "6dc36cb92e0f8d08975dd8f93c83a2916d9346c912850408213179fd0ca50128",
+      "bytes": 21177
     },
     "experiment_validation/scripts/defense_eval.py": {
       "sha256": "717a03ec869c2206b2cee5dee39b0d5e8e7b378227b0267c6ba5c1d1bdd95f2e",
       "bytes": 19686
     },
+    "experiment_validation/scripts/trace_baselines.py": {
+      "sha256": "ccb79b5b4211879a23ef52f332a4b71851336427d9e81a9b29cf9c1fb63d4ed8",
+      "bytes": 8225
+    },
     "experiment_validation/scripts/make_repro_manifest.py": {
-      "sha256": "d2518b2bb49f784e17f1e2456c98a5604378651f2fc300521d4af164f531cd81",
-      "bytes": 7507
+      "sha256": "0584357a2a9714befe23c198d2eb631841fb10e57f280ede033f3f1791ef12e2",
+      "bytes": 17061
     },
     "experiment_validation/scripts/make_figures.py": {
       "sha256": "6387b6db35e57d48f692e66885219b386ce780dcc8393a3865b5e90629ee9845",
       "bytes": 4327
+    },
+    "experiment_validation/scripts/audit_release_content.py": {
+      "sha256": "3baf4abcfaef7dcde137399a3d86329ec5fcddc797170e5dddd261d4e4f2c0a5",
+      "bytes": 10055
+    },
+    "experiment_validation/scripts/verify_manuscript_numbers.py": {
+      "sha256": "cbbf51288bfb15de5b86d63eadccc0a2a2f520f77740f65d2084185268e7bdfd",
+      "bytes": 4173
     }
   },
   "analysis_outputs": {
@@ -321,20 +551,35 @@
       "bytes": 256254
     },
     "analysis/fig_phi_ci.tex": {
-      "sha256": "aec0a39c29baac353a60de1c93928d70fa3e36ce4fe9cb9664e4907120c2f157",
-      "bytes": 502
+      "sha256": "5d45169ac93ff80e00239d6120bd9c602968bcbabbe4d4e7de56ce0aea6c13b5",
+      "bytes": 852
     },
     "analysis/fig_defense.tex": {
-      "sha256": "dabb9ad47ae1d89164fb819b2d214c5b576c1c1555c1dcf4f07a37b986be9eee",
-      "bytes": 1009
+      "sha256": "b3e334407593c24073444aca6bdcf3ddc7ef3aa1d99d30df92fe391f91b04c50",
+      "bytes": 1645
+    },
+    "analysis/release_content_audit.json": {
+      "sha256": "9aaf8bc96de2916ac432abd8a57eda0868f1f9728f5cfdf909c7cdc48b502c7a",
+      "bytes": 1280
+    },
+    "analysis/manuscript_number_verification.json": {
+      "sha256": "348afcc4d54afdfee9b3e86d7e5c7df23a23fbf13d0f0f46a139138f70d519a2",
+      "bytes": 61
+    },
+    "analysis/env_snapshot.json": {
+      "sha256": "40f80a2095f0ee37d18cf0fcae6d31857ace0ef30793db19298b8636e6f4e2c3",
+      "bytes": 3385
     }
   },
   "commands": {
     "prompts": "python experiment_validation/scripts/generate_prompts.py",
     "collect": "HF_HUB_OFFLINE=1 python experiment_validation/scripts/run_validation.py --max-prompts 300 --max-new-tokens 96 --samples-per-segment 3 --max-sentences 3",
-    "stats": "python experiment_validation/scripts/analyze_stats.py",
-    "defenses": "HF_HUB_OFFLINE=1 python experiment_validation/scripts/defense_eval.py --per-topic 2 --samples-per-segment 3 --max-sentences 3",
+    "stats": "PYTHONHASHSEED=0 python experiment_validation/scripts/analyze_stats.py",
+    "extras": "PYTHONHASHSEED=0 python experiment_validation/scripts/analyze_extras.py",
+    "defenses": "HF_HUB_OFFLINE=1 PYTHONHASHSEED=0 python experiment_validation/scripts/defense_eval.py --per-topic 2 --samples-per-segment 3 --max-sentences 3",
     "figures": "python experiment_validation/scripts/make_figures.py",
+    "audit": "python experiment_validation/scripts/audit_release_content.py",
+    "verify": "python experiment_validation/scripts/verify_manuscript_numbers.py",
     "manifest": "python experiment_validation/scripts/make_repro_manifest.py"
   }
 }

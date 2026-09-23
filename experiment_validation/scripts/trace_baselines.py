@@ -213,8 +213,9 @@ def main() -> None:
         prev = s["model"]
         dlt = s["delta_vs_real"]
         dlt_s = "---" if s["condition"] == "real" else f"{dlt:+.4f}"
+        condition = s["condition"].replace("_", "\\_")
         lines.append(
-            f"{cell} & {s['condition'].replace('_', '\\_')} & {s['n']} & "
+            f"{cell} & {condition} & {s['n']} & "
             f"{s['phi_mean']:.4f} & {{[{s['phi_ci'][0]:.4f}, {s['phi_ci'][1]:.4f}]}} & "
             f"{dlt_s} \\\\")
     (OUT / "tables_trace_baselines.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")

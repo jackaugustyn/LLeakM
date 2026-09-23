@@ -29,21 +29,23 @@ WORD_RE = re.compile(r"[A-Za-z0-9']+")
 SEED = 20260706
 ASR_THRESHOLD = 0.5
 
+# label, pretty, run_dir, hf_id, kind, params, tokenizer, license
+MAX_NEW_TOKENS = 512
 RUNS = [
-    ("qwen_1_5b", "Qwen2.5-1.5B-Instruct", "run_20260325_104518_qwen_1_5b",
-     "Qwen/Qwen2.5-1.5B-Instruct", "instruct", "~1.5B", "Qwen2Tokenizer"),
-    ("qwen_3b", "Qwen2.5-3B-Instruct", "run_20260327_124817_qwen_3b_final_resume",
-     "Qwen/Qwen2.5-3B-Instruct", "instruct", "~3B", "Qwen2Tokenizer"),
-    ("llama_3_2_3b", "Llama-3.2-3B-Instruct", "run_20260414_073030_llama_3_2_3b",
-     "meta-llama/Llama-3.2-3B-Instruct", "instruct", "~3B", "LlamaTokenizer"),
-    ("gemma_2_2b", "Gemma-2-2B-it", "run_20260415_080034_gemma_2_2b_it",
-     "google/gemma-2-2b-it", "instruct", "~2B", "GemmaTokenizer"),
-    ("phi_1_5", "Phi-1.5", "run_20260329_085714_phi_1_5",
-     "microsoft/phi-1_5", "base", "~1.3B", "CodeGenTokenizer"),
-    ("tinyllama_1_1b", "TinyLlama-1.1B-Chat", "run_20260325_153010_tinyllama_1_1b",
-     "TinyLlama/TinyLlama-1.1B-Chat-v1.0", "chat", "~1.1B", "LlamaTokenizer"),
-    ("phi_3_5_mini", "Phi-3.5-mini-instruct", "run_20260414_111644_phi_3_5_mini",
-     "microsoft/Phi-3.5-mini-instruct", "instruct", "~3.8B", "LlamaTokenizer"),
+    ("qwen_1_5b", "Qwen2.5-1.5B-Instruct", "run_full_20260920_qwen_1_5b_full",
+     "Qwen/Qwen2.5-1.5B-Instruct", "instruct", "1.54B", "Qwen2", "Apache 2.0"),
+    ("qwen_3b", "Qwen2.5-3B-Instruct", "run_full_20260920_qwen_3b_full",
+     "Qwen/Qwen2.5-3B-Instruct", "instruct", "3.09B", "Qwen2", "Qwen Research"),
+    ("llama_3_2_3b", "Llama-3.2-3B-Instruct", "run_full_20260920_llama_3_2_3b_full",
+     "meta-llama/Llama-3.2-3B-Instruct", "instruct", "3.2B", "Llama 3", "Llama 3.2 Community"),
+    ("gemma_2_2b", "Gemma-2-2B-it", "run_full_20260920_gemma_2_2b_full",
+     "google/gemma-2-2b-it", "instruct", "2.6B", "Gemma", "Gemma"),
+    ("phi_1_5", "Phi-1.5", "run_full_20260920_phi_1_5_full",
+     "microsoft/phi-1_5", "base", "1.3B", "CodeGen", "MIT"),
+    ("tinyllama_1_1b", "TinyLlama-1.1B-Chat-v1.0", "run_full_20260920_tinyllama_1_1b_full",
+     "TinyLlama/TinyLlama-1.1B-Chat-v1.0", "chat", "1.1B", "Llama 2", "Apache 2.0"),
+    ("phi_3_5_mini", "Phi-3.5-mini-instruct", "run_full_20260920_phi_3_5_mini_full",
+     "microsoft/Phi-3.5-mini-instruct", "instruct", "3.8B", "Llama/Phi-3", "MIT"),
 ]
 
 INSTRUCT_LABELS = {r[0] for r in RUNS if r[4] != "base"}
@@ -131,6 +133,10 @@ LEGACY_PAD = "pad_fixed"
 def bytes_of(lengths: list[int]) -> int:
     # Observable payload proxy: sum of emitted frame body lengths (token channel).
     return int(sum(lengths))
+
+
+def logs_available() -> bool:
+    return LOGDIR.exists() and any(LOGDIR.glob("*.json"))
 
 
 def defense_overhead_and_wilson() -> None:
@@ -307,7 +313,7 @@ def covariates_for(label: str, run_dir: str) -> dict[int, dict]:
             rows[idx] = {
                 "chars": chars, "n_tokens": nt if nt else (len(toks) if toks else 0),
                 "mean_token_bytes": mean_tb,
-                "truncated": 1.0 if (nt >= 96 or (toks and len(toks) >= 96)) else 0.0,
+                "truncated": 1.0 if (nt >= MAX_NEW_TOKENS or (toks and len(toks) >= MAX_NEW_TOKENS)) else 0.0,
                 "topic": o.get("topic", ""),
             }
     return rows
@@ -389,6 +395,22 @@ def ols_covariate_model(phi_by: dict[str, dict[int, float]]) -> None:
     print(f"[extras] regression R2_full={r2:.3f} R2_model={r2_m:.3f} R2_cov={r2_c:.3f}")
 
 
+def length_covariates_table() -> None:
+    lines = ["% Auto-generated response-length covariates"]
+    for label, pretty, run_dir, *_ in RUNS:
+        cov = covariates_for(label, run_dir)
+        n = max(len(cov), 1)
+        mean_tok = float(np.mean([c["n_tokens"] for c in cov.values()]))
+        mean_ch = float(np.mean([c["chars"] for c in cov.values()]))
+        mean_tb = float(np.mean([c["mean_token_bytes"] for c in cov.values()]))
+        trunc = 100.0 * float(np.mean([c["truncated"] for c in cov.values()]))
+        lines.append(
+            f"{pretty} & {mean_tok:.1f} & {mean_ch:.0f} & {mean_tb:.2f} & {trunc:.1f} \\\\"
+        )
+    (OUT / "tables_length.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print("[extras] wrote tables_length.tex")
+
+
 def instruct_only_table(phi_by: dict[str, dict[int, float]]) -> None:
     stats = json.loads((OUT / "model_stats.json").read_text())
     lines = ["% Instruct/chat models only (Phi-1.5 excluded)"]
@@ -421,9 +443,9 @@ def instruct_only_table(phi_by: dict[str, dict[int, float]]) -> None:
 def qualitative_examples(phi_by: dict[str, dict[int, float]]) -> None:
     """Pick high/mid/low phi examples + one defense contrast if available."""
     examples = []
-    # From Qwen (strong) and Phi-3.5 (weak)
+    # From Gemma (strongest at 512 tokens) and Phi-3.5 (weak)
     for label, pretty, run_dir, *_ in RUNS:
-        if label not in ("qwen_1_5b", "phi_3_5_mini", "llama_3_2_3b"):
+        if label not in ("gemma_2_2b", "qwen_1_5b", "phi_3_5_mini"):
             continue
         items = []
         with (RESULTS / run_dir / "samples.jsonl").open(encoding="utf-8") as f:
@@ -451,9 +473,13 @@ def qualitative_examples(phi_by: dict[str, dict[int, float]]) -> None:
 
     lines = ["% Qualitative examples (truncated for display)"]
     for e in examples:
-        if e["tag"] != "high" and not (e["model"].startswith("Qwen") and e["tag"] == "low"):
-            if not (e["model"].startswith("Phi-3.5") and e["tag"] == "high"):
-                continue
+        keep = (
+            (e["model"].startswith("Gemma") and e["tag"] == "high")
+            or (e["model"].startswith("Qwen") and e["tag"] == "low")
+            or (e["model"].startswith("Phi-3.5") and e["tag"] == "high")
+        )
+        if not keep:
+            continue
         lines.append(
             f"{esc(e['model'])} & {e['tag']} & {e['phi']:.3f} & "
             f"\\texttt{{{esc(e['response'][:90])}...}} & "
@@ -463,32 +489,12 @@ def qualitative_examples(phi_by: dict[str, dict[int, float]]) -> None:
 
 
 def metadata_table() -> None:
-    lines = ["% Model metadata"]
-    for _, pretty, _, hf_id, kind, params, tok in RUNS:
+    lines = ["% Model metadata (aligned with manuscript Table tab:model_metadata)"]
+    for _, pretty, _, hf_id, kind, params, tok, license_ in RUNS:
         lines.append(
-            f"{pretty} & {params} & {kind} & \\texttt{{{hf_id}}} & {tok} \\\\")
+            f"{pretty} & \\texttt{{{hf_id}}} & {params} & {license_} & {tok} \\\\")
     (OUT / "tables_metadata.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-    # Environment snapshot
-    import platform
-    import sys
-    env = {
-        "python": sys.version.split()[0],
-        "platform": platform.platform(),
-        "numpy": np.__version__,
-    }
-    try:
-        import torch
-        env["torch"] = torch.__version__
-    except ImportError:
-        env["torch"] = "n/a"
-    try:
-        import transformers
-        env["transformers"] = transformers.__version__
-    except ImportError:
-        env["transformers"] = "n/a"
-    (OUT / "env_snapshot.json").write_text(json.dumps(env, indent=2), encoding="utf-8")
-    print("[extras] wrote metadata + env snapshot")
+    print("[extras] wrote metadata table")
 
 
 def topic_heatmap(phi_by: dict[str, dict[int, float]]) -> None:
@@ -511,9 +517,14 @@ def topic_heatmap(phi_by: dict[str, dict[int, float]]) -> None:
 
 
 def main() -> None:
-    defense_overhead_and_wilson()
+    have_logs = logs_available()
+    if have_logs:
+        defense_overhead_and_wilson()
+    else:
+        print("[extras] logs/ is empty; keeping stored defense_overhead.json and covariate_regression.json")
     phi_by = load_recomputed_phi()
     ols_covariate_model(phi_by)
+    length_covariates_table()
     instruct_only_table(phi_by)
     qualitative_examples(phi_by)
     metadata_table()

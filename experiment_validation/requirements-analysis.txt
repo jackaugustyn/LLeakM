@@ -1,0 +1,5 @@
+# Isolated analysis environment (no GPU / no transformers required).
+# The original publication snapshot used Python 3.12.3 and numpy 2.4.3.
+# numpy 2.4.x requires Python >= 3.11; on this host we pin the newest 2.x
+# wheel available for Python 3.10.
+numpy==2.2.6

@@ -36,7 +36,7 @@ def fig_phi_ci() -> None:
         "\\pgfplotsset{width=\\linewidth,height=6cm,compat=1.16}",
         "\\begin{tikzpicture}",
         "\\begin{axis}[",
-        "  ybar, bar width=10pt, ymin=0, ymax=0.40,",
+        "  ybar, bar width=10pt, ymin=0, ymax=0.70,",
         "  ylabel={Mean semantic similarity $\\phi$},",
         "  xtick={" + ",".join(str(i) for i in range(len(stats))) + "},",
         "  xticklabels={" + ",".join("{" + _short(s['model']) + "}" for s in stats) + "},",

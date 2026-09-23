@@ -7,7 +7,7 @@ import time
 import uuid
 from contextlib import asynccontextmanager
 from dataclasses import asdict, dataclass
-from typing import AsyncGenerator
+from typing import AsyncGenerator, Literal
 
 import traceback
 
@@ -53,8 +53,11 @@ class RunLog:
     max_new_tokens: int
     temperature: float
     top_p: float
+    prompt_format: str
     prompt_len_tokens: int
     generated_tokens: int
+    finish_reason: str
+    response_complete: bool
     response_text: str
     response_utf8_len: int
     steps: list[StepMeta]
@@ -96,17 +99,99 @@ def _decode_single_token(tok_id: int) -> str:
     )
 
 
-def _build_input_text(prompt: str) -> str:
+def _build_input_text(prompt: str, prompt_format: str = "legacy") -> str:
     """
     Build model-specific prompt text for chat/instruction models.
 
-    - Qwen2.5: explicit `<|im_start|>...` format.
-    - Other models: plain instruction-style prompt.
+    ``legacy`` preserves the formatting used by the original 96-token
+    campaign. ``chat_template`` applies the checkpoint's declared template and
+    should be preferred for new complete-response experiments.
     """
+    if prompt_format == "chat_template":
+        if not getattr(_tokenizer, "chat_template", None):
+            raise ValueError(
+                f"Tokenizer for {MODEL_ID} does not define a chat template; "
+                "use prompt_format=legacy"
+            )
+        return _tokenizer.apply_chat_template(
+            [{"role": "user", "content": prompt}],
+            tokenize=False,
+            add_generation_prompt=True,
+        )
+
     model_lower = MODEL_ID.lower()
     if "qwen" in model_lower:
         return f"<|im_start|>user\n{prompt}<|im_end|>\n<|im_start|>assistant\n"
     return f"User: {prompt}\nAssistant:"
+
+
+def _uses_hybrid_cache(model: torch.nn.Module) -> bool:
+    """Gemma 2 (and similar) use a fixed-size HybridCache instead of a growing KV tuple."""
+    cfg = model.config
+    if getattr(cfg, "cache_implementation", "") == "hybrid":
+        return True
+    return getattr(cfg, "model_type", "") in {"gemma2"}
+
+
+def _next_token_id(logits: torch.Tensor, temperature: float, top_p: float) -> torch.Tensor:
+    if temperature <= 0:
+        return torch.argmax(logits, dim=-1)
+    probs = torch.softmax(logits / temperature, dim=-1)
+    if top_p < 1.0:
+        sorted_probs, sorted_idx = torch.sort(probs, descending=True)
+        cum = torch.cumsum(sorted_probs, dim=-1)
+        mask = cum > top_p
+        mask[..., 0] = False  # Always keep at least one token.
+        sorted_probs = sorted_probs.masked_fill(mask, 0.0)
+        sorted_probs = sorted_probs / sorted_probs.sum(dim=-1, keepdim=True)
+        next_in_sorted = torch.multinomial(sorted_probs, num_samples=1).squeeze(-1)
+        return sorted_idx.gather(-1, next_in_sorted.unsqueeze(-1)).squeeze(-1)
+    return torch.multinomial(probs, num_samples=1).squeeze(-1)
+
+
+def _eos_id_set(eos_token_id: int | list[int] | None) -> set[int]:
+    if eos_token_id is None:
+        return set()
+    if isinstance(eos_token_id, int):
+        return {eos_token_id}
+    return {int(x) for x in eos_token_id}
+
+
+@torch.inference_mode()
+def _generate_with_hf_generate(
+    input_ids: torch.Tensor,
+    max_new_tokens: int,
+    temperature: float,
+    top_p: float,
+    eos_token_id: int | list[int] | None,
+) -> tuple[list[int], str]:
+    """Gemma 2: HF generate() fits 512 tokens on 8 GB; the manual KV loop does not."""
+    eos_ids = _eos_id_set(eos_token_id)
+    pad_id = _tokenizer.pad_token_id
+    if pad_id is None:
+        pad_id = next(iter(eos_ids), 0)
+    gen_kwargs: dict = {
+        "input_ids": input_ids,
+        "attention_mask": torch.ones_like(input_ids),
+        "max_new_tokens": max_new_tokens,
+        "use_cache": True,
+        "pad_token_id": pad_id,
+    }
+    if eos_ids:
+        gen_kwargs["eos_token_id"] = sorted(eos_ids) if len(eos_ids) > 1 else next(iter(eos_ids))
+    if temperature <= 0:
+        gen_kwargs["do_sample"] = False
+    else:
+        gen_kwargs["do_sample"] = True
+        gen_kwargs["temperature"] = temperature
+        gen_kwargs["top_p"] = top_p
+    out = _model.generate(**gen_kwargs)
+    generated: list[int] = []
+    for tid in out[0, input_ids.shape[1]:].tolist():
+        if tid in eos_ids:
+            return generated, "eos"
+        generated.append(int(tid))
+    return generated, "length"
 
 
 @torch.inference_mode()
@@ -115,15 +200,22 @@ def _generate_one_by_one(
     max_new_tokens: int,
     temperature: float,
     top_p: float,
-    eos_token_id: int | None,
-) -> list[int]:
+    eos_token_id: int | list[int] | None,
+) -> tuple[list[int], str]:
     """
     Generate tokens one-by-one without HF streamer.
 
     Provides 1:1 mapping of token to SSE frame for side-channel analysis.
+    Gemma 2 uses HF generate() so HybridCache is sized correctly and fits 8 GB.
     """
-    past_key_values = None
+    if _model is not None and _uses_hybrid_cache(_model):
+        return _generate_with_hf_generate(
+            input_ids, max_new_tokens, temperature, top_p, eos_token_id
+        )
+
     generated: list[int] = []
+    past_key_values = None
+    eos_ids = _eos_id_set(eos_token_id)
 
     for _ in range(max_new_tokens):
         out = _model(
@@ -131,33 +223,18 @@ def _generate_one_by_one(
             past_key_values=past_key_values,
             use_cache=True,
         )
-        logits = out.logits[:, -1, :]
         past_key_values = out.past_key_values
+        next_id = _next_token_id(out.logits[:, -1, :], temperature, top_p)
 
-        if temperature <= 0:
-            next_id = torch.argmax(logits, dim=-1)
-        else:
-            probs = torch.softmax(logits / temperature, dim=-1)
+        next_token_id = int(next_id.item())
+        # EOS controls termination and is not response content or an SSE event.
+        if next_token_id in eos_ids:
+            return generated, "eos"
 
-            if top_p < 1.0:
-                sorted_probs, sorted_idx = torch.sort(probs, descending=True)
-                cum = torch.cumsum(sorted_probs, dim=-1)
-                mask = cum > top_p
-                mask[..., 0] = False  # Always keep at least one token.
-                sorted_probs = sorted_probs.masked_fill(mask, 0.0)
-                sorted_probs = sorted_probs / sorted_probs.sum(dim=-1, keepdim=True)
-                next_in_sorted = torch.multinomial(sorted_probs, num_samples=1).squeeze(-1)
-                next_id = sorted_idx.gather(-1, next_in_sorted.unsqueeze(-1)).squeeze(-1)
-            else:
-                next_id = torch.multinomial(probs, num_samples=1).squeeze(-1)
-
-        generated.append(int(next_id.item()))
+        generated.append(next_token_id)
         input_ids = torch.cat([input_ids, next_id.unsqueeze(0)], dim=-1)
 
-        if eos_token_id is not None and int(next_id.item()) == int(eos_token_id):
-            break
-
-    return generated
+    return generated, "length"
 
 
 @app.get("/generate_sse")
@@ -166,6 +243,7 @@ async def generate_sse(
     max_new_tokens: int = Query(128, ge=1, le=1024),
     temperature: float = Query(0.0, ge=0.0, le=2.0),
     top_p: float = Query(1.0, ge=0.1, le=1.0),
+    prompt_format: Literal["legacy", "chat_template"] = Query("legacy"),
 ) -> StreamingResponse:
     """
     Stream SSE with side-channel metadata.
@@ -177,16 +255,17 @@ async def generate_sse(
     t0 = time.time()
 
     try:
-        input_text = _build_input_text(prompt)
+        input_text = _build_input_text(prompt, prompt_format=prompt_format)
         enc = _tokenizer(input_text, return_tensors="pt")
         input_ids = enc["input_ids"].to(DEVICE)
         prompt_len_tokens = int(input_ids.shape[-1])
         eos_id = _tokenizer.eos_token_id
 
-        loop = asyncio.get_running_loop()
-        gen_ids = await loop.run_in_executor(
-            None,
-            _generate_one_by_one,
+        if DEVICE == "cuda":
+            torch.cuda.empty_cache()
+        # Stay on the asyncio thread. Gemma HybridCache CUDA kernels fail in
+        # the default executor (device-not-ready / OOM after a prior assert).
+        gen_ids, finish_reason = _generate_one_by_one(
             input_ids,
             max_new_tokens,
             temperature,
@@ -251,8 +330,11 @@ async def generate_sse(
             max_new_tokens=max_new_tokens,
             temperature=temperature,
             top_p=top_p,
+            prompt_format=prompt_format,
             prompt_len_tokens=prompt_len_tokens,
             generated_tokens=len(gen_ids),
+            finish_reason=finish_reason,
+            response_complete=finish_reason == "eos",
             response_text=response_text,
             response_utf8_len=len(response_text.encode("utf-8")),
             steps=steps_meta,

@@ -1,0 +1,55 @@
+{
+  "prompts": {
+    "files": 15,
+    "lines": 300,
+    "synthetic_templates": 300,
+    "non_template": 0
+  },
+  "samples": {
+    "run_20260325_104518_qwen_1_5b": {
+      "n": 300,
+      "empty_response": 0,
+      "empty_pred": 0
+    },
+    "run_20260327_124817_qwen_3b_final_resume": {
+      "n": 300,
+      "empty_response": 0,
+      "empty_pred": 0
+    },
+    "run_20260414_073030_llama_3_2_3b": {
+      "n": 300,
+      "empty_response": 0,
+      "empty_pred": 0
+    },
+    "run_20260415_080034_gemma_2_2b_it": {
+      "n": 300,
+      "empty_response": 0,
+      "empty_pred": 0
+    },
+    "run_20260329_085714_phi_1_5": {
+      "n": 300,
+      "empty_response": 0,
+      "empty_pred": 0
+    },
+    "run_20260325_153010_tinyllama_1_1b": {
+      "n": 300,
+      "empty_response": 0,
+      "empty_pred": 0
+    },
+    "run_20260414_111644_phi_3_5_mini": {
+      "n": 300,
+      "empty_response": 0,
+      "empty_pred": 0
+    }
+  },
+  "hit_count": 0,
+  "hits_by_pattern": {},
+  "hits_by_source_kind": {},
+  "hits": [],
+  "conclusion": {
+    "personal_data_found": false,
+    "high_risk_unsafe_found": false,
+    "redaction_required": false,
+    "notes": "Synthetic first-person prompts only. Flagged public helplines and truncated dummy URLs are not treated as personal data."
+  }
+}
