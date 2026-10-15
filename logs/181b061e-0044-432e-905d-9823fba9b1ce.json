@@ -1,0 +1,1607 @@
+{
+  "run_id": "181b061e-0044-432e-905d-9823fba9b1ce",
+  "prompt": "What warning signs should I watch for with recurrent headaches with light sensitivity with what to monitor at home?",
+  "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "device": "cuda",
+  "max_new_tokens": 512,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "prompt_format": "legacy",
+  "prompt_len_tokens": 30,
+  "generated_tokens": 227,
+  "finish_reason": "eos",
+  "response_complete": true,
+  "response_text": "Sure,herearesomewarningsignstowatchforwithrecurrentheadacheswithlightsensitivity:\n\n1.Headachesthatworsenwithbrightlightorexposuretobrightlight\n2.Headachesthatoccurmorefrequentlyoratdifferenttimesoftheday\n3.Headachesthatoccurindifferentlocationsontheheadorface\n4.Headachesthatoccurwithorwithouteyestrainoreyediscomfort\n5.Headachesthatoccurwithorwithoutnauseaorvomiting\n6.Headachesthatoccurwithorwithoutsensitivitytolightornoise\n7.Headachesthatoccurwithorwithoutvisualdisturbances,suchasblurredvisionordoublevision\n8.Headachesthatoccurwithorwithoutneckorshoulderpain\n9.Headachesthatoccurwithorwithoutfacialpainortension\n10.Headachesthatoccurwithorwithoutdizzinessorvertigo\n\nBymonitoringthesesymptomsathome,youcanidentifyanychangesorpatternsthatmayindicateamoreseriouscondition,suchasamigraineorabraintumor.",
+  "response_utf8_len": 804,
+  "steps": [
+    {
+      "step": 0,
+      "token_text": "Sure",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 1,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 2,
+      "token_text": "here",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 3,
+      "token_text": "are",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 4,
+      "token_text": "some",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 5,
+      "token_text": "warning",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 6,
+      "token_text": "signs",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 7,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 8,
+      "token_text": "watch",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 9,
+      "token_text": "for",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 10,
+      "token_text": "with",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 11,
+      "token_text": "rec",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 12,
+      "token_text": "urrent",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 13,
+      "token_text": "head",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 14,
+      "token_text": "aches",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 15,
+      "token_text": "with",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 16,
+      "token_text": "light",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 17,
+      "token_text": "sens",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 18,
+      "token_text": "itivity",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 19,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 20,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 21,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 22,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 23,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 24,
+      "token_text": "Head",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 25,
+      "token_text": "aches",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 26,
+      "token_text": "that",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 27,
+      "token_text": "w",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 28,
+      "token_text": "ors",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 29,
+      "token_text": "en",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 30,
+      "token_text": "with",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 31,
+      "token_text": "bright",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 32,
+      "token_text": "light",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 33,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 34,
+      "token_text": "expos",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 35,
+      "token_text": "ure",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 36,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 37,
+      "token_text": "bright",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 38,
+      "token_text": "light",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7156
+    },
+    {
+      "step": 39,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 40,
+      "token_text": "2",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 41,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 42,
+      "token_text": "Head",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 43,
+      "token_text": "aches",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 44,
+      "token_text": "that",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 45,
+      "token_text": "occur",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 46,
+      "token_text": "more",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 47,
+      "token_text": "frequently",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 48,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 49,
+      "token_text": "at",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 50,
+      "token_text": "different",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 51,
+      "token_text": "times",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 52,
+      "token_text": "of",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 53,
+      "token_text": "the",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 54,
+      "token_text": "day",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 55,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 56,
+      "token_text": "3",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 57,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 58,
+      "token_text": "Head",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 59,
+      "token_text": "aches",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 60,
+      "token_text": "that",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 61,
+      "token_text": "occur",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 62,
+      "token_text": "in",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 63,
+      "token_text": "different",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 64,
+      "token_text": "locations",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 65,
+      "token_text": "on",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 66,
+      "token_text": "the",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 67,
+      "token_text": "head",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7157
+    },
+    {
+      "step": 68,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 69,
+      "token_text": "face",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 70,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 71,
+      "token_text": "4",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 72,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 73,
+      "token_text": "Head",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 74,
+      "token_text": "aches",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 75,
+      "token_text": "that",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 76,
+      "token_text": "occur",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 77,
+      "token_text": "with",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 78,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 79,
+      "token_text": "without",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 80,
+      "token_text": "eye",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 81,
+      "token_text": "stra",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 82,
+      "token_text": "in",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 83,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 84,
+      "token_text": "eye",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 85,
+      "token_text": "dis",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 86,
+      "token_text": "com",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 87,
+      "token_text": "fort",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 88,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 89,
+      "token_text": "5",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 90,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 91,
+      "token_text": "Head",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 92,
+      "token_text": "aches",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 93,
+      "token_text": "that",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 94,
+      "token_text": "occur",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7158
+    },
+    {
+      "step": 95,
+      "token_text": "with",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 96,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 97,
+      "token_text": "without",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 98,
+      "token_text": "n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 99,
+      "token_text": "ause",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 100,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 101,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 102,
+      "token_text": "vom",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 103,
+      "token_text": "iting",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 104,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 105,
+      "token_text": "6",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 106,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 107,
+      "token_text": "Head",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 108,
+      "token_text": "aches",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 109,
+      "token_text": "that",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 110,
+      "token_text": "occur",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 111,
+      "token_text": "with",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 112,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 113,
+      "token_text": "without",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 114,
+      "token_text": "sens",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 115,
+      "token_text": "itivity",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 116,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 117,
+      "token_text": "light",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 118,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7159
+    },
+    {
+      "step": 119,
+      "token_text": "noise",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 120,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 121,
+      "token_text": "7",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 122,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 123,
+      "token_text": "Head",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 124,
+      "token_text": "aches",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 125,
+      "token_text": "that",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 126,
+      "token_text": "occur",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 127,
+      "token_text": "with",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 128,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 129,
+      "token_text": "without",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 130,
+      "token_text": "visual",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 131,
+      "token_text": "dist",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 132,
+      "token_text": "urban",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 133,
+      "token_text": "ces",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 134,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 135,
+      "token_text": "such",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 136,
+      "token_text": "as",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 137,
+      "token_text": "bl",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 138,
+      "token_text": "ur",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 139,
+      "token_text": "red",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 140,
+      "token_text": "vision",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 141,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 142,
+      "token_text": "double",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 143,
+      "token_text": "vision",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 144,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 145,
+      "token_text": "8",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 146,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7160
+    },
+    {
+      "step": 147,
+      "token_text": "Head",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 148,
+      "token_text": "aches",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 149,
+      "token_text": "that",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 150,
+      "token_text": "occur",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 151,
+      "token_text": "with",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 152,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 153,
+      "token_text": "without",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 154,
+      "token_text": "neck",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 155,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 156,
+      "token_text": "shoulder",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 157,
+      "token_text": "pain",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 158,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 159,
+      "token_text": "9",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 160,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 161,
+      "token_text": "Head",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 162,
+      "token_text": "aches",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 163,
+      "token_text": "that",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 164,
+      "token_text": "occur",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 165,
+      "token_text": "with",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 166,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 167,
+      "token_text": "without",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 168,
+      "token_text": "fa",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 169,
+      "token_text": "cial",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 170,
+      "token_text": "pain",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7161
+    },
+    {
+      "step": 171,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 172,
+      "token_text": "t",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 173,
+      "token_text": "ension",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 174,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 175,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 176,
+      "token_text": "0",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 177,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 178,
+      "token_text": "Head",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 179,
+      "token_text": "aches",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 180,
+      "token_text": "that",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 181,
+      "token_text": "occur",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 182,
+      "token_text": "with",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 183,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 184,
+      "token_text": "without",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 185,
+      "token_text": "d",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 186,
+      "token_text": "izz",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 187,
+      "token_text": "iness",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 188,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 189,
+      "token_text": "vert",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 190,
+      "token_text": "igo",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 191,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 192,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 193,
+      "token_text": "By",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 194,
+      "token_text": "monitoring",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 7162
+    },
+    {
+      "step": 195,
+      "token_text": "these",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 196,
+      "token_text": "sympt",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 197,
+      "token_text": "oms",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 198,
+      "token_text": "at",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 199,
+      "token_text": "home",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 200,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 201,
+      "token_text": "you",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 202,
+      "token_text": "can",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 203,
+      "token_text": "identify",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 204,
+      "token_text": "any",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 205,
+      "token_text": "changes",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 206,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 207,
+      "token_text": "patterns",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 208,
+      "token_text": "that",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 209,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 210,
+      "token_text": "indicate",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 211,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 212,
+      "token_text": "more",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 213,
+      "token_text": "serious",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 214,
+      "token_text": "condition",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 215,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 216,
+      "token_text": "such",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 217,
+      "token_text": "as",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 218,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7163
+    },
+    {
+      "step": 219,
+      "token_text": "mig",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7164
+    },
+    {
+      "step": 220,
+      "token_text": "raine",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7164
+    },
+    {
+      "step": 221,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7164
+    },
+    {
+      "step": 222,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7164
+    },
+    {
+      "step": 223,
+      "token_text": "brain",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7164
+    },
+    {
+      "step": 224,
+      "token_text": "tum",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7164
+    },
+    {
+      "step": 225,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7164
+    },
+    {
+      "step": 226,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7164
+    }
+  ]
+}

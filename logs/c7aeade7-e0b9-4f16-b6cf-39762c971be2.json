@@ -1,0 +1,2986 @@
+{
+  "run_id": "c7aeade7-e0b9-4f16-b6cf-39762c971be2",
+  "prompt": "What warning signs should I watch for with difficulty concentrating while reading with evidence-based learning techniques?",
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "device": "cuda",
+  "max_new_tokens": 512,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "prompt_format": "legacy",
+  "prompt_len_tokens": 26,
+  "generated_tokens": 424,
+  "finish_reason": "eos",
+  "response_complete": true,
+  "response_text": "Difficulty concentrating while reading can be a common issue, especially when using evidence-based learning techniques. Here are some warning signs to watch for:\n\n1. **Frequent Daydreaming**: If you find yourself frequently daydreaming or getting distracted by other thoughts, it might indicate that your mind is wandering.\n\n2. **Difficulty Keeping Track of Information**: If you struggle to keep track of the information you're reading, it could mean that you're not fully engaged or that the material is too complex.\n\n3. **Trouble Remembering Details**: If you find it hard to remember specific details or facts presented in the text, it might suggest that you're not paying close attention.\n\n4. **Inattentive Reading**: If you read through the text quickly without fully comprehending the material, it could indicate that you're not fully engaged or that the material is too challenging.\n\n5. **Avoiding Reading**: If you avoid reading altogether, it might be a sign that you're not interested in the material or that it's too difficult for you.\n\n6. **Difficulty Understanding Complex Concepts**: If you find it hard to understand complex concepts or theories presented in the text, it might suggest that you need to slow down and take more time to process the information.\n\n7. **Lack of Engagement**: If you feel disengaged or bored while reading, it might indicate that the material is not interesting or relevant to you.\n\n8. **Overthinking**: If you find yourself overthinking or getting stuck on certain parts of the text, it might suggest that you're not fully understanding the material.\n\n9. **Difficulty with Multitasking**: If you find it hard to read while doing other tasks at the same time, it might indicate that you're not able to focus effectively.\n\n10. **Avoiding Reading Material**: If you avoid reading material that you know will be difficult or boring, it might suggest that you're not confident in your ability to understand the material.\n\nIf you find that these warning signs persist, it might be helpful to try different reading techniques or seek additional support to improve your concentration and comprehension.",
+  "response_utf8_len": 2139,
+  "steps": [
+    {
+      "step": 0,
+      "token_text": "Difficulty",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 1,
+      "token_text": " concentrating",
+      "token_utf8_len": 14,
+      "sse_frame_utf8_len": 22,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 2,
+      "token_text": " while",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 3,
+      "token_text": " reading",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 4,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 5,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 6,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 7,
+      "token_text": " common",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 8,
+      "token_text": " issue",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 9,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 10,
+      "token_text": " especially",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 11,
+      "token_text": " when",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 12,
+      "token_text": " using",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 13,
+      "token_text": " evidence",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 14,
+      "token_text": "-based",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 15,
+      "token_text": " learning",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 16,
+      "token_text": " techniques",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 17,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 18,
+      "token_text": " Here",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 19,
+      "token_text": " are",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 20,
+      "token_text": " some",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 21,
+      "token_text": " warning",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 22,
+      "token_text": " signs",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 23,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 24,
+      "token_text": " watch",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 25,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 26,
+      "token_text": ":\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 27,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 28,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 29,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 30,
+      "token_text": "F",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 31,
+      "token_text": "requent",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 32,
+      "token_text": " Day",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 33,
+      "token_text": "dream",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 34,
+      "token_text": "ing",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 35,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16235
+    },
+    {
+      "step": 36,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 37,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 38,
+      "token_text": " find",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 39,
+      "token_text": " yourself",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 40,
+      "token_text": " frequently",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 41,
+      "token_text": " day",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 42,
+      "token_text": "dream",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 43,
+      "token_text": "ing",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 44,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 45,
+      "token_text": " getting",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 46,
+      "token_text": " distracted",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 47,
+      "token_text": " by",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 48,
+      "token_text": " other",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 49,
+      "token_text": " thoughts",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 50,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 51,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 52,
+      "token_text": " might",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 53,
+      "token_text": " indicate",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 54,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 55,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 56,
+      "token_text": " mind",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 57,
+      "token_text": " is",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 58,
+      "token_text": " wandering",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 59,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 60,
+      "token_text": "2",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 61,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 62,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 63,
+      "token_text": "Difficulty",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 64,
+      "token_text": " Keeping",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 65,
+      "token_text": " Track",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 66,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 67,
+      "token_text": " Information",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 16236
+    },
+    {
+      "step": 68,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16237
+    },
+    {
+      "step": 69,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16237
+    },
+    {
+      "step": 70,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16237
+    },
+    {
+      "step": 71,
+      "token_text": " struggle",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16237
+    },
+    {
+      "step": 72,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16237
+    },
+    {
+      "step": 73,
+      "token_text": " keep",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16237
+    },
+    {
+      "step": 74,
+      "token_text": " track",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16237
+    },
+    {
+      "step": 75,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16237
+    },
+    {
+      "step": 76,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16237
+    },
+    {
+      "step": 77,
+      "token_text": " information",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 16237
+    },
+    {
+      "step": 78,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16237
+    },
+    {
+      "step": 79,
+      "token_text": "'re",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16237
+    },
+    {
+      "step": 80,
+      "token_text": " reading",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16237
+    },
+    {
+      "step": 81,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16237
+    },
+    {
+      "step": 82,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16237
+    },
+    {
+      "step": 83,
+      "token_text": " could",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16237
+    },
+    {
+      "step": 84,
+      "token_text": " mean",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16237
+    },
+    {
+      "step": 85,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16237
+    },
+    {
+      "step": 86,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16237
+    },
+    {
+      "step": 87,
+      "token_text": "'re",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16237
+    },
+    {
+      "step": 88,
+      "token_text": " not",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16238
+    },
+    {
+      "step": 89,
+      "token_text": " fully",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16238
+    },
+    {
+      "step": 90,
+      "token_text": " engaged",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16238
+    },
+    {
+      "step": 91,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16238
+    },
+    {
+      "step": 92,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16238
+    },
+    {
+      "step": 93,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16238
+    },
+    {
+      "step": 94,
+      "token_text": " material",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16238
+    },
+    {
+      "step": 95,
+      "token_text": " is",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16238
+    },
+    {
+      "step": 96,
+      "token_text": " too",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16238
+    },
+    {
+      "step": 97,
+      "token_text": " complex",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16238
+    },
+    {
+      "step": 98,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16238
+    },
+    {
+      "step": 99,
+      "token_text": "3",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16238
+    },
+    {
+      "step": 100,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16238
+    },
+    {
+      "step": 101,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16238
+    },
+    {
+      "step": 102,
+      "token_text": "Trou",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16238
+    },
+    {
+      "step": 103,
+      "token_text": "ble",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16239
+    },
+    {
+      "step": 104,
+      "token_text": " Remember",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16239
+    },
+    {
+      "step": 105,
+      "token_text": "ing",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16239
+    },
+    {
+      "step": 106,
+      "token_text": " Details",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16239
+    },
+    {
+      "step": 107,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16239
+    },
+    {
+      "step": 108,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16239
+    },
+    {
+      "step": 109,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16239
+    },
+    {
+      "step": 110,
+      "token_text": " find",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16239
+    },
+    {
+      "step": 111,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16239
+    },
+    {
+      "step": 112,
+      "token_text": " hard",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16239
+    },
+    {
+      "step": 113,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16239
+    },
+    {
+      "step": 114,
+      "token_text": " remember",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16239
+    },
+    {
+      "step": 115,
+      "token_text": " specific",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 116,
+      "token_text": " details",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 117,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 118,
+      "token_text": " facts",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 119,
+      "token_text": " presented",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 120,
+      "token_text": " in",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 121,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 122,
+      "token_text": " text",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 123,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 124,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 125,
+      "token_text": " might",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 126,
+      "token_text": " suggest",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 127,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 128,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 129,
+      "token_text": "'re",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 130,
+      "token_text": " not",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 131,
+      "token_text": " paying",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 132,
+      "token_text": " close",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 133,
+      "token_text": " attention",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 134,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 135,
+      "token_text": "4",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 136,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 137,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 138,
+      "token_text": "In",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 139,
+      "token_text": "att",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 140,
+      "token_text": "ent",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 141,
+      "token_text": "ive",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16240
+    },
+    {
+      "step": 142,
+      "token_text": " Reading",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 143,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 144,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 145,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 146,
+      "token_text": " read",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 147,
+      "token_text": " through",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 148,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 149,
+      "token_text": " text",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 150,
+      "token_text": " quickly",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 151,
+      "token_text": " without",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 152,
+      "token_text": " fully",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 153,
+      "token_text": " compreh",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 154,
+      "token_text": "ending",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 155,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 156,
+      "token_text": " material",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 157,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 158,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 159,
+      "token_text": " could",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 160,
+      "token_text": " indicate",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 161,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 162,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 163,
+      "token_text": "'re",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 164,
+      "token_text": " not",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 165,
+      "token_text": " fully",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 166,
+      "token_text": " engaged",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 167,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 168,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 169,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16241
+    },
+    {
+      "step": 170,
+      "token_text": " material",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 171,
+      "token_text": " is",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 172,
+      "token_text": " too",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 173,
+      "token_text": " challenging",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 174,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 175,
+      "token_text": "5",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 176,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 177,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 178,
+      "token_text": "Avoid",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 179,
+      "token_text": "ing",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 180,
+      "token_text": " Reading",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 181,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 182,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 183,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 184,
+      "token_text": " avoid",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 185,
+      "token_text": " reading",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 186,
+      "token_text": " altogether",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 187,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 188,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 189,
+      "token_text": " might",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 190,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 191,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 192,
+      "token_text": " sign",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 193,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 194,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 195,
+      "token_text": "'re",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16242
+    },
+    {
+      "step": 196,
+      "token_text": " not",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 197,
+      "token_text": " interested",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 198,
+      "token_text": " in",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 199,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 200,
+      "token_text": " material",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 201,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 202,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 203,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 204,
+      "token_text": "'s",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 205,
+      "token_text": " too",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 206,
+      "token_text": " difficult",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 207,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 208,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 209,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 210,
+      "token_text": "6",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 211,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 212,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 213,
+      "token_text": "Difficulty",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 214,
+      "token_text": " Understanding",
+      "token_utf8_len": 14,
+      "sse_frame_utf8_len": 22,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 215,
+      "token_text": " Complex",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 216,
+      "token_text": " Concepts",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 217,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 218,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 219,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 220,
+      "token_text": " find",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 221,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16243
+    },
+    {
+      "step": 222,
+      "token_text": " hard",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16244
+    },
+    {
+      "step": 223,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16244
+    },
+    {
+      "step": 224,
+      "token_text": " understand",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16244
+    },
+    {
+      "step": 225,
+      "token_text": " complex",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16244
+    },
+    {
+      "step": 226,
+      "token_text": " concepts",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16244
+    },
+    {
+      "step": 227,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16244
+    },
+    {
+      "step": 228,
+      "token_text": " theories",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16244
+    },
+    {
+      "step": 229,
+      "token_text": " presented",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16244
+    },
+    {
+      "step": 230,
+      "token_text": " in",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16244
+    },
+    {
+      "step": 231,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16244
+    },
+    {
+      "step": 232,
+      "token_text": " text",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16244
+    },
+    {
+      "step": 233,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16244
+    },
+    {
+      "step": 234,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16244
+    },
+    {
+      "step": 235,
+      "token_text": " might",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16244
+    },
+    {
+      "step": 236,
+      "token_text": " suggest",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16244
+    },
+    {
+      "step": 237,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16244
+    },
+    {
+      "step": 238,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16244
+    },
+    {
+      "step": 239,
+      "token_text": " need",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16244
+    },
+    {
+      "step": 240,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 241,
+      "token_text": " slow",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 242,
+      "token_text": " down",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 243,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 244,
+      "token_text": " take",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 245,
+      "token_text": " more",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 246,
+      "token_text": " time",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 247,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 248,
+      "token_text": " process",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 249,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 250,
+      "token_text": " information",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 251,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 252,
+      "token_text": "7",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 253,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 254,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 255,
+      "token_text": "L",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 256,
+      "token_text": "ack",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 257,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 258,
+      "token_text": " Engagement",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 259,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 260,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 261,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 262,
+      "token_text": " feel",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 263,
+      "token_text": " dis",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 264,
+      "token_text": "eng",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 265,
+      "token_text": "aged",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 266,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16245
+    },
+    {
+      "step": 267,
+      "token_text": " bored",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16246
+    },
+    {
+      "step": 268,
+      "token_text": " while",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16246
+    },
+    {
+      "step": 269,
+      "token_text": " reading",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16246
+    },
+    {
+      "step": 270,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16246
+    },
+    {
+      "step": 271,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16246
+    },
+    {
+      "step": 272,
+      "token_text": " might",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16246
+    },
+    {
+      "step": 273,
+      "token_text": " indicate",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16246
+    },
+    {
+      "step": 274,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16246
+    },
+    {
+      "step": 275,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16246
+    },
+    {
+      "step": 276,
+      "token_text": " material",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16246
+    },
+    {
+      "step": 277,
+      "token_text": " is",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16246
+    },
+    {
+      "step": 278,
+      "token_text": " not",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16246
+    },
+    {
+      "step": 279,
+      "token_text": " interesting",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 16246
+    },
+    {
+      "step": 280,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16246
+    },
+    {
+      "step": 281,
+      "token_text": " relevant",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16246
+    },
+    {
+      "step": 282,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16246
+    },
+    {
+      "step": 283,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16246
+    },
+    {
+      "step": 284,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16246
+    },
+    {
+      "step": 285,
+      "token_text": "8",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16246
+    },
+    {
+      "step": 286,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16246
+    },
+    {
+      "step": 287,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16246
+    },
+    {
+      "step": 288,
+      "token_text": "Over",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16247
+    },
+    {
+      "step": 289,
+      "token_text": "thinking",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 290,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 291,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 292,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 293,
+      "token_text": " find",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 294,
+      "token_text": " yourself",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 295,
+      "token_text": " over",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 296,
+      "token_text": "thinking",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 297,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 298,
+      "token_text": " getting",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 299,
+      "token_text": " stuck",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 300,
+      "token_text": " on",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 301,
+      "token_text": " certain",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 302,
+      "token_text": " parts",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 303,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 304,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 305,
+      "token_text": " text",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 306,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 307,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 308,
+      "token_text": " might",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 309,
+      "token_text": " suggest",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 310,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 311,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 312,
+      "token_text": "'re",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16248
+    },
+    {
+      "step": 313,
+      "token_text": " not",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 314,
+      "token_text": " fully",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 315,
+      "token_text": " understanding",
+      "token_utf8_len": 14,
+      "sse_frame_utf8_len": 22,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 316,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 317,
+      "token_text": " material",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 318,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 319,
+      "token_text": "9",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 320,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 321,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 322,
+      "token_text": "Difficulty",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 323,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 324,
+      "token_text": " Mult",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 325,
+      "token_text": "it",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 326,
+      "token_text": "asking",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 327,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 328,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 329,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 330,
+      "token_text": " find",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 331,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 332,
+      "token_text": " hard",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 333,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 334,
+      "token_text": " read",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 335,
+      "token_text": " while",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 336,
+      "token_text": " doing",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 337,
+      "token_text": " other",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16249
+    },
+    {
+      "step": 338,
+      "token_text": " tasks",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 339,
+      "token_text": " at",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 340,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 341,
+      "token_text": " same",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 342,
+      "token_text": " time",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 343,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 344,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 345,
+      "token_text": " might",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 346,
+      "token_text": " indicate",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 347,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 348,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 349,
+      "token_text": "'re",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 350,
+      "token_text": " not",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 351,
+      "token_text": " able",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 352,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 353,
+      "token_text": " focus",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 354,
+      "token_text": " effectively",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 355,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 356,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 357,
+      "token_text": "0",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 358,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 359,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 360,
+      "token_text": "Avoid",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 361,
+      "token_text": "ing",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16250
+    },
+    {
+      "step": 362,
+      "token_text": " Reading",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16251
+    },
+    {
+      "step": 363,
+      "token_text": " Material",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16251
+    },
+    {
+      "step": 364,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16251
+    },
+    {
+      "step": 365,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16251
+    },
+    {
+      "step": 366,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16251
+    },
+    {
+      "step": 367,
+      "token_text": " avoid",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16251
+    },
+    {
+      "step": 368,
+      "token_text": " reading",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16251
+    },
+    {
+      "step": 369,
+      "token_text": " material",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16251
+    },
+    {
+      "step": 370,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16251
+    },
+    {
+      "step": 371,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16251
+    },
+    {
+      "step": 372,
+      "token_text": " know",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16251
+    },
+    {
+      "step": 373,
+      "token_text": " will",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16251
+    },
+    {
+      "step": 374,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16251
+    },
+    {
+      "step": 375,
+      "token_text": " difficult",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16251
+    },
+    {
+      "step": 376,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16251
+    },
+    {
+      "step": 377,
+      "token_text": " boring",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16251
+    },
+    {
+      "step": 378,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16251
+    },
+    {
+      "step": 379,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16251
+    },
+    {
+      "step": 380,
+      "token_text": " might",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16251
+    },
+    {
+      "step": 381,
+      "token_text": " suggest",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 382,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 383,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 384,
+      "token_text": "'re",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 385,
+      "token_text": " not",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 386,
+      "token_text": " confident",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 387,
+      "token_text": " in",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 388,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 389,
+      "token_text": " ability",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 390,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 391,
+      "token_text": " understand",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 392,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 393,
+      "token_text": " material",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 394,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 395,
+      "token_text": "If",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 396,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 397,
+      "token_text": " find",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 398,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 399,
+      "token_text": " these",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 400,
+      "token_text": " warning",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 401,
+      "token_text": " signs",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 402,
+      "token_text": " persist",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 403,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 404,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 405,
+      "token_text": " might",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 406,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 407,
+      "token_text": " helpful",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 408,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 409,
+      "token_text": " try",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16252
+    },
+    {
+      "step": 410,
+      "token_text": " different",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16253
+    },
+    {
+      "step": 411,
+      "token_text": " reading",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16253
+    },
+    {
+      "step": 412,
+      "token_text": " techniques",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16253
+    },
+    {
+      "step": 413,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16253
+    },
+    {
+      "step": 414,
+      "token_text": " seek",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16253
+    },
+    {
+      "step": 415,
+      "token_text": " additional",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16253
+    },
+    {
+      "step": 416,
+      "token_text": " support",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16253
+    },
+    {
+      "step": 417,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16253
+    },
+    {
+      "step": 418,
+      "token_text": " improve",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16253
+    },
+    {
+      "step": 419,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16253
+    },
+    {
+      "step": 420,
+      "token_text": " concentration",
+      "token_utf8_len": 14,
+      "sse_frame_utf8_len": 22,
+      "t_rel_ms": 16253
+    },
+    {
+      "step": 421,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16253
+    },
+    {
+      "step": 422,
+      "token_text": " comprehension",
+      "token_utf8_len": 14,
+      "sse_frame_utf8_len": 22,
+      "t_rel_ms": 16253
+    },
+    {
+      "step": 423,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16253
+    }
+  ]
+}

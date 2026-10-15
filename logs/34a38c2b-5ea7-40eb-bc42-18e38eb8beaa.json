@@ -1,0 +1,1208 @@
+{
+  "run_id": "34a38c2b-5ea7-40eb-bc42-18e38eb8beaa",
+  "prompt": "How can I handle a rash that started spreading yesterday including what to tell a doctor?",
+  "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "device": "cuda",
+  "max_new_tokens": 512,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "prompt_format": "legacy",
+  "prompt_len_tokens": 26,
+  "generated_tokens": 170,
+  "finish_reason": "eos",
+  "response_complete": true,
+  "response_text": "Arashthatstartedspreadingyesterdaycanbeasignofanallergicreaction.Ifyouhaveahistoryofallergies,youshouldconsultadoctorimmediately.Herearesomestepsyoucantaketomanagetherash:\n\n1.Washyourhandsthoroughlywithsoapandwater.\n2.Applyatopicalcorticosteroidcreamorointmenttotheaffectedarea.\n3.Applyacoolcompresstotheaffectedareatoreduceinflammation.\n4.Avoidexposuretotheallergenthatcausedtherash.\n5.Consultadoctoriftherashdoesnotimprovewithin24hours.\n\nRemembertoalwaysconsultadoctorifyouhaveanyconcernsoriftherashpersistsformorethan7days.",
+  "response_utf8_len": 526,
+  "steps": [
+    {
+      "step": 0,
+      "token_text": "A",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 1,
+      "token_text": "r",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 2,
+      "token_text": "ash",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 3,
+      "token_text": "that",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 4,
+      "token_text": "started",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 5,
+      "token_text": "spread",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 6,
+      "token_text": "ing",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 7,
+      "token_text": "yesterday",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 8,
+      "token_text": "can",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 9,
+      "token_text": "be",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 10,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 11,
+      "token_text": "sign",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 12,
+      "token_text": "of",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 13,
+      "token_text": "an",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 14,
+      "token_text": "all",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 15,
+      "token_text": "erg",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 16,
+      "token_text": "ic",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 17,
+      "token_text": "reaction",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 18,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 19,
+      "token_text": "If",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 20,
+      "token_text": "you",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 21,
+      "token_text": "have",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 22,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 23,
+      "token_text": "history",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 24,
+      "token_text": "of",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 25,
+      "token_text": "all",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 26,
+      "token_text": "erg",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 27,
+      "token_text": "ies",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 28,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 29,
+      "token_text": "you",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4096
+    },
+    {
+      "step": 30,
+      "token_text": "should",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 31,
+      "token_text": "consult",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 32,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 33,
+      "token_text": "doctor",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 34,
+      "token_text": "immediately",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 35,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 36,
+      "token_text": "Here",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 37,
+      "token_text": "are",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 38,
+      "token_text": "some",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 39,
+      "token_text": "steps",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 40,
+      "token_text": "you",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 41,
+      "token_text": "can",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 42,
+      "token_text": "take",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 43,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 44,
+      "token_text": "manage",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 45,
+      "token_text": "the",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 46,
+      "token_text": "r",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 47,
+      "token_text": "ash",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 48,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 49,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 50,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 51,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 52,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 53,
+      "token_text": "W",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4097
+    },
+    {
+      "step": 54,
+      "token_text": "ash",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 55,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 56,
+      "token_text": "hands",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 57,
+      "token_text": "thoroughly",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 58,
+      "token_text": "with",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 59,
+      "token_text": "soap",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 60,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 61,
+      "token_text": "water",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 62,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 63,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 64,
+      "token_text": "2",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 65,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 66,
+      "token_text": "App",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 67,
+      "token_text": "ly",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 68,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 69,
+      "token_text": "top",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 70,
+      "token_text": "ical",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 71,
+      "token_text": "cort",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 72,
+      "token_text": "ic",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 73,
+      "token_text": "ost",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 74,
+      "token_text": "ero",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 75,
+      "token_text": "id",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 76,
+      "token_text": "cre",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 77,
+      "token_text": "am",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 78,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4098
+    },
+    {
+      "step": 79,
+      "token_text": "o",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 80,
+      "token_text": "int",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 81,
+      "token_text": "ment",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 82,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 83,
+      "token_text": "the",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 84,
+      "token_text": "affected",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 85,
+      "token_text": "area",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 86,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 87,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 88,
+      "token_text": "3",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 89,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 90,
+      "token_text": "App",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 91,
+      "token_text": "ly",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 92,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 93,
+      "token_text": "cool",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 94,
+      "token_text": "compress",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 95,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 96,
+      "token_text": "the",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 97,
+      "token_text": "affected",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 98,
+      "token_text": "area",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 99,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 100,
+      "token_text": "reduce",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 101,
+      "token_text": "infl",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 102,
+      "token_text": "amm",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4099
+    },
+    {
+      "step": 103,
+      "token_text": "ation",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 4100
+    },
+    {
+      "step": 104,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4100
+    },
+    {
+      "step": 105,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4100
+    },
+    {
+      "step": 106,
+      "token_text": "4",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4100
+    },
+    {
+      "step": 107,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4100
+    },
+    {
+      "step": 108,
+      "token_text": "A",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4100
+    },
+    {
+      "step": 109,
+      "token_text": "void",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4100
+    },
+    {
+      "step": 110,
+      "token_text": "expos",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 4105
+    },
+    {
+      "step": 111,
+      "token_text": "ure",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4105
+    },
+    {
+      "step": 112,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4105
+    },
+    {
+      "step": 113,
+      "token_text": "the",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4105
+    },
+    {
+      "step": 114,
+      "token_text": "aller",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 4105
+    },
+    {
+      "step": 115,
+      "token_text": "gen",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4105
+    },
+    {
+      "step": 116,
+      "token_text": "that",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4105
+    },
+    {
+      "step": 117,
+      "token_text": "caused",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 4105
+    },
+    {
+      "step": 118,
+      "token_text": "the",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4105
+    },
+    {
+      "step": 119,
+      "token_text": "r",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4105
+    },
+    {
+      "step": 120,
+      "token_text": "ash",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 121,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 122,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 123,
+      "token_text": "5",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 124,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 125,
+      "token_text": "Cons",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 126,
+      "token_text": "ult",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 127,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 128,
+      "token_text": "doctor",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 129,
+      "token_text": "if",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 130,
+      "token_text": "the",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 131,
+      "token_text": "r",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 132,
+      "token_text": "ash",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 133,
+      "token_text": "does",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 134,
+      "token_text": "not",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 135,
+      "token_text": "improve",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 136,
+      "token_text": "within",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 137,
+      "token_text": "",
+      "token_utf8_len": 0,
+      "sse_frame_utf8_len": 8,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 138,
+      "token_text": "2",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 139,
+      "token_text": "4",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 140,
+      "token_text": "hours",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 141,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 142,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 143,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 144,
+      "token_text": "Rem",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4106
+    },
+    {
+      "step": 145,
+      "token_text": "ember",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 146,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 147,
+      "token_text": "always",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 148,
+      "token_text": "consult",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 149,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 150,
+      "token_text": "doctor",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 151,
+      "token_text": "if",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 152,
+      "token_text": "you",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 153,
+      "token_text": "have",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 154,
+      "token_text": "any",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 155,
+      "token_text": "concerns",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 156,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 157,
+      "token_text": "if",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 158,
+      "token_text": "the",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 159,
+      "token_text": "r",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 160,
+      "token_text": "ash",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 161,
+      "token_text": "pers",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 162,
+      "token_text": "ists",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 163,
+      "token_text": "for",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 164,
+      "token_text": "more",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 165,
+      "token_text": "than",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 166,
+      "token_text": "",
+      "token_utf8_len": 0,
+      "sse_frame_utf8_len": 8,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 167,
+      "token_text": "7",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4107
+    },
+    {
+      "step": 168,
+      "token_text": "days",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 4108
+    },
+    {
+      "step": 169,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 4108
+    }
+  ]
+}

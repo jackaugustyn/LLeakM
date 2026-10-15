@@ -2,7 +2,9 @@
 .venv-analysis/
 experiment_validation/_analysis_pkgs/
 
-# Local/runtime state
+# Local/runtime state. logs/ stays ignored for new runs.
+# The 2100 traces named by run_id for campaign full_20260920 are tracked
+# explicitly (git add -f) so the token-length evidence can be reproduced.
 .codex
 __pycache__/
 *.py[cod]

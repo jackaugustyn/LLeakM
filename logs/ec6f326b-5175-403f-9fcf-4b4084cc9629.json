@@ -1,0 +1,3273 @@
+{
+  "run_id": "ec6f326b-5175-403f-9fcf-4b4084cc9629",
+  "prompt": "Give me a practical plan for choosing a contraception method with privacy-aware guidance.",
+  "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "device": "cuda",
+  "max_new_tokens": 512,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "prompt_format": "legacy",
+  "prompt_len_tokens": 25,
+  "generated_tokens": 465,
+  "finish_reason": "eos",
+  "response_complete": true,
+  "response_text": "Sure,here'sapracticalplanforchoosingacontraceptionmethodwithprivacy-awareguidance:\n\n1.Identifyyourcontraceptionneeds:Startbyidentifyingyourcontraceptionneeds.Thiscouldincludeyourage,familyplanninghistory,andanyspecificcontraceptionneeds.\n\n2.Researchcontraceptionmethods:Researchcontraceptionmethodsthatareprivacy-awareandmeetyourneeds.Thiscouldincludemethodslikecondoms,diaphragms,intrauterinedevices(IUDs),andhormonalcontraceptives.\n\n3.Consideryourprivacyconcerns:Consideryourprivacyconcernswhenchoosingacontraceptionmethod.Somemethods,likeIUDs,maynotbeasprivateasothers.\n\n4.Chooseamethodthatmeetsyourneeds:Onceyou'veidentifiedyourcontraceptionneeds,chooseamethodthatmeetsyourneeds.Thiscouldincludeamethodthatiseasytouse,discreet,andeffective.\n\n5.Consideryourbudget:Consideryourbudgetwhenchoosingacontraceptionmethod.Somemethodsmaybemoreexpensivethanothers,buttheymayalsobemoreeffectiveorprivate.\n\n6.Consideryourlifestyle:Consideryourlifestylewhenchoosingacontraceptionmethod.Somemethodsmaybemoresuitableforaparticularlifestyle,likeano-frillsmethodforaminimalistlifestyle.\n\n7.Consideryourpartner'sneeds:Consideryourpartner'sneedswhenchoosingacontraceptionmethod.Somemethodsmaybemoresuitableforapartnerwhoisopentousingcontraception.\n\n8.Practicesafesex:Practicesafesexwhenchoosingacontraceptionmethod.Thiscouldincludeusingacondom,usingamethodthatisdiscreet,andavoidingsexualactivityduringthefirstfewweeksofusingamethod.\n\n9.Followyourdoctor'sadvice:Followyourdoctor'sadvicewhenchoosingacontraceptionmethod.Thiscouldincludediscussingyourcontraceptionneedswithyourdoctorandfollowingtheiradvice.\n\n10.Bepatient:Choosingacontraceptionmethodcanbeaprocess,andit'snormaltohavequestionsandconcerns.Bepatientandtakeyourtimetochoosetherightmethodforyou.",
+  "response_utf8_len": 1740,
+  "steps": [
+    {
+      "step": 0,
+      "token_text": "Sure",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11916
+    },
+    {
+      "step": 1,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11916
+    },
+    {
+      "step": 2,
+      "token_text": "here",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11916
+    },
+    {
+      "step": 3,
+      "token_text": "'",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 4,
+      "token_text": "s",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 5,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 6,
+      "token_text": "practical",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 7,
+      "token_text": "plan",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 8,
+      "token_text": "for",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 9,
+      "token_text": "choosing",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 10,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 11,
+      "token_text": "contra",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 12,
+      "token_text": "ception",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 13,
+      "token_text": "method",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 14,
+      "token_text": "with",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 15,
+      "token_text": "priv",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 16,
+      "token_text": "acy",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 17,
+      "token_text": "-",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 18,
+      "token_text": "aware",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 19,
+      "token_text": "guidance",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 20,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 21,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 22,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 23,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 24,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 25,
+      "token_text": "Ident",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 26,
+      "token_text": "ify",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 27,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 28,
+      "token_text": "contra",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 29,
+      "token_text": "ception",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 30,
+      "token_text": "needs",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 31,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 32,
+      "token_text": "Start",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 33,
+      "token_text": "by",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 34,
+      "token_text": "ident",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 35,
+      "token_text": "ifying",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 36,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 37,
+      "token_text": "contra",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 38,
+      "token_text": "ception",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 39,
+      "token_text": "needs",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 40,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 41,
+      "token_text": "This",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 42,
+      "token_text": "could",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 43,
+      "token_text": "include",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 44,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 45,
+      "token_text": "age",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 46,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 47,
+      "token_text": "family",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 48,
+      "token_text": "planning",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 49,
+      "token_text": "history",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 50,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 51,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11917
+    },
+    {
+      "step": 52,
+      "token_text": "any",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11918
+    },
+    {
+      "step": 53,
+      "token_text": "specific",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11918
+    },
+    {
+      "step": 54,
+      "token_text": "contra",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11918
+    },
+    {
+      "step": 55,
+      "token_text": "ception",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11918
+    },
+    {
+      "step": 56,
+      "token_text": "needs",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11918
+    },
+    {
+      "step": 57,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11918
+    },
+    {
+      "step": 58,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11918
+    },
+    {
+      "step": 59,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11918
+    },
+    {
+      "step": 60,
+      "token_text": "2",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11918
+    },
+    {
+      "step": 61,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11918
+    },
+    {
+      "step": 62,
+      "token_text": "Research",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11918
+    },
+    {
+      "step": 63,
+      "token_text": "contra",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11918
+    },
+    {
+      "step": 64,
+      "token_text": "ception",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11918
+    },
+    {
+      "step": 65,
+      "token_text": "methods",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11918
+    },
+    {
+      "step": 66,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11918
+    },
+    {
+      "step": 67,
+      "token_text": "Research",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11918
+    },
+    {
+      "step": 68,
+      "token_text": "contra",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11918
+    },
+    {
+      "step": 69,
+      "token_text": "ception",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11918
+    },
+    {
+      "step": 70,
+      "token_text": "methods",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11918
+    },
+    {
+      "step": 71,
+      "token_text": "that",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11918
+    },
+    {
+      "step": 72,
+      "token_text": "are",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11918
+    },
+    {
+      "step": 73,
+      "token_text": "priv",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 74,
+      "token_text": "acy",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 75,
+      "token_text": "-",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 76,
+      "token_text": "aware",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 77,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 78,
+      "token_text": "meet",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 79,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 80,
+      "token_text": "needs",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 81,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 82,
+      "token_text": "This",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 83,
+      "token_text": "could",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 84,
+      "token_text": "include",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 85,
+      "token_text": "methods",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 86,
+      "token_text": "like",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 87,
+      "token_text": "cond",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 88,
+      "token_text": "oms",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 89,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 90,
+      "token_text": "dia",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 91,
+      "token_text": "ph",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 92,
+      "token_text": "rag",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 93,
+      "token_text": "ms",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 94,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 95,
+      "token_text": "int",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 96,
+      "token_text": "ra",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11919
+    },
+    {
+      "step": 97,
+      "token_text": "uter",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 98,
+      "token_text": "ine",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 99,
+      "token_text": "devices",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 100,
+      "token_text": "(",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 101,
+      "token_text": "I",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 102,
+      "token_text": "UD",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 103,
+      "token_text": "s",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 104,
+      "token_text": "),",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 105,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 106,
+      "token_text": "h",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 107,
+      "token_text": "orm",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 108,
+      "token_text": "onal",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 109,
+      "token_text": "contra",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 110,
+      "token_text": "cept",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 111,
+      "token_text": "ives",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 112,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 113,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 114,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 115,
+      "token_text": "3",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 116,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 117,
+      "token_text": "Consider",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 118,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 119,
+      "token_text": "priv",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 120,
+      "token_text": "acy",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 121,
+      "token_text": "concerns",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 122,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 123,
+      "token_text": "Consider",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 124,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 125,
+      "token_text": "priv",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 126,
+      "token_text": "acy",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 127,
+      "token_text": "concerns",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 128,
+      "token_text": "when",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 129,
+      "token_text": "choosing",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11920
+    },
+    {
+      "step": 130,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 131,
+      "token_text": "contra",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 132,
+      "token_text": "ception",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 133,
+      "token_text": "method",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 134,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 135,
+      "token_text": "Some",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 136,
+      "token_text": "methods",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 137,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 138,
+      "token_text": "like",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 139,
+      "token_text": "I",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 140,
+      "token_text": "UD",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 141,
+      "token_text": "s",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 142,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 143,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 144,
+      "token_text": "not",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 145,
+      "token_text": "be",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 146,
+      "token_text": "as",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 147,
+      "token_text": "private",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 148,
+      "token_text": "as",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 149,
+      "token_text": "others",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 150,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 151,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 152,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 153,
+      "token_text": "4",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11921
+    },
+    {
+      "step": 154,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 155,
+      "token_text": "Cho",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 156,
+      "token_text": "ose",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 157,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 158,
+      "token_text": "method",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 159,
+      "token_text": "that",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 160,
+      "token_text": "meets",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 161,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 162,
+      "token_text": "needs",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 163,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 164,
+      "token_text": "Once",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 165,
+      "token_text": "you",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 166,
+      "token_text": "'",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 167,
+      "token_text": "ve",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 168,
+      "token_text": "identified",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 169,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 170,
+      "token_text": "contra",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 171,
+      "token_text": "ception",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 172,
+      "token_text": "needs",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 173,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 174,
+      "token_text": "choose",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 175,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 176,
+      "token_text": "method",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11922
+    },
+    {
+      "step": 177,
+      "token_text": "that",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 178,
+      "token_text": "meets",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 179,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 180,
+      "token_text": "needs",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 181,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 182,
+      "token_text": "This",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 183,
+      "token_text": "could",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 184,
+      "token_text": "include",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 185,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 186,
+      "token_text": "method",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 187,
+      "token_text": "that",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 188,
+      "token_text": "is",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 189,
+      "token_text": "easy",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 190,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 191,
+      "token_text": "use",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 192,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 193,
+      "token_text": "dis",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 194,
+      "token_text": "cre",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 195,
+      "token_text": "et",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 196,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 197,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 198,
+      "token_text": "effective",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 199,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 200,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 201,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11923
+    },
+    {
+      "step": 202,
+      "token_text": "5",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 203,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 204,
+      "token_text": "Consider",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 205,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 206,
+      "token_text": "budget",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 207,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 208,
+      "token_text": "Consider",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 209,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 210,
+      "token_text": "budget",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 211,
+      "token_text": "when",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 212,
+      "token_text": "choosing",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 213,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 214,
+      "token_text": "contra",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 215,
+      "token_text": "ception",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 216,
+      "token_text": "method",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 217,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 218,
+      "token_text": "Some",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 219,
+      "token_text": "methods",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 220,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 221,
+      "token_text": "be",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 222,
+      "token_text": "more",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 223,
+      "token_text": "expensive",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 224,
+      "token_text": "than",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 225,
+      "token_text": "others",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11924
+    },
+    {
+      "step": 226,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 227,
+      "token_text": "but",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 228,
+      "token_text": "they",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 229,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 230,
+      "token_text": "also",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 231,
+      "token_text": "be",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 232,
+      "token_text": "more",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 233,
+      "token_text": "effective",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 234,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 235,
+      "token_text": "private",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 236,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 237,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 238,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 239,
+      "token_text": "6",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 240,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 241,
+      "token_text": "Consider",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 242,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 243,
+      "token_text": "l",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 244,
+      "token_text": "ifest",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 245,
+      "token_text": "yle",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 246,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 247,
+      "token_text": "Consider",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 248,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 249,
+      "token_text": "l",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11925
+    },
+    {
+      "step": 250,
+      "token_text": "ifest",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 251,
+      "token_text": "yle",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 252,
+      "token_text": "when",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 253,
+      "token_text": "choosing",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 254,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 255,
+      "token_text": "contra",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 256,
+      "token_text": "ception",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 257,
+      "token_text": "method",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 258,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 259,
+      "token_text": "Some",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 260,
+      "token_text": "methods",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 261,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 262,
+      "token_text": "be",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 263,
+      "token_text": "more",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 264,
+      "token_text": "suitable",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 265,
+      "token_text": "for",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 266,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 267,
+      "token_text": "particular",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 268,
+      "token_text": "l",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 269,
+      "token_text": "ifest",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 270,
+      "token_text": "yle",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 271,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 272,
+      "token_text": "like",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 273,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 274,
+      "token_text": "no",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 275,
+      "token_text": "-",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 276,
+      "token_text": "fr",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 277,
+      "token_text": "ills",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11926
+    },
+    {
+      "step": 278,
+      "token_text": "method",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11927
+    },
+    {
+      "step": 279,
+      "token_text": "for",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11927
+    },
+    {
+      "step": 280,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11927
+    },
+    {
+      "step": 281,
+      "token_text": "minimal",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11927
+    },
+    {
+      "step": 282,
+      "token_text": "ist",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11927
+    },
+    {
+      "step": 283,
+      "token_text": "l",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11927
+    },
+    {
+      "step": 284,
+      "token_text": "ifest",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11927
+    },
+    {
+      "step": 285,
+      "token_text": "yle",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11927
+    },
+    {
+      "step": 286,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11927
+    },
+    {
+      "step": 287,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11927
+    },
+    {
+      "step": 288,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11927
+    },
+    {
+      "step": 289,
+      "token_text": "7",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11927
+    },
+    {
+      "step": 290,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11927
+    },
+    {
+      "step": 291,
+      "token_text": "Consider",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11927
+    },
+    {
+      "step": 292,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11927
+    },
+    {
+      "step": 293,
+      "token_text": "partner",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11927
+    },
+    {
+      "step": 294,
+      "token_text": "'",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11927
+    },
+    {
+      "step": 295,
+      "token_text": "s",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11927
+    },
+    {
+      "step": 296,
+      "token_text": "needs",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11927
+    },
+    {
+      "step": 297,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11927
+    },
+    {
+      "step": 298,
+      "token_text": "Consider",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11927
+    },
+    {
+      "step": 299,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 300,
+      "token_text": "partner",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 301,
+      "token_text": "'",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 302,
+      "token_text": "s",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 303,
+      "token_text": "needs",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 304,
+      "token_text": "when",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 305,
+      "token_text": "choosing",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 306,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 307,
+      "token_text": "contra",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 308,
+      "token_text": "ception",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 309,
+      "token_text": "method",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 310,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 311,
+      "token_text": "Some",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 312,
+      "token_text": "methods",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 313,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 314,
+      "token_text": "be",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 315,
+      "token_text": "more",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 316,
+      "token_text": "suitable",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 317,
+      "token_text": "for",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 318,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 319,
+      "token_text": "partner",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 320,
+      "token_text": "who",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 321,
+      "token_text": "is",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 322,
+      "token_text": "open",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11928
+    },
+    {
+      "step": 323,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 324,
+      "token_text": "using",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 325,
+      "token_text": "contra",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 326,
+      "token_text": "ception",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 327,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 328,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 329,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 330,
+      "token_text": "8",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 331,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 332,
+      "token_text": "Pract",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 333,
+      "token_text": "ice",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 334,
+      "token_text": "safe",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 335,
+      "token_text": "sex",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 336,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 337,
+      "token_text": "Pract",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 338,
+      "token_text": "ice",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 339,
+      "token_text": "safe",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 340,
+      "token_text": "sex",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 341,
+      "token_text": "when",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 342,
+      "token_text": "choosing",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 343,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 344,
+      "token_text": "contra",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 345,
+      "token_text": "ception",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 346,
+      "token_text": "method",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 347,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11929
+    },
+    {
+      "step": 348,
+      "token_text": "This",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11930
+    },
+    {
+      "step": 349,
+      "token_text": "could",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11930
+    },
+    {
+      "step": 350,
+      "token_text": "include",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11930
+    },
+    {
+      "step": 351,
+      "token_text": "using",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11930
+    },
+    {
+      "step": 352,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11930
+    },
+    {
+      "step": 353,
+      "token_text": "cond",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11930
+    },
+    {
+      "step": 354,
+      "token_text": "om",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11930
+    },
+    {
+      "step": 355,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11930
+    },
+    {
+      "step": 356,
+      "token_text": "using",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11930
+    },
+    {
+      "step": 357,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11930
+    },
+    {
+      "step": 358,
+      "token_text": "method",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11930
+    },
+    {
+      "step": 359,
+      "token_text": "that",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11930
+    },
+    {
+      "step": 360,
+      "token_text": "is",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11930
+    },
+    {
+      "step": 361,
+      "token_text": "dis",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11930
+    },
+    {
+      "step": 362,
+      "token_text": "cre",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11930
+    },
+    {
+      "step": 363,
+      "token_text": "et",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11930
+    },
+    {
+      "step": 364,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11930
+    },
+    {
+      "step": 365,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11930
+    },
+    {
+      "step": 366,
+      "token_text": "avoid",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11931
+    },
+    {
+      "step": 367,
+      "token_text": "ing",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11931
+    },
+    {
+      "step": 368,
+      "token_text": "sexual",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11931
+    },
+    {
+      "step": 369,
+      "token_text": "activity",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11931
+    },
+    {
+      "step": 370,
+      "token_text": "during",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11931
+    },
+    {
+      "step": 371,
+      "token_text": "the",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11931
+    },
+    {
+      "step": 372,
+      "token_text": "first",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11931
+    },
+    {
+      "step": 373,
+      "token_text": "few",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11931
+    },
+    {
+      "step": 374,
+      "token_text": "weeks",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11931
+    },
+    {
+      "step": 375,
+      "token_text": "of",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11931
+    },
+    {
+      "step": 376,
+      "token_text": "using",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11931
+    },
+    {
+      "step": 377,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11931
+    },
+    {
+      "step": 378,
+      "token_text": "method",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11931
+    },
+    {
+      "step": 379,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11931
+    },
+    {
+      "step": 380,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11931
+    },
+    {
+      "step": 381,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11931
+    },
+    {
+      "step": 382,
+      "token_text": "9",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11931
+    },
+    {
+      "step": 383,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11931
+    },
+    {
+      "step": 384,
+      "token_text": "Follow",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11931
+    },
+    {
+      "step": 385,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11931
+    },
+    {
+      "step": 386,
+      "token_text": "doctor",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11931
+    },
+    {
+      "step": 387,
+      "token_text": "'",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 388,
+      "token_text": "s",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 389,
+      "token_text": "advice",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 390,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 391,
+      "token_text": "Follow",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 392,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 393,
+      "token_text": "doctor",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 394,
+      "token_text": "'",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 395,
+      "token_text": "s",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 396,
+      "token_text": "advice",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 397,
+      "token_text": "when",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 398,
+      "token_text": "choosing",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 399,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 400,
+      "token_text": "contra",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 401,
+      "token_text": "ception",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 402,
+      "token_text": "method",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 403,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 404,
+      "token_text": "This",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 405,
+      "token_text": "could",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 406,
+      "token_text": "include",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 407,
+      "token_text": "discuss",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 408,
+      "token_text": "ing",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 409,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 410,
+      "token_text": "contra",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 411,
+      "token_text": "ception",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11932
+    },
+    {
+      "step": 412,
+      "token_text": "needs",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 413,
+      "token_text": "with",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 414,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 415,
+      "token_text": "doctor",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 416,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 417,
+      "token_text": "following",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 418,
+      "token_text": "their",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 419,
+      "token_text": "advice",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 420,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 421,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 422,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 423,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 424,
+      "token_text": "0",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 425,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 426,
+      "token_text": "Be",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 427,
+      "token_text": "patient",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 428,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 429,
+      "token_text": "Cho",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 430,
+      "token_text": "osing",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 431,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 432,
+      "token_text": "contra",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 433,
+      "token_text": "ception",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 434,
+      "token_text": "method",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 435,
+      "token_text": "can",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 436,
+      "token_text": "be",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 437,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11933
+    },
+    {
+      "step": 438,
+      "token_text": "process",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 439,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 440,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 441,
+      "token_text": "it",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 442,
+      "token_text": "'",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 443,
+      "token_text": "s",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 444,
+      "token_text": "normal",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 445,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 446,
+      "token_text": "have",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 447,
+      "token_text": "questions",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 448,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 449,
+      "token_text": "concerns",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 450,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 451,
+      "token_text": "Be",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 452,
+      "token_text": "patient",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 453,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 454,
+      "token_text": "take",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 455,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 456,
+      "token_text": "time",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 457,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 458,
+      "token_text": "choose",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 459,
+      "token_text": "the",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 460,
+      "token_text": "right",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 461,
+      "token_text": "method",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 11934
+    },
+    {
+      "step": 462,
+      "token_text": "for",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11935
+    },
+    {
+      "step": 463,
+      "token_text": "you",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 11935
+    },
+    {
+      "step": 464,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 11935
+    }
+  ]
+}

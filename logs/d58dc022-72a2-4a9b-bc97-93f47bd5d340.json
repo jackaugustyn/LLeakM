@@ -1,0 +1,3273 @@
+{
+  "run_id": "d58dc022-72a2-4a9b-bc97-93f47bd5d340",
+  "prompt": "How can I handle failing multiple exams despite studying with an emergency exam-week plan?",
+  "model_id": "Qwen/Qwen2.5-3B-Instruct",
+  "device": "cuda",
+  "max_new_tokens": 512,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "prompt_format": "legacy",
+  "prompt_len_tokens": 24,
+  "generated_tokens": 465,
+  "finish_reason": "eos",
+  "response_complete": true,
+  "response_text": "Handling failing multiple exams despite studying with an emergency plan can be challenging, but there are several steps you can take to address the situation:\n\n1. **Assess the Situation**: First, review the exams you failed to understand the specific areas where you struggled. This will help you identify the root causes of your difficulties.\n\n2. **Review Your Study Plan**: Evaluate the effectiveness of your emergency study plan. Did you cover all the necessary material? Were your study sessions productive? Identifying what didn’t work can help you adjust your approach.\n\n3. **Seek Feedback**: If possible, ask your instructors or teaching assistants for feedback on your performance. They can provide insights into what you might have missed or misunderstood.\n\n4. **Revisit the Material**: Focus on the areas where you struggled the most. Sometimes, a deeper understanding of the material requires revisiting it from different angles or seeking additional resources.\n\n5. **Practice with Past Papers**: Use past exam papers to practice. This can help you get a feel for the types of questions that might be asked and the format of the exam.\n\n6. **Study Groups**: Consider forming or joining a study group. Discussing the material with peers can help clarify concepts and provide different perspectives.\n\n7. **Professional Tutoring**: If you find the material particularly challenging, consider hiring a tutor. A tutor can provide personalized guidance and help you focus on areas that need improvement.\n\n8. **Time Management**: Ensure you are managing your time effectively. Exams can be stressful, so maintaining a balanced schedule that includes breaks and relaxation can help you stay focused.\n\n9. **Mental Health**: Exams can be stressful, and stress can affect your performance. Consider speaking to a counselor or therapist if you are feeling overwhelmed.\n\n10. **Communicate with Your School**: If you are struggling with multiple exams, it might be worth discussing your situation with your academic advisor or the registrar’s office. They might be able to offer additional support or resources.\n\n11. **Reflect and Plan for Future**: Reflect on what you learned from this experience. What did you do well and what didn’t work? Use this reflection to plan for future exams, possibly adjusting your study habits and strategies.\n\nBy taking these steps, you can better understand your challenges and work towards improving your performance in future exams.",
+  "response_utf8_len": 2470,
+  "steps": [
+    {
+      "step": 0,
+      "token_text": "Handling",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 1,
+      "token_text": " failing",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 2,
+      "token_text": " multiple",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 3,
+      "token_text": " exams",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 4,
+      "token_text": " despite",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 5,
+      "token_text": " studying",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 6,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 7,
+      "token_text": " an",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 8,
+      "token_text": " emergency",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 9,
+      "token_text": " plan",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 10,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 11,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 12,
+      "token_text": " challenging",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 13,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 14,
+      "token_text": " but",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 15,
+      "token_text": " there",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 16,
+      "token_text": " are",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 17,
+      "token_text": " several",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 18,
+      "token_text": " steps",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 19,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 20,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 21,
+      "token_text": " take",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 22,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 23,
+      "token_text": " address",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 24,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 25,
+      "token_text": " situation",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 26,
+      "token_text": ":\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 27,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 28,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 29,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 30,
+      "token_text": "Ass",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 31,
+      "token_text": "ess",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 32,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 33,
+      "token_text": " Situation",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 34,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 35,
+      "token_text": " First",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22653
+    },
+    {
+      "step": 36,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 37,
+      "token_text": " review",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 38,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 39,
+      "token_text": " exams",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 40,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 41,
+      "token_text": " failed",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 42,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 43,
+      "token_text": " understand",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 44,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 45,
+      "token_text": " specific",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 46,
+      "token_text": " areas",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 47,
+      "token_text": " where",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 48,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 49,
+      "token_text": " struggled",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 50,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 51,
+      "token_text": " This",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 52,
+      "token_text": " will",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 53,
+      "token_text": " help",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 54,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 55,
+      "token_text": " identify",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 56,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 57,
+      "token_text": " root",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 58,
+      "token_text": " causes",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 59,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 60,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 61,
+      "token_text": " difficulties",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 62,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 63,
+      "token_text": "2",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 64,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 65,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 66,
+      "token_text": "Review",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22654
+    },
+    {
+      "step": 67,
+      "token_text": " Your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 68,
+      "token_text": " Study",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 69,
+      "token_text": " Plan",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 70,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 71,
+      "token_text": " Evaluate",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 72,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 73,
+      "token_text": " effectiveness",
+      "token_utf8_len": 14,
+      "sse_frame_utf8_len": 22,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 74,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 75,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 76,
+      "token_text": " emergency",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 77,
+      "token_text": " study",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 78,
+      "token_text": " plan",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 79,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 80,
+      "token_text": " Did",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 81,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 82,
+      "token_text": " cover",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 83,
+      "token_text": " all",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 84,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 85,
+      "token_text": " necessary",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 86,
+      "token_text": " material",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 87,
+      "token_text": "?",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 88,
+      "token_text": " Were",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 89,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 90,
+      "token_text": " study",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22655
+    },
+    {
+      "step": 91,
+      "token_text": " sessions",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 92,
+      "token_text": " productive",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 93,
+      "token_text": "?",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 94,
+      "token_text": " Ident",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 95,
+      "token_text": "ifying",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 96,
+      "token_text": " what",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 97,
+      "token_text": " didn",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 98,
+      "token_text": "’t",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 99,
+      "token_text": " work",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 100,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 101,
+      "token_text": " help",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 102,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 103,
+      "token_text": " adjust",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 104,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 105,
+      "token_text": " approach",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 106,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 107,
+      "token_text": "3",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 108,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 109,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 110,
+      "token_text": "Seek",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 111,
+      "token_text": " Feedback",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 112,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 113,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22656
+    },
+    {
+      "step": 114,
+      "token_text": " possible",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22657
+    },
+    {
+      "step": 115,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22657
+    },
+    {
+      "step": 116,
+      "token_text": " ask",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22657
+    },
+    {
+      "step": 117,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22657
+    },
+    {
+      "step": 118,
+      "token_text": " instructors",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 22662
+    },
+    {
+      "step": 119,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22662
+    },
+    {
+      "step": 120,
+      "token_text": " teaching",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22662
+    },
+    {
+      "step": 121,
+      "token_text": " assistants",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 22662
+    },
+    {
+      "step": 122,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22662
+    },
+    {
+      "step": 123,
+      "token_text": " feedback",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22662
+    },
+    {
+      "step": 124,
+      "token_text": " on",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22662
+    },
+    {
+      "step": 125,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22662
+    },
+    {
+      "step": 126,
+      "token_text": " performance",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 22662
+    },
+    {
+      "step": 127,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 128,
+      "token_text": " They",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 129,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 130,
+      "token_text": " provide",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 131,
+      "token_text": " insights",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 132,
+      "token_text": " into",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 133,
+      "token_text": " what",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 134,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 135,
+      "token_text": " might",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 136,
+      "token_text": " have",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 137,
+      "token_text": " missed",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 138,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 139,
+      "token_text": " misunderstood",
+      "token_utf8_len": 14,
+      "sse_frame_utf8_len": 22,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 140,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 141,
+      "token_text": "4",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 142,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 143,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 144,
+      "token_text": "Re",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 145,
+      "token_text": "visit",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 146,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 147,
+      "token_text": " Material",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 148,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22663
+    },
+    {
+      "step": 149,
+      "token_text": " Focus",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 150,
+      "token_text": " on",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 151,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 152,
+      "token_text": " areas",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 153,
+      "token_text": " where",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 154,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 155,
+      "token_text": " struggled",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 156,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 157,
+      "token_text": " most",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 158,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 159,
+      "token_text": " Sometimes",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 160,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 161,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 162,
+      "token_text": " deeper",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 163,
+      "token_text": " understanding",
+      "token_utf8_len": 14,
+      "sse_frame_utf8_len": 22,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 164,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 165,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 166,
+      "token_text": " material",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 167,
+      "token_text": " requires",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 168,
+      "token_text": " revis",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 169,
+      "token_text": "iting",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 170,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 171,
+      "token_text": " from",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 172,
+      "token_text": " different",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 22664
+    },
+    {
+      "step": 173,
+      "token_text": " angles",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 174,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 175,
+      "token_text": " seeking",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 176,
+      "token_text": " additional",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 177,
+      "token_text": " resources",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 178,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 179,
+      "token_text": "5",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 180,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 181,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 182,
+      "token_text": "Practice",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 183,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 184,
+      "token_text": " Past",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 185,
+      "token_text": " Papers",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 186,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 187,
+      "token_text": " Use",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 188,
+      "token_text": " past",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 189,
+      "token_text": " exam",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 190,
+      "token_text": " papers",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 191,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 192,
+      "token_text": " practice",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 193,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 194,
+      "token_text": " This",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 195,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 196,
+      "token_text": " help",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 197,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 198,
+      "token_text": " get",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22665
+    },
+    {
+      "step": 199,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 200,
+      "token_text": " feel",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 201,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 202,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 203,
+      "token_text": " types",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 204,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 205,
+      "token_text": " questions",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 206,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 207,
+      "token_text": " might",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 208,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 209,
+      "token_text": " asked",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 210,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 211,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 212,
+      "token_text": " format",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 213,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 214,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 215,
+      "token_text": " exam",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 216,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 217,
+      "token_text": "6",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 218,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 219,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 220,
+      "token_text": "Study",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 221,
+      "token_text": " Groups",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 222,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 223,
+      "token_text": " Consider",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22666
+    },
+    {
+      "step": 224,
+      "token_text": " forming",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 225,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 226,
+      "token_text": " joining",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 227,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 228,
+      "token_text": " study",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 229,
+      "token_text": " group",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 230,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 231,
+      "token_text": " Discuss",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 232,
+      "token_text": "ing",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 233,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 234,
+      "token_text": " material",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 235,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 236,
+      "token_text": " peers",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 237,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 238,
+      "token_text": " help",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 239,
+      "token_text": " clarify",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 240,
+      "token_text": " concepts",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 241,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 242,
+      "token_text": " provide",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 243,
+      "token_text": " different",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 244,
+      "token_text": " perspectives",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 245,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 246,
+      "token_text": "7",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22667
+    },
+    {
+      "step": 247,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 248,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 249,
+      "token_text": "Professional",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 250,
+      "token_text": " Tutor",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 251,
+      "token_text": "ing",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 252,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 253,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 254,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 255,
+      "token_text": " find",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 256,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 257,
+      "token_text": " material",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 258,
+      "token_text": " particularly",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 259,
+      "token_text": " challenging",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 260,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 261,
+      "token_text": " consider",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 262,
+      "token_text": " hiring",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 263,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 264,
+      "token_text": " tutor",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 265,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 266,
+      "token_text": " A",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 267,
+      "token_text": " tutor",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 268,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 269,
+      "token_text": " provide",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 270,
+      "token_text": " personalized",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 271,
+      "token_text": " guidance",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22668
+    },
+    {
+      "step": 272,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 273,
+      "token_text": " help",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 274,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 275,
+      "token_text": " focus",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 276,
+      "token_text": " on",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 277,
+      "token_text": " areas",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 278,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 279,
+      "token_text": " need",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 280,
+      "token_text": " improvement",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 281,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 282,
+      "token_text": "8",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 283,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 284,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 285,
+      "token_text": "Time",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 286,
+      "token_text": " Management",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 287,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 288,
+      "token_text": " Ensure",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 289,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 290,
+      "token_text": " are",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 291,
+      "token_text": " managing",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 292,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 293,
+      "token_text": " time",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 294,
+      "token_text": " effectively",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 295,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 296,
+      "token_text": " Ex",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22669
+    },
+    {
+      "step": 297,
+      "token_text": "ams",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 298,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 299,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 300,
+      "token_text": " stressful",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 301,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 302,
+      "token_text": " so",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 303,
+      "token_text": " maintaining",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 304,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 305,
+      "token_text": " balanced",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 306,
+      "token_text": " schedule",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 307,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 308,
+      "token_text": " includes",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 309,
+      "token_text": " breaks",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 310,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 311,
+      "token_text": " relaxation",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 312,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 313,
+      "token_text": " help",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 314,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 315,
+      "token_text": " stay",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 316,
+      "token_text": " focused",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 317,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 318,
+      "token_text": "9",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 319,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 320,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22670
+    },
+    {
+      "step": 321,
+      "token_text": "M",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22671
+    },
+    {
+      "step": 322,
+      "token_text": "ental",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22671
+    },
+    {
+      "step": 323,
+      "token_text": " Health",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22671
+    },
+    {
+      "step": 324,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22671
+    },
+    {
+      "step": 325,
+      "token_text": " Ex",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22671
+    },
+    {
+      "step": 326,
+      "token_text": "ams",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22671
+    },
+    {
+      "step": 327,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22671
+    },
+    {
+      "step": 328,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22671
+    },
+    {
+      "step": 329,
+      "token_text": " stressful",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 22671
+    },
+    {
+      "step": 330,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22671
+    },
+    {
+      "step": 331,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22671
+    },
+    {
+      "step": 332,
+      "token_text": " stress",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22671
+    },
+    {
+      "step": 333,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22671
+    },
+    {
+      "step": 334,
+      "token_text": " affect",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22671
+    },
+    {
+      "step": 335,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22671
+    },
+    {
+      "step": 336,
+      "token_text": " performance",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 22671
+    },
+    {
+      "step": 337,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22671
+    },
+    {
+      "step": 338,
+      "token_text": " Consider",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22671
+    },
+    {
+      "step": 339,
+      "token_text": " speaking",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22671
+    },
+    {
+      "step": 340,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22671
+    },
+    {
+      "step": 341,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 22671
+    },
+    {
+      "step": 342,
+      "token_text": " counselor",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 343,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 344,
+      "token_text": " therapist",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 345,
+      "token_text": " if",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 346,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 347,
+      "token_text": " are",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 348,
+      "token_text": " feeling",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 349,
+      "token_text": " overwhelmed",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 350,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 351,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 352,
+      "token_text": "0",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 353,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 354,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 355,
+      "token_text": "Communic",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 356,
+      "token_text": "ate",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 357,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 358,
+      "token_text": " Your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 359,
+      "token_text": " School",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 360,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 361,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 362,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 363,
+      "token_text": " are",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 364,
+      "token_text": " struggling",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 365,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 366,
+      "token_text": " multiple",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22672
+    },
+    {
+      "step": 367,
+      "token_text": " exams",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 368,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 369,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 370,
+      "token_text": " might",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 371,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 372,
+      "token_text": " worth",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 373,
+      "token_text": " discussing",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 374,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 375,
+      "token_text": " situation",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 376,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 377,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 378,
+      "token_text": " academic",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 379,
+      "token_text": " advisor",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 380,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 381,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 382,
+      "token_text": " registrar",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 383,
+      "token_text": "’s",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 384,
+      "token_text": " office",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 385,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 386,
+      "token_text": " They",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 387,
+      "token_text": " might",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 388,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 389,
+      "token_text": " able",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 390,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 391,
+      "token_text": " offer",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 392,
+      "token_text": " additional",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 393,
+      "token_text": " support",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22673
+    },
+    {
+      "step": 394,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 395,
+      "token_text": " resources",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 396,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 397,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 398,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 399,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 400,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 401,
+      "token_text": "Reflect",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 402,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 403,
+      "token_text": " Plan",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 404,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 405,
+      "token_text": " Future",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 406,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 407,
+      "token_text": " Reflect",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 408,
+      "token_text": " on",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 409,
+      "token_text": " what",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 410,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 411,
+      "token_text": " learned",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 412,
+      "token_text": " from",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 413,
+      "token_text": " this",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 414,
+      "token_text": " experience",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 415,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 416,
+      "token_text": " What",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 417,
+      "token_text": " did",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 418,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 419,
+      "token_text": " do",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22674
+    },
+    {
+      "step": 420,
+      "token_text": " well",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 421,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 422,
+      "token_text": " what",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 423,
+      "token_text": " didn",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 424,
+      "token_text": "’t",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 425,
+      "token_text": " work",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 426,
+      "token_text": "?",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 427,
+      "token_text": " Use",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 428,
+      "token_text": " this",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 429,
+      "token_text": " reflection",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 430,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 431,
+      "token_text": " plan",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 432,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 433,
+      "token_text": " future",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 434,
+      "token_text": " exams",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 435,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 436,
+      "token_text": " possibly",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 437,
+      "token_text": " adjusting",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 438,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 439,
+      "token_text": " study",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 440,
+      "token_text": " habits",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 441,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 442,
+      "token_text": " strategies",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 443,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 444,
+      "token_text": "By",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 445,
+      "token_text": " taking",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 446,
+      "token_text": " these",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 447,
+      "token_text": " steps",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22675
+    },
+    {
+      "step": 448,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22676
+    },
+    {
+      "step": 449,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22676
+    },
+    {
+      "step": 450,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22676
+    },
+    {
+      "step": 451,
+      "token_text": " better",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22676
+    },
+    {
+      "step": 452,
+      "token_text": " understand",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 22676
+    },
+    {
+      "step": 453,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22676
+    },
+    {
+      "step": 454,
+      "token_text": " challenges",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 22676
+    },
+    {
+      "step": 455,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 22676
+    },
+    {
+      "step": 456,
+      "token_text": " work",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22676
+    },
+    {
+      "step": 457,
+      "token_text": " towards",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 22676
+    },
+    {
+      "step": 458,
+      "token_text": " improving",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 22676
+    },
+    {
+      "step": 459,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 22676
+    },
+    {
+      "step": 460,
+      "token_text": " performance",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 22676
+    },
+    {
+      "step": 461,
+      "token_text": " in",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 22676
+    },
+    {
+      "step": 462,
+      "token_text": " future",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 22676
+    },
+    {
+      "step": 463,
+      "token_text": " exams",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 22676
+    },
+    {
+      "step": 464,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 22676
+    }
+  ]
+}

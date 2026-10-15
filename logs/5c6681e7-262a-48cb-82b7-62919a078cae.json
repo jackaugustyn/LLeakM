@@ -1,0 +1,2223 @@
+{
+  "run_id": "5c6681e7-262a-48cb-82b7-62919a078cae",
+  "prompt": "How can I handle severe procrastination and missed deadlines with evidence-based learning techniques?",
+  "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "device": "cuda",
+  "max_new_tokens": 512,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "prompt_format": "legacy",
+  "prompt_len_tokens": 27,
+  "generated_tokens": 315,
+  "finish_reason": "eos",
+  "response_complete": true,
+  "response_text": "Sure,herearesomeevidence-basedlearningtechniquesthatcanhelpyouhandlesevereprocrastinationandmisseddeadlines:\n\n1.Timeblocking:Thistechniqueinvolvessettingasidespecifictimesfordifferenttasks,suchasstudying,writing,orcompletingassignments.Thishelpsyoustayfocusedandavoiddistractions.\n\n2.Prioritization:Prioritizeyourtasksbasedontheirimportanceandurgency.Thishelpsyoufocusonthemostimportanttasksfirstandavoidprocrastination.\n\n3.Breaks:Takeregularbreaksthroughoutthedaytorechargeyourmentalandphysicalenergy.Thishelpsyoustayfocusedandavoidburnout.\n\n4.Mindfulness:Practicemindfulnesstechniquessuchasmeditation,deepbreathing,oryogatoreducestressandimprovefocus.\n\n5.Positiveself-talk:Usepositiveself-talktoencourageyourselfandavoidnegativeself-talk.\n\n6.Accountability:Findatrustedfriendorfamilymembertoholdyouaccountableforyourprogress.Thishelpsyoustaymotivatedandavoidprocrastination.\n\n7.Rewards:Setuprewardsforcompletingtasksontimeorachievingspecificgoals.Thishelpsyoustaymotivatedandavoidprocrastination.\n\nRemember,evidence-basedlearningtechniquesarejusttoolstohelpyoumanageyourtimeandavoidprocrastination.Thekeyistofindwhatworksbestforyouandsticktoitconsistently.",
+  "response_utf8_len": 1158,
+  "steps": [
+    {
+      "step": 0,
+      "token_text": "Sure",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 1,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 2,
+      "token_text": "here",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 3,
+      "token_text": "are",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 4,
+      "token_text": "some",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 5,
+      "token_text": "evidence",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 6,
+      "token_text": "-",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 7,
+      "token_text": "based",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 8,
+      "token_text": "learning",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 9,
+      "token_text": "techniques",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 10,
+      "token_text": "that",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 11,
+      "token_text": "can",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 12,
+      "token_text": "help",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 13,
+      "token_text": "you",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 14,
+      "token_text": "handle",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 15,
+      "token_text": "severe",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 16,
+      "token_text": "pro",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 17,
+      "token_text": "cr",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 18,
+      "token_text": "ast",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 19,
+      "token_text": "ination",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 20,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 21,
+      "token_text": "missed",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 22,
+      "token_text": "dead",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 23,
+      "token_text": "lines",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 24,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 25,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8581
+    },
+    {
+      "step": 26,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 27,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 28,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 29,
+      "token_text": "Time",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 30,
+      "token_text": "blocking",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 31,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 32,
+      "token_text": "This",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 33,
+      "token_text": "technique",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 34,
+      "token_text": "involves",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 35,
+      "token_text": "setting",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 36,
+      "token_text": "aside",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 37,
+      "token_text": "specific",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 38,
+      "token_text": "times",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 39,
+      "token_text": "for",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 40,
+      "token_text": "different",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 41,
+      "token_text": "tasks",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 42,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 43,
+      "token_text": "such",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 44,
+      "token_text": "as",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 45,
+      "token_text": "studying",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 46,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 47,
+      "token_text": "writing",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 48,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 49,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 50,
+      "token_text": "comple",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 51,
+      "token_text": "ting",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 52,
+      "token_text": "assign",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 53,
+      "token_text": "ments",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 54,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 55,
+      "token_text": "This",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 56,
+      "token_text": "helps",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 57,
+      "token_text": "you",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 58,
+      "token_text": "stay",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 59,
+      "token_text": "focused",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 60,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 61,
+      "token_text": "avoid",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 62,
+      "token_text": "dist",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 63,
+      "token_text": "ra",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 64,
+      "token_text": "ctions",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8582
+    },
+    {
+      "step": 65,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 66,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 67,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 68,
+      "token_text": "2",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 69,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 70,
+      "token_text": "Prior",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 71,
+      "token_text": "it",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 72,
+      "token_text": "ization",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 73,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 74,
+      "token_text": "Prior",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 75,
+      "token_text": "it",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 76,
+      "token_text": "ize",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 77,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 78,
+      "token_text": "tasks",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 79,
+      "token_text": "based",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 80,
+      "token_text": "on",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 81,
+      "token_text": "their",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 82,
+      "token_text": "importance",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 83,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 84,
+      "token_text": "ur",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 85,
+      "token_text": "gency",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 86,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 87,
+      "token_text": "This",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 88,
+      "token_text": "helps",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 89,
+      "token_text": "you",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 90,
+      "token_text": "focus",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 91,
+      "token_text": "on",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8583
+    },
+    {
+      "step": 92,
+      "token_text": "the",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8584
+    },
+    {
+      "step": 93,
+      "token_text": "most",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8584
+    },
+    {
+      "step": 94,
+      "token_text": "important",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8584
+    },
+    {
+      "step": 95,
+      "token_text": "tasks",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8584
+    },
+    {
+      "step": 96,
+      "token_text": "first",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8584
+    },
+    {
+      "step": 97,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8584
+    },
+    {
+      "step": 98,
+      "token_text": "avoid",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8584
+    },
+    {
+      "step": 99,
+      "token_text": "pro",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8584
+    },
+    {
+      "step": 100,
+      "token_text": "cr",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8584
+    },
+    {
+      "step": 101,
+      "token_text": "ast",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8584
+    },
+    {
+      "step": 102,
+      "token_text": "ination",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8584
+    },
+    {
+      "step": 103,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8584
+    },
+    {
+      "step": 104,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8584
+    },
+    {
+      "step": 105,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8584
+    },
+    {
+      "step": 106,
+      "token_text": "3",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8584
+    },
+    {
+      "step": 107,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8584
+    },
+    {
+      "step": 108,
+      "token_text": "Bre",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8584
+    },
+    {
+      "step": 109,
+      "token_text": "aks",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8589
+    },
+    {
+      "step": 110,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8590
+    },
+    {
+      "step": 111,
+      "token_text": "Take",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8590
+    },
+    {
+      "step": 112,
+      "token_text": "regular",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8590
+    },
+    {
+      "step": 113,
+      "token_text": "breaks",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8590
+    },
+    {
+      "step": 114,
+      "token_text": "throughout",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8590
+    },
+    {
+      "step": 115,
+      "token_text": "the",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8590
+    },
+    {
+      "step": 116,
+      "token_text": "day",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8590
+    },
+    {
+      "step": 117,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8590
+    },
+    {
+      "step": 118,
+      "token_text": "re",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8590
+    },
+    {
+      "step": 119,
+      "token_text": "charge",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8590
+    },
+    {
+      "step": 120,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8590
+    },
+    {
+      "step": 121,
+      "token_text": "mental",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8590
+    },
+    {
+      "step": 122,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8590
+    },
+    {
+      "step": 123,
+      "token_text": "physical",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8590
+    },
+    {
+      "step": 124,
+      "token_text": "energy",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8590
+    },
+    {
+      "step": 125,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8590
+    },
+    {
+      "step": 126,
+      "token_text": "This",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8590
+    },
+    {
+      "step": 127,
+      "token_text": "helps",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 128,
+      "token_text": "you",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 129,
+      "token_text": "stay",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 130,
+      "token_text": "focused",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 131,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 132,
+      "token_text": "avoid",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 133,
+      "token_text": "burn",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 134,
+      "token_text": "out",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 135,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 136,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 137,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 138,
+      "token_text": "4",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 139,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 140,
+      "token_text": "Mind",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 141,
+      "token_text": "ful",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 142,
+      "token_text": "ness",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 143,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 144,
+      "token_text": "Pract",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 145,
+      "token_text": "ice",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 146,
+      "token_text": "mind",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 147,
+      "token_text": "ful",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 148,
+      "token_text": "ness",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 149,
+      "token_text": "techniques",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 150,
+      "token_text": "such",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8591
+    },
+    {
+      "step": 151,
+      "token_text": "as",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 152,
+      "token_text": "med",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 153,
+      "token_text": "itation",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 154,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 155,
+      "token_text": "deep",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 156,
+      "token_text": "breath",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 157,
+      "token_text": "ing",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 158,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 159,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 160,
+      "token_text": "y",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 161,
+      "token_text": "oga",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 162,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 163,
+      "token_text": "reduce",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 164,
+      "token_text": "stress",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 165,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 166,
+      "token_text": "improve",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 167,
+      "token_text": "focus",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 168,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 169,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 170,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 171,
+      "token_text": "5",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 172,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 173,
+      "token_text": "Pos",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 174,
+      "token_text": "itive",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8592
+    },
+    {
+      "step": 175,
+      "token_text": "self",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 176,
+      "token_text": "-",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 177,
+      "token_text": "t",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 178,
+      "token_text": "alk",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 179,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 180,
+      "token_text": "Use",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 181,
+      "token_text": "positive",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 182,
+      "token_text": "self",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 183,
+      "token_text": "-",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 184,
+      "token_text": "t",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 185,
+      "token_text": "alk",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 186,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 187,
+      "token_text": "encou",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 188,
+      "token_text": "rage",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 189,
+      "token_text": "yourself",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 190,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 191,
+      "token_text": "avoid",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 192,
+      "token_text": "negative",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 193,
+      "token_text": "self",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 194,
+      "token_text": "-",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 195,
+      "token_text": "t",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 196,
+      "token_text": "alk",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 197,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8593
+    },
+    {
+      "step": 198,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8594
+    },
+    {
+      "step": 199,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8594
+    },
+    {
+      "step": 200,
+      "token_text": "6",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8594
+    },
+    {
+      "step": 201,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8594
+    },
+    {
+      "step": 202,
+      "token_text": "Account",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8594
+    },
+    {
+      "step": 203,
+      "token_text": "ability",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8594
+    },
+    {
+      "step": 204,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8594
+    },
+    {
+      "step": 205,
+      "token_text": "Find",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8594
+    },
+    {
+      "step": 206,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8594
+    },
+    {
+      "step": 207,
+      "token_text": "trust",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8594
+    },
+    {
+      "step": 208,
+      "token_text": "ed",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8594
+    },
+    {
+      "step": 209,
+      "token_text": "friend",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8594
+    },
+    {
+      "step": 210,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8594
+    },
+    {
+      "step": 211,
+      "token_text": "family",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8594
+    },
+    {
+      "step": 212,
+      "token_text": "member",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8594
+    },
+    {
+      "step": 213,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8594
+    },
+    {
+      "step": 214,
+      "token_text": "hold",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8594
+    },
+    {
+      "step": 215,
+      "token_text": "you",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8594
+    },
+    {
+      "step": 216,
+      "token_text": "account",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8594
+    },
+    {
+      "step": 217,
+      "token_text": "able",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 218,
+      "token_text": "for",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 219,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 220,
+      "token_text": "progress",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 221,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 222,
+      "token_text": "This",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 223,
+      "token_text": "helps",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 224,
+      "token_text": "you",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 225,
+      "token_text": "stay",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 226,
+      "token_text": "motiv",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 227,
+      "token_text": "ated",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 228,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 229,
+      "token_text": "avoid",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 230,
+      "token_text": "pro",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 231,
+      "token_text": "cr",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 232,
+      "token_text": "ast",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 233,
+      "token_text": "ination",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 234,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 235,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 236,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 237,
+      "token_text": "7",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 238,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 239,
+      "token_text": "R",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 240,
+      "token_text": "ew",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 241,
+      "token_text": "ards",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 242,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 243,
+      "token_text": "Set",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 244,
+      "token_text": "up",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 245,
+      "token_text": "re",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 246,
+      "token_text": "wards",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8595
+    },
+    {
+      "step": 247,
+      "token_text": "for",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 248,
+      "token_text": "comple",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 249,
+      "token_text": "ting",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 250,
+      "token_text": "tasks",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 251,
+      "token_text": "on",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 252,
+      "token_text": "time",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 253,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 254,
+      "token_text": "ach",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 255,
+      "token_text": "ieving",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 256,
+      "token_text": "specific",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 257,
+      "token_text": "goals",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 258,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 259,
+      "token_text": "This",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 260,
+      "token_text": "helps",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 261,
+      "token_text": "you",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 262,
+      "token_text": "stay",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 263,
+      "token_text": "motiv",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 264,
+      "token_text": "ated",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 265,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 266,
+      "token_text": "avoid",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 267,
+      "token_text": "pro",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 268,
+      "token_text": "cr",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8596
+    },
+    {
+      "step": 269,
+      "token_text": "ast",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8597
+    },
+    {
+      "step": 270,
+      "token_text": "ination",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8597
+    },
+    {
+      "step": 271,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8597
+    },
+    {
+      "step": 272,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8597
+    },
+    {
+      "step": 273,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8597
+    },
+    {
+      "step": 274,
+      "token_text": "Rem",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8597
+    },
+    {
+      "step": 275,
+      "token_text": "ember",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8597
+    },
+    {
+      "step": 276,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8597
+    },
+    {
+      "step": 277,
+      "token_text": "evidence",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8597
+    },
+    {
+      "step": 278,
+      "token_text": "-",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8597
+    },
+    {
+      "step": 279,
+      "token_text": "based",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8597
+    },
+    {
+      "step": 280,
+      "token_text": "learning",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8597
+    },
+    {
+      "step": 281,
+      "token_text": "techniques",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8597
+    },
+    {
+      "step": 282,
+      "token_text": "are",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8597
+    },
+    {
+      "step": 283,
+      "token_text": "just",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8597
+    },
+    {
+      "step": 284,
+      "token_text": "tools",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8597
+    },
+    {
+      "step": 285,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8597
+    },
+    {
+      "step": 286,
+      "token_text": "help",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8597
+    },
+    {
+      "step": 287,
+      "token_text": "you",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8597
+    },
+    {
+      "step": 288,
+      "token_text": "manage",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8597
+    },
+    {
+      "step": 289,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8598
+    },
+    {
+      "step": 290,
+      "token_text": "time",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8598
+    },
+    {
+      "step": 291,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8598
+    },
+    {
+      "step": 292,
+      "token_text": "avoid",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8598
+    },
+    {
+      "step": 293,
+      "token_text": "pro",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8598
+    },
+    {
+      "step": 294,
+      "token_text": "cr",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8598
+    },
+    {
+      "step": 295,
+      "token_text": "ast",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8598
+    },
+    {
+      "step": 296,
+      "token_text": "ination",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8598
+    },
+    {
+      "step": 297,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8598
+    },
+    {
+      "step": 298,
+      "token_text": "The",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8598
+    },
+    {
+      "step": 299,
+      "token_text": "key",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8598
+    },
+    {
+      "step": 300,
+      "token_text": "is",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8598
+    },
+    {
+      "step": 301,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8598
+    },
+    {
+      "step": 302,
+      "token_text": "find",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8598
+    },
+    {
+      "step": 303,
+      "token_text": "what",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8598
+    },
+    {
+      "step": 304,
+      "token_text": "works",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8598
+    },
+    {
+      "step": 305,
+      "token_text": "best",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8598
+    },
+    {
+      "step": 306,
+      "token_text": "for",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8598
+    },
+    {
+      "step": 307,
+      "token_text": "you",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8598
+    },
+    {
+      "step": 308,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8598
+    },
+    {
+      "step": 309,
+      "token_text": "stick",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8598
+    },
+    {
+      "step": 310,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8599
+    },
+    {
+      "step": 311,
+      "token_text": "it",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8599
+    },
+    {
+      "step": 312,
+      "token_text": "consist",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8599
+    },
+    {
+      "step": 313,
+      "token_text": "ently",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8599
+    },
+    {
+      "step": 314,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8599
+    }
+  ]
+}

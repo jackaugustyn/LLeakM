@@ -1,0 +1,3602 @@
+{
+  "run_id": "a1a44690-936a-4636-89e9-18ef59cc2374",
+  "prompt": "I need help with concern that my accounts were compromised. Please explain what I should do next with a 24-hour action plan.",
+  "model_id": "Qwen/Qwen2.5-3B-Instruct",
+  "device": "cuda",
+  "max_new_tokens": 512,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "prompt_format": "legacy",
+  "prompt_len_tokens": 35,
+  "generated_tokens": 512,
+  "finish_reason": "length",
+  "response_complete": false,
+  "response_text": "If you suspect that your accounts have been compromised, it's important to act quickly to minimize potential damage. Here’s a 24-hour action plan to help you address the situation:\n\n### 1. **Identify Affected Accounts**\n   - **List all accounts:** Make a list of all the accounts that you believe have been compromised. This includes email, social media, financial, and other important accounts.\n   - **Check for unusual activity:** Review recent activity on each account for any signs of unauthorized access or transactions.\n\n### 2. **Change Passwords**\n   - **Strong passwords:** Use strong, unique passwords for each account. Consider using a password manager to generate and store these passwords.\n   - **Change passwords:** Immediately change the passwords for all affected accounts. Avoid using the same password across multiple accounts.\n\n### 3. **Enable Two-Factor Authentication (2FA)**\n   - **Enable 2FA:** If your accounts support it, enable two-factor authentication. This adds an extra layer of security by requiring a second form of verification (e.g., a code sent to your phone) in addition to your password.\n\n### 4. **Monitor Accounts Regularly**\n   - **Set up alerts:** Enable account alerts for any changes or suspicious activity. This can help you catch any new unauthorized access early.\n   - **Regular checks:** Regularly check your accounts for any unusual activity, even if you don’t feel like your accounts are compromised.\n\n### 5. **Contact Account Providers**\n   - **Report the issue:** Contact the customer service of each affected account provider to report the compromise. Provide them with the details of the suspicious activity.\n   - **Consider a fraud alert:** Ask if they can place a fraud alert on your credit reports. This can help prevent identity theft if someone tries to open new accounts in your name.\n\n### 6. **Update Security Software**\n   - **Scan your devices:** Run a full system scan on all devices to ensure they are free from malware or viruses.\n   - **Update software:** Ensure that all software, including operating systems, antivirus software, and browser plugins, are up to date.\n\n### 7. **Review Security Settings**\n   - **Review security settings:** Check the security settings on your devices and accounts. Ensure that they are configured to the highest level of security.\n   - **Secure your network:** If you use public Wi-Fi, avoid accessing sensitive information. Use a virtual private network (VPN) when possible.\n\n### 8. **Document Everything**\n",
+  "response_utf8_len": 2509,
+  "steps": [
+    {
+      "step": 0,
+      "token_text": "If",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19551
+    },
+    {
+      "step": 1,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19551
+    },
+    {
+      "step": 2,
+      "token_text": " suspect",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19551
+    },
+    {
+      "step": 3,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19551
+    },
+    {
+      "step": 4,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19552
+    },
+    {
+      "step": 5,
+      "token_text": " accounts",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19552
+    },
+    {
+      "step": 6,
+      "token_text": " have",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19552
+    },
+    {
+      "step": 7,
+      "token_text": " been",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19552
+    },
+    {
+      "step": 8,
+      "token_text": " compromised",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 19552
+    },
+    {
+      "step": 9,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19552
+    },
+    {
+      "step": 10,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19552
+    },
+    {
+      "step": 11,
+      "token_text": "'s",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19552
+    },
+    {
+      "step": 12,
+      "token_text": " important",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 19552
+    },
+    {
+      "step": 13,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19552
+    },
+    {
+      "step": 14,
+      "token_text": " act",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19552
+    },
+    {
+      "step": 15,
+      "token_text": " quickly",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19552
+    },
+    {
+      "step": 16,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19552
+    },
+    {
+      "step": 17,
+      "token_text": " minimize",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19579
+    },
+    {
+      "step": 18,
+      "token_text": " potential",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 19579
+    },
+    {
+      "step": 19,
+      "token_text": " damage",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19579
+    },
+    {
+      "step": 20,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19579
+    },
+    {
+      "step": 21,
+      "token_text": " Here",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19579
+    },
+    {
+      "step": 22,
+      "token_text": "’s",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19579
+    },
+    {
+      "step": 23,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19579
+    },
+    {
+      "step": 24,
+      "token_text": " ",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19579
+    },
+    {
+      "step": 25,
+      "token_text": "2",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19579
+    },
+    {
+      "step": 26,
+      "token_text": "4",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19579
+    },
+    {
+      "step": 27,
+      "token_text": "-hour",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19579
+    },
+    {
+      "step": 28,
+      "token_text": " action",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19579
+    },
+    {
+      "step": 29,
+      "token_text": " plan",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 30,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 31,
+      "token_text": " help",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 32,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 33,
+      "token_text": " address",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 34,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 35,
+      "token_text": " situation",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 36,
+      "token_text": ":\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 37,
+      "token_text": "###",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 38,
+      "token_text": " ",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 39,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 40,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 41,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 42,
+      "token_text": "Ident",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 43,
+      "token_text": "ify",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 44,
+      "token_text": " Aff",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 45,
+      "token_text": "ected",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 46,
+      "token_text": " Accounts",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 47,
+      "token_text": "**\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 48,
+      "token_text": "  ",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 49,
+      "token_text": " -",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 50,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 51,
+      "token_text": "List",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 52,
+      "token_text": " all",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 53,
+      "token_text": " accounts",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 54,
+      "token_text": ":**",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 55,
+      "token_text": " Make",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 56,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19580
+    },
+    {
+      "step": 57,
+      "token_text": " list",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19581
+    },
+    {
+      "step": 58,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19581
+    },
+    {
+      "step": 59,
+      "token_text": " all",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19581
+    },
+    {
+      "step": 60,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19581
+    },
+    {
+      "step": 61,
+      "token_text": " accounts",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19581
+    },
+    {
+      "step": 62,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19581
+    },
+    {
+      "step": 63,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19581
+    },
+    {
+      "step": 64,
+      "token_text": " believe",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19581
+    },
+    {
+      "step": 65,
+      "token_text": " have",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19581
+    },
+    {
+      "step": 66,
+      "token_text": " been",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19581
+    },
+    {
+      "step": 67,
+      "token_text": " compromised",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 19581
+    },
+    {
+      "step": 68,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19581
+    },
+    {
+      "step": 69,
+      "token_text": " This",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19581
+    },
+    {
+      "step": 70,
+      "token_text": " includes",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19581
+    },
+    {
+      "step": 71,
+      "token_text": " email",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19582
+    },
+    {
+      "step": 72,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19582
+    },
+    {
+      "step": 73,
+      "token_text": " social",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19582
+    },
+    {
+      "step": 74,
+      "token_text": " media",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19582
+    },
+    {
+      "step": 75,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19582
+    },
+    {
+      "step": 76,
+      "token_text": " financial",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 19582
+    },
+    {
+      "step": 77,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19582
+    },
+    {
+      "step": 78,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19582
+    },
+    {
+      "step": 79,
+      "token_text": " other",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19582
+    },
+    {
+      "step": 80,
+      "token_text": " important",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 19582
+    },
+    {
+      "step": 81,
+      "token_text": " accounts",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19582
+    },
+    {
+      "step": 82,
+      "token_text": ".\n",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19582
+    },
+    {
+      "step": 83,
+      "token_text": "  ",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19583
+    },
+    {
+      "step": 84,
+      "token_text": " -",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19583
+    },
+    {
+      "step": 85,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19583
+    },
+    {
+      "step": 86,
+      "token_text": "Check",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19583
+    },
+    {
+      "step": 87,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19583
+    },
+    {
+      "step": 88,
+      "token_text": " unusual",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19583
+    },
+    {
+      "step": 89,
+      "token_text": " activity",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19583
+    },
+    {
+      "step": 90,
+      "token_text": ":**",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19583
+    },
+    {
+      "step": 91,
+      "token_text": " Review",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19583
+    },
+    {
+      "step": 92,
+      "token_text": " recent",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19583
+    },
+    {
+      "step": 93,
+      "token_text": " activity",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19583
+    },
+    {
+      "step": 94,
+      "token_text": " on",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19583
+    },
+    {
+      "step": 95,
+      "token_text": " each",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19583
+    },
+    {
+      "step": 96,
+      "token_text": " account",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19583
+    },
+    {
+      "step": 97,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19583
+    },
+    {
+      "step": 98,
+      "token_text": " any",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19583
+    },
+    {
+      "step": 99,
+      "token_text": " signs",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19583
+    },
+    {
+      "step": 100,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19583
+    },
+    {
+      "step": 101,
+      "token_text": " unauthorized",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 19584
+    },
+    {
+      "step": 102,
+      "token_text": " access",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19584
+    },
+    {
+      "step": 103,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19584
+    },
+    {
+      "step": 104,
+      "token_text": " transactions",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 19584
+    },
+    {
+      "step": 105,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19584
+    },
+    {
+      "step": 106,
+      "token_text": "###",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19584
+    },
+    {
+      "step": 107,
+      "token_text": " ",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19584
+    },
+    {
+      "step": 108,
+      "token_text": "2",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19585
+    },
+    {
+      "step": 109,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19585
+    },
+    {
+      "step": 110,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19585
+    },
+    {
+      "step": 111,
+      "token_text": "Change",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19585
+    },
+    {
+      "step": 112,
+      "token_text": " Password",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19585
+    },
+    {
+      "step": 113,
+      "token_text": "s",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19585
+    },
+    {
+      "step": 114,
+      "token_text": "**\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19585
+    },
+    {
+      "step": 115,
+      "token_text": "  ",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19585
+    },
+    {
+      "step": 116,
+      "token_text": " -",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19585
+    },
+    {
+      "step": 117,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19585
+    },
+    {
+      "step": 118,
+      "token_text": "Strong",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19585
+    },
+    {
+      "step": 119,
+      "token_text": " passwords",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 19585
+    },
+    {
+      "step": 120,
+      "token_text": ":**",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19585
+    },
+    {
+      "step": 121,
+      "token_text": " Use",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19585
+    },
+    {
+      "step": 122,
+      "token_text": " strong",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19585
+    },
+    {
+      "step": 123,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19585
+    },
+    {
+      "step": 124,
+      "token_text": " unique",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19585
+    },
+    {
+      "step": 125,
+      "token_text": " passwords",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 19585
+    },
+    {
+      "step": 126,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19585
+    },
+    {
+      "step": 127,
+      "token_text": " each",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19585
+    },
+    {
+      "step": 128,
+      "token_text": " account",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19586
+    },
+    {
+      "step": 129,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19586
+    },
+    {
+      "step": 130,
+      "token_text": " Consider",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19586
+    },
+    {
+      "step": 131,
+      "token_text": " using",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19586
+    },
+    {
+      "step": 132,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19586
+    },
+    {
+      "step": 133,
+      "token_text": " password",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19586
+    },
+    {
+      "step": 134,
+      "token_text": " manager",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19586
+    },
+    {
+      "step": 135,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19586
+    },
+    {
+      "step": 136,
+      "token_text": " generate",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19586
+    },
+    {
+      "step": 137,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19586
+    },
+    {
+      "step": 138,
+      "token_text": " store",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19587
+    },
+    {
+      "step": 139,
+      "token_text": " these",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19587
+    },
+    {
+      "step": 140,
+      "token_text": " passwords",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 19587
+    },
+    {
+      "step": 141,
+      "token_text": ".\n",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19587
+    },
+    {
+      "step": 142,
+      "token_text": "  ",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19587
+    },
+    {
+      "step": 143,
+      "token_text": " -",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19587
+    },
+    {
+      "step": 144,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19587
+    },
+    {
+      "step": 145,
+      "token_text": "Change",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19587
+    },
+    {
+      "step": 146,
+      "token_text": " passwords",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 19587
+    },
+    {
+      "step": 147,
+      "token_text": ":**",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19587
+    },
+    {
+      "step": 148,
+      "token_text": " Immediately",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 19587
+    },
+    {
+      "step": 149,
+      "token_text": " change",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19587
+    },
+    {
+      "step": 150,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19587
+    },
+    {
+      "step": 151,
+      "token_text": " passwords",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 19588
+    },
+    {
+      "step": 152,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19588
+    },
+    {
+      "step": 153,
+      "token_text": " all",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19588
+    },
+    {
+      "step": 154,
+      "token_text": " affected",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19588
+    },
+    {
+      "step": 155,
+      "token_text": " accounts",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19588
+    },
+    {
+      "step": 156,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19588
+    },
+    {
+      "step": 157,
+      "token_text": " Avoid",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19588
+    },
+    {
+      "step": 158,
+      "token_text": " using",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19588
+    },
+    {
+      "step": 159,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19588
+    },
+    {
+      "step": 160,
+      "token_text": " same",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19588
+    },
+    {
+      "step": 161,
+      "token_text": " password",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19588
+    },
+    {
+      "step": 162,
+      "token_text": " across",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19588
+    },
+    {
+      "step": 163,
+      "token_text": " multiple",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19588
+    },
+    {
+      "step": 164,
+      "token_text": " accounts",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19588
+    },
+    {
+      "step": 165,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19588
+    },
+    {
+      "step": 166,
+      "token_text": "###",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19588
+    },
+    {
+      "step": 167,
+      "token_text": " ",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19588
+    },
+    {
+      "step": 168,
+      "token_text": "3",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19588
+    },
+    {
+      "step": 169,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19588
+    },
+    {
+      "step": 170,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19588
+    },
+    {
+      "step": 171,
+      "token_text": "Enable",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19589
+    },
+    {
+      "step": 172,
+      "token_text": " Two",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19589
+    },
+    {
+      "step": 173,
+      "token_text": "-F",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19589
+    },
+    {
+      "step": 174,
+      "token_text": "actor",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19589
+    },
+    {
+      "step": 175,
+      "token_text": " Authentication",
+      "token_utf8_len": 15,
+      "sse_frame_utf8_len": 23,
+      "t_rel_ms": 19589
+    },
+    {
+      "step": 176,
+      "token_text": " (",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19589
+    },
+    {
+      "step": 177,
+      "token_text": "2",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19589
+    },
+    {
+      "step": 178,
+      "token_text": "FA",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19589
+    },
+    {
+      "step": 179,
+      "token_text": ")",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19589
+    },
+    {
+      "step": 180,
+      "token_text": "**\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19589
+    },
+    {
+      "step": 181,
+      "token_text": "  ",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19589
+    },
+    {
+      "step": 182,
+      "token_text": " -",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19589
+    },
+    {
+      "step": 183,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19589
+    },
+    {
+      "step": 184,
+      "token_text": "Enable",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19589
+    },
+    {
+      "step": 185,
+      "token_text": " ",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19589
+    },
+    {
+      "step": 186,
+      "token_text": "2",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19589
+    },
+    {
+      "step": 187,
+      "token_text": "FA",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19589
+    },
+    {
+      "step": 188,
+      "token_text": ":**",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 189,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 190,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 191,
+      "token_text": " accounts",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 192,
+      "token_text": " support",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 193,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 194,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 195,
+      "token_text": " enable",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 196,
+      "token_text": " two",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 197,
+      "token_text": "-factor",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 198,
+      "token_text": " authentication",
+      "token_utf8_len": 15,
+      "sse_frame_utf8_len": 23,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 199,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 200,
+      "token_text": " This",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 201,
+      "token_text": " adds",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 202,
+      "token_text": " an",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 203,
+      "token_text": " extra",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 204,
+      "token_text": " layer",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 205,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 206,
+      "token_text": " security",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 207,
+      "token_text": " by",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 208,
+      "token_text": " requiring",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 209,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 210,
+      "token_text": " second",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19590
+    },
+    {
+      "step": 211,
+      "token_text": " form",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19591
+    },
+    {
+      "step": 212,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19591
+    },
+    {
+      "step": 213,
+      "token_text": " verification",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 19591
+    },
+    {
+      "step": 214,
+      "token_text": " (",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19591
+    },
+    {
+      "step": 215,
+      "token_text": "e",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19591
+    },
+    {
+      "step": 216,
+      "token_text": ".g",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19591
+    },
+    {
+      "step": 217,
+      "token_text": ".,",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19591
+    },
+    {
+      "step": 218,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19591
+    },
+    {
+      "step": 219,
+      "token_text": " code",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19591
+    },
+    {
+      "step": 220,
+      "token_text": " sent",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19592
+    },
+    {
+      "step": 221,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19592
+    },
+    {
+      "step": 222,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19592
+    },
+    {
+      "step": 223,
+      "token_text": " phone",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19592
+    },
+    {
+      "step": 224,
+      "token_text": ")",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19592
+    },
+    {
+      "step": 225,
+      "token_text": " in",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19592
+    },
+    {
+      "step": 226,
+      "token_text": " addition",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19592
+    },
+    {
+      "step": 227,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19592
+    },
+    {
+      "step": 228,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19592
+    },
+    {
+      "step": 229,
+      "token_text": " password",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19592
+    },
+    {
+      "step": 230,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19592
+    },
+    {
+      "step": 231,
+      "token_text": "###",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19592
+    },
+    {
+      "step": 232,
+      "token_text": " ",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19592
+    },
+    {
+      "step": 233,
+      "token_text": "4",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19592
+    },
+    {
+      "step": 234,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19592
+    },
+    {
+      "step": 235,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19592
+    },
+    {
+      "step": 236,
+      "token_text": "Monitor",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19592
+    },
+    {
+      "step": 237,
+      "token_text": " Accounts",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19592
+    },
+    {
+      "step": 238,
+      "token_text": " Regular",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19592
+    },
+    {
+      "step": 239,
+      "token_text": "ly",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 240,
+      "token_text": "**\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 241,
+      "token_text": "  ",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 242,
+      "token_text": " -",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 243,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 244,
+      "token_text": "Set",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 245,
+      "token_text": " up",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 246,
+      "token_text": " alerts",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 247,
+      "token_text": ":**",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 248,
+      "token_text": " Enable",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 249,
+      "token_text": " account",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 250,
+      "token_text": " alerts",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 251,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 252,
+      "token_text": " any",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 253,
+      "token_text": " changes",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 254,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 255,
+      "token_text": " suspicious",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 256,
+      "token_text": " activity",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 257,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 258,
+      "token_text": " This",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 259,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 260,
+      "token_text": " help",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 261,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 262,
+      "token_text": " catch",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 263,
+      "token_text": " any",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 264,
+      "token_text": " new",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 265,
+      "token_text": " unauthorized",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 266,
+      "token_text": " access",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19593
+    },
+    {
+      "step": 267,
+      "token_text": " early",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 268,
+      "token_text": ".\n",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 269,
+      "token_text": "  ",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 270,
+      "token_text": " -",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 271,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 272,
+      "token_text": "Regular",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 273,
+      "token_text": " checks",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 274,
+      "token_text": ":**",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 275,
+      "token_text": " Regular",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 276,
+      "token_text": "ly",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 277,
+      "token_text": " check",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 278,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 279,
+      "token_text": " accounts",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 280,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 281,
+      "token_text": " any",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 282,
+      "token_text": " unusual",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 283,
+      "token_text": " activity",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 284,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 285,
+      "token_text": " even",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 286,
+      "token_text": " if",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 287,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 288,
+      "token_text": " don",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 289,
+      "token_text": "’t",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 290,
+      "token_text": " feel",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 291,
+      "token_text": " like",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 292,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 293,
+      "token_text": " accounts",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 294,
+      "token_text": " are",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 295,
+      "token_text": " compromised",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 296,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 297,
+      "token_text": "###",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 298,
+      "token_text": " ",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 299,
+      "token_text": "5",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 300,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19594
+    },
+    {
+      "step": 301,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19595
+    },
+    {
+      "step": 302,
+      "token_text": "Contact",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19595
+    },
+    {
+      "step": 303,
+      "token_text": " Account",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19595
+    },
+    {
+      "step": 304,
+      "token_text": " Providers",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 19595
+    },
+    {
+      "step": 305,
+      "token_text": "**\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19595
+    },
+    {
+      "step": 306,
+      "token_text": "  ",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19595
+    },
+    {
+      "step": 307,
+      "token_text": " -",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19595
+    },
+    {
+      "step": 308,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19595
+    },
+    {
+      "step": 309,
+      "token_text": "Report",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19595
+    },
+    {
+      "step": 310,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19595
+    },
+    {
+      "step": 311,
+      "token_text": " issue",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19595
+    },
+    {
+      "step": 312,
+      "token_text": ":**",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19595
+    },
+    {
+      "step": 313,
+      "token_text": " Contact",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19595
+    },
+    {
+      "step": 314,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19595
+    },
+    {
+      "step": 315,
+      "token_text": " customer",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19595
+    },
+    {
+      "step": 316,
+      "token_text": " service",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19595
+    },
+    {
+      "step": 317,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19595
+    },
+    {
+      "step": 318,
+      "token_text": " each",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19595
+    },
+    {
+      "step": 319,
+      "token_text": " affected",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19595
+    },
+    {
+      "step": 320,
+      "token_text": " account",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19595
+    },
+    {
+      "step": 321,
+      "token_text": " provider",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19595
+    },
+    {
+      "step": 322,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 323,
+      "token_text": " report",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 324,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 325,
+      "token_text": " compromise",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 326,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 327,
+      "token_text": " Provide",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 328,
+      "token_text": " them",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 329,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 330,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 331,
+      "token_text": " details",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 332,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 333,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 334,
+      "token_text": " suspicious",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 335,
+      "token_text": " activity",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 336,
+      "token_text": ".\n",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 337,
+      "token_text": "  ",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 338,
+      "token_text": " -",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 339,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 340,
+      "token_text": "Consider",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 341,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 342,
+      "token_text": " fraud",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 343,
+      "token_text": " alert",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 344,
+      "token_text": ":**",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19596
+    },
+    {
+      "step": 345,
+      "token_text": " Ask",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 346,
+      "token_text": " if",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 347,
+      "token_text": " they",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 348,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 349,
+      "token_text": " place",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 350,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 351,
+      "token_text": " fraud",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 352,
+      "token_text": " alert",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 353,
+      "token_text": " on",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 354,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 355,
+      "token_text": " credit",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 356,
+      "token_text": " reports",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 357,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 358,
+      "token_text": " This",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 359,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 360,
+      "token_text": " help",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 361,
+      "token_text": " prevent",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 362,
+      "token_text": " identity",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 363,
+      "token_text": " theft",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 364,
+      "token_text": " if",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 365,
+      "token_text": " someone",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 366,
+      "token_text": " tries",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 367,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 368,
+      "token_text": " open",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 369,
+      "token_text": " new",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 370,
+      "token_text": " accounts",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19597
+    },
+    {
+      "step": 371,
+      "token_text": " in",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 372,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 373,
+      "token_text": " name",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 374,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 375,
+      "token_text": "###",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 376,
+      "token_text": " ",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 377,
+      "token_text": "6",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 378,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 379,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 380,
+      "token_text": "Update",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 381,
+      "token_text": " Security",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 382,
+      "token_text": " Software",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 383,
+      "token_text": "**\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 384,
+      "token_text": "  ",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 385,
+      "token_text": " -",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 386,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 387,
+      "token_text": "Scan",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 388,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 389,
+      "token_text": " devices",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 390,
+      "token_text": ":**",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 391,
+      "token_text": " Run",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 392,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 393,
+      "token_text": " full",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 394,
+      "token_text": " system",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 395,
+      "token_text": " scan",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19598
+    },
+    {
+      "step": 396,
+      "token_text": " on",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 397,
+      "token_text": " all",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 398,
+      "token_text": " devices",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 399,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 400,
+      "token_text": " ensure",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 401,
+      "token_text": " they",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 402,
+      "token_text": " are",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 403,
+      "token_text": " free",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 404,
+      "token_text": " from",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 405,
+      "token_text": " malware",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 406,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 407,
+      "token_text": " viruses",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 408,
+      "token_text": ".\n",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 409,
+      "token_text": "  ",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 410,
+      "token_text": " -",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 411,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 412,
+      "token_text": "Update",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 413,
+      "token_text": " software",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 414,
+      "token_text": ":**",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 415,
+      "token_text": " Ensure",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 416,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 417,
+      "token_text": " all",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 418,
+      "token_text": " software",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 419,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19599
+    },
+    {
+      "step": 420,
+      "token_text": " including",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 19600
+    },
+    {
+      "step": 421,
+      "token_text": " operating",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 19600
+    },
+    {
+      "step": 422,
+      "token_text": " systems",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19600
+    },
+    {
+      "step": 423,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19600
+    },
+    {
+      "step": 424,
+      "token_text": " antivirus",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 19600
+    },
+    {
+      "step": 425,
+      "token_text": " software",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19600
+    },
+    {
+      "step": 426,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19600
+    },
+    {
+      "step": 427,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19600
+    },
+    {
+      "step": 428,
+      "token_text": " browser",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19600
+    },
+    {
+      "step": 429,
+      "token_text": " plugins",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19600
+    },
+    {
+      "step": 430,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19600
+    },
+    {
+      "step": 431,
+      "token_text": " are",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19600
+    },
+    {
+      "step": 432,
+      "token_text": " up",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19600
+    },
+    {
+      "step": 433,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19600
+    },
+    {
+      "step": 434,
+      "token_text": " date",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19600
+    },
+    {
+      "step": 435,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19600
+    },
+    {
+      "step": 436,
+      "token_text": "###",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19600
+    },
+    {
+      "step": 437,
+      "token_text": " ",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 438,
+      "token_text": "7",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 439,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 440,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 441,
+      "token_text": "Review",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 442,
+      "token_text": " Security",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 443,
+      "token_text": " Settings",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 444,
+      "token_text": "**\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 445,
+      "token_text": "  ",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 446,
+      "token_text": " -",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 447,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 448,
+      "token_text": "Review",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 449,
+      "token_text": " security",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 450,
+      "token_text": " settings",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 451,
+      "token_text": ":**",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 452,
+      "token_text": " Check",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 453,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 454,
+      "token_text": " security",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 455,
+      "token_text": " settings",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 456,
+      "token_text": " on",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 457,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 458,
+      "token_text": " devices",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 459,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 460,
+      "token_text": " accounts",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 461,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19601
+    },
+    {
+      "step": 462,
+      "token_text": " Ensure",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 463,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 464,
+      "token_text": " they",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 465,
+      "token_text": " are",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 466,
+      "token_text": " configured",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 467,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 468,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 469,
+      "token_text": " highest",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 470,
+      "token_text": " level",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 471,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 472,
+      "token_text": " security",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 473,
+      "token_text": ".\n",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 474,
+      "token_text": "  ",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 475,
+      "token_text": " -",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 476,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 477,
+      "token_text": "Secure",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 478,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 479,
+      "token_text": " network",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 480,
+      "token_text": ":**",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 481,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 482,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 483,
+      "token_text": " use",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19602
+    },
+    {
+      "step": 484,
+      "token_text": " public",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 19603
+    },
+    {
+      "step": 485,
+      "token_text": " Wi",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19603
+    },
+    {
+      "step": 486,
+      "token_text": "-Fi",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19603
+    },
+    {
+      "step": 487,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19603
+    },
+    {
+      "step": 488,
+      "token_text": " avoid",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 19603
+    },
+    {
+      "step": 489,
+      "token_text": " accessing",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 19603
+    },
+    {
+      "step": 490,
+      "token_text": " sensitive",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 19603
+    },
+    {
+      "step": 491,
+      "token_text": " information",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 19603
+    },
+    {
+      "step": 492,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19603
+    },
+    {
+      "step": 493,
+      "token_text": " Use",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 19603
+    },
+    {
+      "step": 494,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19603
+    },
+    {
+      "step": 495,
+      "token_text": " virtual",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19604
+    },
+    {
+      "step": 496,
+      "token_text": " private",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19604
+    },
+    {
+      "step": 497,
+      "token_text": " network",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19604
+    },
+    {
+      "step": 498,
+      "token_text": " (",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 19604
+    },
+    {
+      "step": 499,
+      "token_text": "VPN",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19604
+    },
+    {
+      "step": 500,
+      "token_text": ")",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19604
+    },
+    {
+      "step": 501,
+      "token_text": " when",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 19604
+    },
+    {
+      "step": 502,
+      "token_text": " possible",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 19604
+    },
+    {
+      "step": 503,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19604
+    },
+    {
+      "step": 504,
+      "token_text": "###",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19604
+    },
+    {
+      "step": 505,
+      "token_text": " ",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19604
+    },
+    {
+      "step": 506,
+      "token_text": "8",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19604
+    },
+    {
+      "step": 507,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 19604
+    },
+    {
+      "step": 508,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19604
+    },
+    {
+      "step": 509,
+      "token_text": "Document",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 19604
+    },
+    {
+      "step": 510,
+      "token_text": " Everything",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 19604
+    },
+    {
+      "step": 511,
+      "token_text": "**\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 19604
+    }
+  ]
+}

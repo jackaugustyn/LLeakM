@@ -1,0 +1,1992 @@
+{
+  "run_id": "98d26fb4-7559-40a0-b2be-35c8cb4d9cd2",
+  "prompt": "I need help with burnout from overtime and unrealistic deadlines. Please explain what I should do next with concise HR-safe language.",
+  "model_id": "microsoft/phi-1_5",
+  "device": "cuda",
+  "max_new_tokens": 512,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "prompt_format": "legacy",
+  "prompt_len_tokens": 31,
+  "generated_tokens": 282,
+  "finish_reason": "eos",
+  "response_complete": true,
+  "response_text": " I understand your concerns. It's important to prioritize self-care and set realistic expectations. Let's discuss strategies to manage your workload and ensure a healthy work-life balance.\n\nExercise 1: Identify the negative impact of excessive overtime on employee well-being.\nAnswer: Excessive overtime can lead to burnout, decreased job satisfaction, and increased stress levels among employees.\n\nExercise 2: Explain the importance of setting realistic expectations in the workplace.\nAnswer: Setting realistic expectations helps employees avoid burnout, maintain a healthy work-life balance, and improve overall job satisfaction.\n\nExercise 3: Describe the potential consequences of unrealistic deadlines on employee performance.\nAnswer: Unrealistic deadlines can lead to increased stress, decreased productivity, and a decline in the quality of work produced by employees.\n\nExercise 4: Discuss the role of HR in addressing burnout and promoting employee well-being.\nAnswer: HR plays a crucial role in implementing policies and practices that prioritize employee well-being, such as providing support for work-life balance and promoting a healthy work environment.\n\nExercise 5: Give an example of a company that successfully implemented strategies to prevent burnout among its employees.\nAnswer: Company X implemented flexible work hours, encouraged regular breaks, and provided resources for stress management, resulting in a decrease in burnout rates among its employees.\n",
+  "response_utf8_len": 1475,
+  "steps": [
+    {
+      "step": 0,
+      "token_text": " I",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 1,
+      "token_text": " understand",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 2,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 3,
+      "token_text": " concerns",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 4,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 5,
+      "token_text": " It",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 6,
+      "token_text": "'s",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 7,
+      "token_text": " important",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 8,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 9,
+      "token_text": " prioritize",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 10,
+      "token_text": " self",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 11,
+      "token_text": "-",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 12,
+      "token_text": "care",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 13,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 14,
+      "token_text": " set",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 15,
+      "token_text": " realistic",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 16,
+      "token_text": " expectations",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 17,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 18,
+      "token_text": " Let",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 19,
+      "token_text": "'s",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 20,
+      "token_text": " discuss",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 21,
+      "token_text": " strategies",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 22,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 23,
+      "token_text": " manage",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 24,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 25,
+      "token_text": " workload",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 26,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 27,
+      "token_text": " ensure",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 28,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 29,
+      "token_text": " healthy",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 30,
+      "token_text": " work",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 31,
+      "token_text": "-",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 32,
+      "token_text": "life",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 33,
+      "token_text": " balance",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 34,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 35,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 36,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 37,
+      "token_text": "Ex",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 38,
+      "token_text": "ercise",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 39,
+      "token_text": " 1",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8814
+    },
+    {
+      "step": 40,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 41,
+      "token_text": " Ident",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 42,
+      "token_text": "ify",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 43,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 44,
+      "token_text": " negative",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 45,
+      "token_text": " impact",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 46,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 47,
+      "token_text": " excessive",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 48,
+      "token_text": " overtime",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 49,
+      "token_text": " on",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 50,
+      "token_text": " employee",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 51,
+      "token_text": " well",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 52,
+      "token_text": "-",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 53,
+      "token_text": "being",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 54,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 55,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 56,
+      "token_text": "Answer",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 57,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 58,
+      "token_text": " Ex",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 59,
+      "token_text": "cessive",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 60,
+      "token_text": " overtime",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 61,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 62,
+      "token_text": " lead",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 63,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 64,
+      "token_text": " burn",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 65,
+      "token_text": "out",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 66,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 67,
+      "token_text": " decreased",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 68,
+      "token_text": " job",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 69,
+      "token_text": " satisfaction",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 8815
+    },
+    {
+      "step": 70,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 71,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 72,
+      "token_text": " increased",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 73,
+      "token_text": " stress",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 74,
+      "token_text": " levels",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 75,
+      "token_text": " among",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 76,
+      "token_text": " employees",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 77,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 78,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 79,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 80,
+      "token_text": "Ex",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 81,
+      "token_text": "ercise",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 82,
+      "token_text": " 2",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 83,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 84,
+      "token_text": " Explain",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 85,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 86,
+      "token_text": " importance",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 87,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 88,
+      "token_text": " setting",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 89,
+      "token_text": " realistic",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 90,
+      "token_text": " expectations",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 91,
+      "token_text": " in",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 92,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 93,
+      "token_text": " workplace",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 94,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 95,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 96,
+      "token_text": "Answer",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8816
+    },
+    {
+      "step": 97,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 98,
+      "token_text": " Setting",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 99,
+      "token_text": " realistic",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 100,
+      "token_text": " expectations",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 101,
+      "token_text": " helps",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 102,
+      "token_text": " employees",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 103,
+      "token_text": " avoid",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 104,
+      "token_text": " burn",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 105,
+      "token_text": "out",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 106,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 107,
+      "token_text": " maintain",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 108,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 109,
+      "token_text": " healthy",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 110,
+      "token_text": " work",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 111,
+      "token_text": "-",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 112,
+      "token_text": "life",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 113,
+      "token_text": " balance",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 114,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 115,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 116,
+      "token_text": " improve",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 117,
+      "token_text": " overall",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 118,
+      "token_text": " job",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8817
+    },
+    {
+      "step": 119,
+      "token_text": " satisfaction",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 120,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 121,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 122,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 123,
+      "token_text": "Ex",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 124,
+      "token_text": "ercise",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 125,
+      "token_text": " 3",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 126,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 127,
+      "token_text": " Desc",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 128,
+      "token_text": "ribe",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 129,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 130,
+      "token_text": " potential",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 131,
+      "token_text": " consequences",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 132,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 133,
+      "token_text": " unrealistic",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 134,
+      "token_text": " deadlines",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 135,
+      "token_text": " on",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 136,
+      "token_text": " employee",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 137,
+      "token_text": " performance",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 138,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 139,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 140,
+      "token_text": "Answer",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 141,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 142,
+      "token_text": " Unreal",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 143,
+      "token_text": "istic",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 144,
+      "token_text": " deadlines",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8818
+    },
+    {
+      "step": 145,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 146,
+      "token_text": " lead",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 147,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 148,
+      "token_text": " increased",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 149,
+      "token_text": " stress",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 150,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 151,
+      "token_text": " decreased",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 152,
+      "token_text": " productivity",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 153,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 154,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 155,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 156,
+      "token_text": " decline",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 157,
+      "token_text": " in",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 158,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 159,
+      "token_text": " quality",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 160,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 161,
+      "token_text": " work",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 162,
+      "token_text": " produced",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 163,
+      "token_text": " by",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 164,
+      "token_text": " employees",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 165,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 166,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 167,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8819
+    },
+    {
+      "step": 168,
+      "token_text": "Ex",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 169,
+      "token_text": "ercise",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 170,
+      "token_text": " 4",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 171,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 172,
+      "token_text": " Discuss",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 173,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 174,
+      "token_text": " role",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 175,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 176,
+      "token_text": " HR",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 177,
+      "token_text": " in",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 178,
+      "token_text": " addressing",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 179,
+      "token_text": " burn",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 180,
+      "token_text": "out",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 181,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 182,
+      "token_text": " promoting",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 183,
+      "token_text": " employee",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 184,
+      "token_text": " well",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 185,
+      "token_text": "-",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 186,
+      "token_text": "being",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 187,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 188,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 189,
+      "token_text": "Answer",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 190,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 191,
+      "token_text": " HR",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 192,
+      "token_text": " plays",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 193,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8820
+    },
+    {
+      "step": 194,
+      "token_text": " crucial",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 195,
+      "token_text": " role",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 196,
+      "token_text": " in",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 197,
+      "token_text": " implementing",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 198,
+      "token_text": " policies",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 199,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 200,
+      "token_text": " practices",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 201,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 202,
+      "token_text": " prioritize",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 203,
+      "token_text": " employee",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 204,
+      "token_text": " well",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 205,
+      "token_text": "-",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 206,
+      "token_text": "being",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 207,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 208,
+      "token_text": " such",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 209,
+      "token_text": " as",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 210,
+      "token_text": " providing",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 211,
+      "token_text": " support",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 212,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 213,
+      "token_text": " work",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 214,
+      "token_text": "-",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 215,
+      "token_text": "life",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 216,
+      "token_text": " balance",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 217,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8821
+    },
+    {
+      "step": 218,
+      "token_text": " promoting",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 219,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 220,
+      "token_text": " healthy",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 221,
+      "token_text": " work",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 222,
+      "token_text": " environment",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 223,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 224,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 225,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 226,
+      "token_text": "Ex",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 227,
+      "token_text": "ercise",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 228,
+      "token_text": " 5",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 229,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 230,
+      "token_text": " Give",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 231,
+      "token_text": " an",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 232,
+      "token_text": " example",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 233,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 234,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 235,
+      "token_text": " company",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 236,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 237,
+      "token_text": " successfully",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 238,
+      "token_text": " implemented",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 239,
+      "token_text": " strategies",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 240,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 241,
+      "token_text": " prevent",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 242,
+      "token_text": " burn",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 243,
+      "token_text": "out",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8822
+    },
+    {
+      "step": 244,
+      "token_text": " among",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 245,
+      "token_text": " its",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 246,
+      "token_text": " employees",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 247,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 248,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 249,
+      "token_text": "Answer",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 250,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 251,
+      "token_text": " Company",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 252,
+      "token_text": " X",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 253,
+      "token_text": " implemented",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 254,
+      "token_text": " flexible",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 255,
+      "token_text": " work",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 256,
+      "token_text": " hours",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 257,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 258,
+      "token_text": " encouraged",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 259,
+      "token_text": " regular",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 260,
+      "token_text": " breaks",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 261,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 262,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 263,
+      "token_text": " provided",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 264,
+      "token_text": " resources",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 265,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 266,
+      "token_text": " stress",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 267,
+      "token_text": " management",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 268,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 269,
+      "token_text": " resulting",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 270,
+      "token_text": " in",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 271,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 272,
+      "token_text": " decrease",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8823
+    },
+    {
+      "step": 273,
+      "token_text": " in",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8824
+    },
+    {
+      "step": 274,
+      "token_text": " burn",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8824
+    },
+    {
+      "step": 275,
+      "token_text": "out",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8824
+    },
+    {
+      "step": 276,
+      "token_text": " rates",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8824
+    },
+    {
+      "step": 277,
+      "token_text": " among",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8824
+    },
+    {
+      "step": 278,
+      "token_text": " its",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8824
+    },
+    {
+      "step": 279,
+      "token_text": " employees",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8824
+    },
+    {
+      "step": 280,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8824
+    },
+    {
+      "step": 281,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8824
+    }
+  ]
+}

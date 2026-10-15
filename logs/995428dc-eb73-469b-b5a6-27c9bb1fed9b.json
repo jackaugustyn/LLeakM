@@ -1,0 +1,774 @@
+{
+  "run_id": "995428dc-eb73-469b-b5a6-27c9bb1fed9b",
+  "prompt": "I need help with feeling like an impostor at work. Please explain what I should do next with examples of healthier self-talk.",
+  "model_id": "microsoft/phi-1_5",
+  "device": "cuda",
+  "max_new_tokens": 512,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "prompt_format": "legacy",
+  "prompt_len_tokens": 33,
+  "generated_tokens": 108,
+  "finish_reason": "eos",
+  "response_complete": true,
+  "response_text": " It's normal to feel like an impostor at times, but it's important to remember that everyone has their own unique talents and abilities. Instead of focusing on your perceived shortcomings, try to celebrate your strengths and accomplishments. Surround yourself with supportive colleagues and mentors who can provide guidance and encouragement. Additionally, practice self-compassion and remind yourself that it's okay to make mistakes and learn from them. By shifting your mindset and embracing your own worth, you can overcome the impostor syndrome and thrive in your professional life.\n",
+  "response_utf8_len": 587,
+  "steps": [
+    {
+      "step": 0,
+      "token_text": " It",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 1,
+      "token_text": "'s",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 2,
+      "token_text": " normal",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 3,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 4,
+      "token_text": " feel",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 5,
+      "token_text": " like",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 6,
+      "token_text": " an",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 7,
+      "token_text": " imp",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 8,
+      "token_text": "ost",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 9,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 10,
+      "token_text": " at",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 11,
+      "token_text": " times",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 12,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 13,
+      "token_text": " but",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 14,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 15,
+      "token_text": "'s",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 16,
+      "token_text": " important",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 17,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 18,
+      "token_text": " remember",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 19,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 20,
+      "token_text": " everyone",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 21,
+      "token_text": " has",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 22,
+      "token_text": " their",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 23,
+      "token_text": " own",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 24,
+      "token_text": " unique",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 25,
+      "token_text": " talents",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 26,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 27,
+      "token_text": " abilities",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 28,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 29,
+      "token_text": " Instead",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 30,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 31,
+      "token_text": " focusing",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 32,
+      "token_text": " on",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 33,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 34,
+      "token_text": " perceived",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 35,
+      "token_text": " shortcomings",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 36,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 37,
+      "token_text": " try",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 38,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 39,
+      "token_text": " celebrate",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 2343
+    },
+    {
+      "step": 40,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 41,
+      "token_text": " strengths",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 42,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 43,
+      "token_text": " accomplishments",
+      "token_utf8_len": 16,
+      "sse_frame_utf8_len": 24,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 44,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 45,
+      "token_text": " Sur",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 46,
+      "token_text": "round",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 47,
+      "token_text": " yourself",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 48,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 49,
+      "token_text": " supportive",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 50,
+      "token_text": " colleagues",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 51,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 52,
+      "token_text": " mentors",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 53,
+      "token_text": " who",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 54,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 55,
+      "token_text": " provide",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 56,
+      "token_text": " guidance",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 57,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 58,
+      "token_text": " encouragement",
+      "token_utf8_len": 14,
+      "sse_frame_utf8_len": 22,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 59,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 60,
+      "token_text": " Additionally",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 61,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 62,
+      "token_text": " practice",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 63,
+      "token_text": " self",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 64,
+      "token_text": "-",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 65,
+      "token_text": "comp",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 66,
+      "token_text": "assion",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 67,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 68,
+      "token_text": " remind",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 69,
+      "token_text": " yourself",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 70,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 71,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 72,
+      "token_text": "'s",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 73,
+      "token_text": " okay",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 74,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 2344
+    },
+    {
+      "step": 75,
+      "token_text": " make",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 76,
+      "token_text": " mistakes",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 77,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 78,
+      "token_text": " learn",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 79,
+      "token_text": " from",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 80,
+      "token_text": " them",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 81,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 82,
+      "token_text": " By",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 83,
+      "token_text": " shifting",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 84,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 85,
+      "token_text": " mindset",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 86,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 87,
+      "token_text": " embracing",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 88,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 89,
+      "token_text": " own",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 90,
+      "token_text": " worth",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 91,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 92,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 93,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 94,
+      "token_text": " overcome",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 95,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 96,
+      "token_text": " imp",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 97,
+      "token_text": "ost",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 98,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 2345
+    },
+    {
+      "step": 99,
+      "token_text": " syndrome",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 2346
+    },
+    {
+      "step": 100,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 2346
+    },
+    {
+      "step": 101,
+      "token_text": " thrive",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 2346
+    },
+    {
+      "step": 102,
+      "token_text": " in",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 2346
+    },
+    {
+      "step": 103,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 2346
+    },
+    {
+      "step": 104,
+      "token_text": " professional",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 2346
+    },
+    {
+      "step": 105,
+      "token_text": " life",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 2346
+    },
+    {
+      "step": 106,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 2346
+    },
+    {
+      "step": 107,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 2346
+    }
+  ]
+}

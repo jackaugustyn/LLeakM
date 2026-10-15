@@ -1,0 +1,3497 @@
+{
+  "run_id": "2fcc5be6-8150-44ec-adfd-c913907cc8c3",
+  "prompt": "What warning signs should I watch for with unexpected medical bills I cannot cover with practical low-risk options?",
+  "model_id": "meta-llama/Llama-3.2-3B-Instruct",
+  "device": "cuda",
+  "max_new_tokens": 512,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "prompt_format": "legacy",
+  "prompt_len_tokens": 25,
+  "generated_tokens": 497,
+  "finish_reason": "eos",
+  "response_complete": true,
+  "response_text": " When dealing with unexpected medical bills that exceed your financial means, it's essential to be vigilant and watch for warning signs that may indicate a potential scam or fraudulent activity. Here are some red flags to look out for:\n\n1.  **Unsolicited contact**: Be wary of unexpected phone calls, emails, or letters from a medical provider or billing company. Legitimate providers usually communicate with you directly, and you should be aware of any changes in their communication methods.\n2.  **High-pressure tactics**: Scammers may use high-pressure sales tactics to convince you to pay immediately or make a large upfront payment. Be cautious of any requests that create a sense of urgency or make you feel guilty for not paying right away.\n3.  **Lack of documentation**: Be suspicious if the billing company or provider cannot provide clear documentation of the charges, including the date, amount, and reason for the bill. Legitimate providers should be able to provide detailed information about your medical treatment.\n4.  **Unusual payment methods**: Be cautious of requests to pay through unusual methods, such as wire transfers, prepaid debit cards, or gift cards. These methods are often used by scammers to avoid detection.\n5.  **Threats or intimidation**: Scammers may use threats or intimidation to convince you to pay. Be aware of any attempts to scare you into paying or make you feel like you're in trouble if you don't comply.\n6.  **Lack of transparency**: Be wary of billing companies or providers that are unclear about their fees, charges, or payment terms. Legitimate providers should be transparent about their billing practices and provide clear instructions on how to pay.\n7.  **Unlicensed or unregistered providers**: Be cautious of providers that are not licensed or registered with the relevant authorities. Legitimate providers should be registered with the relevant state medical board or licensing authority.\n\nIf you suspect that you're dealing with a scam or fraudulent activity, don't hesitate to reach out to:\n\n*   Your state's Attorney General's office\n*   The Federal Trade Commission (FTC)\n*   Your local consumer protection agency\n*   Your healthcare provider's billing department (to report any suspicious activity)\n\nStay vigilant and take control of your financial situation. If you're struggling to pay medical bills, consider reaching out to a patient advocate or a non-profit credit counseling agency for assistance. They can help you navigate the process and find practical low-risk options to manage your debt.",
+  "response_utf8_len": 2560,
+  "steps": [
+    {
+      "step": 0,
+      "token_text": " When",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 1,
+      "token_text": " dealing",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 2,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 3,
+      "token_text": " unexpected",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 4,
+      "token_text": " medical",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 5,
+      "token_text": " bills",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 6,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 7,
+      "token_text": " exceed",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 8,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 9,
+      "token_text": " financial",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 10,
+      "token_text": " means",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 11,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 12,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 13,
+      "token_text": "'s",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 14,
+      "token_text": " essential",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 15,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 16,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 17,
+      "token_text": " vigilant",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 18,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 19,
+      "token_text": " watch",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 20,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 21,
+      "token_text": " warning",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 22,
+      "token_text": " signs",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 23,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 24,
+      "token_text": " may",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 25,
+      "token_text": " indicate",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 26,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 27,
+      "token_text": " potential",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 28,
+      "token_text": " scam",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16259
+    },
+    {
+      "step": 29,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 30,
+      "token_text": " fraudulent",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 31,
+      "token_text": " activity",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 32,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 33,
+      "token_text": " Here",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 34,
+      "token_text": " are",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 35,
+      "token_text": " some",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 36,
+      "token_text": " red",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 37,
+      "token_text": " flags",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 38,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 39,
+      "token_text": " look",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 40,
+      "token_text": " out",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 41,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 42,
+      "token_text": ":\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 43,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 44,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 45,
+      "token_text": " ",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 46,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 47,
+      "token_text": "Un",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 48,
+      "token_text": "s",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 49,
+      "token_text": "olicited",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 50,
+      "token_text": " contact",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 51,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 52,
+      "token_text": " Be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 53,
+      "token_text": " wary",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 54,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16260
+    },
+    {
+      "step": 55,
+      "token_text": " unexpected",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 56,
+      "token_text": " phone",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 57,
+      "token_text": " calls",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 58,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 59,
+      "token_text": " emails",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 60,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 61,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 62,
+      "token_text": " letters",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 63,
+      "token_text": " from",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 64,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 65,
+      "token_text": " medical",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 66,
+      "token_text": " provider",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 67,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 68,
+      "token_text": " billing",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 69,
+      "token_text": " company",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 70,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 71,
+      "token_text": " Leg",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 72,
+      "token_text": "itimate",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 73,
+      "token_text": " providers",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 74,
+      "token_text": " usually",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 75,
+      "token_text": " communicate",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 76,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 77,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 78,
+      "token_text": " directly",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 79,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16261
+    },
+    {
+      "step": 80,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 81,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 82,
+      "token_text": " should",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 83,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 84,
+      "token_text": " aware",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 85,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 86,
+      "token_text": " any",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 87,
+      "token_text": " changes",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 88,
+      "token_text": " in",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 89,
+      "token_text": " their",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 90,
+      "token_text": " communication",
+      "token_utf8_len": 14,
+      "sse_frame_utf8_len": 22,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 91,
+      "token_text": " methods",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 92,
+      "token_text": ".\n",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 93,
+      "token_text": "2",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 94,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 95,
+      "token_text": " ",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 96,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 97,
+      "token_text": "High",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 98,
+      "token_text": "-pressure",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 99,
+      "token_text": " tactics",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 100,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 101,
+      "token_text": " Sc",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 102,
+      "token_text": "ammers",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 103,
+      "token_text": " may",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 104,
+      "token_text": " use",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16262
+    },
+    {
+      "step": 105,
+      "token_text": " high",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 106,
+      "token_text": "-pressure",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 107,
+      "token_text": " sales",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 108,
+      "token_text": " tactics",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 109,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 110,
+      "token_text": " convince",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 111,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 112,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 113,
+      "token_text": " pay",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 114,
+      "token_text": " immediately",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 115,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 116,
+      "token_text": " make",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 117,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 118,
+      "token_text": " large",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 119,
+      "token_text": " upfront",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 120,
+      "token_text": " payment",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 121,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 122,
+      "token_text": " Be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 123,
+      "token_text": " cautious",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 124,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 125,
+      "token_text": " any",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 126,
+      "token_text": " requests",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 127,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16263
+    },
+    {
+      "step": 128,
+      "token_text": " create",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 129,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 130,
+      "token_text": " sense",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 131,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 132,
+      "token_text": " urgency",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 133,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 134,
+      "token_text": " make",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 135,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 136,
+      "token_text": " feel",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 137,
+      "token_text": " guilty",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 138,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 139,
+      "token_text": " not",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 140,
+      "token_text": " paying",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 141,
+      "token_text": " right",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 142,
+      "token_text": " away",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 143,
+      "token_text": ".\n",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 144,
+      "token_text": "3",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 145,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 146,
+      "token_text": " ",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 147,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 148,
+      "token_text": "L",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 149,
+      "token_text": "ack",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 150,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16264
+    },
+    {
+      "step": 151,
+      "token_text": " documentation",
+      "token_utf8_len": 14,
+      "sse_frame_utf8_len": 22,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 152,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 153,
+      "token_text": " Be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 154,
+      "token_text": " suspicious",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 155,
+      "token_text": " if",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 156,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 157,
+      "token_text": " billing",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 158,
+      "token_text": " company",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 159,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 160,
+      "token_text": " provider",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 161,
+      "token_text": " cannot",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 162,
+      "token_text": " provide",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 163,
+      "token_text": " clear",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 164,
+      "token_text": " documentation",
+      "token_utf8_len": 14,
+      "sse_frame_utf8_len": 22,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 165,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 166,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 167,
+      "token_text": " charges",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 168,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 169,
+      "token_text": " including",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 170,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 171,
+      "token_text": " date",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 172,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 173,
+      "token_text": " amount",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 174,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 175,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 176,
+      "token_text": " reason",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 177,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 178,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 179,
+      "token_text": " bill",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 180,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16265
+    },
+    {
+      "step": 181,
+      "token_text": " Leg",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 182,
+      "token_text": "itimate",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 183,
+      "token_text": " providers",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 184,
+      "token_text": " should",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 185,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 186,
+      "token_text": " able",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 187,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 188,
+      "token_text": " provide",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 189,
+      "token_text": " detailed",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 190,
+      "token_text": " information",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 191,
+      "token_text": " about",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 192,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 193,
+      "token_text": " medical",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 194,
+      "token_text": " treatment",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 195,
+      "token_text": ".\n",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 196,
+      "token_text": "4",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 197,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 198,
+      "token_text": " ",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 199,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 200,
+      "token_text": "Un",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 201,
+      "token_text": "usual",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 202,
+      "token_text": " payment",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 203,
+      "token_text": " methods",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 204,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 205,
+      "token_text": " Be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 206,
+      "token_text": " cautious",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16266
+    },
+    {
+      "step": 207,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 208,
+      "token_text": " requests",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 209,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 210,
+      "token_text": " pay",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 211,
+      "token_text": " through",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 212,
+      "token_text": " unusual",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 213,
+      "token_text": " methods",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 214,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 215,
+      "token_text": " such",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 216,
+      "token_text": " as",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 217,
+      "token_text": " wire",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 218,
+      "token_text": " transfers",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 219,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 220,
+      "token_text": " prepaid",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 221,
+      "token_text": " debit",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 222,
+      "token_text": " cards",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 223,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 224,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 225,
+      "token_text": " gift",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 226,
+      "token_text": " cards",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 227,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 228,
+      "token_text": " These",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 229,
+      "token_text": " methods",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 230,
+      "token_text": " are",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 231,
+      "token_text": " often",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 232,
+      "token_text": " used",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16267
+    },
+    {
+      "step": 233,
+      "token_text": " by",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 234,
+      "token_text": " sc",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 235,
+      "token_text": "ammers",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 236,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 237,
+      "token_text": " avoid",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 238,
+      "token_text": " detection",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 239,
+      "token_text": ".\n",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 240,
+      "token_text": "5",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 241,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 242,
+      "token_text": " ",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 243,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 244,
+      "token_text": "Th",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 245,
+      "token_text": "reat",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 246,
+      "token_text": "s",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 247,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 248,
+      "token_text": " intimidation",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 249,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 250,
+      "token_text": " Sc",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 251,
+      "token_text": "ammers",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 252,
+      "token_text": " may",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 253,
+      "token_text": " use",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 254,
+      "token_text": " threats",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 255,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 256,
+      "token_text": " intimidation",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 257,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 258,
+      "token_text": " convince",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 259,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 260,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 261,
+      "token_text": " pay",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 262,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 263,
+      "token_text": " Be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16268
+    },
+    {
+      "step": 264,
+      "token_text": " aware",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 265,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 266,
+      "token_text": " any",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 267,
+      "token_text": " attempts",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 268,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 269,
+      "token_text": " scare",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 270,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 271,
+      "token_text": " into",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 272,
+      "token_text": " paying",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 273,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 274,
+      "token_text": " make",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 275,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 276,
+      "token_text": " feel",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 277,
+      "token_text": " like",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 278,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 279,
+      "token_text": "'re",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 280,
+      "token_text": " in",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 281,
+      "token_text": " trouble",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 282,
+      "token_text": " if",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 283,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 284,
+      "token_text": " don",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 285,
+      "token_text": "'t",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 286,
+      "token_text": " comply",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 287,
+      "token_text": ".\n",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16269
+    },
+    {
+      "step": 288,
+      "token_text": "6",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 289,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 290,
+      "token_text": " ",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 291,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 292,
+      "token_text": "L",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 293,
+      "token_text": "ack",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 294,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 295,
+      "token_text": " transparency",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 296,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 297,
+      "token_text": " Be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 298,
+      "token_text": " wary",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 299,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 300,
+      "token_text": " billing",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 301,
+      "token_text": " companies",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 302,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 303,
+      "token_text": " providers",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 304,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 305,
+      "token_text": " are",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 306,
+      "token_text": " unclear",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 307,
+      "token_text": " about",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 308,
+      "token_text": " their",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 309,
+      "token_text": " fees",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 310,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 311,
+      "token_text": " charges",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 312,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 313,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16270
+    },
+    {
+      "step": 314,
+      "token_text": " payment",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 315,
+      "token_text": " terms",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 316,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 317,
+      "token_text": " Leg",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 318,
+      "token_text": "itimate",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 319,
+      "token_text": " providers",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 320,
+      "token_text": " should",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 321,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 322,
+      "token_text": " transparent",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 323,
+      "token_text": " about",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 324,
+      "token_text": " their",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 325,
+      "token_text": " billing",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 326,
+      "token_text": " practices",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 327,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 328,
+      "token_text": " provide",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 329,
+      "token_text": " clear",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 330,
+      "token_text": " instructions",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 331,
+      "token_text": " on",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 332,
+      "token_text": " how",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 333,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 334,
+      "token_text": " pay",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 335,
+      "token_text": ".\n",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 336,
+      "token_text": "7",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 337,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 338,
+      "token_text": " ",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 339,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 340,
+      "token_text": "Un",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16271
+    },
+    {
+      "step": 341,
+      "token_text": "licensed",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 342,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 343,
+      "token_text": " un",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 344,
+      "token_text": "registered",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 345,
+      "token_text": " providers",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 346,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 347,
+      "token_text": " Be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 348,
+      "token_text": " cautious",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 349,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 350,
+      "token_text": " providers",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 351,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 352,
+      "token_text": " are",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 353,
+      "token_text": " not",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 354,
+      "token_text": " licensed",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 355,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 356,
+      "token_text": " registered",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 357,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 358,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 359,
+      "token_text": " relevant",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 360,
+      "token_text": " authorities",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 361,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 362,
+      "token_text": " Leg",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 363,
+      "token_text": "itimate",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 364,
+      "token_text": " providers",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 365,
+      "token_text": " should",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 366,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 367,
+      "token_text": " registered",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16272
+    },
+    {
+      "step": 368,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 369,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 370,
+      "token_text": " relevant",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 371,
+      "token_text": " state",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 372,
+      "token_text": " medical",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 373,
+      "token_text": " board",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 374,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 375,
+      "token_text": " licensing",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 376,
+      "token_text": " authority",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 377,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 378,
+      "token_text": "If",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 379,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 380,
+      "token_text": " suspect",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 381,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 382,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 383,
+      "token_text": "'re",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 384,
+      "token_text": " dealing",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 385,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 386,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 387,
+      "token_text": " scam",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 388,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 389,
+      "token_text": " fraudulent",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 390,
+      "token_text": " activity",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 391,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 392,
+      "token_text": " don",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 393,
+      "token_text": "'t",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16273
+    },
+    {
+      "step": 394,
+      "token_text": " hesitate",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16274
+    },
+    {
+      "step": 395,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16274
+    },
+    {
+      "step": 396,
+      "token_text": " reach",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16274
+    },
+    {
+      "step": 397,
+      "token_text": " out",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16274
+    },
+    {
+      "step": 398,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16274
+    },
+    {
+      "step": 399,
+      "token_text": ":\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16274
+    },
+    {
+      "step": 400,
+      "token_text": "*",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16274
+    },
+    {
+      "step": 401,
+      "token_text": "  ",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16274
+    },
+    {
+      "step": 402,
+      "token_text": " Your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16274
+    },
+    {
+      "step": 403,
+      "token_text": " state",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16274
+    },
+    {
+      "step": 404,
+      "token_text": "'s",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16274
+    },
+    {
+      "step": 405,
+      "token_text": " Attorney",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16279
+    },
+    {
+      "step": 406,
+      "token_text": " General",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16279
+    },
+    {
+      "step": 407,
+      "token_text": "'s",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16279
+    },
+    {
+      "step": 408,
+      "token_text": " office",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 409,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 410,
+      "token_text": "*",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 411,
+      "token_text": "  ",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 412,
+      "token_text": " The",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 413,
+      "token_text": " Federal",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 414,
+      "token_text": " Trade",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 415,
+      "token_text": " Commission",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 416,
+      "token_text": " (",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 417,
+      "token_text": "FT",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 418,
+      "token_text": "C",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 419,
+      "token_text": ")\n",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 420,
+      "token_text": "*",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 421,
+      "token_text": "  ",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 422,
+      "token_text": " Your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 423,
+      "token_text": " local",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 424,
+      "token_text": " consumer",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 425,
+      "token_text": " protection",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 426,
+      "token_text": " agency",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 427,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 428,
+      "token_text": "*",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 429,
+      "token_text": "  ",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 430,
+      "token_text": " Your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16280
+    },
+    {
+      "step": 431,
+      "token_text": " healthcare",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 432,
+      "token_text": " provider",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 433,
+      "token_text": "'s",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 434,
+      "token_text": " billing",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 435,
+      "token_text": " department",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 436,
+      "token_text": " (",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 437,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 438,
+      "token_text": " report",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 439,
+      "token_text": " any",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 440,
+      "token_text": " suspicious",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 441,
+      "token_text": " activity",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 442,
+      "token_text": ")\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 443,
+      "token_text": "Stay",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 444,
+      "token_text": " vigilant",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 445,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 446,
+      "token_text": " take",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 447,
+      "token_text": " control",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 448,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 449,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 450,
+      "token_text": " financial",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 451,
+      "token_text": " situation",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 452,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 453,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 454,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 455,
+      "token_text": "'re",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 456,
+      "token_text": " struggling",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 457,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 458,
+      "token_text": " pay",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 459,
+      "token_text": " medical",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 460,
+      "token_text": " bills",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 461,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 462,
+      "token_text": " consider",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16281
+    },
+    {
+      "step": 463,
+      "token_text": " reaching",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 464,
+      "token_text": " out",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 465,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 466,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 467,
+      "token_text": " patient",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 468,
+      "token_text": " advocate",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 469,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 470,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 471,
+      "token_text": " non",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 472,
+      "token_text": "-profit",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 473,
+      "token_text": " credit",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 474,
+      "token_text": " counseling",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 475,
+      "token_text": " agency",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 476,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 477,
+      "token_text": " assistance",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 478,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 479,
+      "token_text": " They",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 480,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 481,
+      "token_text": " help",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 482,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 483,
+      "token_text": " navigate",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 484,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 485,
+      "token_text": " process",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 486,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 487,
+      "token_text": " find",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16282
+    },
+    {
+      "step": 488,
+      "token_text": " practical",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 16283
+    },
+    {
+      "step": 489,
+      "token_text": " low",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 16283
+    },
+    {
+      "step": 490,
+      "token_text": "-risk",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16283
+    },
+    {
+      "step": 491,
+      "token_text": " options",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 16283
+    },
+    {
+      "step": 492,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 16283
+    },
+    {
+      "step": 493,
+      "token_text": " manage",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 16283
+    },
+    {
+      "step": 494,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16283
+    },
+    {
+      "step": 495,
+      "token_text": " debt",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 16283
+    },
+    {
+      "step": 496,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 16283
+    }
+  ]
+}

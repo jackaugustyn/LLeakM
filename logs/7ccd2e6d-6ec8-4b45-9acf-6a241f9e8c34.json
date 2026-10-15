@@ -1,0 +1,2209 @@
+{
+  "run_id": "7ccd2e6d-6ec8-4b45-9acf-6a241f9e8c34",
+  "prompt": "Please provide step-by-step guidance for credit card debt growing each month with practical low-risk options.",
+  "model_id": "microsoft/phi-1_5",
+  "device": "cuda",
+  "max_new_tokens": 512,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "prompt_format": "legacy",
+  "prompt_len_tokens": 27,
+  "generated_tokens": 313,
+  "finish_reason": "eos",
+  "response_complete": true,
+  "response_text": " Certainly! Let's start by creating a budget to track your expenses and identify areas where you can cut back. Then, we can explore options like balance transfers or personal loans to consolidate your debt and reduce interest charges. Additionally, we can discuss the benefits of negotiating with your creditors to lower your monthly payments.\n\nExercise 1: Calculate the monthly payment for a $5,000 personal loan with an interest rate of 6% over a period of 3 years.\nAnswer: The monthly payment would be approximately $188.71.\n\nExercise 2: If you have a credit card balance of $2,000 with an interest rate of 18% and make only the minimum payment of $50 each month, how long will it take to pay off the debt?\nAnswer: It would take approximately 5 years and 4 months to pay off the debt.\n\nExercise 3: True or False: Credit cards are a safe and easy way to borrow money.\nAnswer: False. Credit cards can lead to debt if not used responsibly.\n\nExercise 4: What are some potential consequences of not paying credit card debt on time?\nAnswer: Some potential consequences include high-interest charges, damage to your credit score, and difficulty obtaining future credit.\n\nExercise 5: How can you avoid falling into debt?\nAnswer: You can avoid falling into debt by creating a budget, tracking your expenses, and making informed financial decisions. It's also important to avoid unnecessary debt and only borrow what you can afford to repay.\n",
+  "response_utf8_len": 1435,
+  "steps": [
+    {
+      "step": 0,
+      "token_text": " Certainly",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 1,
+      "token_text": "!",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 2,
+      "token_text": " Let",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 3,
+      "token_text": "'s",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 4,
+      "token_text": " start",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 5,
+      "token_text": " by",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 6,
+      "token_text": " creating",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 7,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 8,
+      "token_text": " budget",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 9,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 10,
+      "token_text": " track",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 11,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 12,
+      "token_text": " expenses",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 13,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 14,
+      "token_text": " identify",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 15,
+      "token_text": " areas",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 16,
+      "token_text": " where",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 17,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 18,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 19,
+      "token_text": " cut",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 20,
+      "token_text": " back",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 21,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 22,
+      "token_text": " Then",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6228
+    },
+    {
+      "step": 23,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 24,
+      "token_text": " we",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 25,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 26,
+      "token_text": " explore",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 27,
+      "token_text": " options",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 28,
+      "token_text": " like",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 29,
+      "token_text": " balance",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 30,
+      "token_text": " transfers",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 31,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 32,
+      "token_text": " personal",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 33,
+      "token_text": " loans",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 34,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 35,
+      "token_text": " consolidate",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 36,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 37,
+      "token_text": " debt",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 38,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 39,
+      "token_text": " reduce",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 40,
+      "token_text": " interest",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 41,
+      "token_text": " charges",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 42,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 43,
+      "token_text": " Additionally",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 44,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 45,
+      "token_text": " we",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 46,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 47,
+      "token_text": " discuss",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 48,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 49,
+      "token_text": " benefits",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 50,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 51,
+      "token_text": " negotiating",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 52,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 53,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 54,
+      "token_text": " creditors",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 55,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 56,
+      "token_text": " lower",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 57,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 58,
+      "token_text": " monthly",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 59,
+      "token_text": " payments",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 60,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 61,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 62,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6229
+    },
+    {
+      "step": 63,
+      "token_text": "Ex",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 64,
+      "token_text": "ercise",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 65,
+      "token_text": " 1",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 66,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 67,
+      "token_text": " Calcul",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 68,
+      "token_text": "ate",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 69,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 70,
+      "token_text": " monthly",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 71,
+      "token_text": " payment",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 72,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 73,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 74,
+      "token_text": " $",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 75,
+      "token_text": "5",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 76,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 77,
+      "token_text": "000",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 78,
+      "token_text": " personal",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 79,
+      "token_text": " loan",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 80,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 81,
+      "token_text": " an",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 82,
+      "token_text": " interest",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 83,
+      "token_text": " rate",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 84,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 85,
+      "token_text": " 6",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 86,
+      "token_text": "%",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6230
+    },
+    {
+      "step": 87,
+      "token_text": " over",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 88,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 89,
+      "token_text": " period",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 90,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 91,
+      "token_text": " 3",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 92,
+      "token_text": " years",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 93,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 94,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 95,
+      "token_text": "Answer",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 96,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 97,
+      "token_text": " The",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 98,
+      "token_text": " monthly",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 99,
+      "token_text": " payment",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 100,
+      "token_text": " would",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 101,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 102,
+      "token_text": " approximately",
+      "token_utf8_len": 14,
+      "sse_frame_utf8_len": 22,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 103,
+      "token_text": " $",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 104,
+      "token_text": "188",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 105,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 106,
+      "token_text": "71",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 107,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 108,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6231
+    },
+    {
+      "step": 109,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 110,
+      "token_text": "Ex",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 111,
+      "token_text": "ercise",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 112,
+      "token_text": " 2",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 113,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 114,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 115,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 116,
+      "token_text": " have",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 117,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 118,
+      "token_text": " credit",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 119,
+      "token_text": " card",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 120,
+      "token_text": " balance",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 121,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 122,
+      "token_text": " $",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 123,
+      "token_text": "2",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 124,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 125,
+      "token_text": "000",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 126,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 127,
+      "token_text": " an",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 128,
+      "token_text": " interest",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 129,
+      "token_text": " rate",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 130,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 131,
+      "token_text": " 18",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 132,
+      "token_text": "%",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6232
+    },
+    {
+      "step": 133,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 134,
+      "token_text": " make",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 135,
+      "token_text": " only",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 136,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 137,
+      "token_text": " minimum",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 138,
+      "token_text": " payment",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 139,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 140,
+      "token_text": " $",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 141,
+      "token_text": "50",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 142,
+      "token_text": " each",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 143,
+      "token_text": " month",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 144,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 145,
+      "token_text": " how",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 146,
+      "token_text": " long",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 147,
+      "token_text": " will",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 148,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 149,
+      "token_text": " take",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 150,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 151,
+      "token_text": " pay",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 152,
+      "token_text": " off",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 153,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 154,
+      "token_text": " debt",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 155,
+      "token_text": "?",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 156,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6233
+    },
+    {
+      "step": 157,
+      "token_text": "Answer",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 158,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 159,
+      "token_text": " It",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 160,
+      "token_text": " would",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 161,
+      "token_text": " take",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 162,
+      "token_text": " approximately",
+      "token_utf8_len": 14,
+      "sse_frame_utf8_len": 22,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 163,
+      "token_text": " 5",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 164,
+      "token_text": " years",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 165,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 166,
+      "token_text": " 4",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 167,
+      "token_text": " months",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 168,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 169,
+      "token_text": " pay",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 170,
+      "token_text": " off",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 171,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 172,
+      "token_text": " debt",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 173,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 174,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 175,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 176,
+      "token_text": "Ex",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 177,
+      "token_text": "ercise",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 178,
+      "token_text": " 3",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 179,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 180,
+      "token_text": " True",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 181,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6234
+    },
+    {
+      "step": 182,
+      "token_text": " False",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 183,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 184,
+      "token_text": " Credit",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 185,
+      "token_text": " cards",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 186,
+      "token_text": " are",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 187,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 188,
+      "token_text": " safe",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 189,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 190,
+      "token_text": " easy",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 191,
+      "token_text": " way",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 192,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 193,
+      "token_text": " borrow",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 194,
+      "token_text": " money",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 195,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 196,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 197,
+      "token_text": "Answer",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 198,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 199,
+      "token_text": " False",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 200,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 201,
+      "token_text": " Credit",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 202,
+      "token_text": " cards",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 203,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 204,
+      "token_text": " lead",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 205,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 206,
+      "token_text": " debt",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 207,
+      "token_text": " if",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6235
+    },
+    {
+      "step": 208,
+      "token_text": " not",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 209,
+      "token_text": " used",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 210,
+      "token_text": " responsibly",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 211,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 212,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 213,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 214,
+      "token_text": "Ex",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 215,
+      "token_text": "ercise",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 216,
+      "token_text": " 4",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 217,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 218,
+      "token_text": " What",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 219,
+      "token_text": " are",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 220,
+      "token_text": " some",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 221,
+      "token_text": " potential",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 222,
+      "token_text": " consequences",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 223,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 224,
+      "token_text": " not",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 225,
+      "token_text": " paying",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 226,
+      "token_text": " credit",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 227,
+      "token_text": " card",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 228,
+      "token_text": " debt",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 229,
+      "token_text": " on",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 230,
+      "token_text": " time",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 231,
+      "token_text": "?",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 232,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 233,
+      "token_text": "Answer",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 234,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6236
+    },
+    {
+      "step": 235,
+      "token_text": " Some",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 236,
+      "token_text": " potential",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 237,
+      "token_text": " consequences",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 238,
+      "token_text": " include",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 239,
+      "token_text": " high",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 240,
+      "token_text": "-",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 241,
+      "token_text": "interest",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 242,
+      "token_text": " charges",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 243,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 244,
+      "token_text": " damage",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 245,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 246,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 247,
+      "token_text": " credit",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 248,
+      "token_text": " score",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 249,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 250,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 251,
+      "token_text": " difficulty",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 252,
+      "token_text": " obtaining",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 253,
+      "token_text": " future",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 254,
+      "token_text": " credit",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 255,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 256,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 257,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 258,
+      "token_text": "Ex",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 259,
+      "token_text": "ercise",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6237
+    },
+    {
+      "step": 260,
+      "token_text": " 5",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 261,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 262,
+      "token_text": " How",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 263,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 264,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 265,
+      "token_text": " avoid",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 266,
+      "token_text": " falling",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 267,
+      "token_text": " into",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 268,
+      "token_text": " debt",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 269,
+      "token_text": "?",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 270,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 271,
+      "token_text": "Answer",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 272,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 273,
+      "token_text": " You",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 274,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 275,
+      "token_text": " avoid",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 276,
+      "token_text": " falling",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 277,
+      "token_text": " into",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 278,
+      "token_text": " debt",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 279,
+      "token_text": " by",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 280,
+      "token_text": " creating",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 281,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 282,
+      "token_text": " budget",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 283,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 284,
+      "token_text": " tracking",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 6238
+    },
+    {
+      "step": 285,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6239
+    },
+    {
+      "step": 286,
+      "token_text": " expenses",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 6239
+    },
+    {
+      "step": 287,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6239
+    },
+    {
+      "step": 288,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6239
+    },
+    {
+      "step": 289,
+      "token_text": " making",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 6239
+    },
+    {
+      "step": 290,
+      "token_text": " informed",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 6239
+    },
+    {
+      "step": 291,
+      "token_text": " financial",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 6239
+    },
+    {
+      "step": 292,
+      "token_text": " decisions",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 6239
+    },
+    {
+      "step": 293,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6239
+    },
+    {
+      "step": 294,
+      "token_text": " It",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6239
+    },
+    {
+      "step": 295,
+      "token_text": "'s",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 6239
+    },
+    {
+      "step": 296,
+      "token_text": " also",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6239
+    },
+    {
+      "step": 297,
+      "token_text": " important",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 6239
+    },
+    {
+      "step": 298,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6239
+    },
+    {
+      "step": 299,
+      "token_text": " avoid",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6239
+    },
+    {
+      "step": 300,
+      "token_text": " unnecessary",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 6239
+    },
+    {
+      "step": 301,
+      "token_text": " debt",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6239
+    },
+    {
+      "step": 302,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6239
+    },
+    {
+      "step": 303,
+      "token_text": " only",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6239
+    },
+    {
+      "step": 304,
+      "token_text": " borrow",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 6239
+    },
+    {
+      "step": 305,
+      "token_text": " what",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 6239
+    },
+    {
+      "step": 306,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6240
+    },
+    {
+      "step": 307,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 6240
+    },
+    {
+      "step": 308,
+      "token_text": " afford",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 6240
+    },
+    {
+      "step": 309,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 6240
+    },
+    {
+      "step": 310,
+      "token_text": " repay",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 6240
+    },
+    {
+      "step": 311,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6240
+    },
+    {
+      "step": 312,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 6240
+    }
+  ]
+}

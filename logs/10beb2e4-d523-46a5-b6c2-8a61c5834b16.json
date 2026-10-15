@@ -1,0 +1,3301 @@
+{
+  "run_id": "10beb2e4-d523-46a5-b6c2-8a61c5834b16",
+  "prompt": "How can I handle difficulty maintaining basic self-care with clear prioritization?",
+  "model_id": "Qwen/Qwen2.5-3B-Instruct",
+  "device": "cuda",
+  "max_new_tokens": 512,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "prompt_format": "legacy",
+  "prompt_len_tokens": 22,
+  "generated_tokens": 469,
+  "finish_reason": "eos",
+  "response_complete": true,
+  "response_text": "Maintaining basic self-care can indeed be challenging, especially when priorities are high. Here are some strategies to help you prioritize and manage your self-care effectively:\n\n1. **Set Clear Goals**: Define what self-care means to you. It could be anything from getting enough sleep, eating well, exercising, or simply taking time to relax. Make these goals specific and measurable.\n\n2. **Prioritize Tasks**: Use a task management system like a planner, digital calendar, or app to schedule your daily, weekly, and monthly tasks. Prioritize self-care activities as important tasks that need to be completed.\n\n3. **Create a Routine**: Establish a daily routine that includes self-care activities. For example, you might decide to meditate for 10 minutes every morning or take a 15-minute walk during lunch breaks.\n\n4. **Delegate and Outsource**: If possible, delegate tasks that can be done by others. This might include cooking, cleaning, or even errands. Outsourcing can free up time for self-care.\n\n5. **Use Time Management Techniques**: Techniques like the Pomodoro Technique (working for 25 minutes, then taking a 5-minute break) can help you manage your time more effectively and ensure you have time for self-care.\n\n6. **Communicate with Others**: Let your family, friends, or colleagues know about your self-care needs. They can help you manage your time better and support you in prioritizing self-care.\n\n7. **Reflect and Adjust**: Regularly reflect on what works and what doesn’t. Adjust your self-care routine as needed to better fit your life and needs.\n\n8. **Seek Support**: If you find it particularly challenging to prioritize self-care, consider seeking support from a therapist or counselor who can help you develop strategies to manage stress and prioritize self-care.\n\n9. **Mindful Practices**: Incorporate mindfulness practices into your daily routine. This could be as simple as taking a few deep breaths before starting a task or engaging in a brief meditation session.\n\n10. **Be Kind to Yourself**: Remember that self-care is not selfish. It’s essential for your overall well-being and can help you be more effective in other areas of your life.\n\nBy implementing these strategies, you can better manage your time and prioritize self-care, even when your priorities are high.",
+  "response_utf8_len": 2304,
+  "steps": [
+    {
+      "step": 0,
+      "token_text": "Maint",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21340
+    },
+    {
+      "step": 1,
+      "token_text": "aining",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21340
+    },
+    {
+      "step": 2,
+      "token_text": " basic",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21340
+    },
+    {
+      "step": 3,
+      "token_text": " self",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21340
+    },
+    {
+      "step": 4,
+      "token_text": "-care",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21340
+    },
+    {
+      "step": 5,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21340
+    },
+    {
+      "step": 6,
+      "token_text": " indeed",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21340
+    },
+    {
+      "step": 7,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21340
+    },
+    {
+      "step": 8,
+      "token_text": " challenging",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 21340
+    },
+    {
+      "step": 9,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21340
+    },
+    {
+      "step": 10,
+      "token_text": " especially",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 21340
+    },
+    {
+      "step": 11,
+      "token_text": " when",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21340
+    },
+    {
+      "step": 12,
+      "token_text": " priorities",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 21340
+    },
+    {
+      "step": 13,
+      "token_text": " are",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21340
+    },
+    {
+      "step": 14,
+      "token_text": " high",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 15,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 16,
+      "token_text": " Here",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 17,
+      "token_text": " are",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 18,
+      "token_text": " some",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 19,
+      "token_text": " strategies",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 20,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 21,
+      "token_text": " help",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 22,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 23,
+      "token_text": " prioritize",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 24,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 25,
+      "token_text": " manage",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 26,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 27,
+      "token_text": " self",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 28,
+      "token_text": "-care",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 29,
+      "token_text": " effectively",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 30,
+      "token_text": ":\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 31,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 32,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 33,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 34,
+      "token_text": "Set",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 35,
+      "token_text": " Clear",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 36,
+      "token_text": " Goals",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 37,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 38,
+      "token_text": " Define",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 39,
+      "token_text": " what",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 40,
+      "token_text": " self",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 41,
+      "token_text": "-care",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 42,
+      "token_text": " means",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 43,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 44,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 45,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 46,
+      "token_text": " It",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 47,
+      "token_text": " could",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 48,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 49,
+      "token_text": " anything",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 50,
+      "token_text": " from",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 51,
+      "token_text": " getting",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 52,
+      "token_text": " enough",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 53,
+      "token_text": " sleep",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 54,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 55,
+      "token_text": " eating",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 56,
+      "token_text": " well",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 57,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 58,
+      "token_text": " exercising",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 59,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 60,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21341
+    },
+    {
+      "step": 61,
+      "token_text": " simply",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21347
+    },
+    {
+      "step": 62,
+      "token_text": " taking",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21347
+    },
+    {
+      "step": 63,
+      "token_text": " time",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21347
+    },
+    {
+      "step": 64,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21347
+    },
+    {
+      "step": 65,
+      "token_text": " relax",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21347
+    },
+    {
+      "step": 66,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21347
+    },
+    {
+      "step": 67,
+      "token_text": " Make",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21347
+    },
+    {
+      "step": 68,
+      "token_text": " these",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21347
+    },
+    {
+      "step": 69,
+      "token_text": " goals",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21347
+    },
+    {
+      "step": 70,
+      "token_text": " specific",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 21347
+    },
+    {
+      "step": 71,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21347
+    },
+    {
+      "step": 72,
+      "token_text": " measurable",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 21347
+    },
+    {
+      "step": 73,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21347
+    },
+    {
+      "step": 74,
+      "token_text": "2",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 75,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 76,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 77,
+      "token_text": "Prior",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 78,
+      "token_text": "itize",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 79,
+      "token_text": " Tasks",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 80,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 81,
+      "token_text": " Use",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 82,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 83,
+      "token_text": " task",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 84,
+      "token_text": " management",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 85,
+      "token_text": " system",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 86,
+      "token_text": " like",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 87,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 88,
+      "token_text": " planner",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 89,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 90,
+      "token_text": " digital",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 91,
+      "token_text": " calendar",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 92,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 93,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 94,
+      "token_text": " app",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 95,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 96,
+      "token_text": " schedule",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 21348
+    },
+    {
+      "step": 97,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21349
+    },
+    {
+      "step": 98,
+      "token_text": " daily",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21349
+    },
+    {
+      "step": 99,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21349
+    },
+    {
+      "step": 100,
+      "token_text": " weekly",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21349
+    },
+    {
+      "step": 101,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21349
+    },
+    {
+      "step": 102,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21349
+    },
+    {
+      "step": 103,
+      "token_text": " monthly",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21349
+    },
+    {
+      "step": 104,
+      "token_text": " tasks",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21349
+    },
+    {
+      "step": 105,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21349
+    },
+    {
+      "step": 106,
+      "token_text": " Prior",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21349
+    },
+    {
+      "step": 107,
+      "token_text": "itize",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21349
+    },
+    {
+      "step": 108,
+      "token_text": " self",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21349
+    },
+    {
+      "step": 109,
+      "token_text": "-care",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21349
+    },
+    {
+      "step": 110,
+      "token_text": " activities",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 21349
+    },
+    {
+      "step": 111,
+      "token_text": " as",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21349
+    },
+    {
+      "step": 112,
+      "token_text": " important",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 21349
+    },
+    {
+      "step": 113,
+      "token_text": " tasks",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21349
+    },
+    {
+      "step": 114,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21349
+    },
+    {
+      "step": 115,
+      "token_text": " need",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21349
+    },
+    {
+      "step": 116,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21349
+    },
+    {
+      "step": 117,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21349
+    },
+    {
+      "step": 118,
+      "token_text": " completed",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 119,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 120,
+      "token_text": "3",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 121,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 122,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 123,
+      "token_text": "Create",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 124,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 125,
+      "token_text": " Routine",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 126,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 127,
+      "token_text": " Establish",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 128,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 129,
+      "token_text": " daily",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 130,
+      "token_text": " routine",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 131,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 132,
+      "token_text": " includes",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 133,
+      "token_text": " self",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 134,
+      "token_text": "-care",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 135,
+      "token_text": " activities",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 136,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 137,
+      "token_text": " For",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 138,
+      "token_text": " example",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 139,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 140,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21350
+    },
+    {
+      "step": 141,
+      "token_text": " might",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 142,
+      "token_text": " decide",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 143,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 144,
+      "token_text": " med",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 145,
+      "token_text": "itate",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 146,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 147,
+      "token_text": " ",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 148,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 149,
+      "token_text": "0",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 150,
+      "token_text": " minutes",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 151,
+      "token_text": " every",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 152,
+      "token_text": " morning",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 153,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 154,
+      "token_text": " take",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 155,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 156,
+      "token_text": " ",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 157,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 158,
+      "token_text": "5",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 159,
+      "token_text": "-minute",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 160,
+      "token_text": " walk",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 161,
+      "token_text": " during",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 162,
+      "token_text": " lunch",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 163,
+      "token_text": " breaks",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 164,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21351
+    },
+    {
+      "step": 165,
+      "token_text": "4",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 166,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 167,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 168,
+      "token_text": "Delegate",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 169,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 170,
+      "token_text": " Out",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 171,
+      "token_text": "source",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 172,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 173,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 174,
+      "token_text": " possible",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 175,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 176,
+      "token_text": " delegate",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 177,
+      "token_text": " tasks",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 178,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 179,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 180,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 181,
+      "token_text": " done",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 182,
+      "token_text": " by",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 183,
+      "token_text": " others",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 184,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 185,
+      "token_text": " This",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 186,
+      "token_text": " might",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 187,
+      "token_text": " include",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 188,
+      "token_text": " cooking",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 189,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21352
+    },
+    {
+      "step": 190,
+      "token_text": " cleaning",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 21353
+    },
+    {
+      "step": 191,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21353
+    },
+    {
+      "step": 192,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21353
+    },
+    {
+      "step": 193,
+      "token_text": " even",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21353
+    },
+    {
+      "step": 194,
+      "token_text": " err",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21353
+    },
+    {
+      "step": 195,
+      "token_text": "ands",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21353
+    },
+    {
+      "step": 196,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21353
+    },
+    {
+      "step": 197,
+      "token_text": " Outs",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21353
+    },
+    {
+      "step": 198,
+      "token_text": "ourcing",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21353
+    },
+    {
+      "step": 199,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21353
+    },
+    {
+      "step": 200,
+      "token_text": " free",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21353
+    },
+    {
+      "step": 201,
+      "token_text": " up",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21353
+    },
+    {
+      "step": 202,
+      "token_text": " time",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21353
+    },
+    {
+      "step": 203,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21353
+    },
+    {
+      "step": 204,
+      "token_text": " self",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21353
+    },
+    {
+      "step": 205,
+      "token_text": "-care",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21353
+    },
+    {
+      "step": 206,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21353
+    },
+    {
+      "step": 207,
+      "token_text": "5",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21353
+    },
+    {
+      "step": 208,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 209,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 210,
+      "token_text": "Use",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 211,
+      "token_text": " Time",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 212,
+      "token_text": " Management",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 213,
+      "token_text": " Techniques",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 214,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 215,
+      "token_text": " Techniques",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 216,
+      "token_text": " like",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 217,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 218,
+      "token_text": " Pom",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 219,
+      "token_text": "od",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 220,
+      "token_text": "oro",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 221,
+      "token_text": " Technique",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 222,
+      "token_text": " (",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 223,
+      "token_text": "working",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 224,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 225,
+      "token_text": " ",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 226,
+      "token_text": "2",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 227,
+      "token_text": "5",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 228,
+      "token_text": " minutes",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 229,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 230,
+      "token_text": " then",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 231,
+      "token_text": " taking",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21354
+    },
+    {
+      "step": 232,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 233,
+      "token_text": " ",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 234,
+      "token_text": "5",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 235,
+      "token_text": "-minute",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 236,
+      "token_text": " break",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 237,
+      "token_text": ")",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 238,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 239,
+      "token_text": " help",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 240,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 241,
+      "token_text": " manage",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 242,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 243,
+      "token_text": " time",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 244,
+      "token_text": " more",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 245,
+      "token_text": " effectively",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 246,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 247,
+      "token_text": " ensure",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 248,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 249,
+      "token_text": " have",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 250,
+      "token_text": " time",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 251,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 252,
+      "token_text": " self",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 253,
+      "token_text": "-care",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 254,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 255,
+      "token_text": "6",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 256,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21355
+    },
+    {
+      "step": 257,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 258,
+      "token_text": "Communic",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 259,
+      "token_text": "ate",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 260,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 261,
+      "token_text": " Others",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 262,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 263,
+      "token_text": " Let",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 264,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 265,
+      "token_text": " family",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 266,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 267,
+      "token_text": " friends",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 268,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 269,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 270,
+      "token_text": " colleagues",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 271,
+      "token_text": " know",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 272,
+      "token_text": " about",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 273,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 274,
+      "token_text": " self",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 275,
+      "token_text": "-care",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 276,
+      "token_text": " needs",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 277,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 278,
+      "token_text": " They",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 279,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 280,
+      "token_text": " help",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 281,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 282,
+      "token_text": " manage",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21356
+    },
+    {
+      "step": 283,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21357
+    },
+    {
+      "step": 284,
+      "token_text": " time",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21357
+    },
+    {
+      "step": 285,
+      "token_text": " better",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21357
+    },
+    {
+      "step": 286,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21357
+    },
+    {
+      "step": 287,
+      "token_text": " support",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21357
+    },
+    {
+      "step": 288,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21357
+    },
+    {
+      "step": 289,
+      "token_text": " in",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21357
+    },
+    {
+      "step": 290,
+      "token_text": " priorit",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21357
+    },
+    {
+      "step": 291,
+      "token_text": "izing",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21357
+    },
+    {
+      "step": 292,
+      "token_text": " self",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21357
+    },
+    {
+      "step": 293,
+      "token_text": "-care",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21357
+    },
+    {
+      "step": 294,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21357
+    },
+    {
+      "step": 295,
+      "token_text": "7",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21357
+    },
+    {
+      "step": 296,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21357
+    },
+    {
+      "step": 297,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21357
+    },
+    {
+      "step": 298,
+      "token_text": "Reflect",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21357
+    },
+    {
+      "step": 299,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21357
+    },
+    {
+      "step": 300,
+      "token_text": " Adjust",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21357
+    },
+    {
+      "step": 301,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21357
+    },
+    {
+      "step": 302,
+      "token_text": " Regular",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21357
+    },
+    {
+      "step": 303,
+      "token_text": "ly",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 21357
+    },
+    {
+      "step": 304,
+      "token_text": " reflect",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 305,
+      "token_text": " on",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 306,
+      "token_text": " what",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 307,
+      "token_text": " works",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 308,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 309,
+      "token_text": " what",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 310,
+      "token_text": " doesn",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 311,
+      "token_text": "’t",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 312,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 313,
+      "token_text": " Adjust",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 314,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 315,
+      "token_text": " self",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 316,
+      "token_text": "-care",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 317,
+      "token_text": " routine",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 318,
+      "token_text": " as",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 319,
+      "token_text": " needed",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 320,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 321,
+      "token_text": " better",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 322,
+      "token_text": " fit",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 323,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 324,
+      "token_text": " life",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 325,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 326,
+      "token_text": " needs",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 327,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 328,
+      "token_text": "8",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21358
+    },
+    {
+      "step": 329,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 330,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 331,
+      "token_text": "Seek",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 332,
+      "token_text": " Support",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 333,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 334,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 335,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 336,
+      "token_text": " find",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 337,
+      "token_text": " it",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 338,
+      "token_text": " particularly",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 339,
+      "token_text": " challenging",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 340,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 341,
+      "token_text": " prioritize",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 342,
+      "token_text": " self",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 343,
+      "token_text": "-care",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 344,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 345,
+      "token_text": " consider",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 346,
+      "token_text": " seeking",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 347,
+      "token_text": " support",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 348,
+      "token_text": " from",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 349,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 350,
+      "token_text": " therapist",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 351,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 352,
+      "token_text": " counselor",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 353,
+      "token_text": " who",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 354,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21359
+    },
+    {
+      "step": 355,
+      "token_text": " help",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 356,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 357,
+      "token_text": " develop",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 358,
+      "token_text": " strategies",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 359,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 360,
+      "token_text": " manage",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 361,
+      "token_text": " stress",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 362,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 363,
+      "token_text": " prioritize",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 364,
+      "token_text": " self",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 365,
+      "token_text": "-care",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 366,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 367,
+      "token_text": "9",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 368,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 369,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 370,
+      "token_text": "Mind",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 371,
+      "token_text": "ful",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 372,
+      "token_text": " Practices",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 373,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 374,
+      "token_text": " Incorpor",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 375,
+      "token_text": "ate",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 376,
+      "token_text": " mindfulness",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 377,
+      "token_text": " practices",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 378,
+      "token_text": " into",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 379,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21360
+    },
+    {
+      "step": 380,
+      "token_text": " daily",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 381,
+      "token_text": " routine",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 382,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 383,
+      "token_text": " This",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 384,
+      "token_text": " could",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 385,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 386,
+      "token_text": " as",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 387,
+      "token_text": " simple",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 388,
+      "token_text": " as",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 389,
+      "token_text": " taking",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 390,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 391,
+      "token_text": " few",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 392,
+      "token_text": " deep",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 393,
+      "token_text": " breath",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 394,
+      "token_text": "s",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 395,
+      "token_text": " before",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 396,
+      "token_text": " starting",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 397,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 398,
+      "token_text": " task",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 399,
+      "token_text": " or",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 400,
+      "token_text": " engaging",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 401,
+      "token_text": " in",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21361
+    },
+    {
+      "step": 402,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 403,
+      "token_text": " brief",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 404,
+      "token_text": " meditation",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 405,
+      "token_text": " session",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 406,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 407,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 408,
+      "token_text": "0",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 409,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 410,
+      "token_text": " **",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 411,
+      "token_text": "Be",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 412,
+      "token_text": " Kind",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 413,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 414,
+      "token_text": " Yourself",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 415,
+      "token_text": "**:",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 416,
+      "token_text": " Remember",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 417,
+      "token_text": " that",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 418,
+      "token_text": " self",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 419,
+      "token_text": "-care",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 420,
+      "token_text": " is",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 421,
+      "token_text": " not",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 422,
+      "token_text": " selfish",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 423,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 424,
+      "token_text": " It",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 425,
+      "token_text": "’s",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21362
+    },
+    {
+      "step": 426,
+      "token_text": " essential",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 427,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 428,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 429,
+      "token_text": " overall",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 430,
+      "token_text": " well",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 431,
+      "token_text": "-being",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 432,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 433,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 434,
+      "token_text": " help",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 435,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 436,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 437,
+      "token_text": " more",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 438,
+      "token_text": " effective",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 439,
+      "token_text": " in",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 440,
+      "token_text": " other",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 441,
+      "token_text": " areas",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 442,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 443,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 444,
+      "token_text": " life",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 445,
+      "token_text": ".\n\n",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 446,
+      "token_text": "By",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 447,
+      "token_text": " implementing",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 21363
+    },
+    {
+      "step": 448,
+      "token_text": " these",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 21364
+    },
+    {
+      "step": 449,
+      "token_text": " strategies",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 21364
+    },
+    {
+      "step": 450,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21364
+    },
+    {
+      "step": 451,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21364
+    },
+    {
+      "step": 452,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21364
+    },
+    {
+      "step": 453,
+      "token_text": " better",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21364
+    },
+    {
+      "step": 454,
+      "token_text": " manage",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 21364
+    },
+    {
+      "step": 455,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21364
+    },
+    {
+      "step": 456,
+      "token_text": " time",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21364
+    },
+    {
+      "step": 457,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21364
+    },
+    {
+      "step": 458,
+      "token_text": " prioritize",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 21364
+    },
+    {
+      "step": 459,
+      "token_text": " self",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21364
+    },
+    {
+      "step": 460,
+      "token_text": "-care",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21364
+    },
+    {
+      "step": 461,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21364
+    },
+    {
+      "step": 462,
+      "token_text": " even",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21364
+    },
+    {
+      "step": 463,
+      "token_text": " when",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21364
+    },
+    {
+      "step": 464,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21364
+    },
+    {
+      "step": 465,
+      "token_text": " priorities",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 21364
+    },
+    {
+      "step": 466,
+      "token_text": " are",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 21364
+    },
+    {
+      "step": 467,
+      "token_text": " high",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 21364
+    },
+    {
+      "step": 468,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 21364
+    }
+  ]
+}

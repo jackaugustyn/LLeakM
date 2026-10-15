@@ -1,0 +1,2125 @@
+{
+  "run_id": "e7c97251-23a6-42da-b913-12b5c613376e",
+  "prompt": "Give me a practical plan for ongoing fatigue and dizziness including what to tell a doctor.",
+  "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "device": "cuda",
+  "max_new_tokens": 512,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "prompt_format": "legacy",
+  "prompt_len_tokens": 28,
+  "generated_tokens": 301,
+  "finish_reason": "eos",
+  "response_complete": true,
+  "response_text": "Sure,here'sapracticalplanforongoingfatigueanddizziness:\n\n1.Startwithacomprehensiveevaluation:Yourdoctorwillconductathoroughevaluationtodeterminetheunderlyingcauseofyourfatigueanddizziness.Thismayincludeaphysicalexam,bloodtests,andimagingtests.\n\n2.Discusstreatmentoptions:Basedontheevaluation,yourdoctorwilldiscusstreatmentoptionswithyou.Thismayincludelifestylechanges,medication,oracombinationofboth.\n\n3.Lifestylechanges:Yourdoctormayrecommendlifestylechangestohelpmanageyourfatigueanddizziness.Thismayincludegettingenoughsleep,reducingstress,andmaintainingahealthydiet.\n\n4.Medication:Iflifestylechangesarenoteffective,yourdoctormayrecommendmedicationtohelpmanageyourfatigueanddizziness.Thismayincludemedicationsforanxiety,depression,orsleepdisorders.\n\n5.Follow-upappointments:Yourdoctorwillmonitoryourprogressandadjustyourtreatmentplanasneeded.Youmayneedtoattendfollow-upappointmentstoensurethatyourtreatmentiseffective.\n\n6.Bepatient:Managingfatigueanddizzinesscanbechallenging,butwiththerighttreatmentplanandlifestylechanges,youcanimproveyourqualityoflife.Bepatientandpersistentinyoureffortstomanageyourfatigueanddizziness.",
+  "response_utf8_len": 1125,
+  "steps": [
+    {
+      "step": 0,
+      "token_text": "Sure",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8929
+    },
+    {
+      "step": 1,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8929
+    },
+    {
+      "step": 2,
+      "token_text": "here",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 3,
+      "token_text": "'",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 4,
+      "token_text": "s",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 5,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 6,
+      "token_text": "practical",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 7,
+      "token_text": "plan",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 8,
+      "token_text": "for",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 9,
+      "token_text": "on",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 10,
+      "token_text": "going",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 11,
+      "token_text": "fat",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 12,
+      "token_text": "igue",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 13,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 14,
+      "token_text": "d",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 15,
+      "token_text": "izz",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 16,
+      "token_text": "iness",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 17,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 18,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 19,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 20,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 21,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 22,
+      "token_text": "Start",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 23,
+      "token_text": "with",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 24,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 25,
+      "token_text": "compreh",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 26,
+      "token_text": "ensive",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 27,
+      "token_text": "evaluation",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 28,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 29,
+      "token_text": "Your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 30,
+      "token_text": "doctor",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 31,
+      "token_text": "will",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 32,
+      "token_text": "conduct",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 33,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 34,
+      "token_text": "thorough",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 35,
+      "token_text": "evaluation",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 36,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 37,
+      "token_text": "determine",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 38,
+      "token_text": "the",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 39,
+      "token_text": "underlying",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 40,
+      "token_text": "cause",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 41,
+      "token_text": "of",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 42,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 43,
+      "token_text": "fat",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 44,
+      "token_text": "igue",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 45,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 46,
+      "token_text": "d",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 47,
+      "token_text": "izz",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 48,
+      "token_text": "iness",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 49,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 50,
+      "token_text": "This",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 51,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 52,
+      "token_text": "include",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 53,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8930
+    },
+    {
+      "step": 54,
+      "token_text": "physical",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 55,
+      "token_text": "exam",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 56,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 57,
+      "token_text": "blood",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 58,
+      "token_text": "tests",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 59,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 60,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 61,
+      "token_text": "imag",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 62,
+      "token_text": "ing",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 63,
+      "token_text": "tests",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 64,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 65,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 66,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 67,
+      "token_text": "2",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 68,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 69,
+      "token_text": "Disc",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 70,
+      "token_text": "uss",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 71,
+      "token_text": "treatment",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 72,
+      "token_text": "options",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 73,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 74,
+      "token_text": "Based",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 75,
+      "token_text": "on",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 76,
+      "token_text": "the",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 77,
+      "token_text": "evaluation",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8931
+    },
+    {
+      "step": 78,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 79,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 80,
+      "token_text": "doctor",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 81,
+      "token_text": "will",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 82,
+      "token_text": "discuss",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 83,
+      "token_text": "treatment",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 84,
+      "token_text": "options",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 85,
+      "token_text": "with",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 86,
+      "token_text": "you",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 87,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 88,
+      "token_text": "This",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 89,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 90,
+      "token_text": "include",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 91,
+      "token_text": "l",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 92,
+      "token_text": "ifest",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 93,
+      "token_text": "yle",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 94,
+      "token_text": "changes",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 95,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 96,
+      "token_text": "medic",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 97,
+      "token_text": "ation",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 98,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 99,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 100,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 101,
+      "token_text": "combination",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 102,
+      "token_text": "of",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 103,
+      "token_text": "both",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 104,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 105,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 106,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 107,
+      "token_text": "3",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8932
+    },
+    {
+      "step": 108,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 109,
+      "token_text": "L",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 110,
+      "token_text": "ifest",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 111,
+      "token_text": "yle",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 112,
+      "token_text": "changes",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 113,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 114,
+      "token_text": "Your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 115,
+      "token_text": "doctor",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 116,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 117,
+      "token_text": "recommend",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 118,
+      "token_text": "l",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 119,
+      "token_text": "ifest",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 120,
+      "token_text": "yle",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 121,
+      "token_text": "changes",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 122,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 123,
+      "token_text": "help",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 124,
+      "token_text": "manage",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 125,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 126,
+      "token_text": "fat",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 127,
+      "token_text": "igue",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 128,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 129,
+      "token_text": "d",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8933
+    },
+    {
+      "step": 130,
+      "token_text": "izz",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 131,
+      "token_text": "iness",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 132,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 133,
+      "token_text": "This",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 134,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 135,
+      "token_text": "include",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 136,
+      "token_text": "getting",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 137,
+      "token_text": "enough",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 138,
+      "token_text": "sleep",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 139,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 140,
+      "token_text": "reducing",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 141,
+      "token_text": "stress",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 142,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 143,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 144,
+      "token_text": "maintain",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 145,
+      "token_text": "ing",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 146,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 147,
+      "token_text": "health",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 148,
+      "token_text": "y",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 149,
+      "token_text": "di",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 150,
+      "token_text": "et",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 151,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 152,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 153,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 154,
+      "token_text": "4",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 155,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 156,
+      "token_text": "Medic",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8934
+    },
+    {
+      "step": 157,
+      "token_text": "ation",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 158,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 159,
+      "token_text": "If",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 160,
+      "token_text": "l",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 161,
+      "token_text": "ifest",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 162,
+      "token_text": "yle",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 163,
+      "token_text": "changes",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 164,
+      "token_text": "are",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 165,
+      "token_text": "not",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 166,
+      "token_text": "effective",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 167,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 168,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 169,
+      "token_text": "doctor",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 170,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 171,
+      "token_text": "recommend",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 172,
+      "token_text": "medic",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 173,
+      "token_text": "ation",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 174,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 175,
+      "token_text": "help",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 176,
+      "token_text": "manage",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 177,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 178,
+      "token_text": "fat",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 179,
+      "token_text": "igue",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 180,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8935
+    },
+    {
+      "step": 181,
+      "token_text": "d",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8936
+    },
+    {
+      "step": 182,
+      "token_text": "izz",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8936
+    },
+    {
+      "step": 183,
+      "token_text": "iness",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8936
+    },
+    {
+      "step": 184,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8936
+    },
+    {
+      "step": 185,
+      "token_text": "This",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8936
+    },
+    {
+      "step": 186,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8936
+    },
+    {
+      "step": 187,
+      "token_text": "include",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8936
+    },
+    {
+      "step": 188,
+      "token_text": "medic",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8936
+    },
+    {
+      "step": 189,
+      "token_text": "ations",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8936
+    },
+    {
+      "step": 190,
+      "token_text": "for",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8936
+    },
+    {
+      "step": 191,
+      "token_text": "anx",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8936
+    },
+    {
+      "step": 192,
+      "token_text": "iety",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8936
+    },
+    {
+      "step": 193,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8936
+    },
+    {
+      "step": 194,
+      "token_text": "de",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8936
+    },
+    {
+      "step": 195,
+      "token_text": "pression",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8936
+    },
+    {
+      "step": 196,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8936
+    },
+    {
+      "step": 197,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8936
+    },
+    {
+      "step": 198,
+      "token_text": "sleep",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8936
+    },
+    {
+      "step": 199,
+      "token_text": "dis",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8936
+    },
+    {
+      "step": 200,
+      "token_text": "orders",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8936
+    },
+    {
+      "step": 201,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 202,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 203,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 204,
+      "token_text": "5",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 205,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 206,
+      "token_text": "Follow",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 207,
+      "token_text": "-",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 208,
+      "token_text": "up",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 209,
+      "token_text": "appoint",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 210,
+      "token_text": "ments",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 211,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 212,
+      "token_text": "Your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 213,
+      "token_text": "doctor",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 214,
+      "token_text": "will",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 215,
+      "token_text": "monitor",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 216,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 217,
+      "token_text": "progress",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 218,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 219,
+      "token_text": "adjust",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 220,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 221,
+      "token_text": "treatment",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 222,
+      "token_text": "plan",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 223,
+      "token_text": "as",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 224,
+      "token_text": "needed",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 225,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8937
+    },
+    {
+      "step": 226,
+      "token_text": "You",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 227,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 228,
+      "token_text": "need",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 229,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 230,
+      "token_text": "attend",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 231,
+      "token_text": "follow",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 232,
+      "token_text": "-",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 233,
+      "token_text": "up",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 234,
+      "token_text": "appoint",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 235,
+      "token_text": "ments",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 236,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 237,
+      "token_text": "ensure",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 238,
+      "token_text": "that",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 239,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 240,
+      "token_text": "treatment",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 241,
+      "token_text": "is",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 242,
+      "token_text": "effective",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 243,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 244,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 245,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 246,
+      "token_text": "6",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 247,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 248,
+      "token_text": "Be",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 249,
+      "token_text": "patient",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8938
+    },
+    {
+      "step": 250,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 251,
+      "token_text": "Man",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 252,
+      "token_text": "aging",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 253,
+      "token_text": "fat",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 254,
+      "token_text": "igue",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 255,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 256,
+      "token_text": "d",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 257,
+      "token_text": "izz",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 258,
+      "token_text": "iness",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 259,
+      "token_text": "can",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 260,
+      "token_text": "be",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 261,
+      "token_text": "challeng",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 262,
+      "token_text": "ing",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 263,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 264,
+      "token_text": "but",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 265,
+      "token_text": "with",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 266,
+      "token_text": "the",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 267,
+      "token_text": "right",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 268,
+      "token_text": "treatment",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 269,
+      "token_text": "plan",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 270,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 271,
+      "token_text": "l",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 272,
+      "token_text": "ifest",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 273,
+      "token_text": "yle",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 274,
+      "token_text": "changes",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 275,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8939
+    },
+    {
+      "step": 276,
+      "token_text": "you",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8940
+    },
+    {
+      "step": 277,
+      "token_text": "can",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8940
+    },
+    {
+      "step": 278,
+      "token_text": "improve",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8940
+    },
+    {
+      "step": 279,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8940
+    },
+    {
+      "step": 280,
+      "token_text": "quality",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8940
+    },
+    {
+      "step": 281,
+      "token_text": "of",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8940
+    },
+    {
+      "step": 282,
+      "token_text": "life",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8940
+    },
+    {
+      "step": 283,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8940
+    },
+    {
+      "step": 284,
+      "token_text": "Be",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8940
+    },
+    {
+      "step": 285,
+      "token_text": "patient",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8940
+    },
+    {
+      "step": 286,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8940
+    },
+    {
+      "step": 287,
+      "token_text": "persistent",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8940
+    },
+    {
+      "step": 288,
+      "token_text": "in",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8940
+    },
+    {
+      "step": 289,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8940
+    },
+    {
+      "step": 290,
+      "token_text": "efforts",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8940
+    },
+    {
+      "step": 291,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8940
+    },
+    {
+      "step": 292,
+      "token_text": "manage",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8940
+    },
+    {
+      "step": 293,
+      "token_text": "your",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8940
+    },
+    {
+      "step": 294,
+      "token_text": "fat",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8940
+    },
+    {
+      "step": 295,
+      "token_text": "igue",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8941
+    },
+    {
+      "step": 296,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8941
+    },
+    {
+      "step": 297,
+      "token_text": "d",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8941
+    },
+    {
+      "step": 298,
+      "token_text": "izz",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8941
+    },
+    {
+      "step": 299,
+      "token_text": "iness",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8941
+    },
+    {
+      "step": 300,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8941
+    }
+  ]
+}

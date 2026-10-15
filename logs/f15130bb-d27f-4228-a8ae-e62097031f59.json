@@ -1,0 +1,1873 @@
+{
+  "run_id": "f15130bb-d27f-4228-a8ae-e62097031f59",
+  "prompt": "What warning signs should I watch for with ongoing fatigue and dizziness without giving a diagnosis?",
+  "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "device": "cuda",
+  "max_new_tokens": 512,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "prompt_format": "legacy",
+  "prompt_len_tokens": 29,
+  "generated_tokens": 265,
+  "finish_reason": "eos",
+  "response_complete": true,
+  "response_text": "Sure,herearesomewarningsignstowatchfor:\n\n1.Fatigue:Youmayfeeltiredorexhausted,especiallyduringtheday.\n2.Dizziness:Youmayfeellightheaded,dizzy,orhavetroublestandingupstraight.\n3.Headaches:Youmayexperienceheadaches,especiallyintheforeheadortemples.\n4.Nausea:Youmayexperiencenauseaorvomiting.\n5.Blurredvision:Youmayexperienceblurredvisionordifficultyseeinginoneorbotheyes.\n6.Sweating:Youmayexperiencesweatingorfeelhotandcoldspots.\n7.Muscleweakness:Youmayexperienceweaknessorfatigueinoneorbotharmsorlegs.\n8.Sleepdisturbances:Youmayexperiencedifficultyfallingasleeporstayingasleep.\n9.Decreasedconcentration:Youmayexperiencedifficultyconcentratingorlosingfocus.\n10.Decreasedappetite:Youmayexperiencedecreasedappetiteorfeelingfullaftereating.\n\nRemember,thesearejustgeneralwarningsigns,andit'sessentialtoseekmedicalattentionifyouexperienceanyofthesesymptomsforalongerperiodoftime.",
+  "response_utf8_len": 872,
+  "steps": [
+    {
+      "step": 0,
+      "token_text": "Sure",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8039
+    },
+    {
+      "step": 1,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8039
+    },
+    {
+      "step": 2,
+      "token_text": "here",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8039
+    },
+    {
+      "step": 3,
+      "token_text": "are",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8039
+    },
+    {
+      "step": 4,
+      "token_text": "some",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8039
+    },
+    {
+      "step": 5,
+      "token_text": "warning",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 6,
+      "token_text": "signs",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 7,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 8,
+      "token_text": "watch",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 9,
+      "token_text": "for",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 10,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 11,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 12,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 13,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 14,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 15,
+      "token_text": "F",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 16,
+      "token_text": "at",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 17,
+      "token_text": "igue",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 18,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 19,
+      "token_text": "You",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 20,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 21,
+      "token_text": "feel",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 22,
+      "token_text": "tired",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 23,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 24,
+      "token_text": "exha",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 25,
+      "token_text": "usted",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 26,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 27,
+      "token_text": "especially",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 28,
+      "token_text": "during",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 29,
+      "token_text": "the",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 30,
+      "token_text": "day",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 31,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 32,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 33,
+      "token_text": "2",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 34,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 35,
+      "token_text": "D",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 36,
+      "token_text": "izz",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 37,
+      "token_text": "iness",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 38,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 39,
+      "token_text": "You",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 40,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 41,
+      "token_text": "feel",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 42,
+      "token_text": "light",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 43,
+      "token_text": "head",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 44,
+      "token_text": "ed",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 45,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 46,
+      "token_text": "d",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 47,
+      "token_text": "iz",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 48,
+      "token_text": "zy",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 49,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 50,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 51,
+      "token_text": "have",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 52,
+      "token_text": "trouble",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 53,
+      "token_text": "standing",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 54,
+      "token_text": "up",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8040
+    },
+    {
+      "step": 55,
+      "token_text": "straight",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 56,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 57,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 58,
+      "token_text": "3",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 59,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 60,
+      "token_text": "Head",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 61,
+      "token_text": "aches",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 62,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 63,
+      "token_text": "You",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 64,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 65,
+      "token_text": "experience",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 66,
+      "token_text": "head",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 67,
+      "token_text": "aches",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 68,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 69,
+      "token_text": "especially",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 70,
+      "token_text": "in",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 71,
+      "token_text": "the",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 72,
+      "token_text": "fore",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 73,
+      "token_text": "head",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 74,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 75,
+      "token_text": "tem",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 76,
+      "token_text": "ples",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 77,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8041
+    },
+    {
+      "step": 78,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 79,
+      "token_text": "4",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 80,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 81,
+      "token_text": "N",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 82,
+      "token_text": "ause",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 83,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 84,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 85,
+      "token_text": "You",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 86,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 87,
+      "token_text": "experience",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 88,
+      "token_text": "n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 89,
+      "token_text": "ause",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 90,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 91,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 92,
+      "token_text": "vom",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 93,
+      "token_text": "iting",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 94,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 95,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 96,
+      "token_text": "5",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 97,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 98,
+      "token_text": "Bl",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 99,
+      "token_text": "ur",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 100,
+      "token_text": "red",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 101,
+      "token_text": "vision",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 102,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 103,
+      "token_text": "You",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 104,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8042
+    },
+    {
+      "step": 105,
+      "token_text": "experience",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 106,
+      "token_text": "bl",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 107,
+      "token_text": "ur",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 108,
+      "token_text": "red",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 109,
+      "token_text": "vision",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 110,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 111,
+      "token_text": "difficulty",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 112,
+      "token_text": "seeing",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 113,
+      "token_text": "in",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 114,
+      "token_text": "one",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 115,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 116,
+      "token_text": "both",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 117,
+      "token_text": "eyes",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 118,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 119,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 120,
+      "token_text": "6",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 121,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 122,
+      "token_text": "S",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 123,
+      "token_text": "we",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 124,
+      "token_text": "ating",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 125,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 126,
+      "token_text": "You",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 127,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 128,
+      "token_text": "experience",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8043
+    },
+    {
+      "step": 129,
+      "token_text": "swe",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 130,
+      "token_text": "ating",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 131,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 132,
+      "token_text": "feel",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 133,
+      "token_text": "hot",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 134,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 135,
+      "token_text": "cold",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 136,
+      "token_text": "sp",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 137,
+      "token_text": "ots",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 138,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 139,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 140,
+      "token_text": "7",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 141,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 142,
+      "token_text": "Mus",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 143,
+      "token_text": "cle",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 144,
+      "token_text": "weak",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 145,
+      "token_text": "ness",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 146,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 147,
+      "token_text": "You",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 148,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 149,
+      "token_text": "experience",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 150,
+      "token_text": "weak",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 151,
+      "token_text": "ness",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 152,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 153,
+      "token_text": "fat",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 154,
+      "token_text": "igue",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8044
+    },
+    {
+      "step": 155,
+      "token_text": "in",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 156,
+      "token_text": "one",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 157,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 158,
+      "token_text": "both",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 159,
+      "token_text": "arms",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 160,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 161,
+      "token_text": "legs",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 162,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 163,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 164,
+      "token_text": "8",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 165,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 166,
+      "token_text": "S",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 167,
+      "token_text": "leep",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 168,
+      "token_text": "dist",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 169,
+      "token_text": "urban",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 170,
+      "token_text": "ces",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 171,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 172,
+      "token_text": "You",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 173,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 174,
+      "token_text": "experience",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 175,
+      "token_text": "difficulty",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 176,
+      "token_text": "falling",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 177,
+      "token_text": "as",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 178,
+      "token_text": "leep",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 179,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8045
+    },
+    {
+      "step": 180,
+      "token_text": "stay",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 181,
+      "token_text": "ing",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 182,
+      "token_text": "as",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 183,
+      "token_text": "leep",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 184,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 185,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 186,
+      "token_text": "9",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 187,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 188,
+      "token_text": "Dec",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 189,
+      "token_text": "re",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 190,
+      "token_text": "ased",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 191,
+      "token_text": "concentration",
+      "token_utf8_len": 13,
+      "sse_frame_utf8_len": 21,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 192,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 193,
+      "token_text": "You",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 194,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 195,
+      "token_text": "experience",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 196,
+      "token_text": "difficulty",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 197,
+      "token_text": "concentr",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 198,
+      "token_text": "ating",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 199,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 200,
+      "token_text": "losing",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 201,
+      "token_text": "focus",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 202,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 203,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8046
+    },
+    {
+      "step": 204,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 205,
+      "token_text": "0",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 206,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 207,
+      "token_text": "Dec",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 208,
+      "token_text": "re",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 209,
+      "token_text": "ased",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 210,
+      "token_text": "app",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 211,
+      "token_text": "et",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 212,
+      "token_text": "ite",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 213,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 214,
+      "token_text": "You",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 215,
+      "token_text": "may",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 216,
+      "token_text": "experience",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 217,
+      "token_text": "decre",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 218,
+      "token_text": "ased",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 219,
+      "token_text": "app",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 220,
+      "token_text": "et",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 221,
+      "token_text": "ite",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 222,
+      "token_text": "or",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 223,
+      "token_text": "feeling",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 224,
+      "token_text": "full",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 225,
+      "token_text": "after",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 226,
+      "token_text": "e",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 227,
+      "token_text": "ating",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 228,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8047
+    },
+    {
+      "step": 229,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 230,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 231,
+      "token_text": "Rem",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 232,
+      "token_text": "ember",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 233,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 234,
+      "token_text": "these",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 235,
+      "token_text": "are",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 236,
+      "token_text": "just",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 237,
+      "token_text": "general",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 238,
+      "token_text": "warning",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 239,
+      "token_text": "signs",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 240,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 241,
+      "token_text": "and",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 242,
+      "token_text": "it",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 243,
+      "token_text": "'",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 244,
+      "token_text": "s",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 245,
+      "token_text": "essential",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 246,
+      "token_text": "to",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 247,
+      "token_text": "seek",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 248,
+      "token_text": "medical",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 249,
+      "token_text": "attention",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 250,
+      "token_text": "if",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 251,
+      "token_text": "you",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 252,
+      "token_text": "experience",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 253,
+      "token_text": "any",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8048
+    },
+    {
+      "step": 254,
+      "token_text": "of",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8049
+    },
+    {
+      "step": 255,
+      "token_text": "these",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8049
+    },
+    {
+      "step": 256,
+      "token_text": "sympt",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 8049
+    },
+    {
+      "step": 257,
+      "token_text": "oms",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8049
+    },
+    {
+      "step": 258,
+      "token_text": "for",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 8049
+    },
+    {
+      "step": 259,
+      "token_text": "a",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8049
+    },
+    {
+      "step": 260,
+      "token_text": "longer",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8049
+    },
+    {
+      "step": 261,
+      "token_text": "period",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 8049
+    },
+    {
+      "step": 262,
+      "token_text": "of",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 8049
+    },
+    {
+      "step": 263,
+      "token_text": "time",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 8049
+    },
+    {
+      "step": 264,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 8049
+    }
+  ]
+}

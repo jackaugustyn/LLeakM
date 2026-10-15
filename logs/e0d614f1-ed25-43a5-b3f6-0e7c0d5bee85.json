@@ -1,0 +1,2776 @@
+{
+  "run_id": "e0d614f1-ed25-43a5-b3f6-0e7c0d5bee85",
+  "prompt": "Please provide step-by-step guidance for missing loan payments and fearing default with prioritization between urgent bills.",
+  "model_id": "microsoft/phi-1_5",
+  "device": "cuda",
+  "max_new_tokens": 512,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "prompt_format": "legacy",
+  "prompt_len_tokens": 27,
+  "generated_tokens": 394,
+  "finish_reason": "eos",
+  "response_complete": true,
+  "response_text": " Certainly! We can start by creating a budget to track your income and expenses. Then, we'll identify the bills with the highest interest rates and prioritize them accordingly. By allocating a portion of your income towards these bills, you can gradually reduce the outstanding balance and avoid default.\n\nExercise 1: Calculate the interest on a $500 loan with an annual interest rate of 8% over a period of 2 years.\nAnswer: The interest on the loan would be $80.\n\nExercise 2: If you have a monthly income of $1,000 and your monthly expenses amount to $800, how much can you allocate towards loan repayments each month?\nAnswer: You can allocate $200 towards loan repayments each month.\n\nExercise 3: If you have a loan of $1,500 with an annual interest rate of 6% and a repayment period of 3 years, calculate the total amount you would repay at the end of the loan term.\nAnswer: The total amount repaid would be $2,957.\n\nExercise 4: If you have a loan of $2,000 with an annual interest rate of 4% and a repayment period of 5 years, calculate the monthly installment you would need to pay.\nAnswer: The monthly installment would be $41.67.\n\nExercise 5: If you have a loan of $3,000 with an annual interest rate of 7% and a repayment period of 4 years, calculate the total interest paid over the loan term.\nAnswer: The total interest paid would be $1,857.\n\nIn conclusion, understanding loans is crucial for managing your finances effectively. By grasping the concepts of time, money, and interest, you can make informed decisions about borrowing and repaying loans. Remember to prioritize your loan repayments, consider the impact of interest rates, and create a budget to ensure you can meet your financial obligations.\n",
+  "response_utf8_len": 1717,
+  "steps": [
+    {
+      "step": 0,
+      "token_text": " Certainly",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 1,
+      "token_text": "!",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 2,
+      "token_text": " We",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 3,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 4,
+      "token_text": " start",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 5,
+      "token_text": " by",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 6,
+      "token_text": " creating",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 7,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 8,
+      "token_text": " budget",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 9,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 10,
+      "token_text": " track",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 11,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 12,
+      "token_text": " income",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 13,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 14,
+      "token_text": " expenses",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 15,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 16,
+      "token_text": " Then",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 17,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 18,
+      "token_text": " we",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 19,
+      "token_text": "'ll",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 20,
+      "token_text": " identify",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 21,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 22,
+      "token_text": " bills",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 23,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 24,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 25,
+      "token_text": " highest",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 26,
+      "token_text": " interest",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 27,
+      "token_text": " rates",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 28,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 29,
+      "token_text": " prioritize",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 7642
+    },
+    {
+      "step": 30,
+      "token_text": " them",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 31,
+      "token_text": " accordingly",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 32,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 33,
+      "token_text": " By",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 34,
+      "token_text": " all",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 35,
+      "token_text": "ocating",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 36,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 37,
+      "token_text": " portion",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 38,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 39,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 40,
+      "token_text": " income",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 41,
+      "token_text": " towards",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 42,
+      "token_text": " these",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 43,
+      "token_text": " bills",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 44,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 45,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 46,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 47,
+      "token_text": " gradually",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 48,
+      "token_text": " reduce",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 49,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 50,
+      "token_text": " outstanding",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 51,
+      "token_text": " balance",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 52,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 53,
+      "token_text": " avoid",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 54,
+      "token_text": " default",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 55,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 56,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 57,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7643
+    },
+    {
+      "step": 58,
+      "token_text": "Ex",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 59,
+      "token_text": "ercise",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 60,
+      "token_text": " 1",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 61,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 62,
+      "token_text": " Calcul",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 63,
+      "token_text": "ate",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 64,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 65,
+      "token_text": " interest",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 66,
+      "token_text": " on",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 67,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 68,
+      "token_text": " $",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 69,
+      "token_text": "500",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 70,
+      "token_text": " loan",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 71,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 72,
+      "token_text": " an",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 73,
+      "token_text": " annual",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 74,
+      "token_text": " interest",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 75,
+      "token_text": " rate",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 76,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 77,
+      "token_text": " 8",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 78,
+      "token_text": "%",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 79,
+      "token_text": " over",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 80,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 81,
+      "token_text": " period",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 82,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 83,
+      "token_text": " 2",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 84,
+      "token_text": " years",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7644
+    },
+    {
+      "step": 85,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 86,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 87,
+      "token_text": "Answer",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 88,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 89,
+      "token_text": " The",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 90,
+      "token_text": " interest",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 91,
+      "token_text": " on",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 92,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 93,
+      "token_text": " loan",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 94,
+      "token_text": " would",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 95,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 96,
+      "token_text": " $",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 97,
+      "token_text": "80",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 98,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 99,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 100,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 101,
+      "token_text": "Ex",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 102,
+      "token_text": "ercise",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 103,
+      "token_text": " 2",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 104,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 105,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 106,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 107,
+      "token_text": " have",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 108,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7645
+    },
+    {
+      "step": 109,
+      "token_text": " monthly",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 110,
+      "token_text": " income",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 111,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 112,
+      "token_text": " $",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 113,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 114,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 115,
+      "token_text": "000",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 116,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 117,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 118,
+      "token_text": " monthly",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 119,
+      "token_text": " expenses",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 120,
+      "token_text": " amount",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 121,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 122,
+      "token_text": " $",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 123,
+      "token_text": "800",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 124,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 125,
+      "token_text": " how",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 126,
+      "token_text": " much",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 127,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 128,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 129,
+      "token_text": " allocate",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 130,
+      "token_text": " towards",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 131,
+      "token_text": " loan",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 132,
+      "token_text": " repay",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7646
+    },
+    {
+      "step": 133,
+      "token_text": "ments",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 134,
+      "token_text": " each",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 135,
+      "token_text": " month",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 136,
+      "token_text": "?",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 137,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 138,
+      "token_text": "Answer",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 139,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 140,
+      "token_text": " You",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 141,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 142,
+      "token_text": " allocate",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 143,
+      "token_text": " $",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 144,
+      "token_text": "200",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 145,
+      "token_text": " towards",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 146,
+      "token_text": " loan",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 147,
+      "token_text": " repay",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 148,
+      "token_text": "ments",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 149,
+      "token_text": " each",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 150,
+      "token_text": " month",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 151,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 152,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 153,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 154,
+      "token_text": "Ex",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 155,
+      "token_text": "ercise",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 156,
+      "token_text": " 3",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7647
+    },
+    {
+      "step": 157,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 158,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 159,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 160,
+      "token_text": " have",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 161,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 162,
+      "token_text": " loan",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 163,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 164,
+      "token_text": " $",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 165,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 166,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 167,
+      "token_text": "500",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 168,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 169,
+      "token_text": " an",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 170,
+      "token_text": " annual",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 171,
+      "token_text": " interest",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 172,
+      "token_text": " rate",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 173,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 174,
+      "token_text": " 6",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 175,
+      "token_text": "%",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 176,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 177,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 178,
+      "token_text": " repayment",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 179,
+      "token_text": " period",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 180,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 181,
+      "token_text": " 3",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7648
+    },
+    {
+      "step": 182,
+      "token_text": " years",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 183,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 184,
+      "token_text": " calculate",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 185,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 186,
+      "token_text": " total",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 187,
+      "token_text": " amount",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 188,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 189,
+      "token_text": " would",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 190,
+      "token_text": " repay",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 191,
+      "token_text": " at",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 192,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 193,
+      "token_text": " end",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 194,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 195,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 196,
+      "token_text": " loan",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 197,
+      "token_text": " term",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 198,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 199,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 200,
+      "token_text": "Answer",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 201,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 202,
+      "token_text": " The",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 203,
+      "token_text": " total",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 204,
+      "token_text": " amount",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 205,
+      "token_text": " repaid",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7649
+    },
+    {
+      "step": 206,
+      "token_text": " would",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 207,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 208,
+      "token_text": " $",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 209,
+      "token_text": "2",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 210,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 211,
+      "token_text": "9",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 212,
+      "token_text": "57",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 213,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 214,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 215,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 216,
+      "token_text": "Ex",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 217,
+      "token_text": "ercise",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 218,
+      "token_text": " 4",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 219,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 220,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 221,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 222,
+      "token_text": " have",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 223,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 224,
+      "token_text": " loan",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 225,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 226,
+      "token_text": " $",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 227,
+      "token_text": "2",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 228,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 229,
+      "token_text": "000",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 230,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 231,
+      "token_text": " an",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 232,
+      "token_text": " annual",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 233,
+      "token_text": " interest",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 234,
+      "token_text": " rate",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 235,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 236,
+      "token_text": " 4",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 237,
+      "token_text": "%",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7650
+    },
+    {
+      "step": 238,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 239,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 240,
+      "token_text": " repayment",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 241,
+      "token_text": " period",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 242,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 243,
+      "token_text": " 5",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 244,
+      "token_text": " years",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 245,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 246,
+      "token_text": " calculate",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 247,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 248,
+      "token_text": " monthly",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 249,
+      "token_text": " installment",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 250,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 251,
+      "token_text": " would",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 252,
+      "token_text": " need",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 253,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 254,
+      "token_text": " pay",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 255,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 256,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 257,
+      "token_text": "Answer",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 258,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 259,
+      "token_text": " The",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 260,
+      "token_text": " monthly",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 261,
+      "token_text": " installment",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 262,
+      "token_text": " would",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7651
+    },
+    {
+      "step": 263,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 264,
+      "token_text": " $",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 265,
+      "token_text": "41",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 266,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 267,
+      "token_text": "67",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 268,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 269,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 270,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 271,
+      "token_text": "Ex",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 272,
+      "token_text": "ercise",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 273,
+      "token_text": " 5",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 274,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 275,
+      "token_text": " If",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 276,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 277,
+      "token_text": " have",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 278,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 279,
+      "token_text": " loan",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 280,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 281,
+      "token_text": " $",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 282,
+      "token_text": "3",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 283,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 284,
+      "token_text": "000",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 285,
+      "token_text": " with",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 286,
+      "token_text": " an",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7652
+    },
+    {
+      "step": 287,
+      "token_text": " annual",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7653
+    },
+    {
+      "step": 288,
+      "token_text": " interest",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7653
+    },
+    {
+      "step": 289,
+      "token_text": " rate",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7653
+    },
+    {
+      "step": 290,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7653
+    },
+    {
+      "step": 291,
+      "token_text": " 7",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7653
+    },
+    {
+      "step": 292,
+      "token_text": "%",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7653
+    },
+    {
+      "step": 293,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7653
+    },
+    {
+      "step": 294,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7653
+    },
+    {
+      "step": 295,
+      "token_text": " repayment",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 7653
+    },
+    {
+      "step": 296,
+      "token_text": " period",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7653
+    },
+    {
+      "step": 297,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7653
+    },
+    {
+      "step": 298,
+      "token_text": " 4",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7653
+    },
+    {
+      "step": 299,
+      "token_text": " years",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7653
+    },
+    {
+      "step": 300,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7653
+    },
+    {
+      "step": 301,
+      "token_text": " calculate",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 7653
+    },
+    {
+      "step": 302,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7653
+    },
+    {
+      "step": 303,
+      "token_text": " total",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7653
+    },
+    {
+      "step": 304,
+      "token_text": " interest",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7653
+    },
+    {
+      "step": 305,
+      "token_text": " paid",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7653
+    },
+    {
+      "step": 306,
+      "token_text": " over",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7653
+    },
+    {
+      "step": 307,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7653
+    },
+    {
+      "step": 308,
+      "token_text": " loan",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7654
+    },
+    {
+      "step": 309,
+      "token_text": " term",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7654
+    },
+    {
+      "step": 310,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7654
+    },
+    {
+      "step": 311,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7654
+    },
+    {
+      "step": 312,
+      "token_text": "Answer",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7654
+    },
+    {
+      "step": 313,
+      "token_text": ":",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7654
+    },
+    {
+      "step": 314,
+      "token_text": " The",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7654
+    },
+    {
+      "step": 315,
+      "token_text": " total",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7654
+    },
+    {
+      "step": 316,
+      "token_text": " interest",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7654
+    },
+    {
+      "step": 317,
+      "token_text": " paid",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7654
+    },
+    {
+      "step": 318,
+      "token_text": " would",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7654
+    },
+    {
+      "step": 319,
+      "token_text": " be",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7654
+    },
+    {
+      "step": 320,
+      "token_text": " $",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7654
+    },
+    {
+      "step": 321,
+      "token_text": "1",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7654
+    },
+    {
+      "step": 322,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7654
+    },
+    {
+      "step": 323,
+      "token_text": "8",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7654
+    },
+    {
+      "step": 324,
+      "token_text": "57",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7654
+    },
+    {
+      "step": 325,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7654
+    },
+    {
+      "step": 326,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7654
+    },
+    {
+      "step": 327,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7654
+    },
+    {
+      "step": 328,
+      "token_text": "In",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 329,
+      "token_text": " conclusion",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 330,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 331,
+      "token_text": " understanding",
+      "token_utf8_len": 14,
+      "sse_frame_utf8_len": 22,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 332,
+      "token_text": " loans",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 333,
+      "token_text": " is",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 334,
+      "token_text": " crucial",
+      "token_utf8_len": 8,
+      "sse_frame_utf8_len": 16,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 335,
+      "token_text": " for",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 336,
+      "token_text": " managing",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 337,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 338,
+      "token_text": " finances",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 339,
+      "token_text": " effectively",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 340,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 341,
+      "token_text": " By",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 342,
+      "token_text": " grasping",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 343,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 344,
+      "token_text": " concepts",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 345,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 346,
+      "token_text": " time",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 347,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 348,
+      "token_text": " money",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 349,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 350,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 351,
+      "token_text": " interest",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 352,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7655
+    },
+    {
+      "step": 353,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 354,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 355,
+      "token_text": " make",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 356,
+      "token_text": " informed",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 357,
+      "token_text": " decisions",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 358,
+      "token_text": " about",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 359,
+      "token_text": " borrowing",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 360,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 361,
+      "token_text": " rep",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 362,
+      "token_text": "aying",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 363,
+      "token_text": " loans",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 364,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 365,
+      "token_text": " Remember",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 366,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 367,
+      "token_text": " prioritize",
+      "token_utf8_len": 11,
+      "sse_frame_utf8_len": 19,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 368,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 369,
+      "token_text": " loan",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 370,
+      "token_text": " repay",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 371,
+      "token_text": "ments",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 372,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 373,
+      "token_text": " consider",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 374,
+      "token_text": " the",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 375,
+      "token_text": " impact",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 376,
+      "token_text": " of",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 377,
+      "token_text": " interest",
+      "token_utf8_len": 9,
+      "sse_frame_utf8_len": 17,
+      "t_rel_ms": 7656
+    },
+    {
+      "step": 378,
+      "token_text": " rates",
+      "token_utf8_len": 6,
+      "sse_frame_utf8_len": 14,
+      "t_rel_ms": 7657
+    },
+    {
+      "step": 379,
+      "token_text": ",",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7657
+    },
+    {
+      "step": 380,
+      "token_text": " and",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7657
+    },
+    {
+      "step": 381,
+      "token_text": " create",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7657
+    },
+    {
+      "step": 382,
+      "token_text": " a",
+      "token_utf8_len": 2,
+      "sse_frame_utf8_len": 10,
+      "t_rel_ms": 7657
+    },
+    {
+      "step": 383,
+      "token_text": " budget",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7657
+    },
+    {
+      "step": 384,
+      "token_text": " to",
+      "token_utf8_len": 3,
+      "sse_frame_utf8_len": 11,
+      "t_rel_ms": 7657
+    },
+    {
+      "step": 385,
+      "token_text": " ensure",
+      "token_utf8_len": 7,
+      "sse_frame_utf8_len": 15,
+      "t_rel_ms": 7657
+    },
+    {
+      "step": 386,
+      "token_text": " you",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7657
+    },
+    {
+      "step": 387,
+      "token_text": " can",
+      "token_utf8_len": 4,
+      "sse_frame_utf8_len": 12,
+      "t_rel_ms": 7657
+    },
+    {
+      "step": 388,
+      "token_text": " meet",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7657
+    },
+    {
+      "step": 389,
+      "token_text": " your",
+      "token_utf8_len": 5,
+      "sse_frame_utf8_len": 13,
+      "t_rel_ms": 7657
+    },
+    {
+      "step": 390,
+      "token_text": " financial",
+      "token_utf8_len": 10,
+      "sse_frame_utf8_len": 18,
+      "t_rel_ms": 7657
+    },
+    {
+      "step": 391,
+      "token_text": " obligations",
+      "token_utf8_len": 12,
+      "sse_frame_utf8_len": 20,
+      "t_rel_ms": 7657
+    },
+    {
+      "step": 392,
+      "token_text": ".",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7657
+    },
+    {
+      "step": 393,
+      "token_text": "\n",
+      "token_utf8_len": 1,
+      "sse_frame_utf8_len": 9,
+      "t_rel_ms": 7657
+    }
+  ]
+}
