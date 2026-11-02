@@ -1,6 +1,12 @@
-"""SSE client for LLM side-channel harness."""
+"""Historical line-parser demonstration; unsuitable for research measurements.
+
+Raw token payloads can contain newlines or DONE-like text, so this parser cannot
+recover the harness's original write boundaries. Current experiments use the
+validated instrumented log oracle in experiment_validation/scripts/run_validation.py.
+"""
 
 import requests
+import warnings
 
 URL = "http://127.0.0.1:8000/generate_sse"
 
@@ -20,6 +26,12 @@ def collect_frame_lengths(url: str = URL, params: dict | None = None) -> list[in
     iter_lines returns single lines (e.g. b"data: ..."); we append "\\n\\n"
     to simulate the full SSE frame format.
     """
+    warnings.warn(
+        "Legacy line-parser output is not a valid token-length trace. "
+        "Use run_validation.py with its run-matched instrumented logs for measurements.",
+        RuntimeWarning,
+        stacklevel=2,
+    )
     params = params or DEFAULT_PARAMS
     frame_lens: list[int] = []
 

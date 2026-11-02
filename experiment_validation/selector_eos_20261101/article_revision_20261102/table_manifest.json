@@ -1,0 +1,168 @@
+{
+  "status": "GENERATED",
+  "selector": "eos-through-first-inclusive/1",
+  "source_sha256": {
+    "experiment_validation/selector_eos_20261101/validation/main_fresh_factledger.json": "3a83c8ba5a4a7e7813b812ffb4f97111d105f47d2d7b07427602308d5ccf243d",
+    "experiment_validation/selector_eos_20261101/validation/secondary_audit.json": "a9e4002f74b400a4ba186e74ceb233fb1993b637cd2c7f3fcd356429064c9e4f"
+  },
+  "template_structure_source": "experiment_validation/selector_eos_20261101/article_revision_20261102/table_structure.tex",
+  "template_structure_sha256": "f511a774ad519cf8297b4711e0c2555f515565a92d9bf7d392e8d795b0503444",
+  "generator_sha256": "0080b198c711a93cbc2239188712fcce53cc6e2ee5769986c0848e356d08a53c",
+  "table_bindings": {
+    "tab:length_covariates": {
+      "source": "experiment_validation/selector_eos_20261101/validation/main_fresh_factledger.json#/cohorts/cuda_full/models",
+      "columns": [
+        "model",
+        "tokens_mean",
+        "reference_characters_mean",
+        "token_bytes_mean_of_sample_means",
+        "token_limit_percent"
+      ],
+      "data_rows": 7
+    },
+    "tab:encoder_coverage": {
+      "source": "experiment_validation/selector_eos_20261101/validation/secondary_audit.json#cells,paired_contrasts; suite=map",
+      "columns": [
+        "condition",
+        "qwen.unique_first_inputs_truncated/n_prompts",
+        "llama.unique_first_inputs_truncated/n_prompts"
+      ],
+      "data_rows": 6
+    },
+    "tab:trace_controls": {
+      "source": "experiment_validation/selector_eos_20261101/validation/secondary_audit.json#cells,paired_contrasts; suite=trace_control",
+      "columns": [
+        "model",
+        "condition",
+        "metric_means.phi",
+        "phi_ci",
+        "mean_phi_difference_vs_baseline"
+      ],
+      "data_rows": 8
+    },
+    "tab:main_results": {
+      "source": "experiment_validation/selector_eos_20261101/validation/main_fresh_factledger.json#/cohorts/cuda_full/models",
+      "columns": [
+        "model",
+        "type",
+        "metrics.phi.mean",
+        "metrics.ed_norm.mean",
+        "metrics.rouge1_precision.mean",
+        "metrics.rougeL_precision.mean",
+        "LR_percent"
+      ],
+      "data_rows": 7
+    },
+    "tab:eos_completeness": {
+      "source": "experiment_validation/selector_eos_20261101/validation/main_fresh_factledger.json#/cohorts/cuda_full/models",
+      "columns": [
+        "model",
+        "EOS_count",
+        "EOS_percent",
+        "token_limit_percent",
+        "metrics.phi.mean",
+        "EOS_only_phi_mean",
+        "LR_percent",
+        "EOS_only_LR_percent"
+      ],
+      "data_rows": 7
+    },
+    "tab:statistical_results": {
+      "source": "experiment_validation/selector_eos_20261101/validation/main_fresh_factledger.json#/cohorts/cuda_full/models",
+      "columns": [
+        "model",
+        "metrics.phi.mean",
+        "metrics.phi.ci_prompt_bootstrap",
+        "LR_percent",
+        "LR_wilson_percent"
+      ],
+      "data_rows": 7
+    },
+    "tab:scenario_sensitivity": {
+      "source": "experiment_validation/selector_eos_20261101/validation/main_fresh_factledger.json#/cohorts/cuda_full/models",
+      "columns": [
+        "model",
+        "metrics.phi.mean",
+        "phi_ci_scenario_bootstrap"
+      ],
+      "data_rows": 7
+    },
+    "tab:fresh_results": {
+      "source": [
+        "experiment_validation/selector_eos_20261101/validation/main_fresh_factledger.json#/cohorts/fresh_tinyllama_cuda/models",
+        "experiment_validation/selector_eos_20261101/validation/main_fresh_factledger.json#/cohorts/fresh_phi_cuda/models"
+      ],
+      "columns": [
+        "model",
+        "metrics.phi.mean",
+        "phi_ci_scenario_bootstrap",
+        "metrics.ed_norm.mean",
+        "metrics.rouge1_precision.mean",
+        "metrics.rougeL_precision.mean",
+        "LR_percent",
+        "EOS_percent"
+      ],
+      "data_rows": 2
+    },
+    "tab:defense_results": {
+      "source": "experiment_validation/selector_eos_20261101/validation/secondary_audit.json#cells,paired_contrasts; suite=defense_pilot",
+      "columns": [
+        "model",
+        "condition",
+        "metric_means.phi",
+        "phi_ci",
+        "score_reduction_pct",
+        "observed_payload_overhead_pct_mean",
+        "observed_units_mean"
+      ],
+      "data_rows": 12
+    },
+    "tab:robustness": {
+      "source": "experiment_validation/selector_eos_20261101/validation/secondary_audit.json#cells,paired_contrasts; suite=map",
+      "columns": [
+        "model",
+        "condition",
+        "attacker",
+        "metric_means.phi",
+        "phi_ci",
+        "between_seed_sd",
+        "score_reduction_pct"
+      ],
+      "data_rows": 22
+    },
+    "tab:protocol_overview": {
+      "source": [
+        "experiment_validation/selector_eos_20261101/validation/main_fresh_factledger.json",
+        "experiment_validation/selector_eos_20261101/validation/secondary_audit.json"
+      ],
+      "columns": [
+        "experiment",
+        "references and design",
+        "sum n",
+        "protocol victim limit",
+        "requested segments / candidates",
+        "seed rule"
+      ],
+      "data_rows": 5
+    },
+    "tab:model_metadata": {
+      "source": "current campaign source metadata; display/literature metadata in table_structure.tex",
+      "columns": "checkpoint/tokenizer/parameter metadata",
+      "data_rows": 7,
+      "empirical_numeric_results": false
+    },
+    "tab:run_ids": {
+      "source": "current campaign source metadata; display/literature metadata in table_structure.tex",
+      "columns": "source-response directory identifiers",
+      "data_rows": 7,
+      "empirical_numeric_results": false
+    }
+  },
+  "table_count": 13,
+  "data_row_count": 104,
+  "output_sha256": {
+    "tables.json": "daf2609bb14729c2c8ee082da3d656b10b842c034ef78cab5eec08de15afa8be",
+    "tables.tex": "f511a774ad519cf8297b4711e0c2555f515565a92d9bf7d392e8d795b0503444"
+  },
+  "scope": "Every empirical result is drawn from the new EOS campaign; metadata and reference identifiers are descriptive source information. MAP values are recomputed campaign cells, even where unchanged."
+}

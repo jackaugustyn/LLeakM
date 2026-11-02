@@ -195,7 +195,7 @@ def main() -> None:
                 continue
             n = len(arr)
             idx = rng.integers(0, n, size=(10000, n))
-            lo, hi = float(np.percentile(arr[idx].mean(axis=1), [2.5, 97.5]))
+            lo, hi = map(float, np.percentile(arr[idx].mean(axis=1), [2.5, 97.5]))
             delta = float(arr.mean() - real.mean()) if len(real) else float("nan")
             summary.append({
                 "model": pretty, "label": label, "condition": cname, "n": n,

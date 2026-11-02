@@ -1,0 +1,313 @@
+{
+  "schema": "full-eos-selector-campaign/1",
+  "user_authorization": "Wykonaj pełną kampanię z poprawionym selektorem",
+  "purpose": "Rerun all 6600 T5 reconstructions on frozen inputs, save every candidate, verify all metrics and MAP exact negative control.",
+  "selector_version": "eos-through-first-inclusive/1",
+  "expected_reconstructions": 6600,
+  "monitor_interval_seconds": 15,
+  "source_sha256": {
+    "experiment_validation/revalidation_20261031/collection/canonical_traces.jsonl": "cf4ca0307ffb97654f2e302855e4f8a1cbac57fa3f837ba1356c615b988cef3a",
+    "experiment_validation/revalidation_20261031/fresh_references/phi/canonical_traces.jsonl": "d84017cfdc3d581c8315e6a0479fdbedaab6efa1d33b0cec1e62ba63cc145e2c",
+    "experiment_validation/revalidation_20261031/fresh_references/tinyllama/canonical_traces.jsonl": "aeea3d72200af1e121a2877bd2b91434d60f709c56aa8aba66c910d87d794e19",
+    "experiment_validation/revalidation_20261031/secondary/cuda_full/calibration.json": "4087dbb2fbcc782b411c3b51c7a259f28eaf3866ea71af22aa1070b5b7481c3f",
+    "experiment_validation/revalidation_20261031/secondary/cuda_full/input_inventory.jsonl": "cc6feffdccc163b0e86c2024e65987645a2b89435c04039443e4d340eb81a4a9",
+    "experiment_validation/revalidation_20261031/statistics/recompute_all_statistics.py": "f523513dce026e5699e86141274f60fce7b68cb7ee5c7ff9696a17495f43d54d",
+    "experiment_validation/scripts/analyze_stats.py": "d25ab412178726c9edb7d0267586d306fe162bf5f0e35a96fddd951f8efa1f1f",
+    "experiment_validation/scripts/generate_prompts.py": "9c88e78ff8c29f3b224746a5ed1a7a0d88b389927aa6d2503fc1cb1f04f8d66e",
+    "experiment_validation/scripts/robustness_eval.py": "61aa4c5780224fede418ce15b5801ae7966184026d5895ffddb53d4c0295de52",
+    "experiment_validation/scripts/run_validation.py": "eec9d4e69b0971d32a0b9fc2141047358ea9f821665ee97c9ddaaef8548adfc4",
+    "experiment_validation/selector_eos_20261101/collect_completed.py": "1d672cea732aa44f76eb90054db9a212920aaf381301d28e4c7795e7cce8e8e3",
+    "experiment_validation/selector_eos_20261101/inference/candidate_evidence.py": "9501198e20de8a63122b0e60f2c8fff2977b220e131e3b12a02351f1acc55d5f",
+    "experiment_validation/selector_eos_20261101/inference/rerun_canonical.py": "738bb86cd69589afdf8df23215a675b4e6ffd2e2595e301f1a12d6f9b4519165",
+    "experiment_validation/selector_eos_20261101/inference_validation/verify_inference.py": "38de18570f8273f4165ff09ced428540c24a7e8f0dbc56b697b05f9e3e886f0b",
+    "experiment_validation/selector_eos_20261101/paired_rendering.py": "b21dcb88eaf93d85181efa3aad887557772a2837d5846df8713904e6416bc213",
+    "experiment_validation/selector_eos_20261101/run_queue.py": "a8c10e48a573747ca8f2ad7964e0f7cca4f263574070b24aaf8f63cc500af1e6",
+    "experiment_validation/selector_eos_20261101/secondary/rerun_secondary.py": "50c2575c5059b619ef86df73ba4ed57ce717e982fc884c61b126378c650f1fdd",
+    "experiment_validation/selector_eos_20261101/validation/audit_campaign.py": "0a30638fc6d67175c4de9531086c708b20451e2126d498063f8e1ab0f6b0da1b",
+    "experiment_validation/selector_eos_20261101/validation/audit_main_fresh.py": "1aa63c7708d25072a4210da45983ca9d317836b2bbf5a82cd874690454ddb404",
+    "experiment_validation/selector_eos_20261101/validation/candidate_checks.py": "22e7b8a1b0c7ccb99917130cd6cb2c9280af519c889de448310d027850893f33",
+    "experiment_validation/selector_eos_20261101/validation/independent_dp.cpp": "6c713091f29604230b18c4e9abc41c5c0628f329e02cedf7ff784f6c36cbfc70",
+    "experiment_validation/selector_eos_20261101/validation/secondary_audit.py": "0275dc69b48d46e30d1c2d86f7564eb90eafd096a9b244ca0991e271d8fedb71",
+    "experiment_validation/selector_eos_20261101/validation/test_candidate_checks.py": "30d79b2997cbb4ae1620487927c1f28259b4b7e7bf1af8b192b5c39289285ba6",
+    "weiss_reconstruction.py": "795bd9ad309b96573a448df9439cba88659c8ba61ccc9618be269eabf1f30234"
+  },
+  "stages": [
+    {
+      "name": "secondary_t5",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/selector_eos_20261101/secondary/rerun_secondary.py",
+        "--output",
+        "experiment_validation/selector_eos_20261101/secondary/cuda_full",
+        "--device",
+        "cuda",
+        "--require-complete"
+      ],
+      "timeout_hours": 24,
+      "success_json": [
+        {
+          "path": "experiment_validation/selector_eos_20261101/secondary/cuda_full/status.json",
+          "equals": {
+            "complete": true,
+            "status": "completed",
+            "completed": 3900
+          }
+        },
+        {
+          "path": "experiment_validation/selector_eos_20261101/secondary/cuda_full/summary.json",
+          "equals": {
+            "complete": true,
+            "n": 3900
+          }
+        }
+      ],
+      "progress_json": "experiment_validation/selector_eos_20261101/secondary/cuda_full/status.json"
+    },
+    {
+      "name": "audit_secondary",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/selector_eos_20261101/validation/secondary_audit.py"
+      ],
+      "timeout_hours": 2,
+      "success_json": [
+        {
+          "path": "experiment_validation/selector_eos_20261101/validation/secondary_audit.json",
+          "equals": {
+            "status": "PASS"
+          }
+        }
+      ]
+    },
+    {
+      "name": "primary_t5",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/selector_eos_20261101/inference/rerun_canonical.py",
+        "--input",
+        "experiment_validation/revalidation_20261031/collection/canonical_traces.jsonl",
+        "--output",
+        "experiment_validation/selector_eos_20261101/inference/cuda_full",
+        "--device",
+        "cuda"
+      ],
+      "timeout_hours": 24,
+      "success_json": [
+        {
+          "path": "experiment_validation/selector_eos_20261101/inference/cuda_full/status.json",
+          "equals": {
+            "complete": true,
+            "status": "completed",
+            "completed": 2100
+          }
+        }
+      ],
+      "progress_json": "experiment_validation/selector_eos_20261101/inference/cuda_full/status.json"
+    },
+    {
+      "name": "verify_primary",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/selector_eos_20261101/inference_validation/verify_inference.py",
+        "--run",
+        "experiment_validation/selector_eos_20261101/inference/cuda_full",
+        "--input",
+        "experiment_validation/revalidation_20261031/collection/canonical_traces.jsonl",
+        "--output",
+        "experiment_validation/selector_eos_20261101/inference_validation/cuda_full"
+      ],
+      "timeout_hours": 2,
+      "success_json": [
+        {
+          "path": "experiment_validation/selector_eos_20261101/inference_validation/cuda_full/verification.json",
+          "equals": {
+            "complete": true,
+            "verification_status": "VERIFIED_COMPLETE"
+          }
+        },
+        {
+          "path": "experiment_validation/selector_eos_20261101/inference_validation/cuda_full/statistics.json",
+          "equals": {
+            "complete": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "tinyllama_t5",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/selector_eos_20261101/inference/rerun_canonical.py",
+        "--input",
+        "experiment_validation/revalidation_20261031/fresh_references/tinyllama/canonical_traces.jsonl",
+        "--output",
+        "experiment_validation/selector_eos_20261101/inference/fresh_tinyllama_cuda",
+        "--device",
+        "cuda"
+      ],
+      "timeout_hours": 24,
+      "success_json": [
+        {
+          "path": "experiment_validation/selector_eos_20261101/inference/fresh_tinyllama_cuda/status.json",
+          "equals": {
+            "complete": true,
+            "status": "completed",
+            "completed": 300
+          }
+        }
+      ],
+      "progress_json": "experiment_validation/selector_eos_20261101/inference/fresh_tinyllama_cuda/status.json"
+    },
+    {
+      "name": "verify_tinyllama",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/selector_eos_20261101/inference_validation/verify_inference.py",
+        "--run",
+        "experiment_validation/selector_eos_20261101/inference/fresh_tinyllama_cuda",
+        "--input",
+        "experiment_validation/revalidation_20261031/fresh_references/tinyllama/canonical_traces.jsonl",
+        "--output",
+        "experiment_validation/selector_eos_20261101/inference_validation/fresh_tinyllama_cuda"
+      ],
+      "timeout_hours": 2,
+      "success_json": [
+        {
+          "path": "experiment_validation/selector_eos_20261101/inference_validation/fresh_tinyllama_cuda/verification.json",
+          "equals": {
+            "complete": true,
+            "verification_status": "VERIFIED_COMPLETE"
+          }
+        },
+        {
+          "path": "experiment_validation/selector_eos_20261101/inference_validation/fresh_tinyllama_cuda/statistics.json",
+          "equals": {
+            "complete": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "phi_t5",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/selector_eos_20261101/inference/rerun_canonical.py",
+        "--input",
+        "experiment_validation/revalidation_20261031/fresh_references/phi/canonical_traces.jsonl",
+        "--output",
+        "experiment_validation/selector_eos_20261101/inference/fresh_phi_cuda",
+        "--device",
+        "cuda"
+      ],
+      "timeout_hours": 24,
+      "success_json": [
+        {
+          "path": "experiment_validation/selector_eos_20261101/inference/fresh_phi_cuda/status.json",
+          "equals": {
+            "complete": true,
+            "status": "completed",
+            "completed": 300
+          }
+        }
+      ],
+      "progress_json": "experiment_validation/selector_eos_20261101/inference/fresh_phi_cuda/status.json"
+    },
+    {
+      "name": "verify_phi",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/selector_eos_20261101/inference_validation/verify_inference.py",
+        "--run",
+        "experiment_validation/selector_eos_20261101/inference/fresh_phi_cuda",
+        "--input",
+        "experiment_validation/revalidation_20261031/fresh_references/phi/canonical_traces.jsonl",
+        "--output",
+        "experiment_validation/selector_eos_20261101/inference_validation/fresh_phi_cuda"
+      ],
+      "timeout_hours": 2,
+      "success_json": [
+        {
+          "path": "experiment_validation/selector_eos_20261101/inference_validation/fresh_phi_cuda/verification.json",
+          "equals": {
+            "complete": true,
+            "verification_status": "VERIFIED_COMPLETE"
+          }
+        },
+        {
+          "path": "experiment_validation/selector_eos_20261101/inference_validation/fresh_phi_cuda/statistics.json",
+          "equals": {
+            "complete": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "audit_main_fresh",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/selector_eos_20261101/validation/audit_main_fresh.py"
+      ],
+      "timeout_hours": 2,
+      "success_json": [
+        {
+          "path": "experiment_validation/selector_eos_20261101/validation/main_fresh_factledger.json",
+          "equals": {
+            "all_checks_passed": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "audit_all_candidates",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/selector_eos_20261101/validation/audit_campaign.py"
+      ],
+      "timeout_hours": 4,
+      "success_json": [
+        {
+          "path": "experiment_validation/selector_eos_20261101/validation/audit_campaign.json",
+          "equals": {
+            "status": "PASS",
+            "complete": true,
+            "records_checked": 6600,
+            "map_predictions_matched": 3300
+          }
+        }
+      ]
+    },
+    {
+      "name": "paired_rendering",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/selector_eos_20261101/paired_rendering.py"
+      ],
+      "timeout_hours": 2,
+      "success_json": [
+        {
+          "path": "experiment_validation/selector_eos_20261101/validation/paired_detokenization_score_contrast.json",
+          "equals": {
+            "complete": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "collect_complete_results",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/selector_eos_20261101/collect_completed.py"
+      ],
+      "timeout_hours": 2,
+      "success_json": [
+        {
+          "path": "experiment_validation/selector_eos_20261101/completed_results.json",
+          "equals": {
+            "complete": true,
+            "reconstructions": 6600
+          }
+        }
+      ]
+    }
+  ]
+}

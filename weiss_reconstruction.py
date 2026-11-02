@@ -240,16 +240,49 @@ def _sample_and_rank(
     *,
     samples: int,
     max_length: int = DEFAULT_MAX_LENGTH,
+    candidate_audit: list | None = None,
 ) -> list[tuple[str, float]]:
     """
-    Generuje `samples` niezależnych próbek i sortuje je wg confidence.
-    Confidence liczymy jako sumę log-prawdopodobieństw tokenów generacji.
+    Sample texts and rank processed transition scores through the first EOS.
+
+    The first generated EOS is included, while every later forced PAD is
+    excluded. With no generated EOS, all generation steps contribute. These
+    are sampling-processed scores, not unconstrained model likelihoods.
+    A single candidate retains the historical no-score generation path.
+    ``candidate_audit`` optionally receives one JSON-compatible call record;
+    observing the candidates does not draw random numbers or change sampling.
     """
+    import math
+    import operator
     import torch
 
     inputs = _prepare_input(tokenizer, device, input_text, max_length=max_length)
     best_per_text: dict[str, float] = {}
+    best_indices: dict[str, int] = {}
     n_samples = max(1, samples)
+    audited_candidates = []
+
+    def json_score(value):
+        value = float(value)
+        if math.isnan(value):
+            return "NaN"
+        if math.isinf(value):
+            return "-Infinity" if value < 0 else "Infinity"
+        return value
+
+    # generate() uses generation_config when it exists. An explicit None
+    # there disables EOS; do not replace it with a tokenizer's EOS token.
+    generation_config = getattr(model, "generation_config", None)
+    if generation_config is not None:
+        eos_value = getattr(generation_config, "eos_token_id", None)
+    elif getattr(model, "config", None) is not None:
+        eos_value = getattr(model.config, "eos_token_id", None)
+    else:
+        eos_value = getattr(tokenizer, "eos_token_id", None)
+    if isinstance(eos_value, torch.Tensor):
+        eos_value = eos_value.tolist()
+    eos_values = [] if eos_value is None else (eos_value if isinstance(eos_value, (list, tuple)) else [eos_value])
+    eos_ids = list(dict.fromkeys(operator.index(value) for value in eos_values))
 
     with torch.inference_mode():
         gen_kwargs = dict(
@@ -266,28 +299,77 @@ def _sample_and_rank(
         outputs = _generate_with_compat_fallback(model, **inputs, **gen_kwargs)
         sequences = outputs.sequences
         transition = None
-        if n_samples > 1 and getattr(outputs, "scores", None) is not None:
-            try:
-                transition = model.compute_transition_scores(
-                    sequences,
-                    outputs.scores,
-                    normalize_logits=True,
-                )
-            except Exception:
-                transition = None
+        if sequences.ndim != 2 or sequences.shape[0] != n_samples:
+            raise ValueError("Generated candidate dimensions differ from the request")
+        if n_samples > 1:
+            if not getattr(outputs, "scores", None):
+                raise RuntimeError("Multi-candidate ranking requires generation scores")
+            # A score computation failure must stop the experiment. Silently
+            # assigning zero would substitute a different selection rule.
+            transition = model.compute_transition_scores(
+                sequences,
+                outputs.scores,
+                normalize_logits=True,
+            )
+            if (transition.ndim != 2 or transition.shape[0] != sequences.shape[0]
+                    or transition.shape[1] != len(outputs.scores)
+                    or not 0 < transition.shape[1] < sequences.shape[1]):
+                raise ValueError("Transition scores cannot align with generated candidates")
+            decoder_prefix_length = sequences.shape[1] - transition.shape[1]
+        else:
+            # This function sends only encoder inputs to the T5 model. Its
+            # generated sequence starts with one decoder-start token.
+            decoder_prefix_length = 1
         for i in range(sequences.shape[0]):
             text = tokenizer.decode(sequences[i], skip_special_tokens=True).strip()
-            if not text:
-                continue
+            generated_ids = sequences[i, decoder_prefix_length:].tolist()
+            first_eos = next((j for j, token in enumerate(generated_ids) if token in eos_ids), None)
             if transition is None:
                 confidence = 0.0
+                scored_count = 0
             else:
-                confidence = float(transition[i].sum().item())
-            existing = best_per_text.get(text)
-            if existing is None or confidence > existing:
-                best_per_text[text] = confidence
+                scored_count = first_eos + 1 if first_eos is not None else len(generated_ids)
+                # Slice: multiplying masked -inf values by zero produces NaN.
+                prefix_scores = transition[i, :scored_count]
+                if not torch.isfinite(prefix_scores).all().item():
+                    raise ValueError(f"Nonfinite transition score before or at EOS in candidate {i}")
+                confidence = float(prefix_scores.sum().item())
+                if not math.isfinite(confidence):
+                    raise ValueError(f"Nonfinite EOS-bounded confidence in candidate {i}")
+            if candidate_audit is not None:
+                audited_candidates.append(dict(
+                    candidate_index=i,
+                    sequence_token_ids=sequences[i].tolist(),
+                    generated_token_ids=generated_ids,
+                    text=text,
+                    transition_scores=None if transition is None else [json_score(x) for x in transition[i].tolist()],
+                    first_eos_generated_offset=first_eos,
+                    scored_token_count=scored_count,
+                    confidence=confidence,
+                    legacy_full_step_confidence=None if transition is None else json_score(transition[i].sum().item()),
+                    eligible=bool(text),
+                ))
+            if text:
+                existing = best_per_text.get(text)
+                if existing is None or confidence > existing:
+                    best_per_text[text] = confidence
+                    best_indices[text] = i
 
     ranked = sorted(best_per_text.items(), key=lambda item: item[1], reverse=True)
+    if candidate_audit is not None:
+        ranked_indices = [best_indices[text] for text, _ in ranked]
+        candidate_audit.append(dict(
+            schema="eos-bounded-candidate-audit/1",
+            selector="processed-score-sum-through-first-eos",
+            samples_requested=n_samples,
+            decoder_prefix_length=decoder_prefix_length,
+            eos_token_ids=eos_ids,
+            score_dtype=None if transition is None else str(transition.dtype),
+            candidates=audited_candidates,
+            ranked_candidate_indices=ranked_indices,
+            ranked_texts=[text for text, _ in ranked],
+            selected_candidate_index=ranked_indices[0] if ranked_indices else None,
+        ))
     return ranked
 
 
@@ -315,9 +397,6 @@ def reconstruct(
     Returns:
         ReconstructionResult z najlepszym pierwszym zdaniem i pełnym tekstem.
     """
-    if seed is not None:
-        seed_reconstructor(seed)
-
     sentence_lengths = heuristic_sentences_from_lengths(token_lengths)
     if not sentence_lengths:
         return ReconstructionResult(
@@ -334,6 +413,11 @@ def reconstruct(
 
     first_model, first_tokenizer, first_device = _load_model_bundle(FIRST_SENTENCES_MODEL)
     middle_model, middle_tokenizer, middle_device = _load_model_bundle(MIDDLE_SENTENCES_MODEL)
+
+    # Loading a checkpoint can consume RNG state. Seed after loading so a
+    # resumed run's first record matches the same record with warm caches.
+    if seed is not None:
+        seed_reconstructor(seed)
 
     # Rekonstrukcja pierwszego segmentu
     first_input = make_input_from_lengths(sentence_lengths[0])

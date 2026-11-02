@@ -1,0 +1,47 @@
+From v4.47 onwards, when a model cache is to be returned, `generate` will return a `Cache` instance instead by default (as opposed to the legacy tuple of tuples format). If you want to keep returning the legacy format, please set `return_legacy_cache=True`.
+1/24 archived gemma_2_2b idx=2 old_match=True changed=True seconds=1.24
+2/24 archived gemma_2_2b idx=162 old_match=True changed=True seconds=0.83
+3/24 archived llama_3_2_3b idx=3 old_match=True changed=False seconds=0.37
+4/24 archived llama_3_2_3b idx=166 old_match=True changed=True seconds=1.43
+5/24 archived phi_1_5 idx=15 old_match=True changed=True seconds=0.43
+6/24 archived phi_1_5 idx=212 old_match=True changed=False seconds=1.10
+7/24 archived phi_3_5_mini idx=14 old_match=True changed=False seconds=0.33
+8/24 archived phi_3_5_mini idx=90 old_match=True changed=True seconds=1.26
+9/24 archived qwen_1_5b idx=2 old_match=True changed=True seconds=0.39
+10/24 archived qwen_1_5b idx=299 old_match=True changed=True seconds=1.46
+11/24 archived qwen_3b idx=23 old_match=True changed=True seconds=0.38
+12/24 archived qwen_3b idx=194 old_match=True changed=True seconds=1.19
+13/24 archived tinyllama_1_1b idx=9 old_match=True changed=True seconds=0.33
+14/24 archived tinyllama_1_1b idx=227 old_match=True changed=True seconds=1.08
+15/24 fresh tinyllama_1_1b idx=9 old_match=True changed=True seconds=0.39
+16/24 fresh tinyllama_1_1b idx=274 old_match=True changed=True seconds=1.37
+17/24 fresh phi_3_5_mini idx=14 old_match=True changed=False seconds=0.33
+18/24 fresh phi_3_5_mini idx=150 old_match=True changed=True seconds=1.26
+19/24 defense_pilot qwen_1_5b idx=1 old_match=True changed=True seconds=0.67
+20/24 defense_pilot llama_3_2_3b idx=1 old_match=True changed=False seconds=2.29
+21/24 defense_pilot qwen_1_5b idx=1 old_match=True changed=True seconds=2.35
+22/24 defense_pilot llama_3_2_3b idx=1 old_match=True changed=True seconds=1.86
+23/24 defense_pilot qwen_1_5b idx=1 old_match=True changed=True seconds=2.16
+24/24 defense_pilot llama_3_2_3b idx=1 old_match=True changed=False seconds=2.54
+{
+  "complete": true,
+  "cases": 24,
+  "candidates": 72,
+  "legacy_matches_saved": 24,
+  "selected_text_changes": 18,
+  "candidates_with_post_eos_tail": 38,
+  "candidates_with_nonfinite_post_eos_tail": 38,
+  "candidates_with_nonfinite_prefix": 0,
+  "cases_by_suite": {
+    "archived": 14,
+    "fresh": 4,
+    "defense_pilot": 6
+  },
+  "changes_by_suite": {
+    "archived": 11,
+    "fresh": 3,
+    "defense_pilot": 4
+  },
+  "elapsed_seconds": 28.68530012399424,
+  "scope": "Descriptive counts for the 24 selected first-segment cases only; no full-response metrics and no campaign-prevalence extrapolation."
+}

@@ -1,0 +1,28 @@
+{
+  "reviewer": "/root/fresh_reference_plan",
+  "reviewed_utc": "2026-10-31T14:55:56.462902+00:00",
+  "verdict": "no blocking issue found in inspected scope",
+  "files": {
+    "secondary/rerun_secondary.py": "3508b2a82e948de53f0355f7cd64433a6d494ad929b224a9747951f1cc117621",
+    "run_queue.py": "a8c10e48a573747ca8f2ad7964e0f7cca4f263574070b24aaf8f63cc500af1e6"
+  },
+  "secondary_checks": [
+    "Scientific budgets preserved: 240 trace controls and 360 defense pilot records from96-tokenvictims/up to3segments/3candidates;3300MAPrecordsfrom512-tokenvictims/firstsegment/onecandidate.",
+    "MAP source log bindings, 30test/270calibration split, 3300 archived keys/decoderseeds/traceseeds/unitcounts verified by actual inventory test.",
+    "PilotBLAKE2s seeds disclosed as new draws; cyclic donor index reproduces historical implementation.",
+    "Immutable inventory/calibration/sourcefiles; protocol binds twelveT5checkpointfiles and relevantcode/environment; exclusiveoutputlock.",
+    "Resume rejects duplicate/torn/foreign/mixedprotocol/changedinput/metricinconsistency; validates actualencoder strings,context,model,candidatecount andretokenizedpinnedfull/retained IDs plus predictionassembly.",
+    "Sevenunit tests executed independently allPASS, including actual3900inventory. Four extra original-reconstructor brancheswith mockeddecodeoutputs and actualpinnedtokenizers PASS: all3segments,emptymiddle,emptyfirstwithlateroutputs,emptyfirst+emptymiddle.",
+    "Partialdesign has onlydescriptivemeans, no CIs/contrasts, cannotbecomplete. Aggregationrequires matchedprompt/seedmatrices."
+  ],
+  "queue_checks": [
+    "Owned subprocess killed on supervisorSIGTERM/exception and hardtimeout; previousliveownedPID/starttime blocksduplicateexecution.",
+    "Attached originalprimary process is intentionallynotterminated on supervisorSIGTERM; failedstatus retainsidentity andallowsreattachment; subsequentstages do notrun.",
+    "Per-stage sourcechecks, durableheartbeat, successJSONguards, uniquequeue flock andimmutableplanSHA checked."
+  ],
+  "limits": [
+    "No victimweights or T5inference loaded byreviewer; scientific verificationofnewinferenceawaits queuedactualrun.",
+    "GPUmemoryfitofPhi3.5offload stilluntested untilprimaryGPUfree.",
+    "Historicalreferences/checkpoints not repaired bysecondarycampaign; measurementcoverageconfounds remainexplicit."
+  ]
+}

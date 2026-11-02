@@ -1,0 +1,13 @@
+test_actual_3900_inventory_and_map_common_seeds (experiment_validation.tests.test_secondary_rerun.SecondaryRerunTests) ... ok
+test_duplicate_and_torn_rows_fail_closed (experiment_validation.tests.test_secondary_rerun.SecondaryRerunTests) ... ok
+test_encoder_ids_and_selected_output_checked_independently (experiment_validation.tests.test_secondary_rerun.SecondaryRerunTests) ... ok
+test_invalid_segment_provenance_rejected_even_with_fresh_hash (experiment_validation.tests.test_secondary_rerun.SecondaryRerunTests) ... ok
+test_metrics_match_existing_independent_dp_for_unicode_and_empty (experiment_validation.tests.test_secondary_rerun.SecondaryRerunTests) ... ok
+test_partial_design_cannot_be_complete_or_generate_contrasts (experiment_validation.tests.test_secondary_rerun.SecondaryRerunTests) ... ok
+test_short_run_requires_empty_final_middle_output (experiment_validation.tests.test_secondary_rerun.SecondaryRerunTests) ... ok
+test_valid_resume_and_protocol_or_input_tampering_rejected (experiment_validation.tests.test_secondary_rerun.SecondaryRerunTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 11.605s
+
+OK

@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "n": 3,
+  "expected": 3,
+  "diagnostic_series_included": true,
+  "scope": "EOS-bounded selection on frozen validated logged lengths and references; no new victim generation.",
+  "models": {
+    "llama_3_2_3b": {
+      "n": 1,
+      "mean_phi": 0.3556858901888057
+    },
+    "qwen_1_5b": {
+      "n": 1,
+      "mean_phi": 0.489876376696894
+    },
+    "tinyllama_1_1b": {
+      "n": 1,
+      "mean_phi": 0.3799460385024465
+    }
+  }
+}

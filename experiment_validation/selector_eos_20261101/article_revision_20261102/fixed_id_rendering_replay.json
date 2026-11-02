@@ -1,0 +1,84 @@
+{
+  "audited_at_utc": "2026-11-02T19:17:01.908788+00:00",
+  "status": "PASS",
+  "scope": "600 recorded victim ID sequences replayed on CPU with pinned tokenizers; both rendering arms bound to current EOS campaign reconstructions. No victim or T5 inference and no earlier reconstruction-score comparison.",
+  "method": "Independently decode each fixed token ID and concatenate for the legacy arm; decode the same entire ID sequence for the full-sequence arm. Validate trace lengths, emitted fragments, references, input bindings and paired reconstruction seeds.",
+  "legacy_call": "tokenizer.decode([tok_id], skip_special_tokens=False, clean_up_tokenization_spaces=False)",
+  "full_sequence_call": "tokenizer.decode(ids, skip_special_tokens=False, clean_up_tokenization_spaces=False)",
+  "models": [
+    {
+      "label": "tinyllama_1_1b",
+      "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "tokenizer_revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+      "tokenizer_sha256": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+      "n": 300,
+      "counts": {
+        "legacy_text_equals_archived_emitted_text": 300,
+        "legacy_fragments_equal_archived_fragments": 300,
+        "legacy_lengths_equal_archived_lengths": 300,
+        "legacy_text_equals_current_archived_arm_reference": 300,
+        "legacy_lengths_equal_current_archived_arm_inputs": 300,
+        "legacy_reference_hash_matches_current_archived_arm": 300,
+        "full_text_equals_verified_reference_and_current_arm": 300,
+        "full_fragments_concatenate_to_full_text": 300,
+        "full_lengths_equal_verified_trace_and_current_inputs": 300,
+        "full_reference_hash_matches_current_arm": 300,
+        "paired_reconstruction_seeds_equal": 300,
+        "records": 300,
+        "generated_tokens": 128494,
+        "legacy_references_without_ascii_spaces": 299,
+        "full_references_without_ascii_spaces": 0,
+        "legacy_and_full_equal_after_removing_ascii_spaces": 300,
+        "legacy_and_full_identical_text": 0,
+        "changed_fragment_positions": 82460,
+        "changed_positions_are_restored_leading_ascii_space": 82460
+      }
+    },
+    {
+      "label": "phi_3_5_mini",
+      "model_id": "microsoft/Phi-3.5-mini-instruct",
+      "tokenizer_revision": "2fe192450127e6a83f7441aef6e3ca586c338b77",
+      "tokenizer_sha256": "9e2ae3d66819f163cdcfedba5078f3a3af8118c2712491ed60912f77886bda6f",
+      "n": 300,
+      "counts": {
+        "legacy_text_equals_archived_emitted_text": 300,
+        "legacy_fragments_equal_archived_fragments": 300,
+        "legacy_lengths_equal_archived_lengths": 300,
+        "legacy_text_equals_current_archived_arm_reference": 300,
+        "legacy_lengths_equal_current_archived_arm_inputs": 300,
+        "legacy_reference_hash_matches_current_archived_arm": 300,
+        "full_text_equals_verified_reference_and_current_arm": 300,
+        "full_fragments_concatenate_to_full_text": 300,
+        "full_lengths_equal_verified_trace_and_current_inputs": 300,
+        "full_reference_hash_matches_current_arm": 300,
+        "paired_reconstruction_seeds_equal": 300,
+        "records": 300,
+        "generated_tokens": 153600,
+        "legacy_references_without_ascii_spaces": 162,
+        "full_references_without_ascii_spaces": 0,
+        "legacy_and_full_equal_after_removing_ascii_spaces": 300,
+        "legacy_and_full_identical_text": 0,
+        "changed_fragment_positions": 94308,
+        "changed_positions_are_restored_leading_ascii_space": 94308
+      }
+    }
+  ],
+  "source_sha256": {
+    "current_archived_arm": "6c82bac1284b84f338e30ca58ab4d62d610a3e256cd036dae616fa189f24de1b",
+    "tinyllama_recorded_ID_inventory": "aeea3d72200af1e121a2877bd2b91434d60f709c56aa8aba66c910d87d794e19",
+    "tinyllama_protocol": "ac621b6f426deb0f3513ab68dd0de67eb13b9c4f1ea92f7353a38966769c43b0",
+    "tinyllama_current_verified_arm": "a6ee4916540317f99dada865364e3b661b208a2d4f44cf632556480b4403ffc6",
+    "phi_recorded_ID_inventory": "d84017cfdc3d581c8315e6a0479fdbedaab6efa1d33b0cec1e62ba63cc145e2c",
+    "phi_protocol": "6461cd3d9fd91d0e6f28f22fa227c737964ed4ee89ab3505fdf6f0e25ac05d65",
+    "phi_current_verified_arm": "0448ca5b1e88b5234887c4ef18d94682af0f07c743e8a572a3efc922c895782a"
+  },
+  "limits": [
+    "Historical victim logs do not record original token IDs. Output equality does not recover those IDs or independently attest historical checkpoint versions.",
+    "Within each recorded sequence the rendering contrast isolates a change in emitted text and byte lengths; the reconstruction-score contrast jointly changes the trace and scoring reference.",
+    "The two verified-reference cohorts remain separate from the seven-model archived-reference ranking."
+  ],
+  "records_checked": 600,
+  "all_600_current_arm_bindings_pass": true,
+  "script_sha256": "54cb26424e73f81ff53c4f8aacc9c26160cdf5045a3612f9d694f28fec753939",
+  "records_file_sha256": "0899ce1caf333266a09436759b7f6d454f54cf8e9d590582e73296c035119a4f"
+}

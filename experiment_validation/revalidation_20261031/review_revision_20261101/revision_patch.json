@@ -1,0 +1,210 @@
+{
+  "schema": "local-exact-text-review-patch/1",
+  "base_sha256": "8539201fa3c7aeb62d219037c3395a083e541b4fc08df1f1b701327c8ca42dc5",
+  "author_request": "Ok, wprowadź zmiany z recenzji",
+  "review": "reviews/ars_electronics_20261101/RECENZJA.md",
+  "scope": "Adopt all review topics; retain literal original-selector results, add bounded audit. No external publication.",
+  "abstract_handling": "Only scoped wording edits; abstract not regenerated.",
+  "operations": [
+    {
+      "findings": [
+        "EIC-W1"
+      ],
+      "old": "Information Leakage from Token-Length Traces in Streaming LLMs: Cross-Model Reconstruction and Defense Evaluation",
+      "new": "Lexical Reconstruction from Instrumented LLM Token-Length Traces: Reference Validation and Defense Evaluation"
+    },
+    {
+      "findings": [
+        "R1-W1"
+      ],
+      "old": "We evaluate a fixed T5 reconstructor through 6600 reconstructions",
+      "new": "We evaluate a fixed T5 implementation with its recorded candidate-selection rule through 6600 reconstructions"
+    },
+    {
+      "findings": [
+        "R1-W2"
+      ],
+      "old": "a maximum-a-posteriori (MAP) length inverse",
+      "new": "a local empirical maximum-a-posteriori (MAP) length inverse"
+    },
+    {
+      "findings": [
+        "R2-W2"
+      ],
+      "old": "For generative AI, Weiss \\emph{et al.} introduced T5-based sequence-to-text inversion and reported accurate reconstruction for 27\\% of responses and topic inference for 53\\% in their evaluated setting~\\cite{weiss2024prompt}.",
+      "new": "For generative AI, Weiss \\emph{et al.} introduced T5-based sequence-to-text inversion and, in their first-segment evaluation, reported 27\\% of reconstructions above an embedding-cosine threshold of 0.9 and approximately 53\\% above 0.5~\\cite{weiss2024prompt}. Their cosine uses MiniLM sentence embeddings; its thresholds and first-segment scope are not directly comparable to our term-frequency cosine and full-response $\\mathrm{LR}@0.5$."
+    },
+    {
+      "findings": [
+        "R1-W1"
+      ],
+      "old": "\\subsection{Reconstruction Pipeline}",
+      "new": "\\subsection{Reconstruction Pipeline}\\label{sec:reconstructor}"
+    },
+    {
+      "findings": [
+        "R1-W1"
+      ],
+      "old": "Candidates are ranked by the transition log-probability sum at each segment, and the chosen text supplies the next segment's context.",
+      "new": "The executed selector sums normalized transition scores over all returned generation steps, including PAD positions after a candidate's first end-of-sequence (EOS) token; the chosen text supplies the next segment's context."
+    },
+    {
+      "findings": [
+        "R1-W1",
+        "R2-W3"
+      ],
+      "old": "The executed selector sums normalized transition scores over all returned generation steps, including PAD positions after a candidate's first end-of-sequence (EOS) token; the chosen text supplies the next segment's context.",
+      "new": "The executed selector sums normalized transition scores over all returned generation steps, including PAD positions after a candidate's first end-of-sequence (EOS) token; the chosen text supplies the next segment's context.\n\nThese scores are obtained after the sampling constraints, including top-$k$ and the no-repeat rule; their sum is not an unconstrained model likelihood. The implementation does not mask post-EOS steps, which can assign nonfinite scores to a completed candidate and alter selection. A bounded replay reproduced all 24 selected first-segment predictions, but ranking only through the first EOS changed the selected text in 18 cases (Appendix~\\ref{app:selector}). All three-candidate results in this paper retain the original PAD-inclusive selector. They describe this specific implementation and do not estimate the performance of an EOS-masked selector. The one-candidate MAP experiment bypasses candidate ranking.\n\nThe pinned model cards identify these checkpoints as the T5-Large fine-tunes used by Weiss \\emph{et al.}, trained on the first answers from UltraChat's ``Questions About the World'' subset. The source procedure trains separate models for first segments and subsequent segments, with preceding-segment text providing context for the latter~\\cite{weiss2024prompt}. We verify the downloaded checkpoint revisions but do not independently reproduce training or audit its underlying records. The original paper defines token lengths in characters; our traces measure UTF-8 bytes of emitted fragments. These units agree for ASCII text but can differ for non-ASCII text, adding a representation shift alongside differences in tokenizer and response style."
+    },
+    {
+      "findings": [
+        "R2-W1",
+        "DA-N1"
+      ],
+      "old": "The lexical score $\\phi$ does not estimate mutual information, and its reduction for a fixed attacker does not measure defended-channel capacity.",
+      "new": "The lexical score $\\phi$ does not estimate mutual information, and its reduction for a fixed attacker does not measure defended-channel capacity.\n\nFor a single-segment reconstruction, let $E(Z)$ denote the deterministic encoder input after inversion (if used), segmentation, serialization and truncation. Then the chain refines to $R\\rightarrow X\\rightarrow Z\\rightarrow E(Z)\\rightarrow\\widehat R$, and $I(R;E(Z))\\leq I(R;Z)$. The complete trace $Z$ may retain variation that never reaches the decoder. This distinction matters for \\texttt{pad\\_32}: the audited single-call encoder inputs are constant within each evaluated condition (Section~\\ref{sec:defense}). Multi-segment decoding additionally uses the previously selected text as context, as specified below."
+    },
+    {
+      "findings": [
+        "R1-W1",
+        "R2-W1"
+      ],
+      "old": "{Segment + context\\\\serialize and tokenize\\\\encoder limit: 80 tokens}",
+      "new": "{Retained encoder input\\\\segment + context\\\\limit: 80 tokens}"
+    },
+    {
+      "findings": [
+        "R1-W1"
+      ],
+      "old": "{Rank candidates\\\\select one text per segment}",
+      "new": "{PAD-inclusive score sum\\\\select one text per segment}"
+    },
+    {
+      "findings": [
+        "R1-W1",
+        "EIC-W2"
+      ],
+      "old": "Candidate selection precedes each context update; the first segment has no reconstructed context.",
+      "new": "The original PAD-inclusive selector precedes each context update (Section~\\ref{sec:reconstructor}); the first segment has no reconstructed context."
+    },
+    {
+      "findings": [
+        "EIC-W2"
+      ],
+      "old": "\\subsection{Prompt Corpus and Experimental Protocol}",
+      "new": "\\subsection{Prompt Corpus and Experimental Protocol}\nTable~\\ref{tab:protocol_overview} summarizes the cohorts, reconstruction scopes and seed rules.\n\n\\begin{table}[ht]\n\\centering\n\\footnotesize\n\\caption{Protocol map. $N$ counts reconstructions, including repeated conditions and decoder seeds; it is not a count of independent victim responses. All experiments score against the full reference and impose 80-token T5 encoder and decoder limits. \\emph{All} requests every heuristic segment; the pilot cap is three segments. The controls, defense pilot and MAP study use Qwen2.5-1.5B and Llama-3.2-3B. Samples are candidates per segment, not independent victim responses. The last column refers to the seed rules in Appendix~\\ref{app:map-seeds}.}\n\\label{tab:protocol_overview}\n\\setlength{\\tabcolsep}{4pt}\n\\begin{tabularx}{\\linewidth}{@{}p{0.21\\linewidth} X r c c l@{}}\n\\toprule\nExperiment / result tables & References and victims & $N$ & \\shortstack{Victim\\\\limit} & \\shortstack{Segments /\\\\samples} & \\shortstack{Decoder\\\\seeds} \\\\\n\\midrule\nArchived main; \\ref{tab:main_results}--\\ref{tab:scenario_sensitivity}\n& Archived emitted text; seven models, 300 per model; two diagnostic series\n& 2100 & 512 & All / 3 & Recorded \\\\\nVerified rendering; \\ref{tab:fresh_results}\n& New full-sequence decoding; 300 per model, TinyLlama and Phi-3.5-mini\n& 600 & 512 & All / 3 & Recorded \\\\\nTrace controls; \\ref{tab:trace_controls}\n& Archived text; two models, $30\\times4$ per model\n& 240 & 96 & $\\leq3$ / 3 & Pilot \\\\\nDefense pilot; \\ref{tab:defense_results}\n& Archived text; two models, $30\\times6$ per model\n& 360 & 96 & $\\leq3$ / 3 & Pilot \\\\\nMAP study; \\ref{tab:robustness}\n& Archived text; two models, $30\\times5\\times11$ per model\n& 3300 & 512 & First / 1 & Common, five \\\\\n\\bottomrule\n\\end{tabularx}\n\\end{table}"
+    },
+    {
+      "findings": [
+        "R1-W3"
+      ],
+      "old": "Because the same 300 prompts were issued to every model, comparisons of the retained scores used prompt-aligned observations. Mean metrics were accompanied by percentile-bootstrap 95\\% confidence intervals~\\cite{efron1994bootstrap} based on $B=10{,}000$ prompt-index resamples with replacement and seed \\texttt{20260706}.",
+      "new": "Because the same 300 prompts were issued to every model, comparisons of the retained scores used prompt-aligned observations. For the archived main and verified-reference cohorts, percentile-bootstrap 95\\% confidence intervals~\\cite{efron1994bootstrap} use $B=10{,}000$ resamples from a generator initialized with seed \\texttt{20260706}; the pinned aggregator consumes this generator in its recorded model, metric and contrast order. The pilot and MAP intervals use separately derived cell and contrast seeds, specified in Appendix~\\ref{app:map-seeds}."
+    },
+    {
+      "findings": [
+        "R1-W3"
+      ],
+      "old": "resamples those scenario means 10,000 times with the same seed",
+      "new": "resamples those scenario means 10,000 times from the same aggregator's random-number stream"
+    },
+    {
+      "findings": [
+        "R1-W2"
+      ],
+      "old": "The adaptive attacker is an exact-prompt-disjoint empirical MAP inverse of each defense, followed by the unchanged T5 decoder. It learns the empirical distribution of logged token lengths (or, for batching, of length tuples) conditional on the defended observation from the 270 calibration traces of the same victim model. Test responses are never used for fitting.",
+      "new": "The adaptive attacker applies a local empirical MAP length inverse before the unchanged T5 decoder. Calibration uses the 270 traces of the same victim model with no exact test prompt. The inverse selects a modal length conditional on an observed value, or a modal length tuple conditional on a batch sum and group size; unseen observations and the final batch use explicit fallback and size-selection heuristics (Appendix~\\ref{app:map-seeds}). This is not a global MAP estimate of the response's entire length sequence."
+    },
+    {
+      "findings": [
+        "R2-W1"
+      ],
+      "old": "all 30 unique inputs per model remain truncated",
+      "new": "all 30 prompt-indexed inputs per model remain truncated"
+    },
+    {
+      "findings": [
+        "R2-W1"
+      ],
+      "old": "30 unique test inputs per model). Each input is reused across five decoder seeds.",
+      "new": "30 test prompts per model). Each condition is repeated for five decoder seeds; identical encoder inputs can occur for different prompts."
+    },
+    {
+      "findings": [
+        "R2-W1",
+        "DA-N1"
+      ],
+      "old": "These results describe the complete frozen pipeline, including changes in heuristic segmentation and encoder truncation after each transformation. They do not isolate information removed by a defense. For example, \\texttt{pad\\_32} removes within-trace length variation but still produces a higher lexical score than bucketing. A constant sequence can elicit generic text that overlaps the references, while retaining the trace length. The present comparison cannot separately attribute the score to that retained information, the decoder's language prior, or the changed input coverage.",
+      "new": "These results describe the complete frozen pipeline, including changes in heuristic segmentation and encoder truncation after each transformation. They do not isolate information removed by a defense. In all 60 \\texttt{pad\\_32} pilot records, the retained encoder input is identical and reconstruction makes one decoder call. An extended audit covering these records and all 600 \\texttt{pad\\_32} records in the five-seed study finds one unique retained input within each suite, model and attacker group. Although the full 512-token-budget traces differ in their number of positions, that variation is removed before decoding by the 80-token encoder limit. The positive lexical scores therefore cannot demonstrate this decoder's use of response-specific trace-length variation. They reflect overlap between the references and outputs generated from the constant retained input under the recorded seeds; another attacker could still use information in the complete observable trace."
+    },
+    {
+      "findings": [
+        "R2-W1",
+        "DA-N1"
+      ],
+      "old": "This result is consistent with generic decoder outputs overlapping the references, but the comparison does not isolate that mechanism from changed segment length, encoder truncation, or retained trace length.",
+      "new": "The frozen \\texttt{pad\\_32} encoder input is identical across both models and all 300 reconstructions; all 150 cross-model pairs with common prompt and seed indices produce identical predictions. Their different mean scores arise from scoring those predictions against different references. Response-specific trace-length variation does not reach this decoder."
+    },
+    {
+      "findings": [
+        "R2-W1"
+      ],
+      "old": "For \\texttt{pad\\_32}, applying the MAP inverse reduced mean $\\phi$ to 0.1583",
+      "new": "For \\texttt{pad\\_32}, the MAP inverse also yields a constant retained input within each model. Applying it reduced mean $\\phi$ to 0.1583"
+    },
+    {
+      "findings": [
+        "R2-W1",
+        "DA-N1"
+      ],
+      "old": "Constant-width traces likewise retain response length, and overlap from their generic outputs cannot be attributed exclusively to the language prior.",
+      "new": "For \\texttt{pad\\_32}, the complete observable trace retains its number of positions, but the actual retained encoder input is constant within each condition. Its positive lexical scores are consequently not evidence that this decoder exploits response-specific length variation. This finding concerns $E(Z)$ and does not establish absence of information in $Z$ for other attackers."
+    },
+    {
+      "findings": [
+        "R1-W1"
+      ],
+      "old": "\\subsection{Limitations}",
+      "new": "\\subsection{Limitations}\nThe three-candidate experiments retain a selector that includes PAD scores after EOS. The bounded replay establishes actual selection changes under EOS masking, but does not estimate their frequency across the campaign or their effect on full-response scores. Later segments condition on the selected text, so corrected full-response results require a separate end-to-end campaign with the revised selector and retained candidates. Current score rankings, confidence intervals, rendering contrasts and defense comparisons are conditional on the original implementation. The one-candidate MAP results are unaffected by this selection mechanism.\n"
+    },
+    {
+      "findings": [
+        "R1-W1",
+        "R2-W1"
+      ],
+      "old": "Practical privacy claims require evidence beyond these lexical scores.",
+      "new": "These conclusions are conditional on the recorded implementation: the three-candidate experiments use the original PAD-inclusive selector, whereas MAP uses one candidate. Constant \\texttt{pad\\_32} encoder inputs also show why positive lexical overlap need not demonstrate use of response-specific trace variation. Practical privacy claims require evidence beyond these lexical scores."
+    },
+    {
+      "findings": [
+        "EIC-W3"
+      ],
+      "old": "The accompanying artifact package separates archived victim responses from completed reconstruction runs. The source project repository is \\url{https://github.com/jackaugustyn/LLeakM}; public archival of this completed package remains pending. Table~\\ref{tab:run_ids} identifies the original 512-token source directories. Current results reside under \\path{experiment_validation/revalidation_20261031/}: \\path{inference/cuda_full/} contains the 2100 reconstructions from canonical archived lengths, \\path{secondary/cuda_full/} the 3900 control, defense and MAP records, and \\path{inference/fresh_tinyllama_cuda/} and \\path{inference/fresh_phi_cuda/} the two 300-response new-reference reconstructions. Their generation artifacts are under \\path{fresh_references/}.",
+      "new": "Supplementary Data S1 is the frozen local package \\texttt{LLeakM-S1-20261101-v1}, supplied as a compressed archive with a SHA-256 manifest, a README and a CPU-only verification entry point. It contains the completed records, analysis code, source logs, model revision identifiers and manuscript files; model weights are obtained separately from the pinned checkpoints. The archive is prepared for accompanying submission and can be requested from the corresponding authors; public archival of this version remains pending. The source project repository is \\url{https://github.com/jackaugustyn/LLeakM}. Table~\\ref{tab:run_ids} identifies the original 512-token source directories. Results reside under \\path{experiment_validation/revalidation_20261031/}: \\path{inference/cuda_full/} contains the 2100 reconstructions from canonical archived lengths, \\path{secondary/cuda_full/} the 3900 control, defense and MAP records, and \\path{inference/fresh_tinyllama_cuda/} and \\path{inference/fresh_phi_cuda/} the two 300-response new-reference reconstructions. Their generation artifacts are under \\path{fresh_references/}."
+    },
+    {
+      "findings": [
+        "EIC-W3",
+        "R1-W1"
+      ],
+      "old": "The earlier \\path{analysis/repro_manifest.json}",
+      "new": "The \\path{review_revision_20261101/} directory records the present source-bound edits, the candidate-selection audit, exact local-MAP and seed checks, and the new manuscript validation. The supplementary manifest binds the files actually distributed in S1; its verification entry point checks those hashes, inventory completeness and per-record lexical cosine without loading a model. Version-pinned reconstructor model cards and their retrieved text are included in the source-check evidence.\n\nThe earlier \\path{analysis/repro_manifest.json}"
+    },
+    {
+      "findings": [
+        "R1-W1",
+        "R1-W2",
+        "R1-W3"
+      ],
+      "old": "\\authorcontributions{",
+      "new": "\\section{Local Length Inversion and Random Seeds}\\label{app:map-seeds}\n\n\\subsection{Empirical Length Inverse}\nLet $c(x)$ count individual clean lengths in the calibration corpus, and let $S=\\{x:c(x)>0\\}$. For an unbatched defense, the calibration pass counts $C_z(x)$, the occurrences of clean length $x$ aligned with defended value $z$. Deterministic transformations use one pass; \\texttt{rand\\_pad\\_8} uses 16 independent padding realizations per calibration trace. The inverse returns the most frequent $x$ in $C_z$, resolving ties in favor of the smaller length. An unseen $z$ returns the global mode of $c$, with the same tie rule. Thus the estimator is local to an observed unit. The baseline bypasses inversion.\n\nFor batching with maximum size $k\\in\\{2,4\\}$, calibration counts tuples in non-overlapping consecutive groups, including each final partial group. Let $C_{z,s}(\\mathbf{x})$ count a tuple of size $s$ and sum $z$, and let $T(s)$ count calibration traces whose final group has size $s$ (including full final groups). Interior observed groups are assigned size $k$. For the last observed group, the implemented heuristic chooses\n\\[\n \\widehat{s}=\\operatorname*{arg\\,max}_{1\\leq s\\leq k}\n \\left\\{\\left[\\sum_{\\mathbf{x}} C_{z,s}(\\mathbf{x})\\right]\\max(1,T(s))\\right\\},\n\\]\nwith ties resolved in favor of the larger $s$. This product of counts is a size-selection heuristic, not a separately validated posterior for the final group.\n\nFor the chosen $(z,s)$, the inverse returns the most frequent recorded tuple, with lexicographically smallest tuples winning ties. If that pair was never observed, dynamic programming finds a tuple in $S^s$ with sum $z$ maximizing\n\\[\n \\sum_{j=1}^{s}\\log\\widetilde p(x_j),\n \\qquad\n \\widetilde p(x)=\\frac{c(x)+1}{\\sum_{u\\in S}c(u)+|S|}.\n\\]\nThe recurrence appends one supported length at a time, retains the best tuple for each attainable subtotal, and rejects subtotals exceeding $z$; equal floating-point scores use the lexicographic tie rule. If the requested sum is unattainable, it repeats the global mode $s$ times, which need not preserve $z$. These rules specify the implemented local inverse and do not constitute globally optimal sequence inference.\n\n\\subsection{Decoder, Transformation and Bootstrap Seeds}\nDefine $H(a_1,\\ldots,a_m)$ by converting each argument with Python's \\texttt{str}, joining the strings with byte \\texttt{0x1f}, UTF-8 encoding, and applying BLAKE2s with a four-byte digest. Interpret the digest as an unsigned big-endian integer and apply bitwise AND with \\texttt{0x7fffffff}. This is the artifact function \\texttt{stable\\_seed}; it is independent of Python's randomized \\texttt{hash()}.\n\nThe immutable main and verified-reference inventories store each exact seed in the \\texttt{reconstruction\\_seed} field. The matched renderings use the same recorded seed for each prompt. For the two pilots, the decoder seed is\n\\[\nH(\\texttt{secondary-pilot-decoder-v1},20260706,\\texttt{label},i,\n  \\texttt{suite},\\texttt{condition}),\n\\]\nwhere $i$ is the recorded prompt index and the suite is \\texttt{trace\\_control} or \\texttt{defense\\_pilot}. Thus the two pilot baselines do not share decoder seeds. The defense transformation seed is $H(\\texttt{secondary-pilot-trace-v1},20260706,\\texttt{label},i,\\texttt{condition})$; shuffling instead uses $20260706+17i$.\n\nFor MAP, decoder seed $H(\\texttt{decoder},r,i)$ is reused across models, defenses and attacker modes for a given prompt index and seed index $r\\in\\{20260706,\\ldots,20260710\\}$. Transformation seed $H(\\texttt{trace},20260920,\\texttt{label},i,\\texttt{condition})$ fixes a trace realization across decoder repeats and attacker modes. The inverse is fitted with seed $a=H(20260920,\\texttt{label},\\texttt{condition})$; calibration trace index $j$ and padding draw $d$ use $H(\\texttt{calibration},a,\\texttt{condition},j,d)$, with zero-based indices.\n\nThe main and verified-reference aggregators initialize their NumPy generator with \\texttt{20260706}, consuming it in the pinned aggregation order. For every pilot or MAP cell, the bootstrap generator instead uses $H(\\texttt{bootstrap},\\texttt{suite},\\texttt{label},\\texttt{condition},\\texttt{attacker})$; its paired contrast with baseline uses the same arguments with \\texttt{contrast} replacing \\texttt{bootstrap}. Each generator is initialized separately. Pilot intervals resample 30 prompt scores; MAP intervals independently resample the 30 prompt indices and five seed indices, then average their Cartesian-product submatrix. All use 10,000 replicates and the 2.5th and 97.5th percentiles. The matched-rendering contrast separately uses seed \\texttt{20261101} and 60 paired scenario means. Exact key strings, inventories and aggregation order are retained in the supplementary code and protocols.\n\n\\section{Bounded Candidate-Selection Audit}\\label{app:selector}\nThe completed three-candidate campaign did not retain every sampled output ID and transition score. We therefore replayed 24 first-segment inputs with the original first-segment checkpoint, Transformers 4.46.3, float32 CUDA execution and saved per-record seeds. Before inference, selection was fixed to input-length extrema for two inputs from each of the seven archived and two verified-reference cohorts, plus six defense-pilot inputs covering baseline, bucketing, fixed padding, both batching sizes and random padding. This deliberately selected diagnostic set is not a random sample of the campaign.\n\nAll 24 original selected texts were reproduced exactly. The audit retained all 72 candidate sequences and step scores, and compared the executed full-step sum with a sum through the first generated EOS, including that EOS and excluding subsequent PAD. For a sequence without EOS, all generated steps are retained. The two rules selected different text in 18 of 24 cases: 11 of 14 archived inputs, three of four verified-reference inputs and four of six defense-pilot inputs. Post-EOS tails occurred in 38 of 72 candidates; each such tail included a nonfinite score, while no nonfinite score occurred before or at EOS. The normalization uses the sampling-processed scores, not the unconstrained model logits.\n\nThese findings establish that the defect can affect actual generated candidates. They do not estimate its prevalence over the campaign, a corrected full-response mean or the direction of change in any table. The original selector remains the definition of the three-candidate results reported here. Revising that definition requires replay of later segments because their context depends on the selected text. The one-candidate MAP study does not use this ranking. The supplementary \\path{review_revision_20261101/ranking_audit/} directory contains the fixed input selection, complete candidate records, EOS-masking tests, protocol and audit report.\n\n\n\\authorcontributions{"
+    },
+    {
+      "findings": [
+        "EIC-W3"
+      ],
+      "old": "\\dataavailability{The source project repository is \\url{https://github.com/jackaugustyn/LLeakM}. Completed reconstructions, generated token IDs, reference-validation records and statistical checks are retained in the accompanying artifact package under \\path{experiment_validation/revalidation_20261031/}. Public archival of this completed version remains pending. Appendix~\\ref{app:runs} identifies the source and result directories and distinguishes current experiment records from historical manifests.}",
+      "new": "\\dataavailability{The source project repository is \\url{https://github.com/jackaugustyn/LLeakM}. The frozen local Supplementary Data S1 package, \\texttt{LLeakM-S1-20261101-v1}, contains completed reconstructions, generated token IDs, source logs, reference-validation records, analysis code and a file-level SHA-256 manifest with a verification entry point. It is prepared for accompanying submission and available from the corresponding authors on request; public archival of this completed version remains pending. Appendix~\\ref{app:runs} identifies its version, contents and provenance boundaries.}"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "scope": "Matched computational contrast: contextually rendered reference/length vector versus legacy independent-token rendering; both inputs and scoring reference change. Same pinned T5 parameters and per-sample seeds, as independently checked. These intervals describe corpus variation, not deployment vulnerability.",
+  "bootstrap_seed": 20261101,
+  "bootstrap_draws": 10000,
+  "order": "Tiny prompt/scenario then Phi prompt/scenario",
+  "models": [
+    {
+      "label": "tinyllama_1_1b",
+      "n": 300,
+      "n_scenarios": 60,
+      "delta_phi_mean": 0.35604542390623434,
+      "delta_phi_ci_paired_prompt": [
+        0.3405534574716789,
+        0.37135516029771515
+      ],
+      "delta_phi_ci_paired_scenario": [
+        0.3395802338526566,
+        0.37305264469896715
+      ],
+      "individual_delta_range": [
+        -0.026872891030764283,
+        0.6715488286655683
+      ]
+    },
+    {
+      "label": "phi_3_5_mini",
+      "n": 300,
+      "n_scenarios": 60,
+      "delta_phi_mean": 0.3831340287979461,
+      "delta_phi_ci_paired_prompt": [
+        0.3716245429916321,
+        0.39454070585740186
+      ],
+      "delta_phi_ci_paired_scenario": [
+        0.36704726135000165,
+        0.39821252183627526
+      ],
+      "individual_delta_range": [
+        0.002380494347977047,
+        0.6490320403139894
+      ]
+    }
+  ]
+}

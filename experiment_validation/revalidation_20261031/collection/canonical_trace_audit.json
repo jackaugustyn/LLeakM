@@ -1,0 +1,104 @@
+{
+  "scope": "Exact byte lengths of archived emitted fragments; no new inference, no reference repair, no historical attacker-input attestation.",
+  "all_log_consistency_checks_passed": true,
+  "sample_count": 2100,
+  "models": [
+    {
+      "label": "qwen_1_5b",
+      "run_dir": "run_full_20260920_qwen_1_5b_full",
+      "validated_samples": 300,
+      "changed_traces_vs_current_legacy_replay": 282,
+      "changed_segment_counts_vs_legacy_replay": 149,
+      "references_without_ascii_spaces": 0,
+      "references_with_unicode_replacement_character": 0,
+      "total_emitted_fragments": 125485,
+      "total_payload_bytes": 621390,
+      "empty_fragments": 0
+    },
+    {
+      "label": "qwen_3b",
+      "run_dir": "run_full_20260920_qwen_3b_full",
+      "validated_samples": 300,
+      "changed_traces_vs_current_legacy_replay": 300,
+      "changed_segment_counts_vs_legacy_replay": 227,
+      "references_without_ascii_spaces": 0,
+      "references_with_unicode_replacement_character": 0,
+      "total_emitted_fragments": 149268,
+      "total_payload_bytes": 725853,
+      "empty_fragments": 0
+    },
+    {
+      "label": "llama_3_2_3b",
+      "run_dir": "run_full_20260920_llama_3_2_3b_full",
+      "validated_samples": 300,
+      "changed_traces_vs_current_legacy_replay": 291,
+      "changed_segment_counts_vs_legacy_replay": 204,
+      "references_without_ascii_spaces": 0,
+      "references_with_unicode_replacement_character": 0,
+      "total_emitted_fragments": 129311,
+      "total_payload_bytes": 624327,
+      "empty_fragments": 0
+    },
+    {
+      "label": "gemma_2_2b",
+      "run_dir": "run_full_20260920_gemma_2_2b_full",
+      "validated_samples": 300,
+      "changed_traces_vs_current_legacy_replay": 300,
+      "changed_segment_counts_vs_legacy_replay": 23,
+      "references_without_ascii_spaces": 0,
+      "references_with_unicode_replacement_character": 0,
+      "total_emitted_fragments": 147188,
+      "total_payload_bytes": 676966,
+      "empty_fragments": 0
+    },
+    {
+      "label": "phi_1_5",
+      "run_dir": "run_full_20260920_phi_1_5_full",
+      "validated_samples": 300,
+      "changed_traces_vs_current_legacy_replay": 300,
+      "changed_segment_counts_vs_legacy_replay": 14,
+      "references_without_ascii_spaces": 0,
+      "references_with_unicode_replacement_character": 0,
+      "total_emitted_fragments": 118618,
+      "total_payload_bytes": 610634,
+      "empty_fragments": 0
+    },
+    {
+      "label": "tinyllama_1_1b",
+      "run_dir": "run_full_20260920_tinyllama_1_1b_full",
+      "validated_samples": 300,
+      "changed_traces_vs_current_legacy_replay": 300,
+      "changed_segment_counts_vs_legacy_replay": 57,
+      "references_without_ascii_spaces": 299,
+      "references_with_unicode_replacement_character": 0,
+      "total_emitted_fragments": 128494,
+      "total_payload_bytes": 443498,
+      "empty_fragments": 256
+    },
+    {
+      "label": "phi_3_5_mini",
+      "run_dir": "run_full_20260920_phi_3_5_mini_full",
+      "validated_samples": 300,
+      "changed_traces_vs_current_legacy_replay": 300,
+      "changed_segment_counts_vs_legacy_replay": 90,
+      "references_without_ascii_spaces": 162,
+      "references_with_unicode_replacement_character": 0,
+      "total_emitted_fragments": 153600,
+      "total_payload_bytes": 526426,
+      "empty_fragments": 210
+    }
+  ],
+  "source_sample_hashes": {
+    "experiment_validation/results/run_full_20260920_qwen_1_5b_full/samples.jsonl": "69fab9d733f5188cb56a2225372de0bee6221aca106ba0715c344fc0c43de575",
+    "experiment_validation/results/run_full_20260920_qwen_3b_full/samples.jsonl": "b45afd9dd5fb1857c4c53c4c5304f88317adc91776c72d6be205e18c6341152a",
+    "experiment_validation/results/run_full_20260920_llama_3_2_3b_full/samples.jsonl": "a0b763f615897171ec05c38a06fcf2425e9e27511d02a5128fb42c90e0adee80",
+    "experiment_validation/results/run_full_20260920_gemma_2_2b_full/samples.jsonl": "cf54813fad2821bf7c57b4d88647dfd13b3e613b882e8dc7115cc771893a1f9b",
+    "experiment_validation/results/run_full_20260920_phi_1_5_full/samples.jsonl": "064e18eab753d1004f4f7395d4b4fd8b7699e15a5b6451b25483d5c0b0e18f0a",
+    "experiment_validation/results/run_full_20260920_tinyllama_1_1b_full/samples.jsonl": "090bf56093e901165b7b4fb61308121a21caa6d03fb049e5db413a70aef1c20f",
+    "experiment_validation/results/run_full_20260920_phi_3_5_mini_full/samples.jsonl": "e9457f666825a8bcf4bfe5064734046b8e997839190e55c5ce77caad75c3c4d2"
+  },
+  "canonical_trace_file_sha256": "cf4ca0307ffb97654f2e302855e4f8a1cbac57fa3f837ba1356c615b988cef3a",
+  "validation_source_sha256": "eec9d4e69b0971d32a0b9fc2141047358ea9f821665ee97c9ddaaef8548adfc4",
+  "legacy_replay_source": "previous iter_lines split/filter/add-newline logic, with terminal-prefix stop",
+  "errors": []
+}

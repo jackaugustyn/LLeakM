@@ -1,0 +1,57 @@
+{
+  "status": "PASS_WITH_MINOR_CLARITY_SUGGESTIONS",
+  "reviewed_at_utc": "2026-11-01T16:26:27.690589+00:00",
+  "pdf_sha256": "66898ef9b33e62872a290100d87214ec5324066e1649953b436c0a17072297b5",
+  "tex_sha256_at_review": "eb2feb528f4954321985794c46928989085ce1c1ea0848f2ee00534659675881",
+  "scope": "Visual inspection of all 12 manuscript tables at 2x PDF rendering (1191x1684 pixels); independent of numeric validation and not certification of official journal requirements.",
+  "pages_reviewed": {
+    "6": [
+      "tab:model_metadata"
+    ],
+    "7": [
+      "tab:length_covariates"
+    ],
+    "10": [
+      "tab:encoder_coverage",
+      "tab:trace_controls"
+    ],
+    "11": [
+      "tab:main_results",
+      "tab:eos_completeness"
+    ],
+    "13": [
+      "tab:statistical_results",
+      "tab:scenario_sensitivity"
+    ],
+    "14": [
+      "tab:fresh_results",
+      "tab:defense_results"
+    ],
+    "16": [
+      "tab:robustness"
+    ],
+    "19": [
+      "tab:run_ids"
+    ]
+  },
+  "clipping": false,
+  "overlap": false,
+  "unreadable_values": false,
+  "missing_table_rows": false,
+  "blocking_issues": [],
+  "minor_suggestions": [
+    {
+      "table": "tab:eos_completeness",
+      "suggestion": "State explicitly in caption that both LR columns give LR@0.5 in percent."
+    },
+    {
+      "table": "tab:defense_results",
+      "suggestion": "Rename Frames to Units, matching simulated observable values rather than measured transport frames."
+    },
+    {
+      "table": "tab:fresh_results",
+      "suggestion": "Clarify EOS indicates end-of-sequence termination, rather than generic response termination."
+    }
+  ],
+  "render_directory": "render/table_review"
+}

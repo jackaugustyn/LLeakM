@@ -1,0 +1,100 @@
+{
+  "plan_sha256": "b964254e282fecfcfb62d992411084eb655405050049c7e3d41464ed0c68917f",
+  "started_utc": "2026-10-31T14:57:27.991312+00:00",
+  "supervisor_pid": 194635,
+  "status": "completed",
+  "complete": true,
+  "completed_stages": [
+    "primary_t5",
+    "verify_primary",
+    "secondary_t5",
+    "verify_secondary",
+    "verify_victim_weights",
+    "generate_tinyllama",
+    "reconstruct_tinyllama",
+    "verify_tinyllama",
+    "generate_phi",
+    "reconstruct_phi",
+    "verify_phi",
+    "collect_verified_results"
+  ],
+  "stage_results": [
+    {
+      "name": "primary_t5",
+      "finished_utc": "2026-10-31T20:48:18.342954+00:00",
+      "exit_code": null,
+      "elapsed_seconds": 21142.018419638996
+    },
+    {
+      "name": "verify_primary",
+      "finished_utc": "2026-10-31T20:49:48.449988+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 90.10361286399711
+    },
+    {
+      "name": "secondary_t5",
+      "finished_utc": "2026-10-31T22:35:39.846965+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 6351.395030232998
+    },
+    {
+      "name": "verify_secondary",
+      "finished_utc": "2026-10-31T22:36:09.888868+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 30.038446512997325
+    },
+    {
+      "name": "verify_victim_weights",
+      "finished_utc": "2026-10-31T22:36:39.932971+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 30.035937649998232
+    },
+    {
+      "name": "generate_tinyllama",
+      "finished_utc": "2026-10-31T23:26:12.974747+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 2973.0354296980004
+    },
+    {
+      "name": "reconstruct_tinyllama",
+      "finished_utc": "2026-11-01T00:12:30.841168+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 2777.852056267009
+    },
+    {
+      "name": "verify_tinyllama",
+      "finished_utc": "2026-11-01T00:12:45.874141+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 15.026353551002103
+    },
+    {
+      "name": "generate_phi",
+      "finished_utc": "2026-11-01T14:07:37.366099+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 49093.152457831005
+    },
+    {
+      "name": "reconstruct_phi",
+      "finished_utc": "2026-11-01T15:15:08.628807+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 3903.178331264993
+    },
+    {
+      "name": "verify_phi",
+      "finished_utc": "2026-11-01T15:15:40.146190+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 30.036065159001737
+    },
+    {
+      "name": "collect_verified_results",
+      "finished_utc": "2026-11-01T15:15:55.172035+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 15.024258940000436
+    }
+  ],
+  "stage_started_utc": "2026-11-01T15:15:40.147794+00:00",
+  "active_process_start": "11954811",
+  "heartbeat_utc": "2026-11-01T15:15:40.148881+00:00",
+  "stage_elapsed_seconds": 0.0010867640085052699,
+  "finished_utc": "2026-11-01T15:15:55.172434+00:00"
+}

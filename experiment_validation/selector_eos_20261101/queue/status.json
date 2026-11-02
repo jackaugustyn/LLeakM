@@ -1,0 +1,100 @@
+{
+  "plan_sha256": "68eb5762191911c3daf7b9ee3cfed859120f6271f13df922b8d408b00376df37",
+  "started_utc": "2026-11-01T18:30:56.346805+00:00",
+  "supervisor_pid": 780998,
+  "status": "completed",
+  "complete": true,
+  "completed_stages": [
+    "secondary_t5",
+    "audit_secondary",
+    "primary_t5",
+    "verify_primary",
+    "tinyllama_t5",
+    "verify_tinyllama",
+    "phi_t5",
+    "verify_phi",
+    "audit_main_fresh",
+    "audit_all_candidates",
+    "paired_rendering",
+    "collect_complete_results"
+  ],
+  "stage_results": [
+    {
+      "name": "secondary_t5",
+      "finished_utc": "2026-11-01T20:38:51.216471+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 7280.929336600006
+    },
+    {
+      "name": "audit_secondary",
+      "finished_utc": "2026-11-01T20:39:23.170090+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 30.02999566399376
+    },
+    {
+      "name": "primary_t5",
+      "finished_utc": "2026-11-02T04:20:27.085075+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 26029.83389358601
+    },
+    {
+      "name": "verify_primary",
+      "finished_utc": "2026-11-02T04:21:27.660579+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 60.056521247985074
+    },
+    {
+      "name": "tinyllama_t5",
+      "finished_utc": "2026-11-02T05:22:31.513055+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 3663.81338932598
+    },
+    {
+      "name": "verify_tinyllama",
+      "finished_utc": "2026-11-02T05:22:46.575273+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 15.017363376973663
+    },
+    {
+      "name": "phi_t5",
+      "finished_utc": "2026-11-02T06:36:21.296370+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 4414.688076156017
+    },
+    {
+      "name": "verify_phi",
+      "finished_utc": "2026-11-02T06:36:51.369143+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 30.030112123000436
+    },
+    {
+      "name": "audit_main_fresh",
+      "finished_utc": "2026-11-02T06:37:36.447995+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 45.04456068400759
+    },
+    {
+      "name": "audit_all_candidates",
+      "finished_utc": "2026-11-02T06:39:06.573807+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 90.09586078298162
+    },
+    {
+      "name": "paired_rendering",
+      "finished_utc": "2026-11-02T06:39:21.619849+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 15.017659975012066
+    },
+    {
+      "name": "collect_complete_results",
+      "finished_utc": "2026-11-02T06:39:36.666732+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 15.018911471008323
+    }
+  ],
+  "stage_started_utc": "2026-11-02T06:39:21.647839+00:00",
+  "active_process_start": "17239078",
+  "heartbeat_utc": "2026-11-02T06:39:21.649015+00:00",
+  "stage_elapsed_seconds": 0.0011762380017898977,
+  "finished_utc": "2026-11-02T06:39:36.667078+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "captured_utc": "2026-10-31T14:45:52.951781+00:00",
+  "python": "3.10.12",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "torch": "2.5.1+cu124",
+  "torch_cuda": "12.4",
+  "cudnn": 90100,
+  "gpu_name": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+  "gpu_memory_total_bytes": 8589410304,
+  "nvidia_smi": "Sat Oct 31 15:45:53 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 610.43.02              KMD Version: 610.62        CUDA UMD Version: 13.3     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 3070 ...    On  |   00000000:01:00.0  On |                  N/A |\n| N/A   56C    P0             41W /  125W |    4485MiB /   8192MiB |     35%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A          187555      C   /python3.10                           N/A      |\n+-----------------------------------------------------------------------------------------+\n",
+  "main_pid": 187555,
+  "main_exec_session_id": 63692,
+  "user_authorization": "wznawiaj obliczenia",
+  "note": "Environment observed during current CUDA campaign, not attestation of archived experiments."
+}

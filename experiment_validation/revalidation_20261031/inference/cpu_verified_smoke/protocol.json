@@ -1,0 +1,42 @@
+{
+  "records": 2100,
+  "models": {
+    "qwen_1_5b": 300,
+    "qwen_3b": 300,
+    "llama_3_2_3b": 300,
+    "gemma_2_2b": 300,
+    "phi_1_5": 300,
+    "tinyllama_1_1b": 300,
+    "phi_3_5_mini": 300
+  },
+  "diagnostic_reference_records": 600,
+  "device": "cpu",
+  "all_segments": true,
+  "samples_per_segment": 3,
+  "encoder_and_decoder_max_length": 80,
+  "input_sha256": "cf4ca0307ffb97654f2e302855e4f8a1cbac57fa3f837ba1356c615b988cef3a",
+  "scope": "Verified logged emitted-text lengths; ordinary reference decoding remains unverified.",
+  "torch": "2.5.1+cu124",
+  "transformers": "4.46.3",
+  "threads": 4,
+  "checkpoints": {
+    "royweiss1/T5_FirstSentences": "057cf090b719f5cf89da504babd2122d404e0953",
+    "royweiss1/T5_MiddleSentences": "07e2b3fc96bc129eb4a2871e58731c07e889cecc"
+  },
+  "checkpoint_file_sha256": {
+    "royweiss1/T5_FirstSentences": {
+      "pytorch_model.bin": "84304d4342ef05cd54cf59c409f8dd25d33db9f15bb8122f50852302723b5321",
+      "tokenizer.json": "8fba3abd7afea3d3f1af811afc4f24f17607f4e80f71a64387a88ace20a23c3b",
+      "config.json": "7279b3e7f49fecf047e666db56b181e0f3bfdd404fd734f075fa94fa11e0e6cb"
+    },
+    "royweiss1/T5_MiddleSentences": {
+      "pytorch_model.bin": "b9302c071a5a2df83ee41edd38a97ee646275c9a371cdf07224b5374ee594c69",
+      "tokenizer.json": "8fba3abd7afea3d3f1af811afc4f24f17607f4e80f71a64387a88ace20a23c3b",
+      "config.json": "59b05337c5da141e68e581d25c0532cd3343ab585c1b8f2248ab6085d1dfc91b"
+    }
+  },
+  "reconstructor_sha256": "55ebb745e9cafd08d89931f17ef26a5858ff8884c526e16aa2b0201784c83dc1",
+  "runner_sha256": "503d164ff73b41948286158df26649e46a66fddee9d157a43a15e38b547da663",
+  "precision": "float32",
+  "seed_source": "recorded per-sample reconstruction_seed"
+}

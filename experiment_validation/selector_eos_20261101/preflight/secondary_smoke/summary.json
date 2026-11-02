@@ -1,0 +1,484 @@
+{
+  "protocol_id": "12da499d9f523219edd343968a2ceb703fcac8f2aa03d4f23a2092e46da53f1a",
+  "complete": false,
+  "n": 6,
+  "expected": 3900,
+  "suite_complete": {
+    "trace_control": false,
+    "defense_pilot": false,
+    "map": false
+  },
+  "cells": [
+    {
+      "suite": "trace_control",
+      "label": "qwen_1_5b",
+      "condition": "real",
+      "attacker": "frozen",
+      "expected": 30,
+      "n": 1,
+      "complete": false,
+      "metric_means": {
+        "phi": 0.19720265943665385,
+        "ed_norm": 0.7602591792656588,
+        "rouge1_precision": 0.23529411764705882,
+        "rouge1_recall": 0.1111111111111111,
+        "rouge1_f1": 0.1509433962264151,
+        "rougeL_precision": 0.17647058823529413,
+        "rougeL_recall": 0.08333333333333333,
+        "rougeL_f1": 0.11320754716981131
+      },
+      "observed_payload_overhead_pct_mean": 0.0,
+      "observed_units_mean": 96.0,
+      "lr_at_0_5_pct": 0.0,
+      "stopped_before_requested_count": 0,
+      "empty_first_prediction_count": 0
+    },
+    {
+      "suite": "trace_control",
+      "label": "qwen_1_5b",
+      "condition": "shuffled",
+      "attacker": "frozen",
+      "expected": 30,
+      "n": 1,
+      "complete": false,
+      "metric_means": {
+        "phi": 0.13715853329963723,
+        "ed_norm": 0.7840172786177105,
+        "rouge1_precision": 0.16,
+        "rouge1_recall": 0.05555555555555555,
+        "rouge1_f1": 0.08247422680412371,
+        "rougeL_precision": 0.12,
+        "rougeL_recall": 0.041666666666666664,
+        "rougeL_f1": 0.06185567010309278
+      },
+      "observed_payload_overhead_pct_mean": 0.0,
+      "observed_units_mean": 96.0,
+      "lr_at_0_5_pct": 0.0,
+      "stopped_before_requested_count": 0,
+      "empty_first_prediction_count": 0
+    },
+    {
+      "suite": "trace_control",
+      "label": "qwen_1_5b",
+      "condition": "constant",
+      "attacker": "frozen",
+      "expected": 30,
+      "n": 1,
+      "complete": false,
+      "metric_means": {
+        "phi": 0.07087387592709371,
+        "ed_norm": 0.7473002159827213,
+        "rouge1_precision": 0.058823529411764705,
+        "rouge1_recall": 0.05555555555555555,
+        "rouge1_f1": 0.05714285714285714,
+        "rougeL_precision": 0.058823529411764705,
+        "rougeL_recall": 0.05555555555555555,
+        "rougeL_f1": 0.05714285714285714
+      },
+      "observed_payload_overhead_pct_mean": 3.67170626349892,
+      "observed_units_mean": 96.0,
+      "lr_at_0_5_pct": 0.0,
+      "stopped_before_requested_count": 0,
+      "empty_first_prediction_count": 0
+    },
+    {
+      "suite": "trace_control",
+      "label": "qwen_1_5b",
+      "condition": "cross_prompt",
+      "attacker": "frozen",
+      "expected": 30,
+      "n": 1,
+      "complete": false,
+      "metric_means": {
+        "phi": 0.36504726454601544,
+        "ed_norm": 0.7170626349892009,
+        "rouge1_precision": 0.30434782608695654,
+        "rouge1_recall": 0.19444444444444445,
+        "rouge1_f1": 0.23728813559322037,
+        "rougeL_precision": 0.2608695652173913,
+        "rougeL_recall": 0.16666666666666666,
+        "rougeL_f1": 0.20338983050847456
+      },
+      "observed_payload_overhead_pct_mean": -1.511879049676026,
+      "observed_units_mean": 96.0,
+      "lr_at_0_5_pct": 0.0,
+      "stopped_before_requested_count": 0,
+      "empty_first_prediction_count": 0
+    },
+    {
+      "suite": "defense_pilot",
+      "label": "qwen_1_5b",
+      "condition": "baseline",
+      "attacker": "frozen",
+      "expected": 30,
+      "n": 1,
+      "complete": false,
+      "metric_means": {
+        "phi": 0.1569188472540014,
+        "ed_norm": 0.7710583153347732,
+        "rouge1_precision": 0.17142857142857143,
+        "rouge1_recall": 0.08333333333333333,
+        "rouge1_f1": 0.11214953271028037,
+        "rougeL_precision": 0.11428571428571428,
+        "rougeL_recall": 0.05555555555555555,
+        "rougeL_f1": 0.0747663551401869
+      },
+      "observed_payload_overhead_pct_mean": 0.0,
+      "observed_units_mean": 96.0,
+      "lr_at_0_5_pct": 0.0,
+      "stopped_before_requested_count": 0,
+      "empty_first_prediction_count": 0
+    },
+    {
+      "suite": "defense_pilot",
+      "label": "qwen_1_5b",
+      "condition": "bucket_8",
+      "attacker": "frozen",
+      "expected": 30,
+      "n": 1,
+      "complete": false,
+      "metric_means": {
+        "phi": 0.056879384505822465,
+        "ed_norm": 0.9114470842332614,
+        "rouge1_precision": 0.06349206349206349,
+        "rouge1_recall": 0.05555555555555555,
+        "rouge1_f1": 0.05925925925925926,
+        "rougeL_precision": 0.06349206349206349,
+        "rougeL_recall": 0.05555555555555555,
+        "rougeL_f1": 0.05925925925925926
+      },
+      "observed_payload_overhead_pct_mean": 88.33693304535637,
+      "observed_units_mean": 96.0,
+      "lr_at_0_5_pct": 0.0,
+      "stopped_before_requested_count": 0,
+      "empty_first_prediction_count": 0
+    },
+    {
+      "suite": "defense_pilot",
+      "label": "qwen_1_5b",
+      "condition": "pad_32",
+      "attacker": "frozen",
+      "expected": 30,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "defense_pilot",
+      "label": "qwen_1_5b",
+      "condition": "batch_2",
+      "attacker": "frozen",
+      "expected": 30,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "defense_pilot",
+      "label": "qwen_1_5b",
+      "condition": "batch_4",
+      "attacker": "frozen",
+      "expected": 30,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "defense_pilot",
+      "label": "qwen_1_5b",
+      "condition": "rand_pad_8",
+      "attacker": "frozen",
+      "expected": 30,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "qwen_1_5b",
+      "condition": "baseline",
+      "attacker": "frozen",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "qwen_1_5b",
+      "condition": "bucket_8",
+      "attacker": "frozen",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "qwen_1_5b",
+      "condition": "bucket_8",
+      "attacker": "adaptive",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "qwen_1_5b",
+      "condition": "pad_32",
+      "attacker": "frozen",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "qwen_1_5b",
+      "condition": "pad_32",
+      "attacker": "adaptive",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "qwen_1_5b",
+      "condition": "batch_2",
+      "attacker": "frozen",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "qwen_1_5b",
+      "condition": "batch_2",
+      "attacker": "adaptive",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "qwen_1_5b",
+      "condition": "batch_4",
+      "attacker": "frozen",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "qwen_1_5b",
+      "condition": "batch_4",
+      "attacker": "adaptive",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "qwen_1_5b",
+      "condition": "rand_pad_8",
+      "attacker": "frozen",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "qwen_1_5b",
+      "condition": "rand_pad_8",
+      "attacker": "adaptive",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "trace_control",
+      "label": "llama_3_2_3b",
+      "condition": "real",
+      "attacker": "frozen",
+      "expected": 30,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "trace_control",
+      "label": "llama_3_2_3b",
+      "condition": "shuffled",
+      "attacker": "frozen",
+      "expected": 30,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "trace_control",
+      "label": "llama_3_2_3b",
+      "condition": "constant",
+      "attacker": "frozen",
+      "expected": 30,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "trace_control",
+      "label": "llama_3_2_3b",
+      "condition": "cross_prompt",
+      "attacker": "frozen",
+      "expected": 30,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "defense_pilot",
+      "label": "llama_3_2_3b",
+      "condition": "baseline",
+      "attacker": "frozen",
+      "expected": 30,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "defense_pilot",
+      "label": "llama_3_2_3b",
+      "condition": "bucket_8",
+      "attacker": "frozen",
+      "expected": 30,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "defense_pilot",
+      "label": "llama_3_2_3b",
+      "condition": "pad_32",
+      "attacker": "frozen",
+      "expected": 30,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "defense_pilot",
+      "label": "llama_3_2_3b",
+      "condition": "batch_2",
+      "attacker": "frozen",
+      "expected": 30,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "defense_pilot",
+      "label": "llama_3_2_3b",
+      "condition": "batch_4",
+      "attacker": "frozen",
+      "expected": 30,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "defense_pilot",
+      "label": "llama_3_2_3b",
+      "condition": "rand_pad_8",
+      "attacker": "frozen",
+      "expected": 30,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "llama_3_2_3b",
+      "condition": "baseline",
+      "attacker": "frozen",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "llama_3_2_3b",
+      "condition": "bucket_8",
+      "attacker": "frozen",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "llama_3_2_3b",
+      "condition": "bucket_8",
+      "attacker": "adaptive",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "llama_3_2_3b",
+      "condition": "pad_32",
+      "attacker": "frozen",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "llama_3_2_3b",
+      "condition": "pad_32",
+      "attacker": "adaptive",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "llama_3_2_3b",
+      "condition": "batch_2",
+      "attacker": "frozen",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "llama_3_2_3b",
+      "condition": "batch_2",
+      "attacker": "adaptive",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "llama_3_2_3b",
+      "condition": "batch_4",
+      "attacker": "frozen",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "llama_3_2_3b",
+      "condition": "batch_4",
+      "attacker": "adaptive",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "llama_3_2_3b",
+      "condition": "rand_pad_8",
+      "attacker": "frozen",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    },
+    {
+      "suite": "map",
+      "label": "llama_3_2_3b",
+      "condition": "rand_pad_8",
+      "attacker": "adaptive",
+      "expected": 150,
+      "n": 0,
+      "complete": false
+    }
+  ],
+  "paired_contrasts": [],
+  "interpretation": "New inference conditional on validated archived emitted-text references. Partial cells have descriptive means only; no intervals. Segment shortfalls are reported, not repaired.",
+  "reference_scope": "No new victim generation; ordinary historical token-sequence decoding remains unverified."
+}

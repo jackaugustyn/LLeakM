@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "package_id": "LLeakM-S1-20261101-v1",
+  "files": 3027,
+  "uncompressed_bytes": 368703350,
+  "source_logs": 2760,
+  "reconstruction_records": 6600,
+  "fresh_generation_records": 600,
+  "archive": "/home/paugustynowicz/LLeakM/article1/supplement/LLeakM-S1-20261101-v1.tar.gz",
+  "compressed_bytes": 44147484,
+  "sha256": "da9320451b943bdd47d3a8bb984c0416326fc99a29de6f8d9594a2136b7a16ab",
+  "verification": {
+    "status": "PASS",
+    "package_id": "LLeakM-S1-20261101-v1",
+    "files_hashed": 3027,
+    "reconstruction_counts": {
+      "cuda_full": 2100,
+      "fresh_tinyllama_cuda": 300,
+      "fresh_phi_cuda": 300,
+      "trace_control": 240,
+      "defense_pilot": 360,
+      "map": 3300
+    },
+    "reconstructions_checked": 6600,
+    "fresh_token_id_records_checked": 600,
+    "source_logs_checked": 2760,
+    "maximum_phi_difference": 1.1102230246251565e-16,
+    "scope": "Inventory, completeness, input/log bindings and lexical-score arithmetic. No model inference, semantic disclosure assessment or selector certification."
+  }
+}

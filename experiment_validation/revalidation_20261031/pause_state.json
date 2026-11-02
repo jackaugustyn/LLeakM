@@ -1,0 +1,29 @@
+{
+  "article1/template.tex": {
+    "sha256": "cc7cdf4ad77830445eda669b22f4c5bfa92607265b7b71fc6cc0b92bbf20e343",
+    "bytes": 72285
+  },
+  "article1/template.pdf": {
+    "sha256": "e7c4d249d36d14a12deb4596b1c8a8340a88d2c68c30f25770e7336fab635edd",
+    "bytes": 258528
+  },
+  "weiss_reconstruction.py": {
+    "sha256": "55ebb745e9cafd08d89931f17ef26a5858ff8884c526e16aa2b0201784c83dc1",
+    "bytes": 14832
+  },
+  "experiment_validation/revalidation_20261031/inference/rerun_canonical.py": {
+    "sha256": "503d164ff73b41948286158df26649e46a66fddee9d157a43a15e38b547da663",
+    "bytes": 11632
+  },
+  "experiment_validation/revalidation_20261031/inference/cpu_verified_smoke/status.json": {
+    "protocol_id": "85f7eadc815672ac77d5bb9fafed05139c68e79f62bd549b7e815cbc9809ef35",
+    "expected": 2100,
+    "completed": 1,
+    "complete": false,
+    "status": "partial",
+    "scope": "Verified logged emitted-text lengths; ordinary reference decoding remains unverified.",
+    "new_records_this_invocation": 1,
+    "elapsed_seconds": 33.12904549900122
+  },
+  "article_update_files": []
+}

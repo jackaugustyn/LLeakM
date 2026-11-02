@@ -1,12 +1,14 @@
 """LLM SSE side-channel harness API."""
 
 import asyncio
+import hashlib
 import json
 import os
 import time
 import uuid
 from contextlib import asynccontextmanager
 from dataclasses import asdict, dataclass
+from pathlib import Path
 from typing import AsyncGenerator, Literal
 
 import traceback
@@ -23,6 +25,7 @@ MODEL_ID = os.environ.get("MODEL_ID", "Qwen/Qwen2.5-0.5B-Instruct")
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 DTYPE = torch.float16 if DEVICE == "cuda" else torch.float32
 LOG_DIR = os.environ.get("LOG_DIR", "./logs")
+HARNESS_SOURCE_SHA256 = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
 
 os.makedirs(LOG_DIR, exist_ok=True)
 
@@ -36,8 +39,9 @@ class StepMeta:
     """Metadata for a single token generation step."""
 
     step: int
-    token_text: str          # Decoded token text emitted in this SSE step.
-    token_utf8_len: int      # Token length in UTF-8 bytes.
+    token_id: int            # Exact generated token, excluding terminal EOS.
+    token_text: str          # Context-aware fragment emitted at this token step.
+    token_utf8_len: int      # Fragment UTF-8 bytes; may be zero while buffering.
     sse_frame_utf8_len: int  # Bytes in SSE frame (data: ...\\n\\n).
     t_rel_ms: int            # Relative timestamp in milliseconds.
 
@@ -60,6 +64,10 @@ class RunLog:
     response_complete: bool
     response_text: str
     response_utf8_len: int
+    generated_token_ids: list[int]
+    detokenization_policy: str
+    tokenizer_metadata: dict
+    harness_source_sha256: str
     steps: list[StepMeta]
 
 
@@ -90,13 +98,56 @@ def _sse_frame(data_str: str) -> bytes:
     return f"data: {data_str}\n\n".encode("utf-8")
 
 
-def _decode_single_token(tok_id: int) -> str:
-    """Decode a single token without cleaning up tokenization spaces."""
-    return _tokenizer.decode(
-        [tok_id],
-        skip_special_tokens=False,
-        clean_up_tokenization_spaces=False,
-    )
+def _decode_token_fragments(tokenizer, token_ids: list[int]) -> tuple[list[str], str]:
+    """Decode contextual prefixes, preserving word boundaries and UTF-8 bytes.
+
+    The harness generates the token IDs before sending the response. Prepare
+    and validate all fragments before streaming so unsupported non-monotone
+    decoders fail without emitting a corrupted reference. Each generated ID
+    retains one step, including empty fragments while an incomplete UTF-8
+    sequence is buffered. The last step flushes any literal replacement chars.
+    """
+    def decode(ids: list[int]) -> str:
+        return tokenizer.decode(
+            ids, skip_special_tokens=False, clean_up_tokenization_spaces=False
+        )
+
+    reference = decode(token_ids)
+    fragments: list[str] = []
+    emitted = ""
+    for i in range(len(token_ids)):
+        prefix = decode(token_ids[:i + 1])
+        if i + 1 < len(token_ids):
+            # Byte-fallback tokenizers temporarily decode incomplete byte
+            # sequences as U+FFFD. Do not commit them before the next token.
+            prefix = prefix.rstrip("\ufffd")
+        if not prefix.startswith(emitted) or not reference.startswith(prefix):
+            raise ValueError(
+                "Tokenizer decoding is not prefix-stable under the recorded "
+                "UTF-8 buffering policy; refusing to emit a corrupted response."
+            )
+        fragments.append(prefix[len(emitted):])
+        emitted = prefix
+    if "".join(fragments) != reference:
+        raise ValueError("Incremental fragments do not reproduce full-sequence decoding.")
+    return fragments, reference
+
+
+def _tokenizer_metadata() -> dict:
+    """Identify the decoder used now; unavailable revision IDs remain null."""
+    backend = getattr(_tokenizer, "backend_tokenizer", None)
+    backend_bytes = backend.to_str().encode("utf-8") if backend is not None else None
+    return {
+        "class": type(_tokenizer).__name__,
+        "name_or_path": getattr(_tokenizer, "name_or_path", None),
+        "tokenizer_revision": getattr(_tokenizer, "init_kwargs", {}).get("_commit_hash"),
+        "model_revision": getattr(getattr(_model, "config", None), "_commit_hash", None),
+        "backend_serialization_sha256": (
+            hashlib.sha256(backend_bytes).hexdigest() if backend_bytes is not None else None
+        ),
+        "skip_special_tokens": False,
+        "clean_up_tokenization_spaces": False,
+    }
 
 
 def _build_input_text(prompt: str, prompt_format: str = "legacy") -> str:
@@ -272,6 +323,8 @@ async def generate_sse(
             top_p,
             eos_id,
         )
+        token_fragments, response_text = _decode_token_fragments(_tokenizer, gen_ids)
+        tokenizer_metadata = _tokenizer_metadata()
     except Exception as exc:
         traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(exc)) from exc
@@ -295,10 +348,7 @@ async def generate_sse(
         steps_meta: list[StepMeta],
         prompt_len_tokens: int,
     ) -> AsyncGenerator[bytes, None]:
-        emitted_tokens: list[str] = []
-        for i, tok_id in enumerate(gen_ids):
-            tok_str = _decode_single_token(tok_id)
-            emitted_tokens.append(tok_str)
+        for i, (tok_id, tok_str) in enumerate(zip(gen_ids, token_fragments)):
             tok_utf8_len = len(tok_str.encode("utf-8"))
 
             frame = _sse_frame(tok_str)
@@ -308,6 +358,7 @@ async def generate_sse(
             steps_meta.append(
                 StepMeta(
                     step=i,
+                    token_id=tok_id,
                     token_text=tok_str,
                     token_utf8_len=tok_utf8_len,
                     sse_frame_utf8_len=frame_len,
@@ -317,10 +368,6 @@ async def generate_sse(
 
             yield frame
             await asyncio.sleep(0)  # Yield control to push frames to clients.
-
-        yield _sse_frame("[DONE]")
-
-        response_text = "".join(emitted_tokens)
 
         run_log = RunLog(
             run_id=run_id,
@@ -337,6 +384,10 @@ async def generate_sse(
             response_complete=finish_reason == "eos",
             response_text=response_text,
             response_utf8_len=len(response_text.encode("utf-8")),
+            generated_token_ids=list(gen_ids),
+            detokenization_policy="contextual_prefix_utf8_buffer_v1",
+            tokenizer_metadata=tokenizer_metadata,
+            harness_source_sha256=HARNESS_SOURCE_SHA256,
             steps=steps_meta,
         )
         log_path = os.path.join(LOG_DIR, f"{run_id}.json")
@@ -344,8 +395,11 @@ async def generate_sse(
             **{k: v for k, v in asdict(run_log).items() if k != "steps"},
             "steps": [asdict(s) for s in steps_meta],
         }
-        with open(log_path, "w", encoding="utf-8") as f:
+        temporary_log_path = f"{log_path}.tmp"
+        with open(temporary_log_path, "w", encoding="utf-8") as f:
             json.dump(log_data, f, ensure_ascii=False, indent=2)
+        os.replace(temporary_log_path, log_path)
+        yield _sse_frame("[DONE]")
 
     headers = {
         "Cache-Control": "no-cache",

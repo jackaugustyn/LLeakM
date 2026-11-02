@@ -1,0 +1,16 @@
+{
+  "protocol_id": "5d4f485e75a0d457293a1e3c1f00026043e04e84f8d9b50260702b12034e0889",
+  "device_map": {
+    "": "cuda:0"
+  },
+  "tokenizer_metadata": {
+    "class": "LlamaTokenizerFast",
+    "name_or_path": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "tokenizer_revision": null,
+    "model_revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+    "backend_serialization_sha256": "964a66f9ed822ba07c2a98e2203157a23a5f8c3f0de75a3fe0474b2f2e305f29",
+    "skip_special_tokens": false,
+    "clean_up_tokenization_spaces": false
+  },
+  "cuda_memory_allocated": 2202205696
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-31",
+  "unit_test_command": "python3 -m unittest experiment_validation.tests.test_stream_detokenization experiment_validation.tests.test_app_hybrid_cache -v",
+  "unit_tests_passed": 9,
+  "unit_test_exit_code": 0,
+  "local_Gemma_tokenizer_checks_passed": 4,
+  "new_model_generation": false,
+  "historical_references_modified": false,
+  "hashes": {
+    "app.py": "f56e8d1d545b9103a5b0047e507a09c71163a61e9448595883588d0af0fe8a50",
+    "experiment_validation/tests/test_stream_detokenization.py": "b72e4cea032ff8215a34de0e9523dd2bf29b3aec05700a2659edb255416911c8",
+    "experiment_validation/revalidation_20261031/references/audit_references.py": "dafe9213135478160a6117ddc844b6524143b27ecd63c58385eeabb77ff3f704",
+    "experiment_validation/revalidation_20261031/references/reference_audit.json": "766bb8d13aa64b6648dcd185006e31b3f0ea0d9d0f86ca83427733a1b367abb6",
+    "experiment_validation/revalidation_20261031/references/app_before.py": "73a45bf3746238771eaf616f933c4b44f09190b41b871ca99d71345315fb3326"
+  }
+}

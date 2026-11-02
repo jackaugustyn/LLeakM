@@ -1,225 +1,78 @@
 # Walidacja eksperymentalna LLeakM
 
-Ten katalog zawiera pipeline zbierania danych, rekonstrukcji, analizy statystycznej i oceny obron dla artykułu o odtwarzaniu odpowiedzi LLM z sekwencji długości tokenów w kontrolowanym streamingu SSE.
+**Zakończono pełną kampanię 6600 rekonstrukcji z selektorem ograniczonym do pierwszego EOS.** Wszystkie bieżące wyniki artykułu pochodzą z `selector_eos_20261101/`; integracja tabel, rysunków i tekstu znajduje się w `selector_eos_20261101/article_revision_20261102/`.
 
-## Zakres badania
+Rekonstrukcje wykonano na zamrożonych wejściach i referencjach. W tej kampanii nie generowano nowych odpowiedzi modeli ofiar. Odrębne kohorty TinyLlama i Phi-3.5-mini wykorzystują 600 wcześniej zebranych odpowiedzi z zapisanymi token IDs i zweryfikowanym dekodowaniem całych sekwencji.
 
-Serwer badawczy emituje dokładnie jeden token w jednej ramce SSE. Eksperyment korzysta więc z idealizowanego oracle'a długości tokenów, a nie z ekstrakcji ramek z zaszyfrowanego ruchu TLS/HTTP2/QUIC. Wszystkie modele ofiary są oceniane tym samym, zamrożonym rekonstruktorem Weiss-style T5.
+## Zakres zakończonych obliczeń
 
-Główny zbiór obejmuje:
+| Eksperyment | Rekonstrukcje | Protokół |
+|---|---:|---|
+| Siedem modeli, archiwalne referencje | 2100 | 300 promptów na model; wszystkie dostępne segmenty żądane; trzy kandydaty na segment |
+| Odrębne zweryfikowane referencje TinyLlama i Phi-3.5-mini | 600 | Po 300 promptów; wszystkie segmenty; trzy kandydaty |
+| Kontrole śladu | 240 | Dwa modele, 30 promptów, cztery warunki; do trzech segmentów |
+| Pilotaż obron | 360 | Dwa modele, 30 promptów, sześć warunków; do trzech segmentów |
+| MAP | 3300 | Dwa modele, 30 promptów, 11 warunków, pięć ziaren; pierwszy segment, jeden kandydat |
 
-- 300 wyrównanych promptów na model,
-- 15 tematów po 20 promptów,
-- 7 modeli ofiary i 2100 próbek,
-- `max_new_tokens=96`, `temperature=0`, `top_p=1`,
-- 3 próbki rekonstruktora na segment, maksymalnie 3 zdania i 3 kandydatów pierwszego zdania,
-- seed analiz `20260706`.
+[Audyt kompletności i wyboru kandydatów](selector_eos_20261101/validation/audit_campaign.json), [wyniki główne i odrębne referencje](selector_eos_20261101/validation/main_fresh_factledger.json) oraz [audyt kontroli, obron i MAP](selector_eos_20261101/validation/secondary_audit.json) mają status pozytywny. [Manifest zakończonej kampanii](selector_eos_20261101/completed_manifest.json) wiąże zapisane artefakty z ich SHA-256.
 
-Jest to zamrożony snapshot pierwotnego benchmarku. Przed zgłoszeniem artykułu
-należy dodatkowo wykonać opisany niżej protokół odporności: pięć seedów
-rekonstruktora, wspólne seedy między warunkami, wszystkie segmenty odpowiedzi
-oraz atakujący kalibrowany na śladach po zastosowaniu obrony. Skrypty nie
-zastępują brakujących pomiarów deklaracjami — wynik częściowy jest jawnie
-oznaczany `complete: false`.
+## Archiwalne referencje, bieżące rekonstrukcje EOS
 
-Phi-1.5 jest modelem bazowym i pełni rolę stress testu. Główne porównania modeli dostrojonych instrukcyjnie/czatowo obejmują pozostałe sześć modeli.
+| Model | N | Średnia φ | LR@0,5 | 95% CI, bootstrap scenariuszy |
+|---|---:|---:|---:|---|
+| Qwen2.5-1.5B-Instruct | 300 | 0.5768 | 76.00% | [0.5621, 0.5912] |
+| Qwen2.5-3B-Instruct | 300 | 0.5571 | 76.67% | [0.5437, 0.5709] |
+| Phi-1.5 | 300 | 0.5420 | 65.67% | [0.5270, 0.5570] |
+| Llama-3.2-3B-Instruct | 300 | 0.5365 | 68.00% | [0.5206, 0.5522] |
+| Gemma-2-2B-it | 300 | 0.5092 | 55.00% | [0.4996, 0.5192] |
+| Phi-3.5-mini-instruct (diagnostyka) | 300 | 0.1297 | 0.00% | [0.1231, 0.1367] |
+| TinyLlama-1.1B-Chat (diagnostyka) | 300 | 0.0832 | 0.00% | [0.0777, 0.0887] |
 
-## Struktura
+Średnie pięciu niediagnostycznych serii wynoszą 0.5092–0.5768. Dwie pozostałe serie odzwierciedlają wadliwy format referencji po niezależnym dekodowaniu tokenów; nie opisują wewnętrznej odporności tych modeli. Przy jednostce promptu oraz przy średnich 60 scenariuszy istotnych jest **18/21 par** po korekcji Holma. Miary są leksykalne, a nie semantyczne.
 
-```text
-experiment_validation/
-├── prompts/            # 15 plików tematycznych, łącznie 300 promptów
-├── results/            # próbki, konfiguracje i podsumowania przebiegów
-├── scripts/            # zbieranie, statystyki, baseline'y, obrony, manifest
-├── analysis/           # finalne metryki, testy, tabele i figury
-└── models.json         # pomocnicza lista dla run_model_matrix.py
-```
+## Odrębne referencje ze zweryfikowanym dekodowaniem
 
-Tematy: `beliefs_values`, `education`, `employment`, `family_planning`, `financial_status`, `legal_issues`, `mental_health`, `personal_health`, `personal_identity`, `physical_health`, `relationships`, `safety_security`, `self_esteem`, `sexual_health` i `substance_use`.
+| Model | N | Średnia φ | LR@0,5 | 95% CI, bootstrap scenariuszy | EOS ofiary |
+|---|---:|---:|---:|---|---:|
+| TinyLlama-1.1B-Chat | 300 | 0.4677 | 44.33% | [0.4501, 0.4854] | 177/300 |
+| Phi-3.5-mini-instruct | 300 | 0.5269 | 62.33% | [0.5127, 0.5411] | 0/300 |
 
-## Przebiegi użyte w artykule
+Tych kohort nie łączy się z archiwalnymi seriami w jeden ranking siedmiu modeli. Sparowane porównanie formatów referencji w bieżącej kampanii daje różnice średniej φ równe 0.3845 dla TinyLlama i 0.3972 dla Phi-3.5-mini, z przedziałami scenariuszowymi odpowiednio [0.3662, 0.4029] i [0.3806, 0.4134]. Zmienia ono jednocześnie długości wejściowe i referencje oceny, więc nie rozdziela tych efektów. [Źródło sparowanego kontrastu](selector_eos_20261101/validation/paired_detokenization_score_contrast.json).
 
-| Model | Katalog przebiegu | N | Średnie `phi` | `LR@0.5` |
-|---|---|---:|---:|---:|
-| Qwen2.5-1.5B-Instruct | `run_20260325_104518_qwen_1_5b` | 300 | 0.3242 | 8.67% |
-| Qwen2.5-3B-Instruct | `run_20260327_124817_qwen_3b_final_resume` | 300 | 0.3096 | 3.00% |
-| Phi-1.5 | `run_20260329_085714_phi_1_5` | 300 | 0.2747 | 4.33% |
-| Llama-3.2-3B-Instruct | `run_20260414_073030_llama_3_2_3b` | 300 | 0.2538 | 3.00% |
-| Gemma-2-2B-it | `run_20260415_080034_gemma_2_2b_it` | 300 | 0.1798 | 0.00% |
-| TinyLlama-1.1B-Chat | `run_20260325_153010_tinyllama_1_1b` | 300 | 0.0428 | 0.00% |
-| Phi-3.5-mini-instruct | `run_20260414_111644_phi_3_5_mini` | 300 | 0.0239 | 0.00% |
+## Kontrole i obrony
 
-Pełna, maszynowo czytelna lista przebiegów i sum SHA-256 znajduje się w `analysis/repro_manifest.json`. Inne katalogi w `results/` są historyczne lub pośrednie i nie stanowią podstawy głównych tez artykułu.
+Po korekcji Holma istotne są **4/6 kontrastów kontrolnych**: ślady przetasowane i stałe obniżają wyniki obu modeli, a oba kontrasty `cross_prompt` nie są istotne. Nie wykazano przewagi rzeczywistego śladu nad każdym wariantem kontrolnym.
 
-## Metryki
+W pilotażu zamrożonego rekonstruktora istotnych jest **10/10 kontrastów obronnych**. Redukcje średniej φ wynoszą 43.8–89.6%; koszty to rzeczywiście zapisane narzuty chronionego payloadu. Batching zmniejsza liczbę obserwowanych jednostek bez dodawania bajtów do samego payloadu. Nie zmierzono narzutów transportowych, opóźnień ani rzeczywistego pakietowania.
 
-Finalna analiza porównawcza (`scripts/analyze_stats.py`) przelicza dla każdej próbki jeden stały cosinus częstości słów `phi`. Jest to miara pokrycia leksykalnego, a nie Sentence-BERT, BERTScore ani inna miara semantyczna.
+MAP wykorzystuje empiryczne odwzorowanie długości i wspólne ziarna dekodera. Nie jest ponownym trenowaniem T5. Kalibracja i test są rozłączne po dokładnym prompcie, lecz nie po scenariuszu; nie wykazano generalizacji na nowe scenariusze. Wszystkie jego wartości w artykule pochodzą z 3300 rekordów bieżącej kampanii.
 
-Raportowane są:
+## Selektor i ograniczenia pomiaru
 
-- średnie `phi` z bootstrapowym 95% CI,
-- `LR@0.5`, czyli udział próbek z `phi > 0.5`, z przedziałem Wilsona,
-- znormalizowana odległość Levenshteina `ed_norm`,
-- precision ROUGE-1 i ROUGE-L,
-- sparowane testy Wilcoxona z korektą Holma i rank-biserial effect size,
-- kowariaty długości odpowiedzi i regresja kontrolująca długość oraz truncation.
+Selektor `eos-through-first-inclusive/1` sumuje przetworzone wyniki przejść do pierwszego EOS włącznie i pomija późniejsze pozycje. Oceniany rekonstruktor zachowuje limit 80 tokenów enkodera i dekodera. Żądanie wszystkich segmentów nie gwarantuje niepustego wyniku każdego segmentu: w części głównej wykonano 62 757 prób segmentów, z których 62 755 zwróciło niepusty tekst. Odrębne zweryfikowane kohorty TinyLlama i Phi-3.5-mini mają odpowiednio 8835 i 10 748 niepustych wyników segmentów. Puste końcowe wyniki dotyczą jednej odpowiedzi Llama i jednej odpowiedzi Phi-1.5.
 
-Pola `phi_cosine` i progi `ASR_*` zapisane w pierwotnych `summary.json` pochodzą z czasu danego uruchomienia i mogą używać pierwotnie wybranego backendu. Dla liczb cytowanych w artykule źródłem prawdy są `analysis/per_prompt_phi.csv`, `analysis/model_stats.json` oraz wygenerowane z nich tabele.
+Wejściem jest instrumentowany oracle długości payloadu z logów. Eksperyment nie wykazuje odtworzenia granic zdarzeń aplikacji z przechwyconego TLS, HTTP/2 ani QUIC. Transformacje zmieniają także segmentację i pokrycie wejścia enkodera. Cały wynik rekonstrukcji jest oceniany względem całej referencji; EOS ofiary oznacza zakończenie generacji, a nie poprawność rekonstrukcji.
 
-## Uruchomienie pojedynczego modelu
+## Odtworzenie tabel i rysunków
 
-Najpierw uruchom serwer z wybranym modelem ofiary:
+Poniższe polecenia korzystają z ukończonych audytów i nie uruchamiają modeli:
 
 ```bash
-. .venv/bin/activate
-MODEL_ID=Qwen/Qwen2.5-1.5B-Instruct HF_HUB_OFFLINE=1 \
-  python -m uvicorn app:app --host 127.0.0.1 --port 8000
+python experiment_validation/selector_eos_20261101/article_revision_20261102/regenerate_tables.py
+python experiment_validation/selector_eos_20261101/article_revision_20261102/check_generated_tables.py
+python experiment_validation/selector_eos_20261101/article_revision_20261102/generate_figures.py
 ```
 
-W drugim terminalu uruchom standardowy przebieg:
+Generator tabel zapisuje `tables.json` i `tables.tex`; nie nadpisuje manuskryptu automatycznie. Niezależny parser sprawdza wszystkie 13 tabel: 433 wartości liczbowe i 93 pola opisowe. Generator wykresów zapisuje nowe pliki `article1/figures/eos_model_results.*` i `eos_defense_tradeoff.*`, dokładne dane JSON/CSV oraz manifest źródeł i eksportów. Oba panele wykresu wyników modeli korzystają z bieżącej kampanii EOS; drugi panel porównuje formaty referencji w jej obrębie.
 
-```bash
-. .venv/bin/activate
-HF_HUB_OFFLINE=1 python experiment_validation/scripts/run_validation.py \
-  --max-prompts 300 \
-  --max-new-tokens 96 \
-  --temperature 0 \
-  --top-p 1 \
-  --samples-per-segment 3 \
-  --max-sentences 3 \
-  --num-first-candidates 3 \
-  --reconstruction-seed 20260706 \
-  --label qwen_1_5b
-```
+## Artefakty i udostępnienie
 
-Usuń `HF_HUB_OFFLINE=1`, jeśli modele nie znajdują się jeszcze w lokalnym cache Hugging Face. Szybki smoke test można wykonać przez `--max-prompts 20`, ale jego wynik nie jest porównywalny z finalnym benchmarkiem.
+- `selector_eos_20261101/inference/`: główne rekonstrukcje i odrębne referencje, protokoły oraz zapis kandydatów.
+- `selector_eos_20261101/secondary/cuda_full/`: 3900 prób kontroli, obron i MAP.
+- `selector_eos_20261101/validation/`: niezależne audyty, statystyki i kontrast formatów referencji.
+- `selector_eos_20261101/article_revision_20261102/`: aktualna integracja artykułu, generatory, tabele, dane wykresów i kontrole.
+- `../article1/supplement/LLeakM-S2-EOS-20261102-v1.tar.gz`: lokalny pakiet Supplementary Data S2 z manifestem SHA-256 i weryfikatorem CPU.
 
-Każdy przebieg tworzy `results/run_YYYYMMDD_HHMMSS_<label>/` z plikami:
+Wcześniejsze wyniki i audyty pozostają archiwum. Ich istnienie nie zastępuje nowych dowodów i nie stanowi podstawy bieżących tabel ani wniosków. Zapisane wcześniej referencje i logi są zachowanymi wejściami obecnej kampanii.
 
-- `config.json`,
-- `progress.json`,
-- `samples.jsonl`,
-- `summary.json`,
-- `summary.md`,
-- `summary_by_topic.csv`.
-
-## Macierz modeli
-
-`scripts/run_model_matrix.py` kolejno uruchamia modele wymienione w `models.json`. Jego domyślne wartości historyczne (`72` tokeny i `2` próbki na segment) różnią się od protokołu artykułu, dlatego parametry trzeba podać jawnie:
-
-```bash
-. .venv/bin/activate
-python experiment_validation/scripts/run_model_matrix.py \
-  --models-file experiment_validation/models.json \
-  --prompts 300 \
-  --max-new-tokens 96 \
-  --samples-per-segment 3 \
-  --max-sentences 3 \
-  --num-first-candidates 3 \
-  --hf-offline
-```
-
-Opcja `--clear-results` usuwa dotychczasową zawartość katalogu wyników i nie jest potrzebna do zwykłego uruchomienia. `models.json` jest listą pomocniczą, natomiast autorytatywna lista siedmiu przebiegów publikacyjnych znajduje się w manifeście.
-
-## Odtworzenie analiz
-
-```bash
-. .venv/bin/activate
-python experiment_validation/scripts/analyze_stats.py
-python experiment_validation/scripts/analyze_extras.py
-python experiment_validation/scripts/make_figures.py
-python experiment_validation/scripts/make_repro_manifest.py
-```
-
-Wyniki trafiają do `analysis/`. `analyze_stats.py` tworzy główne statystyki i testy, `analyze_extras.py` generuje kontrole długości, regresję, dane jakościowe i tabele pomocnicze, a `make_figures.py` generuje fragmenty TikZ/PGFPlots wczytywane przez manuskrypt.
-
-## Baseline'y śladu i obrony
-
-Badanie używa topic-balanced subsetu po 30 promptów dla Qwen2.5-1.5B i Llama-3.2-3B. W repozytorium znajduje się 60 odpowiadających im surowych logów; pozostałe logi runtime są ignorowane.
-
-```bash
-. .venv/bin/activate
-HF_HUB_OFFLINE=1 python experiment_validation/scripts/trace_baselines.py \
-  --per-topic 2 --samples-per-segment 3 --max-sentences 3
-
-HF_HUB_OFFLINE=1 python experiment_validation/scripts/defense_eval.py \
-  --per-topic 2 --samples-per-segment 3 --max-sentences 3
-```
-
-Baseline'y porównują ślad rzeczywisty z sekwencją przetasowaną, stałą i pochodzącą z innego promptu. Obrony obejmują `bucket_8`, `pad_32`, `batch_2`, `batch_4` i `rand_pad_8`. Są oceniane przeciwko zamrożonemu, nieadaptacyjnemu rekonstruktorowi.
-
-## Wzmocniony protokół: wspólne seedy i adaptacyjny atakujący
-
-`scripts/robustness_eval.py` odtwarza zapisane ślady pięć razy, z tym samym
-seedem dekodera dla wszystkich warunków danego promptu. Domyślnie używa po dwa
-prompty z każdego z 15 tematów jako zbiór testowy (30 na model), a pozostałe
-270 jako rozłączny zbiór kalibracyjny. Adaptacyjny atakujący uczy się na nim
-empirycznego odwzorowania MAP ze śladu po obronie do długości czystych; dla
-batchingu uczy się także rozkładów krotek o danej sumie. Nie jest to ponowne
-trenowanie T5 i tak właśnie należy go opisywać w artykule.
-
-Najpierw można sprawdzić plan bez ładowania modeli:
-
-```bash
-python experiment_validation/scripts/robustness_eval.py --plan
-```
-
-Pełny przebieg dwóch modeli pilotażowych:
-
-```bash
-HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 \
-python experiment_validation/scripts/robustness_eval.py
-```
-
-Domyślne `--max-sentences 0` oznacza rekonstrukcję wszystkich dostępnych
-segmentów. Powstają `analysis/robustness_samples.jsonl`, konfiguracja z
-identyfikatorem protokołu oraz `analysis/robustness_eval.json`. Tabela LaTeX
-jest generowana dopiero wtedy, gdy wszystkie oczekiwane komórki są kompletne.
-Wznowienie jest bezpieczne, ponieważ klucz obejmuje model, prompt, obronę,
-wariant atakującego i seed. Opcja `--overwrite` jest celowa i usuwa wyłącznie
-wskazany plik wynikowy.
-
-## Pełne odpowiedzi
-
-Nowa kampania powinna generować do EOS z wyższym bezpiecznikiem długości i
-rekonstruować wszystkie segmenty. `app.py` zapisuje teraz `finish_reason` oraz
-`response_complete`; token EOS nie jest włączany do tekstu ani śladu. Dla
-porównywalności z pierwotną kampanią można zachować format promptu `legacy`:
-
-```bash
-python experiment_validation/scripts/run_model_matrix.py \
-  --models-file experiment_validation/models_publication.json \
-  --prompts 300 \
-  --max-new-tokens 512 \
-  --samples-per-segment 3 \
-  --max-sentences 0 \
-  --num-first-candidates 3 \
-  --prompt-format legacy \
-  --reconstruction-seed 20260706 \
-  --hf-offline
-```
-
-Wyniki pełnych odpowiedzi należy analizować z filtrem `--complete-only`; skrypt
-przerwie pracę, jeśli w którymkolwiek temacie zabraknie wymaganej liczby
-odpowiedzi zakończonych EOS. Katalogi nowych przebiegów podaje się jawnie, np.:
-
-```bash
-python experiment_validation/scripts/robustness_eval.py \
-  --run-spec qwen_full=run_YYYYMMDD_HHMMSS_qwen_1_5b_full \
-  --run-spec llama_full=run_YYYYMMDD_HHMMSS_llama_3_2_3b_full \
-  --complete-only
-```
-
-Nie należy nazywać odpowiedzi „pełną” wyłącznie dlatego, że zwiększono limit:
-do analizy complete-only kwalifikuje ją dopiero `finish_reason=eos`.
-
-## Reprodukowalność
-
-- `analysis/REPRODUCIBILITY.md` — środowisko, protokół i polecenia,
-- `analysis/repro_manifest.json` — pełne sumy SHA-256,
-- `analysis/model_stats.json` — finalne wyniki modeli,
-- `analysis/pairwise_tests.json` — 21 porównań modeli,
-- `analysis/defense_eval.json` — wyniki obron,
-- `analysis/trace_baselines.json` — baseline'y informacji w śladzie.
-
-Ograniczenia interpretacyjne i pełne wyniki opisuje `../report_LLeakM.md` oraz manuskrypt `../article1/template.tex`. Publiczne repozytorium: https://github.com/jackaugustyn/LLeakM
+Repozytorium projektu: https://github.com/jackaugustyn/LLeakM. Publiczna archiwizacja bieżącego pakietu nadal oczekuje na wykonanie; obecność repozytorium nie potwierdza udostępnienia tej wersji. Zgoda autorów na końcowy PDF i pakiet oraz aktualne oficjalne wymagania czasopisma pozostają odrębnymi pozycjami w [liście zgłoszeniowej](../article1/SUBMISSION_CHECKLIST.md).

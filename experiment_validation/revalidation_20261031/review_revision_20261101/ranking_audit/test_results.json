@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "experiment_validation/revalidation_20261031/review_revision_20261101/ranking_audit",
+    "-p",
+    "test_eos_scoring.py",
+    "-v"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "test_first_of_multiple_eos_and_pad_equals_eos (test_eos_scoring.EOSScoringTests) ... ok\ntest_in_sequence_nonfinite_is_not_hidden (test_eos_scoring.EOSScoringTests) ... ok\ntest_no_eos_retains_full_generated_suffix (test_eos_scoring.EOSScoringTests) ... ok\ntest_pad_before_eos_is_not_removed (test_eos_scoring.EOSScoringTests) ... ok\ntest_reviewer_counterexample_actual_transformers_scores (test_eos_scoring.EOSScoringTests) ... ok\ntest_shape_failure (test_eos_scoring.EOSScoringTests) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.003s\n\nOK\n"
+}

@@ -1,0 +1,325 @@
+{
+  "user_authorization": "wznawiaj obliczenia",
+  "purpose": "Complete repaired-input reconstructions, secondary studies and fresh reference validation; do not publish partial results",
+  "source_sha256": {
+    "experiment_validation/revalidation_20261031/inference/rerun_canonical.py": "503d164ff73b41948286158df26649e46a66fddee9d157a43a15e38b547da663",
+    "experiment_validation/revalidation_20261031/inference_validation/verify_inference.py": "f826fccf005f866514126fb442989380a770a4e63c053d0bfb0f357721a8407f",
+    "experiment_validation/revalidation_20261031/fresh_references/generate_fresh.py": "cb661644adffe2ea1654552f53b09439b80da68494f24bd273e742c4200a119a",
+    "experiment_validation/revalidation_20261031/secondary/rerun_secondary.py": "3508b2a82e948de53f0355f7cd64433a6d494ad929b224a9747951f1cc117621",
+    "experiment_validation/revalidation_20261031/run_queue.py": "a8c10e48a573747ca8f2ad7964e0f7cca4f263574070b24aaf8f63cc500af1e6",
+    "experiment_validation/revalidation_20261031/collect_completed.py": "11c380219e97f2598fbbd0b10abc74a8cfba6db3d6255473f8efb02fe0ff1319",
+    "experiment_validation/revalidation_20261031/fresh_references/check_cache.py": "a8a8b3e9aa0871ae0c4a330dfa68293e744a870593d55848e518acc76f5b3a4d",
+    "experiment_validation/revalidation_20261031/fresh_references/models_pinned.json": "fb0141352893c3c95e7b8dbcea54f17423ffe40f5865097e4d89bef752bbdc2e",
+    "experiment_validation/revalidation_20261031/statistics/recompute_all_statistics.py": "f523513dce026e5699e86141274f60fce7b68cb7ee5c7ff9696a17495f43d54d",
+    "app.py": "f56e8d1d545b9103a5b0047e507a09c71163a61e9448595883588d0af0fe8a50",
+    "weiss_reconstruction.py": "55ebb745e9cafd08d89931f17ef26a5858ff8884c526e16aa2b0201784c83dc1",
+    "experiment_validation/scripts/robustness_eval.py": "61aa4c5780224fede418ce15b5801ae7966184026d5895ffddb53d4c0295de52",
+    "experiment_validation/scripts/run_validation.py": "eec9d4e69b0971d32a0b9fc2141047358ea9f821665ee97c9ddaaef8548adfc4",
+    "experiment_validation/scripts/analyze_stats.py": "d25ab412178726c9edb7d0267586d306fe162bf5f0e35a96fddd951f8efa1f1f",
+    "experiment_validation/scripts/generate_prompts.py": "9c88e78ff8c29f3b224746a5ed1a7a0d88b389927aa6d2503fc1cb1f04f8d66e"
+  },
+  "monitor_interval_seconds": 15,
+  "stages": [
+    {
+      "name": "primary_t5",
+      "attach_pid": 187555,
+      "process_token": "rerun_canonical.py --output experiment_validation/revalidation_20261031/inference/cuda_full --device cuda",
+      "timeout_hours": 24,
+      "progress_json": "experiment_validation/revalidation_20261031/inference/cuda_full/status.json",
+      "success_json": [
+        {
+          "path": "experiment_validation/revalidation_20261031/inference/cuda_full/status.json",
+          "equals": {
+            "complete": true,
+            "status": "completed",
+            "completed": 2100
+          }
+        }
+      ]
+    },
+    {
+      "name": "verify_primary",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/revalidation_20261031/inference_validation/verify_inference.py",
+        "--run",
+        "experiment_validation/revalidation_20261031/inference/cuda_full",
+        "--input",
+        "experiment_validation/revalidation_20261031/collection/canonical_traces.jsonl",
+        "--output",
+        "experiment_validation/revalidation_20261031/inference_validation/cuda_full"
+      ],
+      "timeout_hours": 2,
+      "success_json": [
+        {
+          "path": "experiment_validation/revalidation_20261031/inference_validation/cuda_full/verification.json",
+          "equals": {
+            "complete": true,
+            "verification_status": "VERIFIED_COMPLETE"
+          }
+        },
+        {
+          "path": "experiment_validation/revalidation_20261031/inference_validation/cuda_full/statistics.json",
+          "equals": {
+            "complete": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "secondary_t5",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/revalidation_20261031/secondary/rerun_secondary.py",
+        "--output",
+        "experiment_validation/revalidation_20261031/secondary/cuda_full",
+        "--device",
+        "cuda",
+        "--require-complete"
+      ],
+      "timeout_hours": 24,
+      "success_json": [
+        {
+          "path": "experiment_validation/revalidation_20261031/secondary/cuda_full/status.json",
+          "equals": {
+            "complete": true,
+            "status": "completed",
+            "completed": 3900
+          }
+        },
+        {
+          "path": "experiment_validation/revalidation_20261031/secondary/cuda_full/summary.json",
+          "equals": {
+            "complete": true,
+            "n": 3900
+          }
+        }
+      ],
+      "progress_json": "experiment_validation/revalidation_20261031/secondary/cuda_full/status.json"
+    },
+    {
+      "name": "verify_secondary",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/revalidation_20261031/secondary/rerun_secondary.py",
+        "--output",
+        "experiment_validation/revalidation_20261031/secondary/cuda_full",
+        "--device",
+        "cuda",
+        "--aggregate-only",
+        "--require-complete"
+      ],
+      "timeout_hours": 2,
+      "success_json": [
+        {
+          "path": "experiment_validation/revalidation_20261031/secondary/cuda_full/status.json",
+          "equals": {
+            "complete": true,
+            "status": "completed",
+            "completed": 3900
+          }
+        },
+        {
+          "path": "experiment_validation/revalidation_20261031/secondary/cuda_full/summary.json",
+          "equals": {
+            "complete": true,
+            "n": 3900
+          }
+        }
+      ]
+    },
+    {
+      "name": "verify_victim_weights",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/revalidation_20261031/fresh_references/check_cache.py",
+        "--download"
+      ],
+      "timeout_hours": 6,
+      "success_json": [
+        {
+          "path": "experiment_validation/revalidation_20261031/fresh_references/cache_validation.json",
+          "equals": {
+            "complete": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "generate_tinyllama",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/revalidation_20261031/fresh_references/generate_fresh.py",
+        "--label",
+        "tinyllama_1_1b",
+        "--output",
+        "experiment_validation/revalidation_20261031/fresh_references/tinyllama"
+      ],
+      "timeout_hours": 24,
+      "success_json": [
+        {
+          "path": "experiment_validation/revalidation_20261031/fresh_references/tinyllama/status.json",
+          "equals": {
+            "complete": true,
+            "status": "completed",
+            "completed": 300
+          }
+        }
+      ],
+      "progress_json": "experiment_validation/revalidation_20261031/fresh_references/tinyllama/status.json"
+    },
+    {
+      "name": "reconstruct_tinyllama",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/revalidation_20261031/inference/rerun_canonical.py",
+        "--input",
+        "experiment_validation/revalidation_20261031/fresh_references/tinyllama/canonical_traces.jsonl",
+        "--output",
+        "experiment_validation/revalidation_20261031/inference/fresh_tinyllama_cuda",
+        "--device",
+        "cuda"
+      ],
+      "timeout_hours": 24,
+      "success_json": [
+        {
+          "path": "experiment_validation/revalidation_20261031/inference/fresh_tinyllama_cuda/status.json",
+          "equals": {
+            "complete": true,
+            "status": "completed",
+            "completed": 300
+          }
+        }
+      ],
+      "progress_json": "experiment_validation/revalidation_20261031/inference/fresh_tinyllama_cuda/status.json"
+    },
+    {
+      "name": "verify_tinyllama",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/revalidation_20261031/inference_validation/verify_inference.py",
+        "--run",
+        "experiment_validation/revalidation_20261031/inference/fresh_tinyllama_cuda",
+        "--input",
+        "experiment_validation/revalidation_20261031/fresh_references/tinyllama/canonical_traces.jsonl",
+        "--output",
+        "experiment_validation/revalidation_20261031/inference_validation/fresh_tinyllama_cuda"
+      ],
+      "timeout_hours": 2,
+      "success_json": [
+        {
+          "path": "experiment_validation/revalidation_20261031/inference_validation/fresh_tinyllama_cuda/verification.json",
+          "equals": {
+            "complete": true,
+            "verification_status": "VERIFIED_COMPLETE"
+          }
+        },
+        {
+          "path": "experiment_validation/revalidation_20261031/inference_validation/fresh_tinyllama_cuda/statistics.json",
+          "equals": {
+            "complete": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "generate_phi",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/revalidation_20261031/fresh_references/generate_fresh.py",
+        "--label",
+        "phi_3_5_mini",
+        "--output",
+        "experiment_validation/revalidation_20261031/fresh_references/phi",
+        "--placement",
+        "auto_offload",
+        "--gpu-memory-gib",
+        "6",
+        "--cpu-memory-gib",
+        "5"
+      ],
+      "timeout_hours": 24,
+      "success_json": [
+        {
+          "path": "experiment_validation/revalidation_20261031/fresh_references/phi/status.json",
+          "equals": {
+            "complete": true,
+            "status": "completed",
+            "completed": 300
+          }
+        }
+      ],
+      "progress_json": "experiment_validation/revalidation_20261031/fresh_references/phi/status.json"
+    },
+    {
+      "name": "reconstruct_phi",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/revalidation_20261031/inference/rerun_canonical.py",
+        "--input",
+        "experiment_validation/revalidation_20261031/fresh_references/phi/canonical_traces.jsonl",
+        "--output",
+        "experiment_validation/revalidation_20261031/inference/fresh_phi_cuda",
+        "--device",
+        "cuda"
+      ],
+      "timeout_hours": 24,
+      "success_json": [
+        {
+          "path": "experiment_validation/revalidation_20261031/inference/fresh_phi_cuda/status.json",
+          "equals": {
+            "complete": true,
+            "status": "completed",
+            "completed": 300
+          }
+        }
+      ],
+      "progress_json": "experiment_validation/revalidation_20261031/inference/fresh_phi_cuda/status.json"
+    },
+    {
+      "name": "verify_phi",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/revalidation_20261031/inference_validation/verify_inference.py",
+        "--run",
+        "experiment_validation/revalidation_20261031/inference/fresh_phi_cuda",
+        "--input",
+        "experiment_validation/revalidation_20261031/fresh_references/phi/canonical_traces.jsonl",
+        "--output",
+        "experiment_validation/revalidation_20261031/inference_validation/fresh_phi_cuda"
+      ],
+      "timeout_hours": 2,
+      "success_json": [
+        {
+          "path": "experiment_validation/revalidation_20261031/inference_validation/fresh_phi_cuda/verification.json",
+          "equals": {
+            "complete": true,
+            "verification_status": "VERIFIED_COMPLETE"
+          }
+        },
+        {
+          "path": "experiment_validation/revalidation_20261031/inference_validation/fresh_phi_cuda/statistics.json",
+          "equals": {
+            "complete": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "collect_verified_results",
+      "command": [
+        "/usr/bin/python3",
+        "experiment_validation/revalidation_20261031/collect_completed.py"
+      ],
+      "timeout_hours": 2,
+      "success_json": [
+        {
+          "path": "experiment_validation/revalidation_20261031/completed_results.json",
+          "equals": {
+            "complete": true
+          }
+        }
+      ]
+    }
+  ]
+}

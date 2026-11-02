@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "scope": "Verify new calculation method reproduces earlier paired rendering intervals on earlier data; no old output modified.",
+  "checks": [
+    {
+      "model": "tinyllama_1_1b",
+      "interval": "delta_phi_ci_paired_prompt",
+      "maximum_difference": 0.0
+    },
+    {
+      "model": "tinyllama_1_1b",
+      "interval": "delta_phi_ci_paired_scenario",
+      "maximum_difference": 0.0
+    },
+    {
+      "model": "phi_3_5_mini",
+      "interval": "delta_phi_ci_paired_prompt",
+      "maximum_difference": 0.0
+    },
+    {
+      "model": "phi_3_5_mini",
+      "interval": "delta_phi_ci_paired_scenario",
+      "maximum_difference": 0.0
+    }
+  ]
+}

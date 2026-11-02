@@ -1,0 +1,22 @@
+{
+  "focused_tests_passed": 4,
+  "source_fixed_primary_independent_p_values_match": true,
+  "controls_aggregation_resumed_without_inference": true,
+  "controls_all_aggregate_values_exact_match": true,
+  "n_primary_pairs": 21,
+  "significant_primary_pairs": 17,
+  "source_files_after": [
+    {
+      "path": "experiment_validation/scripts/analyze_stats.py",
+      "sha256": "d25ab412178726c9edb7d0267586d306fe162bf5f0e35a96fddd951f8efa1f1f"
+    },
+    {
+      "path": "experiment_validation/scripts/defense_eval.py",
+      "sha256": "dfd890953539cc92aa7b9e7fd215100a1131df28b01c7c37fae644d89be53a04"
+    },
+    {
+      "path": "experiment_validation/scripts/trace_baselines.py",
+      "sha256": "1c285702c781678a76bacef0c654a61048c3b5c6d220e50b99f9af98b92b1c4e"
+    }
+  ]
+}

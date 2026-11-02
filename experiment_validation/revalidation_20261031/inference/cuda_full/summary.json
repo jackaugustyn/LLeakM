@@ -1,0 +1,37 @@
+{
+  "complete": true,
+  "n": 2100,
+  "expected": 2100,
+  "diagnostic_series_included": true,
+  "scope": "Verified logged emitted-text lengths; ordinary reference decoding remains unverified.",
+  "models": {
+    "gemma_2_2b": {
+      "n": 300,
+      "mean_phi": 0.48200127495503986
+    },
+    "llama_3_2_3b": {
+      "n": 300,
+      "mean_phi": 0.5146207898631088
+    },
+    "phi_1_5": {
+      "n": 300,
+      "mean_phi": 0.5163679150776324
+    },
+    "phi_3_5_mini": {
+      "n": 300,
+      "mean_phi": 0.1210169458903263
+    },
+    "qwen_1_5b": {
+      "n": 300,
+      "mean_phi": 0.5354634318003038
+    },
+    "qwen_3b": {
+      "n": 300,
+      "mean_phi": 0.5251430185271787
+    },
+    "tinyllama_1_1b": {
+      "n": 300,
+      "mean_phi": 0.07915910893968084
+    }
+  }
+}

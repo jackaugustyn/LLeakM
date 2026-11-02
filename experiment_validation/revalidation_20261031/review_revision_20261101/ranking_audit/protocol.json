@@ -1,0 +1,45 @@
+{
+  "schema": "bounded-first-segment-selector-audit/1",
+  "created_utc": "2026-11-01T17:35:42.849040+00:00",
+  "scope": "24 first-segment cases selected by input-length extrema and pilot condition before inference; 72 candidates. No estimate of full-campaign prevalence or full-response effect.",
+  "selection": "Two input-length extrema per seven archived and two fresh cohorts; six defense-pilot conditions, alternating models, lowest prompt index. Extremal ties use lowest/highest idx.",
+  "inputs_sha256": "4aa48375c69f2fec63e12c22c9df3d7fd6238100e5ffb27e7d769ac80c10f557",
+  "script_sha256": "d4e312cf5a652735b75b7b64442a991e842e5c66a89a0b1f174ff0491f638ba3",
+  "eos_scoring_sha256": "431d6b653a9d8e0f8b576c74969d515fd9674a155172145e67cdc2777fc712f9",
+  "reconstructor_sha256": "55ebb745e9cafd08d89931f17ef26a5858ff8884c526e16aa2b0201784c83dc1",
+  "source_sha256": {
+    "experiment_validation/revalidation_20261031/inference/cuda_full/protocol.json": "677b1e51669eae342284f0be219e65ca6adc619855cb32aeefa59b19034ae59d",
+    "experiment_validation/revalidation_20261031/inference/cuda_full/samples.jsonl": "a819e511b0a8fe8dcacf86f6ede59b676a9d572ec7f31c715b253da071e6c278",
+    "experiment_validation/revalidation_20261031/inference/fresh_phi_cuda/protocol.json": "197a8305bfda42c384dfc12842f6bfb6eeaecd717071dcc59e4a2228298a939b",
+    "experiment_validation/revalidation_20261031/inference/fresh_phi_cuda/samples.jsonl": "d19fb66b3d9f5dc908b30e3a580965318fac2d7de59c07ef129645ae75513d5b",
+    "experiment_validation/revalidation_20261031/inference/fresh_tinyllama_cuda/protocol.json": "f2ba4681c106b4d4a6bd2da1cd8264f76a65c81e57c312e0ab2e17367225d50c",
+    "experiment_validation/revalidation_20261031/inference/fresh_tinyllama_cuda/samples.jsonl": "97313b55f0d4a68e113b8c778ccd4b7006f64595a03edd481c1cb26cac5e37c8",
+    "experiment_validation/revalidation_20261031/secondary/cuda_full/protocol.json": "6ee24aa1b43ce8207994e4f9019c60c2e52741428ac9df3294f96902a843610e",
+    "experiment_validation/revalidation_20261031/secondary/cuda_full/samples.jsonl": "157c660335aefdd706d5d9ef38f2656977f35d770f6da86abe4f6f9b9e0e86b2"
+  },
+  "model_id": "royweiss1/T5_FirstSentences",
+  "revision": "057cf090b719f5cf89da504babd2122d404e0953",
+  "checkpoint_file_sha256": {
+    "pytorch_model.bin": "84304d4342ef05cd54cf59c409f8dd25d33db9f15bb8122f50852302723b5321",
+    "tokenizer.json": "8fba3abd7afea3d3f1af811afc4f24f17607f4e80f71a64387a88ace20a23c3b",
+    "config.json": "7279b3e7f49fecf047e666db56b181e0f3bfdd404fd734f075fa94fa11e0e6cb"
+  },
+  "torch": "2.5.1+cu124",
+  "transformers": "4.46.3",
+  "cuda": "12.4",
+  "gpu": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+  "threads": 4,
+  "precision": "float32",
+  "candidate_count": 3,
+  "max_length": 80,
+  "generation_settings": {
+    "no_repeat_ngram_size": 2,
+    "do_sample": true,
+    "top_k": 50,
+    "temperature": 1.0
+  },
+  "score_meaning": "Normalized processed sampling distributions from compute_transition_scores; these include top-k and no-repeat-ngram processing. All selected-token transition scores are retained; full-vocabulary logits are not stored.",
+  "eos_rule": "Align transition columns to the generated sequence suffix; include the first EOS, exclude every subsequent token; retain all steps when EOS is absent.",
+  "nonfinite_encoding": "Nonfinite values use strings -Infinity, Infinity, NaN; no numeric sentinel.",
+  "source_replay_check": "Actual frozen _sample_and_rank is called unchanged; its generated candidates and transitions are intercepted, and selected text is checked against saved first_prediction."
+}

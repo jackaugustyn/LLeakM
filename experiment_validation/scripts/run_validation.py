@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import math
 import re
@@ -9,7 +10,7 @@ import statistics
 import sys
 import time
 from collections import Counter, defaultdict, deque
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass, asdict, field
 from datetime import datetime
 from pathlib import Path
 from typing import Iterable
@@ -23,6 +24,8 @@ if str(ROOT_DIR) not in sys.path:
 from weiss_reconstruction import reconstruct_from_frame_lengths
 
 WORD_RE = re.compile(r"[A-Za-z0-9']+")
+OBSERVATION_SOURCE = "validated-log-payload-byte-lengths-v1"
+DONE_WRITE = b"data: [DONE]\n\n"
 
 
 def tokenize_words(text: str) -> list[str]:
@@ -194,6 +197,12 @@ class SampleResult:
     first_ed_norm: float
     first_rouge1_precision: float
     first_rougeL_precision: float
+    # Defaults permit reading old records, but resuming them into a new
+    # observation contract is explicitly rejected below.
+    observation_source: str = "legacy_unverified"
+    reconstruction_input_token_lengths: list[int] = field(default_factory=list)
+    generation_log_sha256: str = ""
+    reference_detokenization_policy: str = "legacy_independent_token_decode"
 
 
 def load_prompts(prompts_dir: Path) -> list[PromptCase]:
@@ -223,8 +232,64 @@ def load_prompts(prompts_dir: Path) -> list[PromptCase]:
     return ordered
 
 
+def validated_log_frame_lengths(
+    raw_log: dict, *, run_id: str | None = None, prompt: str | None = None,
+    streamed_bytes: int | None = None,
+) -> list[int]:
+    """Validate the instrumented payload-length oracle and its stored reference.
+
+    The raw SSE-like serialization is ambiguous when a token contains newlines
+    or a framing sentinel. We therefore use the run-matched generation log,
+    not inferred network event boundaries. A decoded HTTP body-total check detects
+    incomplete/mismatched responses but is not an event-boundary measurement.
+    Empty emitted fragments are valid and retain an eight-byte write.
+    """
+    if run_id is not None and raw_log.get("run_id") != run_id:
+        raise ValueError("Generation-log run_id does not match the response")
+    if prompt is not None and raw_log.get("prompt") != prompt:
+        raise ValueError("Generation-log prompt does not match the request")
+    steps = raw_log.get("steps")
+    if not isinstance(steps, list):
+        raise ValueError("Generation log lacks a steps list")
+    fragments: list[str] = []
+    frame_lens: list[int] = []
+    for index, step in enumerate(steps):
+        if not isinstance(step, dict) or type(step.get("step")) is not int or step["step"] != index:
+            raise ValueError(f"Non-contiguous generation step at index {index}")
+        fragment = step.get("token_text")
+        if not isinstance(fragment, str):
+            raise ValueError(f"Missing text at generation step {index}")
+        payload_len = len(fragment.encode("utf-8"))
+        write_len = payload_len + 8
+        if type(step.get("token_utf8_len")) is not int or step["token_utf8_len"] != payload_len:
+            raise ValueError(f"Incorrect token byte length at generation step {index}")
+        if type(step.get("sse_frame_utf8_len")) is not int or step["sse_frame_utf8_len"] != write_len:
+            raise ValueError(f"Incorrect serialized-write length at generation step {index}")
+        fragments.append(fragment)
+        frame_lens.append(write_len)
+    response_text = "".join(fragments)
+    if raw_log.get("response_text") != response_text:
+        raise ValueError("Stored reference does not equal concatenated emitted fragments")
+    if type(raw_log.get("response_utf8_len")) is not int or raw_log["response_utf8_len"] != len(response_text.encode("utf-8")):
+        raise ValueError("Stored response byte length does not match emitted text")
+    if type(raw_log.get("generated_tokens")) is not int or raw_log["generated_tokens"] != len(steps):
+        raise ValueError("Generated-token count does not match the step count")
+    frame_lens.append(len(DONE_WRITE))
+    if streamed_bytes is not None and streamed_bytes != sum(frame_lens):
+        raise ValueError("Received byte count does not match the complete logged stream")
+    return frame_lens
+
+
 def stream_frame_lengths(base_url: str, prompt: str, max_new_tokens: int, temperature: float,
-                         top_p: float, timeout: int, prompt_format: str = "legacy") -> tuple[list[int], str]:
+                         top_p: float, timeout: int, prompt_format: str = "legacy",
+                         log_dir: Path | str = "./logs") -> tuple[list[int], str]:
+    """Return validated *logged* write lengths, including the final DONE write.
+
+    Kept under the original function name for existing callers. This function
+    requires the local instrumented run log; it does not parse passive SSE
+    events. In particular, it never drops CR/LF bytes or stops at payload text
+    that happens to look like a terminal event.
+    """
     params = {
         "prompt": prompt,
         "max_new_tokens": max_new_tokens,
@@ -233,16 +298,18 @@ def stream_frame_lengths(base_url: str, prompt: str, max_new_tokens: int, temper
         "prompt_format": prompt_format,
     }
 
-    frame_lens: list[int] = []
+    streamed_bytes = 0
     with requests.get(base_url, params=params, stream=True, timeout=timeout) as resp:
         resp.raise_for_status()
         run_id = resp.headers.get("X-Run-Id", "")
-        for raw_line in resp.iter_lines(decode_unicode=False):
-            if not raw_line:
-                continue
-            frame_lens.append(len(raw_line + b"\n\n"))
-            if raw_line.startswith(b"data: [DONE]"):
-                break
+        if not run_id or not re.fullmatch(r"[A-Za-z0-9_-]+", run_id):
+            raise RuntimeError("Missing or invalid response header X-Run-Id")
+        for chunk in resp.iter_content(chunk_size=65536):
+            streamed_bytes += len(chunk)
+    raw_log = wait_for_log(log_dir=Path(log_dir), run_id=run_id)
+    frame_lens = validated_log_frame_lengths(
+        raw_log, run_id=run_id, prompt=prompt, streamed_bytes=streamed_bytes,
+    )
     return frame_lens, run_id
 
 
@@ -254,8 +321,14 @@ def wait_for_log(log_dir: Path, run_id: str, timeout_s: float = 10.0) -> dict:
     deadline = time.time() + timeout_s
     while time.time() < deadline:
         if path.exists() and path.stat().st_size > 0:
-            with path.open(encoding="utf-8") as f:
-                return json.load(f)
+            try:
+                with path.open(encoding="utf-8") as f:
+                    return json.load(f)
+            except json.JSONDecodeError:
+                # Older server versions write the log directly after the
+                # stream ends. Wait for that write to finish rather than
+                # accepting an incomplete record or racing json.load().
+                pass
         time.sleep(0.05)
     raise FileNotFoundError(f"Log for run_id={run_id} not found within {timeout_s}s: {path}")
 
@@ -427,7 +500,10 @@ def main() -> None:
         "--reconstruction-seed", type=int, default=20260706,
         help="base decoder seed; the per-prompt seed is base + 1009*prompt index",
     )
-    parser.add_argument("--semantic-backend", choices=["auto", "minilm", "tfidf"], default="auto")
+    parser.add_argument(
+        "--semantic-backend", choices=["auto", "minilm", "tfidf"], default="tfidf",
+        help="default tfidf is the historical CLI name for unweighted term-frequency cosine; auto/minilm are different optional metrics",
+    )
     parser.add_argument("--label", default="", help="Optional label appended to output run directory name")
     parser.add_argument("--output-dir", default="", help="fixed run directory (required for reliable resume)")
     parser.add_argument("--resume", action="store_true", help="resume a checkpointed --output-dir")
@@ -458,6 +534,8 @@ def main() -> None:
                 if line.strip():
                     rows.append(SampleResult(**json.loads(line)))
     completed_indices = {row.idx for row in rows}
+    if args.resume and rows and any(row.observation_source != OBSERVATION_SOURCE for row in rows):
+        raise SystemExit("Cannot resume legacy/unverified rows into the validated log-oracle protocol")
 
     requested_config = {
         "base_url": args.base_url,
@@ -474,10 +552,21 @@ def main() -> None:
         "reconstruction_seed_base": args.reconstruction_seed,
         "semantic_backend_requested": args.semantic_backend,
         "label": args.label,
+        "observation_source": OBSERVATION_SOURCE,
+        "observation_scope": "instrumented logged payload lengths; no passive event extraction",
+        "source_sha256": {
+            name: hashlib.sha256((ROOT_DIR / name).read_bytes()).hexdigest()
+            for name in ("app.py", "weiss_reconstruction.py", "experiment_validation/scripts/run_validation.py")
+        },
+        "source_hash_scope": "current local files; served harness source is independently recorded in the generation log when available",
     }
     config_path = out_dir / "config.json"
     if args.resume and config_path.exists():
         previous = json.loads(config_path.read_text(encoding="utf-8"))
+        if previous.get("observation_source") != OBSERVATION_SOURCE or any(
+            row.observation_source != OBSERVATION_SOURCE for row in rows
+        ):
+            raise SystemExit("Cannot resume legacy/unverified observations into the validated log-oracle protocol")
         mismatches = {
             key: (previous.get(key), value)
             for key, value in requested_config.items()
@@ -503,9 +592,16 @@ def main() -> None:
             top_p=args.top_p,
             timeout=args.timeout,
             prompt_format=args.prompt_format,
+            log_dir=log_dir,
         )
 
-        raw_log = wait_for_log(log_dir=log_dir, run_id=run_id)
+        wait_for_log(log_dir=log_dir, run_id=run_id)
+        log_bytes = (log_dir / f"{run_id}.json").read_bytes()
+        raw_log = json.loads(log_bytes)
+        if frame_lens != validated_log_frame_lengths(raw_log, run_id=run_id, prompt=case.prompt):
+            raise RuntimeError("Generation log changed between collection and reconstruction")
+        input_token_lengths = [length - 8 for length in frame_lens[:-1]]
+        log_sha256 = hashlib.sha256(log_bytes).hexdigest()
         response_text = raw_log.get("response_text", "")
         victim_model_id = raw_log.get("model_id", "")
         finish_reason = raw_log.get(
@@ -567,6 +663,10 @@ def main() -> None:
             first_ed_norm=fed_norm,
             first_rouge1_precision=fr1_p,
             first_rougeL_precision=frl_p,
+            observation_source=OBSERVATION_SOURCE,
+            reconstruction_input_token_lengths=input_token_lengths,
+            generation_log_sha256=log_sha256,
+            reference_detokenization_policy=raw_log.get("detokenization_policy", "legacy_independent_token_decode"),
         )
         rows.append(row)
         with sample_path.open("a", encoding="utf-8") as handle:

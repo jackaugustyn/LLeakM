@@ -1,0 +1,424 @@
+--- before/article1/COVER_LETTER.md
++++ article1/COVER_LETTER.md
+@@ -2,17 +2,15 @@
+ 
+ Please consider our manuscript, “Lexical Reconstruction from Instrumented LLM Token-Length Traces: Reference Validation and Defense Evaluation”, for publication as an **Article** in *Electronics* (ISSN 2079-9292), Section **Artificial Intelligence**, Special Issue **Trustworthy AI for Large Models and Security Systems**.
+ 
+-**Contribution and evidence scope.** The manuscript evaluates a fixed Weiss-style T5 reconstructor in an instrumented length-oracle setting. A completed rerun reconstructs 2100 archived responses from verified logged payload lengths, repeats 240 trace-control and 360 defense trials, and evaluates 3300 first-segment reconstructions with five decoder seeds and an empirical MAP inverse. An additional 600 newly generated TinyLlama and Phi-3.5-mini responses have recorded token IDs and verified full-sequence decoding, followed by 600 T5 reconstructions. All recorded inputs, outputs and metrics passed completeness and integrity checks.
++The manuscript evaluates a fixed Weiss-style T5 reconstructor using instrumented application-layer payload lengths. The completed EOS-bounded campaign comprises 6600 reconstructions: 2100 archived-reference responses from seven models, 600 responses from separate verified-reference cohorts, 240 trace-control trials, 360 defense trials, and 3300 first-segment reconstructions with five decoder seeds and an empirical MAP inverse. The 600 verified-reference responses and their token IDs were collected previously; this campaign reruns reconstruction on frozen inputs and does not generate new victim responses. Candidate selection sums sampling-processed transition scores through the first EOS, inclusive, and excludes later padding positions. All current inputs, candidate selections, outputs and metrics passed the campaign integrity checks.
+ 
+-The results distinguish three sources of evidence: reconstruction on retained references, two-model pilot and MAP experiments, and fresh responses with verified decoding. A fixed-ID replay reproduces all 600 archived emitted texts and length vectors with independent-token decoding, while full-sequence decoding restores word boundaries. New TinyLlama and Phi-3.5-mini mean lexical cosine scores are 0.4352 and 0.5042; their malformed archived reference series remain diagnostic and are not pooled with the fresh results into a seven-model ranking. The rerun supports a narrower trace-control conclusion than the original analysis: three of six control contrasts are significant after Holm correction. Both T5 input and output are capped at 80 tokens, so segmentation and retained encoder coverage remain part of the measured pipeline. The matched rendering comparison retains the T5 code, weights, sampling settings and per-record seeds while changing both the length input and scoring reference. Mean lexical scores increase by 0.3560 for TinyLlama and 0.3831 for Phi-3.5-mini, with paired scenario-bootstrap intervals excluding zero. This joint effect does not separate the input and reference contributions or establish an intrinsic model-vulnerability ranking.
++The five non-diagnostic archived-reference series have mean lexical cosine scores of 0.5092–0.5768. The separate verified-reference means are 0.4677 for TinyLlama and 0.5269 for Phi-3.5-mini. Their independently decoded archived-reference series remain diagnostics and are not pooled with the verified-reference results into a seven-model vulnerability ranking. Within the EOS-bounded campaign, the matched reference-rendering contrast changes mean scores by 0.3845 and 0.3972, respectively; paired scenario-bootstrap intervals exclude zero. The contrast changes both the reconstruction input and scoring reference, so it does not identify their separate contributions.
+ 
+-**Implementation boundary.** The three-candidate results retain the executed selector, which sums sampling-processed transition scores including PAD after EOS. A bounded replay reproduced all 24 saved first-segment predictions; masking post-EOS scores changed the selected text in 18 deliberately selected cases. This audit does not estimate campaign prevalence or corrected full-response performance. The 3300 one-candidate MAP reconstructions bypass that ranking. The manuscript also distinguishes the complete defended trace from the constant retained encoder inputs verified in all 660 `pad_32` records.
++The trace controls support a specific conclusion: shuffled and constant traces reduce the score significantly for both pilot models, whereas cross-prompt contrasts are not significant after Holm correction (four of six contrasts). All ten frozen-attacker defense contrasts are significant, with mean-score reductions of 43.8–89.6% and separately reported realized payload costs. The five-seed MAP study evaluates prompt-disjoint calibration of an inverse length mapping, rather than retraining T5. Both T5 input and output are capped at 80 tokens, and transformations affect segmentation and encoder coverage as well as the observed trace.
+ 
+-**Fit with *Electronics* and the Special Issue.** The Special Issue targets trustworthy large models and security systems. The paper studies a deployment-facing privacy failure mode of LLM assistants: application-layer streaming metadata can encode token lengths even when payload content is encrypted. It therefore belongs with work on the security of large-model systems, side-channel leakage, and practical countermeasures, which are core concerns of *Electronics* and of this Special Issue.
++The study addresses a privacy concern in large-model systems: streaming metadata can expose token lengths even when payload contents are encrypted. The evidence is an instrumented length-oracle experiment; it does not establish extraction of application events from TLS, HTTP/2 or QUIC captures. Lexical overlap does not measure mutual information, semantic disclosure or production attack success. These deployment and measurement boundaries define the paper's contribution to trustworthy large models and security systems.
+ 
+-**Threat model.** The observation is an application-layer payload-length oracle. New inference consumes exact, validated length vectors; the paper also documents the archived line-parser defect and unavailable historical inputs. The experiment does not recover TLS, HTTP/2 or QUIC event boundaries from network captures. Lexical overlap does not measure mutual information, semantic disclosure or production attack success. Transport-layer extraction and end-to-end attacker retraining remain separate evaluations.
+-
+-The study repository is https://github.com/jackaugustyn/LLeakM. Completed revalidation outputs and their provenance are supplied in `experiment_validation/revalidation_20261031/`; historical artifacts are preserved separately. Frozen Supplementary Data S1 (`LLeakM-S1-20261101-v1`) accompanies the local submission materials with a SHA-256 manifest and a CPU-only verification entry point. Public archival of this completed version remains pending. Paweł Augustynowicz (pawel.augustynowicz@wat.edu.pl) and Szymon Jędrzejczak (szymon.jedrzejczak@wat.edu.pl), Faculty of Cybernetics, Military University of Technology, Warsaw, Poland, are the corresponding authors.
++The study repository is https://github.com/jackaugustyn/LLeakM. Current campaign results and provenance are supplied in `experiment_validation/selector_eos_20261101/`, with the manuscript integration in `article_revision_20261102/`. Local Supplementary Data S2 (`LLeakM-S2-EOS-20261102-v1`) contains the current evidence, a SHA-256 manifest and a CPU-only verification entry point. Public archival of this version remains pending. Paweł Augustynowicz (pawel.augustynowicz@wat.edu.pl) and Szymon Jędrzejczak (szymon.jedrzejczak@wat.edu.pl), Faculty of Cybernetics, Military University of Technology, Warsaw, Poland, are the corresponding authors.
+ 
+ Thank you for considering our manuscript.
+ 
+--- before/article1/SUBMISSION_SYSTEM.md
++++ article1/SUBMISSION_SYSTEM.md
+@@ -1,6 +1,6 @@
+ # MDPI SuSy fields for this manuscript
+ 
+-Draft field list for the intended *Electronics* submission at https://susy.mdpi.com. The target below was confirmed by the author. No submission has been made through this file. Current Special Issue availability, deadline, and journal requirements still require verification; the completed rerun, remaining interpretation limits and package actions are listed in the submission checklist.
++Draft field list for the intended *Electronics* submission at https://susy.mdpi.com. The target below was confirmed by the author. No submission has been made through this file. Current Special Issue availability, deadline, and journal requirements still require verification; the completed EOS-bounded campaign, interpretation limits and package actions are listed in the submission checklist.
+ 
+ ## Journal and article type
+ 
+@@ -24,8 +24,10 @@
+ | Article type (LaTeX) | `\documentclass[electronics,article,submit,pdftex,moreauthors]{Definitions/mdpi}` |
+ | Cover letter | `article1/COVER_LETTER.md` (export to PDF or paste into the cover-letter box) |
+ | Manuscript files | `template.tex`, `references.bib`, `Definitions/`, compiled `template.pdf` |
+-| Data availability | Local Supplementary Data S1 `LLeakM-S1-20261101-v1`, with manifest and verifier; public archival pending. Project: https://github.com/jackaugustyn/LLeakM |
+-| Supplementary file | `article1/supplement/LLeakM-S1-20261101-v1.tar.gz` and its SHA-256 file |
++| Data availability | Local Supplementary Data S2 `LLeakM-S2-EOS-20261102-v1`, with manifest and verifier; public archival pending. Project: https://github.com/jackaugustyn/LLeakM |
++| Supplementary file | `article1/supplement/LLeakM-S2-EOS-20261102-v1.tar.gz` and its SHA-256 file |
++
++The current evidence is in `experiment_validation/selector_eos_20261101/`; manuscript tables, figures and validation are in its `article_revision_20261102/` directory. The 600 verified-reference victim responses and token IDs were collected before this reconstruction campaign.
+ 
+ ## Corresponding authors
+ 
+@@ -36,4 +38,4 @@
+ 
+ ## One-sentence cover-letter summary for the SuSy box (if a short field is required)
+ 
+-Article for the Special Issue “Trustworthy AI for Large Models and Security Systems”: a completed study of lexical reconstruction from verified application-layer length traces, framing transformations and separately validated fresh responses, with explicit transport, reference-cohort and decoder-input limits.
++Article for the Special Issue “Trustworthy AI for Large Models and Security Systems”: 6600 completed reconstructions with an EOS-bounded selector on frozen application-layer length traces, including separately verified reference cohorts and measured framing transformations, with explicit transport and encoder-coverage limits.
+--- before/article1/SUBMISSION_CHECKLIST.md
++++ article1/SUBMISSION_CHECKLIST.md
+@@ -1,6 +1,6 @@
+ # Electronics submission checklist
+ 
+-Revision status (1 November 2026): all 12 computation/verification stages completed, comprising 6600 T5 reconstructions and 600 fresh victim generations. The 24-page manuscript now addresses the latest ARS review in `review_revision_20261101/`: 13 tables, four figures and 486 checked table/plot values. The three-candidate results explicitly retain the original PAD-inclusive selector. A separate bounded CUDA audit reproduces 24/24 saved first-segment selections and changes 18/24 under EOS masking; it does not provide corrected full-response results. All 3300 one-candidate MAP records bypass this ranking. The fixed-input `pad_32` audit covers 660 records. Frozen local Supplementary Data S1 has its own manifest and verifier; public archival remains pending.
++Revision status (2 November 2026): the completed EOS-bounded campaign supplies all current empirical results. It contains 6600 T5 reconstructions on frozen inputs, including 600 references with previously collected and verified victim token IDs. This campaign did not generate victim responses. The article retains separate archived-reference diagnostics and verified-reference cohorts. Current evidence and manuscript integration are in `experiment_validation/selector_eos_20261101/` and its `article_revision_20261102/` directory. Local Supplementary Data S2 is `LLeakM-S2-EOS-20261102-v1`; public archival remains pending.
+ 
+ ## Required author decisions
+ 
+@@ -14,43 +14,30 @@
+ 
+ ## Research and reproducibility
+ 
+-- [x] Identify the existing project repository (`https://github.com/jackaugustyn/LLeakM`); the completed version is supplied separately as the local S1 package, not presumed publicly deposited.
+-- [x] Add the public repository URL to the Data Availability Statement and the main text.
+-- [ ] Optionally mint an archival DOI (for example, Zenodo) from a tagged GitHub release and add it to the Data Availability Statement.
+-- [x] Check that released prompts and model outputs contain no personal, confidential, copyrighted, or unsafe material requiring redaction. See `experiment_validation/analysis/RELEASE_CONTENT_AUDIT.md`.
+-- [x] Recalculate the main statistics from the archived per-sample outputs: the review reproduced them within 1e-10 and confirmed 17/21 pairwise comparisons after Holm correction. See `reviews/ars_electronics_20261031/artifacts/analysis_rerun/comparison.json`. This does not verify signal collection or a clean rerun of the full experiment.
+-- [x] Reconstruct all 2100 archived responses from exact verified logged payload lengths; all new encoder inputs and code/checkpoint hashes are retained. The unavailable historical collector inputs are explicitly distinguished from this completed rerun. See `revalidation_20261031/inference_validation/cuda_full/verification.json` (15/21 significant pairs in the new results).
+-- [x] Generate 300 new responses for each of TinyLlama and Phi-3.5-mini, record token IDs and validate full-sequence decoding, then reconstruct and verify all 600. Keep these cohorts separate from the diagnostic archived series; fixed-ID legacy replay reproduces all 600 archived references and vectors, enabling a matched joint input-and-reference rendering contrast without certifying historical token IDs or revisions.
+-- [x] Record current code, checkpoints, environment, transformation seeds and exact reconstruction inputs. Preserve the unresolved historical provenance as a limitation; `analysis/repro_manifest.json` and `analysis/revision_snapshot_20261031.json` are earlier snapshots, not attestations of the rerun. The completion manifest predates final manuscript integration.
+-- [x] Rerun and validate all 240 control and 360 defense trials. Retain actual random-padding vectors and realized costs. Three of six control contrasts and ten of ten defense contrasts are significant after the respective Holm corrections.
+-- [x] Prepare frozen local Supplementary Data S1 `LLeakM-S1-20261101-v1`, with a file-level SHA-256 manifest and dependency-free verification of 6600 lexical scores, 600 fresh ID records and required source logs.
+-- [ ] Include the newly generated revalidation artifacts and final manuscript files in the public submission release; a local completion manifest does not establish public availability.
+-- [ ] Review the new model outputs and their release contents; the earlier release audit above covers the previous archive only.
+-- [x] Implement an EOS-aware, longer-output collection path (`max_new_tokens=512`, `max_sentences=0`) and record `finish_reason`/`response_complete`.
+-- [x] Execute the longer-output matrix and include only EOS-complete responses in the complete-answer analysis; do not submit a complete-response claim before this is done. Campaign `full_20260920` is complete (7/7, 300/300). Table `tab:eos_completeness` uses `response_complete` only; Phi-3.5-mini has $n_{\mathrm{EOS}}=0$ at 512 tokens.
+-- [x] Implement repeated reconstruction with five decoder seeds, common random numbers across conditions, and a prompt-disjoint defense-aware MAP attacker (`scripts/robustness_eval.py`).
+-- [x] Rerun all 22 MAP settings and 3300 reconstructions, retaining exact clean/transformed/inverse lengths and encoder tokens. `revalidation_20261031/secondary/cuda_full/summary.json` reports the complete new design. The protocol uses 512-token-budget references, the first heuristic segment, one candidate per seed, five seeds and 80-token input/output caps; it is not an all-segment robustness run. Historical outputs remain in `analysis/robustness_eval.json`.
+-- [ ] Optional follow-up: encrypted-traffic capture is outside the present instrumented-trace scope and is not a condition imposed by the latest review.
+-- [ ] Optional follow-up: human or semantic disclosure evaluation would extend the present lexical scope.
++- [x] Complete and audit all 6600 EOS-bounded reconstructions: 2100 main, 600 verified-reference, 240 controls, 360 defense-pilot and 3300 MAP trials. See `selector_eos_20261101/validation/audit_campaign.json` and `selector_eos_20261101/completed_manifest.json` under `experiment_validation/`.
++- [x] Bind the current scores to the saved inputs, references and candidate evidence. The selector includes the first EOS and excludes later score positions; input and output limits remain 80 T5 tokens.
++- [x] Keep the two diagnostic reference series separate from the verified-reference results: means 0.4677 (TinyLlama) and 0.5269 (Phi-3.5-mini). The matched rendering analysis changes both input lengths and scoring references, and does not isolate those effects.
++- [x] Report the current inference: 18/21 model pairs in both prompt- and scenario-level analyses; 4/6 trace-control contrasts and 10/10 defense-pilot contrasts after their respective Holm corrections. See `validation/main_fresh_factledger.json` and `validation/secondary_audit.json`.
++- [x] Report realized padding costs and the first-segment, one-candidate, five-seed MAP protocol. MAP calibration is disjoint by prompt, not by scenario, and is not T5 retraining.
++- [x] Regenerate all 13 tables and both numeric figures from the EOS campaign. The independent generated-table check covers 433 numeric fields and 93 descriptive checks; source bindings and figure data are retained in `article_revision_20261102/`.
++- [x] Identify the project repository (`https://github.com/jackaugustyn/LLeakM`) without implying that the current local package has been publicly deposited.
++- [ ] Include the final manuscript and Supplementary Data S2 in the public submission release; a local manifest does not establish public availability.
++- [ ] Review the current package contents and model outputs for release. The earlier `analysis/RELEASE_CONTENT_AUDIT.md` covers its historical archive only.
++- [ ] Optionally mint an archival DOI from a tagged public release and add it to the Data Availability Statement.
+ 
+-## Manuscript checks
++## Manuscript and submission checks
+ 
+-- [x] Confirm every model name, parameter count, license, and cited model-report version. See Table `tab:model_metadata` in `template.tex` and `experiment_validation/analysis/tables_metadata.tex`.
+-- [x] Verify the stated truncation range directly against the final analysis table. Per-model truncation from `samples.jsonl` `token_count` $\geq 512$ is 44.3, 83.3, 34.3, 74.3, 52.0, 41.0, 100.0\% (range 34.3--100\%). See Table `tab:length_covariates`.
+-- [x] Add model/tokenizer and response-length covariates to the manuscript if space permits. Added Tables `tab:model_metadata` and `tab:length_covariates`, with historical response covariates distinguished from new reconstruction metrics; any OLS sentence must name its actual data source.
+-- [x] Review the distinction between application-event lengths and observable TLS/HTTP/2/QUIC records throughout the paper. Abstract, introduction, threat model, figure caption, discussion, and conclusions now state that the traces are laboratory SSE application events, not TLS/HTTP/2/QUIC records.
+-- [x] Align the manuscript and submission-document title: “Lexical Reconstruction from Instrumented LLM Token-Length Traces: Reference Validation and Defense Evaluation”. The revision distinguishes verified logged payload lengths, archived collector defects and fresh reference cohorts; it does not claim encrypted-transport extraction.
+-- [ ] Have both authors proofread the English and approve all claims, figures, tables, and supplementary files. English was revised in `template.tex`; Szymon Jędrzejczak still needs to read the compiled PDF and approve.
+-- [x] Keep appendix execution identifiers because they are the public artifact directory names required for external reproduction (`tab:run_ids`). They were not removed.
++- [x] Compile and visually inspect all 24 pages of the final local PDF. The complete manuscript check confirms 486 table/plot values and 121 descriptive or artifact-binding checks; the independent scientific review has no unresolved findings. See `article_revision_20261102/final_validation.json`.
+ 
+-## Electronics submission package
+-
+-- [x] Confirm the intended target with the author: Electronics, Section Artificial Intelligence, Special Issue “Trustworthy AI for Large Models and Security Systems”. See `SUBMISSION_SYSTEM.md`.
+-- [ ] Verify the current official Special Issue scope, availability, deadline, and journal requirements. The review could not access the MDPI pages, so the earlier deadline entry is not treated as verified.
+-- [ ] Insert the article type and Special Issue in the submission system after logging in to https://susy.mdpi.com. The local LaTeX target is `electronics,article,submit`; draft SuSy fields are in `SUBMISSION_SYSTEM.md`.
+-- [x] Prepare a concise cover letter stating novelty, fit with Electronics, and the controlled nature of the threat model. See `COVER_LETTER.md`.
+-- [ ] Supply suggested and opposed reviewers only where justified and disclose potential conflicts.
+-- [ ] Complete the MDPI ethics, data-availability, funding, conflicts-of-interest, and AI-use declarations in the submission system.
+-- [ ] Check current APC, institutional discounts, and funding approval before submission.
+-- [ ] Upload `template.tex`, `references.bib`, the complete `Definitions/` directory, figures, tables, supplementary files, and the compiled PDF.
++- [x] Preserve the approved title, author information and intended target: Electronics, Section Artificial Intelligence, Special Issue “Trustworthy AI for Large Models and Security Systems”. Draft SuSy fields are in `SUBMISSION_SYSTEM.md`.
++- [x] State the instrumented application-layer threat model and distinguish lexical scores from semantic disclosure and encrypted-transport extraction.
++- [x] Retain model/tokenizer metadata, source-response identifiers and the distinction between victim EOS termination and reconstruction quality. Metadata consistency is a local check, not current model-card or license certification.
++- [x] Update the cover letter and data-availability package identifier to the current EOS campaign and Supplementary Data S2.
++- [ ] Have both authors approve the final claims, tables, figures, English and supplementary files. Szymon Jędrzejczak still needs to read and approve the compiled PDF.
++- [ ] Verify current official Special Issue availability, deadline and journal requirements; no current official verification is claimed.
++- [ ] Enter the confirmed target and declarations in SuSy after logging in at https://susy.mdpi.com. No submission has been made.
++- [ ] Supply reviewers and disclose reviewer conflicts if required by the submission form.
++- [ ] Complete the ethics, data-availability, funding, conflicts-of-interest and AI-use declarations in the submission system.
++- [ ] Check current APC, institutional discounts and funding approval before submission.
++- [ ] Upload the final TeX, bibliography, `Definitions/`, figures, compiled PDF and `article1/supplement/LLeakM-S2-EOS-20261102-v1.tar.gz` with its SHA-256 file.
+ - [ ] Compile the exact uploaded archive in a clean environment and inspect the final PDF page by page.
+--- before/experiment_validation/README.md
++++ experiment_validation/README.md
+@@ -1,241 +1,78 @@
+ # Walidacja eksperymentalna LLeakM
+ 
+-> **Aktualnie wykonywana kampania:** pełne 6600 rekonstrukcji z poprawionym selektorem do pierwszego EOS. [Uruchomienie i status](selector_eos_20261101/URUCHOMIENIE.md). Poprzednia kampania `revalidation_20261031` jest zakończona; jej liczby nie są statusem nowej kolejki.
++**Zakończono pełną kampanię 6600 rekonstrukcji z selektorem ograniczonym do pierwszego EOS.** Wszystkie bieżące wyniki artykułu pochodzą z `selector_eos_20261101/`; integracja tabel, rysunków i tekstu znajduje się w `selector_eos_20261101/article_revision_20261102/`.
+ 
++Rekonstrukcje wykonano na zamrożonych wejściach i referencjach. W tej kampanii nie generowano nowych odpowiedzi modeli ofiar. Odrębne kohorty TinyLlama i Phi-3.5-mini wykorzystują 600 wcześniej zebranych odpowiedzi z zapisanymi token IDs i zweryfikowanym dekodowaniem całych sekwencji.
+ 
+-Pełne ponowne obliczenia zakończono **1 listopada 2026 o 16:15 czasu polskiego**. Wykonano i zweryfikowano **6600 rekonstrukcji T5** oraz **600 nowych generacji modeli ofiar**. Wszystkie 12 etapów kolejki zakończyło się powodzeniem; kompletność potwierdzają niezależne kontrole zapisanych wejść, tekstów i metryk.
++## Zakres zakończonych obliczeń
+ 
+-## Bieżące wyniki i ich zakres
++| Eksperyment | Rekonstrukcje | Protokół |
++|---|---:|---|
++| Siedem modeli, archiwalne referencje | 2100 | 300 promptów na model; wszystkie dostępne segmenty żądane; trzy kandydaty na segment |
++| Odrębne zweryfikowane referencje TinyLlama i Phi-3.5-mini | 600 | Po 300 promptów; wszystkie segmenty; trzy kandydaty |
++| Kontrole śladu | 240 | Dwa modele, 30 promptów, cztery warunki; do trzech segmentów |
++| Pilotaż obron | 360 | Dwa modele, 30 promptów, sześć warunków; do trzech segmentów |
++| MAP | 3300 | Dwa modele, 30 promptów, 11 warunków, pięć ziaren; pierwszy segment, jeden kandydat |
+ 
+-| Zakres | Liczba | Wynik kontroli |
+-|---|---:|---|
+-| Rekonstrukcje z poprawnych długości zapisanych w logach, siedem modeli | 2100 | Kompletne; dwie archiwalne serie referencji pozostają diagnostyczne |
+-| Kontrole śladu w pilotażu 96-tokenowym | 240 | Kompletne |
+-| Obrony w pilotażu 96-tokenowym | 360 | Kompletne; zapisano także rzeczywiste losowania paddingu |
+-| MAP, 512-tokenowe referencje, pierwszy segment, pięć ziaren | 3300 | Kompletne |
+-| Nowe odpowiedzi TinyLlama i Phi-3.5 | 600 | Token IDs i pełne dekodowanie zweryfikowane |
+-| Rekonstrukcje nowych odpowiedzi TinyLlama i Phi-3.5 | 600 | Kompletne |
++[Audyt kompletności i wyboru kandydatów](selector_eos_20261101/validation/audit_campaign.json), [wyniki główne i odrębne referencje](selector_eos_20261101/validation/main_fresh_factledger.json) oraz [audyt kontroli, obron i MAP](selector_eos_20261101/validation/secondary_audit.json) mają status pozytywny. [Manifest zakończonej kampanii](selector_eos_20261101/completed_manifest.json) wiąże zapisane artefakty z ich SHA-256.
+ 
+-[Raport obliczeń](revalidation_20261031/WYNIKI_WZNOWIENIA.md), [stan ukończonej kolejki](revalidation_20261031/queue/status.json) i [wyniki maszynowe](revalidation_20261031/completed_results.json) opisują skończone przebiegi. `completed_manifest.json` wiąże artefakty w chwili zakończenia kolejki, przed późniejszą integracją manuskryptu; nie jest poświadczeniem historycznej kampanii.
++## Archiwalne referencje, bieżące rekonstrukcje EOS
+ 
+-## Rekonstrukcje na archiwalnych referencjach
++| Model | N | Średnia φ | LR@0,5 | 95% CI, bootstrap scenariuszy |
++|---|---:|---:|---:|---|
++| Qwen2.5-1.5B-Instruct | 300 | 0.5768 | 76.00% | [0.5621, 0.5912] |
++| Qwen2.5-3B-Instruct | 300 | 0.5571 | 76.67% | [0.5437, 0.5709] |
++| Phi-1.5 | 300 | 0.5420 | 65.67% | [0.5270, 0.5570] |
++| Llama-3.2-3B-Instruct | 300 | 0.5365 | 68.00% | [0.5206, 0.5522] |
++| Gemma-2-2B-it | 300 | 0.5092 | 55.00% | [0.4996, 0.5192] |
++| Phi-3.5-mini-instruct (diagnostyka) | 300 | 0.1297 | 0.00% | [0.1231, 0.1367] |
++| TinyLlama-1.1B-Chat (diagnostyka) | 300 | 0.0832 | 0.00% | [0.0777, 0.0887] |
+ 
+-Poniższe wartości pochodzą z nowych rekonstrukcji T5 na dokładnych długościach payloadów z logów. Nie są średnimi starych predykcji. Każdy model ma 300 tych samych promptów. Referencje TinyLlama i Phi-3.5 w tej tabeli nadal pochodzą z wadliwego, niezależnego dekodowania tokenów.
++Średnie pięciu niediagnostycznych serii wynoszą 0.5092–0.5768. Dwie pozostałe serie odzwierciedlają wadliwy format referencji po niezależnym dekodowaniu tokenów; nie opisują wewnętrznej odporności tych modeli. Przy jednostce promptu oraz przy średnich 60 scenariuszy istotnych jest **18/21 par** po korekcji Holma. Miary są leksykalne, a nie semantyczne.
+ 
+-| Model | N | Średnia φ | LR@0,5 | 95% CI, bootstrap 60 scenariuszy |
+-|---|---:|---:|---:|---|
+-| Qwen2.5-1.5B-Instruct | 300 | 0.5355 | 65.33% | [0.5195, 0.5511] |
+-| Qwen2.5-3B-Instruct | 300 | 0.5251 | 63.00% | [0.5119, 0.5385] |
+-| Llama-3.2-3B-Instruct | 300 | 0.5146 | 61.00% | [0.4981, 0.5312] |
+-| Gemma-2-2B-it | 300 | 0.4820 | 42.33% | [0.4716, 0.4928] |
+-| Phi-1.5 | 300 | 0.5164 | 56.67% | [0.5019, 0.5306] |
+-| TinyLlama-1.1B-Chat — diagnostyka | 300 | 0.0792 | 0.00% | [0.0739, 0.0849] |
+-| Phi-3.5-mini-instruct — diagnostyka | 300 | 0.1210 | 0.00% | [0.1144, 0.1280] |
++## Odrębne referencje ze zweryfikowanym dekodowaniem
+ 
+-Źródło: [pełne nowe statystyki](revalidation_20261031/inference_validation/cuda_full/statistics.json). Po korekcji Holma istotnych jest **15/21 par** zarówno przy jednostce promptu, jak i przy średnich 60 scenariuszy; historyczne 17/21 nie opisuje tych nowych predykcji. Miary pozostają leksykalne i nie określają prawdopodobieństwa ujawnienia danych.
++| Model | N | Średnia φ | LR@0,5 | 95% CI, bootstrap scenariuszy | EOS ofiary |
++|---|---:|---:|---:|---|---:|
++| TinyLlama-1.1B-Chat | 300 | 0.4677 | 44.33% | [0.4501, 0.4854] | 177/300 |
++| Phi-3.5-mini-instruct | 300 | 0.5269 | 62.33% | [0.5127, 0.5411] | 0/300 |
+ 
+-## Nowe referencje — odrębny eksperyment
++Tych kohort nie łączy się z archiwalnymi seriami w jeden ranking siedmiu modeli. Sparowane porównanie formatów referencji w bieżącej kampanii daje różnice średniej φ równe 0.3845 dla TinyLlama i 0.3972 dla Phi-3.5-mini, z przedziałami scenariuszowymi odpowiednio [0.3662, 0.4029] i [0.3806, 0.4134]. Zmienia ono jednocześnie długości wejściowe i referencje oceny, więc nie rozdziela tych efektów. [Źródło sparowanego kontrastu](selector_eos_20261101/validation/paired_detokenization_score_contrast.json).
+ 
+-| Model | N | Średnia φ | LR@0,5 | EOS |
+-|---|---:|---:|---:|---:|
+-| TinyLlama-1.1B-Chat | 300 | 0.4352 | 30.33% | 177/300 |
+-| Phi-3.5-mini-instruct | 300 | 0.5042 | 52.33% | 0/300 |
++## Kontrole i obrony
+ 
+-Wszystkie 600 nowych referencji zawiera spacje i zgadza się z pełnym dekodowaniem zapisanych token IDs. Dodatkowy audyt stałych sekwencji IDs wykazał, że stary dekoder pojedynczych tokenów odtwarza dokładnie wszystkie 600 archiwalnych tekstów, fragmentów i wektorów długości; pełne dekodowanie tych samych nowych IDs daje poprawne granice słów. Potwierdza to mechanizm błędu detokenizacji dla tych sekwencji, bez odzyskania niearchiwizowanych historycznych IDs. [Dowód i zakres](revalidation_20261031/final_review_20261101/fresh_legacy_replay.md). Ofiary działają w FP16; Phi-3.5 korzysta częściowo z RAM, bez kwantyzacji. Rewizje wag, format promptu `legacy`, limit 512 tokenów, ziarna i mapa urządzeń są zapisane w protokołach. Nowych odpowiedzi nie łączy się z pięcioma historycznymi seriami w jeden zweryfikowany ranking. Dla 600 dopasowanych przypadków potwierdzono zgodność starego renderowania z archiwalnymi tekstami i wektorami oraz identyczne ziarna, wagi, kod i parametry T5. Porównanie zmienia równocześnie wejściowy ślad długości i tekst referencyjny; nie rozdziela ich wpływu na wynik. Nie odzyskano historycznych IDs ani wersji wag ofiar.
++Po korekcji Holma istotne są **4/6 kontrastów kontrolnych**: ślady przetasowane i stałe obniżają wyniki obu modeli, a oba kontrasty `cross_prompt` nie są istotne. Nie wykazano przewagi rzeczywistego śladu nad każdym wariantem kontrolnym.
+ 
+-Szczegóły: [TinyLlama](revalidation_20261031/inference_validation/fresh_tinyllama_cuda/statistics.json), [Phi-3.5](revalidation_20261031/inference_validation/fresh_phi_cuda/statistics.json), [protokoły nowych referencji](revalidation_20261031/fresh_references/PRZYGOTOWANIE.md).
++W pilotażu zamrożonego rekonstruktora istotnych jest **10/10 kontrastów obronnych**. Redukcje średniej φ wynoszą 43.8–89.6%; koszty to rzeczywiście zapisane narzuty chronionego payloadu. Batching zmniejsza liczbę obserwowanych jednostek bez dodawania bajtów do samego payloadu. Nie zmierzono narzutów transportowych, opóźnień ani rzeczywistego pakietowania.
+ 
+-## Kontrole i obrony po ponownej inferencji
++MAP wykorzystuje empiryczne odwzorowanie długości i wspólne ziarna dekodera. Nie jest ponownym trenowaniem T5. Kalibracja i test są rozłączne po dokładnym prompcie, lecz nie po scenariuszu; nie wykazano generalizacji na nowe scenariusze. Wszystkie jego wartości w artykule pochodzą z 3300 rekordów bieżącej kampanii.
+ 
+-[Nowe wyniki 42 komórek](revalidation_20261031/secondary/cuda_full/summary.json) zastępują stare liczby w bieżącym artykule. Wszystkie 3300 predykcji MAP odtworzono dokładnie względem archiwum; zmiany niektórych przedziałów wynikają z jawnie zapisanego nowego przepisu bootstrapu, a nie ze zmiany tych predykcji. W pilotażach użyto jawnych nowych ziaren BLAKE2s; MAP zachowuje wcześniejsze ziarna, podział 30/270 i kalibrację. Zapisy zawierają dokładne wektory przed i po transformacji, wejścia po inwersji, rzeczywiste tokeny enkodera, wybrane teksty kandydatów i koszty payloadu.
++## Selektor i ograniczenia pomiaru
+ 
+-Prawdziwy ślad nie przewyższa każdego wariantu kontrolnego: w sześciu kontrastach kontrolnych po Holm istotne są trzy. Dla Llama średnia `cross_prompt` jest nieco wyższa niż `real`. Nie należy więc zachowywać dawnego ogólnego wniosku o przewadze prawdziwego śladu nad wszystkimi kontrolami. Koszty nowego losowego paddingu są zapisanymi realizacjami; wcześniejsze 79,8%/83,1% były wartościami oczekiwanymi dla nieodtwarzalnych historycznych losowań.
++Selektor `eos-through-first-inclusive/1` sumuje przetworzone wyniki przejść do pierwszego EOS włącznie i pomija późniejsze pozycje. Oceniany rekonstruktor zachowuje limit 80 tokenów enkodera i dekodera. Żądanie wszystkich segmentów nie gwarantuje niepustego wyniku każdego segmentu: w części głównej wykonano 62 757 prób segmentów, z których 62 755 zwróciło niepusty tekst. Odrębne zweryfikowane kohorty TinyLlama i Phi-3.5-mini mają odpowiednio 8835 i 10 748 niepustych wyników segmentów. Puste końcowe wyniki dotyczą jednej odpowiedzi Llama i jednej odpowiedzi Phi-1.5.
+ 
+-## Pomiar, metryki i ograniczenia
++Wejściem jest instrumentowany oracle długości payloadu z logów. Eksperyment nie wykazuje odtworzenia granic zdarzeń aplikacji z przechwyconego TLS, HTTP/2 ani QUIC. Transformacje zmieniają także segmentację i pokrycie wejścia enkodera. Cały wynik rekonstrukcji jest oceniany względem całej referencji; EOS ofiary oznacza zakończenie generacji, a nie poprawność rekonstrukcji.
+ 
+-`run_validation.py` używa jawnego oracle'a długości z logu (`validated-log-payload-byte-lengths-v1`), sprawdza sumę odebranych bajtów i zapisuje wejściowy wektor wraz z hashami. `app.py` tworzy fragmenty z kontekstem dekodowania i sprawdza zgodność z pełną sekwencją. To instrumentowany eksperyment długości payloadu, bez wykazanego odtwarzania granic zdarzeń z TLS/HTTP/2/QUIC.
++## Odtworzenie tabel i rysunków
+ 
+-Wyniki obejmują kosinus częstości słów φ, odległość Levenshteina podzieloną przez długość referencji, ROUGE-1 i ROUGE-L, częstość przekroczenia progu leksykalnego oraz przedziały i testy sparowane. Główne i nowe referencje mają po 300 promptów/60 scenariuszy. Limity enkodera i dekodera T5 wynoszą 80 tokenów. Główny przebieg żąda wszystkich segmentów i trzech kandydatów; pilotaże najwyżej trzech segmentów i trzech kandydatów; MAP pierwszego segmentu i jednego kandydata na ziarno. Cały zrekonstruowany tekst jest oceniany względem całej referencji. Zmiana transformacji zmienia też segmentację i pokrycie wejścia.
+-
+-## Zachowane archiwum
+-
+-Pierwotne `results/` i `analysis/` pozostają niezmienionym źródłem historycznym. [Rewalidacja statystyk archiwalnych](revalidation_20261031/statistics/WALIDACJA_STATYSTYK.md) potwierdziła ich arytmetykę, ale sama nie naprawiała pomiaru. Dawne wyniki 0,030–0,568 i 17/21 istotnych par dotyczą tamtych predykcji; nowe wyniki znajdują się w `revalidation_20261031/`.
+-
+-`analysis/repro_manifest.json` ma historyczne, nieaktualne wpisy. `analysis/revision_snapshot_20261031.json` opisuje wcześniejszą rewizję tekstu. Nowe protokoły i manifest zakończonej kolejki nie poświadczają tożsamości wcześniejszych wag, kodu ani wejść rekonstruktora.
+-
+-## Struktura
+-
+-- `results/`, `analysis/`, `../logs/`: dane i analizy historyczne.
+-- `revalidation_20261031/inference/`: nowe rekonstrukcje, wejścia enkodera i protokoły.
+-- `revalidation_20261031/inference_validation/`: niezależne kontrole i kompletne statystyki.
+-- `revalidation_20261031/secondary/cuda_full/`: 3900 nowych prób kontroli/obron/MAP.
+-- `revalidation_20261031/fresh_references/`: 600 nowych generacji i ich logi.
+-- `revalidation_20261031/final_review_20261101/`: niezależny audyt wyników i pierwsza integracja artykułu.
+-- `revalidation_20261031/article_revision_latest_20261101/`: poprzednia integracja wyników; źródła dwóch wykresów i audyt 12 tabel zachowane bez zmian.
+-- `revalidation_20261031/review_revision_20261101/`: bieżąca rewizja po recenzji — 13 tabel, 4 rysunki, 486 sprawdzonych wartości, 24-stronicowy PDF. Zawiera ograniczony audyt selektora (24 odtworzone przypadki, 18 zmian po pominięciu PAD po EOS); główne tabele pozostają wynikami pierwotnego selektora. 3300 prób MAP używa jednego kandydata.
+-- `article1/supplement/LLeakM-S1-20261101-v1.tar.gz` w katalogu głównym projektu: zamrożony lokalny pakiet S1 z manifestem i weryfikatorem; publiczna archiwizacja pozostaje do wykonania.
+-
+-Poniższe polecenia opisują ogólne narzędzia oraz zachowane analizy historyczne. Nie nadpisują automatycznie tabel artykułu wynikami zakończonej kolejki.
+-
+-## Uruchomienie pojedynczego modelu
+-
+-Najpierw uruchom serwer z wybranym modelem ofiary:
++Poniższe polecenia korzystają z ukończonych audytów i nie uruchamiają modeli:
+ 
+ ```bash
+-. .venv/bin/activate
+-MODEL_ID=Qwen/Qwen2.5-1.5B-Instruct HF_HUB_OFFLINE=1 \
+-  python -m uvicorn app:app --host 127.0.0.1 --port 8000
++python experiment_validation/selector_eos_20261101/article_revision_20261102/regenerate_tables.py
++python experiment_validation/selector_eos_20261101/article_revision_20261102/check_generated_tables.py
++python experiment_validation/selector_eos_20261101/article_revision_20261102/generate_figures.py
+ ```
+ 
+-W drugim terminalu poniższe parametry odpowiadają budżetom głównej kampanii. Naprawiony kolektor i harness stosują nowy kontrakt obserwacji i referencji, więc wyniki nowego przebiegu należy zachować oddzielnie od historycznych danych. Walidacja logu i referencji nie oznacza odtworzenia historycznych odpowiedzi:
++Generator tabel zapisuje `tables.json` i `tables.tex`; nie nadpisuje manuskryptu automatycznie. Niezależny parser sprawdza wszystkie 13 tabel: 433 wartości liczbowe i 93 pola opisowe. Generator wykresów zapisuje nowe pliki `article1/figures/eos_model_results.*` i `eos_defense_tradeoff.*`, dokładne dane JSON/CSV oraz manifest źródeł i eksportów. Oba panele wykresu wyników modeli korzystają z bieżącej kampanii EOS; drugi panel porównuje formaty referencji w jej obrębie.
+ 
+-```bash
+-. .venv/bin/activate
+-HF_HUB_OFFLINE=1 python experiment_validation/scripts/run_validation.py \
+-  --max-prompts 300 \
+-  --max-new-tokens 512 \
+-  --temperature 0 \
+-  --top-p 1 \
+-  --samples-per-segment 3 \
+-  --max-sentences 0 \
+-  --num-first-candidates 3 \
+-  --prompt-format legacy \
+-  --reconstruction-seed 20260706 \
+-  --label qwen_1_5b_full
+-```
++## Artefakty i udostępnienie
+ 
+-Usuń `HF_HUB_OFFLINE=1`, jeśli modele nie znajdują się jeszcze w lokalnym cache Hugging Face. Szybki smoke test można wykonać przez `--max-prompts 20`, ale jego wynik nie jest porównywalny z finalnym benchmarkiem.
++- `selector_eos_20261101/inference/`: główne rekonstrukcje i odrębne referencje, protokoły oraz zapis kandydatów.
++- `selector_eos_20261101/secondary/cuda_full/`: 3900 prób kontroli, obron i MAP.
++- `selector_eos_20261101/validation/`: niezależne audyty, statystyki i kontrast formatów referencji.
++- `selector_eos_20261101/article_revision_20261102/`: aktualna integracja artykułu, generatory, tabele, dane wykresów i kontrole.
++- `../article1/supplement/LLeakM-S2-EOS-20261102-v1.tar.gz`: lokalny pakiet Supplementary Data S2 z manifestem SHA-256 i weryfikatorem CPU.
+ 
+-Każdy przebieg tworzy `results/run_YYYYMMDD_HHMMSS_<label>/` z plikami:
++Wcześniejsze wyniki i audyty pozostają archiwum. Ich istnienie nie zastępuje nowych dowodów i nie stanowi podstawy bieżących tabel ani wniosków. Zapisane wcześniej referencje i logi są zachowanymi wejściami obecnej kampanii.
+ 
+-- `config.json`,
+-- `progress.json`,
+-- `samples.jsonl`,
+-- `summary.json`,
+-- `summary.md`,
+-- `summary_by_topic.csv`.
+-
+-## Macierz modeli
+-
+-`scripts/run_model_matrix.py` kolejno uruchamia wskazaną listę modeli. Jego domyślne wartości historyczne (`72` tokeny i `2` próbki na segment) różnią się od protokołu artykułu, dlatego parametry trzeba podać jawnie:
+-
+-```bash
+-. .venv/bin/activate
+-python experiment_validation/scripts/run_model_matrix.py \
+-  --models-file experiment_validation/models_publication.json \
+-  --prompts 300 \
+-  --max-new-tokens 512 \
+-  --samples-per-segment 3 \
+-  --max-sentences 0 \
+-  --num-first-candidates 3 \
+-  --prompt-format legacy \
+-  --reconstruction-seed 20260706 \
+-  --hf-offline
+-```
+-
+-Opcja `--clear-results` usuwa dotychczasową zawartość katalogu wyników i nie jest potrzebna do zwykłego uruchomienia. `models.json` jest listą pomocniczą; siedem katalogów użytych w głównej tabeli wskazuje `analysis/model_stats.json` oraz tabela powyżej.
+-
+-## Odtworzenie analiz
+-
+-```bash
+-. .venv/bin/activate
+-PYTHONHASHSEED=0 python experiment_validation/scripts/analyze_stats.py
+-PYTHONHASHSEED=0 python experiment_validation/scripts/analyze_extras.py
+-python experiment_validation/scripts/make_figures.py
+-```
+-
+-Wyniki trafiają do `analysis/` i zastępują istniejące wygenerowane pliki; porównanie bez nadpisania wymaga osobnej kopii roboczej. `analyze_stats.py` tworzy główne statystyki i testy, `analyze_extras.py` generuje kontrole długości, regresję, dane jakościowe i tabele pomocnicze, a `make_figures.py` generuje fragmenty TikZ/PGFPlots. Obecny `article1/template.tex` zawiera tabele i wykresy bezpośrednio, więc te skrypty nie aktualizują automatycznie jego treści. Skrypt `make_repro_manifest.py` nadpisuje historyczny manifest i opis środowiska; nie należy używać takiego nadpisania jako dowodu pochodzenia wcześniejszych wyników.
+-
+-## Baseline'y śladu i obrony
+-
+-Pilotaże używają po 30 promptów (po dwa na temat) dla Qwen2.5-1.5B i Llama-3.2-3B ze starszych przebiegów 96-tokenowych `run_20260325_104518_qwen_1_5b` i `run_20260414_073030_llama_3_2_3b`. Długości pobierane są z `token_utf8_len` w logach. Rekonstrukcja obejmuje maksymalnie trzy segmenty, a wyniki odnoszą się do całej zapisanej referencji.
+-
+-```bash
+-. .venv/bin/activate
+-HF_HUB_OFFLINE=1 PYTHONHASHSEED=0 python experiment_validation/scripts/trace_baselines.py \
+-  --per-topic 2 --samples-per-segment 3 --max-sentences 3
+-
+-HF_HUB_OFFLINE=1 PYTHONHASHSEED=0 python experiment_validation/scripts/defense_eval.py \
+-  --per-topic 2 --samples-per-segment 3 --max-sentences 3
+-```
+-
+-Kontrole porównują ślad rzeczywisty z sekwencją przetasowaną, stałą i pochodzącą z innego promptu. Są to częściowe ablacje: przetasowanie zachowuje histogram i liczbę elementów, a stały ślad zachowuje liczbę elementów i zaokrągloną średnią długość. Nie stanowią kontroli całkowicie pozbawionej informacji. Obrony obejmują `bucket_8`, `pad_32`, `batch_2`, `batch_4` i `rand_pad_8`; ocena dotyczy zamrożonego, nieadaptacyjnego rekonstruktora. Receptura seedów zależy od Pythonowego `hash()` i ustawienia `PYTHONHASHSEED`. Polecenia powyżej ustalają je dla nowego uruchomienia, ale nie potwierdzają historycznego środowiska ani niezapisanych seedów per próbka.
+-
+-## Wzmocniony protokół: wspólne seedy i adaptacyjny atakujący
+-
+-`scripts/robustness_eval.py` odtwarza zapisane ślady pięć razy, z tym samym
+-seedem dekodera dla wszystkich warunków danego promptu. Domyślnie używa po dwa
+-prompty z każdego z 15 tematów jako zbiór testowy (30 na model), a pozostałe
+-270 jako rozłączny zbiór kalibracyjny. Adaptacyjny atakujący uczy się na nim
+-empirycznego odwzorowania MAP ze śladu po obronie do długości czystych; dla
+-batchingu uczy się także rozkładów krotek o danej sumie. Nie jest to ponowne
+-trenowanie T5 i tak właśnie należy go opisywać w artykule.
+-
+-Zapisany protokół `028a07f6eb2ebdd2` używa parametrów `--samples-per-segment 1 --num-first-candidates 1 --max-sentences 1`, a nie domyślnych trzech próbek i wszystkich segmentów. Najpierw można sprawdzić odpowiadający mu plan bez ładowania modeli:
+-
+-```bash
+-python experiment_validation/scripts/robustness_eval.py \
+-  --samples-per-segment 1 --num-first-candidates 1 --max-sentences 1 --plan
+-```
+-
+-Przebieg dwóch modeli z parametrami zapisanego badania:
+-
+-```bash
+-HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 \
+-python experiment_validation/scripts/robustness_eval.py \
+-  --samples-per-segment 1 --num-first-candidates 1 --max-sentences 1
+-```
+-
+-Domyślne `--max-sentences 0` oznacza rekonstrukcję wszystkich dostępnych segmentów i definiowałoby inny eksperyment niż zapisane wyniki. Dla pierwszego segmentu wynik liczony jest względem całej odpowiedzi. Kalibracja i test są rozłączne po dokładnym prompcie, lecz nie po scenariuszu: korpus zawiera 60 scenariuszy po pięć wariantów, a 120 z 270 promptów kalibracyjnych dzieli scenariusze z 30 promptami testowymi. Nie wykazano generalizacji na nowe scenariusze. Powstają `analysis/robustness_samples.jsonl`, konfiguracja z
+-identyfikatorem protokołu oraz `analysis/robustness_eval.json`. Tabela LaTeX
+-jest generowana dopiero wtedy, gdy wszystkie oczekiwane komórki są kompletne.
+-Wznowienie jest bezpieczne, ponieważ klucz obejmuje model, prompt, obronę,
+-wariant atakującego i seed. Opcja `--overwrite` jest celowa i usuwa wyłącznie
+-wskazany plik wynikowy.
+-
+-## Pełne odpowiedzi
+-
+-Główna kampania z budżetem 512 tokenów została już wykonana; nie wszystkie jej odpowiedzi osiągają EOS. `app.py` zapisuje `finish_reason` oraz
+-`response_complete`; token EOS nie jest włączany do tekstu ani śladu. Dla
+-porównywalności z pierwotną kampanią można zachować format promptu `legacy`:
+-
+-```bash
+-python experiment_validation/scripts/run_model_matrix.py \
+-  --models-file experiment_validation/models_publication.json \
+-  --prompts 300 \
+-  --max-new-tokens 512 \
+-  --samples-per-segment 3 \
+-  --max-sentences 0 \
+-  --num-first-candidates 3 \
+-  --prompt-format legacy \
+-  --reconstruction-seed 20260706 \
+-  --hf-offline
+-```
+-
+-Wyniki pełnych odpowiedzi należy analizować z filtrem `--complete-only`; skrypt
+-przerwie pracę, jeśli w którymkolwiek temacie zabraknie wymaganej liczby
+-odpowiedzi zakończonych EOS. Katalogi nowych przebiegów podaje się jawnie, np.:
+-
+-```bash
+-python experiment_validation/scripts/robustness_eval.py \
+-  --run-spec qwen_full=run_YYYYMMDD_HHMMSS_qwen_1_5b_full \
+-  --run-spec llama_full=run_YYYYMMDD_HHMMSS_llama_3_2_3b_full \
+-  --complete-only
+-```
+-
+-Nie należy nazywać odpowiedzi „pełną” wyłącznie dlatego, że zwiększono limit:
+-do analizy complete-only kwalifikuje ją dopiero `finish_reason=eos`.
+-
+-## Reprodukowalność
+-
+-- `analysis/REPRODUCIBILITY.md` — historyczny opis środowiska, protokołu i poleceń; może zawierać nieaktualne parametry,
+-- `analysis/repro_manifest.json` — historyczny manifest, z nieaktualnymi wpisami; zachowany bez nadpisania,
+-- `analysis/revision_snapshot_20261031.json` — snapshot wcześniejszej rewizji tekstu, sprzed późniejszych napraw kodu; bez poświadczenia historycznego wykonania,
+-- `analysis/model_stats.json` — finalne wyniki modeli,
+-- `analysis/pairwise_tests.json` — 21 porównań zapisanych wyników, 17 istotnych po korekcji Holma,
+-- `analysis/defense_eval.json` — wyniki obron,
+-- `analysis/trace_baselines.json` — baseline'y informacji w śladzie.
+-
+-Zakończone przebiegi rewalidacji są odrębne od tego archiwum: `revalidation_20261031/statistics/` zawiera przeliczenia statystyk, `collection/` zweryfikowane wektory długości, `references/` audyt detokenizacji, a `inference/` protokoły, próbki i stan nowych rekonstrukcji. Kompletność nowych przebiegów jest potwierdzona. W siedmiomodelowej analizie zachowanych referencji dwie serie nadal pozostają diagnostyczne; oddzielny eksperyment nowych generacji ma zweryfikowane token IDs.
+-
+-Ograniczenia interpretacyjne i pełne wyniki opisuje `../report_LLeakM.md` oraz manuskrypt `../article1/template.tex`. Publiczne repozytorium: https://github.com/jackaugustyn/LLeakM
++Repozytorium projektu: https://github.com/jackaugustyn/LLeakM. Publiczna archiwizacja bieżącego pakietu nadal oczekuje na wykonanie; obecność repozytorium nie potwierdza udostępnienia tej wersji. Zgoda autorów na końcowy PDF i pakiet oraz aktualne oficjalne wymagania czasopisma pozostają odrębnymi pozycjami w [liście zgłoszeniowej](../article1/SUBMISSION_CHECKLIST.md).

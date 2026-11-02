@@ -1,0 +1,45 @@
+Independent text audit: cuda_full 2100
+Means, CIs, thresholds, EOS and paired tests verified: cuda_full
+Independent text audit: fresh_tinyllama_cuda 300
+Means, CIs, thresholds, EOS and paired tests verified: fresh_tinyllama_cuda
+Independent text audit: fresh_phi_cuda 300
+Means, CIs, thresholds, EOS and paired tests verified: fresh_phi_cuda
+{
+  "all_checks_passed": true,
+  "raw_pairs_recomputed": 2700,
+  "max_metric_absolute_difference": {
+    "metrics/phi": 2.220446049250313e-16,
+    "metrics/ed_norm": 0,
+    "metrics/rouge1_precision": 0,
+    "metrics/rouge1_recall": 0,
+    "metrics/rouge1_f1": 0,
+    "metrics/rougeL_precision": 0,
+    "metrics/rougeL_recall": 0,
+    "metrics/rougeL_f1": 0,
+    "first_metrics/phi": 2.220446049250313e-16,
+    "first_metrics/ed_norm": 0,
+    "first_metrics/rouge1_precision": 0,
+    "first_metrics/rouge1_recall": 0,
+    "first_metrics/rouge1_f1": 0,
+    "first_metrics/rougeL_precision": 0,
+    "first_metrics/rougeL_recall": 0,
+    "first_metrics/rougeL_f1": 0
+  },
+  "main_covariate_regression": {
+    "n": 1800,
+    "labels": [
+      "qwen_1_5b",
+      "qwen_3b",
+      "llama_3_2_3b",
+      "gemma_2_2b",
+      "tinyllama_1_1b",
+      "phi_3_5_mini"
+    ],
+    "estimand": "Descriptive OLS including two malformed-reference diagnostic series; no causal attribution",
+    "source_features": "Intercept plus model indicators (first label omitted); reference Unicode characters/100, mean logged token bytes, token count>=512",
+    "r2_model_only": 0.8623871645558787,
+    "r2_covariates_only": 0.7213386729901341,
+    "r2_full": 0.8699480509552747,
+    "delta_r2_full_minus_model": 0.007560886399396005
+  }
+}

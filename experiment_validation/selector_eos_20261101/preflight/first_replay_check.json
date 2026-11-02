@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "scope": "Three full-response smoke cases; not full campaign estimates. Same first candidate batch reproduces original selection under old rule.",
+  "cases": [
+    {
+      "label": "qwen_1_5b",
+      "idx": 1,
+      "old_first_selection_reproduced": true,
+      "new_first_selection_changed": true,
+      "segments": 35,
+      "phi": 0.489876376696894,
+      "old_phi": 0.4518676248449904
+    },
+    {
+      "label": "llama_3_2_3b",
+      "idx": 1,
+      "old_first_selection_reproduced": true,
+      "new_first_selection_changed": true,
+      "segments": 22,
+      "phi": 0.3556858901888057,
+      "old_phi": 0.3072972190278141
+    },
+    {
+      "label": "tinyllama_1_1b",
+      "idx": 1,
+      "old_first_selection_reproduced": true,
+      "new_first_selection_changed": true,
+      "segments": 33,
+      "phi": 0.3799460385024465,
+      "old_phi": 0.2942205951455677
+    }
+  ],
+  "calls": 90,
+  "candidates": 270
+}

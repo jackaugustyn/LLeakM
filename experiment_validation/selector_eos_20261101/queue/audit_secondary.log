@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "counts": {
+    "trace_control": 240,
+    "defense_pilot": 360,
+    "map": 3300
+  },
+  "metric_max_abs_difference": {
+    "phi": 0.0,
+    "ed_norm": 0.0,
+    "rouge1_precision": 0.0,
+    "rouge1_recall": 0.0,
+    "rouge1_f1": 0.0,
+    "rougeL_precision": 0.0,
+    "rougeL_recall": 0.0,
+    "rougeL_f1": 0.0
+  },
+  "bootstrap_interval_max_abs_difference": 5.551115123125783e-17,
+  "significant_control_contrasts": 4,
+  "significant_defense_contrasts": 10,
+  "ranges": {
+    "defense_score_reduction_pct": [
+      43.76875608079989,
+      89.5798194524871
+    ],
+    "map_cell_phi_mean": [
+      0.042212358580837224,
+      0.2852444667647401
+    ],
+    "map_between_seed_sd": [
+      0.0032273151203820426,
+      0.018432131771982482
+    ],
+    "map_seed_specific_cell_means": [
+      0.03770132349951219,
+      0.3056016597605158
+    ]
+  },
+  "map_historical_reproduction": {
+    "exact_prediction_matches": 3300,
+    "matched_records": 3300,
+    "seed_pair_matches": 3300,
+    "bootstrap_note": "The current campaign reuses the exact 31-October bootstrap recipe and frozen MAP records as its negative-control comparator. MAP means, reductions, seed SDs and crossed-bootstrap endpoints must match that preceding campaign. Endpoints can differ from the older September archive because that archive used a different bootstrap seed recipe."
+  }
+}

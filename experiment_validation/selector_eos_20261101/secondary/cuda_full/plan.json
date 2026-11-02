@@ -1,0 +1,23 @@
+{
+  "expected": 3900,
+  "suites": {
+    "trace_control": 240,
+    "defense_pilot": 360,
+    "map": 3300
+  },
+  "validated_generation_logs": 660,
+  "map_archived_keys_seeds_counts_matched": 3300,
+  "calibration_prompts": {
+    "qwen_1_5b": 270,
+    "llama_3_2_3b": 270
+  },
+  "donor_rule": "donor_idx=(target_idx%30)+1; preserves actual historical mapping on indices1..30",
+  "pilot_seed_scope": "new explicit BLAKE2s seeds, not recovery of unknown historical seeds",
+  "map_scope": "archived split, calibration procedure, input count and explicit seeds replayed; T5 output may differ",
+  "reference_scope": "Frozen references and token-length vectors; no victim generation",
+  "selector_version": "eos-through-first-inclusive/1",
+  "frozen_input_inventory": true,
+  "map_inverse_refitted": false,
+  "original_selector_protocol_sha256": "6ee24aa1b43ce8207994e4f9019c60c2e52741428ac9df3294f96902a843610e",
+  "candidate_evidence_schema": "eos-bounded-candidate-audit/1"
+}

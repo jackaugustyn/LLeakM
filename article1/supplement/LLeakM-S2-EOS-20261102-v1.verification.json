@@ -1,0 +1,34 @@
+{
+  "candidate_evidence": {
+    "calls": 86788,
+    "candidates": 253764,
+    "candidates_redecoded": 253764,
+    "candidates_with_nonfinite_post_eos_tail": 142629,
+    "candidates_with_post_eos_tail": 142629,
+    "encoder_calls_retokenized": 86788,
+    "excluded_post_eos_tokens": 393353,
+    "new_map_records_checked": 3300,
+    "ranked_calls": 83488,
+    "records": 6600,
+    "scored_tokens": 4540261,
+    "single_candidate_calls": 3300
+  },
+  "files_hashed": 2984,
+  "fresh_token_id_records_checked": 600,
+  "maximum_phi_difference": 1.1102230246251565e-16,
+  "package_id": "LLeakM-S2-EOS-20261102-v1",
+  "protocol_source_bindings_checked": 715,
+  "reconstruction_counts": {
+    "cuda_full": 2100,
+    "defense_pilot": 360,
+    "fresh_phi_cuda": 300,
+    "fresh_tinyllama_cuda": 300,
+    "map": 3300,
+    "trace_control": 240
+  },
+  "reconstructions_checked": 6600,
+  "scope": "All NEW reconstruction records: inventory, complete condition grids, frozen input/log bindings, lexical phi, record digests, EOS-inclusive candidate-score sums, exact ranking/ties and response assembly. No comparisons with older reconstruction results. All retained encoder inputs and candidate texts retokenized/decoded offline. No model forward passes, new victim generation or semantic disclosure assessment.",
+  "source_logs_checked": 2760,
+  "status": "PASS",
+  "tokenizer_replay": true
+}

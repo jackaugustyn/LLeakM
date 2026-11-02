@@ -1,0 +1,18 @@
+{
+  "status": "PREPARATION_PASS",
+  "gpu_inference_performed": false,
+  "checks": {
+    "syntax_compilation": true,
+    "full_main_frozen_plan_records": 2100,
+    "full_secondary_frozen_plan_records": 3900,
+    "actual_selector_cpu_schema_cases": 3,
+    "mixed_source_smoke_plan_records": 3,
+    "changed_smoke_seed_rejected": true
+  },
+  "files": {
+    "inference/rerun_canonical.py": "738bb86cd69589afdf8df23215a675b4e6ffd2e2595e301f1a12d6f9b4519165",
+    "inference/candidate_evidence.py": "9501198e20de8a63122b0e60f2c8fff2977b220e131e3b12a02351f1acc55d5f",
+    "secondary/rerun_secondary.py": "50c2575c5059b619ef86df73ba4ed57ce717e982fc884c61b126378c650f1fdd"
+  },
+  "limits": "Final GPU smoke and full campaign completion are root-owned checks."
+}

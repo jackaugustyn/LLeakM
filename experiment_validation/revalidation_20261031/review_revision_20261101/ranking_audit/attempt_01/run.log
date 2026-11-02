@@ -1,0 +1,9 @@
+From v4.47 onwards, when a model cache is to be returned, `generate` will return a `Cache` instance instead by default (as opposed to the legacy tuple of tuples format). If you want to keep returning the legacy format, please set `return_legacy_cache=True`.
+1/24 archived gemma_2_2b idx=2 old_match=True changed=True seconds=1.84
+2/24 archived gemma_2_2b idx=162 old_match=True changed=True seconds=1.06
+Traceback (most recent call last):
+  File "/home/paugustynowicz/LLeakM/experiment_validation/revalidation_20261031/review_revision_20261101/ranking_audit/run_audit.py", line 215, in <module>
+    main()
+  File "/home/paugustynowicz/LLeakM/experiment_validation/revalidation_20261031/review_revision_20261101/ranking_audit/run_audit.py", line 151, in main
+    raise AssertionError('Independent historical score replay disagrees')
+AssertionError: Independent historical score replay disagrees

@@ -1,0 +1,30 @@
+{
+  "status": "SOURCE_VERIFIED_PENDING_PDF_BUILD",
+  "template_sha256": "76de97bf22e37d71dd348812f49fced10185bd39947ec12b7b27f8b38b531bdb",
+  "numeric_sources": {
+    "experiment_validation/revalidation_20261031/final_review_20261101/main_fresh_factledger.json": "bebf5cf314062cedd2cc76900ef61b0284e3282ea3d723a0d226382a51174bee",
+    "experiment_validation/revalidation_20261031/final_review_20261101/secondary_audit.json": "bd819964e98943530f88303e7f11d57765208b18fadf50dce342849cd12a8eb3",
+    "experiment_validation/revalidation_20261031/secondary/cuda_full/summary.json": "17e07425b40dbf1dc3a30f9cce2e8caec29f75bdb912fc7811e5498994ee9a0f"
+  },
+  "table_labels": [
+    "tab:main_results",
+    "tab:statistical_results",
+    "tab:scenario_sensitivity",
+    "tab:eos_completeness",
+    "tab:trace_controls",
+    "tab:defense_results",
+    "tab:robustness",
+    "tab:fresh_results",
+    "fig:model_ci",
+    "fig:defense_tradeoff"
+  ],
+  "citations_preserved": true,
+  "authors_and_declarations_preserved": true,
+  "pdf_not_built": true,
+  "matched_rendering_source": "experiment_validation/revalidation_20261031/final_review_20261101/paired_detokenization_score_contrast.json",
+  "independent_numeric_validation": "experiment_validation/revalidation_20261031/final_review_20261101/manuscript_numeric_validation.json",
+  "checked_numeric_fields": 454,
+  "checked_numeric_rows": 85,
+  "checked_tables": 10,
+  "checked_figures": 2
+}

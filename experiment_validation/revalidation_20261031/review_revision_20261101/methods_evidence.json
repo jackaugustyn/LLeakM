@@ -1,0 +1,174 @@
+{
+  "schema": "local-methods-review-revision-evidence/1",
+  "review_findings": [
+    "R1-W2",
+    "R1-W3",
+    "EIC-W2"
+  ],
+  "changed_experiment_data": false,
+  "new_model_inference": false,
+  "proposal_file": "methods_proposal.tex",
+  "source_evidence": [
+    {
+      "path": "experiment_validation/scripts/robustness_eval.py",
+      "sha256": "61aa4c5780224fede418ce15b5801ae7966184026d5895ffddb53d4c0295de52",
+      "line_ranges": [
+        [
+          66,
+          73
+        ],
+        [
+          165,
+          258
+        ],
+        [
+          290,
+          299
+        ]
+      ]
+    },
+    {
+      "path": "experiment_validation/revalidation_20261031/secondary/rerun_secondary.py",
+      "sha256": "3508b2a82e948de53f0355f7cd64433a6d494ad929b224a9747951f1cc117621",
+      "line_ranges": [
+        [
+          98,
+          109
+        ],
+        [
+          120,
+          175
+        ],
+        [
+          315,
+          317
+        ],
+        [
+          332,
+          372
+        ]
+      ]
+    },
+    {
+      "path": "experiment_validation/revalidation_20261031/inference/rerun_canonical.py",
+      "sha256": "503d164ff73b41948286158df26649e46a66fddee9d157a43a15e38b547da663",
+      "line_ranges": [
+        [
+          71,
+          76
+        ],
+        [
+          165,
+          182
+        ]
+      ]
+    },
+    {
+      "path": "experiment_validation/revalidation_20261031/inference_validation/verify_inference.py",
+      "sha256": "f826fccf005f866514126fb442989380a770a4e63c053d0bfb0f357721a8407f",
+      "line_ranges": [
+        [
+          301,
+          341
+        ]
+      ]
+    },
+    {
+      "path": "article1/template.tex",
+      "sha256": "8539201fa3c7aeb62d219037c3395a083e541b4fc08df1f1b701327c8ca42dc5",
+      "line_ranges": [
+        [
+          168,
+          177
+        ],
+        [
+          339,
+          398
+        ],
+        [
+          404,
+          410
+        ]
+      ]
+    }
+  ],
+  "seed_formula": {
+    "join_delimiter_byte": "0x1f",
+    "conversion": "str each argument; UTF-8 encoding",
+    "hash": "BLAKE2s(digest_size=4)",
+    "integer": "unsigned big-endian AND 0x7fffffff"
+  },
+  "independent_inventory_seed_check": {
+    "source": "experiment_validation/revalidation_20261031/secondary/cuda_full/input_inventory.jsonl",
+    "source_sha256": "cc6feffdccc163b0e86c2024e65987645a2b89435c04039443e4d340eb81a4a9",
+    "counts": {
+      "trace_control": 240,
+      "defense_pilot": 360,
+      "map": 3300
+    },
+    "n_checked": 3900,
+    "failures": [],
+    "status": "PASS",
+    "setting_tuple_fields": [
+      "victim_budget",
+      "max_sentences",
+      "samples_per_segment",
+      "num_first_candidates"
+    ],
+    "settings": {
+      "trace_control": [
+        [
+          96,
+          3,
+          3,
+          3
+        ]
+      ],
+      "defense_pilot": [
+        [
+          96,
+          3,
+          3,
+          3
+        ]
+      ],
+      "map": [
+        [
+          512,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    "examples": [
+      {
+        "task_id": "trace_control:qwen_1_5b:1:real:frozen:20260706",
+        "decoder_seed": 564394350,
+        "trace_seed": null
+      },
+      {
+        "task_id": "trace_control:qwen_1_5b:1:shuffled:frozen:20260706",
+        "decoder_seed": 141138752,
+        "trace_seed": 20260723
+      },
+      {
+        "task_id": "trace_control:qwen_1_5b:1:constant:frozen:20260706",
+        "decoder_seed": 231547819,
+        "trace_seed": null
+      }
+    ]
+  },
+  "map_rules_verified": [
+    "Individual observations return conditional modal length, smaller length wins ties; unseen observation returns global mode.",
+    "Random padding uses 16 independently seeded draws per calibration trace; global clean-length counts count each trace only once.",
+    "Batch tuples are counted per sum and size using consecutive non-overlapping groups.",
+    "Last-group size maximizes total count for (sum,size) times max(1,tail-size count); equal products prefer larger size.",
+    "Known tuple mode resolves ties lexicographically.",
+    "Unknown tuple uses DP with add-one unigram probabilities on observed support; equal floating-point DP scores prefer lexicographically smaller tuple.",
+    "Unattainable total falls back to repeated global mode, possibly breaking sum constraint.",
+    "Empty calibration defaults are mode 1 and support 0..17; actual calibration nonempty.",
+    "Estimator is local; final-group score is a heuristic, not global sequence MAP or a validated tail posterior."
+  ],
+  "bootstrap_note": "Main/fresh each initialize one shared RNG stream with 20260706 and consume in pinned aggregator model/metric/contrast order. Secondary initializes cells and contrasts separately using H with respective bootstrap/contrast tags. Matched rendering uses 20261101. EOS-only CIs in audit ledger use a separate seed sequence but are not printed in manuscript, so omitted from proposal."
+}

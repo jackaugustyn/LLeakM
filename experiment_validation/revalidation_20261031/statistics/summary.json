@@ -1,0 +1,97 @@
+{
+  "verification_status": "VERIFIED calculations conditional on archived text; collection/reference validity unresolved",
+  "python": "3.10.12",
+  "numpy": "1.22.0",
+  "scipy": "1.8.0",
+  "pythonhashseed": "0",
+  "primary_pairs_significant_21": 17,
+  "scenario_pairs_significant_21": 17,
+  "defense_pairs_significant_10": 10,
+  "metric_mismatch_count": 0,
+  "source_bugs": [
+    "trace_baselines.py percentile interval unpacking attempts float(array)",
+    "Signed-rank p-value subtraction loses extreme tails; independent erfc/SciPy values retained"
+  ],
+  "sources": [
+    {
+      "path": "experiment_validation/scripts/run_validation.py",
+      "sha256": "b8fd10307bab2ffffe20824fbc6834861eda72d80f34acbdbf5bc455d5c8d766"
+    },
+    {
+      "path": "experiment_validation/scripts/analyze_stats.py",
+      "sha256": "6990317ba885ebf26e778bf61213f836d2936ae881c14957c273dadcd73b91d0"
+    },
+    {
+      "path": "experiment_validation/scripts/analyze_extras.py",
+      "sha256": "de78d40b3dac51d7eb293a0ac58d26fffce377cc222aa6473a6cff5d6e977744"
+    },
+    {
+      "path": "experiment_validation/scripts/robustness_eval.py",
+      "sha256": "61aa4c5780224fede418ce15b5801ae7966184026d5895ffddb53d4c0295de52"
+    },
+    {
+      "path": "experiment_validation/scripts/generate_prompts.py",
+      "sha256": "9c88e78ff8c29f3b224746a5ed1a7a0d88b389927aa6d2503fc1cb1f04f8d66e"
+    },
+    {
+      "path": "experiment_validation/scripts/defense_eval.py",
+      "sha256": "717a03ec869c2206b2cee5dee39b0d5e8e7b378227b0267c6ba5c1d1bdd95f2e"
+    },
+    {
+      "path": "experiment_validation/scripts/trace_baselines.py",
+      "sha256": "0d32a0ae2d83eaec7bf629ee02b4a416a1f87b8128cfd9ae69547fdcbc9852ba"
+    },
+    {
+      "path": "experiment_validation/results/run_full_20260920_qwen_1_5b_full/samples.jsonl",
+      "sha256": "69fab9d733f5188cb56a2225372de0bee6221aca106ba0715c344fc0c43de575"
+    },
+    {
+      "path": "experiment_validation/results/run_full_20260920_qwen_3b_full/samples.jsonl",
+      "sha256": "b45afd9dd5fb1857c4c53c4c5304f88317adc91776c72d6be205e18c6341152a"
+    },
+    {
+      "path": "experiment_validation/results/run_full_20260920_llama_3_2_3b_full/samples.jsonl",
+      "sha256": "a0b763f615897171ec05c38a06fcf2425e9e27511d02a5128fb42c90e0adee80"
+    },
+    {
+      "path": "experiment_validation/results/run_full_20260920_gemma_2_2b_full/samples.jsonl",
+      "sha256": "cf54813fad2821bf7c57b4d88647dfd13b3e613b882e8dc7115cc771893a1f9b"
+    },
+    {
+      "path": "experiment_validation/results/run_full_20260920_phi_1_5_full/samples.jsonl",
+      "sha256": "064e18eab753d1004f4f7395d4b4fd8b7699e15a5b6451b25483d5c0b0e18f0a"
+    },
+    {
+      "path": "experiment_validation/results/run_full_20260920_tinyllama_1_1b_full/samples.jsonl",
+      "sha256": "090bf56093e901165b7b4fb61308121a21caa6d03fb049e5db413a70aef1c20f"
+    },
+    {
+      "path": "experiment_validation/results/run_full_20260920_phi_3_5_mini_full/samples.jsonl",
+      "sha256": "e9457f666825a8bcf4bfe5064734046b8e997839190e55c5ce77caad75c3c4d2"
+    },
+    {
+      "path": "experiment_validation/results/run_20260325_104518_qwen_1_5b/samples.jsonl",
+      "sha256": "f8c3e63b59c64a027983c2dbe4f186d6fd7d22c15496d22d2f1a4f6d41229f29"
+    },
+    {
+      "path": "experiment_validation/results/run_20260414_073030_llama_3_2_3b/samples.jsonl",
+      "sha256": "6e9da9245028d9d5af568f51a72fd9d243accec809382d41d7e93309838d5b34"
+    },
+    {
+      "path": "experiment_validation/analysis/trace_baseline_samples.jsonl",
+      "sha256": "fc6c4b27b2f8773a53e6d50fd239a63944a5e74d9d67fa47ca40797a2721fac1"
+    },
+    {
+      "path": "experiment_validation/analysis/defense_samples.jsonl",
+      "sha256": "72bac0cf11f66c52d62f7e0a123bf38270473401a668d0ba379648a75424dfb1"
+    },
+    {
+      "path": "experiment_validation/analysis/robustness_samples.jsonl",
+      "sha256": "712789a567a2e49d1c97f4d09cb204d7519d90b041c9909104b89114cf2326be"
+    },
+    {
+      "path": "experiment_validation/analysis/robustness_samples_config.json",
+      "sha256": "640592c4f878ca2de3dc150e594d694607d5d0049d37469f421c06517c3d289a"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "model_stats.json": {
+    "exact_json_value_match": true,
+    "max_numeric_abs_diff": 0,
+    "difference_count": 0,
+    "differences": []
+  },
+  "pairwise_tests.json": {
+    "exact_json_value_match": true,
+    "max_numeric_abs_diff": 0,
+    "difference_count": 0,
+    "differences": []
+  },
+  "covariate_regression.json": {
+    "exact_json_value_match": true,
+    "max_numeric_abs_diff": 0,
+    "difference_count": 0,
+    "differences": []
+  },
+  "topic_matrix.json": {
+    "exact_json_value_match": true,
+    "max_numeric_abs_diff": 0,
+    "difference_count": 0,
+    "differences": []
+  },
+  "defense_overhead.json": {
+    "exact_json_value_match": false,
+    "max_numeric_abs_diff": 0.4041869303413961,
+    "difference_count": 2,
+    "differences": [
+      {
+        "path": "/6/byte_overhead_pct_mean",
+        "old": 79.31209979372466,
+        "new": 79.71628672406605,
+        "abs_diff": 0.4041869303413961
+      },
+      {
+        "path": "/14/byte_overhead_pct_mean",
+        "old": 82.66592223084467,
+        "new": 83.05276712353454,
+        "abs_diff": 0.3868448926898651
+      }
+    ]
+  },
+  "trace_baselines.json": {
+    "exact_json_value_match": true,
+    "max_numeric_abs_diff": 0,
+    "difference_count": 0,
+    "differences": []
+  },
+  "defense_eval.json": {
+    "exact_json_value_match": false,
+    "max_numeric_abs_diff": 1.1876273829217894,
+    "difference_count": 2,
+    "differences": [
+      {
+        "path": "/5/byte_overhead_pct_mean",
+        "old": 78.52865934114426,
+        "new": 79.71628672406605,
+        "abs_diff": 1.1876273829217894
+      },
+      {
+        "path": "/11/byte_overhead_pct_mean",
+        "old": 81.91706536779755,
+        "new": 83.05276712353454,
+        "abs_diff": 1.1357017557369886
+      }
+    ]
+  },
+  "robustness_eval.json": {
+    "exact_json_value_match": false,
+    "max_numeric_abs_diff": 0,
+    "difference_count": 1,
+    "differences": [
+      {
+        "path": "/config/protocol_id",
+        "kind": "missing"
+      }
+    ]
+  }
+}

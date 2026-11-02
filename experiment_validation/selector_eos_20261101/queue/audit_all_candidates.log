@@ -1,0 +1,31 @@
+Token indices sequence length is longer than the specified maximum sequence length for this model (188 > 180). Running this sequence through the model will result in indexing errors
+Audited cuda_full: 2100/2100; candidates=188271
+Audited fresh_tinyllama_cuda: 300/300; candidates=26505
+Audited fresh_phi_cuda: 300/300; candidates=32244
+Token indices sequence length is longer than the specified maximum sequence length for this model (112 > 80). Running this sequence through the model will result in indexing errors
+Audited secondary: 3900/3900; candidates=6744
+/usr/lib/python3/dist-packages/scipy/stats/_morestats.py:3159: UserWarning: Sample size too small for normal approximation.
+  warnings.warn("Sample size too small for normal approximation.")
+{
+  "status": "PASS",
+  "complete": true,
+  "records_checked": 6600,
+  "map_predictions_matched": 3300,
+  "counts": {
+    "records": 6600,
+    "calls": 86788,
+    "candidates": 253764,
+    "ranked_calls": 83488,
+    "single_candidate_calls": 3300,
+    "scored_tokens": 4540261,
+    "candidates_with_post_eos_tail": 142629,
+    "excluded_post_eos_tokens": 393353,
+    "candidates_with_nonfinite_post_eos_tail": 142629,
+    "same_candidate_pool_selection_changes": 56862,
+    "first_call_original_selection_matches": 6600,
+    "first_call_original_selection_matches_multicandidate": 3300,
+    "first_call_selection_changes": 2128,
+    "full_response_prediction_changes": 3105,
+    "map_predictions_matched": 3300
+  }
+}

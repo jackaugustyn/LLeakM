@@ -1,0 +1,299 @@
+--- before/template.tex
++++ article1/template.tex
+@@ -33,11 +33,9 @@
+ \usepackage{placeins}
+ \usepackage{tikz}
+ \usetikzlibrary{arrows.meta,positioning,shapes.geometric,fit}
+-\usepackage{pgfplots}
+-\pgfplotsset{compat=1.18}
+ \setlength{\headheight}{24pt}
+ 
+-\abstract{Streaming large language model (LLM) services can expose response-length metadata even when payloads are encrypted. We evaluate a fixed T5 reconstructor using validated application-layer byte-length traces from 300 aligned prompts for each of seven open-weight models. Reconstruction of 2100 archived responses under a 512-token victim budget yields mean term-frequency cosine scores ($\phi$) of 0.482--0.535 for five models. TinyLlama and Phi-3.5-mini retain malformed archived word boundaries and are analyzed as diagnostics. Separate generation of 300 responses per model with verified full-sequence detokenization yields mean scores of 0.435 and 0.504; these new cohorts are not pooled into the archived comparison. In 96-token pilots, replacing the trace by a constant reduces lexical scores for both tested models, while shuffling is significant only for Qwen after multiplicity correction; cross-prompt contrasts are inconclusive. Five framing transformations reduce frozen-reconstructor mean scores by 36.7--88.7\%. A 3300-reconstruction study with five decoder seeds and a prompt-disjoint maximum-a-posteriori (MAP) length inverse recovers much of the score lost under bucketing and batching. This study decodes the first heuristic segment against the full response; the primary experiment decodes all segments. Input and output limits of 80 T5 tokens make segmentation and retained encoder coverage part of each comparison. The results establish reproducible lexical behavior of this instrumented pipeline, without measuring semantic disclosure, intrinsic model vulnerability, or passive recovery from encrypted transport.}
++\abstract{Streaming large language model (LLM) services can expose response-length metadata even when payloads are encrypted. We evaluate a fixed T5 reconstructor through 6600 reconstructions from validated application-layer length traces. For 300 aligned prompts per model, five archived-reference cohorts yield mean term-frequency cosine scores ($\phi$) of 0.482--0.535; two additional archived cohorts have malformed word boundaries. Newly generated TinyLlama and Phi-3.5-mini responses with verified detokenization yield means of 0.435 and 0.504. Legacy rendering of their saved token IDs reproduces all 600 corresponding archived references and length vectors. Changing both the trace and scoring reference increases mean $\phi$ by 0.356 and 0.383 under matched reconstruction settings. In two-model pilots, three of six partial-ablation contrasts remain significant after Holm correction; neither cross-prompt contrast is conclusive. Five framing transformations reduce frozen-reconstructor mean scores by 36.7--88.7\%. A five-seed study with a maximum-a-posteriori (MAP) length inverse recovers much of the loss under bucketing and batching. Reconstruction scopes and retained encoder coverage differ across these experiments. The findings quantify lexical behavior of an instrumented pipeline and demonstrate the importance of validating both observations and reference rendering. They do not measure semantic disclosure or demonstrate passive extraction from encrypted transport.}
+ 
+ \keyword{large language models; information leakage; side-channel analysis; server-sent events; traffic analysis; token-length traces; text reconstruction; privacy}
+ 
+@@ -54,7 +52,7 @@
+ \begin{enumerate}[label=\textbf{RQ\arabic*:},leftmargin=4.2em,labelwidth=3.2em,labelsep=0.6em]
+     \item Do ordered logged lengths improve lexical scores over controls that shuffle lengths, replace them with a constant, or use another prompt's trace?
+     \item How do scores from validated length traces differ across seven archived victim-model cohorts, and how do separate experiments with verified reference decoding inform the two diagnostic series?
+-    \item How do bucketing, fixed-width units, batching, and randomized padding affect the evaluated pipeline, protected-payload size, and frame count, and how does a prompt-disjoint maximum-a-posteriori (MAP) inverse change its scores?
++    \item How do bucketing, fixed-width units, batching, and randomized padding affect the evaluated pipeline, protected-payload size, and observable-unit count, and how does a prompt-disjoint maximum-a-posteriori (MAP) inverse change its scores?
+ \end{enumerate}
+ 
+ The contribution is an evaluation with explicit input provenance: 2100 reconstructions from validated archived lengths, 600 additional reconstructions of newly generated and correctly assembled responses, two-model pilots of partial trace ablations and five framing configurations, and a five-seed MAP-inverse evaluation. The pilots and MAP study use different reconstruction scopes, so their baselines are not interchangeable. Full input vectors, decoder inputs, random seeds, generated texts, and independent metric checks are retained in the accompanying artifact package. The source project is hosted at \url{https://github.com/jackaugustyn/LLeakM}. Appendix~\ref{app:runs} identifies the completed experiment artifacts and distinguishes them from historical manifests.
+@@ -87,30 +85,35 @@
+ 
+ \begin{figure*}[ht]
+ \centering
+-\resizebox{\textwidth}{!}{%
+-\begin{tikzpicture}[node distance=10mm and 12mm,>=Latex,
+-box/.style={draw,rounded corners,align=center,minimum height=10mm,minimum width=31mm,fill=blue!5},
+-obs/.style={draw,dashed,rounded corners,align=center,minimum height=10mm,minimum width=35mm,fill=orange!10}]
+-\node[box] (user) {Prompt corpus};
+-\node[box,right=of user] (victim) {Victim LLM\\instrumented SSE service};
+-\node[box,right=of victim] (stream) {One token per\\application event};
+-\node[obs,below=of stream] (oracle) {Validated log oracle:\\ordered payload byte lengths};
+-\node[box,left=of oracle] (attacker) {Fixed T5\\reconstructor};
+-\node[box,left=of attacker] (score) {Lexical recovery\\metrics};
+-\draw[->] (user)--(victim);
+-\draw[->] (victim)--(stream);
+-\draw[->] (stream)--(oracle);
+-\draw[->] (oracle)--(attacker);
+-\draw[->] (attacker)--(score);
+-\node[draw,dotted,fit=(stream)(oracle),inner sep=4mm,label=below:{Application-layer length oracle; TLS extraction is out of scope}] {};
++\resizebox{0.96\textwidth}{!}{%
++\begin{tikzpicture}[>=Latex,font=\small,
++box/.style={draw,rounded corners,align=center,minimum height=12mm,text width=32mm,fill=blue!5},
++obs/.style={box,fill=orange!12},eval/.style={box,fill=gray!10}]
++\node[box] (prompt) at (0,0) {Synthetic prompt corpus};
++\node[box] (victim) at (4.1,0) {Local victim model\\text generation};
++\node[box] (records) at (8.2,0) {Logged text fragments\\and payload bytes};
++\node[obs] (lengths) at (4.1,-1.8) {Validated trace $X$\\ordered byte lengths\\(UTF-8)};
++\node[eval] (reference) at (8.2,-1.8) {Emitted reference $R$\\evaluator only};
++\node[box,fill=green!6] (attacker) at (4.1,-3.6) {Fixed T5 reconstructor\\length input only};
++\node[eval] (metrics) at (8.2,-3.6) {Lexical evaluation\\compare $\widehat R$ with $R$};
++\draw[->] (prompt)--(victim);
++\draw[->] (victim)--(records);
++\draw[->] (records.south west)--(lengths.north east);
++\draw[->] (records)--(reference);
++\draw[->] (lengths)--(attacker);
++\draw[->] (reference)--(metrics);
++\draw[->] (attacker)--node[above] {$\widehat R$} (metrics);
++\node[align=left,text width=31mm,font=\footnotesize] at (0,-2.6)
++{The attacker receives neither the prompt nor reference text.\\[3pt]
++Transport extraction and timing are outside this experiment.};
+ \end{tikzpicture}%
+ }
+-\caption{Instrumented threat model. The evaluator verifies logged payload lengths and supplies them to the attacker without the prompt or token identities. Passive recovery of event boundaries from encrypted transport is outside the experiment.}
++\caption{Information flow in the instrumented experiment. Logged fragments supply two separate evaluator products: a validated length trace and the emitted reference text. Only the lengths enter the reconstructor; the reference is used for scoring. The diagram makes no assumption that an instrumented write is a valid SSE event or an observable encrypted-transport record.}
+ \label{fig:threat_model}
+ \end{figure*}
+ 
+ \subsection{Streaming Harness and Trace Collection}
+-The instrumented harness associates each generated token position with a text fragment and records its UTF-8 length, serialized-write length, and relative timestamp. The historical implementation decoded each token independently; the new-generation implementation uses contextual prefix decoding and verifies that the fragments concatenate exactly to the full decoded token sequence. Each write has the SSE-like serialization \texttt{data: \textless fragment\textgreater\textbackslash n\textbackslash n}, and termination uses \texttt{data: [DONE]\textbackslash n\textbackslash n}. Raw newlines inside fragment text are not escaped, so a write is not necessarily a valid single SSE data event. The present experiments use validated lengths from the instrumented logs, not a line-based parser.
++The instrumented harness associates each generated token position with a text fragment and records its UTF-8 length, serialized-write length, and relative timestamp. The historical implementation decoded each token independently; the new-generation implementation uses contextual prefix decoding and verifies that the fragments concatenate exactly to the full decoded token sequence. The new harness completes token generation and contextual decoding before emitting the fragments; it validates payload lengths rather than the timing of incremental generation. Each write has the SSE-like serialization \texttt{data: \textless fragment\textgreater\textbackslash n\textbackslash n}, and termination uses \texttt{data: [DONE]\textbackslash n\textbackslash n}. Raw newlines inside fragment text are not escaped, so a write is not necessarily a valid single SSE data event. The present experiments use validated lengths from the instrumented logs, not a line-based parser.
+ 
+ For the logged serialization, the payload length satisfies
+ \begin{equation}
+@@ -130,7 +133,7 @@
+ Holding the newly recorded token IDs fixed, replay of the historical independent-token decoding reproduces every archived fragment, complete response and byte-length vector for all 300 TinyLlama and all 300 Phi-3.5-mini samples. Switching to complete-sequence decoding changes only ASCII word-boundary spaces in these records. The two renderings are reconstructed with the same T5 checkpoints, precision, device, settings and per-sample seeds. This matched comparison measures the joint effect of rendering on the length input and scoring reference. It does not separate those two contributions, recover unknown historical IDs or certify old checkpoint versions.
+ 
+ \subsection{Reconstruction Pipeline}
+-The inversion pipeline follows the sequence-to-text procedure introduced by Weiss \emph{et al.}~\cite{weiss2024prompt}. It first splits a length vector at observations equal to one and merges short chunks using a ten-unit minimum, with an additional list-boundary heuristic. These are heuristic segments rather than verified sentences. The first segment is decoded using \texttt{royweiss1/T5\_FirstSentences}; later segments use \texttt{royweiss1/T5\_MiddleSentences} with preceding reconstructed context. T5 generation uses stochastic sampling with top-$k=50$, temperature 1 and a two-token no-repeat n-gram constraint. Candidates are ranked by the transition log-probability sum.
++The inversion pipeline follows the sequence-to-text procedure introduced by Weiss \emph{et al.}~\cite{weiss2024prompt}. It first splits a length vector at observations equal to one and merges short chunks using a ten-unit minimum, with an additional list-boundary heuristic. These are heuristic segments rather than verified sentences. The first segment is decoded using \texttt{royweiss1/T5\_FirstSentences}; later segments use \texttt{royweiss1/T5\_MiddleSentences}, conditioned on the immediately preceding selected segment. T5 generation uses stochastic sampling with top-$k=50$, temperature 1 and a two-token no-repeat n-gram constraint. Candidates are ranked by the transition log-probability sum at each segment, and the chosen text supplies the next segment's context.
+ 
+ For defense experiments, the order is length transformation, optional MAP inversion, heuristic segmentation, serialization of each segment as underscore-prefixed integers, T5 tokenization, input truncation, and decoding. The encoder input is limited to 80 T5 tokens, including the instruction prefix and any preceding context; generation also uses \texttt{max\_length}=80. These limits are distinct from the victim's 96- or 512-token generation budget. One length value need not occupy one T5 token: for example, \texttt{\_32} occupies two tokens in the audited tokenizer. Changing the length values can therefore change both segmentation and the amount of trace retained by the encoder. Section~\ref{sec:robustness-methods} reports the audited coverage of the first segment in the MAP experiment.
+ 
+@@ -138,23 +141,27 @@
+ 
+ \begin{figure*}[ht]
+ \centering
+-\resizebox{\textwidth}{!}{%
+-\begin{tikzpicture}[node distance=8mm,>=Latex,
+-pipelinebox/.style={draw,rounded corners,align=center,minimum height=11mm,minimum width=27mm,fill=green!6}]
+-\node[pipelinebox] (capture) {Collected or logged\\length sequence};
+-\node[pipelinebox,right=of capture] (norm) {Payload-length\\representation};
+-\node[pipelinebox,right=of norm] (segment) {Heuristic\\segmentation};
+-\node[pipelinebox,right=of segment] (first) {First-segment\\T5 decoding};
+-\node[pipelinebox,right=of first] (middle) {Context-aware\\middle decoding};
+-\node[pipelinebox,right=of middle] (rank) {Candidate ranking\\and concatenation};
+-\draw[->] (capture)--(norm);
+-\draw[->] (norm)--(segment);
+-\draw[->] (segment)--(first);
+-\draw[->] (first)--(middle);
+-\draw[->] (middle)--(rank);
++\resizebox{0.98\textwidth}{!}{%
++\begin{tikzpicture}[>=Latex,font=\small,
++box/.style={draw,rounded corners,align=center,minimum height=13mm,text width=33mm,fill=green!6}]
++\node[box] (trace) at (0,0) {Validated logged\\payload lengths};
++\node[box] (transform) at (4.4,0) {Length transformation\\then optional MAP inverse};
++\node[box] (segment) at (8.8,0) {Heuristic segmentation\\of the resulting vector};
++\node[box] (input) at (8.8,-2) {Segment + context\\serialize and tokenize\\encoder limit: 80 tokens};
++\node[box] (decode) at (4.4,-2) {First- or middle-segment T5\\stochastic generation\\output limit: 80 tokens};
++\node[box] (rank) at (0,-2) {Rank candidates\\select one text per segment};
++\node[box,fill=gray!10] (output) at (0,-4) {Concatenate chosen text\\score against full reference};
++\draw[->] (trace)--(transform);
++\draw[->] (transform)--(segment);
++\draw[->] (segment)--(input);
++\draw[->] (input)--(decode);
++\draw[->] (decode)--(rank);
++\draw[->] (rank)--(output);
++\draw[->] (rank.south east) -- (2.1,-3.1) --
++node[below,align=center,font=\footnotesize] {Next segment: context is only\\the immediately preceding chosen text} (8.8,-3.1) -- (input.south);
+ \end{tikzpicture}%
+ }
+-\caption{Reconstruction stages. Inputs come from the collection paths in Section~\ref{sec:measurement-audit}; defenses and any MAP inverse precede segmentation. Each T5 input, including its instruction and context, is truncated to 80 tokens, and the output length is also capped at 80. The primary campaign decodes all available segments, the documented 96-token pilot recipe allows up to three, and the MAP study decodes the first. All score against the full stored response.}
++\caption{Executed reconstruction pipeline. Unmodified conditions pass lengths directly to segmentation. Candidate selection precedes each context update; the first segment has no reconstructed context. Main and new-reference runs decode all segments with three samples per segment; 96-token pilots allow up to three segments with three samples each; the five-seed MAP study uses one sample for the first segment per seed. The 80-token encoder limit includes the instruction and context. All settings score their output against the full stored response.}
+ \label{fig:pipeline}
+ \end{figure*}
+ 
+@@ -169,7 +176,7 @@
+ 
+ \begin{table*}[ht]
+ \centering
+-\caption{Victim models in the archived-reference cohort. TinyLlama and Phi-3.5-mini are diagnostic in that cohort and also evaluated separately with newly generated, validated references. Parameter counts follow the cited model cards and technical reports.}
++\caption{Victim checkpoints and tokenizer families in the archived-reference cohort. TinyLlama and Phi-3.5-mini are diagnostic in that cohort and also evaluated separately with newly generated, validated references. Parameter counts follow the cited model cards and technical reports; these metadata do not certify historical checkpoint revisions.}
+ \label{tab:model_metadata}
+ \resizebox{\textwidth}{!}{%
+ \begin{tabular}{l l l l}
+@@ -190,7 +197,7 @@
+ 
+ \begin{table}[ht]
+ \centering
+-\caption{Stored response-length covariates ($N=300$ per model), including the two diagnostic series. Character and byte counts refer to emitted token text, excluding framing bytes. Truncation is the percentage of samples with \texttt{token\_count}$\geq 512$.}
++\caption{Archived response-length covariates ($N=300$ per model), including the two diagnostic series. These describe the source responses used by the completed reconstructions. Character and byte counts refer to emitted token text, excluding framing bytes; mean B/token is averaged over responses. Truncation is the percentage of samples with \texttt{token\_count}$\geq 512$.}
+ \label{tab:length_covariates}
+ \resizebox{\columnwidth}{!}{%
+ \begin{tabular}{l c c c c}
+@@ -245,7 +252,7 @@
+ 
+ \begin{table}[ht]
+ \centering
+-\caption{Recorded first-segment encoder inputs exceeding 80 T5 tokens in the frozen MAP conditions (30 unique test inputs per model, each decoded with five seeds). The limit includes the instruction prefix. Counts describe encoder coverage, not reconstruction quality.}
++\caption{Recorded first-segment encoder inputs exceeding 80 T5 tokens in the frozen-attacker conditions of the five-seed experiment (30 unique test inputs per model). Each input is reused across five decoder seeds. The limit includes the instruction prefix. Counts describe encoder coverage, not reconstruction quality.}
+ \label{tab:encoder_coverage}
+ \begin{tabular}{l c c}
+ \toprule
+@@ -291,13 +298,13 @@
+ \end{table}
+ 
+ \subsection{Reconstruction from Validated Archived Lengths}
+-Table~\ref{tab:main_results} reports the completed reconstruction cohort, and Figure~\ref{fig:model_ci} shows its mean-score intervals. For the five series without the observed malformed-word-boundary pattern, mean $\phi$ ranges from 0.4820 to 0.5355 and $\mathrm{LR}@0.5$ from 42.33\% to 65.33\%. Their ROUGE-1 precision is 0.2101--0.2921. These metrics quantify lexical overlap with the archived emitted text; they do not establish semantic fidelity or independently validate its historical full-sequence detokenization. Phi-1.5 remains a base-model stress test.
++Table~\ref{tab:main_results} reports the completed reconstruction cohort, and Figure~\ref{fig:model_ci}a shows its mean scores with scenario-bootstrap intervals. For the five series without the observed malformed-word-boundary pattern, mean $\phi$ ranges from 0.4820 to 0.5355 and $\mathrm{LR}@0.5$ from 42.33\% to 65.33\%. Their ROUGE-1 precision is 0.2101--0.2921. These metrics quantify lexical overlap with the archived emitted text; they do not establish semantic fidelity or independently validate its historical full-sequence detokenization. Phi-1.5 remains a base-model stress test.
+ 
+ The archived TinyLlama and Phi-3.5-mini references yield means of 0.0792 and 0.1210, with no $\phi>0.5$ cases. These are reference-format diagnostics. The new input vectors are verified byte-for-byte for all models, but reference defects remain part of these two scores. Across the 2100 reconstructions, all 62,757 available heuristic segments were processed; 1475 encoder calls exceeded the 80-token input limit. No run stopped early because of an empty middle-segment output.
+ 
+ \begin{table*}[ht]
+ \centering
+-\caption{Complete reconstructions from validated archived payload lengths ($N=300$ per model; 512-token victim budget; all available heuristic segments; three samples per segment; 80-token T5 input and output limits). Full archived emitted responses are the references. The final two rows are reference-format diagnostics; input provenance is verified for every row.}
++\caption{Completed reconstruction runs from validated archived payload lengths ($N=300$ per model; 512-token victim budget; all available heuristic segments; three samples per segment; 80-token T5 input and output limits). Full archived emitted responses are the references. The final two rows are reference-format diagnostics; input provenance is verified for every row.}
+ \label{tab:main_results}
+ \resizebox{\textwidth}{!}{%
+ \begin{tabular}{l l c c c c c}
+@@ -320,26 +327,8 @@
+ 
+ \begin{figure*}[ht]
+ \centering
+-\begin{tikzpicture}
+-\begin{axis}[width=0.94\textwidth,height=7cm,ymin=0,ymax=0.70,
+-ylabel={Mean term-frequency cosine $\phi$ with bootstrap 95\% CI},
+-symbolic x coords={Qwen1.5,Qwen3,Phi1.5,Llama3,Gemma2,Phi3.5,TinyLlama},xtick=data,
+-xticklabels={Qwen2.5-1.5B,Qwen2.5-3B,Phi-1.5,Llama-3.2-3B,Gemma-2-2B,Phi-3.5-mini$^{\dagger}$,TinyLlama-1.1B$^{\dagger}$},
+-x tick label style={rotate=28,anchor=east,font=\scriptsize},ymajorgrids]
+-\addplot+[only marks,mark=*,blue,error bars/.cd,y dir=both,y explicit]
+-table[x=model,y=mean,y error plus=plus,y error minus=minus] {
+-model mean plus minus
+-Qwen1.5 0.535463 0.012235 0.011968
+-Qwen3 0.525143 0.009222 0.009558
+-Phi1.5 0.516368 0.012425 0.012506
+-Llama3 0.514621 0.011941 0.012450
+-Gemma2 0.482001 0.008420 0.008499
+-Phi3.5 0.121017 0.006342 0.006213
+-TinyLlama 0.079159 0.005371 0.005014
+-};
+-\end{axis}
+-\end{tikzpicture}
+-\caption{Mean lexical scores from validated archived lengths with prompt-bootstrap 95\% confidence intervals ($N=300$ per model; all heuristic segments scored against full archived references). Each segment uses three samples and 80-token T5 input and output limits. $\dagger$ marks reference-format diagnostics. Rounded error bars display the asymmetric endpoints in Table~\ref{tab:statistical_results}.}
++\includegraphics[width=\textwidth]{figures/latest_model_results.pdf}
++\caption{Completed all-segment reconstructions with scenario-bootstrap 95\% intervals ($N=300$ prompts in 60 scenarios per model; 512-token victim limit; three T5 samples per segment; 80-token T5 input and output limits). (a) Archived-reference results; $\dagger$ marks reference-format diagnostics. (b) Separate, matched rendering experiment: legacy decoding of newly recorded token IDs reproduces the two archived diagnostic inputs and references exactly. Full-sequence decoding changes both the trace and scoring reference under identical T5 settings and seeds. Annotated $\Delta\phi$ intervals resample paired scenarios. Marginal intervals match Tables~\ref{tab:scenario_sensitivity} and~\ref{tab:fresh_results}. The two panels do not form a pooled seven-model ranking.}
+ \label{fig:model_ci}
+ \end{figure*}
+ 
+@@ -350,7 +339,7 @@
+ 
+ \begin{table*}[ht]
+ \centering
+-\caption{EOS subsets of the archived-reference cohort ($N=300$ per model; validated length inputs, all segments, 80-token T5 input and output limits). EOS-only metrics select \texttt{response\_complete} samples; they do not certify correct reconstructions. Phi-3.5-mini and TinyLlama remain reference-format diagnostics.}
++\caption{EOS subsets of the archived-reference cohort ($N=300$ per model; validated length inputs, all segments, 80-token T5 input and output limits). EOS-only metrics select \texttt{response\_complete} samples; they do not certify correct reconstructions. Both LR columns report percentages. Phi-3.5-mini and TinyLlama remain reference-format diagnostics.}
+ \label{tab:eos_completeness}
+ \resizebox{\textwidth}{!}{%
+ \begin{tabular}{l c c c c c c c}
+@@ -415,13 +404,13 @@
+ \end{table}
+ 
+ \subsection{Separate Experiments with Verified Reference Decoding}\label{sec:fresh}
+-New TinyLlama and Phi-3.5-mini generations passed full-sequence detokenization checks for all 300 prompts per model. Their corresponding mean scores are 0.4352 and 0.5042 (Table~\ref{tab:fresh_results}), with $\mathrm{LR}@0.5$ of 30.33\% and 52.33\%. TinyLlama reached EOS in 177/300 responses; all Phi-3.5-mini responses reached the 512-token limit. All 8835 and 10,748 available reconstruction segments were processed, with 55 and 77 encoder calls truncated, respectively.
++New TinyLlama and Phi-3.5-mini generations passed full-sequence detokenization checks for all 300 prompts per model. Their corresponding mean scores are 0.4352 and 0.5042 (Table~\ref{tab:fresh_results} and Figure~\ref{fig:model_ci}b), with $\mathrm{LR}@0.5$ of 30.33\% and 52.33\%. TinyLlama reached EOS in 177/300 responses; all Phi-3.5-mini responses reached the 512-token limit. All 8835 and 10,748 available reconstruction segments were processed, with 55 and 77 encoder calls truncated, respectively.
+ 
+ Because legacy decoding of the newly saved IDs exactly reproduces the archived references and vectors, the two renderings support a matched computational comparison with identical T5 settings and per-sample seeds. Changing both the length trace and reference to full-sequence rendering increases mean $\phi$ by 0.3560 for TinyLlama (paired scenario-bootstrap 95\% CI $[0.3396,0.3731]$) and 0.3831 for Phi-3.5-mini ($[0.3670,0.3982]$). These intervals use 10,000 resamples of the 60 paired scenario means with seed \texttt{20261101}. The effect combines changed attacker input and changed scoring text; neither component is isolated. The two cohorts remain separate from the other five archived-reference series, whose original token IDs are unavailable.
+ 
+ \begin{table*}[ht]
+ \centering
+-\caption{Separate cohorts with newly generated, verified full-sequence references ($N=300$ per model; 512-token victim limit; all segments and three T5 samples per segment). Mean-$\phi$ intervals resample 60 scenarios. These rows form a targeted reference-validation experiment and are analyzed separately from the seven archived-reference cohorts.}
++\caption{Separate cohorts with newly generated, verified full-sequence references ($N=300$ per model; 512-token victim limit; all segments, three T5 samples per segment and 80-token T5 input and output limits). Mean-$\phi$ intervals use 10,000 resamples of 60 scenarios. These rows form a targeted reference-validation experiment and are analyzed separately from the seven archived-reference cohorts. EOS indicates end-of-sequence termination, not reconstruction correctness.}
+ \label{tab:fresh_results}
+ \resizebox{\textwidth}{!}{%
+ \begin{tabular}{l c c c c c c c}
+@@ -442,12 +431,12 @@
+ 
+ \begin{table*}[ht]
+ \centering
+-\caption{Framing transformations on validated lengths from 96-token responses ($n=30$ paired prompts per model; three samples per segment, up to three segments, 80-token T5 input and output limits, full-response references). Every overhead, including randomized padding, is the realized cost of the saved transformed vectors. Payload accounting excludes SSE syntax, transport headers, buffering delay and latency.}
++\caption{Framing transformations on validated lengths from 96-token responses ($n=30$ paired prompts per model; three samples per segment, up to three segments, 80-token T5 input and output limits, full-response references). Every overhead, including randomized padding, is the realized cost of the saved transformed vectors. Units count entries in the transformed length vector. Payload accounting excludes SSE syntax, transport headers, buffering delay and latency.}
+ \label{tab:defense_results}
+ \resizebox{\textwidth}{!}{%
+ \begin{tabular}{l l c c c c c}
+ \toprule
+-Model & Defense & Mean $\phi$ & 95\% CI & Score reduction & Payload overhead & Frames \\
++Model & Defense & Mean $\phi$ & 95\% CI & Score reduction & Payload overhead & Units \\
+ \midrule
+ Qwen2.5-1.5B & baseline & 0.2814 & [0.2399, 0.3268] & -- & 0.0\% & 96 \\
+  & bucket\_8 & 0.0318 & [0.0224, 0.0421] & 88.7\% & 82.4\% & 96 \\
+@@ -469,21 +458,8 @@
+ 
+ \begin{figure}[ht]
+ \centering
+-\begin{tikzpicture}
+-\begin{axis}[width=0.98\columnwidth,height=6.2cm,xmin=-15,xmax=600,ymin=25,ymax=100,
+-xlabel={Mean protected-payload overhead (\%)},ylabel={Mean recovery-score reduction (\%)},grid=major]
+-\addplot+[only marks,mark=*,mark size=2.6pt,blue]
+-coordinates {(85.5,87.6) (551.6,37.0) (0.0,71.3) (0.0,68.6) (82.6,58.5)};
+-\node[font=\scriptsize,anchor=south] at (axis cs:85.5,87.6) {bucket\_8};
+-\node[font=\scriptsize,anchor=south east] at (axis cs:551.6,37.0) {pad\_32};
+-\node[font=\scriptsize,anchor=west] at (axis cs:95,78) {batch\_2};
+-\draw[gray,thin] (axis cs:0,71.3) -- (axis cs:90,78);
+-\node[font=\scriptsize,anchor=west] at (axis cs:95,48) {batch\_4};
+-\draw[gray,thin] (axis cs:0,68.6) -- (axis cs:90,48);
+-\node[font=\scriptsize,anchor=west] at (axis cs:95,58.5) {rand\_pad\_8};
+-\end{axis}
+-\end{tikzpicture}
+-\caption{Recovery-score reduction versus realized protected-payload overhead, averaged equally over the two 96-token pilot models ($n=30$ prompts each; up to three segments, three samples per segment, 80-token T5 input and output limits). Both coordinates use the completed runs. Batching has zero payload-sum overhead and changes the frame count; latency was not measured. These are pipeline scores, not information-theoretic privacy estimates.}
++\includegraphics[width=\textwidth]{figures/latest_defense_tradeoff.pdf}
++\caption{Mean lexical-score reduction versus realized protected-payload overhead, shown separately for the two 96-token pilot models ($n=30$ prompts each; up to three segments, three samples per segment, 80-token T5 input and output limits). Identical axes show every model--transformation result from Table~\ref{tab:defense_results}. Both coordinates use the saved completed runs, including the realized randomized padding. Batching has zero payload-sum overhead and changes the observable-unit count; transport overhead and latency were not measured. These are frozen-pipeline point estimates, not information-theoretic privacy estimates.}
+ \label{fig:defense_tradeoff}
+ \end{figure}
+ 
+@@ -544,7 +520,7 @@
+ The strongest control evidence concerns replacing the trace by a constant: both models lose lexical score, and shuffling also reduces Qwen's score after correction. Neither cross-prompt contrast is conclusive, and Llama's shuffled contrast is inconclusive after Holm correction. Thus the experiments support sensitivity to selected trace features, not a universal advantage of the target trace over every partial ablation. Controls preserve response-dependent quantities such as length, mean or histogram and can change segmentation. Their residual scores cannot be assigned entirely to the decoder's language prior. Estimating information-theoretic leakage would require a defined response variable, repeated sampling and a suitable estimator.
+ 
+ \subsection{Limits of the Cross-Model Comparison}
+-Exact logged byte lengths remove the line-collector ambiguity from the reported reconstruction inputs. This matters because a correct arithmetic reanalysis alone would leave the observation layer unresolved. Reference quality remains a distinct issue: archived TinyLlama and Phi-3.5-mini fragments have malformed word boundaries, whereas the new two-model cohorts pass explicit full-sequence decoding checks. Their substantially higher scores make the archived diagnostics unsuitable as general evidence of poor transfer.
++Exact logged byte lengths remove the line-collector ambiguity from the reported reconstruction inputs. Reference quality remains a distinct issue: archived TinyLlama and Phi-3.5-mini fragments have malformed word boundaries, whereas the new two-model cohorts pass explicit full-sequence decoding checks. For fixed newly recorded token IDs, legacy decoding reproduces the archived inputs and references exactly, while full-sequence decoding restores word-boundary spaces. With reconstruction settings and per-sample seeds held constant, both resulting score increases have paired scenario-bootstrap intervals excluding zero. This effect jointly includes the changed length trace and changed scoring reference; neither contribution is isolated. The archived low scores therefore cannot support a general conclusion of poor reconstructor transfer to these two models.
+ 
+ The five other archived-reference series support conditional comparisons of the fixed reconstructor on their emitted texts, not an intrinsic model-vulnerability ranking. Historical token IDs and exact victim revisions are unavailable, while tokenizer vocabulary, response style, refusal behavior and compatibility with T5 training data can differ. The matched two-model rendering experiment is consequently reported separately from those five series. The synthetic corpus also contains only 60 scenarios, and the MAP test and calibration sets share those scenarios despite exact-prompt disjointness.
+ 
+@@ -564,9 +540,11 @@
+ The study used synthetic prompts and locally generated responses; it did not intercept user traffic or process identifiable personal data. The artifact release is intended to support defensive evaluation of streaming implementations. Deployment testing should use authorized systems, controlled accounts, and coordinated disclosure when a service-specific weakness is found.
+ 
+ \section{Conclusions}
+-Complete inference from validated logged token lengths yields reproducible lexical scores for an instrumented T5 reconstruction pipeline. Five archived-reference series have means of 0.482--0.535; two additional archived series remain diagnostics because of malformed word boundaries. Separate experiments with verified detokenization yield mean scores of 0.435 for TinyLlama and 0.504 for Phi-3.5-mini. They strengthen the need to distinguish observation validity from reference validity and are not combined into an intrinsic seven-model vulnerability ranking.
+-
+-The 96-token controls support sensitivity to selected trace features, with three of six contrasts significant after Holm correction and neither cross-prompt contrast conclusive. Five framing transformations reduce the frozen reconstructor's mean score by 36.7--88.7\%. In the first-segment, five-seed experiment, a prompt-disjoint MAP length inverse recovers much of the loss under bucketing and batching. These are effects of the full preprocessing and decoding pipeline, including unequal retained encoder coverage. Tests with fixed observation coverage, unseen scenarios, encrypted transport and disclosure-oriented outcomes are required to extend the findings to practical privacy claims.
++The completed experiments comprise 6600 T5 reconstructions and 600 newly generated victim responses. Reconstruction from validated logged lengths yields mean lexical scores of 0.482--0.535 for five archived-reference cohorts. For TinyLlama and Phi-3.5-mini, verified full-sequence decoding yields means of 0.435 and 0.504. Legacy rendering of the newly saved token IDs exactly reproduces the corresponding archived references and length vectors. Under matched T5 settings and seeds, changing the rendering of both the input trace and scoring reference increases mean $\phi$ by 0.3560 and 0.3831. This computational comparison identifies observation and reference construction as consequential parts of the evaluation; it does not separate their individual contributions or establish an intrinsic model-vulnerability ranking.
++
++The partial-ablation controls support sensitivity to selected trace features: three of six contrasts remain significant after Holm correction, while neither cross-prompt contrast is conclusive. In the 96-token pilots, all ten model--transformation contrasts show significant score reductions after correction, ranging from 36.7\% to 88.7\%. These reductions describe the tested frozen reconstructor and realized transformations. The first-segment, five-seed study shows that an exact-prompt-disjoint MAP length inverse can recover much of the loss under bucketing and batching, although calibration shares scenario templates with the test set.
++
++Practical privacy claims require evidence beyond these lexical scores. Transform-dependent segmentation and the 80-token encoder limit change the retained input coverage, and payload-size accounting excludes transport costs and latency. Evaluations with matched observation coverage, unseen scenarios, extraction from encrypted traffic, and disclosure-oriented outcomes are needed to establish the deployment significance of these results.
+ 
+ \appendixtitles{yes}
+ \appendixstart
+@@ -574,7 +552,7 @@
+ \section{Artifact Provenance and Completed Experiments}\label{app:runs}
+ The accompanying artifact package separates archived victim responses from completed reconstruction runs. The source project repository is \url{https://github.com/jackaugustyn/LLeakM}; public archival of this completed package remains pending. Table~\ref{tab:run_ids} identifies the original 512-token source directories. Current results reside under \path{experiment_validation/revalidation_20261031/}: \path{inference/cuda_full/} contains the 2100 reconstructions from canonical archived lengths, \path{secondary/cuda_full/} the 3900 control, defense and MAP records, and \path{inference/fresh_tinyllama_cuda/} and \path{inference/fresh_phi_cuda/} the two 300-response new-reference reconstructions. Their generation artifacts are under \path{fresh_references/}.
+ 
+-Each completed run binds its sample inventory, source hashes, model files, code, seeds and environment to a protocol. Independent checks verify complete unique keys, saved text metrics, encoder input tokenization, segment coverage and cohort counts. All planned reconstructions are present; partial probes are excluded. The \path{inference_validation/} reports and the secondary summary contain the numerical sources for the manuscript, while \path{final_review_20261101/} records the final numerical and manuscript checks.
++Each completed run binds its sample inventory, source hashes, model files, code, seeds and environment to a protocol. Independent checks verify complete unique keys, saved text metrics, encoder input tokenization, segment coverage and cohort counts. All planned reconstructions are present; partial probes are excluded. The \path{inference_validation/} reports and the secondary summary contain the numerical sources for the manuscript, while \path{final_review_20261101/} records the independent numerical audit. The \path{article_revision_latest_20261101/} directory records the updated table and figure checks, plotting inputs, reproducible figure generator and manuscript build.
+ 
+ The earlier \path{analysis/repro_manifest.json} and \path{analysis/revision_snapshot_20261031.json} remain historical inventories and are not attestations of the new results. \path{completed_manifest.json} records the completed experiment artifacts before their integration into the manuscript; it is an experiment inventory, not a hash inventory of the integrated manuscript. These provenance records cannot retroactively establish historical victim revisions or undocumented old reconstruction inputs.
+ 

@@ -1,0 +1,43 @@
+{
+  "expected": 300,
+  "label": "phi_3_5_mini",
+  "model_id": "microsoft/Phi-3.5-mini-instruct",
+  "revision": "2fe192450127e6a83f7441aef6e3ca586c338b77",
+  "generation": {
+    "max_new_tokens": 512,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "prompt_format": "legacy"
+  },
+  "precision": "float16",
+  "placement_requested": "auto_offload",
+  "max_memory_gib": {
+    "cuda:0": 6.0,
+    "cpu": 5.0
+  },
+  "canonical_input_sha256": "cf4ca0307ffb97654f2e302855e4f8a1cbac57fa3f837ba1356c615b988cef3a",
+  "archived_config_sha256": "641288a9f7493dd852c1cce8d9fcdc91c484b93f9973eca0ff9469bac1d4ce6b",
+  "models_file_sha256": "fb0141352893c3c95e7b8dbcea54f17423ffe40f5865097e4d89bef752bbdc2e",
+  "runner_sha256": "cb661644adffe2ea1654552f53b09439b80da68494f24bd273e742c4200a119a",
+  "harness_source_sha256": "f56e8d1d545b9103a5b0047e507a09c71163a61e9448595883588d0af0fe8a50",
+  "observation_source": "validated-in-process-harness-payload-byte-lengths-v1",
+  "scope": "Fresh victim generations with verified ordinary full-sequence decoding; not historical IDs or checkpoint recovery; no network timing claim.",
+  "historical_revision_identity": "unknown; these are current pinned revisions, not certified archived victim revisions",
+  "historical_prediction_comparison": "not applicable; canonical old_pred_full_text is an empty compatibility placeholder",
+  "torch": "2.5.1+cu124",
+  "transformers": "4.46.3",
+  "accelerate": "1.1.1",
+  "checkpoint_file_sha256": {
+    "added_tokens.json": "f8e5a880c6c563a126d9efacb654e105fc4b66f21e5a540f04436e9487a955fb",
+    "config.json": "224de4f6a15b9d2a89695ec04b7f7ab2dd93a008a506979925e5a88cb5804974",
+    "generation_config.json": "71ff75d883319b53e16cbb8c7b61363a5138e3d342fc79dd96c2b1cb208d8ff8",
+    "model-00001-of-00002.safetensors": "c5214cdb995ed3dd716add8d9efbfe016b76bb2f1c4c1e6c1c6a95497d7a8837",
+    "model-00002-of-00002.safetensors": "41246eed2b75b66526339c5d32d6f7acdefe0bd24180f97c74303f4656877344",
+    "model.safetensors.index.json": "6eec78ee2a442445d9d342a7cd9a763da40a49bd91d8611b7db5e9a29c90a428",
+    "special_tokens_map.json": "4e87d5e13d218af26da10a072490ebc08ccadddaef10ab0ec52b33204a49e918",
+    "tokenizer.json": "9e2ae3d66819f163cdcfedba5078f3a3af8118c2712491ed60912f77886bda6f",
+    "tokenizer_config.json": "92a6e3f894075fda19f47d8755c6ce65b2a974716307d13ae5d79196011ebb44"
+  },
+  "cuda_device": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+  "threads": 4
+}

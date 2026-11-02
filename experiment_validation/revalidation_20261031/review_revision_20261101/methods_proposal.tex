@@ -1,0 +1,77 @@
+% Scoped proposals only; root integrates these into article1/template.tex.
+% No result values, saved experiment outputs or existing review files are changed.
+
+% EIC-W2: insert after the final paragraph of Prompt Corpus and Experimental Protocol.
+\begin{table}[ht]
+\centering
+\footnotesize
+\caption{Protocol map. $N$ counts reconstructions, including repeated conditions and decoder seeds; it is not a count of independent victim responses. All experiments score against the full reference and impose 80-token T5 encoder and decoder limits. \emph{All} requests every heuristic segment; the pilot cap is three segments. The last column refers to the seed rules in Appendix~\ref{app:map-seeds}.}
+\label{tab:protocol_overview}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}p{0.21\linewidth} X r c c l@{}}
+\toprule
+Experiment / result tables & References and victims & $N$ & \shortstack{Victim\\limit} & \shortstack{Segments /\\samples} & \shortstack{Decoder\\seeds} \\
+\midrule
+Archived main; \ref{tab:main_results}--\ref{tab:scenario_sensitivity}
+& Archived emitted text; seven models, including two diagnostics
+& 2100 & 512 & All / 3 & Recorded \\
+Verified rendering; \ref{tab:fresh_results}
+& New full-sequence decoding; TinyLlama and Phi-3.5-mini
+& 600 & 512 & All / 3 & Recorded \\
+Trace controls; \ref{tab:trace_controls}
+& Archived text; Qwen2.5-1.5B and Llama-3.2-3B
+& 240 & 96 & $\leq3$ / 3 & Pilot \\
+Defense pilot; \ref{tab:defense_results}
+& Archived text; same two models
+& 360 & 96 & $\leq3$ / 3 & Pilot \\
+MAP study; \ref{tab:robustness}
+& Archived text; same two models
+& 3300 & 512 & First / 1 & Common, five \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% R1-W3: replacement for the opening two sentences of Statistical Analysis.
+Because the same 300 prompts were issued to every model, comparisons of the retained scores used prompt-aligned observations. For the archived main and verified-reference cohorts, percentile-bootstrap 95\% confidence intervals~\cite{efron1994bootstrap} use $B=10{,}000$ resamples from a generator initialized with seed \texttt{20260706}; the pinned aggregator consumes this generator in its recorded model, metric and contrast order. The pilot and MAP intervals use separately derived cell and contrast seeds, specified in Appendix~\ref{app:map-seeds}.
+% Keep the existing next sentence beginning "Confidence intervals for mean pairwise differences..."
+% In the existing scenario sensitivity sentence, replace "with the same seed" by
+% "from the same aggregator's random-number stream".
+
+% R1-W2: replacement for the first three sentences of the current adaptive-attacker paragraph.
+The adaptive attacker applies a local empirical MAP length inverse before the unchanged T5 decoder. Calibration uses the 270 traces of the same victim model with no exact test prompt. The inverse selects a modal length conditional on an observed value, or a modal length tuple conditional on a batch sum and group size; unseen observations and the final batch use explicit fallback and size-selection heuristics (Appendix~\ref{app:map-seeds}). This is not a global MAP estimate of the response's entire length sequence.
+% Continue with the existing "This is a calibrated length inverse, not end-to-end T5 retraining."
+
+% R1-W2/W3 and EIC-W2: new appendix after the existing run-provenance appendix.
+\section{Local Length Inversion and Random Seeds}\label{app:map-seeds}
+
+\subsection{Empirical Length Inverse}
+Let $c(x)$ count individual clean lengths in the calibration corpus, and let $S=\{x:c(x)>0\}$. For an unbatched defense, the calibration pass counts $C_z(x)$, the occurrences of clean length $x$ aligned with defended value $z$. Deterministic transformations use one pass; \texttt{rand\_pad\_8} uses 16 independent padding realizations per calibration trace. The inverse returns the most frequent $x$ in $C_z$, resolving ties in favor of the smaller length. An unseen $z$ returns the global mode of $c$, with the same tie rule. Thus the estimator is local to an observed unit. The baseline bypasses inversion.
+
+For batching with maximum size $k\in\{2,4\}$, calibration counts tuples in non-overlapping consecutive groups, including each final partial group. Let $C_{z,s}(\mathbf{x})$ count a tuple of size $s$ and sum $z$, and let $T(s)$ count calibration traces whose final group has size $s$ (including full final groups). Interior observed groups are assigned size $k$. For the last observed group, the implemented heuristic chooses
+\[
+ \widehat{s}=\operatorname*{arg\,max}_{1\leq s\leq k}
+ \left\{\left[\sum_{\mathbf{x}} C_{z,s}(\mathbf{x})\right]\max(1,T(s))\right\},
+\]
+with ties resolved in favor of the larger $s$. This product of counts is a size-selection heuristic, not a separately validated posterior for the final group.
+
+For the chosen $(z,s)$, the inverse returns the most frequent recorded tuple, with lexicographically smallest tuples winning ties. If that pair was never observed, dynamic programming finds a tuple in $S^s$ with sum $z$ maximizing
+\[
+ \sum_{j=1}^{s}\log\widetilde p(x_j),
+ \qquad
+ \widetilde p(x)=\frac{c(x)+1}{\sum_{u\in S}c(u)+|S|}.
+\]
+The recurrence appends one supported length at a time, retains the best tuple for each attainable subtotal, and rejects subtotals exceeding $z$; equal floating-point scores use the lexicographic tie rule. If the requested sum is unattainable, it repeats the global mode $s$ times, which need not preserve $z$. The code's empty-calibration defaults are mode 1 and fallback support $\{0,\ldots,17\}$; the present experiments use nonempty, 270-trace calibration sets. These rules specify the implemented local inverse and do not constitute globally optimal sequence inference.
+
+\subsection{Decoder, Transformation and Bootstrap Seeds}
+Define $H(a_1,\ldots,a_m)$ by converting each argument with Python's \texttt{str}, joining the strings with byte \texttt{0x1f}, UTF-8 encoding, and applying BLAKE2s with a four-byte digest. Interpret the digest as an unsigned big-endian integer and apply bitwise AND with \texttt{0x7fffffff}. This is the artifact function \texttt{stable\_seed}; it is independent of Python's randomized \texttt{hash()}.
+
+The main and verified-reference reconstructions use the exact per-record \texttt{reconstruction\_seed} in their immutable input inventories. The matched renderings use the same recorded seed for each prompt. For the two pilots, the decoder seed is
+\[
+H(\texttt{secondary-pilot-decoder-v1},20260706,\texttt{label},i,
+  \texttt{suite},\texttt{condition}),
+\]
+where $i$ is the recorded prompt index and the suite is \texttt{trace\_control} or \texttt{defense\_pilot}. Thus the two pilot baselines do not share decoder seeds. The defense transformation seed is $H(\texttt{secondary-pilot-trace-v1},20260706,\texttt{label},i,\texttt{condition})$; shuffling instead uses $20260706+17i$.
+
+For MAP, decoder seed $H(\texttt{decoder},r,i)$ is reused across models, defenses and attacker modes for a given prompt index and seed index $r\in\{20260706,\ldots,20260710\}$. Transformation seed $H(\texttt{trace},20260920,\texttt{label},i,\texttt{condition})$ fixes a trace realization across decoder repeats and attacker modes. The inverse is fitted with seed $a=H(20260920,\texttt{label},\texttt{condition})$; calibration trace index $j$ and padding draw $d$ use $H(\texttt{calibration},a,\texttt{condition},j,d)$, with zero-based indices.
+
+The main and verified-reference aggregators initialize their NumPy generator with \texttt{20260706}, consuming it in the pinned aggregation order. For every pilot or MAP cell, the bootstrap generator instead uses $H(\texttt{bootstrap},\texttt{suite},\texttt{label},\texttt{condition},\texttt{attacker})$; its paired contrast with baseline uses the same arguments with \texttt{contrast} replacing \texttt{bootstrap}. Each generator is initialized separately. Pilot intervals resample 30 prompt scores; MAP intervals independently resample the 30 prompt indices and five seed indices, then average their Cartesian-product submatrix. All use 10,000 replicates and the 2.5th and 97.5th percentiles. The matched-rendering contrast separately uses seed \texttt{20261101} and 60 paired scenario means. Exact key strings, inventories and aggregation order are retained in the supplementary code and protocols.

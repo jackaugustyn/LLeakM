@@ -1,0 +1,46 @@
+{
+  "scope": "Matched contextual versus legacy rendering with corrected EOS-bounded selector in both arms. Both length input and scoring reference change. Fixed-ID legacy equality is established by the retained prior reference audit, not newly inferred historical IDs.",
+  "bootstrap_seed": 20261101,
+  "bootstrap_draws": 10000,
+  "order": "Tiny prompt/scenario then Phi prompt/scenario",
+  "models": [
+    {
+      "label": "tinyllama_1_1b",
+      "n": 300,
+      "n_scenarios": 60,
+      "delta_phi_mean": 0.3844688571513061,
+      "delta_phi_ci_paired_prompt": [
+        0.3688409614194197,
+        0.40014753724775654
+      ],
+      "delta_phi_ci_paired_scenario": [
+        0.3661772292830989,
+        0.4028863664826566
+      ],
+      "individual_delta_range": [
+        -0.04565822447555529,
+        0.6996451210596987
+      ]
+    },
+    {
+      "label": "phi_3_5_mini",
+      "n": 300,
+      "n_scenarios": 60,
+      "delta_phi_mean": 0.3971976026556103,
+      "delta_phi_ci_paired_prompt": [
+        0.3854376277265096,
+        0.4090190265510028
+      ],
+      "delta_phi_ci_paired_scenario": [
+        0.3806434789780226,
+        0.4134400410032759
+      ],
+      "individual_delta_range": [
+        0.023499662656564446,
+        0.6445477126801039
+      ]
+    }
+  ],
+  "fixed_id_evidence_path": "experiment_validation/revalidation_20261031/final_review_20261101/fresh_legacy_replay.json",
+  "fixed_id_evidence_sha256": "86b1ea9ee7273a91805be0e57d63f4f0b9ac5d03f8c7272e6f7eb04cb20c7b16"
+}

@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "package_id": "LLeakM-S2-EOS-20261102-v1",
+  "files": 2984,
+  "uncompressed_bytes": 791470306,
+  "source_logs": 2760,
+  "reconstruction_records": 6600,
+  "fresh_generation_records": 600,
+  "archive": "/home/paugustynowicz/LLeakM/article1/supplement/LLeakM-S2-EOS-20261102-v1.tar.gz",
+  "compressed_bytes": 135919734,
+  "sha256": "b8d0be6cf6536d887d513dd6cbfe11c24edd9e5a29da363fbfaa61705d3fcff6",
+  "verification": {
+    "status": "PASS",
+    "package_id": "LLeakM-S2-EOS-20261102-v1",
+    "files_hashed": 2984,
+    "reconstruction_counts": {
+      "cuda_full": 2100,
+      "fresh_tinyllama_cuda": 300,
+      "fresh_phi_cuda": 300,
+      "trace_control": 240,
+      "defense_pilot": 360,
+      "map": 3300
+    },
+    "reconstructions_checked": 6600,
+    "fresh_token_id_records_checked": 600,
+    "source_logs_checked": 2760,
+    "maximum_phi_difference": 1.1102230246251565e-16,
+    "protocol_source_bindings_checked": 715,
+    "candidate_evidence": {
+      "records": 6600,
+      "encoder_calls_retokenized": 86788,
+      "calls": 86788,
+      "candidates": 253764,
+      "ranked_calls": 83488,
+      "single_candidate_calls": 3300,
+      "candidates_redecoded": 253764,
+      "scored_tokens": 4540261,
+      "candidates_with_post_eos_tail": 142629,
+      "excluded_post_eos_tokens": 393353,
+      "candidates_with_nonfinite_post_eos_tail": 142629,
+      "new_map_records_checked": 3300
+    },
+    "tokenizer_replay": true,
+    "scope": "All NEW reconstruction records: inventory, complete condition grids, frozen input/log bindings, lexical phi, record digests, EOS-inclusive candidate-score sums, exact ranking/ties and response assembly. No comparisons with older reconstruction results. All retained encoder inputs and candidate texts retokenized/decoded offline. No model forward passes, new victim generation or semantic disclosure assessment."
+  }
+}

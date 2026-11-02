@@ -1,0 +1,104 @@
+{
+  "schema": "local-audit-manifest/1",
+  "files": [
+    {
+      "path": "attempt_01/NOTE.md",
+      "bytes": 436,
+      "sha256": "bf28f0bd5314fbb5c917989915436aa3277aef4229ef1a2a99c61ddcebe1663e"
+    },
+    {
+      "path": "attempt_01/protocol.json",
+      "bytes": 3584,
+      "sha256": "98975e599f42a9a31d0e21d2b131a41652a2ab8c026ce5592c77b231ca1fa903"
+    },
+    {
+      "path": "attempt_01/results.jsonl",
+      "bytes": 9227,
+      "sha256": "ede8b74a56c72b8617ab9acfe35e0e1282e6db4f798d91afd8bdaa9d42d01b2c"
+    },
+    {
+      "path": "attempt_01/run.log",
+      "bytes": 894,
+      "sha256": "f346c39c80b23146081726f0df71fdd430f42b898102ef296e6fc6d2d17465da"
+    },
+    {
+      "path": "attempt_01/status.json",
+      "bytes": 148,
+      "sha256": "47b50a1513f1aefd2e21c8771017f4d149efc21d86cb56b3d7dfcfdc3917fd2d"
+    },
+    {
+      "path": "audit_report.md",
+      "bytes": 5885,
+      "sha256": "260719ed767b8141e5e692b55132e8c7c8e0ef5404cfbd9702667a3aa95fd1e0"
+    },
+    {
+      "path": "eos_scoring.py",
+      "bytes": 2039,
+      "sha256": "431d6b653a9d8e0f8b576c74969d515fd9674a155172145e67cdc2777fc712f9"
+    },
+    {
+      "path": "inputs.jsonl",
+      "bytes": 79777,
+      "sha256": "4aa48375c69f2fec63e12c22c9df3d7fd6238100e5ffb27e7d769ac80c10f557"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 3584,
+      "sha256": "e2f550c0977a110d4f573a7c1a7a9e3f110275cc766beadee60bb27f7fca742e"
+    },
+    {
+      "path": "results.jsonl",
+      "bytes": 173959,
+      "sha256": "b94954c3866c6f6fd6cec9b4c4b353d591ae989b9d942056f2c5ddcfba1fe4e1"
+    },
+    {
+      "path": "run.log",
+      "bytes": 2671,
+      "sha256": "b49672dd0a7503c96ca49bf3e2d07c74632abf9e9c0eabb84bd81f5618fb3d99"
+    },
+    {
+      "path": "run_audit.py",
+      "bytes": 12480,
+      "sha256": "d4e312cf5a652735b75b7b64442a991e842e5c66a89a0b1f174ff0491f638ba3"
+    },
+    {
+      "path": "select_inputs.py",
+      "bytes": 2984,
+      "sha256": "e2b5261b2c83cd80178a41923638aa0d540867c5d9e05ab59fe4c1824434cab1"
+    },
+    {
+      "path": "status.json",
+      "bytes": 633,
+      "sha256": "e1801a617d46d6b395e4319a7002f17a8e7b54ea006ee5467ef58ea100310751"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 608,
+      "sha256": "8222e5739ac982158af389b45c2a00a1e35eaa651aaf5c97bf017e31746b87ff"
+    },
+    {
+      "path": "test_eos_scoring.py",
+      "bytes": 2737,
+      "sha256": "e431f4e4af6ebc66b992bd67da65b107e125117f986b0df45cb2c36e1dd93492"
+    },
+    {
+      "path": "test_results.json",
+      "bytes": 877,
+      "sha256": "93acefbd3e524aa60a96cf7b5fd6fa7a7f6874639a9bee8edfe5fde470103107"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 540,
+      "sha256": "bdf22471006281d0c63a7eb4c880ae7addd8c782d16f354349067e3734bb12e3"
+    },
+    {
+      "path": "verify_audit.py",
+      "bytes": 3975,
+      "sha256": "ac3da2785cd416a96c6e4ae62033333eaefd9db85b662170b7e33e38160ba64d"
+    }
+  ],
+  "file_count": 19,
+  "complete_audit": "protocol.json + inputs.jsonl + results.jsonl + summary.json",
+  "excluded_denominator": "attempt_01",
+  "historical_reconstructor_changed": false
+}

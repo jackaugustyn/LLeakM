@@ -1,0 +1,63 @@
+{
+  "status": "PREFLIGHT_PASS",
+  "complete": false,
+  "verified_utc": "2026-11-01T18:26:11.335337+00:00",
+  "records_checked": 3,
+  "map_predictions_matched": 0,
+  "counts": {
+    "records": 3,
+    "calls": 90,
+    "candidates": 270,
+    "ranked_calls": 90,
+    "single_candidate_calls": 0,
+    "scored_tokens": 4933,
+    "candidates_with_post_eos_tail": 144,
+    "excluded_post_eos_tokens": 362,
+    "candidates_with_nonfinite_post_eos_tail": 144,
+    "same_candidate_pool_selection_changes": 52,
+    "first_call_original_selection_matches": 3,
+    "first_call_selection_changes": 3,
+    "full_response_prediction_changes": 3
+  },
+  "runs": {
+    "cuda_full": {
+      "complete": true,
+      "records": 3,
+      "expected": 3,
+      "counts": {
+        "records": 3,
+        "calls": 90,
+        "candidates": 270,
+        "ranked_calls": 90,
+        "single_candidate_calls": 0,
+        "scored_tokens": 4933,
+        "candidates_with_post_eos_tail": 144,
+        "excluded_post_eos_tokens": 362,
+        "candidates_with_nonfinite_post_eos_tail": 144,
+        "same_candidate_pool_selection_changes": 52,
+        "first_call_original_selection_matches": 3,
+        "first_call_selection_changes": 3,
+        "full_response_prediction_changes": 3
+      }
+    }
+  },
+  "all_observed_record_checks_passed": true,
+  "source_sha256": {
+    "experiment_validation/selector_eos_20261101/preflight/main_smoke/protocol.json": "1d2af240889b163677687e3b6349aeff49315a031a761ed8ebe257ab78888420",
+    "experiment_validation/selector_eos_20261101/preflight/canonical_subset.jsonl": "6012b55d7d59a28a50a078bc4eec3989dadb97108e60eb7a8f85507a1d30a2bc",
+    "experiment_validation/revalidation_20261031/collection/canonical_traces.jsonl": "cf4ca0307ffb97654f2e302855e4f8a1cbac57fa3f837ba1356c615b988cef3a",
+    "experiment_validation/revalidation_20261031/inference/cuda_full/protocol.json": "677b1e51669eae342284f0be219e65ca6adc619855cb32aeefa59b19034ae59d",
+    "experiment_validation/revalidation_20261031/inference/cuda_full/samples.jsonl": "a819e511b0a8fe8dcacf86f6ede59b676a9d572ec7f31c715b253da071e6c278",
+    "experiment_validation/revalidation_20261031/fresh_references/tinyllama/canonical_traces.jsonl": "aeea3d72200af1e121a2877bd2b91434d60f709c56aa8aba66c910d87d794e19",
+    "experiment_validation/revalidation_20261031/inference/fresh_tinyllama_cuda/protocol.json": "f2ba4681c106b4d4a6bd2da1cd8264f76a65c81e57c312e0ab2e17367225d50c",
+    "experiment_validation/revalidation_20261031/inference/fresh_tinyllama_cuda/samples.jsonl": "97313b55f0d4a68e113b8c778ccd4b7006f64595a03edd481c1cb26cac5e37c8",
+    "experiment_validation/selector_eos_20261101/before/weiss_reconstruction.py": "55ebb745e9cafd08d89931f17ef26a5858ff8884c526e16aa2b0201784c83dc1",
+    "weiss_reconstruction.py": "795bd9ad309b96573a448df9439cba88659c8ba61ccc9618be269eabf1f30234",
+    "experiment_validation/selector_eos_20261101/preflight/main_smoke/status.json": "e33f0da074b2b96f8a299b1d06954f571cb1177c3123290a8c863ebde01178cd",
+    "experiment_validation/selector_eos_20261101/preflight/main_smoke/samples.jsonl": "47915ad4c4219aa6e748fd1c5abe0f9b29c3c6a0c8126ecf39b5f3b4d054b53d"
+  },
+  "verifier_sha256": "7a5c56c42eeb2a3dcc542c028d2e1035e35d21452591a46dceaef898cfa4f350",
+  "candidate_checks_sha256": "9faa026ea8ac6cd671df412e14286ec8f043d548cb56bda15be920cb9fe09dee",
+  "floating_sum_check": "Independent double-precision fsum compared with saved CUDA float32 sums at max(1e-5,2e-6*max(1,sum(abs(scores)))) tolerance; saved scalars then reproduce exact stable sorting and duplicate handling.",
+  "scope": "Candidate-token/EOS/sum/ranking audit, full context chain and text metrics, exact first-call original-selection counterfactual, paired corrected-vs-original outputs. No semantic disclosure certification."
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "cases": 24,
+  "candidates": 72,
+  "legacy_matches_saved": 24,
+  "selected_text_changes": 18,
+  "checks": [
+    "Saved input identity and seed",
+    "24 saved first selections reproduced",
+    "EOS boundary determined independently from token IDs",
+    "All prefix and full sums independently recomputed",
+    "Post-EOS PAD and nonfinite counts",
+    "Stable text deduplication and both rankings"
+  ],
+  "floating_point_tolerance": "abs_tol=2e-5, rel_tol=2e-6 for CPU Python sum versus recorded per-row CUDA sums"
+}

@@ -1,0 +1,18 @@
+{
+  "sources": {
+    "experiment_validation/revalidation_20261031/final_review_20261101/main_fresh_factledger.json": "bebf5cf314062cedd2cc76900ef61b0284e3282ea3d723a0d226382a51174bee",
+    "experiment_validation/revalidation_20261031/final_review_20261101/secondary_audit.json": "bd819964e98943530f88303e7f11d57765208b18fadf50dce342849cd12a8eb3",
+    "experiment_validation/revalidation_20261031/final_review_20261101/paired_detokenization_score_contrast.json": "d0f1c94a964fa59ef8a306c530df0fafa1e050862ff9b1174431a65436dae862"
+  },
+  "generator_sha256": "dce4afcbc234ae69a959469a14af5a980e0e76eb9de310bda5ddb794a2801d00",
+  "data_sha256": "7f67e78361134191da4057e78b2b4fb4cce2941664b4feae87180891dd78a21b",
+  "outputs": {
+    "article1/figures/latest_model_results.pdf": "dd27121c4ae93c4f0115067d6c77c4059357cc0a8960fc769ac89d15e74dbb55",
+    "article1/figures/latest_model_results.svg": "9d12d3d876ce5c52d80dc3c750ef42ef68030e34860047c311f6027845541af2",
+    "article1/figures/latest_model_results.png": "31a0f11dbd62118b7e6c994f1947026e2f72be216d6141b26329a52e5e73c864",
+    "article1/figures/latest_defense_tradeoff.pdf": "2fce69fbaf529fd1be8331dec8ab83991bbd66efa9ed0788107d583da07107c1",
+    "article1/figures/latest_defense_tradeoff.svg": "9bc5fcb34bbf586303ea07709451e6c1b4234f5cb894b9d2a8894e78bb7cc161",
+    "article1/figures/latest_defense_tradeoff.png": "62534f0d4f46ed45633ee59403982e0679f8d77e7056d420f3b77bd6b96b459c"
+  },
+  "scope": "Plots use completed audit data; no inference or bootstrap rerun."
+}

@@ -154,8 +154,10 @@ def wilcoxon_signed_rank(x: np.ndarray, y: np.ndarray) -> dict:
         return {"n": n, "W": W, "z": 0.0, "p_value": 1.0,
                 "rank_biserial": (w_pos - w_neg) / (w_pos + w_neg)}
     cc = 0.5  # continuity correction
-    z = (W - mean_w + cc) / math.sqrt(var_w) if W < mean_w else (W - mean_w - cc) / math.sqrt(var_w)
-    p = 2.0 * (1.0 - _std_normal_cdf(abs(z)))
+    # At the null center, no continuity correction is needed.
+    z = (W - mean_w + cc) / math.sqrt(var_w) if W < mean_w else 0.0
+    # Avoid cancellation in 1 - CDF(z), which rounded extreme tails to zero.
+    p = math.erfc(abs(z) / math.sqrt(2.0))
     p = min(1.0, max(0.0, p))
     rb = (w_pos - w_neg) / (w_pos + w_neg)
     return {"n": n, "W": W, "z": z, "p_value": p, "rank_biserial": rb}

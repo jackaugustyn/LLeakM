@@ -1,0 +1,193 @@
+{
+  "schema": "local-revision-science-validation/1",
+  "status": "PASS_WITH_PACKAGE_FINALIZATION_SEPARATE",
+  "scope": "Independent verification of requested review edits; not a new journal decision, formal ARS authorization certificate or evidence of corrected full-pipeline performance. Rendered-page inspection and package construction are separate root checks.",
+  "manuscript_sha256": "9e7585d5867034eb7725b538c9499531c64b8e925afbf33e91e430d56556cc4b",
+  "base_sha256": "8539201fa3c7aeb62d219037c3395a083e541b4fc08df1f1b701327c8ca42dc5",
+  "findings": [
+    {
+      "id": "EIC-W1",
+      "status": "PASS",
+      "assessment": "Title names lexical reconstruction, instrumented traces, reference validation and defense evaluation.",
+      "line": 8
+    },
+    {
+      "id": "EIC-W2",
+      "status": "PASS",
+      "assessment": "Five-row protocol map has correct cohorts, counts, budgets, segment/sample scopes and seed references; model-caption wording corrected.",
+      "line": 181
+    },
+    {
+      "id": "EIC-W3",
+      "status": "CONTENT_PASS_PACKAGE_PENDING",
+      "assessment": "Versioned local S1 and access route are described without claiming public archival; final archive and hashes are to be checked by the separate packaging verifier.",
+      "line": 591
+    },
+    {
+      "id": "R1-W1",
+      "status": "PASS",
+      "assessment": "Exact original PAD-inclusive selector is explicit in methods, diagram caption, limitations and conclusions; audit is purposive and first-segment-only; no corrected full-response results claimed; MAP exception stated.",
+      "line": 140
+    },
+    {
+      "id": "R1-W2",
+      "status": "PASS",
+      "assessment": "Local modes, support, add-one prior, tuple DP, tie rules, 16 padding draws, unattainable-sum fallback and final-group count heuristic match implementation.",
+      "line": 618
+    },
+    {
+      "id": "R1-W3",
+      "status": "PASS",
+      "assessment": "Bootstrap streams are separated correctly; decoder/transformation H formula independently matches all 3900 secondary records.",
+      "line": 264
+    },
+    {
+      "id": "R2-W1",
+      "status": "PASS",
+      "assessment": "Single-segment E(Z) distinction and constant-input inference supported by independent recomputation of all660 pad records; wording unique inputs corrected.",
+      "line": 466
+    },
+    {
+      "id": "DA-N1",
+      "status": "PASS",
+      "assessment": "150 common-seed frozen pairs have exactly equal predictions; different mean scores correctly ascribed to different references.",
+      "line": 509
+    },
+    {
+      "id": "R2-W2",
+      "status": "PASS",
+      "assessment": "Weiss first-segment scope and MiniLM thresholds >0.9/>0.5 accurately distinguished from current TF cosine/full-response LR.",
+      "line": 65
+    },
+    {
+      "id": "R2-W3",
+      "status": "PASS",
+      "assessment": "Pinned model-card provenance reported as documented, not independently audited; UltraChat/first-middle roles and character versusUTF8 distinction accurate.",
+      "line": 142
+    },
+    {
+      "id": "Li bibliography",
+      "status": "PASS",
+      "assessment": "Only li2026length entry changed; published title, author list, venue, pages2187--2206 andURL match cached official source.",
+      "line": null
+    }
+  ],
+  "unresolved_scientific_edit_issues": [],
+  "fixed_during_check": [
+    {
+      "location": "Protocol map caption",
+      "issue": "Two-model studies wording also included freshTiny/Phi cohort.",
+      "resolution": "Explicit controls/defensepilot/MAP names."
+    },
+    {
+      "location": "Encoder coverage paragraph and caption",
+      "issue": "Unique input phrasing conflicted with constant pad32 retained input.",
+      "resolution": "Prompt-indexed inputs/testprompts, with identicalretainedinputs note."
+    }
+  ],
+  "data_preservation": {
+    "existing_table_bodies_byte_identical": {
+      "tab:model_metadata": true,
+      "tab:length_covariates": true,
+      "tab:encoder_coverage": true,
+      "tab:trace_controls": true,
+      "tab:main_results": true,
+      "tab:eos_completeness": true,
+      "tab:statistical_results": true,
+      "tab:scenario_sensitivity": true,
+      "tab:fresh_results": true,
+      "tab:defense_results": true,
+      "tab:robustness": true,
+      "tab:run_ids": true
+    },
+    "numeric_figure_tex_unchanged": {
+      "fig:model_ci": true,
+      "fig:defense_tradeoff": true
+    },
+    "original_weiss_code_sha256": "55ebb745e9cafd08d89931f17ef26a5858ff8884c526e16aa2b0201784c83dc1"
+  },
+  "independent_checks": {
+    "pad32_groups": [
+      {
+        "suite": "defense_pilot",
+        "model": "llama_3_2_3b",
+        "attacker": "frozen",
+        "records": 30,
+        "unique_retained_inputs": 1,
+        "encoder_calls": [
+          1
+        ]
+      },
+      {
+        "suite": "defense_pilot",
+        "model": "qwen_1_5b",
+        "attacker": "frozen",
+        "records": 30,
+        "unique_retained_inputs": 1,
+        "encoder_calls": [
+          1
+        ]
+      },
+      {
+        "suite": "map",
+        "model": "llama_3_2_3b",
+        "attacker": "adaptive",
+        "records": 150,
+        "unique_retained_inputs": 1,
+        "encoder_calls": [
+          1
+        ]
+      },
+      {
+        "suite": "map",
+        "model": "llama_3_2_3b",
+        "attacker": "frozen",
+        "records": 150,
+        "unique_retained_inputs": 1,
+        "encoder_calls": [
+          1
+        ]
+      },
+      {
+        "suite": "map",
+        "model": "qwen_1_5b",
+        "attacker": "adaptive",
+        "records": 150,
+        "unique_retained_inputs": 1,
+        "encoder_calls": [
+          1
+        ]
+      },
+      {
+        "suite": "map",
+        "model": "qwen_1_5b",
+        "attacker": "frozen",
+        "records": 150,
+        "unique_retained_inputs": 1,
+        "encoder_calls": [
+          1
+        ]
+      }
+    ],
+    "pad32_total": 660,
+    "frozen_common_seed_equal_pairs": 150,
+    "ranking_cases": 24,
+    "ranking_candidates": 72,
+    "ranking_saved_predictions_reproduced": 24,
+    "ranking_selection_changes": 18,
+    "ranking_candidates_with_tail": 38,
+    "ranking_candidates_with_nonfinite_tail": 38,
+    "ranking_candidates_with_nonfinite_prefix": 0,
+    "secondary_seed_pairs_checked": 3900
+  },
+  "source_sha256": {
+    "experiment_validation/revalidation_20261031/secondary/cuda_full/samples.jsonl": "157c660335aefdd706d5d9ef38f2656977f35d770f6da86abe4f6f9b9e0e86b2",
+    "experiment_validation/revalidation_20261031/review_revision_20261101/ranking_audit/results.jsonl": "b94954c3866c6f6fd6cec9b4c4b353d591ae989b9d942056f2c5ddcfba1fe4e1",
+    "experiment_validation/revalidation_20261031/review_revision_20261101/methods_evidence.json": "93ad415ce5f29b37c6da447be3f9ca4fed65cbe333f876d13382625334bf3cd6",
+    "experiment_validation/revalidation_20261031/review_revision_20261101/sources_proposal.json": "3426b2d909771a9096b45c0c0935ecf2e56de0f590a9a7c4d52f5050ea6d6f9b",
+    "article1/references.bib": "5fc0ca3e64a7d50da44ff6ed8722201023c92d50785b0ac2bea0b16f3a35f5e7",
+    "experiment_validation/scripts/robustness_eval.py": "61aa4c5780224fede418ce15b5801ae7966184026d5895ffddb53d4c0295de52",
+    "experiment_validation/revalidation_20261031/secondary/rerun_secondary.py": "3508b2a82e948de53f0355f7cd64433a6d494ad929b224a9747951f1cc117621",
+    "experiment_validation/revalidation_20261031/inference_validation/verify_inference.py": "f826fccf005f866514126fb442989380a770a4e63c053d0bfb0f357721a8407f"
+  }
+}

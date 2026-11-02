@@ -1,0 +1,51 @@
+{
+  "schema": "delegated-selector-test-report/1",
+  "status": "PASS",
+  "delegated_test_run": true,
+  "agent": "/root/eos_selector_fix",
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "experiment_validation.tests.test_reconstruction_eos_ranking",
+    "experiment_validation.tests.test_reconstruction_seed_resume",
+    "-v"
+  ],
+  "tests_run": 14,
+  "new_eos_audit_tests": 13,
+  "existing_seed_resume_tests": 1,
+  "reported_test_duration_seconds": 0.077,
+  "evidence": "Existing unittest tool output: Ran 14 tests in 0.077s; OK. This report does not rerun tests.",
+  "scope": [
+    "Actual Transformers transition-score counterexample",
+    "First EOS inclusive; trailing PAD excluded",
+    "No EOS retains full generated suffix",
+    "Decoder prefix alignment",
+    "Multiple EOS IDs and PAD=EOS",
+    "PAD before EOS retained",
+    "EOS disabled in generation config",
+    "Nonfinite prefix errors",
+    "Deduplication and stable ties",
+    "Empty candidate audit",
+    "Single candidate no-score path",
+    "Missing or failing transition scores raise",
+    "Shape validation",
+    "Audit preserves RNG and sampling arguments",
+    "Cold/warm/resume seed invariance"
+  ],
+  "additional_command": [
+    "git",
+    "diff",
+    "--check",
+    "--",
+    "weiss_reconstruction.py",
+    "experiment_validation/tests/test_reconstruction_eos_ranking.py"
+  ],
+  "additional_command_exit_code": 0,
+  "sha256": {
+    "weiss_reconstruction.py": "795bd9ad309b96573a448df9439cba88659c8ba61ccc9618be269eabf1f30234",
+    "experiment_validation/tests/test_reconstruction_eos_ranking.py": "7c2b63629b745cb1af34d8c14ba6bac4906effc5628ca34633f057bdbc36d9fb",
+    "experiment_validation/tests/test_reconstruction_seed_resume.py": "b0c9cd606d7b57b62d5e535234653128a1813f1cc68b87074b038a82181a810f"
+  },
+  "gpu_used": false
+}

@@ -1,0 +1,44 @@
+{
+  "verified_at_utc": "2026-11-01T15:15:09.199832+00:00",
+  "verification_status": "VERIFIED_COMPLETE",
+  "complete": true,
+  "scope": "Canonical rerun bound to supplied emitted-text references; interpretation follows source reference_validation.",
+  "run": "/home/paugustynowicz/LLeakM/experiment_validation/revalidation_20261031/inference/fresh_phi_cuda",
+  "verifier_sha256": "f826fccf005f866514126fb442989380a770a4e63c053d0bfb0f357721a8407f",
+  "protocol_id": "fe36a42472666cc781470195545fa5033c6ee3b778b6d3b0c16ad9943015875b",
+  "expected": 300,
+  "integrity_checks_passed": true,
+  "completed": 300,
+  "model_counts": {
+    "phi_3_5_mini": 300
+  },
+  "runner_status": {
+    "protocol_id": "fe36a42472666cc781470195545fa5033c6ee3b778b6d3b0c16ad9943015875b",
+    "expected": 300,
+    "completed": 300,
+    "complete": true,
+    "status": "completed",
+    "scope": "Verified logged emitted-text lengths; ordinary reference decoding remains unverified.",
+    "new_records_this_invocation": 300,
+    "elapsed_seconds": 3863.330148580004
+  },
+  "ignored_incomplete_tail_bytes": 0,
+  "sampled_jsonl_prefix_sha256": "d19fb66b3d9f5dc908b30e3a580965318fac2d7de59c07ef129645ae75513d5b",
+  "checkpoint_files": {
+    "/home/paugustynowicz/.cache/huggingface/hub/models--royweiss1--T5_FirstSentences/snapshots/057cf090b719f5cf89da504babd2122d404e0953/pytorch_model.bin": "84304d4342ef05cd54cf59c409f8dd25d33db9f15bb8122f50852302723b5321",
+    "/home/paugustynowicz/.cache/huggingface/hub/models--royweiss1--T5_FirstSentences/snapshots/057cf090b719f5cf89da504babd2122d404e0953/tokenizer.json": "8fba3abd7afea3d3f1af811afc4f24f17607f4e80f71a64387a88ace20a23c3b",
+    "/home/paugustynowicz/.cache/huggingface/hub/models--royweiss1--T5_FirstSentences/snapshots/057cf090b719f5cf89da504babd2122d404e0953/config.json": "7279b3e7f49fecf047e666db56b181e0f3bfdd404fd734f075fa94fa11e0e6cb",
+    "/home/paugustynowicz/.cache/huggingface/hub/models--royweiss1--T5_MiddleSentences/snapshots/07e2b3fc96bc129eb4a2871e58731c07e889cecc/pytorch_model.bin": "b9302c071a5a2df83ee41edd38a97ee646275c9a371cdf07224b5374ee594c69",
+    "/home/paugustynowicz/.cache/huggingface/hub/models--royweiss1--T5_MiddleSentences/snapshots/07e2b3fc96bc129eb4a2871e58731c07e889cecc/tokenizer.json": "8fba3abd7afea3d3f1af811afc4f24f17607f4e80f71a64387a88ace20a23c3b",
+    "/home/paugustynowicz/.cache/huggingface/hub/models--royweiss1--T5_MiddleSentences/snapshots/07e2b3fc96bc129eb4a2871e58731c07e889cecc/config.json": "59b05337c5da141e68e581d25c0532cd3343ab585c1b8f2248ab6085d1dfc91b"
+  },
+  "metric_crosschecks": 605,
+  "all_records_requested": true,
+  "full_segment_coverage_count": 300,
+  "early_stop_count": 0,
+  "empty_candidate_stop_count": 0,
+  "attempted_segments": 10748,
+  "available_segments": 10748,
+  "truncated_encoder_calls": 77,
+  "diagnostic_reference_records": 0
+}

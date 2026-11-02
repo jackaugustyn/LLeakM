@@ -1,0 +1,35 @@
+{
+  "reviewed_utc": "2026-11-01T16:24:41.348514+00:00",
+  "status": "NO_INCONSISTENCY_IDENTIFIED",
+  "scope": "Read-only semantic consistency review of the four current figure captions, two conceptual TikZ diagrams, and adjacent fresh-cohort prose against local code and completed independent result ledgers. This is a source review, not rendered-layout or external model-card certification.",
+  "sources_sha256": {
+    "article1/template.tex": "eb2feb528f4954321985794c46928989085ce1c1ea0848f2ee00534659675881",
+    "weiss_reconstruction.py": "55ebb745e9cafd08d89931f17ef26a5858ff8884c526e16aa2b0201784c83dc1",
+    "app.py": "f56e8d1d545b9103a5b0047e507a09c71163a61e9448595883588d0af0fe8a50",
+    "experiment_validation/revalidation_20261031/final_review_20261101/main_fresh_factledger.json": "bebf5cf314062cedd2cc76900ef61b0284e3282ea3d723a0d226382a51174bee",
+    "experiment_validation/revalidation_20261031/final_review_20261101/paired_detokenization_score_contrast.json": "d0f1c94a964fa59ef8a306c530df0fafa1e050862ff9b1174431a65436dae862"
+  },
+  "checks": [
+    {
+      "figure": "fig:threat_model",
+      "finding": "The diagram keeps emitted reference R on the evaluator path and supplies only ordered payload-byte lengths to the fixed T5 reconstructor. The caption disclaims an SSE-event/encrypted-record identification; adjacent methods explicitly describe generation before fragment emission."
+    },
+    {
+      "figure": "fig:pipeline",
+      "finding": "Transformation, optional MAP inverse, segmentation, serialization/tokenization with 80-token encoder limit, decoding, candidate ranking and context update have the executed order. Context is the immediately preceding selected segment, consistent with weiss_reconstruction.py; all-segment and pilot versus first-segment MAP budgets are distinguished."
+    },
+    {
+      "figure": "fig:model_ci",
+      "finding": "Both panels use marginal scenario-bootstrap intervals and the annotations use paired-scenario intervals for rendering contrasts. Captions distinguish archived reference-format diagnostics from full-sequence cohorts and state that trace and reference change together. There is no obsolete prompt-bootstrap claim for this figure."
+    },
+    {
+      "figure": "fig:defense_tradeoff",
+      "finding": "Separate model panels correspond to each of the ten completed model-transformation results. The caption identifies point estimates, actual realized payload costs including randomized padding, zero payload-sum batching overhead, and unmeasured transport costs/latency."
+    },
+    {
+      "section": "sec:fresh and Conclusions",
+      "finding": "The fixed-ID legacy replay and matched T5 rendering comparison are described without recovering historical IDs/revisions or isolating input-versus-reference contributions. Reported fresh means, delta means and paired scenario interval endpoints match the independent ledgers."
+    }
+  ],
+  "remaining_validation": "Root agent is compiling and visually inspecting the rendered PDF. Re-run check_manuscript_numbers.py after final source or generator changes."
+}

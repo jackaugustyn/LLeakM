@@ -1,0 +1,291 @@
+{
+  "scope": "Archived token text and IDs inventory plus local tokenizer inversion; no model generation, no heuristic reference repair.",
+  "historical_tokenizer_revision_attested": false,
+  "models": {
+    "run_full_20260920_gemma_2_2b_full": {
+      "model_id": "google/gemma-2-2b-it",
+      "sample_sha256": "cf54813fad2821bf7c57b4d88647dfd13b3e613b882e8dc7115cc771893a1f9b",
+      "ordered_log_hashes_sha256": "558102343a9b3a93a8a4912fe4429291b42a396874708c25b82c62234c04d368",
+      "counts": {
+        "samples": 300,
+        "logs": 300,
+        "generated_token_ids_in_logs": 0,
+        "step_token_ids_in_logs": 0,
+        "steps": 147188,
+        "references_without_ASCII_spaces": 0,
+        "references_containing_UFFFD": 0,
+        "reference_log_mismatch": 0,
+        "reference_fragment_concat_mismatch": 0,
+        "logged_UTF8_length_mismatch": 0
+      },
+      "cached_tokenizer_json": [
+        "/home/paugustynowicz/.cache/huggingface/hub/models--google--gemma-2-2b-it/snapshots/299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8/tokenizer.json"
+      ],
+      "examples": [],
+      "exact_ID_recovery_from_supplied_records": "unavailable: token IDs absent; concatenated text is not evidence of a unique inverse"
+    },
+    "run_full_20260920_llama_3_2_3b_full": {
+      "model_id": "meta-llama/Llama-3.2-3B-Instruct",
+      "sample_sha256": "a0b763f615897171ec05c38a06fcf2425e9e27511d02a5128fb42c90e0adee80",
+      "ordered_log_hashes_sha256": "fb727b2ca30c7d925af96a9c4f735c30492bd49019056ea539af56054d0eee33",
+      "counts": {
+        "samples": 300,
+        "logs": 300,
+        "generated_token_ids_in_logs": 0,
+        "step_token_ids_in_logs": 0,
+        "steps": 129311,
+        "references_without_ASCII_spaces": 0,
+        "references_containing_UFFFD": 0,
+        "reference_log_mismatch": 0,
+        "reference_fragment_concat_mismatch": 0,
+        "logged_UTF8_length_mismatch": 0
+      },
+      "cached_tokenizer_json": [],
+      "examples": [],
+      "exact_ID_recovery_from_supplied_records": "unavailable: token IDs absent; concatenated text is not evidence of a unique inverse"
+    },
+    "run_full_20260920_phi_1_5_full": {
+      "model_id": "microsoft/phi-1_5",
+      "sample_sha256": "064e18eab753d1004f4f7395d4b4fd8b7699e15a5b6451b25483d5c0b0e18f0a",
+      "ordered_log_hashes_sha256": "de43fb49e580a95a47cc93b4a799590729332ea4a0da479d534c48a0d704dd1e",
+      "counts": {
+        "samples": 300,
+        "logs": 300,
+        "generated_token_ids_in_logs": 0,
+        "step_token_ids_in_logs": 0,
+        "steps": 118618,
+        "references_without_ASCII_spaces": 0,
+        "references_containing_UFFFD": 0,
+        "reference_log_mismatch": 0,
+        "reference_fragment_concat_mismatch": 0,
+        "logged_UTF8_length_mismatch": 0
+      },
+      "cached_tokenizer_json": [],
+      "examples": [],
+      "exact_ID_recovery_from_supplied_records": "unavailable: token IDs absent; concatenated text is not evidence of a unique inverse"
+    },
+    "run_full_20260920_phi_3_5_mini_full": {
+      "model_id": "microsoft/Phi-3.5-mini-instruct",
+      "sample_sha256": "e9457f666825a8bcf4bfe5064734046b8e997839190e55c5ce77caad75c3c4d2",
+      "ordered_log_hashes_sha256": "b663afe365a0b683696cc76fff092c62d76afe3132a5fabfffa4bb27632197ac",
+      "counts": {
+        "samples": 300,
+        "logs": 300,
+        "generated_token_ids_in_logs": 0,
+        "step_token_ids_in_logs": 0,
+        "steps": 153600,
+        "references_without_ASCII_spaces": 162,
+        "references_containing_UFFFD": 0,
+        "reference_log_mismatch": 0,
+        "reference_fragment_concat_mismatch": 0,
+        "logged_UTF8_length_mismatch": 0
+      },
+      "cached_tokenizer_json": [],
+      "examples": [
+        {
+          "run_id": "2dc260d9-314f-4c47-a13e-c6834e2d9fb8",
+          "excerpt": "I'msorrytohearthatyou'restrugglingwithyourexams.Here'sastructuredweeklystudyplanthatmighthelpyouimproveyourperformance:\n\n**WeeklyStudyPlan:**\n\n**Monday:**\n-**Morning:**Reviewyourclassnotesandidentifya"
+        },
+        {
+          "run_id": "2c4f25b7-15a1-481a-aee0-a8d4567c1b26",
+          "excerpt": "Iunderstandthatexperiencingconstantanxietybeforeworkcanbechallenging.WhileI'mnotasubstituteforprofessionalcare,Icansuggestsomestrategiesthatmighthelpyoumanageyouranxiety.Herearesomestepsyoucouldconsid"
+        }
+      ],
+      "exact_ID_recovery_from_supplied_records": "unavailable: token IDs absent; concatenated text is not evidence of a unique inverse"
+    },
+    "run_full_20260920_qwen_1_5b_full": {
+      "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "sample_sha256": "69fab9d733f5188cb56a2225372de0bee6221aca106ba0715c344fc0c43de575",
+      "ordered_log_hashes_sha256": "ff1750b62164f60bce62d9c5a54621d30a9d5e945929300b5b36ced9016063f2",
+      "counts": {
+        "samples": 300,
+        "logs": 300,
+        "generated_token_ids_in_logs": 0,
+        "step_token_ids_in_logs": 0,
+        "steps": 125485,
+        "references_without_ASCII_spaces": 0,
+        "references_containing_UFFFD": 0,
+        "reference_log_mismatch": 0,
+        "reference_fragment_concat_mismatch": 0,
+        "logged_UTF8_length_mismatch": 0
+      },
+      "cached_tokenizer_json": [],
+      "examples": [],
+      "exact_ID_recovery_from_supplied_records": "unavailable: token IDs absent; concatenated text is not evidence of a unique inverse"
+    },
+    "run_full_20260920_qwen_3b_full": {
+      "model_id": "Qwen/Qwen2.5-3B-Instruct",
+      "sample_sha256": "b45afd9dd5fb1857c4c53c4c5304f88317adc91776c72d6be205e18c6341152a",
+      "ordered_log_hashes_sha256": "72fa7a0f9578b3fe30a8b872df731d1ba794bb58651b3d425076d2ca48716061",
+      "counts": {
+        "samples": 300,
+        "logs": 300,
+        "generated_token_ids_in_logs": 0,
+        "step_token_ids_in_logs": 0,
+        "steps": 149268,
+        "references_without_ASCII_spaces": 0,
+        "references_containing_UFFFD": 0,
+        "reference_log_mismatch": 0,
+        "reference_fragment_concat_mismatch": 0,
+        "logged_UTF8_length_mismatch": 0
+      },
+      "cached_tokenizer_json": [],
+      "examples": [],
+      "exact_ID_recovery_from_supplied_records": "unavailable: token IDs absent; concatenated text is not evidence of a unique inverse"
+    },
+    "run_full_20260920_tinyllama_1_1b_full": {
+      "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "sample_sha256": "090bf56093e901165b7b4fb61308121a21caa6d03fb049e5db413a70aef1c20f",
+      "ordered_log_hashes_sha256": "5c69a46a84f493f336fc4ccc3721db5ba40f43309531107c270d546d104c7a04",
+      "counts": {
+        "samples": 300,
+        "logs": 300,
+        "generated_token_ids_in_logs": 0,
+        "step_token_ids_in_logs": 0,
+        "steps": 128494,
+        "references_without_ASCII_spaces": 299,
+        "references_containing_UFFFD": 0,
+        "reference_log_mismatch": 0,
+        "reference_fragment_concat_mismatch": 0,
+        "logged_UTF8_length_mismatch": 0
+      },
+      "cached_tokenizer_json": [],
+      "examples": [
+        {
+          "run_id": "5ba600e9-4ad9-4e13-a308-19d421ff87c0",
+          "excerpt": "Sure,I'dbehappytohelpyouwiththat.Moralconflictisacommonchallengethatmanypeoplefaceintheirpersonalandprofessionallives.Itcanarisewhenanindividual'spersonalvaluesconflictwiththeircareergoalsorresponsibi"
+        },
+        {
+          "run_id": "e4c53ce7-0e6a-4c27-aa5e-6c6d87d954e7",
+          "excerpt": "Sure,I'dbehappytohelpyouwiththat.Here'saweeklystudystructurethatyoucanfollowtohelpyouprepareforyourexams:\n\nMonday:\n-Reviewthematerialcoveredinthepreviousweek'sclass\n-Takeapracticetesttotestyourunderst"
+        }
+      ],
+      "exact_ID_recovery_from_supplied_records": "unavailable: token IDs absent; concatenated text is not evidence of a unique inverse"
+    }
+  },
+  "gemma_local_inverse": {
+    "tokenizer_json": "/home/paugustynowicz/.cache/huggingface/hub/models--google--gemma-2-2b-it/snapshots/299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8/tokenizer.json",
+    "tokenizer_json_sha256": "3f289bc05132635a8bc7aca7aa21255efd5e18f3710f43e3cdb96bcd41be4922",
+    "tokenizer_class": "GemmaTokenizerFast",
+    "vocabulary_size": 256000,
+    "counts": {
+      "samples": 300,
+      "samples_with_ambiguous_token_inverse": 300,
+      "samples_with_unmatched_token_inverse": 0,
+      "ambiguous_steps": 29045,
+      "unmatched_steps": 0,
+      "first_candidate_full_decode_matches_reference": 300,
+      "last_candidate_full_decode_matches_reference": 300,
+      "distinct_first_last_ID_sequences": 300
+    },
+    "examples": [
+      {
+        "run_id": "8037d6ed-c484-4c41-b0f9-0ec6ff4eb855",
+        "ambiguous": [
+          {
+            "step": 0,
+            "token_text": " ",
+            "candidate_token_ids": [
+              249,
+              235248
+            ],
+            "candidate_count": 2
+          },
+          {
+            "step": 3,
+            "token_text": "'",
+            "candidate_token_ids": [
+              256,
+              235303
+            ],
+            "candidate_count": 2
+          }
+        ],
+        "unmatched_positions": []
+      },
+      {
+        "run_id": "1f422267-efad-4f41-a7f1-352e2b4b1afc",
+        "ambiguous": [
+          {
+            "step": 1,
+            "token_text": "'",
+            "candidate_token_ids": [
+              256,
+              235303
+            ],
+            "candidate_count": 2
+          },
+          {
+            "step": 2,
+            "token_text": "s",
+            "candidate_token_ids": [
+              332,
+              235256
+            ],
+            "candidate_count": 2
+          }
+        ],
+        "unmatched_positions": []
+      },
+      {
+        "run_id": "72f61d14-a0ae-41bc-9391-4748585fbf16",
+        "ambiguous": [
+          {
+            "step": 0,
+            "token_text": " ",
+            "candidate_token_ids": [
+              249,
+              235248
+            ],
+            "candidate_count": 2
+          },
+          {
+            "step": 3,
+            "token_text": "'",
+            "candidate_token_ids": [
+              256,
+              235303
+            ],
+            "candidate_count": 2
+          }
+        ],
+        "unmatched_positions": []
+      }
+    ],
+    "interpretation": "Inversion is conditional on the local tokenizer, not historical attestation. First/last candidate choices test two compatible sequences, not all possible combinations. Distinct IDs may decode to the same reference; inverse ambiguity is not by itself a reference defect. No inferred token IDs are promoted to ground truth or saved as repaired records."
+  },
+  "new_decoder_checks_with_cached_gemma": [
+    {
+      "input": "Hello world.\n\nA second line.",
+      "generated_ID_count": 8,
+      "fragment_count": 8,
+      "empty_fragments": 0,
+      "contextual_equals_full_decode": true,
+      "individual_decode_equals_full_decode": true
+    },
+    {
+      "input": "Żółć, café, Ελληνικά, 中文, 🙂",
+      "generated_ID_count": 13,
+      "fragment_count": 13,
+      "empty_fragments": 0,
+      "contextual_equals_full_decode": true,
+      "individual_decode_equals_full_decode": true
+    },
+    {
+      "input": "A 🫨 B",
+      "generated_ID_count": 7,
+      "fragment_count": 7,
+      "empty_fragments": 3,
+      "contextual_equals_full_decode": true,
+      "individual_decode_equals_full_decode": false
+    },
+    {
+      "input": "",
+      "generated_ID_count": 0,
+      "fragment_count": 0,
+      "empty_fragments": 0,
+      "contextual_equals_full_decode": true,
+      "individual_decode_equals_full_decode": true
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "models": [
+    {
+      "label": "tinyllama_1_1b",
+      "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+      "files": [
+        "config.json",
+        "generation_config.json",
+        "model.safetensors",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json"
+      ],
+      "file_sizes": {
+        "config.json": 608,
+        "generation_config.json": 124,
+        "model.safetensors": 2200119864,
+        "special_tokens_map.json": 551,
+        "tokenizer.json": 1842767,
+        "tokenizer_config.json": 1289
+      },
+      "lfs_sha256": {
+        "model.safetensors": "6e6001da2106d4757498752a021df6c2bdc332c650aae4bae6b0c004dcf14933"
+      }
+    },
+    {
+      "label": "phi_3_5_mini",
+      "model_id": "microsoft/Phi-3.5-mini-instruct",
+      "revision": "2fe192450127e6a83f7441aef6e3ca586c338b77",
+      "files": [
+        "added_tokens.json",
+        "config.json",
+        "generation_config.json",
+        "model-00001-of-00002.safetensors",
+        "model-00002-of-00002.safetensors",
+        "model.safetensors.index.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json"
+      ],
+      "file_sizes": {
+        "added_tokens.json": 306,
+        "config.json": 3451,
+        "generation_config.json": 195,
+        "model-00001-of-00002.safetensors": 4972489328,
+        "model-00002-of-00002.safetensors": 2669692552,
+        "model.safetensors.index.json": 16331,
+        "special_tokens_map.json": 665,
+        "tokenizer.json": 1844408,
+        "tokenizer_config.json": 3984
+      },
+      "lfs_sha256": {
+        "model-00001-of-00002.safetensors": "c5214cdb995ed3dd716add8d9efbfe016b76bb2f1c4c1e6c1c6a95497d7a8837",
+        "model-00002-of-00002.safetensors": "41246eed2b75b66526339c5d32d6f7acdefe0bd24180f97c74303f4656877344"
+      }
+    }
+  ],
+  "revision_resolution_utc": "2026-10-31T14:41:43.225827+00:00",
+  "historical_revision_identity": "unknown; these are current pinned revisions, not certified archived victim revisions"
+}

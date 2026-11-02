@@ -1,0 +1,17 @@
+{
+  "check": "aggregate-only with GPU discovery and model loading explicitly forbidden",
+  "exit_code": 2,
+  "status": {
+    "protocol_id": "4be7356df56f0dc377897920de8271d2094e8a9d50fa4b407ad0187d37865046",
+    "expected": 3900,
+    "completed": 0,
+    "complete": false,
+    "status": "partial",
+    "pid": 192393,
+    "new_records_this_invocation": 0,
+    "device": "cuda",
+    "elapsed_seconds": 0.002157262002583593
+  },
+  "summary_cells": 42,
+  "expected": 3900
+}

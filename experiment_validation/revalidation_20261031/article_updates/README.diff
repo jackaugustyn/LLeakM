@@ -1,0 +1,75 @@
+--- before/README.md
++++ experiment_validation/README.md
+@@ -4,9 +4,11 @@
+ 
+ ## Zakres badania
+ 
+-Zamierzonym sygnałem jest długość bajtowa osobno dekodowanego tokenu w zdarzeniu strumienia aplikacyjnego. Eksperyment nie obejmuje ekstrakcji ramek z zaszyfrowanego ruchu TLS/HTTP2/QUIC. Modele są oceniane zamrożonym rekonstruktorem Weiss-style T5, ale walidacja z 31 października 2026 r. ujawniła różnicę między zamierzonym sygnałem a obecną ścieżką kolektora: `iter_lines()` usuwa znaki końca linii wewnątrz tokenów. Replay obecnego kodu na zachowanych logach zmienia 2073/2100 śladów i liczbę segmentów w 764 próbkach. Nie odtwarza to dowodu historycznych wejść T5, których dokładnych wektorów nie zapisano.
++W historycznym eksperymencie zamierzonym sygnałem była długość bajtowa osobno dekodowanego tokenu w zdarzeniu strumienia aplikacyjnego. Eksperyment nie obejmuje ekstrakcji ramek z zaszyfrowanego ruchu TLS/HTTP2/QUIC. Modele są oceniane zamrożonym rekonstruktorem Weiss-style T5, ale walidacja z 31 października 2026 r. ujawniła różnicę między zamierzonym sygnałem a zarchiwizowaną implementacją kolektora: `iter_lines()` usuwało znaki końca linii wewnątrz tokenów. Replay tej implementacji na zachowanych logach zmienia 2073/2100 śladów i liczbę segmentów w 764 próbkach. Nie odtwarza to dowodu historycznych wejść T5, których dokładnych wektorów nie zapisano.
+ 
+ Poniższe statystyki głównego zbioru opisują zachowane wyniki, z zastrzeżeniem nierozstrzygniętego pochodzenia obserwacji. TinyLlama i Phi-3.5-mini są traktowane diagnostycznie: odpowiednio 299/300 i 162/300 referencji nie zawiera spacji ASCII, a zgodności osobnego dekodowania tokenów z dekodowaniem całej sekwencji nie potwierdzono. Ich niskich wyników nie można przypisać wyłącznie transferowi rekonstruktora. Pilotaże i MAP pobierają `token_utf8_len` bezpośrednio z logów; nie korzystają z tego samego kolektora co główna kampania.
++
++Po audycie naprawiono kod dla nowych przebiegów. `run_validation.py` korzysta z jawnego oracle'a długości z logu (`validated-log-payload-byte-lengths-v1`), sprawdza sumę odebranych bajtów i zapisuje dokładny wektor wejściowy wraz z hashami. Jest to obserwacja instrumentowana. `app.py` tworzy fragmenty z uwzględnieniem kontekstu dekodowania, weryfikuje ich zgodność z pełnym tekstem i zapisuje token IDs oraz pochodzenie. Nie naprawia to starych referencji ani nie poświadcza wcześniejszych wejść T5. Nowe rekonstrukcje są przechowywane osobno w `revalidation_20261031/inference/`; ich kompletność określa `status.json`, a częściowych przebiegów nie należy używać jako zamiennika pełnej tabeli.
+ 
+ Główny zbiór obejmuje:
+ 
+@@ -28,7 +30,8 @@
+ ├── prompts/            # 15 plików tematycznych, łącznie 300 promptów
+ ├── results/            # próbki, konfiguracje i podsumowania przebiegów
+ ├── scripts/            # zbieranie, statystyki, baseline'y, obrony, manifest
+-├── analysis/           # finalne metryki, testy, tabele i figury
++├── analysis/           # historyczne metryki, testy, tabele i figury
++├── revalidation_20261031/ # audyty, przeliczone statystyki i osobne nowe przebiegi
+ └── models.json         # pomocnicza lista dla run_model_matrix.py
+ ```
+ 
+@@ -63,6 +66,26 @@
+ 
+ Pola `phi_cosine` i progi `ASR_*` zapisane w pierwotnych `summary.json` pochodzą z czasu danego uruchomienia i mogą używać pierwotnie wybranego backendu. Źródłem liczb cytowanych w artykule są `analysis/per_prompt_phi.csv`, `analysis/model_stats.json` oraz wygenerowane z nich tabele. Ich zgodność rachunkowa nie potwierdza poprawności wcześniejszej rejestracji sygnału ani referencji.
+ 
++## Ponowne obliczenie statystyk — 31 października 2026
++
++[Raport walidacji](revalidation_20261031/statistics/WALIDACJA_STATYSTYK.md) obejmuje niezależne przeliczenie 2100 głównych par tekstów i ich pierwszych zdań, 240 rekordów kontroli, 420 rekordów obron oraz 3300 rekordów MAP. Sprawdzone zapisane metryki ED i ROUGE oraz `phi` kontroli, obron i MAP zgadzają się dokładnie; główne `phi` ujednolicono jako kosinus częstości słów. Naprawiono agregację percentyli oraz obliczanie bardzo małych wartości p bez zaokrąglania do zera. Decyzje 17/21 porównań modeli i 10/10 porównań obron pozostają takie same. Oryginalnych agregatów nie nadpisano; poprawione wyniki znajdują się w `statistics/source_fixed_rerun/` względem katalogu rewalidacji.
++
++Eksploracyjna analiza zależności wariantów uśrednia pięć promptów każdego z 60 scenariuszy, po czym wykonuje bootstrap scenariuszy (10 000 losowań) i testy sparowane na ich średnich. Zachowuje te same 17 istotnych par po korekcji Holma. Przedziały są szersze dla sześciu modeli, maksymalnie o 37,7%; dla Phi-1.5 są o 1,3% węższe. Nie dowodzi to niezależności wariantów ani generalizacji na nowe scenariusze.
++
++| Model | Średnie `phi` | 95% CI, bootstrap 60 scenariuszy |
++|---|---:|---:|
++| Qwen2.5-1.5B | 0.5680 | [0.5520, 0.5834] |
++| Qwen2.5-3B | 0.5521 | [0.5393, 0.5652] |
++| Phi-1.5 | 0.5383 | [0.5248, 0.5516] |
++| Llama-3.2-3B | 0.5360 | [0.5205, 0.5511] |
++| Gemma-2-2B | 0.5170 | [0.5076, 0.5266] |
++| Phi-3.5-mini (diagnostyka) | 0.0434 | [0.0384, 0.0489] |
++| TinyLlama-1.1B (diagnostyka) | 0.0302 | [0.0262, 0.0345] |
++
++Pełne wyniki i efekty par zapisano w [scenario_cluster_sensitivity.json](revalidation_20261031/statistics/scenario_cluster_sensitivity.json). Są warunkowe względem zachowanych tekstów i nie usuwają problemów pomiaru.
++
++Narzut `rand_pad_8` ma niespójne zapisy historyczne i nie odtwarza się z udokumentowanego przepisu ziaren. Artykuł podaje teraz **oczekiwany** narzut payloadu: **79,755339%** dla Qwen i **83,133614%** dla Llama (po zaokrągleniu 79,8% i 83,1%). To średnia `100 × 4T/B` po 30 śladach modelu, ponieważ dodawane paddingi są jednostajne na `{0,…,8}`, a ich wartość oczekiwana wynosi 4. Nie jest to odzyskana realizacja historyczna. Punkt wykresu używa średniego oczekiwanego kosztu 81,4% oraz archiwalnej redukcji wyniku; deterministyczne narzuty pozostają bez zmian.
++
+ ## Uruchomienie pojedynczego modelu
+ 
+ Najpierw uruchom serwer z wybranym modelem ofiary:
+@@ -73,7 +96,7 @@
+   python -m uvicorn app:app --host 127.0.0.1 --port 8000
+ ```
+ 
+-W drugim terminalu poniższe parametry odpowiadają budżetom głównej kampanii. Samo ich użycie w obecnym kolektorze nie naprawia problemu znaków końca linii ani detokenizacji; przed interpretacją nowego przebiegu jako walidacji trzeba sprawdzić sygnał i referencję:
++W drugim terminalu poniższe parametry odpowiadają budżetom głównej kampanii. Naprawiony kolektor i harness stosują nowy kontrakt obserwacji i referencji, więc wyniki nowego przebiegu należy zachować oddzielnie od historycznych danych. Walidacja logu i referencji nie oznacza odtworzenia historycznych odpowiedzi:
+ 
+ ```bash
+ . .venv/bin/activate
+@@ -216,10 +239,12 @@
+ 
+ - `analysis/REPRODUCIBILITY.md` — historyczny opis środowiska, protokołu i poleceń; może zawierać nieaktualne parametry,
+ - `analysis/repro_manifest.json` — historyczny manifest, z nieaktualnymi wpisami; zachowany bez nadpisania,
+-- `analysis/revision_snapshot_20261031.json` — osobny snapshot obecnych plików podczas rewizji, bez poświadczenia historycznego wykonania,
++- `analysis/revision_snapshot_20261031.json` — snapshot wcześniejszej rewizji tekstu, sprzed późniejszych napraw kodu; bez poświadczenia historycznego wykonania,
+ - `analysis/model_stats.json` — finalne wyniki modeli,
+ - `analysis/pairwise_tests.json` — 21 porównań zapisanych wyników, 17 istotnych po korekcji Holma,
+ - `analysis/defense_eval.json` — wyniki obron,
+ - `analysis/trace_baselines.json` — baseline'y informacji w śladzie.
+ 
++Aktualne prace walidacyjne są odrębne od tego archiwum: `revalidation_20261031/statistics/` zawiera przeliczenia statystyk, `collection/` zweryfikowane wektory długości, `references/` audyt detokenizacji, a `inference/` protokoły, próbki i stan nowych rekonstrukcji. Pełna walidacja eksperymentu wymaga kompletnego przebiegu oraz poprawnych referencji; samo przeliczenie zapisanych tekstów jej nie zastępuje.
++
+ Ograniczenia interpretacyjne i pełne wyniki opisuje `../report_LLeakM.md` oraz manuskrypt `../article1/template.tex`. Publiczne repozytorium: https://github.com/jackaugustyn/LLeakM

@@ -1,0 +1,37 @@
+{
+  "complete": true,
+  "n": 2100,
+  "expected": 2100,
+  "diagnostic_series_included": true,
+  "scope": "EOS-bounded selection on frozen validated logged lengths and references; no new victim generation.",
+  "models": {
+    "gemma_2_2b": {
+      "n": 300,
+      "mean_phi": 0.5092140852771863
+    },
+    "llama_3_2_3b": {
+      "n": 300,
+      "mean_phi": 0.5364733479858528
+    },
+    "phi_1_5": {
+      "n": 300,
+      "mean_phi": 0.542048493372592
+    },
+    "phi_3_5_mini": {
+      "n": 300,
+      "mean_phi": 0.12974449321553577
+    },
+    "qwen_1_5b": {
+      "n": 300,
+      "mean_phi": 0.5768451790588798
+    },
+    "qwen_3b": {
+      "n": 300,
+      "mean_phi": 0.5571435473015415
+    },
+    "tinyllama_1_1b": {
+      "n": 300,
+      "mean_phi": 0.08322084045034096
+    }
+  }
+}

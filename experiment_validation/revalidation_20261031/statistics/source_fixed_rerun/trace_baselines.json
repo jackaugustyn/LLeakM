@@ -1,0 +1,98 @@
+[
+  {
+    "model": "Qwen2.5-1.5B-Instruct",
+    "label": "qwen_1_5b",
+    "condition": "real",
+    "n": 30,
+    "phi_mean": 0.30244242490017437,
+    "phi_ci": [
+      0.260733367899307,
+      0.34572091155122864
+    ],
+    "delta_vs_real": 0.0
+  },
+  {
+    "model": "Qwen2.5-1.5B-Instruct",
+    "label": "qwen_1_5b",
+    "condition": "shuffled",
+    "n": 30,
+    "phi_mean": 0.20909647381979013,
+    "phi_ci": [
+      0.17336763358434001,
+      0.24633988702059093
+    ],
+    "delta_vs_real": -0.09334595108038424
+  },
+  {
+    "model": "Qwen2.5-1.5B-Instruct",
+    "label": "qwen_1_5b",
+    "condition": "constant",
+    "n": 30,
+    "phi_mean": 0.10676830079829579,
+    "phi_ci": [
+      0.0844305233072925,
+      0.1302609252399031
+    ],
+    "delta_vs_real": -0.19567412410187857
+  },
+  {
+    "model": "Qwen2.5-1.5B-Instruct",
+    "label": "qwen_1_5b",
+    "condition": "cross_prompt",
+    "n": 30,
+    "phi_mean": 0.2560966962342497,
+    "phi_ci": [
+      0.2295929405093526,
+      0.28374778601054274
+    ],
+    "delta_vs_real": -0.04634572866592468
+  },
+  {
+    "model": "Llama-3.2-3B-Instruct",
+    "label": "llama_3_2_3b",
+    "condition": "real",
+    "n": 30,
+    "phi_mean": 0.291287192053386,
+    "phi_ci": [
+      0.2568384469596809,
+      0.3282389951332217
+    ],
+    "delta_vs_real": 0.0
+  },
+  {
+    "model": "Llama-3.2-3B-Instruct",
+    "label": "llama_3_2_3b",
+    "condition": "shuffled",
+    "n": 30,
+    "phi_mean": 0.18723551569958166,
+    "phi_ci": [
+      0.1622667674729805,
+      0.21192066036958143
+    ],
+    "delta_vs_real": -0.10405167635380433
+  },
+  {
+    "model": "Llama-3.2-3B-Instruct",
+    "label": "llama_3_2_3b",
+    "condition": "constant",
+    "n": 30,
+    "phi_mean": 0.12416521094302581,
+    "phi_ci": [
+      0.09807361004579045,
+      0.1528917695853721
+    ],
+    "delta_vs_real": -0.1671219811103602
+  },
+  {
+    "model": "Llama-3.2-3B-Instruct",
+    "label": "llama_3_2_3b",
+    "condition": "cross_prompt",
+    "n": 30,
+    "phi_mean": 0.2312019053608374,
+    "phi_ci": [
+      0.20098672511727214,
+      0.261847835202245
+    ],
+    "delta_vs_real": -0.06008528669254859
+  }
+]

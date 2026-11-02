@@ -1,0 +1,37 @@
+{
+  "expected": 300,
+  "label": "tinyllama_1_1b",
+  "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+  "generation": {
+    "max_new_tokens": 512,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "prompt_format": "legacy"
+  },
+  "precision": "float16",
+  "placement_requested": "full_cuda",
+  "max_memory_gib": null,
+  "canonical_input_sha256": "cf4ca0307ffb97654f2e302855e4f8a1cbac57fa3f837ba1356c615b988cef3a",
+  "archived_config_sha256": "2ec42c81c8c3fe5e105f428850ab7aa75e5f07476f874f683adcca2d80608fab",
+  "models_file_sha256": "fb0141352893c3c95e7b8dbcea54f17423ffe40f5865097e4d89bef752bbdc2e",
+  "runner_sha256": "cb661644adffe2ea1654552f53b09439b80da68494f24bd273e742c4200a119a",
+  "harness_source_sha256": "f56e8d1d545b9103a5b0047e507a09c71163a61e9448595883588d0af0fe8a50",
+  "observation_source": "validated-in-process-harness-payload-byte-lengths-v1",
+  "scope": "Fresh victim generations with verified ordinary full-sequence decoding; not historical IDs or checkpoint recovery; no network timing claim.",
+  "historical_revision_identity": "unknown; these are current pinned revisions, not certified archived victim revisions",
+  "historical_prediction_comparison": "not applicable; canonical old_pred_full_text is an empty compatibility placeholder",
+  "torch": "2.5.1+cu124",
+  "transformers": "4.46.3",
+  "accelerate": "1.1.1",
+  "checkpoint_file_sha256": {
+    "config.json": "486bedda3a6988332e60d9638a09ca4b260d34ebcf1b19e22cf3b140b63d8fe9",
+    "generation_config.json": "18046d04f5bd8b4998095ecabdd17a1bf0053d9acdccead4a05be4a3575f3c5c",
+    "model.safetensors": "6e6001da2106d4757498752a021df6c2bdc332c650aae4bae6b0c004dcf14933",
+    "special_tokens_map.json": "82d96d7a9e6ced037f12394b7ea6a5b02e6ca87e0d11edaa8d60d9be857ce7db",
+    "tokenizer.json": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+    "tokenizer_config.json": "7b41ba7d0eb91e77914ca3dafde559ea3e19878769b7e68409e89bed5222e77a"
+  },
+  "cuda_device": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+  "threads": 4
+}

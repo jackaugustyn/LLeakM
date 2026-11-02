@@ -1,0 +1,3 @@
+From v4.47 onwards, when a model cache is to be returned, `generate` will return a `Cache` instance instead by default (as opposed to the legacy tuple of tuples format). If you want to keep returning the legacy format, please set `return_legacy_cache=True`.
+1/2100 ('qwen_1_5b', 1) phi=0.489876 seconds=11.2
+2/2100 ('qwen_1_5b', 2) phi=0.597226 seconds=7.5

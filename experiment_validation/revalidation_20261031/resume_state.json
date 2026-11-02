@@ -1,0 +1,23 @@
+{
+  "saved_utc": "2026-10-31T14:58:14.155532+00:00",
+  "user_authorization": "wznawiaj obliczenia",
+  "queue_pid": 194635,
+  "primary_pid": 187555,
+  "primary_snapshot": {
+    "protocol_id": "d5394a6ade10b4b46c841d5c69660674c7ada72079094036e1e891f148b8e924",
+    "expected": 2100,
+    "completed": 83,
+    "complete": false,
+    "status": "running",
+    "scope": "Verified logged emitted-text lengths; ordinary reference decoding remains unverified.",
+    "new_records_this_invocation": 83,
+    "active": {
+      "label": "qwen_1_5b",
+      "idx": 84
+    },
+    "elapsed_seconds": 1008.8276740149995
+  },
+  "queue_plan_sha256": "b964254e282fecfcfb62d992411084eb655405050049c7e3d41464ed0c68917f",
+  "status_document": "AKTUALNY_STAN.md",
+  "completion_claim": false
+}

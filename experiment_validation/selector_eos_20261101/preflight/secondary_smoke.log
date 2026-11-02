@@ -1,0 +1,9 @@
+From v4.47 onwards, when a model cache is to be returned, `generate` will return a `Cache` instance instead by default (as opposed to the legacy tuple of tuples format). If you want to keep returning the legacy format, please set `return_legacy_cache=True`.
+1/3900 trace_control:qwen_1_5b:1:real:frozen:20260706 phi=0.197203 seconds=1.9
+2/3900 trace_control:qwen_1_5b:1:shuffled:frozen:20260706 phi=0.137159 seconds=1.2
+Token indices sequence length is longer than the specified maximum sequence length for this model (112 > 80). Running this sequence through the model will result in indexing errors
+Token indices sequence length is longer than the specified maximum sequence length for this model (112 > 80). Running this sequence through the model will result in indexing errors
+3/3900 trace_control:qwen_1_5b:1:constant:frozen:20260706 phi=0.070874 seconds=2.2
+4/3900 trace_control:qwen_1_5b:1:cross_prompt:frozen:20260706 phi=0.365047 seconds=1.1
+5/3900 defense_pilot:qwen_1_5b:1:baseline:frozen:20260706 phi=0.156919 seconds=1.1
+6/3900 defense_pilot:qwen_1_5b:1:bucket_8:frozen:20260706 phi=0.056879 seconds=2.1

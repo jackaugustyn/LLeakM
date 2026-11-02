@@ -1,0 +1,65 @@
+{
+  "prepared_utc": "2026-10-31T14:51:41.106147+00:00",
+  "code_ready": true,
+  "cache_ready": true,
+  "gpu_generation_tested": false,
+  "victim_generations_completed": 0,
+  "tests": {
+    "unit_cli_tests_passed": 4,
+    "real_pinned_tokenizer_cases_passed": 8,
+    "mocked_components_in_cli_test": [
+      "model weights",
+      "CUDA",
+      "checkpoint downloads"
+    ]
+  },
+  "download_process": {
+    "pid": 187902,
+    "alive": false,
+    "unified_exec_session": 41513,
+    "note": "Initial downloader uses pinned revisions in HF cache; check_cache.py --download can finish missing files if this process does not survive.",
+    "exit_code": 0,
+    "completed_utc": "2026-10-31T14:54:27.067309+00:00"
+  },
+  "cache_verified_files": 15,
+  "cache_expected_files": 15,
+  "files": {
+    "generate_fresh.py": {
+      "sha256": "cb661644adffe2ea1654552f53b09439b80da68494f24bd273e742c4200a119a",
+      "bytes": 16373
+    },
+    "check_cache.py": {
+      "sha256": "a8a8b3e9aa0871ae0c4a330dfa68293e744a870593d55848e518acc76f5b3a4d",
+      "bytes": 2676
+    },
+    "test_generate_fresh.py": {
+      "sha256": "afa90575f3c08b9e3a3d90e4b8583081a49e48b40035bbb16037e7373d4e092e",
+      "bytes": 7972
+    },
+    "models_pinned.json": {
+      "sha256": "fb0141352893c3c95e7b8dbcea54f17423ffe40f5865097e4d89bef752bbdc2e",
+      "bytes": 2105
+    },
+    "tokenizer_checks.json": {
+      "sha256": "daa9ea454b0e342057569f101aff0d85de571e2184277155489256f258d16e9e",
+      "bytes": 2633
+    },
+    "phi_memory_plan.json": {
+      "sha256": "c045f8df3fd6656efe46a09ba535916257a4fa6ebc0b55854a6a68f2f305a019",
+      "bytes": 1281
+    }
+  },
+  "protocol": "fresh references only, pinned victim revisions, greedy512 legacy; historical revision identity unknown",
+  "queue_preflight": [
+    "python3",
+    "experiment_validation/revalidation_20261031/fresh_references/check_cache.py",
+    "--download"
+  ],
+  "cache_checked_utc": "2026-10-31T14:54:26.985351+00:00",
+  "independent_review": {
+    "agent": "/root/verify_new_inference",
+    "verdict": "no new blocker found",
+    "tokenizer_independent_cases": 6,
+    "actual_gpu_generation_tested": false
+  }
+}

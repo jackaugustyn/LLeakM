@@ -1,0 +1,31 @@
+{
+  "primary_rows": 2100,
+  "first_response_rows_checked": 2100,
+  "auxiliary_rows": {
+    "trace_baseline_samples": 240,
+    "defense_samples": 420,
+    "robustness_samples": 3300
+  },
+  "independent_algorithm_selfchecks": 605,
+  "max_abs_difference_from_stored_fields": {
+    "primary/ed_norm": 0.0,
+    "primary/rouge1_precision": 0.0,
+    "primary/rouge1_recall": 0.0,
+    "primary/rouge1_f1": 0.0,
+    "primary/rougeL_precision": 0.0,
+    "primary/rougeL_recall": 0.0,
+    "primary/rougeL_f1": 0.0,
+    "primary/first_ed_norm": 0.0,
+    "primary/first_rouge1_precision": 0.0,
+    "primary/first_rougeL_precision": 0.0,
+    "trace_baseline_samples/phi": 0.0,
+    "defense_samples/phi": 0.0,
+    "defense_samples/ed_norm": 0.0,
+    "defense_samples/r1": 0.0,
+    "robustness_samples/phi": 0.0,
+    "robustness_samples/ed_norm": 0.0,
+    "robustness_samples/r1_precision": 0.0
+  },
+  "mismatches_above_1e_12": {},
+  "definition": "TF cosine, raw-character reference-normalized Levenshtein, regex word ROUGE1/L. No embedding-backend historical phi comparison; primary phi is recomputed consistently."
+}

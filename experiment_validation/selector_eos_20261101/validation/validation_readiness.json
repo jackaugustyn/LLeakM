@@ -1,0 +1,20 @@
+{
+  "status": "READY",
+  "sha256": {
+    "experiment_validation/selector_eos_20261101/inference_validation/verify_inference.py": "38de18570f8273f4165ff09ced428540c24a7e8f0dbc56b697b05f9e3e886f0b",
+    "experiment_validation/selector_eos_20261101/validation/audit_campaign.py": "0a30638fc6d67175c4de9531086c708b20451e2126d498063f8e1ab0f6b0da1b",
+    "experiment_validation/selector_eos_20261101/validation/candidate_checks.py": "22e7b8a1b0c7ccb99917130cd6cb2c9280af519c889de448310d027850893f33",
+    "experiment_validation/selector_eos_20261101/validation/audit_main_fresh.py": "1aa63c7708d25072a4210da45983ca9d317836b2bbf5a82cd874690454ddb404",
+    "experiment_validation/selector_eos_20261101/validation/independent_dp.cpp": "6c713091f29604230b18c4e9abc41c5c0628f329e02cedf7ff784f6c36cbfc70",
+    "experiment_validation/selector_eos_20261101/validation/secondary_audit.py": "0275dc69b48d46e30d1c2d86f7564eb90eafd096a9b244ca0991e271d8fedb71",
+    "experiment_validation/selector_eos_20261101/validation/test_candidate_checks.py": "30d79b2997cbb4ae1620487927c1f28259b4b7e7bf1af8b192b5c39289285ba6"
+  },
+  "preflight": "preflight/independent_audit/audit_campaign.json",
+  "tests": "validation/validation_selftest.json",
+  "commands": [
+    "python3 experiment_validation/selector_eos_20261101/inference_validation/verify_inference.py --run <new run> --input <frozen old canonical> --output <new verification directory>",
+    "python3 experiment_validation/selector_eos_20261101/validation/audit_main_fresh.py",
+    "python3 experiment_validation/selector_eos_20261101/validation/secondary_audit.py",
+    "python3 experiment_validation/selector_eos_20261101/validation/audit_campaign.py"
+  ]
+}

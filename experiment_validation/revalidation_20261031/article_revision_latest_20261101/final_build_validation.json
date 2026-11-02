@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-11-01T16:30:23.722067+00:00",
+  "pages": 21,
+  "latexmk_exit_code": 0,
+  "overfull_boxes": false,
+  "undefined_references": false,
+  "fatal_build_errors": [],
+  "remaining_warnings": "Six standard MDPI/hyperref PDF-string warnings from author metadata; no missing references or layout warnings.",
+  "numeric_fields_checked": 476,
+  "tables_checked": 12,
+  "figures_checked": 4,
+  "caption_pages": {
+    "Table 1": 7,
+    "Table 2": 7,
+    "Table 3": 10,
+    "Table 4": 10,
+    "Table 5": 11,
+    "Table 6": 13,
+    "Table 7": 13,
+    "Table 8": 14,
+    "Table 9": 14,
+    "Table 10": 14,
+    "Table 11": 16,
+    "Table A1": 19,
+    "Figure 1": 4,
+    "Figure 2": 6,
+    "Figure 3": 12,
+    "Figure 4": 15
+  },
+  "citation_commands_unchanged": 18,
+  "protected_macros_unchanged": [
+    "Title",
+    "Author",
+    "AuthorNames",
+    "address",
+    "corres",
+    "authorcontributions",
+    "funding",
+    "institutionalreview",
+    "informedconsent",
+    "dataavailability",
+    "conflictsofinterest"
+  ],
+  "visual_review": {
+    "all_pages_contact_sheet": 21,
+    "all_tables_review": "Separate agent reviewed all12 at2x on66898ef9; final wording suggestions incorporated, subsequent changed pages inspected by root.",
+    "root_detail_pages": [
+      4,
+      6,
+      11,
+      12,
+      14,
+      15
+    ],
+    "result": "All4 figures and table layouts readable; no clipping or overlap. Final table caption clarifications preserve numeric content."
+  },
+  "scope": "Local article revision and build validation; no external journal-policy certification or publication.",
+  "sha256": {
+    "article1/template.tex": "8539201fa3c7aeb62d219037c3395a083e541b4fc08df1f1b701327c8ca42dc5",
+    "article1/template.pdf": "54d50599c48dbfc87bc54188d25b08d8679fca5a2e77611af43c66eb81f29b63",
+    "article1/references.bib": "0fa511895778a707dba48901fbe35be8db04a4338f4184fedde113032d13b207",
+    "experiment_validation/revalidation_20261031/article_revision_latest_20261101/build/template.log": "a43911140f79a508bd6a6f89fbb9619b038d7e3c3891c7efea60b901c7bd39c9",
+    "experiment_validation/revalidation_20261031/article_revision_latest_20261101/manuscript_numeric_validation.json": "3f96bf55ae8261c4bd8820559e0c8b33363ac167f385c5ea3dce654f8d0ad268",
+    "experiment_validation/revalidation_20261031/article_revision_latest_20261101/figure_manifest.json": "bc0028c59b9a5313e6a47e419915a05ef2b6998abe62cb0ad88cbe15b0d7dd09"
+  }
+}

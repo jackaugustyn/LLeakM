@@ -1,0 +1,53 @@
+{
+  "complete": true,
+  "selector_version": "eos-through-first-inclusive/1",
+  "scope": "Matched full-response contrast of verified versus legacy rendering under the corrected selector. Both length inputs and scoring references change; the components are not separately identified.",
+  "bootstrap_seed": 20261101,
+  "bootstrap_draws": 10000,
+  "order": "Tiny prompt/scenario then Phi prompt/scenario",
+  "models": [
+    {
+      "label": "tinyllama_1_1b",
+      "n": 300,
+      "n_scenarios": 60,
+      "delta_phi_mean": 0.3844688571513061,
+      "delta_phi_ci_paired_prompt": [
+        0.3688409614194197,
+        0.40014753724775654
+      ],
+      "delta_phi_ci_paired_scenario": [
+        0.36617722928309904,
+        0.4028863664826566
+      ],
+      "individual_delta_range": [
+        -0.04565822447555529,
+        0.6996451210596987
+      ]
+    },
+    {
+      "label": "phi_3_5_mini",
+      "n": 300,
+      "n_scenarios": 60,
+      "delta_phi_mean": 0.3971976026556103,
+      "delta_phi_ci_paired_prompt": [
+        0.3854376277265097,
+        0.40901902655100275
+      ],
+      "delta_phi_ci_paired_scenario": [
+        0.3806434789780226,
+        0.4134400410032759
+      ],
+      "individual_delta_range": [
+        0.023499662656564446,
+        0.6445477126801038
+      ]
+    }
+  ],
+  "source_sha256": {
+    "experiment_validation/selector_eos_20261101/inference_validation/cuda_full/rescored.jsonl": "0b0350f06525747abd584b43245193c2b0fbcca00ffda9e814a118eae69df9e0",
+    "experiment_validation/selector_eos_20261101/inference_validation/fresh_tinyllama_cuda/rescored.jsonl": "61d2b5a23d11b59786424730f6997f6bb38ccaa4846b1e6a128858561095d0a3",
+    "experiment_validation/selector_eos_20261101/inference_validation/fresh_phi_cuda/rescored.jsonl": "00d6f73db62bd164a585dc1304843e018e420c4940f9f0cb185cdf20169364cc",
+    "experiment_validation/selector_eos_20261101/validation/paired_rendering_audit.json": "31c417fe786de9aac3e3ee591a123d5946a9609875232c9671e731945ab9d3de"
+  },
+  "independent_recalculation_agrees": true
+}

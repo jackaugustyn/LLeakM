@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "manuscript_sha256": "88f6edebfa689fbf5f61dc2b85ab743d3d71fd35c69e3d1a4e8f5cff6827b066",
+  "numeric_fields_checked": 486,
+  "table_numeric_fields_checked": 433,
+  "figure_numeric_fields_checked": 53,
+  "text_fields_checked": 121,
+  "row_counts": {
+    "tab:main_results": 7,
+    "tab:statistical_results": 7,
+    "tab:scenario_sensitivity": 7,
+    "tab:eos_completeness": 7,
+    "tab:length_covariates": 7,
+    "tab:fresh_results": 2,
+    "tab:trace_controls": 8,
+    "tab:defense_results": 12,
+    "tab:robustness": 22,
+    "tab:encoder_coverage": 6,
+    "tab:model_metadata": 7,
+    "tab:run_ids": 7,
+    "tab:protocol_overview": 5
+  },
+  "figures_checked": {
+    "numeric": 2,
+    "conceptual_presence_only": 2
+  },
+  "errors": [],
+  "artifact_sha256": {
+    "article1/template.tex": "88f6edebfa689fbf5f61dc2b85ab743d3d71fd35c69e3d1a4e8f5cff6827b066",
+    "experiment_validation/selector_eos_20261101/article_revision_20261102/figure_data.json": "272eb2f258008e8c9e7ccd37e49ede10af6f10bb775701e788e04d60651e9fac",
+    "experiment_validation/selector_eos_20261101/article_revision_20261102/generate_figures.py": "9ea6f02a1cc2da898685902706f0eb46af4f7843321b4b9fff7440b9fe8f05f2",
+    "experiment_validation/scripts/analyze_extras.py": "de78d40b3dac51d7eb293a0ac58d26fffce377cc222aa6473a6cff5d6e977744",
+    "experiment_validation/models_publication.json": "32871244fbb913802f1593e70ac16f966c094c43e8ceaf3e95279d09072e4c46",
+    "experiment_validation/selector_eos_20261101/validation/main_fresh_factledger.json": "3a83c8ba5a4a7e7813b812ffb4f97111d105f47d2d7b07427602308d5ccf243d",
+    "experiment_validation/selector_eos_20261101/validation/secondary_audit.json": "a9e4002f74b400a4ba186e74ceb233fb1993b637cd2c7f3fcd356429064c9e4f",
+    "experiment_validation/selector_eos_20261101/validation/paired_detokenization_score_contrast.json": "0f86097260f814974b478eee800d53707f2057f9356ded92d5d3372c6ff47354",
+    "article1/figures/eos_model_results.pdf": "fbecf640218d6c941c479ad4fde2dd047ff2ecb41b61cff7c8dd521ee8323f29",
+    "article1/figures/eos_model_results.svg": "15bbf0e89ce6fe25eb52c1d4965b0bd1096553f08459bf942c7fcbfe13f0502f",
+    "article1/figures/eos_model_results.png": "82a8dd6bfc61b35f735869d5ca20006ceb2121c94030f3e860c154cbefe44ac5",
+    "article1/figures/eos_defense_tradeoff.pdf": "8593590ece28443a4198c2da6b17ba0c594c8b94f71697af190d27a61cdd1c40",
+    "article1/figures/eos_defense_tradeoff.svg": "038e82f42839ebf9f1ed84e7c608a08aefdef1733d1d876ef519817c15104727",
+    "article1/figures/eos_defense_tradeoff.png": "e56a49cec2c1afe3a10589cc433558ae44e6db2cc93c5f0f189dd60a3fbe51d5",
+    "experiment_validation/selector_eos_20261101/article_revision_20261102/figure_manifest.json": "3d2fccdba8301f0ae2f0b162a59495d9ab2c8993552330c349cfe852e5abc50c"
+  },
+  "tables_only": false,
+  "scope": "All 13 TeX tables and 2 numeric figure data files checked. Sources are independent result ledgers and retained source inventories. Metadata parameter/tokenizer descriptions checked for local consistency, not new model-card certification. Conceptual diagrams are checked only for presence in the full run; separate scientific review and visual inspection remain required. Does not certify prose or rendered layout."
+}

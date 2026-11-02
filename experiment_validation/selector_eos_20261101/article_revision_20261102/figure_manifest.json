@@ -1,0 +1,26 @@
+{
+  "sources": {
+    "experiment_validation/selector_eos_20261101/validation/main_fresh_factledger.json": "3a83c8ba5a4a7e7813b812ffb4f97111d105f47d2d7b07427602308d5ccf243d",
+    "experiment_validation/selector_eos_20261101/validation/secondary_audit.json": "a9e4002f74b400a4ba186e74ceb233fb1993b637cd2c7f3fcd356429064c9e4f",
+    "experiment_validation/selector_eos_20261101/validation/paired_detokenization_score_contrast.json": "0f86097260f814974b478eee800d53707f2057f9356ded92d5d3372c6ff47354"
+  },
+  "generator_sha256": "9ea6f02a1cc2da898685902706f0eb46af4f7843321b4b9fff7440b9fe8f05f2",
+  "data_sha256": "272eb2f258008e8c9e7ccd37e49ede10af6f10bb775701e788e04d60651e9fac",
+  "csv_sha256": {
+    "experiment_validation/selector_eos_20261101/article_revision_20261102/figure_data/archived_scenario.csv": "a44a1cd0a28cbeb1c9cec4461be5669069b2fe758b87d23e9d40a3122fc3fe49",
+    "experiment_validation/selector_eos_20261101/article_revision_20261102/figure_data/defense_llama.csv": "fe50f743293b3610c292c98491d5a6eea9f62b5d221060755605d8f8a02b30e0",
+    "experiment_validation/selector_eos_20261101/article_revision_20261102/figure_data/defense_qwen.csv": "dd084b5badca87939b9ca650e35ae112ddf5cce4ed712cced3177d653ad8c336",
+    "experiment_validation/selector_eos_20261101/article_revision_20261102/figure_data/fresh_scenario.csv": "062d3866ec727328e888fc842e600fe4544f7a8f5c9bee50c8c6b7d93d3e7100",
+    "experiment_validation/selector_eos_20261101/article_revision_20261102/figure_data/paired_contrasts.csv": "4f1f2401b3bd3309b6b48b4cd8dec053a12bce43c48dc373ea1cc59a15b46e9c"
+  },
+  "outputs": {
+    "article1/figures/eos_model_results.pdf": "fbecf640218d6c941c479ad4fde2dd047ff2ecb41b61cff7c8dd521ee8323f29",
+    "article1/figures/eos_model_results.svg": "15bbf0e89ce6fe25eb52c1d4965b0bd1096553f08459bf942c7fcbfe13f0502f",
+    "article1/figures/eos_model_results.png": "82a8dd6bfc61b35f735869d5ca20006ceb2121c94030f3e860c154cbefe44ac5",
+    "article1/figures/eos_defense_tradeoff.pdf": "8593590ece28443a4198c2da6b17ba0c594c8b94f71697af190d27a61cdd1c40",
+    "article1/figures/eos_defense_tradeoff.svg": "038e82f42839ebf9f1ed84e7c608a08aefdef1733d1d876ef519817c15104727",
+    "article1/figures/eos_defense_tradeoff.png": "e56a49cec2c1afe3a10589cc433558ae44e6db2cc93c5f0f189dd60a3fbe51d5"
+  },
+  "selector": "eos-through-first-inclusive/1",
+  "scope": "Both model panels and all defense points use only the completed EOS campaign. Panel (b) compares matched reference renderings within that campaign. No old-selector result is plotted; no inference or bootstrap rerun."
+}

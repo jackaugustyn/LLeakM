@@ -1,0 +1,87 @@
+{
+  "reviewed_at_utc": "2026-11-02T19:20:17.150121+00:00",
+  "status": "PASS",
+  "scope": "Independent read-only scientific review of current prose, abstract, discussion, conclusions and appendices against new EOS records and audits; new600-sequence CPU replay; README score-retention claims. Numeric table cells are separately checked by the table audit.",
+  "manuscript_sha256": "88f6edebfa689fbf5f61dc2b85ab743d3d71fd35c69e3d1a4e8f5cff6827b066",
+  "supplement_readme_sha256": "78a7ae0a22980ee1ff0bc26e37b1c049b8c8b8bc5ec51370432df5b56e2e8693",
+  "no_unresolved_findings": true,
+  "checks": [
+    {
+      "name": "primary_means_LR_ROUGE",
+      "status": "PASS",
+      "details": "Five non-diagnostic means .5092-.5768, LR55.00-76.67%, R1.2283-.3284; max mean Qwen1.5 versus max LR Qwen3 distinguished."
+    },
+    {
+      "name": "main_significance",
+      "status": "PASS",
+      "details": "18/21 significant at prompt and scenario levels; only Qwen3-Llama, Qwen3-Phi1.5, Llama-Phi1.5 inconclusive. New pairwise example and 44.8% max CI widening accurate."
+    },
+    {
+      "name": "EOS_and_coverage",
+      "status": "PASS",
+      "details": "Victim EOS subsets distinguished from T5 EOS selection. Primary62757 attempted/62755 nonempty/1014 truncated; empty terminal Llama259/Phi1.5-121. Fresh8835/10748 attempts and24/35 truncations accurate."
+    },
+    {
+      "name": "verified_references",
+      "status": "PASS",
+      "details": "Independent CPU replay600=300Tiny+300Phi; each of11per-record checks passes. Legacy text/fragments/lengths match archive and new EOS main inputs; full references/lengths match new fresh inputs; matched seeds verified."
+    },
+    {
+      "name": "rendering_contrast",
+      "status": "PASS",
+      "details": "Current means .4677/.5269; LR44.33/62.33%. Paired new-EOS contrasts .3845/.3972 and scenarioCIs [.3662,.4029]/[.3806,.4134] accurate. Both trace and reference changed; cohorts not pooled into main ranking."
+    },
+    {
+      "name": "controls",
+      "status": "PASS",
+      "details": "4/6 significant: shuffle and constant for both models. Both cross-prompt adjusted p=.1169 inconclusive. Negative nominal mean-difference intervals distinguished from adjusted signed-rank tests."
+    },
+    {
+      "name": "defenses",
+      "status": "PASS",
+      "details": "10/10 significant; range43.7687560808-89.5798194525%; batching70.9-79.3%; all300 defended pilot rows have phi<=.5. Frozen-pipeline and payload-only accounting limitations retained."
+    },
+    {
+      "name": "pad32",
+      "status": "PASS",
+      "details": "660current records; one retained input within each regime. Two inputs globally (_32 frozen/_3 adaptive), same FirstSentences encoder. All300frozenMAP inputs identical and150cross-model predictions identical. Manuscript states constancy at valid scopes."
+    },
+    {
+      "name": "MAP",
+      "status": "PASS",
+      "details": "3300new records/22cells, current means/CIs. One-candidate scope and crossed bootstrap interpreted conditionally, no historical prediction comparison remains."
+    },
+    {
+      "name": "candidate_audit",
+      "status": "PASS",
+      "details": "6600records/86788calls/253764candidates;83488ranked and3300single-candidate calls;4540261scored positions,142629candidates with post-EOS tail,393353excluded positions. Only ranked calls retain transition scores; MAP null/zero fields correctly described in manuscript and README."
+    },
+    {
+      "name": "obsolete_regression",
+      "status": "PASS",
+      "details": "Regression omitted; no old regression values remain."
+    },
+    {
+      "name": "interpretation",
+      "status": "PASS",
+      "details": "No semantic-disclosure, capacity, intrinsic-vulnerability or demonstrated encrypted-transport extraction claim. Archived references are frozen inputs, not earlier reconstruction evidence."
+    }
+  ],
+  "pattern_checks": {
+    "required_current_strings": 26,
+    "missing": [],
+    "stale_patterns": 22,
+    "hits": []
+  },
+  "resolved_findings": [
+    "Removed historical seed-comparison narrative from Methods.",
+    "Limited transition-score retention claims to ranked calls in Methods, Appendix and supplement README."
+  ],
+  "source_sha256": {
+    "scientific_facts.json": "8396792b565a8d16ac952c2144e812cae69a6ba53f710480e5948b37907d89af",
+    "prose_findings.md": "9917b8587fcdba03bc752fb74d0acac1d56be321de2d33f9fd22673b9c027234",
+    "fixed_id_rendering_replay.py": "54cb26424e73f81ff53c4f8aacc9c26160cdf5045a3612f9d694f28fec753939",
+    "fixed_id_rendering_replay.json": "a751779da39be558c4b52a5f5460436cfd3212ac77d339b742d000308c7ebd72",
+    "fixed_id_rendering_replay_records.jsonl": "0899ce1caf333266a09436759b7f6d454f54cf8e9d590582e73296c035119a4f"
+  }
+}

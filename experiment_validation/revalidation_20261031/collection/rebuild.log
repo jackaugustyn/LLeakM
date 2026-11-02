@@ -1,0 +1,89 @@
+{
+  "sample_count": 2100,
+  "models": [
+    {
+      "label": "qwen_1_5b",
+      "run_dir": "run_full_20260920_qwen_1_5b_full",
+      "validated_samples": 300,
+      "changed_traces_vs_current_legacy_replay": 282,
+      "changed_segment_counts_vs_legacy_replay": 149,
+      "references_without_ascii_spaces": 0,
+      "references_with_unicode_replacement_character": 0,
+      "total_emitted_fragments": 125485,
+      "total_payload_bytes": 621390,
+      "empty_fragments": 0
+    },
+    {
+      "label": "qwen_3b",
+      "run_dir": "run_full_20260920_qwen_3b_full",
+      "validated_samples": 300,
+      "changed_traces_vs_current_legacy_replay": 300,
+      "changed_segment_counts_vs_legacy_replay": 227,
+      "references_without_ascii_spaces": 0,
+      "references_with_unicode_replacement_character": 0,
+      "total_emitted_fragments": 149268,
+      "total_payload_bytes": 725853,
+      "empty_fragments": 0
+    },
+    {
+      "label": "llama_3_2_3b",
+      "run_dir": "run_full_20260920_llama_3_2_3b_full",
+      "validated_samples": 300,
+      "changed_traces_vs_current_legacy_replay": 291,
+      "changed_segment_counts_vs_legacy_replay": 204,
+      "references_without_ascii_spaces": 0,
+      "references_with_unicode_replacement_character": 0,
+      "total_emitted_fragments": 129311,
+      "total_payload_bytes": 624327,
+      "empty_fragments": 0
+    },
+    {
+      "label": "gemma_2_2b",
+      "run_dir": "run_full_20260920_gemma_2_2b_full",
+      "validated_samples": 300,
+      "changed_traces_vs_current_legacy_replay": 300,
+      "changed_segment_counts_vs_legacy_replay": 23,
+      "references_without_ascii_spaces": 0,
+      "references_with_unicode_replacement_character": 0,
+      "total_emitted_fragments": 147188,
+      "total_payload_bytes": 676966,
+      "empty_fragments": 0
+    },
+    {
+      "label": "phi_1_5",
+      "run_dir": "run_full_20260920_phi_1_5_full",
+      "validated_samples": 300,
+      "changed_traces_vs_current_legacy_replay": 300,
+      "changed_segment_counts_vs_legacy_replay": 14,
+      "references_without_ascii_spaces": 0,
+      "references_with_unicode_replacement_character": 0,
+      "total_emitted_fragments": 118618,
+      "total_payload_bytes": 610634,
+      "empty_fragments": 0
+    },
+    {
+      "label": "tinyllama_1_1b",
+      "run_dir": "run_full_20260920_tinyllama_1_1b_full",
+      "validated_samples": 300,
+      "changed_traces_vs_current_legacy_replay": 300,
+      "changed_segment_counts_vs_legacy_replay": 57,
+      "references_without_ascii_spaces": 299,
+      "references_with_unicode_replacement_character": 0,
+      "total_emitted_fragments": 128494,
+      "total_payload_bytes": 443498,
+      "empty_fragments": 256
+    },
+    {
+      "label": "phi_3_5_mini",
+      "run_dir": "run_full_20260920_phi_3_5_mini_full",
+      "validated_samples": 300,
+      "changed_traces_vs_current_legacy_replay": 300,
+      "changed_segment_counts_vs_legacy_replay": 90,
+      "references_without_ascii_spaces": 162,
+      "references_with_unicode_replacement_character": 0,
+      "total_emitted_fragments": 153600,
+      "total_payload_bytes": 526426,
+      "empty_fragments": 210
+    }
+  ]
+}

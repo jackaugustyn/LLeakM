@@ -1,0 +1,2746 @@
+{
+  "status": "PASS",
+  "manuscript_sha256": "e40809532200c68d6e10e4789b8a8dbb65739603fb240d8bfac31fdcb6b05c5c",
+  "numeric_fields_checked": 454,
+  "row_counts": {
+    "tab:main_results": 7,
+    "tab:statistical_results": 7,
+    "tab:scenario_sensitivity": 7,
+    "tab:eos_completeness": 7,
+    "tab:length_covariates": 7,
+    "tab:fresh_results": 2,
+    "tab:trace_controls": 8,
+    "tab:defense_results": 12,
+    "tab:robustness": 22,
+    "tab:encoder_coverage": 6
+  },
+  "figures_checked": 2,
+  "errors": [],
+  "checks": [
+    {
+      "where": "tab:main_results/qwen_1_5b",
+      "printed": "0.5355",
+      "expected": 0.535463431800304,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/qwen_1_5b",
+      "printed": "0.7042",
+      "expected": 0.7042229964426479,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/qwen_1_5b",
+      "printed": "0.2921",
+      "expected": 0.292070586375169,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/qwen_1_5b",
+      "printed": "0.1760",
+      "expected": 0.17599880873378856,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/qwen_1_5b",
+      "printed": "65.33",
+      "expected": 65.33333333333333,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/qwen_3b",
+      "printed": "0.5251",
+      "expected": 0.5251430185271786,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/qwen_3b",
+      "printed": "0.7431",
+      "expected": 0.7431353054811154,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/qwen_3b",
+      "printed": "0.2556",
+      "expected": 0.2555980687178952,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/qwen_3b",
+      "printed": "0.1302",
+      "expected": 0.1301822619935308,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/qwen_3b",
+      "printed": "63.00",
+      "expected": 63.0,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/phi_1_5",
+      "printed": "0.5164",
+      "expected": 0.5163679150776324,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/phi_1_5",
+      "printed": "0.7229",
+      "expected": 0.7228684325188897,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/phi_1_5",
+      "printed": "0.2566",
+      "expected": 0.2566088429747511,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/phi_1_5",
+      "printed": "0.1524",
+      "expected": 0.15235744201084284,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/phi_1_5",
+      "printed": "56.67",
+      "expected": 56.666666666666664,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/llama_3_2_3b",
+      "printed": "0.5146",
+      "expected": 0.5146207898631087,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/llama_3_2_3b",
+      "printed": "0.7462",
+      "expected": 0.7461986119002001,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/llama_3_2_3b",
+      "printed": "0.2464",
+      "expected": 0.24636365274471464,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/llama_3_2_3b",
+      "printed": "0.1313",
+      "expected": 0.1312869414689181,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/llama_3_2_3b",
+      "printed": "61.00",
+      "expected": 61.0,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/gemma_2_2b",
+      "printed": "0.4820",
+      "expected": 0.48200127495503997,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/gemma_2_2b",
+      "printed": "0.7748",
+      "expected": 0.7747824345188655,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/gemma_2_2b",
+      "printed": "0.2101",
+      "expected": 0.2101030356669709,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/gemma_2_2b",
+      "printed": "0.1035",
+      "expected": 0.10345099460661367,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/gemma_2_2b",
+      "printed": "42.33",
+      "expected": 42.333333333333336,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/phi_3_5_mini",
+      "printed": "0.1210",
+      "expected": 0.12101694589032623,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/phi_3_5_mini",
+      "printed": "0.8781",
+      "expected": 0.87807473162768,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/phi_3_5_mini",
+      "printed": "0.0272",
+      "expected": 0.027184837308119172,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/phi_3_5_mini",
+      "printed": "0.0202",
+      "expected": 0.020214280303025023,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/phi_3_5_mini",
+      "printed": "0.00",
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/tinyllama_1_1b",
+      "printed": "0.0792",
+      "expected": 0.07915910893968085,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/tinyllama_1_1b",
+      "printed": "0.8803",
+      "expected": 0.8803320637115879,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/tinyllama_1_1b",
+      "printed": "0.0282",
+      "expected": 0.028195865851562908,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/tinyllama_1_1b",
+      "printed": "0.0211",
+      "expected": 0.02108719174279077,
+      "pass": true
+    },
+    {
+      "where": "tab:main_results/tinyllama_1_1b",
+      "printed": "0.00",
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/qwen_1_5b",
+      "printed": "0.5355",
+      "expected": 0.535463431800304,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/qwen_1_5b",
+      "printed": "0.5235",
+      "expected": 0.5234958543924215,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/qwen_1_5b",
+      "printed": "0.5477",
+      "expected": 0.5476987786211037,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/qwen_1_5b",
+      "printed": "65.33",
+      "expected": 65.33333333333333,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/qwen_1_5b",
+      "printed": "59.78",
+      "expected": 59.78480299293977,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/qwen_1_5b",
+      "printed": "70.49",
+      "expected": 70.49414588950748,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/qwen_3b",
+      "printed": "0.5251",
+      "expected": 0.5251430185271786,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/qwen_3b",
+      "printed": "0.5156",
+      "expected": 0.5155845920667425,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/qwen_3b",
+      "printed": "0.5344",
+      "expected": 0.5343654714271395,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/qwen_3b",
+      "printed": "63.00",
+      "expected": 63.0,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/qwen_3b",
+      "printed": "57.40",
+      "expected": 57.40445552913591,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/qwen_3b",
+      "printed": "68.27",
+      "expected": 68.26682721902588,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/phi_1_5",
+      "printed": "0.5164",
+      "expected": 0.5163679150776324,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/phi_1_5",
+      "printed": "0.5039",
+      "expected": 0.5038620363977091,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/phi_1_5",
+      "printed": "0.5288",
+      "expected": 0.5287929318226654,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/phi_1_5",
+      "printed": "56.67",
+      "expected": 56.666666666666664,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/phi_1_5",
+      "printed": "51.01",
+      "expected": 51.00989219821965,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/phi_1_5",
+      "printed": "62.15",
+      "expected": 62.15486818545306,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/llama_3_2_3b",
+      "printed": "0.5146",
+      "expected": 0.5146207898631087,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/llama_3_2_3b",
+      "printed": "0.5022",
+      "expected": 0.5021711790755867,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/llama_3_2_3b",
+      "printed": "0.5266",
+      "expected": 0.5265615956670235,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/llama_3_2_3b",
+      "printed": "61.00",
+      "expected": 61.0,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/llama_3_2_3b",
+      "printed": "55.37",
+      "expected": 55.3748567961591,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/llama_3_2_3b",
+      "printed": "66.35",
+      "expected": 66.34699783690088,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/gemma_2_2b",
+      "printed": "0.4820",
+      "expected": 0.48200127495503997,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/gemma_2_2b",
+      "printed": "0.4735",
+      "expected": 0.47350237841517206,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/gemma_2_2b",
+      "printed": "0.4904",
+      "expected": 0.49042147696611443,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/gemma_2_2b",
+      "printed": "42.33",
+      "expected": 42.333333333333336,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/gemma_2_2b",
+      "printed": "36.87",
+      "expected": 36.87385228107271,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/gemma_2_2b",
+      "printed": "47.99",
+      "expected": 47.98667327770366,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/phi_3_5_mini",
+      "printed": "0.1210",
+      "expected": 0.12101694589032623,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/phi_3_5_mini",
+      "printed": "0.1148",
+      "expected": 0.1148037171677386,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/phi_3_5_mini",
+      "printed": "0.1274",
+      "expected": 0.1273592571223459,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/phi_3_5_mini",
+      "printed": "0.00",
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/phi_3_5_mini",
+      "printed": "0.00",
+      "expected": 8.673617379884035e-17,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/phi_3_5_mini",
+      "printed": "1.26",
+      "expected": 1.2642971224546034,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/tinyllama_1_1b",
+      "printed": "0.0792",
+      "expected": 0.07915910893968085,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/tinyllama_1_1b",
+      "printed": "0.0741",
+      "expected": 0.07414476976360554,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/tinyllama_1_1b",
+      "printed": "0.0845",
+      "expected": 0.0845303911172721,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/tinyllama_1_1b",
+      "printed": "0.00",
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/tinyllama_1_1b",
+      "printed": "0.00",
+      "expected": 8.673617379884035e-17,
+      "pass": true
+    },
+    {
+      "where": "tab:statistical_results/tinyllama_1_1b",
+      "printed": "1.26",
+      "expected": 1.2642971224546034,
+      "pass": true
+    },
+    {
+      "where": "tab:scenario_sensitivity/qwen_1_5b",
+      "printed": "0.5355",
+      "expected": 0.535463431800304,
+      "pass": true
+    },
+    {
+      "where": "tab:scenario_sensitivity/qwen_1_5b",
+      "printed": "0.5195",
+      "expected": 0.5195329022253921,
+      "pass": true
+    },
+    {
+      "where": "tab:scenario_sensitivity/qwen_1_5b",
+      "printed": "0.5511",
+      "expected": 0.5511452585496478,
+      "pass": true
+    },
+    {
+      "where": "tab:scenario_sensitivity/qwen_3b",
+      "printed": "0.5251",
+      "expected": 0.5251430185271786,
+      "pass": true
+    },
+    {
+      "where": "tab:scenario_sensitivity/qwen_3b",
+      "printed": "0.5119",
+      "expected": 0.5118648742957332,
+      "pass": true
+    },
+    {
+      "where": "tab:scenario_sensitivity/qwen_3b",
+      "printed": "0.5385",
+      "expected": 0.5384643910301029,
+      "pass": true
+    },
+    {
+      "where": "tab:scenario_sensitivity/phi_1_5",
+      "printed": "0.5164",
+      "expected": 0.5163679150776324,
+      "pass": true
+    },
+    {
+      "where": "tab:scenario_sensitivity/phi_1_5",
+      "printed": "0.5019",
+      "expected": 0.5019418109151371,
+      "pass": true
+    },
+    {
+      "where": "tab:scenario_sensitivity/phi_1_5",
+      "printed": "0.5306",
+      "expected": 0.5306221720647276,
+      "pass": true
+    },
+    {
+      "where": "tab:scenario_sensitivity/llama_3_2_3b",
+      "printed": "0.5146",
+      "expected": 0.5146207898631087,
+      "pass": true
+    },
+    {
+      "where": "tab:scenario_sensitivity/llama_3_2_3b",
+      "printed": "0.4981",
+      "expected": 0.49811576548478176,
+      "pass": true
+    },
+    {
+      "where": "tab:scenario_sensitivity/llama_3_2_3b",
+      "printed": "0.5312",
+      "expected": 0.5311883143878443,
+      "pass": true
+    },
+    {
+      "where": "tab:scenario_sensitivity/gemma_2_2b",
+      "printed": "0.4820",
+      "expected": 0.48200127495503997,
+      "pass": true
+    },
+    {
+      "where": "tab:scenario_sensitivity/gemma_2_2b",
+      "printed": "0.4716",
+      "expected": 0.47160451593973785,
+      "pass": true
+    },
+    {
+      "where": "tab:scenario_sensitivity/gemma_2_2b",
+      "printed": "0.4928",
+      "expected": 0.492774976351969,
+      "pass": true
+    },
+    {
+      "where": "tab:scenario_sensitivity/phi_3_5_mini",
+      "printed": "0.1210",
+      "expected": 0.12101694589032623,
+      "pass": true
+    },
+    {
+      "where": "tab:scenario_sensitivity/phi_3_5_mini",
+      "printed": "0.1144",
+      "expected": 0.11439929475682911,
+      "pass": true
+    },
+    {
+      "where": "tab:scenario_sensitivity/phi_3_5_mini",
+      "printed": "0.1280",
+      "expected": 0.12800958429685985,
+      "pass": true
+    },
+    {
+      "where": "tab:scenario_sensitivity/tinyllama_1_1b",
+      "printed": "0.0792",
+      "expected": 0.07915910893968085,
+      "pass": true
+    },
+    {
+      "where": "tab:scenario_sensitivity/tinyllama_1_1b",
+      "printed": "0.0739",
+      "expected": 0.0739002309377521,
+      "pass": true
+    },
+    {
+      "where": "tab:scenario_sensitivity/tinyllama_1_1b",
+      "printed": "0.0849",
+      "expected": 0.08490281449434088,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/qwen_1_5b",
+      "printed": "167",
+      "expected": 167,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/qwen_1_5b",
+      "printed": "55.7",
+      "expected": 55.666666666666664,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/qwen_1_5b",
+      "printed": "44.3",
+      "expected": 44.333333333333336,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/qwen_1_5b",
+      "printed": "0.5355",
+      "expected": 0.535463431800304,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/qwen_1_5b",
+      "printed": "0.5528",
+      "expected": 0.5527764360839731,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/qwen_1_5b",
+      "printed": "65.33",
+      "expected": 65.33333333333333,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/qwen_1_5b",
+      "printed": "71.26",
+      "expected": 71.25748502994011,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/qwen_3b",
+      "printed": "50",
+      "expected": 50,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/qwen_3b",
+      "printed": "16.7",
+      "expected": 16.666666666666664,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/qwen_3b",
+      "printed": "83.3",
+      "expected": 83.33333333333333,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/qwen_3b",
+      "printed": "0.5251",
+      "expected": 0.5251430185271786,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/qwen_3b",
+      "printed": "0.5551",
+      "expected": 0.5550746664466137,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/qwen_3b",
+      "printed": "63.00",
+      "expected": 63.0,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/qwen_3b",
+      "printed": "74.00",
+      "expected": 74.0,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/phi_1_5",
+      "printed": "144",
+      "expected": 144,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/phi_1_5",
+      "printed": "48.0",
+      "expected": 48.0,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/phi_1_5",
+      "printed": "52.0",
+      "expected": 52.0,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/phi_1_5",
+      "printed": "0.5164",
+      "expected": 0.5163679150776324,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/phi_1_5",
+      "printed": "0.4868",
+      "expected": 0.48681162900067865,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/phi_1_5",
+      "printed": "56.67",
+      "expected": 56.666666666666664,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/phi_1_5",
+      "printed": "40.97",
+      "expected": 40.97222222222222,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/llama_3_2_3b",
+      "printed": "197",
+      "expected": 197,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/llama_3_2_3b",
+      "printed": "65.7",
+      "expected": 65.66666666666666,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/llama_3_2_3b",
+      "printed": "34.3",
+      "expected": 34.333333333333336,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/llama_3_2_3b",
+      "printed": "0.5146",
+      "expected": 0.5146207898631087,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/llama_3_2_3b",
+      "printed": "0.5018",
+      "expected": 0.5017682680647628,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/llama_3_2_3b",
+      "printed": "61.00",
+      "expected": 61.0,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/llama_3_2_3b",
+      "printed": "56.35",
+      "expected": 56.34517766497462,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/gemma_2_2b",
+      "printed": "77",
+      "expected": 77,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/gemma_2_2b",
+      "printed": "25.7",
+      "expected": 25.666666666666664,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/gemma_2_2b",
+      "printed": "74.3",
+      "expected": 74.33333333333333,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/gemma_2_2b",
+      "printed": "0.4820",
+      "expected": 0.48200127495503997,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/gemma_2_2b",
+      "printed": "0.4743",
+      "expected": 0.4743249639526862,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/gemma_2_2b",
+      "printed": "42.33",
+      "expected": 42.333333333333336,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/gemma_2_2b",
+      "printed": "44.16",
+      "expected": 44.15584415584416,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/phi_3_5_mini",
+      "printed": "0",
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/phi_3_5_mini",
+      "printed": "0.0",
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/phi_3_5_mini",
+      "printed": "100.0",
+      "expected": 100.0,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/phi_3_5_mini",
+      "printed": "0.1210",
+      "expected": 0.12101694589032623,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/phi_3_5_mini",
+      "printed": "0.00",
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/tinyllama_1_1b",
+      "printed": "177",
+      "expected": 177,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/tinyllama_1_1b",
+      "printed": "59.0",
+      "expected": 59.0,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/tinyllama_1_1b",
+      "printed": "41.0",
+      "expected": 41.0,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/tinyllama_1_1b",
+      "printed": "0.0792",
+      "expected": 0.07915910893968085,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/tinyllama_1_1b",
+      "printed": "0.0853",
+      "expected": 0.08528616446082694,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/tinyllama_1_1b",
+      "printed": "0.00",
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "where": "tab:eos_completeness/tinyllama_1_1b",
+      "printed": "0.00",
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/qwen_1_5b",
+      "printed": "418.3",
+      "expected": 418.28333333333336,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/qwen_1_5b",
+      "printed": "2069",
+      "expected": 2069.2466666666664,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/qwen_1_5b",
+      "printed": "4.91",
+      "expected": 4.906288168458929,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/qwen_1_5b",
+      "printed": "44.3",
+      "expected": 44.333333333333336,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/qwen_3b",
+      "printed": "497.6",
+      "expected": 497.56,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/qwen_3b",
+      "printed": "2417",
+      "expected": 2416.5666666666666,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/qwen_3b",
+      "printed": "4.87",
+      "expected": 4.869657287836006,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/qwen_3b",
+      "printed": "83.3",
+      "expected": 83.33333333333333,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/llama_3_2_3b",
+      "printed": "431.0",
+      "expected": 431.0366666666667,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/llama_3_2_3b",
+      "printed": "2081",
+      "expected": 2081.0333333333333,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/llama_3_2_3b",
+      "printed": "4.84",
+      "expected": 4.844140034775328,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/llama_3_2_3b",
+      "printed": "34.3",
+      "expected": 34.333333333333336,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/gemma_2_2b",
+      "printed": "490.6",
+      "expected": 490.62666666666667,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/gemma_2_2b",
+      "printed": "2257",
+      "expected": 2256.5466666666666,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/gemma_2_2b",
+      "printed": "4.60",
+      "expected": 4.598989639905507,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/gemma_2_2b",
+      "printed": "74.3",
+      "expected": 74.33333333333333,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/phi_1_5",
+      "printed": "395.4",
+      "expected": 395.3933333333333,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/phi_1_5",
+      "printed": "2035",
+      "expected": 2035.4466666666667,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/phi_1_5",
+      "printed": "5.11",
+      "expected": 5.11422261903397,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/phi_1_5",
+      "printed": "52.0",
+      "expected": 52.0,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/tinyllama_1_1b",
+      "printed": "428.3",
+      "expected": 428.31333333333333,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/tinyllama_1_1b",
+      "printed": "1478",
+      "expected": 1478.3266666666666,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/tinyllama_1_1b",
+      "printed": "3.45",
+      "expected": 3.451502434573796,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/tinyllama_1_1b",
+      "printed": "41.0",
+      "expected": 41.0,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/phi_3_5_mini",
+      "printed": "512.0",
+      "expected": 512.0,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/phi_3_5_mini",
+      "printed": "1755",
+      "expected": 1754.74,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/phi_3_5_mini",
+      "printed": "3.43",
+      "expected": 3.4272526041666667,
+      "pass": true
+    },
+    {
+      "where": "tab:length_covariates/phi_3_5_mini",
+      "printed": "100.0",
+      "expected": 100.0,
+      "pass": true
+    },
+    {
+      "where": "tab:fresh_results/tinyllama_1_1b",
+      "printed": "0.4352",
+      "expected": 0.43520453284591526,
+      "pass": true
+    },
+    {
+      "where": "tab:fresh_results/tinyllama_1_1b",
+      "printed": "0.4197",
+      "expected": 0.4196786161317077,
+      "pass": true
+    },
+    {
+      "where": "tab:fresh_results/tinyllama_1_1b",
+      "printed": "0.4510",
+      "expected": 0.4510382130504452,
+      "pass": true
+    },
+    {
+      "where": "tab:fresh_results/tinyllama_1_1b",
+      "printed": "0.7576",
+      "expected": 0.7576273423418234,
+      "pass": true
+    },
+    {
+      "where": "tab:fresh_results/tinyllama_1_1b",
+      "printed": "0.2209",
+      "expected": 0.22087709719090518,
+      "pass": true
+    },
+    {
+      "where": "tab:fresh_results/tinyllama_1_1b",
+      "printed": "0.1269",
+      "expected": 0.12691372299682405,
+      "pass": true
+    },
+    {
+      "where": "tab:fresh_results/tinyllama_1_1b",
+      "printed": "30.33",
+      "expected": 30.333333333333332,
+      "pass": true
+    },
+    {
+      "where": "tab:fresh_results/tinyllama_1_1b",
+      "printed": "59.0",
+      "expected": 59.0,
+      "pass": true
+    },
+    {
+      "where": "tab:fresh_results/phi_3_5_mini",
+      "printed": "0.5042",
+      "expected": 0.5041509746882722,
+      "pass": true
+    },
+    {
+      "where": "tab:fresh_results/phi_3_5_mini",
+      "printed": "0.4904",
+      "expected": 0.49036794774781595,
+      "pass": true
+    },
+    {
+      "where": "tab:fresh_results/phi_3_5_mini",
+      "printed": "0.5181",
+      "expected": 0.5180549243268102,
+      "pass": true
+    },
+    {
+      "where": "tab:fresh_results/phi_3_5_mini",
+      "printed": "0.7733",
+      "expected": 0.7732986132425999,
+      "pass": true
+    },
+    {
+      "where": "tab:fresh_results/phi_3_5_mini",
+      "printed": "0.2240",
+      "expected": 0.22398662356155902,
+      "pass": true
+    },
+    {
+      "where": "tab:fresh_results/phi_3_5_mini",
+      "printed": "0.1084",
+      "expected": 0.10839392621057664,
+      "pass": true
+    },
+    {
+      "where": "tab:fresh_results/phi_3_5_mini",
+      "printed": "52.33",
+      "expected": 52.333333333333336,
+      "pass": true
+    },
+    {
+      "where": "tab:fresh_results/phi_3_5_mini",
+      "printed": "0.0",
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/qwen_1_5b/real/frozen",
+      "printed": "0.2904",
+      "expected": 0.2903907945122301,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/qwen_1_5b/real/frozen",
+      "printed": "0.2471",
+      "expected": 0.2470990780973238,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/qwen_1_5b/real/frozen",
+      "printed": "0.3362",
+      "expected": 0.33622687468405027,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/qwen_1_5b/shuffled/frozen",
+      "printed": "0.2084",
+      "expected": 0.208441291918324,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/qwen_1_5b/shuffled/frozen",
+      "printed": "0.1763",
+      "expected": 0.17632566800953198,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/qwen_1_5b/shuffled/frozen",
+      "printed": "0.2426",
+      "expected": 0.24261433062950316,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/qwen_1_5b/shuffled/frozen",
+      "printed": "-0.0819",
+      "expected": -0.08194950259390607,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/qwen_1_5b/constant/frozen",
+      "printed": "0.1169",
+      "expected": 0.11692449547359265,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/qwen_1_5b/constant/frozen",
+      "printed": "0.0977",
+      "expected": 0.09772747304595489,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/qwen_1_5b/constant/frozen",
+      "printed": "0.1389",
+      "expected": 0.13893747484512659,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/qwen_1_5b/constant/frozen",
+      "printed": "-0.1735",
+      "expected": -0.17346629903863744,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/qwen_1_5b/cross_prompt/frozen",
+      "printed": "0.2522",
+      "expected": 0.2522169572391491,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/qwen_1_5b/cross_prompt/frozen",
+      "printed": "0.2166",
+      "expected": 0.21660829510769436,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/qwen_1_5b/cross_prompt/frozen",
+      "printed": "0.2877",
+      "expected": 0.28773446801301444,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/qwen_1_5b/cross_prompt/frozen",
+      "printed": "-0.0382",
+      "expected": -0.03817383727308101,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/llama_3_2_3b/real/frozen",
+      "printed": "0.2221",
+      "expected": 0.2221308454287037,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/llama_3_2_3b/real/frozen",
+      "printed": "0.1922",
+      "expected": 0.1921728985854814,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/llama_3_2_3b/real/frozen",
+      "printed": "0.2535",
+      "expected": 0.2535468997543202,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/llama_3_2_3b/shuffled/frozen",
+      "printed": "0.1798",
+      "expected": 0.17975692326300002,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/llama_3_2_3b/shuffled/frozen",
+      "printed": "0.1555",
+      "expected": 0.155459011470351,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/llama_3_2_3b/shuffled/frozen",
+      "printed": "0.2024",
+      "expected": 0.20242044347273916,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/llama_3_2_3b/shuffled/frozen",
+      "printed": "-0.0424",
+      "expected": -0.04237392216570366,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/llama_3_2_3b/constant/frozen",
+      "printed": "0.1272",
+      "expected": 0.12720894966908897,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/llama_3_2_3b/constant/frozen",
+      "printed": "0.1066",
+      "expected": 0.10662641912630069,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/llama_3_2_3b/constant/frozen",
+      "printed": "0.1494",
+      "expected": 0.14942276030356536,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/llama_3_2_3b/constant/frozen",
+      "printed": "-0.0949",
+      "expected": -0.0949218957596147,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/llama_3_2_3b/cross_prompt/frozen",
+      "printed": "0.2250",
+      "expected": 0.22496132073935896,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/llama_3_2_3b/cross_prompt/frozen",
+      "printed": "0.1944",
+      "expected": 0.19442665488525532,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/llama_3_2_3b/cross_prompt/frozen",
+      "printed": "0.2564",
+      "expected": 0.2563902253846,
+      "pass": true
+    },
+    {
+      "where": "tab:trace_controls/llama_3_2_3b/cross_prompt/frozen",
+      "printed": "+0.0028",
+      "expected": 0.002830475310655272,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/baseline/frozen",
+      "printed": "0.2814",
+      "expected": 0.2813570126051127,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/baseline/frozen",
+      "printed": "0.2399",
+      "expected": 0.23990347592329372,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/baseline/frozen",
+      "printed": "0.3268",
+      "expected": 0.32680421716303504,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/baseline/frozen",
+      "printed": "0.0",
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/baseline/frozen",
+      "printed": "96",
+      "expected": 96.0,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/bucket_8/frozen",
+      "printed": "0.0318",
+      "expected": 0.031792357816508805,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/bucket_8/frozen",
+      "printed": "0.0224",
+      "expected": 0.022388320741320057,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/bucket_8/frozen",
+      "printed": "0.0421",
+      "expected": 0.042084925280050686,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/bucket_8/frozen",
+      "printed": "88.7",
+      "expected": 88.70034994964577,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/bucket_8/frozen",
+      "printed": "82.4",
+      "expected": 82.44681701314526,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/bucket_8/frozen",
+      "printed": "96",
+      "expected": 96.0,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/pad_32/frozen",
+      "printed": "0.1781",
+      "expected": 0.17809023924457743,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/pad_32/frozen",
+      "printed": "0.1515",
+      "expected": 0.15151493672975394,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/pad_32/frozen",
+      "printed": "0.2054",
+      "expected": 0.2054070395707179,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/pad_32/frozen",
+      "printed": "36.7",
+      "expected": 36.703109833438276,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/pad_32/frozen",
+      "printed": "538.0",
+      "expected": 538.0427133976254,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/pad_32/frozen",
+      "printed": "96",
+      "expected": 96.0,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/batch_2/frozen",
+      "printed": "0.0754",
+      "expected": 0.07543271406459959,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/batch_2/frozen",
+      "printed": "0.0613",
+      "expected": 0.06129876674133553,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/batch_2/frozen",
+      "printed": "0.0911",
+      "expected": 0.09107464083799535,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/batch_2/frozen",
+      "printed": "73.2",
+      "expected": 73.18968048240187,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/batch_2/frozen",
+      "printed": "0.0",
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/batch_2/frozen",
+      "printed": "48",
+      "expected": 48.0,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/batch_4/frozen",
+      "printed": "0.0844",
+      "expected": 0.08436910020615705,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/batch_4/frozen",
+      "printed": "0.0626",
+      "expected": 0.06259009913968279,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/batch_4/frozen",
+      "printed": "0.1071",
+      "expected": 0.10705674054585611,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/batch_4/frozen",
+      "printed": "70.0",
+      "expected": 70.01350724299526,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/batch_4/frozen",
+      "printed": "0.0",
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/batch_4/frozen",
+      "printed": "24",
+      "expected": 24.0,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/rand_pad_8/frozen",
+      "printed": "0.1057",
+      "expected": 0.10567120268158327,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/rand_pad_8/frozen",
+      "printed": "0.0903",
+      "expected": 0.09025526535804528,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/rand_pad_8/frozen",
+      "printed": "0.1220",
+      "expected": 0.1220064913159041,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/rand_pad_8/frozen",
+      "printed": "62.4",
+      "expected": 62.44230712319446,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/rand_pad_8/frozen",
+      "printed": "79.6",
+      "expected": 79.62940060968747,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/qwen_1_5b/rand_pad_8/frozen",
+      "printed": "96",
+      "expected": 96.0,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/baseline/frozen",
+      "printed": "0.2488",
+      "expected": 0.2487526634885344,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/baseline/frozen",
+      "printed": "0.2106",
+      "expected": 0.21055575967172419,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/baseline/frozen",
+      "printed": "0.2922",
+      "expected": 0.2921601973003088,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/baseline/frozen",
+      "printed": "0.0",
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/baseline/frozen",
+      "printed": "96",
+      "expected": 96.0,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/bucket_8/frozen",
+      "printed": "0.0336",
+      "expected": 0.03356970945302807,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/bucket_8/frozen",
+      "printed": "0.0219",
+      "expected": 0.02189660683862692,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/bucket_8/frozen",
+      "printed": "0.0467",
+      "expected": 0.046720166185821296,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/bucket_8/frozen",
+      "printed": "86.5",
+      "expected": 86.50478391578092,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/bucket_8/frozen",
+      "printed": "88.6",
+      "expected": 88.56154579245793,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/bucket_8/frozen",
+      "printed": "96",
+      "expected": 96.0,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/pad_32/frozen",
+      "printed": "0.1560",
+      "expected": 0.1559985456705145,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/pad_32/frozen",
+      "printed": "0.1290",
+      "expected": 0.12901847307887765,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/pad_32/frozen",
+      "printed": "0.1849",
+      "expected": 0.1849339616232297,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/pad_32/frozen",
+      "printed": "37.3",
+      "expected": 37.28768830742396,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/pad_32/frozen",
+      "printed": "565.1",
+      "expected": 565.0689115747788,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/pad_32/frozen",
+      "printed": "96",
+      "expected": 96.0,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/batch_2/frozen",
+      "printed": "0.0760",
+      "expected": 0.07595742199228038,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/batch_2/frozen",
+      "printed": "0.0640",
+      "expected": 0.0640275160845381,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/batch_2/frozen",
+      "printed": "0.0880",
+      "expected": 0.08800677330804324,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/batch_2/frozen",
+      "printed": "69.5",
+      "expected": 69.46467992461056,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/batch_2/frozen",
+      "printed": "0.0",
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/batch_2/frozen",
+      "printed": "48",
+      "expected": 48.0,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/batch_4/frozen",
+      "printed": "0.0817",
+      "expected": 0.08170829989352588,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/batch_4/frozen",
+      "printed": "0.0610",
+      "expected": 0.06095571846092371,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/batch_4/frozen",
+      "printed": "0.1029",
+      "expected": 0.10291484390281948,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/batch_4/frozen",
+      "printed": "67.2",
+      "expected": 67.1527939650415,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/batch_4/frozen",
+      "printed": "0.0",
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/batch_4/frozen",
+      "printed": "24",
+      "expected": 24.0,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/rand_pad_8/frozen",
+      "printed": "0.1133",
+      "expected": 0.11328352638217948,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/rand_pad_8/frozen",
+      "printed": "0.0938",
+      "expected": 0.09380343458934677,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/rand_pad_8/frozen",
+      "printed": "0.1336",
+      "expected": 0.133585168050204,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/rand_pad_8/frozen",
+      "printed": "54.5",
+      "expected": 54.45937149235751,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/rand_pad_8/frozen",
+      "printed": "85.5",
+      "expected": 85.5197643759788,
+      "pass": true
+    },
+    {
+      "where": "tab:defense_results/llama_3_2_3b/rand_pad_8/frozen",
+      "printed": "96",
+      "expected": 96.0,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/baseline/frozen",
+      "printed": "0.1988",
+      "expected": 0.19884785974839903,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/baseline/frozen",
+      "printed": "0.1697",
+      "expected": 0.16970244421526381,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/baseline/frozen",
+      "printed": "0.2304",
+      "expected": 0.23042476425902378,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/baseline/frozen",
+      "printed": "0.0090",
+      "expected": 0.00901962477573727,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/baseline/frozen",
+      "printed": "0.0",
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/bucket_8/frozen",
+      "printed": "0.0422",
+      "expected": 0.042212358580837224,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/bucket_8/frozen",
+      "printed": "0.0350",
+      "expected": 0.03498053559048521,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/bucket_8/frozen",
+      "printed": "0.0502",
+      "expected": 0.05023012291057021,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/bucket_8/frozen",
+      "printed": "0.0040",
+      "expected": 0.003995506670579922,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/bucket_8/frozen",
+      "printed": "78.8",
+      "expected": 78.77152983479517,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/bucket_8/adaptive",
+      "printed": "0.2167",
+      "expected": 0.21667662650477007,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/bucket_8/adaptive",
+      "printed": "0.1927",
+      "expected": 0.19265799300588685,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/bucket_8/adaptive",
+      "printed": "0.2413",
+      "expected": 0.24126083452981908,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/bucket_8/adaptive",
+      "printed": "0.0042",
+      "expected": 0.004196603071234984,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/bucket_8/adaptive",
+      "printed": "-9.0",
+      "expected": -8.966034021653368,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/pad_32/frozen",
+      "printed": "0.2371",
+      "expected": 0.2371092068776703,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/pad_32/frozen",
+      "printed": "0.2108",
+      "expected": 0.21077389332039234,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/pad_32/frozen",
+      "printed": "0.2638",
+      "expected": 0.263758007056287,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/pad_32/frozen",
+      "printed": "0.0088",
+      "expected": 0.008789226633702818,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/pad_32/frozen",
+      "printed": "-19.2",
+      "expected": -19.24151820275215,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/pad_32/adaptive",
+      "printed": "0.1583",
+      "expected": 0.15834575710900642,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/pad_32/adaptive",
+      "printed": "0.1349",
+      "expected": 0.13486751120073381,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/pad_32/adaptive",
+      "printed": "0.1824",
+      "expected": 0.18243751587058507,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/pad_32/adaptive",
+      "printed": "0.0093",
+      "expected": 0.009282322889822172,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/pad_32/adaptive",
+      "printed": "20.4",
+      "expected": 20.368387515279107,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/batch_2/frozen",
+      "printed": "0.1200",
+      "expected": 0.11996001117373309,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/batch_2/frozen",
+      "printed": "0.1056",
+      "expected": 0.10563027797776064,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/batch_2/frozen",
+      "printed": "0.1354",
+      "expected": 0.1353922260916617,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/batch_2/frozen",
+      "printed": "0.0070",
+      "expected": 0.00700381739172067,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/batch_2/frozen",
+      "printed": "39.7",
+      "expected": 39.67246550930055,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/batch_2/adaptive",
+      "printed": "0.2380",
+      "expected": 0.23799129671181257,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/batch_2/adaptive",
+      "printed": "0.2114",
+      "expected": 0.21137076714675596,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/batch_2/adaptive",
+      "printed": "0.2666",
+      "expected": 0.2665547578667599,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/batch_2/adaptive",
+      "printed": "0.0184",
+      "expected": 0.018432131771982482,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/batch_2/adaptive",
+      "printed": "-19.7",
+      "expected": -19.68511856901125,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/batch_4/frozen",
+      "printed": "0.1004",
+      "expected": 0.10043077808723211,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/batch_4/frozen",
+      "printed": "0.0804",
+      "expected": 0.0804474435709264,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/batch_4/frozen",
+      "printed": "0.1248",
+      "expected": 0.1247759839710269,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/batch_4/frozen",
+      "printed": "0.0165",
+      "expected": 0.016523722720771385,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/batch_4/frozen",
+      "printed": "49.5",
+      "expected": 49.49365901433058,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/batch_4/adaptive",
+      "printed": "0.1932",
+      "expected": 0.1932301443215062,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/batch_4/adaptive",
+      "printed": "0.1635",
+      "expected": 0.16352256229806064,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/batch_4/adaptive",
+      "printed": "0.2225",
+      "expected": 0.22251458451526884,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/batch_4/adaptive",
+      "printed": "0.0123",
+      "expected": 0.012266066620177226,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/batch_4/adaptive",
+      "printed": "2.8",
+      "expected": 2.8251324575486403,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/rand_pad_8/frozen",
+      "printed": "0.1242",
+      "expected": 0.12419536070658475,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/rand_pad_8/frozen",
+      "printed": "0.1034",
+      "expected": 0.10339468167241397,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/rand_pad_8/frozen",
+      "printed": "0.1449",
+      "expected": 0.1449282193567021,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/rand_pad_8/frozen",
+      "printed": "0.0035",
+      "expected": 0.0034575563849723176,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/rand_pad_8/frozen",
+      "printed": "37.5",
+      "expected": 37.54252076752127,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/rand_pad_8/adaptive",
+      "printed": "0.1813",
+      "expected": 0.181335735662148,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/rand_pad_8/adaptive",
+      "printed": "0.1554",
+      "expected": 0.1554100106611571,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/rand_pad_8/adaptive",
+      "printed": "0.2074",
+      "expected": 0.20739836092306776,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/rand_pad_8/adaptive",
+      "printed": "0.0067",
+      "expected": 0.00666855847698113,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/qwen_1_5b/rand_pad_8/adaptive",
+      "printed": "8.8",
+      "expected": 8.806795360236219,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/baseline/frozen",
+      "printed": "0.1860",
+      "expected": 0.18596684662042226,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/baseline/frozen",
+      "printed": "0.1594",
+      "expected": 0.15939556036477354,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/baseline/frozen",
+      "printed": "0.2120",
+      "expected": 0.21199094632842944,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/baseline/frozen",
+      "printed": "0.0150",
+      "expected": 0.014964385617044211,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/baseline/frozen",
+      "printed": "0.0",
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/bucket_8/frozen",
+      "printed": "0.0569",
+      "expected": 0.056938708331466185,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/bucket_8/frozen",
+      "printed": "0.0474",
+      "expected": 0.04740588082693143,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/bucket_8/frozen",
+      "printed": "0.0665",
+      "expected": 0.06653322700671475,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/bucket_8/frozen",
+      "printed": "0.0032",
+      "expected": 0.0032273151203820426,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/bucket_8/frozen",
+      "printed": "69.4",
+      "expected": 69.38233380507654,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/bucket_8/adaptive",
+      "printed": "0.2075",
+      "expected": 0.20745480538920066,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/bucket_8/adaptive",
+      "printed": "0.1816",
+      "expected": 0.18163289680597303,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/bucket_8/adaptive",
+      "printed": "0.2341",
+      "expected": 0.23408592796024708,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/bucket_8/adaptive",
+      "printed": "0.0165",
+      "expected": 0.016508678068909655,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/bucket_8/adaptive",
+      "printed": "-11.6",
+      "expected": -11.554725564948454,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/pad_32/frozen",
+      "printed": "0.2270",
+      "expected": 0.22703022849195284,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/pad_32/frozen",
+      "printed": "0.2021",
+      "expected": 0.20213573937880536,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/pad_32/frozen",
+      "printed": "0.2528",
+      "expected": 0.2527570810875898,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/pad_32/frozen",
+      "printed": "0.0067",
+      "expected": 0.0067492849285292105,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/pad_32/frozen",
+      "printed": "-22.1",
+      "expected": -22.081022837014185,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/pad_32/adaptive",
+      "printed": "0.1492",
+      "expected": 0.14924238033518983,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/pad_32/adaptive",
+      "printed": "0.1278",
+      "expected": 0.12783398145085392,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/pad_32/adaptive",
+      "printed": "0.1731",
+      "expected": 0.17312775250405088,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/pad_32/adaptive",
+      "printed": "0.0035",
+      "expected": 0.003457263732979755,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/pad_32/adaptive",
+      "printed": "19.7",
+      "expected": 19.747856648981575,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/batch_2/frozen",
+      "printed": "0.0999",
+      "expected": 0.09990521449429395,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/batch_2/frozen",
+      "printed": "0.0859",
+      "expected": 0.08591150412964799,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/batch_2/frozen",
+      "printed": "0.1157",
+      "expected": 0.11569220829166071,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/batch_2/frozen",
+      "printed": "0.0091",
+      "expected": 0.009099197175432786,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/batch_2/frozen",
+      "printed": "46.3",
+      "expected": 46.27794345611994,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/batch_2/adaptive",
+      "printed": "0.2139",
+      "expected": 0.2139471447035226,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/batch_2/adaptive",
+      "printed": "0.1826",
+      "expected": 0.18263131780643932,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/batch_2/adaptive",
+      "printed": "0.2452",
+      "expected": 0.24523932943995633,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/batch_2/adaptive",
+      "printed": "0.0046",
+      "expected": 0.004648513040056171,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/batch_2/adaptive",
+      "printed": "-15.0",
+      "expected": -15.045852845056329,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/batch_4/frozen",
+      "printed": "0.1175",
+      "expected": 0.11749706462210009,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/batch_4/frozen",
+      "printed": "0.1001",
+      "expected": 0.10012331470588023,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/batch_4/frozen",
+      "printed": "0.1360",
+      "expected": 0.13603791888889888,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/batch_4/frozen",
+      "printed": "0.0052",
+      "expected": 0.005247781010513146,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/batch_4/frozen",
+      "printed": "36.8",
+      "expected": 36.81827338723237,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/batch_4/adaptive",
+      "printed": "0.2852",
+      "expected": 0.2852444667647401,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/batch_4/adaptive",
+      "printed": "0.2512",
+      "expected": 0.25120454874865417,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/batch_4/adaptive",
+      "printed": "0.3214",
+      "expected": 0.3214242871200481,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/batch_4/adaptive",
+      "printed": "0.0145",
+      "expected": 0.014542570117309108,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/batch_4/adaptive",
+      "printed": "-53.4",
+      "expected": -53.38458007354063,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/rand_pad_8/frozen",
+      "printed": "0.1044",
+      "expected": 0.10444028587809272,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/rand_pad_8/frozen",
+      "printed": "0.0864",
+      "expected": 0.08639023629305051,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/rand_pad_8/frozen",
+      "printed": "0.1227",
+      "expected": 0.12270213524475324,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/rand_pad_8/frozen",
+      "printed": "0.0072",
+      "expected": 0.007155415345849774,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/rand_pad_8/frozen",
+      "printed": "43.8",
+      "expected": 43.83929836092438,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/rand_pad_8/adaptive",
+      "printed": "0.1500",
+      "expected": 0.15003431801455525,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/rand_pad_8/adaptive",
+      "printed": "0.1230",
+      "expected": 0.12295314162476426,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/rand_pad_8/adaptive",
+      "printed": "0.1784",
+      "expected": 0.17840977782874448,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/rand_pad_8/adaptive",
+      "printed": "0.0075",
+      "expected": 0.007540405936756338,
+      "pass": true
+    },
+    {
+      "where": "tab:robustness/llama_3_2_3b/rand_pad_8/adaptive",
+      "printed": "19.3",
+      "expected": 19.322007798093743,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/baseline",
+      "printed": "0",
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/baseline",
+      "printed": "30",
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/baseline",
+      "printed": "0",
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/baseline",
+      "printed": "30",
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/bucket_8",
+      "printed": "30",
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/bucket_8",
+      "printed": "30",
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/bucket_8",
+      "printed": "30",
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/bucket_8",
+      "printed": "30",
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/pad_32",
+      "printed": "30",
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/pad_32",
+      "printed": "30",
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/pad_32",
+      "printed": "30",
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/pad_32",
+      "printed": "30",
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/batch_2",
+      "printed": "30",
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/batch_2",
+      "printed": "30",
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/batch_2",
+      "printed": "30",
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/batch_2",
+      "printed": "30",
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/batch_4",
+      "printed": "30",
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/batch_4",
+      "printed": "30",
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/batch_4",
+      "printed": "29",
+      "expected": 29,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/batch_4",
+      "printed": "30",
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/rand_pad_8",
+      "printed": "18",
+      "expected": 18,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/rand_pad_8",
+      "printed": "30",
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/rand_pad_8",
+      "printed": "9",
+      "expected": 9,
+      "pass": true
+    },
+    {
+      "where": "tab:encoder_coverage/rand_pad_8",
+      "printed": "30",
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "where": "fig:model_ci/qwen_1_5b",
+      "printed": "0.535463",
+      "expected": 0.535463431800304,
+      "pass": true
+    },
+    {
+      "where": "fig:model_ci/qwen_1_5b",
+      "printed": "0.012235",
+      "expected": 0.012235346820799742,
+      "pass": true
+    },
+    {
+      "where": "fig:model_ci/qwen_1_5b",
+      "printed": "0.011968",
+      "expected": 0.011967577407882457,
+      "pass": true
+    },
+    {
+      "where": "fig:model_ci/qwen_3b",
+      "printed": "0.525143",
+      "expected": 0.5251430185271786,
+      "pass": true
+    },
+    {
+      "where": "fig:model_ci/qwen_3b",
+      "printed": "0.009222",
+      "expected": 0.009222452899960931,
+      "pass": true
+    },
+    {
+      "where": "fig:model_ci/qwen_3b",
+      "printed": "0.009558",
+      "expected": 0.009558426460436142,
+      "pass": true
+    },
+    {
+      "where": "fig:model_ci/phi_1_5",
+      "printed": "0.516368",
+      "expected": 0.5163679150776324,
+      "pass": true
+    },
+    {
+      "where": "fig:model_ci/phi_1_5",
+      "printed": "0.012425",
+      "expected": 0.012425016745033046,
+      "pass": true
+    },
+    {
+      "where": "fig:model_ci/phi_1_5",
+      "printed": "0.012506",
+      "expected": 0.012505878679923255,
+      "pass": true
+    },
+    {
+      "where": "fig:model_ci/llama_3_2_3b",
+      "printed": "0.514621",
+      "expected": 0.5146207898631087,
+      "pass": true
+    },
+    {
+      "where": "fig:model_ci/llama_3_2_3b",
+      "printed": "0.011941",
+      "expected": 0.011940805803914878,
+      "pass": true
+    },
+    {
+      "where": "fig:model_ci/llama_3_2_3b",
+      "printed": "0.012450",
+      "expected": 0.012449610787521936,
+      "pass": true
+    },
+    {
+      "where": "fig:model_ci/gemma_2_2b",
+      "printed": "0.482001",
+      "expected": 0.48200127495503997,
+      "pass": true
+    },
+    {
+      "where": "fig:model_ci/gemma_2_2b",
+      "printed": "0.008420",
+      "expected": 0.008420202011074462,
+      "pass": true
+    },
+    {
+      "where": "fig:model_ci/gemma_2_2b",
+      "printed": "0.008499",
+      "expected": 0.008498896539867906,
+      "pass": true
+    },
+    {
+      "where": "fig:model_ci/phi_3_5_mini",
+      "printed": "0.121017",
+      "expected": 0.12101694589032623,
+      "pass": true
+    },
+    {
+      "where": "fig:model_ci/phi_3_5_mini",
+      "printed": "0.006342",
+      "expected": 0.006342311232019657,
+      "pass": true
+    },
+    {
+      "where": "fig:model_ci/phi_3_5_mini",
+      "printed": "0.006213",
+      "expected": 0.00621322872258763,
+      "pass": true
+    },
+    {
+      "where": "fig:model_ci/tinyllama_1_1b",
+      "printed": "0.079159",
+      "expected": 0.07915910893968085,
+      "pass": true
+    },
+    {
+      "where": "fig:model_ci/tinyllama_1_1b",
+      "printed": "0.005371",
+      "expected": 0.005371282177591252,
+      "pass": true
+    },
+    {
+      "where": "fig:model_ci/tinyllama_1_1b",
+      "printed": "0.005014",
+      "expected": 0.005014339176075314,
+      "pass": true
+    },
+    {
+      "where": "fig:defense_tradeoff",
+      "printed": "85.5",
+      "expected": 85.5041814028016,
+      "pass": true
+    },
+    {
+      "where": "fig:defense_tradeoff",
+      "printed": "87.6",
+      "expected": 87.60256693271334,
+      "pass": true
+    },
+    {
+      "where": "fig:defense_tradeoff",
+      "printed": "551.6",
+      "expected": 551.5558124862021,
+      "pass": true
+    },
+    {
+      "where": "fig:defense_tradeoff",
+      "printed": "37.0",
+      "expected": 36.99539907043112,
+      "pass": true
+    },
+    {
+      "where": "fig:defense_tradeoff",
+      "printed": "0.0",
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "where": "fig:defense_tradeoff",
+      "printed": "71.3",
+      "expected": 71.32718020350622,
+      "pass": true
+    },
+    {
+      "where": "fig:defense_tradeoff",
+      "printed": "0.0",
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "where": "fig:defense_tradeoff",
+      "printed": "68.6",
+      "expected": 68.58315060401839,
+      "pass": true
+    },
+    {
+      "where": "fig:defense_tradeoff",
+      "printed": "82.6",
+      "expected": 82.57458249283313,
+      "pass": true
+    },
+    {
+      "where": "fig:defense_tradeoff",
+      "printed": "58.5",
+      "expected": 58.450839307775986,
+      "pass": true
+    }
+  ],
+  "scope": "Actual TeX table cells and figure coordinates checked against independently audited result ledgers; does not by itself certify prose or rendered layout."
+}

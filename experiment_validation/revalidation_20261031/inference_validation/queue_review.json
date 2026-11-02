@@ -1,0 +1,40 @@
+{
+  "source_sha256": "a8c10e48a573747ca8f2ad7964e0f7cca4f263574070b24aaf8f63cc500af1e6",
+  "review": "Read-only operational review after orphan and SIGTERM fixes",
+  "initial_blocker": "Supervisor restart could duplicate a surviving child; SIGTERM did not clean owned child",
+  "disposition": "Fixed: saved active PID plus process start time checked before restart; live owned orphan refuses execution; SIGTERM raises into owned-child cleanup. Existing attached process can be reattached intentionally.",
+  "tests_seen": [
+    {
+      "mode": "complete",
+      "exit_code": 0,
+      "following_stage_started": true,
+      "pass": true
+    },
+    {
+      "mode": "incomplete",
+      "exit_code": 1,
+      "following_stage_started": false,
+      "pass": true
+    },
+    {
+      "mode": "crashed",
+      "exit_code": 1,
+      "following_stage_started": false,
+      "pass": true
+    },
+    {
+      "case": "live_orphan_refused",
+      "pass": true
+    },
+    {
+      "case": "SIGTERM_cleans_owned_child",
+      "pass": true
+    }
+  ],
+  "remaining_blockers": [],
+  "limits": [
+    "SIGKILL cannot run cleanup; resume therefore fails closed when a recorded owned child remains alive.",
+    "Terminating supervisor while attached to an external initial inference process leaves that attached process running; its owner must stop it explicitly.",
+    "Source hashes are checked before each stage, and completed stages use their recorded success guards."
+  ]
+}

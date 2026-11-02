@@ -1,0 +1,282 @@
+\begin{table}[ht]
+\centering
+\footnotesize
+\caption{Protocol map. $N$ counts reconstructions, including repeated conditions and decoder seeds; it is not a count of independent victim responses. All reconstructions use the EOS-bounded selector, score against the full reference and impose 80-token T5 encoder and decoder limits. \emph{All} requests every heuristic segment; the pilot cap is three segments. The controls, defense pilot and MAP study use Qwen2.5-1.5B and Llama-3.2-3B. Samples are candidates per segment, not independent victim responses. The last column refers to the seed rules in Appendix~\ref{app:map-seeds}.}
+\label{tab:protocol_overview}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}p{0.21\linewidth} X r c c l@{}}
+\toprule
+Experiment / result tables & References and victims & $N$ & \shortstack{Victim\\limit} & \shortstack{Segments /\\samples} & \shortstack{Decoder\\seeds} \\
+\midrule
+Archived main; \ref{tab:main_results}--\ref{tab:scenario_sensitivity} & Archived emitted text; seven models, 300 per model; two diagnostic series & 2100 & 512 & All / 3 & Recorded \\
+Verified rendering; \ref{tab:fresh_results} & Verified full-sequence decoding; 300 per model, TinyLlama and Phi-3.5-mini & 600 & 512 & All / 3 & Recorded \\
+Trace controls; \ref{tab:trace_controls} & Archived text; two models, $30\times4$ per model & 240 & 96 & $\leq3$ / 3 & Pilot \\
+Defense pilot; \ref{tab:defense_results} & Archived text; two models, $30\times6$ per model & 360 & 96 & $\leq3$ / 3 & Pilot \\
+MAP study; \ref{tab:robustness} & Archived text; two models, $30\times5\times11$ per model & 3300 & 512 & First / 1 & Common, five \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table*}[ht]
+\centering
+\caption{Victim checkpoints and tokenizer families in the archived-reference cohort. TinyLlama and Phi-3.5-mini are diagnostic in that cohort and also evaluated separately with verified full-sequence references. Parameter counts follow the cited model cards and technical reports; these metadata do not certify historical checkpoint revisions.}
+\label{tab:model_metadata}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l l l}
+\toprule
+Model & Checkpoint & Parameters & Tokenizer \\
+\midrule
+Qwen2.5-1.5B-Instruct & \texttt{Qwen/Qwen2.5-1.5B-Instruct} & 1.54B & Qwen2 \\
+Qwen2.5-3B-Instruct & \texttt{Qwen/Qwen2.5-3B-Instruct} & 3.09B & Qwen2 \\
+Llama-3.2-3B-Instruct & \texttt{meta-llama/Llama-3.2-3B-Instruct} & 3.2B & Llama 3 \\
+Gemma-2-2B-it & \texttt{google/gemma-2-2b-it} & 2.6B & Gemma \\
+Phi-1.5 & \texttt{microsoft/phi-1\_5} & 1.3B & CodeGen \\
+TinyLlama-1.1B-Chat-v1.0 & \texttt{TinyLlama/TinyLlama-1.1B-Chat-v1.0} & 1.1B & Llama 2 \\
+Phi-3.5-mini-instruct & \texttt{microsoft/Phi-3.5-mini-instruct} & 3.8B & Llama/Phi-3 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}
+
+\begin{table}[ht]
+\centering
+\caption{Archived response-length covariates ($N=300$ per model), including the two diagnostic series. These describe the source responses used by the completed reconstructions. Character and byte counts refer to emitted token text, excluding framing bytes; mean B/token is averaged over responses. Truncation is the percentage of samples with \texttt{token\_count}$\geq 512$.}
+\label{tab:length_covariates}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{l c c c c}
+\toprule
+Model & Mean tokens & Mean chars & Mean B/token & Trunc. (\%) \\
+\midrule
+Qwen2.5-1.5B-Instruct & 418.3 & 2069 & 4.91 & 44.3 \\
+Qwen2.5-3B-Instruct & 497.6 & 2417 & 4.87 & 83.3 \\
+Llama-3.2-3B-Instruct & 431.0 & 2081 & 4.84 & 34.3 \\
+Gemma-2-2B-it & 490.6 & 2257 & 4.60 & 74.3 \\
+Phi-1.5 & 395.4 & 2035 & 5.11 & 52.0 \\
+TinyLlama-1.1B-Chat-v1.0 & 428.3 & 1478 & 3.45 & 41.0 \\
+Phi-3.5-mini-instruct & 512.0 & 1755 & 3.43 & 100.0 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Recorded first-segment encoder inputs exceeding 80 T5 tokens in the frozen-attacker conditions of the five-seed experiment (30 test prompts per model). Each condition is repeated for five decoder seeds; identical encoder inputs can occur for different prompts. The limit includes the instruction prefix. Counts describe encoder coverage, not reconstruction quality.}
+\label{tab:encoder_coverage}
+\begin{tabular}{l c c}
+\toprule
+Condition & Qwen2.5-1.5B & Llama-3.2-3B \\
+\midrule
+baseline & 0/30 & 0/30 \\
+bucket\_8 & 30/30 & 30/30 \\
+pad\_32 & 30/30 & 30/30 \\
+batch\_2 & 30/30 & 30/30 \\
+batch\_4 & 30/30 & 29/30 \\
+rand\_pad\_8 & 18/30 & 9/30 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Partial trace ablations using logged token-byte lengths from the 96-token pilot ($n=30$ prompts per model and condition). Each run decodes up to three heuristic segments with three samples per segment, 80-token T5 input and output limits, and the full stored response as reference. Intervals are percentile-bootstrap 95\% confidence intervals for the mean.}
+\label{tab:trace_controls}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{l l c c c}
+\toprule
+Model & Trace & Mean $\phi$ & 95\% CI & Difference from true \\
+\midrule
+Qwen2.5-1.5B & true & 0.3235 & [0.2793, 0.3712] & -- \\
+ & shuffled & 0.1840 & [0.1539, 0.2144] & $-0.1396$ \\
+ & constant & 0.1169 & [0.0977, 0.1389] & $-0.2066$ \\
+ & cross-prompt & 0.2745 & [0.2451, 0.3034] & $-0.0490$ \\
+\midrule
+Llama-3.2-3B & true & 0.2917 & [0.2549, 0.3295] & -- \\
+ & shuffled & 0.1870 & [0.1646, 0.2100] & $-0.1047$ \\
+ & constant & 0.1252 & [0.1060, 0.1455] & $-0.1664$ \\
+ & cross-prompt & 0.2320 & [0.1973, 0.2682] & $-0.0597$ \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\begin{table*}[ht]
+\centering
+\caption{EOS-bounded reconstruction. Completed reconstruction runs from validated archived payload lengths ($N=300$ per model; 512-token victim budget; all available heuristic segments requested; three samples per segment; 80-token T5 input and output limits). Full archived emitted responses are the references. Two terminal segments (one Llama and one Phi-1.5 response) produced empty text. The final two rows are reference-format diagnostics; input provenance is verified for every row.}
+\label{tab:main_results}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l c c c c c}
+\toprule
+Model & Type & $\phi_{\mathrm{mean}}$ & $ed_{\mathrm{norm}}$ & R1 Precision & RL Precision & $\mathrm{LR}@0.5$ \\
+\midrule
+Qwen2.5-1.5B-Instruct & instruct & 0.5768 & 0.6695 & 0.3284 & 0.2070 & 76.00\% \\
+Qwen2.5-3B-Instruct & instruct & 0.5571 & 0.7235 & 0.2806 & 0.1483 & 76.67\% \\
+Phi-1.5 & base & 0.5420 & 0.6944 & 0.2839 & 0.1752 & 65.67\% \\
+Llama-3.2-3B-Instruct & instruct & 0.5365 & 0.7239 & 0.2682 & 0.1473 & 68.00\% \\
+Gemma-2-2B-it & instruct & 0.5092 & 0.7592 & 0.2283 & 0.1127 & 55.00\% \\
+\midrule
+\multicolumn{7}{l}{\emph{Reference-format diagnostics}} \\
+Phi-3.5-mini-instruct & instruct & 0.1297 & 0.8697 & 0.0275 & 0.0209 & 0.00\% \\
+TinyLlama-1.1B-Chat & chat & 0.0832 & 0.8718 & 0.0278 & 0.0214 & 0.00\% \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}
+
+\begin{table*}[ht]
+\centering
+\caption{EOS subsets of the archived-reference cohort ($N=300$ per model; validated length inputs, all segments, 80-token T5 input and output limits). EOS-only metrics select \texttt{response\_complete} samples; they do not certify correct reconstructions. Both LR columns report percentages. Phi-3.5-mini and TinyLlama remain reference-format diagnostics.}
+\label{tab:eos_completeness}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l c c c c c c c}
+\toprule
+Model & $n_{\mathrm{EOS}}$ & EOS (\%) & Trunc.\ (\%) & $\phi$ all & $\phi$ EOS & $\mathrm{LR}$ all & $\mathrm{LR}$ EOS \\
+\midrule
+Qwen2.5-1.5B-Instruct & 167 & 55.7 & 44.3 & 0.5768 & 0.6008 & 76.00 & 81.44 \\
+Qwen2.5-3B-Instruct & 50 & 16.7 & 83.3 & 0.5571 & 0.6043 & 76.67 & 88.00 \\
+Phi-1.5 & 144 & 48.0 & 52.0 & 0.5420 & 0.5108 & 65.67 & 53.47 \\
+Llama-3.2-3B-Instruct & 197 & 65.7 & 34.3 & 0.5365 & 0.5276 & 68.00 & 63.96 \\
+Gemma-2-2B-it & 77 & 25.7 & 74.3 & 0.5092 & 0.4998 & 55.00 & 53.25 \\
+Phi-3.5-mini-instruct & 0 & 0.0 & 100.0 & 0.1297 & -- & 0.00 & -- \\
+TinyLlama-1.1B-Chat & 177 & 59.0 & 41.0 & 0.0832 & 0.0887 & 0.00 & 0.00 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}
+
+\begin{table*}[ht]
+\centering
+\caption{Intervals for reconstructions from validated archived lengths ($N=300$ per model; all segments, 80-token T5 input and output limits). Mean-$\phi$ intervals use 10,000 prompt-index bootstrap resamples; $\mathrm{LR}@0.5$ intervals are Wilson 95\% intervals. These nominal intervals do not include shared-scenario dependence or reference-format error. The final two rows remain diagnostic.}
+\label{tab:statistical_results}
+\begin{tabular}{l c c c c}
+\toprule
+Model & Mean $\phi$ & 95\% CI & $\mathrm{LR}@0.5$ & 95\% CI \\
+\midrule
+Qwen2.5-1.5B-Instruct & 0.5768 & [0.5643, 0.5893] & 76.00\% & [70.86, 80.48]\% \\
+Qwen2.5-3B-Instruct & 0.5571 & [0.5478, 0.5666] & 76.67\% & [71.56, 81.10]\% \\
+Phi-1.5 & 0.5420 & [0.5289, 0.5549] & 65.67\% & [60.13, 70.81]\% \\
+Llama-3.2-3B-Instruct & 0.5365 & [0.5236, 0.5489] & 68.00\% & [62.52, 73.02]\% \\
+Gemma-2-2B-it & 0.5092 & [0.5011, 0.5174] & 55.00\% & [49.34, 60.53]\% \\
+Phi-3.5-mini-instruct & 0.1297 & [0.1237, 0.1359] & 0.00\% & [0.00, 1.26]\% \\
+TinyLlama-1.1B-Chat & 0.0832 & [0.0782, 0.0885] & 0.00\% & [0.00, 1.26]\% \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table}[ht]
+\centering
+\caption{Exploratory scenario-level sensitivity of the validated-length reconstructions: five prompt variants averaged within each of 60 scenarios per model, with 10,000 scenario-bootstrap resamples. These intervals concern the corpus mean; $\dagger$ denotes a reference-format diagnostic.}
+\label{tab:scenario_sensitivity}
+\begin{tabular}{l c c}
+\toprule
+Model & Mean $\phi$ & Scenario-bootstrap 95\% CI \\
+\midrule
+Qwen2.5-1.5B & 0.5768 & [0.5621, 0.5912] \\
+Qwen2.5-3B & 0.5571 & [0.5437, 0.5709] \\
+Phi-1.5 & 0.5420 & [0.5270, 0.5570] \\
+Llama-3.2-3B & 0.5365 & [0.5206, 0.5522] \\
+Gemma-2-2B & 0.5092 & [0.4996, 0.5192] \\
+Phi-3.5-mini$^{\dagger}$ & 0.1297 & [0.1231, 0.1367] \\
+TinyLlama-1.1B$^{\dagger}$ & 0.0832 & [0.0777, 0.0887] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table*}[ht]
+\centering
+\caption{Separate cohorts with verified full-sequence references ($N=300$ per model; 512-token victim limit; all segments, three T5 samples per segment and 80-token T5 input and output limits). Mean-$\phi$ intervals use 10,000 resamples of 60 scenarios. These rows form a targeted reference-validation experiment and are analyzed separately from the seven archived-reference cohorts. EOS indicates end-of-sequence termination, not reconstruction correctness.}
+\label{tab:fresh_results}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l c c c c c c c}
+\toprule
+Model & Mean $\phi$ & Scenario 95\% CI & $ed_{\mathrm{norm}}$ & R1 Precision & RL Precision & $\mathrm{LR}@0.5$ & EOS \\
+\midrule
+TinyLlama-1.1B & 0.4677 & [0.4501, 0.4854] & 0.7336 & 0.2464 & 0.1453 & 44.33\% & 59.0\% \\
+Phi-3.5-mini & 0.5269 & [0.5127, 0.5411] & 0.7577 & 0.2403 & 0.1167 & 62.33\% & 0.0\% \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}
+
+\begin{table*}[ht]
+\centering
+\caption{Framing transformations on validated lengths from 96-token responses ($n=30$ paired prompts per model; three samples per segment, up to three segments, 80-token T5 input and output limits, full-response references). Every overhead, including randomized padding, is the realized cost of the saved transformed vectors. Units count entries in the transformed length vector. Payload accounting excludes SSE syntax, transport headers, buffering delay and latency.}
+\label{tab:defense_results}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l c c c c c}
+\toprule
+Model & Defense & Mean $\phi$ & 95\% CI & Score reduction & Payload overhead & Units \\
+\midrule
+Qwen2.5-1.5B & baseline & 0.3051 & [0.2690, 0.3440] & -- & 0.0\% & 96 \\
+ & bucket\_8 & 0.0318 & [0.0224, 0.0421] & 89.6\% & 82.4\% & 96 \\
+ & pad\_32 & 0.1716 & [0.1478, 0.1955] & 43.8\% & 538.0\% & 96 \\
+ & batch\_2 & 0.0887 & [0.0731, 0.1047] & 70.9\% & 0.0\% & 48 \\
+ & batch\_4 & 0.0797 & [0.0601, 0.1004] & 73.9\% & 0.0\% & 24 \\
+ & rand\_pad\_8 & 0.1208 & [0.1041, 0.1382] & 60.4\% & 79.6\% & 96 \\
+\midrule
+Llama-3.2-3B & baseline & 0.2790 & [0.2420, 0.3189] & -- & 0.0\% & 96 \\
+ & bucket\_8 & 0.0336 & [0.0219, 0.0467] & 88.0\% & 88.6\% & 96 \\
+ & pad\_32 & 0.1403 & [0.1150, 0.1678] & 49.7\% & 565.1\% & 96 \\
+ & batch\_2 & 0.0724 & [0.0588, 0.0877] & 74.0\% & 0.0\% & 48 \\
+ & batch\_4 & 0.0577 & [0.0423, 0.0751] & 79.3\% & 0.0\% & 24 \\
+ & rand\_pad\_8 & 0.1089 & [0.0914, 0.1281] & 61.0\% & 85.5\% & 96 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}
+
+\begin{table*}[ht]
+\centering
+\caption{Five-seed evaluation on logged traces from a 512-token victim budget ($n=30$ prompts per model; 150 reconstructions per setting). Only the first heuristic segment is decoded, with 80-token T5 input and output limits, and scored against the full response reference. Segmentation and encoder coverage differ across transformations. MAP calibration uses 270 exact-prompt-disjoint traces per model but shares scenario templates. Intervals are crossed bootstrap 95\% CIs over prompts and seeds; SD describes the five seed-specific means. Reduction is $100(1-\bar\phi/\bar\phi_{\mathrm{baseline}})$; negative values denote scores above baseline.}
+\label{tab:robustness}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l l c c c c}
+\toprule
+Model & Defense & Attacker & Mean $\phi$ & 95\% CI & Seed SD & Reduction (\%) \\
+\midrule
+Qwen2.5-1.5B & baseline & frozen & 0.1988 & [0.1697, 0.2304] & 0.0090 & 0.0 \\
+ & bucket\_8 & frozen & 0.0422 & [0.0350, 0.0502] & 0.0040 & 78.8 \\
+ & bucket\_8 & adaptive & 0.2167 & [0.1927, 0.2413] & 0.0042 & $-9.0$ \\
+ & pad\_32 & frozen & 0.2371 & [0.2108, 0.2638] & 0.0088 & $-19.2$ \\
+ & pad\_32 & adaptive & 0.1583 & [0.1349, 0.1824] & 0.0093 & 20.4 \\
+ & batch\_2 & frozen & 0.1200 & [0.1056, 0.1354] & 0.0070 & 39.7 \\
+ & batch\_2 & adaptive & 0.2380 & [0.2114, 0.2666] & 0.0184 & $-19.7$ \\
+ & batch\_4 & frozen & 0.1004 & [0.0804, 0.1248] & 0.0165 & 49.5 \\
+ & batch\_4 & adaptive & 0.1932 & [0.1635, 0.2225] & 0.0123 & 2.8 \\
+ & rand\_pad\_8 & frozen & 0.1242 & [0.1034, 0.1449] & 0.0035 & 37.5 \\
+ & rand\_pad\_8 & adaptive & 0.1813 & [0.1554, 0.2074] & 0.0067 & 8.8 \\
+\midrule
+Llama-3.2-3B & baseline & frozen & 0.1860 & [0.1594, 0.2120] & 0.0150 & 0.0 \\
+ & bucket\_8 & frozen & 0.0569 & [0.0474, 0.0665] & 0.0032 & 69.4 \\
+ & bucket\_8 & adaptive & 0.2075 & [0.1816, 0.2341] & 0.0165 & $-11.6$ \\
+ & pad\_32 & frozen & 0.2270 & [0.2021, 0.2528] & 0.0067 & $-22.1$ \\
+ & pad\_32 & adaptive & 0.1492 & [0.1278, 0.1731] & 0.0035 & 19.7 \\
+ & batch\_2 & frozen & 0.0999 & [0.0859, 0.1157] & 0.0091 & 46.3 \\
+ & batch\_2 & adaptive & 0.2139 & [0.1826, 0.2452] & 0.0046 & $-15.0$ \\
+ & batch\_4 & frozen & 0.1175 & [0.1001, 0.1360] & 0.0052 & 36.8 \\
+ & batch\_4 & adaptive & 0.2852 & [0.2512, 0.3214] & 0.0145 & $-53.4$ \\
+ & rand\_pad\_8 & frozen & 0.1044 & [0.0864, 0.1227] & 0.0072 & 43.8 \\
+ & rand\_pad\_8 & adaptive & 0.1500 & [0.1230, 0.1784] & 0.0075 & 19.3 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}
+
+\begin{table}[ht]
+\centering
+\caption{Source-response directories for the archived-reference cohort ($n=300$ per model). New reconstructions use validated log lengths; TinyLlama and Phi-3.5-mini remain reference-format diagnostics in this cohort.}
+\label{tab:run_ids}
+\begin{tabular}{l l}
+\toprule
+Model & Artifact directory \\
+\midrule
+Qwen2.5-1.5B-Instruct & \texttt{run\_full\_20260920\_qwen\_1\_5b\_full} \\
+Qwen2.5-3B-Instruct & \texttt{run\_full\_20260920\_qwen\_3b\_full} \\
+Phi-1.5 & \texttt{run\_full\_20260920\_phi\_1\_5\_full} \\
+Llama-3.2-3B-Instruct & \texttt{run\_full\_20260920\_llama\_3\_2\_3b\_full} \\
+Gemma-2-2B-it & \texttt{run\_full\_20260920\_gemma\_2\_2b\_full} \\
+TinyLlama-1.1B-Chat-v1.0 & \texttt{run\_full\_20260920\_tinyllama\_1\_1b\_full} \\
+Phi-3.5-mini-instruct & \texttt{run\_full\_20260920\_phi\_3\_5\_mini\_full} \\
+\bottomrule
+\end{tabular}
+\end{table}

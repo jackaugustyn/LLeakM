@@ -1,0 +1,29 @@
+{
+  "reviewed_runner_sha256": "8589cb624f8389896c7a32d0574b6d650eabc6518da155f16a8ca13469784a24",
+  "scope": "Read-only independent review; root owns fixes and integration.",
+  "findings": [
+    {
+      "priority": "high",
+      "issue": "Preload both pinned T5 model bundles before per-record reconstruction seeding; otherwise the first record of a fresh/resumed process may consume RNG state during model loading."
+    },
+    {
+      "priority": "medium",
+      "issue": "Validate each canonical vector against token_lengths_sha256 in addition to reference hash."
+    },
+    {
+      "priority": "medium",
+      "issue": "Bind resumed record fields to the matching canonical row and verify stored phi from prediction/reference."
+    },
+    {
+      "priority": "low",
+      "issue": "A torn last JSONL append fails closed but cannot automatically resume; preserve this limitation or quarantine only the incomplete tail before resuming."
+    }
+  ],
+  "positive_checks": [
+    "Plan path does not load models.",
+    "Explicit device and source/protocol bindings prevent mixed-device resume.",
+    "Fixed all-segment three-candidate pipeline keeps80-token encoder/outputlimit.",
+    "Wrapper passes original generation arguments and captures actualencoder input IDs.",
+    "Reference diagnostics and partial-campaign status remain explicit."
+  ]
+}

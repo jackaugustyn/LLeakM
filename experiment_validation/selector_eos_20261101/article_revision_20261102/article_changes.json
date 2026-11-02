@@ -1,0 +1,337 @@
+{
+  "source_sha256": "9e7585d5867034eb7725b538c9499531c64b8e925afbf33e91e430d56556cc4b",
+  "target_sha256": "88f6edebfa689fbf5f61dc2b85ab743d3d71fd35c69e3d1a4e8f5cff6827b066",
+  "changes": [
+    {
+      "kind": "paragraph",
+      "anchor": "\\abstract{",
+      "before": "\\abstract{Streaming large language model (LLM) services can expose response-length metadata even when payloads are encrypted. We evaluate a fixed T5 implementation with its recorded candidate-selection rule through 6600 reconstructions from validated application-layer length traces. For 300 aligned prompts per model, five archived-reference cohorts yield mean term-frequency cosine scores ($\\phi$) of 0.482--0.535; two additional archived cohorts have malformed word boundaries. Newly generated TinyLlama and Phi-3.5-mini responses with verified detokenization yield means of 0.435 and 0.504. Legacy rendering of their saved token IDs reproduces all 600 corresponding archived references and length vectors. Changing both the trace and scoring reference increases mean $\\phi$ by 0.356 and 0.383 under matched reconstruction settings. In two-model pilots, three of six partial-ablation contrasts remain significant after Holm correction; neither cross-prompt contrast is conclusive. Five framing transformations reduce frozen-reconstructor mean scores by 36.7--88.7\\%. A five-seed study with a local empirical maximum-a-posteriori (MAP) length inverse recovers much of the loss under bucketing and batching. Reconstruction scopes and retained encoder coverage differ across these experiments. The findings quantify lexical behavior of an instrumented pipeline and demonstrate the importance of validating both observations and reference rendering. They do not measure semantic disclosure or demonstrate passive extraction from encrypted transport.}",
+      "after": "\\abstract{Streaming large language model (LLM) services can expose response-length metadata even when payloads are encrypted. We evaluate a fixed T5 reconstructor through 6600 reconstructions from validated application-layer length traces, selecting candidates by sampling-processed transition scores through the first end-of-sequence (EOS) token. For 300 aligned prompts per model, five archived-reference cohorts yield mean term-frequency cosine scores ($\\phi$) of 0.509--0.577; two additional archived cohorts have malformed word boundaries. Separately collected TinyLlama and Phi-3.5-mini responses with verified detokenization yield means of 0.468 and 0.527. Legacy rendering of their saved token IDs reproduces all 600 corresponding archived references and length vectors. Changing both the trace and scoring reference increases mean $\\phi$ by 0.384 and 0.397 under matched reconstruction settings. In two-model pilots, four of six partial-ablation contrasts remain significant after Holm correction; neither cross-prompt contrast is conclusive. Five framing transformations reduce frozen-reconstructor mean scores by 43.8--89.6\\%. A five-seed study with a local empirical maximum-a-posteriori (MAP) length inverse recovers much of the loss under bucketing and batching. Reconstruction scopes and retained encoder coverage differ across these experiments. The findings quantify lexical behavior of an instrumented pipeline and demonstrate the importance of validating both observations and reference rendering. They do not measure semantic disclosure or demonstrate passive extraction from encrypted transport.}"
+    },
+    {
+      "kind": "exact",
+      "before": "The historical line-collector discrepancy motivates the validation in Section~\\ref{sec:measurement-audit}; all quantitative reconstruction results reported below use recorded, validated input vectors.",
+      "after": "Validation in Section~\\ref{sec:measurement-audit} binds each input vector to its source log and scoring reference. All quantitative reconstruction results reported below come from the completed campaign with EOS-bounded candidate selection."
+    },
+    {
+      "kind": "exact",
+      "before": "A separate two-model experiment uses newly generated responses with verified full-sequence detokenization.",
+      "after": "A separate two-model experiment uses previously collected responses with verified full-sequence detokenization, reconstructed in the same completed campaign."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "The contribution is an evaluation",
+      "before": "The contribution is an evaluation with explicit input provenance: 2100 reconstructions from validated archived lengths, 600 additional reconstructions of newly generated and correctly assembled responses, two-model pilots of partial trace ablations and five framing configurations, and a five-seed MAP-inverse evaluation. The pilots and MAP study use different reconstruction scopes, so their baselines are not interchangeable. Full input vectors, decoder inputs, random seeds, generated texts, and independent metric checks are retained in the accompanying artifact package. The source project is hosted at \\url{https://github.com/jackaugustyn/LLeakM}. Appendix~\\ref{app:runs} identifies the completed experiment artifacts and distinguishes them from historical manifests.",
+      "after": "The contribution is an evaluation with explicit input provenance: 2100 reconstructions from validated archived lengths, 600 reconstructions of separately collected responses with verified decoding, two-model pilots of partial trace ablations and five framing configurations, and a five-seed MAP-inverse evaluation. All 6600 reconstructions were executed in the completed campaign; no earlier reconstruction predictions enter the reported results. The pilots and MAP study use different reconstruction scopes, so their baselines are not interchangeable. Full input vectors, decoder inputs, random seeds, candidate sequences, transition scores, generated texts and independent metric checks are retained in the accompanying artifact package. The source project is hosted at \\url{https://github.com/jackaugustyn/LLeakM}. Appendix~\\ref{app:runs} identifies the completed experiment artifacts and the frozen victim-response inputs."
+    },
+    {
+      "kind": "exact",
+      "before": "the newly generated two-model cohort",
+      "after": "the verified-reference two-model cohort"
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "The archived collector used",
+      "before": "The archived collector used \\texttt{requests.iter\\_lines()}, discarded empty lines, and appended two newline bytes to each remaining line. Its inferred vector $X^{\\mathrm{col}}$ can differ from the logged vector $X^{\\mathrm{log}}$: a fragment \\texttt{:\\textbackslash n\\textbackslash n} contains three bytes, but this parser infers one. Replaying that implementation on the retained logs changes 2073 of 2100 vectors and the heuristic-segment count in 764 samples. These are preprocessing comparisons; the exact historical T5 input vectors and their binding to the old collector version were not retained.",
+      "after": "Every reconstruction input is an explicit vector of UTF-8 payload lengths obtained from the retained generation log. Validation recomputes each fragment's byte length, checks its ordered position and verifies that the concatenated fragments equal the scoring reference. Source hashes and immutable sample inventories bind the vectors, references and recorded seeds to the completed campaign. The experiments do not infer lengths from line parsing or undocumented historical reconstruction inputs."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "The primary results below instead",
+      "before": "The primary results below instead come from complete T5 inference on the 2100 validated logged vectors. This establishes the inputs used for the reported reconstructions without recovering undocumented historical inputs. Differences from older scores cannot be attributed solely to collection: the execution environment and reconstruction random-state handling also differ. The reconstructor is seeded after checkpoint loading so that cache initialization does not change a sample's random stream.",
+      "after": "The primary cohort reconstructs all 2100 validated archived vectors with the EOS-bounded selector defined below. The two verified-reference cohorts and all control, defense and MAP conditions use the same pinned reconstruction implementation. The reconstructor is seeded after checkpoint loading so that cache initialization does not change a sample's random stream. The current campaign reuses frozen victim responses and length vectors; it does not regenerate victim responses."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "To evaluate the affected models",
+      "before": "To evaluate the affected models with ordinary reference text, we generated 300 additional responses per model from the same prompts using contextual detokenization. All 600 passed exact agreement between concatenated fragments and full-sequence decoding, with token IDs, tokenizer and checkpoint provenance retained; all contain ASCII spaces. These new cohorts are reported separately. Current checkpoint revisions, precision and placement are pinned; their identity with the historical execution is not established.",
+      "after": "To evaluate the affected models with ordinary reference text, a separate collection produced 300 responses per model from the same prompts using contextual detokenization. All 600 stored responses pass exact agreement between concatenated fragments and full-sequence decoding, with token IDs, tokenizer and checkpoint provenance retained; all contain ASCII spaces. They are reconstructed anew in the present campaign and reported as separate cohorts. Their collection checkpoint revisions, precision and placement are pinned; identity with the historical execution is not established."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "The inversion pipeline follows",
+      "before": "The inversion pipeline follows the sequence-to-text procedure introduced by Weiss \\emph{et al.}~\\cite{weiss2024prompt}. It first splits a length vector at observations equal to one and merges short chunks using a ten-unit minimum, with an additional list-boundary heuristic. These are heuristic segments rather than verified sentences. The first segment is decoded using \\texttt{royweiss1/T5\\_FirstSentences}; later segments use \\texttt{royweiss1/T5\\_MiddleSentences}, conditioned on the immediately preceding selected segment. T5 generation uses stochastic sampling with top-$k=50$, temperature 1 and a two-token no-repeat n-gram constraint. The executed selector sums normalized transition scores over all returned generation steps, including PAD positions after a candidate's first end-of-sequence (EOS) token; the chosen text supplies the next segment's context.",
+      "after": "The inversion pipeline follows the sequence-to-text procedure introduced by Weiss \\emph{et al.}~\\cite{weiss2024prompt}. It first splits a length vector at observations equal to one and merges short chunks using a ten-unit minimum, with an additional list-boundary heuristic. These are heuristic segments rather than verified sentences. The first segment is decoded using \\texttt{royweiss1/T5\\_FirstSentences}; later segments use \\texttt{royweiss1/T5\\_MiddleSentences}, conditioned on the immediately preceding selected segment. T5 generation uses stochastic sampling with top-$k=50$, temperature 1 and a two-token no-repeat n-gram constraint. For candidate $c$, let $\\ell_{c,t}$ be its normalized transition log-score after those sampling constraints, and let $\\tau_c$ be the first generated EOS position, or the final returned position if EOS is absent. The selector uses\n\\begin{equation}\nS(c)=\\sum_{t=1}^{\\tau_c}\\ell_{c,t}.\n\\end{equation}\nThe EOS transition is included and all subsequent PAD positions are excluded. The score is not length-normalized. Among duplicate decoded texts, the highest score is retained; equal-score ties preserve candidate order. The selected text supplies the next segment's context."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "These scores are obtained after",
+      "before": "These scores are obtained after the sampling constraints, including top-$k$ and the no-repeat rule; their sum is not an unconstrained model likelihood. The implementation does not mask post-EOS steps, which can assign nonfinite scores to a completed candidate and alter selection. A bounded replay reproduced all 24 selected first-segment predictions, but ranking only through the first EOS changed the selected text in 18 cases (Appendix~\\ref{app:selector}). All three-candidate results in this paper retain the original PAD-inclusive selector. They describe this specific implementation and do not estimate the performance of an EOS-masked selector. The one-candidate MAP experiment bypasses candidate ranking.",
+      "after": "These scores use the sampling-processed distributions, not the unconstrained model logits. Nonfinite scores before or at EOS cause validation failure; padding after EOS does not contribute to selection. Every generated candidate is retained for independent verification; calls with three candidates also retain their transition scores. All three-candidate conditions use this rule throughout the complete response, including subsequent context updates. The one-candidate MAP experiment bypasses candidate ranking. Appendix~\\ref{app:selector} reports full-campaign validation."
+    },
+    {
+      "kind": "exact",
+      "before": "{PAD-inclusive score sum\\\\select one text per segment}",
+      "after": "{Score sum through first EOS\\\\select one text per segment}"
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "\\caption{Executed reconstruction pipeline.",
+      "before": "\\caption{Executed reconstruction pipeline. Unmodified conditions pass lengths directly to segmentation. The original PAD-inclusive selector precedes each context update (Section~\\ref{sec:reconstructor}); the first segment has no reconstructed context. Main and new-reference runs decode all segments with three samples per segment; 96-token pilots allow up to three segments with three samples each; the five-seed MAP study uses one sample for the first segment per seed. The 80-token encoder limit includes the instruction and context. All settings score their output against the full stored response.}",
+      "after": "\\caption{Executed reconstruction pipeline. Unmodified conditions pass lengths directly to segmentation. Candidate scores include the first EOS and exclude all subsequent padding before each context update (Section~\\ref{sec:reconstructor}); the first segment has no reconstructed context. Main and verified-reference runs request all segments with three samples per segment; 96-token pilots allow up to three segments with three samples each; the five-seed MAP study uses one sample for the first segment per seed. The 80-token encoder limit includes the instruction and context. All settings score their output against the full stored response.}"
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "The completed experiments comprise 2100",
+      "before": "The completed experiments comprise 2100 reconstructions from validated archived length traces, 600 reconstructions of newly generated TinyLlama and Phi-3.5-mini responses, 240 trace-control reconstructions, 360 defense-pilot reconstructions and 3300 MAP reconstructions. Every planned sample is present and independently checked. The primary and new-reference cohorts reconstruct all available heuristic segments; the 96-token pilots allow up to three, and the 512-token MAP experiment reconstructs one. These differences preclude interpreting cross-experiment score differences as victim-budget effects alone.",
+      "after": "The completed EOS-selector campaign comprises 2100 reconstructions from validated archived length traces, 600 reconstructions of separately collected TinyLlama and Phi-3.5-mini responses, 240 trace-control reconstructions, 360 defense-pilot reconstructions and 3300 MAP reconstructions. Every planned sample is present and independently checked. The primary and verified-reference cohorts request all available heuristic segments; the 96-token pilots allow up to three, and the 512-token MAP experiment reconstructs one. These differences preclude interpreting cross-experiment score differences as victim-budget effects alone."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "Table~\\ref{tab:trace_controls} shows",
+      "before": "Table~\\ref{tab:trace_controls} shows that the effect of removing trace features depends on both model and control. For Qwen, the true-trace mean is 0.2904 versus 0.2084 after shuffling and 0.1169 for a constant trace; both contrasts are significant after Holm correction ($p=0.0053$ and $p<0.0001$). For Llama, the true mean is 0.2221 versus 0.1272 for a constant trace ($p=0.0010$). Its shuffled mean is lower (0.1798), but the adjusted signed-rank test is inconclusive ($p=0.2634$). Cross-prompt means are 0.2522 for Qwen and 0.2250 for Llama; neither contrast is significant ($p=0.3625$ and $p=0.8531$). Thus these pilots do not establish a general advantage over unrelated prompt traces. Each control retains some response-dependent information, and transformations can also alter segmentation and encoder coverage.",
+      "after": "Table~\\ref{tab:trace_controls} shows lower scores after shuffling or constant replacement for both models. For Qwen, the true-trace mean is 0.3235 versus 0.1840 after shuffling and 0.1169 for a constant trace; both contrasts are significant after Holm correction ($p<0.0001$). For Llama, the true mean is 0.2917 versus 0.1870 after shuffling ($p=0.0002$) and 0.1252 for a constant trace ($p<0.0001$). Cross-prompt means are 0.2745 for Qwen and 0.2320 for Llama; neither adjusted signed-rank test is conclusive ($p=0.1169$ for each). The nominal mean-difference bootstrap intervals for those two contrasts exclude zero, but do not incorporate the Holm adjustment and concern a different estimand from the signed-rank test. Thus four of six contrasts support sensitivity to the altered features; the pilots do not establish a general advantage over unrelated prompt traces. Each control retains some response-dependent information, and transformations can also alter segmentation and encoder coverage."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "Table~\\ref{tab:main_results} reports",
+      "before": "Table~\\ref{tab:main_results} reports the completed reconstruction cohort, and Figure~\\ref{fig:model_ci}a shows its mean scores with scenario-bootstrap intervals. For the five series without the observed malformed-word-boundary pattern, mean $\\phi$ ranges from 0.4820 to 0.5355 and $\\mathrm{LR}@0.5$ from 42.33\\% to 65.33\\%. Their ROUGE-1 precision is 0.2101--0.2921. These metrics quantify lexical overlap with the archived emitted text; they do not establish semantic fidelity or independently validate its historical full-sequence detokenization. Phi-1.5 remains a base-model stress test.",
+      "after": "Table~\\ref{tab:main_results} reports the completed reconstruction cohort, and Figure~\\ref{fig:model_ci}a shows its mean scores with scenario-bootstrap intervals. For the five series without the observed malformed-word-boundary pattern, mean $\\phi$ ranges from 0.5092 to 0.5768 and $\\mathrm{LR}@0.5$ from 55.00\\% to 76.67\\%. Their ROUGE-1 precision is 0.2283--0.3284. These metrics quantify lexical overlap with the archived emitted text; they do not establish semantic fidelity or independently validate its historical full-sequence detokenization. Phi-1.5 remains a base-model stress test."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "The archived TinyLlama and Phi-3.5-mini references yield",
+      "before": "The archived TinyLlama and Phi-3.5-mini references yield means of 0.0792 and 0.1210, with no $\\phi>0.5$ cases. These are reference-format diagnostics. The new input vectors are verified byte-for-byte for all models, but reference defects remain part of these two scores. Across the 2100 reconstructions, all 62,757 available heuristic segments were processed; 1475 encoder calls exceeded the 80-token input limit. No run stopped early because of an empty middle-segment output.",
+      "after": "The archived TinyLlama and Phi-3.5-mini references yield means of 0.0832 and 0.1297, with no $\\phi>0.5$ cases. These are reference-format diagnostics. The input vectors are verified byte-for-byte for all models, but reference defects remain part of these two scores. Across the 2100 reconstructions, all 62,757 available heuristic segments were attempted and 62,755 produced nonempty selected text; 1014 encoder calls exceeded the 80-token input limit. Two final segments, one each for Llama and Phi-1.5, produced empty text. No available segment was skipped by an earlier stop."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "Relative to the earlier stored reconstructions,",
+      "before": "Relative to the earlier stored reconstructions, mean $\\phi$ changes by $-0.035$ to $-0.021$ for the five non-diagnostic series, while the diagnostic TinyLlama and Phi-3.5-mini means increase. This is a comparison of reconstruction executions on the same archived references, not an isolated estimate of a collector effect. The reported primary metrics use complete new predictions and a single lexical scoring implementation.",
+      "after": ""
+    },
+    {
+      "kind": "exact",
+      "before": "figures/latest_model_results.pdf",
+      "after": "figures/eos_model_results.pdf"
+    },
+    {
+      "kind": "exact",
+      "before": "figures/latest_defense_tradeoff.pdf",
+      "after": "figures/eos_defense_tradeoff.pdf"
+    },
+    {
+      "kind": "exact",
+      "before": "\\caption{Completed all-segment reconstructions with scenario-bootstrap",
+      "after": "\\caption{Completed reconstructions with EOS-bounded selection and scenario-bootstrap"
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "Table~\\ref{tab:eos_completeness} compares",
+      "before": "Table~\\ref{tab:eos_completeness} compares all 300 archived responses per model with the subset whose victim generation reached EOS. The generation-completeness rates are unchanged because reconstruction uses the same references. EOS restriction does not systematically increase $\\phi$: Qwen2.5-3B rises from 0.5251 to 0.5551 ($n=50$), whereas Phi-1.5 falls from 0.5164 to 0.4868 ($n=144$). Phi-3.5-mini has no EOS-complete subset. EOS indicates completion of victim generation, not correct reconstruction; conditioning on it also changes the evaluated response subset.",
+      "after": "Table~\\ref{tab:eos_completeness} compares all 300 archived responses per model with the subset whose victim generation reached EOS. This completion criterion concerns the victim response and is separate from EOS handling in the T5 candidate selector. EOS restriction does not systematically increase $\\phi$: Qwen2.5-3B rises from 0.5571 to 0.6043 ($n=50$), whereas Phi-1.5 falls from 0.5420 to 0.5108 ($n=144$). Phi-3.5-mini has no EOS-complete subset. EOS indicates completion of victim generation, not correct reconstruction; conditioning on it also changes the evaluated response subset."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "Table~\\ref{tab:statistical_results} gives",
+      "before": "Table~\\ref{tab:statistical_results} gives prompt-bootstrap intervals and Wilson intervals for the lexical threshold. Fifteen of 21 model pairs are significant after Holm correction, with the same decisions when the 60 scenario means are used as the paired units. Among Qwen2.5-1.5B, Qwen2.5-3B, Llama-3.2-3B and Phi-1.5, all six pairwise tests are inconclusive after correction. The significant family also contains comparisons with malformed-reference diagnostics, which cannot be interpreted as transfer differences on ordinary model responses.",
+      "after": "Table~\\ref{tab:statistical_results} gives prompt-bootstrap intervals and Wilson intervals for the lexical threshold. Eighteen of 21 model pairs are significant after Holm correction, with the same decisions when the 60 scenario means are used as the paired units. The three inconclusive pairs are Qwen2.5-3B versus Llama-3.2-3B, Qwen2.5-3B versus Phi-1.5, and Llama-3.2-3B versus Phi-1.5. Qwen2.5-1.5B has a higher mean than each of the other four non-diagnostic series with significant adjusted tests. These are conditional comparisons on the stored references. The significant family also contains comparisons with malformed-reference diagnostics, which cannot be interpreted as transfer differences on ordinary model responses."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "For example, Qwen2.5-1.5B minus",
+      "before": "For example, Qwen2.5-1.5B minus Qwen2.5-3B has a mean difference of 0.0103 (prompt-bootstrap 95\\% CI $[-0.0031,0.0232]$, rank-biserial $r=0.1057$, $p_{\\mathrm{Holm}}=0.4500$). Qwen2.5-1.5B minus Llama has a mean difference of 0.0208 (95\\% CI $[0.0059,0.0359]$, $r=0.1408$), but its multiplicity-adjusted signed-rank test is inconclusive ($p_{\\mathrm{Holm}}=0.2076$). These results illustrate why unadjusted mean-difference intervals and adjusted rank tests should be distinguished.",
+      "after": "For example, Qwen2.5-1.5B minus Qwen2.5-3B has a mean difference of 0.0197 (prompt-bootstrap 95\\% CI $[0.0055,0.0332]$, rank-biserial $r=0.1962$, $p_{\\mathrm{Holm}}=0.0129$). The mean-difference interval and the adjusted signed-rank test both support a difference in this comparison, while retaining their distinct estimands and multiplicity treatment."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "The exploratory scenario analysis retains",
+      "before": "The exploratory scenario analysis retains the same 15 significant pairs (Table~\\ref{tab:scenario_sensitivity}). All seven scenario-bootstrap intervals are wider than their prompt-bootstrap counterparts, by up to 41.6\\% for Qwen2.5-3B. For the Qwen2.5-1.5B versus Qwen2.5-3B comparison, the mean difference remains 0.0103, with scenario-level $r=0.2470$ and $p_{\\mathrm{Holm}}=0.3876$. Grouping the five variants changes the inference unit; agreement of significance decisions does not establish independence or generalization to unseen scenarios.",
+      "after": "The exploratory scenario analysis retains the same 18 significant pairs (Table~\\ref{tab:scenario_sensitivity}). All seven scenario-bootstrap intervals are wider than their prompt-bootstrap counterparts, by up to 44.8\\% for Qwen2.5-3B. For the Qwen2.5-1.5B versus Qwen2.5-3B comparison, the mean difference remains 0.0197, with scenario-level $r=0.4011$ and $p_{\\mathrm{Holm}}=0.0279$. Grouping the five variants changes the inference unit; agreement of significance decisions does not establish independence or generalization to unseen scenarios."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "New TinyLlama and Phi-3.5-mini generations passed",
+      "before": "New TinyLlama and Phi-3.5-mini generations passed full-sequence detokenization checks for all 300 prompts per model. Their corresponding mean scores are 0.4352 and 0.5042 (Table~\\ref{tab:fresh_results} and Figure~\\ref{fig:model_ci}b), with $\\mathrm{LR}@0.5$ of 30.33\\% and 52.33\\%. TinyLlama reached EOS in 177/300 responses; all Phi-3.5-mini responses reached the 512-token limit. All 8835 and 10,748 available reconstruction segments were processed, with 55 and 77 encoder calls truncated, respectively.",
+      "after": "The separately collected TinyLlama and Phi-3.5-mini responses pass full-sequence detokenization checks for all 300 prompts per model. Their current reconstruction means are 0.4677 and 0.5269 (Table~\\ref{tab:fresh_results} and Figure~\\ref{fig:model_ci}b), with $\\mathrm{LR}@0.5$ of 44.33\\% and 62.33\\%. TinyLlama reached EOS in 177/300 responses; all Phi-3.5-mini responses reached the 512-token limit. All 8835 and 10,748 available reconstruction segments produced nonempty selected text, with 24 and 35 encoder calls truncated, respectively."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "Because legacy decoding of the newly saved IDs",
+      "before": "Because legacy decoding of the newly saved IDs exactly reproduces the archived references and vectors, the two renderings support a matched computational comparison with identical T5 settings and per-sample seeds. Changing both the length trace and reference to full-sequence rendering increases mean $\\phi$ by 0.3560 for TinyLlama (paired scenario-bootstrap 95\\% CI $[0.3396,0.3731]$) and 0.3831 for Phi-3.5-mini ($[0.3670,0.3982]$). These intervals use 10,000 resamples of the 60 paired scenario means with seed \\texttt{20261101}. The effect combines changed attacker input and changed scoring text; neither component is isolated. The two cohorts remain separate from the other five archived-reference series, whose original token IDs are unavailable.",
+      "after": "Because legacy decoding of the saved IDs exactly reproduces the archived references and vectors, the two renderings support a matched computational comparison with identical T5 settings and per-sample seeds. Both arms are reconstructed in the present EOS-selector campaign. Changing both the length trace and reference to full-sequence rendering increases mean $\\phi$ by 0.3845 for TinyLlama (paired scenario-bootstrap 95\\% CI $[0.3662,0.4029]$) and 0.3972 for Phi-3.5-mini ($[0.3806,0.4134]$). These intervals use 10,000 resamples of the 60 paired scenario means with seed \\texttt{20261101}. The effect combines changed attacker input and changed scoring text; neither component is isolated. The two cohorts remain separate from the other five archived-reference series, whose original token IDs are unavailable."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "All five framing transformations reduce",
+      "before": "All five framing transformations reduce mean $\\phi$ relative to their defense-pilot baseline (Table~\\ref{tab:defense_results}), and all ten paired comparisons are significant after Holm correction. Reductions range from 36.7\\% for \\texttt{pad\\_32} on Qwen to 88.7\\% for \\texttt{bucket\\_8} on Qwen. Batching reduces scores by 67.2--73.2\\% and changes the number of observable units from 96 to 48 or 24. Figure~\\ref{fig:defense_tradeoff} relates these changes to payload overhead calculated from the actual saved transformation vectors.",
+      "after": "All five framing transformations reduce mean $\\phi$ relative to their defense-pilot baseline (Table~\\ref{tab:defense_results}), and all ten paired comparisons are significant after Holm correction. Reductions range from 43.8\\% for \\texttt{pad\\_32} on Qwen to 89.6\\% for \\texttt{bucket\\_8} on Qwen. Batching reduces scores by 70.9--79.3\\% and changes the number of observable units from 96 to 48 or 24. Figure~\\ref{fig:defense_tradeoff} relates these changes to payload overhead calculated from the actual saved transformation vectors."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "All 3300 MAP predictions exactly match",
+      "before": "All 3300 MAP predictions exactly match the retained earlier predictions when aligned by model, prompt, condition, attacker and decoder seed. The current table uses newly recomputed crossed-bootstrap intervals with explicitly bound bootstrap seeds. These findings describe a sensitivity analysis of the evaluated pipeline. A defense-aware inverse recovered much of the lexical score lost under bucketing and batching, but inversion also changes the sequence subsequently segmented and truncated by T5. With 80-token limits on both input and output, equal victim-token budgets do not imply equal encoder coverage or comparable sentence boundaries. The adaptive procedure used an empirical length inverse followed by the unchanged T5 decoder, without end-to-end retraining on defended traces. Its scores therefore characterize this pipeline under limited adaptation; they do not isolate a defense's information loss or establish the performance of a fully retrained attacker.",
+      "after": "All 3300 MAP reconstructions are present in the current campaign, and independent checks reproduce their per-record metrics and crossed-bootstrap intervals. A defense-aware inverse recovers much of the lexical score lost under bucketing and batching, but inversion also changes the sequence subsequently segmented and truncated by T5. With 80-token limits on both input and output, equal victim-token budgets do not imply equal encoder coverage or comparable sentence boundaries. The adaptive procedure uses the frozen, prompt-disjoint empirical length inverse followed by the unchanged T5 decoder, without end-to-end retraining on defended traces. Its scores therefore characterize this pipeline under limited adaptation; they do not isolate a defense's information loss or establish the performance of a fully retrained attacker."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "The strongest control evidence concerns",
+      "before": "The strongest control evidence concerns replacing the trace by a constant: both models lose lexical score, and shuffling also reduces Qwen's score after correction. Neither cross-prompt contrast is conclusive, and Llama's shuffled contrast is inconclusive after Holm correction. Thus the experiments support sensitivity to selected trace features, not a universal advantage of the target trace over every partial ablation. Controls preserve response-dependent quantities such as length, mean or histogram and can change segmentation. Their residual scores cannot be assigned entirely to the decoder's language prior. Estimating information-theoretic leakage would require a defined response variable, repeated sampling and a suitable estimator.",
+      "after": "Shuffling and constant replacement reduce lexical scores for both models after Holm correction. Neither cross-prompt contrast is conclusive under the adjusted signed-rank test. Thus the experiments support sensitivity to selected trace features, not a universal advantage of the target trace over every partial ablation. Controls preserve response-dependent quantities such as length, mean or histogram and can change segmentation. Their residual scores cannot be assigned entirely to the decoder's language prior. Estimating information-theoretic leakage would require a defined response variable, repeated sampling and a suitable estimator."
+    },
+    {
+      "kind": "exact",
+      "before": "Exact logged byte lengths remove the line-collector ambiguity from the reported reconstruction inputs.",
+      "after": "Exact logged byte lengths and saved input vectors establish the observations used by the reconstructor."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "For the largest mean in the archived-reference cohort,",
+      "before": "For the largest mean in the archived-reference cohort, $\\mathrm{LR}@0.5$ is 65.33\\% and ROUGE-1 precision is 0.2921. Neither quantity is a disclosure rate: lexical overlap does not verify an entity, proposition or actionable answer. No semantic annotation or task-specific disclosure evaluation was performed. Practical harm might involve recovered phrases, entities, refusals or topic cues, but the present metrics do not quantify those outcomes. Deployment-facing conclusions additionally require extraction of observables from encrypted traffic and validation under transport buffering and multiplexing.",
+      "after": "For the largest mean in the archived-reference cohort, $\\mathrm{LR}@0.5$ is 76.00\\% and ROUGE-1 precision is 0.3284. Neither quantity is a disclosure rate: lexical overlap does not verify an entity, proposition or actionable answer. No semantic annotation or task-specific disclosure evaluation was performed. Practical harm might involve recovered phrases, entities, refusals or topic cues, but the present metrics do not quantify those outcomes. Deployment-facing conclusions additionally require extraction of observables from encrypted traffic and validation under transport buffering and multiplexing."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "The three-candidate experiments retain a selector",
+      "before": "The three-candidate experiments retain a selector that includes PAD scores after EOS. The bounded replay establishes actual selection changes under EOS masking, but does not estimate their frequency across the campaign or their effect on full-response scores. Later segments condition on the selected text, so corrected full-response results require a separate end-to-end campaign with the revised selector and retained candidates. Current score rankings, confidence intervals, rendering contrasts and defense comparisons are conditional on the original implementation. The one-candidate MAP results are unaffected by this selection mechanism.",
+      "after": "Candidate selection is verified through the first EOS, but its unnormalized sum of sampling-processed log-scores is still an implementation choice. Its preference across different candidate lengths is not a calibrated measure of correctness. The study evaluates one pair of pretrained T5 checkpoints with heuristic segmentation and fixed sampling settings; it does not compare ranking objectives or establish optimal reconstruction performance. The one-candidate MAP study has a different decoding scope and bypasses this selection rule."
+    },
+    {
+      "kind": "exact",
+      "before": "Reconstruction processes all heuristic segments in the primary and new-reference cohorts, up to three in the 96-token pilots, and one in MAP.",
+      "after": "Reconstruction attempts every heuristic segment in the primary and verified-reference cohorts, with two empty terminal outputs in the archived cohort; the 96-token pilots allow up to three segments and MAP uses one."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "The completed experiments comprise 6600 T5",
+      "before": "The completed experiments comprise 6600 T5 reconstructions and 600 newly generated victim responses. Reconstruction from validated logged lengths yields mean lexical scores of 0.482--0.535 for five archived-reference cohorts. For TinyLlama and Phi-3.5-mini, verified full-sequence decoding yields means of 0.435 and 0.504. Legacy rendering of the newly saved token IDs exactly reproduces the corresponding archived references and length vectors. Under matched T5 settings and seeds, changing the rendering of both the input trace and scoring reference increases mean $\\phi$ by 0.3560 and 0.3831. This computational comparison identifies observation and reference construction as consequential parts of the evaluation; it does not separate their individual contributions or establish an intrinsic model-vulnerability ranking.",
+      "after": "The completed campaign provides 6600 T5 reconstructions with EOS-bounded candidate selection and independent verification of the recorded candidates and metrics. Reconstruction from validated logged lengths yields mean lexical scores of 0.509--0.577 for five archived-reference cohorts. For separately collected TinyLlama and Phi-3.5-mini responses with verified full-sequence decoding, the means are 0.468 and 0.527. Legacy rendering of their saved token IDs exactly reproduces the corresponding archived references and length vectors. With both renderings reconstructed under matched T5 settings and seeds in this campaign, changing the input trace and scoring reference increases mean $\\phi$ by 0.3845 and 0.3972. This computational comparison identifies observation and reference construction as consequential parts of the evaluation; it does not separate their individual contributions or establish an intrinsic model-vulnerability ranking."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "The partial-ablation controls support",
+      "before": "The partial-ablation controls support sensitivity to selected trace features: three of six contrasts remain significant after Holm correction, while neither cross-prompt contrast is conclusive. In the 96-token pilots, all ten model--transformation contrasts show significant score reductions after correction, ranging from 36.7\\% to 88.7\\%. These reductions describe the tested frozen reconstructor and realized transformations. The first-segment, five-seed study shows that an exact-prompt-disjoint MAP length inverse can recover much of the loss under bucketing and batching, although calibration shares scenario templates with the test set.",
+      "after": "The partial-ablation controls support sensitivity to selected trace features: four of six contrasts remain significant after Holm correction, comprising shuffling and constant replacement for both models; neither cross-prompt contrast is conclusive. In the 96-token pilots, all ten model--transformation contrasts show significant score reductions after correction, ranging from 43.8\\% to 89.6\\%. These reductions describe the tested frozen reconstructor and realized transformations. The first-segment, five-seed study shows that an exact-prompt-disjoint MAP length inverse can recover much of the loss under bucketing and batching, although calibration shares scenario templates with the test set."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "These conclusions are conditional on the recorded implementation:",
+      "before": "These conclusions are conditional on the recorded implementation: the three-candidate experiments use the original PAD-inclusive selector, whereas MAP uses one candidate. Constant \\texttt{pad\\_32} encoder inputs also show why positive lexical overlap need not demonstrate use of response-specific trace variation. Practical privacy claims require evidence beyond these lexical scores. Transform-dependent segmentation and the 80-token encoder limit change the retained input coverage, and payload-size accounting excludes transport costs and latency. Evaluations with matched observation coverage, unseen scenarios, extraction from encrypted traffic, and disclosure-oriented outcomes are needed to establish the deployment significance of these results.",
+      "after": "Constant \\texttt{pad\\_32} encoder inputs show why positive lexical overlap need not demonstrate use of response-specific trace variation. Practical privacy claims require evidence beyond these lexical scores. Transform-dependent segmentation and the 80-token encoder limit change the retained input coverage, and payload-size accounting excludes transport costs and latency. Evaluations with matched observation coverage, unseen scenarios, extraction from encrypted traffic, and disclosure-oriented outcomes are needed to establish the deployment significance of these results."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "Supplementary Data S1 is the frozen local package",
+      "before": "Supplementary Data S1 is the frozen local package \\texttt{LLeakM-S1-20261101-v1}, supplied as a compressed archive with a SHA-256 manifest, a README and a CPU-only verification entry point. It contains the completed records, analysis code, source logs, model revision identifiers and manuscript files; model weights are obtained separately from the pinned checkpoints. The archive is prepared for accompanying submission and can be requested from the corresponding authors; public archival of this version remains pending. The source project repository is \\url{https://github.com/jackaugustyn/LLeakM}. Table~\\ref{tab:run_ids} identifies the original 512-token source directories. Results reside under \\path{experiment_validation/revalidation_20261031/}: \\path{inference/cuda_full/} contains the 2100 reconstructions from canonical archived lengths, \\path{secondary/cuda_full/} the 3900 control, defense and MAP records, and \\path{inference/fresh_tinyllama_cuda/} and \\path{inference/fresh_phi_cuda/} the two 300-response new-reference reconstructions. Their generation artifacts are under \\path{fresh_references/}.",
+      "after": "The frozen local supplementary package \\texttt{LLeakM-S2-EOS-20261102-v1} is supplied as a compressed archive with a SHA-256 manifest, a README and a CPU-only verification entry point. It contains the completed EOS-selector records, candidate evidence, analysis code, necessary source logs, model revision identifiers and manuscript files; model weights are obtained separately from the pinned checkpoints. The archive is prepared for accompanying submission and can be requested from the corresponding authors; public archival of this version remains pending. The source project repository is \\url{https://github.com/jackaugustyn/LLeakM}. Table~\\ref{tab:run_ids} identifies the original 512-token victim-response directories. All reported reconstruction results reside under \\path{experiment_validation/selector_eos_20261101/}: \\path{inference/cuda_full/} contains the 2100 archived-reference reconstructions, \\path{secondary/cuda_full/} the 3900 control, defense and MAP records, and \\path{inference/fresh_tinyllama_cuda/} and \\path{inference/fresh_phi_cuda/} the two 300-response verified-reference reconstructions."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "Each completed run binds its sample inventory,",
+      "before": "Each completed run binds its sample inventory, source hashes, model files, code, seeds and environment to a protocol. Independent checks verify complete unique keys, saved text metrics, encoder input tokenization, segment coverage and cohort counts. All planned reconstructions are present; partial probes are excluded. The \\path{inference_validation/} reports and the secondary summary contain the numerical sources for the manuscript, while \\path{final_review_20261101/} records the independent numerical audit. The \\path{article_revision_latest_20261101/} directory records the updated table and figure checks, plotting inputs, reproducible figure generator and manuscript build.",
+      "after": "Each completed run binds its sample inventory, source hashes, model files, code, seeds and environment to a protocol. Independent checks verify complete unique keys, saved text metrics, encoder input tokenization, segment coverage and cohort counts. All planned reconstructions are present; partial probes are excluded. The \\path{inference_validation/} and \\path{validation/} directories contain independent metric, candidate and statistical audits. In particular, \\path{validation/main_fresh_factledger.json} and \\path{validation/secondary_audit.json} supply the manuscript's numerical results. The \\path{article_revision_20261102/} directory records the integrated table checks, plotting inputs, figure generator, manuscript build and supplementary verifier."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "The \\path{review_revision_20261101/} directory",
+      "before": "The \\path{review_revision_20261101/} directory records the present source-bound edits, the candidate-selection audit, exact local-MAP and seed checks, and the new manuscript validation. The supplementary manifest binds the files actually distributed in S1; its verification entry point checks those hashes, inventory completeness and per-record lexical cosine without loading a model. Version-pinned reconstructor model cards and their retrieved text are included in the source-check evidence.",
+      "after": "The supplementary manifest binds the files actually distributed. Its verification entry point checks hashes, inventory completeness, per-record lexical cosine, candidate score boundaries and selection without loading model weights. Optional checks use the included pinned T5 tokenizers to verify encoder and output tokenization offline. The frozen victim-response inputs, including the 600 verified token-ID sequences, originate from \\path{experiment_validation/revalidation_20261031/collection/} and \\path{fresh_references/} and the original generation logs identified by their hashes. These files are source observations; earlier reconstruction predictions are not used in the manuscript."
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "The earlier \\path{analysis/repro_manifest.json}",
+      "before": "The earlier \\path{analysis/repro_manifest.json} and \\path{analysis/revision_snapshot_20261031.json} remain historical inventories and are not attestations of the new results. \\path{completed_manifest.json} records the completed experiment artifacts before their integration into the manuscript; it is an experiment inventory, not a hash inventory of the integrated manuscript. These provenance records cannot retroactively establish historical victim revisions or undocumented old reconstruction inputs.",
+      "after": "The campaign's \\path{completed_manifest.json} records the experiment artifacts before manuscript integration; the supplementary manifest separately binds the integrated article and distributed data. These provenance records do not retroactively establish historical victim revisions or undocumented historical token IDs. Version-pinned reconstructor model cards and their retrieved text document the checkpoint provenance."
+    },
+    {
+      "kind": "section",
+      "anchor": "app:selector",
+      "before": "\\section{Bounded Candidate-Selection Audit}\\label{app:selector}\nThe completed three-candidate campaign did not retain every sampled output ID and transition score. We therefore replayed 24 first-segment inputs with the original first-segment checkpoint, Transformers 4.46.3, float32 CUDA execution and saved per-record seeds. Before inference, selection was fixed to input-length extrema for two inputs from each of the seven archived and two verified-reference cohorts, plus six defense-pilot inputs covering baseline, bucketing, fixed padding, both batching sizes and random padding. This deliberately selected diagnostic set is not a random sample of the campaign.\n\nAll 24 original selected texts were reproduced exactly. The audit retained all 72 candidate sequences and step scores, and compared the executed full-step sum with a sum through the first generated EOS, including that EOS and excluding subsequent PAD. For a sequence without EOS, all generated steps are retained. The two rules selected different text in 18 of 24 cases: 11 of 14 archived inputs, three of four verified-reference inputs and four of six defense-pilot inputs. Post-EOS tails occurred in 38 of 72 candidates; each such tail included a nonfinite score, while no nonfinite score occurred before or at EOS. The normalization uses the sampling-processed scores, not the unconstrained model logits.\n\nThese findings establish that the defect can affect actual generated candidates. They do not estimate its prevalence over the campaign, a corrected full-response mean or the direction of change in any table. The original selector remains the definition of the three-candidate results reported here. Revising that definition requires replay of later segments because their context depends on the selected text. The one-candidate MAP study does not use this ranking. The supplementary \\path{review_revision_20261101/ranking_audit/} directory contains the fixed input selection, complete candidate records, EOS-masking tests, protocol and audit report.\n\n\n",
+      "after": "\\section{Full-Campaign Candidate and Metric Validation}\\label{app:selector}\nThe completed campaign retains 6600 reconstruction records, 86,788 decoder calls and 253,764 generated candidates. Of the decoder calls, 83,488 sample three candidates and 3300 produce the single candidate used in MAP. Every call records encoder inputs, generated token IDs, decoded text, the first-EOS boundary and selected text. The three-candidate calls additionally record transition scores; single-candidate MAP calls omit score computation and ranking. The audit recomputes sums through the first EOS, checks duplicate-text handling and tie order, and verifies the selected context used by subsequent segments.\n\nAcross the candidate records, 4,540,261 generated positions contribute to the selector scores. A total of 142,629 candidates have a returned tail after their first EOS, comprising 393,353 excluded positions. Each such tail includes a nonfinite processed score; no nonfinite score enters an EOS-bounded sum. Candidates without EOS retain all returned generation steps. These counts describe the complete retained candidate inventory. They do not measure semantic correctness or compare alternative ranking objectives.\n\nIndependent checks reproduce the reconstruction metrics, cohort summaries and statistical intervals from the current predictions. All requested archived and verified-reference segments were attempted; the archived cohort contains two empty terminal selections, which are retained in its scored outputs. The audit also verifies all 3900 secondary records and their source bindings. The accompanying supplementary verifier provides checks of these current outputs without GPU inference; full reproduction additionally requires the pinned model weights and recorded execution environment.\n\n"
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "\\dataavailability{",
+      "before": "\\dataavailability{The source project repository is \\url{https://github.com/jackaugustyn/LLeakM}. The frozen local Supplementary Data S1 package, \\texttt{LLeakM-S1-20261101-v1}, contains completed reconstructions, generated token IDs, source logs, reference-validation records, analysis code and a file-level SHA-256 manifest with a verification entry point. It is prepared for accompanying submission and available from the corresponding authors on request; public archival of this completed version remains pending. Appendix~\\ref{app:runs} identifies its version, contents and provenance boundaries.}",
+      "after": "\\dataavailability{The source project repository is \\url{https://github.com/jackaugustyn/LLeakM}. The frozen local supplementary package \\texttt{LLeakM-S2-EOS-20261102-v1} contains the completed EOS-selector reconstructions and candidate evidence, verified victim token IDs, necessary source logs, reference-validation records, analysis code and a file-level SHA-256 manifest with a verification entry point. It is prepared for accompanying submission and available from the corresponding authors on request; public archival of this completed version remains pending. Appendix~\\ref{app:runs} identifies its version, contents and provenance boundaries.}"
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "The control and defense experiments use explicit",
+      "before": "The control and defense experiments use explicit BLAKE2s-derived, condition-specific decoder seeds and record every seed and transformed vector. Shuffling uses seed $20260706+17i$ for prompt index $i$. Cross-prompt inputs cycle the trace of donor index $(i\\bmod30)+1$ to the target's trace length. Random padding has a separately recorded transformation seed, and its payload overhead is calculated from the actual saved padding realization. These are newly specified pilot random draws, not recovered historical seeds. The control and defense baseline reconstructions use distinct decoder seeds, so even their identical undefended length traces can yield different mean scores. Historical \\texttt{hash()}-dependent seeds and inconsistent padding-cost summaries are excluded from the current results.",
+      "after": "The control and defense experiments use explicit BLAKE2s-derived, condition-specific decoder seeds and record every seed and transformed vector. Shuffling uses seed $20260706+17i$ for prompt index $i$. Cross-prompt inputs cycle the trace of donor index $(i\\bmod30)+1$ to the target's trace length. Random padding has a separately recorded transformation seed, and its payload overhead is calculated from the actual saved padding realization. The current campaign reuses these frozen seeds and vectors. The control and defense baseline reconstructions use distinct decoder seeds, so even their identical undefended length traces can yield different mean scores."
+    },
+    {
+      "kind": "exact",
+      "before": "For newly collected streams the collector also checks",
+      "after": "For the verified-reference streams the collector also checks"
+    },
+    {
+      "kind": "exact",
+      "before": "Holding the newly recorded token IDs fixed",
+      "after": "Holding the separately recorded token IDs fixed"
+    },
+    {
+      "kind": "exact",
+      "before": "legacy decoding of newly recorded token IDs reproduces",
+      "after": "legacy decoding of the saved token IDs reproduces"
+    },
+    {
+      "kind": "exact",
+      "before": "For fixed newly recorded token IDs",
+      "after": "For fixed saved token IDs"
+    },
+    {
+      "kind": "exact",
+      "before": "Newly generated references are verified for TinyLlama and Phi-3.5-mini",
+      "after": "Separately collected references are verified for TinyLlama and Phi-3.5-mini"
+    },
+    {
+      "kind": "exact",
+      "before": "\\path{experiment_validation/revalidation_20261031/collection/} and \\path{fresh_references/}",
+      "after": "\\path{experiment_validation/revalidation_20261031/}, specifically its \\path{collection/} and \\path{fresh_references/} subdirectories"
+    },
+    {
+      "kind": "table",
+      "label": "tab:protocol_overview"
+    },
+    {
+      "kind": "table",
+      "label": "tab:model_metadata"
+    },
+    {
+      "kind": "table",
+      "label": "tab:length_covariates"
+    },
+    {
+      "kind": "table",
+      "label": "tab:encoder_coverage"
+    },
+    {
+      "kind": "table",
+      "label": "tab:trace_controls"
+    },
+    {
+      "kind": "table",
+      "label": "tab:main_results"
+    },
+    {
+      "kind": "table",
+      "label": "tab:eos_completeness"
+    },
+    {
+      "kind": "table",
+      "label": "tab:statistical_results"
+    },
+    {
+      "kind": "table",
+      "label": "tab:scenario_sensitivity"
+    },
+    {
+      "kind": "table",
+      "label": "tab:fresh_results"
+    },
+    {
+      "kind": "table",
+      "label": "tab:defense_results"
+    },
+    {
+      "kind": "table",
+      "label": "tab:robustness"
+    },
+    {
+      "kind": "table",
+      "label": "tab:run_ids"
+    }
+  ]
+}

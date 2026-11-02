@@ -1,0 +1,28 @@
+[
+  {
+    "mode": "complete",
+    "exit_code": 0,
+    "following_stage_started": true,
+    "pass": true
+  },
+  {
+    "mode": "incomplete",
+    "exit_code": 1,
+    "following_stage_started": false,
+    "pass": true
+  },
+  {
+    "mode": "crashed",
+    "exit_code": 1,
+    "following_stage_started": false,
+    "pass": true
+  },
+  {
+    "case": "live_orphan_refused",
+    "pass": true
+  },
+  {
+    "case": "SIGTERM_cleans_owned_child",
+    "pass": true
+  }
+]

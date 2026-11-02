@@ -1,0 +1,38 @@
+{
+  "overall_checks_passed": true,
+  "scope": "Numerical validity and traceable computation under declared instrumented protocols; not a production disclosure assessment",
+  "main_reconstructions": 2100,
+  "secondary_reconstructions": 3900,
+  "fresh_generations": 600,
+  "fresh_reference_reconstructions": 600,
+  "full_and_first_metrics_independently_checked": 2700,
+  "fixed_ID_legacy_replay_matches": 600,
+  "main_significant_pairs": 15,
+  "controls_significant_contrasts": 3,
+  "defenses_significant_contrasts": 10,
+  "exact_phi_0_5_count": 0,
+  "factledger_sha256": {
+    "audit_main_fresh.py": "5c189d58763bd52c921c8792aca2dbf29ea754bfc6b865a38baab03fb5171b68",
+    "independent_dp.cpp": "6c713091f29604230b18c4e9abc41c5c0628f329e02cedf7ff784f6c36cbfc70",
+    "main_fresh_factledger.json": "bebf5cf314062cedd2cc76900ef61b0284e3282ea3d723a0d226382a51174bee",
+    "secondary_audit.py": "b5cc093b1f347d51c4a4c02da0f09d158a7f66ea268404153045b80b086c916c",
+    "secondary_audit.json": "bd819964e98943530f88303e7f11d57765208b18fadf50dce342849cd12a8eb3",
+    "fresh_legacy_replay.py": "79b4ac42a5cd28ec5c94d4a33e1272440f3dfa40bbb1145f2788b79af657de8f",
+    "fresh_legacy_replay.json": "86b1ea9ee7273a91805be0e57d63f4f0b9ac5d03f8c7272e6f7eb04cb20c7b16",
+    "completed_manifest_audit.json": "774baf9bd0c94700d9c5fca4c4c001303126936c1d012c85a44ceeab29df386c",
+    "WERYFIKACJA_KONCOWA.md": "46a6e5c0929e580318c0900bd6822c762a9cfb5f841849c8f06910bdcb98ef77",
+    "paired_detokenization_protocol_check.json": "cbb02de862bbef6de439f0c37fb48ab19351c07fb74e6260b3d9e54640bebb05",
+    "paired_detokenization_score_contrast.json": "d0f1c94a964fa59ef8a306c530df0fafa1e050862ff9b1174431a65436dae862",
+    "check_manuscript_numbers.py": "e0c0c06b8df6b94329ccfb27f19937a3ce3c561817cd553c035616174a6233c2",
+    "manuscript_numeric_validation.json": "91d053c05075fcfdcf8ea0a67b6276da6564afa3c549766ee215019a3bf4e085"
+  },
+  "manuscript_integration_validation": {
+    "status": "PASS",
+    "numeric_fields": 454,
+    "table_rows": 85,
+    "tables": 10,
+    "figures": 2,
+    "manuscript_sha256": "76de97bf22e37d71dd348812f49fced10185bd39947ec12b7b27f8b38b531bdb",
+    "prose_and_rendering": "separate review required"
+  }
+}

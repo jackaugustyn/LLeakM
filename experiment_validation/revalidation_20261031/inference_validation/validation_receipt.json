@@ -1,0 +1,43 @@
+{
+  "files_sha256": {
+    "verify_inference.py": "f826fccf005f866514126fb442989380a770a4e63c053d0bfb0f357721a8407f",
+    "test_verifier.py": "ea59957f43a73c5b73a4a436a2e21361c940899e046093173e8854ee2cbdf87e",
+    "README.md": "b2a8e89114c7f64ac736bccbe85c2c1b5254f1beb3a60fb525645c92eeeb3ad2"
+  },
+  "existing_regression_tests": {
+    "count": 23,
+    "status": "PASS",
+    "command": "python3 -m unittest discover -s experiment_validation/tests -v"
+  },
+  "verifier_regression_tests": {
+    "count": 5,
+    "status": "PASS",
+    "command": "python3 -m unittest discover -s experiment_validation/revalidation_20261031/inference_validation -p 'test_*.py' -v"
+  },
+  "real_cpu_record": {
+    "records": 1,
+    "segments": 35,
+    "status": "PARTIAL_DIAGNOSTIC",
+    "default_exit_code": 2
+  },
+  "real_cuda_snapshot": {
+    "records": 41,
+    "status": "PARTIAL_DIAGNOSTIC",
+    "early_stops": 0,
+    "truncated_encoder_calls": 38,
+    "integrity_checks": "PASS"
+  },
+  "independent_segmentation_random_cases": 1000,
+  "independent_metric_crosschecks": 605,
+  "fresh_tokenizer_backend_vs_AutoTokenizer_cases": 6,
+  "fresh_synthetic_aggregate_smoke": {
+    "records": 600,
+    "models": 2,
+    "scenarios_per_model": 60,
+    "old_comparisons": null,
+    "bootstrap_draws_for_test_only": 50,
+    "status": "PASS",
+    "synthetic_statistics_saved": false
+  },
+  "scope": "No model inference performed by verifier. Full campaign and real fresh-reference end-to-end validation await queued computations."
+}

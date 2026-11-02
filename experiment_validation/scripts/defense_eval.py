@@ -218,8 +218,10 @@ def wilcoxon_signed_rank(x: np.ndarray, y: np.ndarray) -> dict:
         rb = (w_pos - w_neg) / (w_pos + w_neg)
         return {"n": n, "p_value": 1.0, "rank_biserial": rb}
     cc = 0.5
-    z = (W - mean_w + cc) / math.sqrt(var_w) if W < mean_w else (W - mean_w - cc) / math.sqrt(var_w)
-    p = 2.0 * (1.0 - 0.5 * (1.0 + math.erf(abs(z) / math.sqrt(2.0))))
+    # At the null center, no continuity correction is needed.
+    z = (W - mean_w + cc) / math.sqrt(var_w) if W < mean_w else 0.0
+    # Evaluate the normal tail directly instead of subtracting nearly equal values.
+    p = math.erfc(abs(z) / math.sqrt(2.0))
     rb = (w_pos - w_neg) / (w_pos + w_neg)
     return {"n": n, "p_value": min(1.0, max(0.0, p)), "rank_biserial": rb}
 

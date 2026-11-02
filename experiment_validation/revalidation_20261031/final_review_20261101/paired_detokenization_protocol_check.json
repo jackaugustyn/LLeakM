@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "models": [
+    {
+      "cohort": "fresh_tinyllama_cuda",
+      "n": 300,
+      "all_legacy_text_and_vector_inputs_bound_to_main_rerun": true,
+      "all_reconstruction_seeds_equal_per_pair": true,
+      "only_protocol_differences": {
+        "records": {
+          "main": 2100,
+          "fresh": 300
+        },
+        "models": {
+          "main": {
+            "qwen_1_5b": 300,
+            "qwen_3b": 300,
+            "llama_3_2_3b": 300,
+            "gemma_2_2b": 300,
+            "phi_1_5": 300,
+            "tinyllama_1_1b": 300,
+            "phi_3_5_mini": 300
+          },
+          "fresh": {
+            "tinyllama_1_1b": 300
+          }
+        },
+        "diagnostic_reference_records": {
+          "main": 600,
+          "fresh": 0
+        },
+        "input_sha256": {
+          "main": "cf4ca0307ffb97654f2e302855e4f8a1cbac57fa3f837ba1356c615b988cef3a",
+          "fresh": "aeea3d72200af1e121a2877bd2b91434d60f709c56aa8aba66c910d87d794e19"
+        }
+      }
+    },
+    {
+      "cohort": "fresh_phi_cuda",
+      "n": 300,
+      "all_legacy_text_and_vector_inputs_bound_to_main_rerun": true,
+      "all_reconstruction_seeds_equal_per_pair": true,
+      "only_protocol_differences": {
+        "records": {
+          "main": 2100,
+          "fresh": 300
+        },
+        "models": {
+          "main": {
+            "qwen_1_5b": 300,
+            "qwen_3b": 300,
+            "llama_3_2_3b": 300,
+            "gemma_2_2b": 300,
+            "phi_1_5": 300,
+            "tinyllama_1_1b": 300,
+            "phi_3_5_mini": 300
+          },
+          "fresh": {
+            "phi_3_5_mini": 300
+          }
+        },
+        "diagnostic_reference_records": {
+          "main": 600,
+          "fresh": 0
+        },
+        "input_sha256": {
+          "main": "cf4ca0307ffb97654f2e302855e4f8a1cbac57fa3f837ba1356c615b988cef3a",
+          "fresh": "d84017cfdc3d581c8315e6a0479fdbedaab6efa1d33b0cec1e62ba63cc145e2c"
+        }
+      }
+    }
+  ],
+  "scope": "Metadata and exact-input binding for matched detokenization comparison; no inference rerun and no historical token-ID recovery. T5 device/precision/code/checkpoint/decode parameters coincide; both input/reference rendering change together. This is not a cross-deployment causal vulnerability estimate."
+}

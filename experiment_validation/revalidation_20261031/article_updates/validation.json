@@ -1,0 +1,37 @@
+{
+  "status": "validated_source_edits_not_pdf_build",
+  "archived_numeric_rows_removed": [
+    " & rand\\_pad\\_8 & 0.1033 & [0.0871, 0.1203] & 65.7\\% & 78.5\\% & 96 \\\\",
+    " & rand\\_pad\\_8 & 0.1004 & [0.0834, 0.1186] & 61.0\\% & 81.9\\% & 96 \\\\"
+  ],
+  "new_numeric_rows": [
+    "Qwen2.5-1.5B & 0.5680 & [0.5520, 0.5834] \\\\",
+    "Qwen2.5-3B & 0.5521 & [0.5393, 0.5652] \\\\",
+    "Phi-1.5 & 0.5383 & [0.5248, 0.5516] \\\\",
+    "Llama-3.2-3B & 0.5360 & [0.5205, 0.5511] \\\\",
+    "Gemma-2-2B & 0.5170 & [0.5076, 0.5266] \\\\",
+    "Phi-3.5-mini$^{\\dagger}$ & 0.0434 & [0.0384, 0.0489] \\\\",
+    "TinyLlama-1.1B$^{\\dagger}$ & 0.0302 & [0.0262, 0.0345] \\\\",
+    " & rand\\_pad\\_8 & 0.1033 & [0.0871, 0.1203] & 65.7\\% & 79.8\\%$^{*}$ & 96 \\\\",
+    " & rand\\_pad\\_8 & 0.1004 & [0.0834, 0.1186] & 61.0\\% & 83.1\\%$^{*}$ & 96 \\\\"
+  ],
+  "citation_commands_preserved": 18,
+  "scenario_ci_rows_checked": 7,
+  "scenario_significant_pairs": 17,
+  "expected_overhead_checked": [
+    79.7553391747032,
+    83.13361394684735
+  ],
+  "expected_mean_overhead": 81.44447656077527,
+  "pdf_unchanged": true,
+  "files": {
+    "article1/template.tex": {
+      "sha256": "6b64f32aa55be2fa4ece7858722f344c0e76a4c07d98771bfa55d678ab5e4ef7",
+      "bytes": 76035
+    },
+    "experiment_validation/README.md": {
+      "sha256": "68d9dcaa192f66f28795550be64fd03535095c52dbe5831c9893b83bf5c8cb0a",
+      "bytes": 18278
+    }
+  }
+}

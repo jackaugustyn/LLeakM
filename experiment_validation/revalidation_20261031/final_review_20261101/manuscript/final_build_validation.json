@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-11-01T16:15:48.086318+00:00",
+  "latexmk_exit_code": 0,
+  "pages": 19,
+  "overfull_boxes": false,
+  "undefined_references": false,
+  "visual_review": {
+    "all_pages_contact_sheet": 19,
+    "detail_pages": [
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "result": "Tables and both updated figures readable, no clipping or label overlap observed"
+  },
+  "numeric_fields_checked": 454,
+  "tables_checked": 10,
+  "figures_checked": 2,
+  "root_prose_edits": [
+    "Removed potentially ambiguous Complete reconstruction phrase from abstract",
+    "Rephrased token-budget and segment-limit sentence to remove overfull line; parameters unchanged"
+  ],
+  "sha256": {
+    "article1/template.tex": "e40809532200c68d6e10e4789b8a8dbb65739603fb240d8bfac31fdcb6b05c5c",
+    "article1/template.pdf": "2688d2af3ba027b730f31410bc872ac2855535a848e6d69a322085c697fb3ec3",
+    "experiment_validation/revalidation_20261031/final_review_20261101/manuscript/compile.log": "227e74454405ef40e2d295a7f0566d7c39b6a37210b9c5f5464bf7e35628d970"
+  }
+}

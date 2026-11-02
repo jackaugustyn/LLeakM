@@ -1,0 +1,108 @@
+{
+  "scope": "R2-W2, R2-W3, auxiliary li2026length bibliography correction only; no manuscript edits or numerical experiments.",
+  "date": "2026-11-01",
+  "weiss_result": {
+    "reference": "Weiss et al., USENIX Security 2024, printed p.3375, Sections5.1 and5.2",
+    "source_lines": [
+      621,
+      642
+    ],
+    "unit": "first heuristic segment of each of10000 test responses",
+    "high_accuracy": {
+      "rate_percent": 27,
+      "measure": "MiniLM sentence-embedding cosine",
+      "threshold_strictly_greater_than": 0.9
+    },
+    "attack_success": {
+      "reported_rate": "over52.7%",
+      "approximate_percent": 53,
+      "measure": "MiniLM sentence-embedding cosine",
+      "threshold_strictly_greater_than": 0.5
+    },
+    "comparison_limit": "Not the current term-frequency cosine or full-response LR@0.5."
+  },
+  "training": {
+    "reference": "Weiss printed pp.3373-3374, Sections4.5 and5.1; pinned checkpoint README files below",
+    "source_lines": [
+      531,
+      589
+    ],
+    "dataset": "UltraChat general inquiries / Questions About the World; first answer per dialogue",
+    "first_model": "first segment without preceding context",
+    "middle_model": "other segments with preceding segment text as context",
+    "source_epochs": {
+      "first": 50,
+      "middle": 40
+    },
+    "recommended_scope": "Dataset and roles sufficient; epoch counts optional. Public model cards assert link to the USENIX24 paper and T5-Large fine-tuning. This documents provenance but does not independently reproduce training or audit training records."
+  },
+  "units": {
+    "reference": "Weiss printed p.3370, Section3.1",
+    "source_lines": [
+      260,
+      273
+    ],
+    "source_unit": "character length of token text",
+    "current_unit": "UTF-8 byte length of emitted fragment",
+    "limit": "Equal for ASCII text, potentially unequal for non-ASCII; distinguish alongside tokenizer and response-style shift without attributing measured score differences solely to units."
+  },
+  "li": {
+    "reference": "Official USENIX page BibTeX lines407-418 and publishedPDF firstpage",
+    "title": "From Length to Content: Token-Length Side-Channel Attacks on LLM API Merged Outputs",
+    "authors": [
+      "Sijia Li",
+      "Tianyu Cui",
+      "Miao Chen",
+      "Xinjie Lin",
+      "Zheyuan Gu",
+      "Xinhao Deng",
+      "Ke Xu",
+      "Qi Li"
+    ],
+    "booktitle": "35th USENIX Security Symposium (USENIX Security26)",
+    "year": 2026,
+    "pages": "2187--2206",
+    "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/li-sijia",
+    "note": "Replace Accepted for publication; existing author spellings/order correct."
+  },
+  "cached_primary_sources": [
+    {
+      "path": "reviews/ars_electronics_20261101/phase1_panel/domain_artifacts/weiss2024_pdf.pdf",
+      "sha256": "5e27c7bc75f01045f122281d863b14a13b704ac8e4380a50f6cbff95592c4493"
+    },
+    {
+      "path": "reviews/ars_electronics_20261101/phase1_panel/domain_artifacts/weiss2024_pdf.txt",
+      "sha256": "a372eb79ecaef74de368dd08408b4749594013f3852d6e5e1be223292db62739"
+    },
+    {
+      "path": "reviews/ars_electronics_20261101/phase1_panel/domain_artifacts/li2026_page.html",
+      "sha256": "e05073b1ec5b9c457e1bf42aa23f971ba74735bfd51fc3b4510f8216448fa5e6"
+    },
+    {
+      "path": "reviews/ars_electronics_20261101/phase1_panel/domain_artifacts/li2026_pdf.pdf",
+      "sha256": "c34368cb032592376d55775a1e597844da27dc39f76c66ba3938b2a4379ddbf3"
+    },
+    {
+      "path": "reviews/ars_electronics_20261101/phase1_panel/domain_artifacts/li2026_pdf.txt",
+      "sha256": "ab2558c5d2de99d45ffcc1a46d6cbe5cf59fcf8f4f4f9e6967184b232d3de252"
+    }
+  ],
+  "pinned_model_cards": [
+    {
+      "model": "royweiss1/T5_FirstSentences",
+      "revision": "057cf090b719f5cf89da504babd2122d404e0953",
+      "url": "https://huggingface.co/royweiss1/T5_FirstSentences/raw/057cf090b719f5cf89da504babd2122d404e0953/README.md",
+      "status": 200,
+      "sha256": "04c3a9b57bad98f03b553516b24e8ff2b1a66fe922536216ee9788f9df93bb93",
+      "text": "---\ndatasets:\n- royweiss1/GPT_Keylogger_Dataset\nlanguage:\n- en\nlicense: mit\n---\n\nThis is the model used in the USENIX Security 24' paper: \"What Was Your Prompt? A Remote Keylogging Attack on AI Assistants\".\nIt is a fine-tune of T5-Large that was trained to decipher ChatGPT's encrypted answers based only on the response's token lengths.\nThis model is the first-sentences model. Meaning it was trained to decipher only the first sentences of each response.\nIt was Trained on UltraChat Dataset - Questions About the world, and only the first answer of each dialog.\n\n\nThe Dataset split can be found here: https://huggingface.co/datasets/royweiss1/GPT_Keylogger_Dataset\n\nThe Github repository of the paper (containing also the training code): https://github.com/royweiss1/GPT_Keylogger\n\n\n## Citation ##\nIf you find this model helpful please cite our paper:\n\n```\n@inproceedings{weissLLMSideChannel,\n  title={What Was Your Prompt? A Remote Keylogging Attack on AI Assistants},\n  author={Weiss, Roy and Ayzenshteyn, Daniel and Amit Guy and Mirsky, Yisroel}\n  booktitle={USENIX Security},\n  year={2024}\n}\n```"
+    },
+    {
+      "model": "royweiss1/T5_MiddleSentences",
+      "revision": "07e2b3fc96bc129eb4a2871e58731c07e889cecc",
+      "url": "https://huggingface.co/royweiss1/T5_MiddleSentences/raw/07e2b3fc96bc129eb4a2871e58731c07e889cecc/README.md",
+      "status": 200,
+      "sha256": "13227d4b924e4e23a500cd481b1c305e9bcedbfcf36d570934db22415fc9fa28",
+      "text": "---\ndatasets:\n- royweiss1/GPT_Keylogger_Dataset\nlanguage:\n- en\nlicense: mit\n---\nThis is the model used in the USENIX Security 24' paper: \"What Was Your Prompt? A Remote Keylogging Attack on AI Assistants\".\nIt is a fine-tune of T5-Large that was trained to decipher ChatGPT's encrypted answers based only on the response's token lengths.\nThis model is the middle-sentences model. Meaning it was trained to decipher all of sentences which are not the first sentences of response, using the priviouse sentence as context to predict the current.\nIt was Trained on UltraChat Dataset - Questions About the world, and only the first answer of each dialog.\n\n\nThe Dataset split can be found here: https://huggingface.co/datasets/royweiss1/GPT_Keylogger_Dataset\n\nThe Github repository of the paper (containing also the training code): https://github.com/royweiss1/GPT_Keylogger\n\n\n## Citation ##\nIf you find this model helpful please cite our paper:\n\n```\n@inproceedings{weissLLMSideChannel,\n  title={What Was Your Prompt? A Remote Keylogging Attack on AI Assistants},\n  author={Weiss, Roy and Ayzenshteyn, Daniel and Amit Guy and Mirsky, Yisroel}\n  booktitle={USENIX Security},\n  year={2024}\n}\n```"
+    }
+  ]
+}

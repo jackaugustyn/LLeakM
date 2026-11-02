@@ -1,0 +1,159 @@
+\relax 
+\providecommand*\new@tpo@label[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\bibstyle{Definitions/mdpi}
+\newmarginnote{note.1.1}{{1}{10945661sp}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\citation{weiss2024prompt}
+\citation{kocher1996timing}
+\citation{song2001timing,chen2010sidechannel,cai2012touching,sirinam2018deep}
+\citation{wright2009morphing,dyer2012peekaboo}
+\citation{weiss2024prompt}
+\citation{li2026length}
+\citation{whisperleak2025}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
+\citation{raffel2020exploring}
+\citation{levenshtein1966binary}
+\citation{lin2004rouge}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Materials and Methods}{3}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Threat Model and Objective}{3}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Information-Theoretic Interpretation}{3}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Streaming Harness and Trace Collection}{3}{subsection.3.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Instrumented threat model. The evaluator verifies logged payload lengths and supplies them to the attacker without the prompt or token identities. Passive recovery of event boundaries from encrypted transport is outside the experiment.\relax }}{4}{figure.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:threat_model}{{1}{4}{Instrumented threat model. The evaluator verifies logged payload lengths and supplies them to the attacker without the prompt or token identities. Passive recovery of event boundaries from encrypted transport is outside the experiment.\relax }{figure.caption.1}{}}
+\newlabel{fig:threat_model@cref}{{[figure][1][]1}{[1][3][]4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Measurement and Reference-Text Audit}{4}{subsection.3.4}\protected@file@percent }
+\newlabel{sec:measurement-audit}{{3.4}{4}{Measurement and Reference-Text Audit}{subsection.3.4}{}}
+\newlabel{sec:measurement-audit@cref}{{[subsection][4][3]3.4}{[1][4][]4}}
+\citation{weiss2024prompt}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Reconstruction Pipeline}{5}{subsection.3.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Reconstruction stages. Inputs come from the collection paths in Section\nobreakspace  {}\ref  {sec:measurement-audit}; defenses and any MAP inverse precede segmentation. Each T5 input, including its instruction and context, is truncated to 80 tokens, and the output length is also capped at 80. The primary campaign decodes all available segments, the documented 96-token pilot recipe allows up to three, and the MAP study decodes the first. All score against the full stored response.\relax }}{5}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:pipeline}{{2}{5}{Reconstruction stages. Inputs come from the collection paths in Section~\ref {sec:measurement-audit}; defenses and any MAP inverse precede segmentation. Each T5 input, including its instruction and context, is truncated to 80 tokens, and the output length is also capped at 80. The primary campaign decodes all available segments, the documented 96-token pilot recipe allows up to three, and the MAP study decodes the first. All score against the full stored response.\relax }{figure.caption.2}{}}
+\newlabel{fig:pipeline@cref}{{[figure][2][]2}{[1][5][]5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Prompt Corpus and Experimental Protocol}{5}{subsection.3.6}\protected@file@percent }
+\citation{qwen25report,llama3report,llama32blog,gemma2report,phi15report,tinyllama2024,phi3report}
+\citation{levenshtein1966binary}
+\citation{lin2004rouge}
+\citation{salton1975vector}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Victim models in the archived-reference cohort. TinyLlama and Phi-3.5-mini are diagnostic in that cohort and also evaluated separately with newly generated, validated references. Parameter counts follow the cited model cards and technical reports.\relax }}{6}{table.caption.3}\protected@file@percent }
+\newlabel{tab:model_metadata}{{1}{6}{Victim models in the archived-reference cohort. TinyLlama and Phi-3.5-mini are diagnostic in that cohort and also evaluated separately with newly generated, validated references. Parameter counts follow the cited model cards and technical reports.\relax }{table.caption.3}{}}
+\newlabel{tab:model_metadata@cref}{{[table][1][]1}{[1][6][]6}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Stored response-length covariates ($N=300$ per model), including the two diagnostic series. Character and byte counts refer to emitted token text, excluding framing bytes. Truncation is the percentage of samples with \texttt  {token\_count}$\geq 512$.\relax }}{6}{table.caption.4}\protected@file@percent }
+\newlabel{tab:length_covariates}{{2}{6}{Stored response-length covariates ($N=300$ per model), including the two diagnostic series. Character and byte counts refer to emitted token text, excluding framing bytes. Truncation is the percentage of samples with \texttt {token\_count}$\geq 512$.\relax }{table.caption.4}{}}
+\newlabel{tab:length_covariates@cref}{{[table][2][]2}{[1][6][]6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7}Evaluation Metrics}{6}{subsection.3.7}\protected@file@percent }
+\citation{efron1994bootstrap}
+\citation{wilcoxon1945individual}
+\citation{holm1979simple}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.8}Trace-Information Controls}{7}{subsection.3.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.9}Statistical Analysis}{7}{subsection.3.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.10}Defense Evaluation Protocol}{8}{subsection.3.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.11}Repeated Decoder Seeds and Adaptive Attacker}{8}{subsection.3.11}\protected@file@percent }
+\newlabel{sec:robustness-methods}{{3.11}{8}{Repeated Decoder Seeds and Adaptive Attacker}{subsection.3.11}{}}
+\newlabel{sec:robustness-methods@cref}{{[subsection][11][3]3.11}{[1][8][]8}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Recorded first-segment encoder inputs exceeding 80 T5 tokens in the frozen MAP conditions (30 unique test inputs per model, each decoded with five seeds). The limit includes the instruction prefix. Counts describe encoder coverage, not reconstruction quality.\relax }}{9}{table.caption.5}\protected@file@percent }
+\newlabel{tab:encoder_coverage}{{3}{9}{Recorded first-segment encoder inputs exceeding 80 T5 tokens in the frozen MAP conditions (30 unique test inputs per model, each decoded with five seeds). The limit includes the instruction prefix. Counts describe encoder coverage, not reconstruction quality.\relax }{table.caption.5}{}}
+\newlabel{tab:encoder_coverage@cref}{{[table][3][]3}{[1][9][]9}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{9}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Sensitivity to Partial Trace Ablations}{9}{subsection.4.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Partial trace ablations using logged token-byte lengths from the 96-token pilot ($n=30$ prompts per model and condition). Each run decodes up to three heuristic segments with three samples per segment, 80-token T5 input and output limits, and the full stored response as reference. Intervals are percentile-bootstrap 95\% confidence intervals for the mean.\relax }}{10}{table.caption.6}\protected@file@percent }
+\newlabel{tab:trace_controls}{{4}{10}{Partial trace ablations using logged token-byte lengths from the 96-token pilot ($n=30$ prompts per model and condition). Each run decodes up to three heuristic segments with three samples per segment, 80-token T5 input and output limits, and the full stored response as reference. Intervals are percentile-bootstrap 95\% confidence intervals for the mean.\relax }{table.caption.6}{}}
+\newlabel{tab:trace_controls@cref}{{[table][4][]4}{[1][10][]10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Reconstruction from Validated Archived Lengths}{10}{subsection.4.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Complete reconstructions from validated archived payload lengths ($N=300$ per model; 512-token victim budget; all available heuristic segments; three samples per segment; 80-token T5 input and output limits). Full archived emitted responses are the references. The final two rows are reference-format diagnostics; input provenance is verified for every row.\relax }}{10}{table.caption.7}\protected@file@percent }
+\newlabel{tab:main_results}{{5}{10}{Complete reconstructions from validated archived payload lengths ($N=300$ per model; 512-token victim budget; all available heuristic segments; three samples per segment; 80-token T5 input and output limits). Full archived emitted responses are the references. The final two rows are reference-format diagnostics; input provenance is verified for every row.\relax }{table.caption.7}{}}
+\newlabel{tab:main_results@cref}{{[table][5][]5}{[1][10][]10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Mean lexical scores from validated archived lengths with prompt-bootstrap 95\% confidence intervals ($N=300$ per model; all heuristic segments scored against full archived references). Each segment uses three samples and 80-token T5 input and output limits. $\dagger $ marks reference-format diagnostics. Rounded error bars display the asymmetric endpoints in Table\nobreakspace  {}\ref  {tab:statistical_results}.\relax }}{11}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:model_ci}{{3}{11}{Mean lexical scores from validated archived lengths with prompt-bootstrap 95\% confidence intervals ($N=300$ per model; all heuristic segments scored against full archived references). Each segment uses three samples and 80-token T5 input and output limits. $\dagger $ marks reference-format diagnostics. Rounded error bars display the asymmetric endpoints in Table~\ref {tab:statistical_results}.\relax }{figure.caption.8}{}}
+\newlabel{fig:model_ci@cref}{{[figure][3][]3}{[1][10][]11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Completeness: All Samples versus EOS-Only}{11}{subsection.4.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces EOS subsets of the archived-reference cohort ($N=300$ per model; validated length inputs, all segments, 80-token T5 input and output limits). EOS-only metrics select \texttt  {response\_complete} samples; they do not certify correct reconstructions. Phi-3.5-mini and TinyLlama remain reference-format diagnostics.\relax }}{11}{table.caption.9}\protected@file@percent }
+\newlabel{tab:eos_completeness}{{6}{11}{EOS subsets of the archived-reference cohort ($N=300$ per model; validated length inputs, all segments, 80-token T5 input and output limits). EOS-only metrics select \texttt {response\_complete} samples; they do not certify correct reconstructions. Phi-3.5-mini and TinyLlama remain reference-format diagnostics.\relax }{table.caption.9}{}}
+\newlabel{tab:eos_completeness@cref}{{[table][6][]6}{[1][11][]11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Statistical Uncertainty and Pairwise Tests}{12}{subsection.4.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Intervals for reconstructions from validated archived lengths ($N=300$ per model; all segments, 80-token T5 input and output limits). Mean-$\phi $ intervals use 10,000 prompt-index bootstrap resamples; $\mathrm  {LR}@0.5$ intervals are Wilson 95\% intervals. These nominal intervals do not include shared-scenario dependence or reference-format error. The final two rows remain diagnostic.\relax }}{12}{table.caption.10}\protected@file@percent }
+\newlabel{tab:statistical_results}{{7}{12}{Intervals for reconstructions from validated archived lengths ($N=300$ per model; all segments, 80-token T5 input and output limits). Mean-$\phi $ intervals use 10,000 prompt-index bootstrap resamples; $\mathrm {LR}@0.5$ intervals are Wilson 95\% intervals. These nominal intervals do not include shared-scenario dependence or reference-format error. The final two rows remain diagnostic.\relax }{table.caption.10}{}}
+\newlabel{tab:statistical_results@cref}{{[table][7][]7}{[1][12][]12}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Exploratory scenario-level sensitivity of the validated-length reconstructions: five prompt variants averaged within each of 60 scenarios per model, with 10,000 scenario-bootstrap resamples. These intervals concern the corpus mean; $\dagger $ denotes a reference-format diagnostic.\relax }}{12}{table.caption.11}\protected@file@percent }
+\newlabel{tab:scenario_sensitivity}{{8}{12}{Exploratory scenario-level sensitivity of the validated-length reconstructions: five prompt variants averaged within each of 60 scenarios per model, with 10,000 scenario-bootstrap resamples. These intervals concern the corpus mean; $\dagger $ denotes a reference-format diagnostic.\relax }{table.caption.11}{}}
+\newlabel{tab:scenario_sensitivity@cref}{{[table][8][]8}{[1][12][]12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Separate Experiments with Verified Reference Decoding}{12}{subsection.4.5}\protected@file@percent }
+\newlabel{sec:fresh}{{4.5}{12}{Separate Experiments with Verified Reference Decoding}{subsection.4.5}{}}
+\newlabel{sec:fresh@cref}{{[subsection][5][4]4.5}{[1][12][]12}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Separate cohorts with newly generated, verified full-sequence references ($N=300$ per model; 512-token victim limit; all segments and three T5 samples per segment). Mean-$\phi $ intervals resample 60 scenarios. These rows form a targeted reference-validation experiment and are analyzed separately from the seven archived-reference cohorts.\relax }}{13}{table.caption.12}\protected@file@percent }
+\newlabel{tab:fresh_results}{{9}{13}{Separate cohorts with newly generated, verified full-sequence references ($N=300$ per model; 512-token victim limit; all segments and three T5 samples per segment). Mean-$\phi $ intervals resample 60 scenarios. These rows form a targeted reference-validation experiment and are analyzed separately from the seven archived-reference cohorts.\relax }{table.caption.12}{}}
+\newlabel{tab:fresh_results@cref}{{[table][9][]9}{[1][13][]13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Effects of Framing Transformations on the Frozen Reconstructor}{13}{subsection.4.6}\protected@file@percent }
+\newlabel{sec:defense}{{4.6}{13}{Effects of Framing Transformations on the Frozen Reconstructor}{subsection.4.6}{}}
+\newlabel{sec:defense@cref}{{[subsection][6][4]4.6}{[1][13][]13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Decoder-Seed Stability and Adaptation with a MAP Inverse}{13}{subsection.4.7}\protected@file@percent }
+\newlabel{sec:robustness}{{4.7}{13}{Decoder-Seed Stability and Adaptation with a MAP Inverse}{subsection.4.7}{}}
+\newlabel{sec:robustness@cref}{{[subsection][7][4]4.7}{[1][13][]13}}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Framing transformations on validated lengths from 96-token responses ($n=30$ paired prompts per model; three samples per segment, up to three segments, 80-token T5 input and output limits, full-response references). Every overhead, including randomized padding, is the realized cost of the saved transformed vectors. Payload accounting excludes SSE syntax, transport headers, buffering delay and latency.\relax }}{14}{table.caption.13}\protected@file@percent }
+\newlabel{tab:defense_results}{{10}{14}{Framing transformations on validated lengths from 96-token responses ($n=30$ paired prompts per model; three samples per segment, up to three segments, 80-token T5 input and output limits, full-response references). Every overhead, including randomized padding, is the realized cost of the saved transformed vectors. Payload accounting excludes SSE syntax, transport headers, buffering delay and latency.\relax }{table.caption.13}{}}
+\newlabel{tab:defense_results@cref}{{[table][10][]10}{[1][13][]14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Recovery-score reduction versus realized protected-payload overhead, averaged equally over the two 96-token pilot models ($n=30$ prompts each; up to three segments, three samples per segment, 80-token T5 input and output limits). Both coordinates use the completed runs. Batching has zero payload-sum overhead and changes the frame count; latency was not measured. These are pipeline scores, not information-theoretic privacy estimates.\relax }}{14}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:defense_tradeoff}{{4}{14}{Recovery-score reduction versus realized protected-payload overhead, averaged equally over the two 96-token pilot models ($n=30$ prompts each; up to three segments, three samples per segment, 80-token T5 input and output limits). Both coordinates use the completed runs. Batching has zero payload-sum overhead and changes the frame count; latency was not measured. These are pipeline scores, not information-theoretic privacy estimates.\relax }{figure.caption.14}{}}
+\newlabel{fig:defense_tradeoff@cref}{{[figure][4][]4}{[1][13][]14}}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Five-seed evaluation on logged traces from a 512-token victim budget ($n=30$ prompts per model; 150 reconstructions per setting). Only the first heuristic segment is decoded, with 80-token T5 input and output limits, and scored against the full response reference. Segmentation and encoder coverage differ across transformations. MAP calibration uses 270 exact-prompt-disjoint traces per model but shares scenario templates. Intervals are crossed bootstrap 95\% CIs over prompts and seeds; SD describes the five seed-specific means. Reduction is $100(1-\bar  \phi /\bar  \phi _{\mathrm  {baseline}})$; negative values denote scores above baseline.\relax }}{15}{table.caption.15}\protected@file@percent }
+\newlabel{tab:robustness}{{11}{15}{Five-seed evaluation on logged traces from a 512-token victim budget ($n=30$ prompts per model; 150 reconstructions per setting). Only the first heuristic segment is decoded, with 80-token T5 input and output limits, and scored against the full response reference. Segmentation and encoder coverage differ across transformations. MAP calibration uses 270 exact-prompt-disjoint traces per model but shares scenario templates. Intervals are crossed bootstrap 95\% CIs over prompts and seeds; SD describes the five seed-specific means. Reduction is $100(1-\bar \phi /\bar \phi _{\mathrm {baseline}})$; negative values denote scores above baseline.\relax }{table.caption.15}{}}
+\newlabel{tab:robustness@cref}{{[table][11][]11}{[1][15][]15}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{16}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Evidence of Trace-Dependent Recovery}{16}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Limits of the Cross-Model Comparison}{16}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Practical Exploitability}{16}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Limitations}{16}{subsection.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Ethical Considerations}{17}{subsection.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{17}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A}Artifact Provenance and Completed Experiments}{17}{appendix.A}\protected@file@percent }
+\newlabel{app:runs}{{A}{17}{Artifact Provenance and Completed Experiments}{appendix.A}{}}
+\newlabel{app:runs@cref}{{[appendix][1][2147483647]A}{[1][17][]17}}
+\bibdata{references}
+\bibcite{weiss2024prompt}{{1}{2024}{{Weiss et~al.}}{{Weiss, Ayzenshteyn, Amit, and Mirsky}}}
+\bibcite{kocher1996timing}{{2}{1996}{{Kocher}}{{}}}
+\@writefile{lot}{\contentsline {table}{\numberline {A1}{\ignorespaces Source-response directories for the archived-reference cohort ($n=300$ per model). New reconstructions use validated log lengths; TinyLlama and Phi-3.5-mini remain reference-format diagnostics in this cohort.\relax }}{18}{table.caption.16}\protected@file@percent }
+\newlabel{tab:run_ids}{{A1}{18}{Source-response directories for the archived-reference cohort ($n=300$ per model). New reconstructions use validated log lengths; TinyLlama and Phi-3.5-mini remain reference-format diagnostics in this cohort.\relax }{table.caption.16}{}}
+\newlabel{tab:run_ids@cref}{{[table][1][2147483647]A1}{[1][18][]18}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}References}{18}{appendix.B}\protected@file@percent }
+\bibcite{song2001timing}{{3}{2001}{{Song et~al.}}{{Song, Wagner, and Tian}}}
+\bibcite{chen2010sidechannel}{{4}{2010}{{Chen et~al.}}{{Chen, Wang, Wang, and Zhang}}}
+\bibcite{cai2012touching}{{5}{2012}{{Cai et~al.}}{{Cai, Zhang, Joshi, and Johnson}}}
+\bibcite{sirinam2018deep}{{6}{2018}{{Sirinam et~al.}}{{Sirinam, Imani, Juarez, and Wright}}}
+\bibcite{wright2009morphing}{{7}{2009}{{Wright et~al.}}{{Wright, Coull, and Monrose}}}
+\bibcite{dyer2012peekaboo}{{8}{2012}{{Dyer et~al.}}{{Dyer, Coull, Ristenpart, and Shrimpton}}}
+\bibcite{li2026length}{{9}{2026}{{Li et~al.}}{{Li, Cui, Chen, Lin, Gu, Deng, Xu, and Li}}}
+\bibcite{whisperleak2025}{{10}{2025}{{McDonald and Bar~Or}}{{}}}
+\bibcite{raffel2020exploring}{{11}{2020}{{Raffel et~al.}}{{Raffel, Shazeer, Roberts, Lee, Narang, Matena, Zhou, Li, and Liu}}}
+\bibcite{levenshtein1966binary}{{12}{1966}{{Levenshtein}}{{}}}
+\bibcite{lin2004rouge}{{13}{2004}{{Lin}}{{}}}
+\bibcite{qwen25report}{{14}{2024}{{Qwen Team}}{{}}}
+\bibcite{llama3report}{{15}{2024}{{Dubey et~al.}}{{}}}
+\bibcite{llama32blog}{{16}{2024}{{Meta AI}}{{}}}
+\bibcite{gemma2report}{{17}{2024}{{Gemma Team}}{{}}}
+\bibcite{phi15report}{{18}{2023}{{Li et~al.}}{{Li, Bubeck, Eldan, Del~Giorno, Gunasekar, and Lee}}}
+\bibcite{tinyllama2024}{{19}{2024}{{Zhang et~al.}}{{Zhang, Zeng, Wang, and Lu}}}
+\bibcite{phi3report}{{20}{2024}{{Abdin et~al.}}{{Abdin, Jacobs, Awan, Aneja, Awadallah, Awadalla, Bach, Bahree, Bakhtiari, Behl, et~al.}}}
+\bibcite{salton1975vector}{{21}{1975}{{Salton et~al.}}{{Salton, Wong, and Yang}}}
+\bibcite{efron1994bootstrap}{{22}{1994}{{Efron and Tibshirani}}{{}}}
+\bibcite{wilcoxon1945individual}{{23}{1945}{{Wilcoxon}}{{}}}
+\bibcite{holm1979simple}{{24}{1979}{{Holm}}{{}}}
+\newlabel{LastPage}{{}{19}{}{page.19}{}}
+\xdef\lastpage@lastpage{19}
+\xdef\lastpage@lastpageHy{19}
+\gdef \@abspage@last{19}

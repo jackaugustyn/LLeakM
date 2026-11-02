@@ -1,0 +1,129 @@
+{
+  "audited_at_utc": "2026-11-01T16:07:30.549972+00:00",
+  "status": "PASS",
+  "legacy_source": "experiment_validation/revalidation_20261031/references/app_before.py",
+  "legacy_source_sha256": "73a45bf3746238771eaf616f933c4b44f09190b41b871ca99d71345315fb3326",
+  "legacy_call": "tokenizer.decode([tok_id], skip_special_tokens=False, clean_up_tokenization_spaces=False)",
+  "method": "Use the recorded fresh sequence of token IDs with its pinned victim tokenizer. Compare concatenated independent-token decoding with full-sequence decoding and both sets of per-ID fragments/UTF-8 lengths against archived logs.",
+  "scope": "CPU tokenization only; no victim or reconstruction inference; no attested artifact edits.",
+  "models": [
+    {
+      "label": "tinyllama_1_1b",
+      "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "tokenizer_revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+      "n": 300,
+      "source_inventory_sha256": "aeea3d72200af1e121a2877bd2b91434d60f709c56aa8aba66c910d87d794e19",
+      "tokenizer_json_sha256": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+      "counts": {
+        "legacy_text_equals_historical": 300,
+        "legacy_fragments_equal_historical": 300,
+        "legacy_lengths_equal_historical": 300,
+        "fresh_text_equals_historical": 0,
+        "fresh_fragments_equal_historical": 0,
+        "fresh_lengths_equal_historical": 0,
+        "legacy_text_equals_full_sequence": 0,
+        "legacy_and_full_equal_after_removing_ascii_spaces": 300,
+        "legacy_lengths_equal_contextual": 0,
+        "legacy_without_ascii_space": 299,
+        "fresh_without_ascii_space": 0,
+        "historical_without_ascii_space": 299,
+        "legacy_has_replacement_character": 0,
+        "fresh_has_replacement_character": 0,
+        "same_token_count_as_historical": 300,
+        "total_fresh_tokens": 128494,
+        "changed_fragment_positions_same_fresh_ids": 82460,
+        "changed_fragments_are_one_restored_leading_ascii_space": 82460,
+        "legacy_ascii_spaces": 4,
+        "fresh_ascii_spaces": 82464,
+        "historical_ascii_spaces": 4,
+        "legacy_payload_bytes": 443498,
+        "fresh_payload_bytes": 525958,
+        "historical_payload_bytes": 443498
+      },
+      "unique_token_ids_replayed": 3944,
+      "unique_token_ids_with_changed_fragments": 2773,
+      "illustrative_examples_not_prevalence_estimates": [
+        {
+          "idx": 1,
+          "legacy_prefix": "Sure,I'dbehappytohelpyouwiththat.Moralconflictisacommonchallengethatmanypeoplefaceintheirpersonalandprofessionallives.Itcanarisewhenanindividual'spersonalvaluesconflictwiththeircar",
+          "full_sequence_prefix": "Sure, I'd be happy to help you with that. Moral conflict is a common challenge that many people face in their personal and professional lives. It can arise when an individual's per",
+          "legacy_equals_historical": true
+        },
+        {
+          "idx": 2,
+          "legacy_prefix": "Sure,I'dbehappytohelpyouwiththat.Here'saweeklystudystructurethatyoucanfollowtohelpyouprepareforyourexams:\n\nMonday:\n-Reviewthematerialcoveredinthepreviousweek'sclass\n-Takeapracticet",
+          "full_sequence_prefix": "Sure, I'd be happy to help you with that. Here's a weekly study structure that you can follow to help you prepare for your exams:\n\nMonday:\n- Review the material covered in the prev",
+          "legacy_equals_historical": true
+        },
+        {
+          "idx": 3,
+          "legacy_prefix": "Conflictwithamanagercanbeachallengingsituationtonavigate.Herearesomestepsyoucantaketoaddressthesituationprofessionally:\n\n1.Identifytheissue:Beforeyoustartcommunicatingwiththemanage",
+          "full_sequence_prefix": "Conflict with a manager can be a challenging situation to navigate. Here are some steps you can take to address the situation professionally:\n\n1. Identify the issue: Before you sta",
+          "legacy_equals_historical": true
+        }
+      ]
+    },
+    {
+      "label": "phi_3_5_mini",
+      "model_id": "microsoft/Phi-3.5-mini-instruct",
+      "tokenizer_revision": "2fe192450127e6a83f7441aef6e3ca586c338b77",
+      "n": 300,
+      "source_inventory_sha256": "d84017cfdc3d581c8315e6a0479fdbedaab6efa1d33b0cec1e62ba63cc145e2c",
+      "tokenizer_json_sha256": "9e2ae3d66819f163cdcfedba5078f3a3af8118c2712491ed60912f77886bda6f",
+      "counts": {
+        "legacy_text_equals_historical": 300,
+        "legacy_fragments_equal_historical": 300,
+        "legacy_lengths_equal_historical": 300,
+        "fresh_text_equals_historical": 0,
+        "fresh_fragments_equal_historical": 0,
+        "fresh_lengths_equal_historical": 0,
+        "legacy_text_equals_full_sequence": 0,
+        "legacy_and_full_equal_after_removing_ascii_spaces": 300,
+        "legacy_lengths_equal_contextual": 0,
+        "legacy_without_ascii_space": 162,
+        "fresh_without_ascii_space": 0,
+        "historical_without_ascii_space": 162,
+        "legacy_has_replacement_character": 0,
+        "fresh_has_replacement_character": 0,
+        "same_token_count_as_historical": 300,
+        "total_fresh_tokens": 153600,
+        "changed_fragment_positions_same_fresh_ids": 94308,
+        "changed_fragments_are_one_restored_leading_ascii_space": 94308,
+        "legacy_ascii_spaces": 2218,
+        "fresh_ascii_spaces": 96526,
+        "historical_ascii_spaces": 2218,
+        "legacy_payload_bytes": 526426,
+        "fresh_payload_bytes": 620734,
+        "historical_payload_bytes": 526426
+      },
+      "unique_token_ids_replayed": 5707,
+      "unique_token_ids_with_changed_fragments": 3773,
+      "illustrative_examples_not_prevalence_estimates": [
+        {
+          "idx": 1,
+          "legacy_prefix": "Navigatingamoralconflictbetweencareeraspirationsandpersonalvaluescanbechallenging,butit'sanimportantaspectofpersonalintegrityandprofessionalsatisfaction.Herearesomereflectivequesti",
+          "full_sequence_prefix": "Navigating a moral conflict between career aspirations and personal values can be challenging, but it's an important aspect of personal integrity and professional satisfaction. Her",
+          "legacy_equals_historical": true
+        },
+        {
+          "idx": 2,
+          "legacy_prefix": "I'msorrytohearthatyou'restrugglingwithyourexams.Here'sastructuredweeklystudyplanthatmighthelpyouimproveyourperformance:\n\n**WeeklyStudyPlan:**\n\n**Monday:**\n-**Morning:**Reviewyourcl",
+          "full_sequence_prefix": "I'm sorry to hear that you're struggling with your exams. Here's a structured weekly study plan that might help you improve your performance:\n\n**Weekly Study Plan:**\n\n**Monday:**\n-",
+          "legacy_equals_historical": true
+        },
+        {
+          "idx": 3,
+          "legacy_prefix": "I'msorrytohearthatyou'reexperiencingaconflictwithamanagerandareconcernedaboutpotentialretaliation.It'simportanttohandlesuchsituationswithcareandprofessionalism.Herearesomestepsyouc",
+          "full_sequence_prefix": "I'm sorry to hear that you're experiencing a conflict with a manager and are concerned about potential retaliation. It's important to handle such situations with care and professio",
+          "legacy_equals_historical": true
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Historical logs do not contain token IDs; exact decoded text/fragments/length matches do not recover or prove original IDs.",
+    "Current pinned tokenizer/model revisions are not independent attestations of historical checkpoint versions.",
+    "Within each recorded fresh ID sequence, switching the decoding function isolates its effect on emitted strings and byte vectors.",
+    "This replay does not rerun T5 on the legacy replay and does not by itself isolate the causal contribution of detokenization to changes in reconstruction scores."
+  ]
+}

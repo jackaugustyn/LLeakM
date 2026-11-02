@@ -1,0 +1,170 @@
+[
+  {
+    "model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "text": "Hello world!",
+    "ids": [
+      15043,
+      3186,
+      29991
+    ],
+    "fragments": [
+      "Hello",
+      " world",
+      "!"
+    ],
+    "reference": "Hello world!",
+    "matched": true
+  },
+  {
+    "model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "text": "A🫨B",
+    "ids": [
+      319,
+      243,
+      162,
+      174,
+      171,
+      29933
+    ],
+    "fragments": [
+      "A",
+      "",
+      "",
+      "",
+      "🫨",
+      "B"
+    ],
+    "reference": "A🫨B",
+    "matched": true
+  },
+  {
+    "model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "text": "line one\nline two\r\n",
+    "ids": [
+      1196,
+      697,
+      13,
+      1220,
+      1023,
+      30004,
+      13
+    ],
+    "fragments": [
+      "line",
+      " one",
+      "\n",
+      "line",
+      " two",
+      "\r",
+      "\n"
+    ],
+    "reference": "line one\nline two\r\n",
+    "matched": true
+  },
+  {
+    "model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "text": "  multiple spaces and café",
+    "ids": [
+      259,
+      2999,
+      8162,
+      322,
+      274,
+      28059
+    ],
+    "fragments": [
+      " ",
+      " multiple",
+      " spaces",
+      " and",
+      " c",
+      "afé"
+    ],
+    "reference": "  multiple spaces and café",
+    "matched": true
+  },
+  {
+    "model": "microsoft/Phi-3.5-mini-instruct",
+    "text": "Hello world!",
+    "ids": [
+      15043,
+      3186,
+      29991
+    ],
+    "fragments": [
+      "Hello",
+      " world",
+      "!"
+    ],
+    "reference": "Hello world!",
+    "matched": true
+  },
+  {
+    "model": "microsoft/Phi-3.5-mini-instruct",
+    "text": "A🫨B",
+    "ids": [
+      319,
+      243,
+      162,
+      174,
+      171,
+      29933
+    ],
+    "fragments": [
+      "A",
+      "",
+      "",
+      "",
+      "🫨",
+      "B"
+    ],
+    "reference": "A🫨B",
+    "matched": true
+  },
+  {
+    "model": "microsoft/Phi-3.5-mini-instruct",
+    "text": "line one\nline two\r\n",
+    "ids": [
+      1196,
+      697,
+      13,
+      1220,
+      1023,
+      30004,
+      13
+    ],
+    "fragments": [
+      "line",
+      " one",
+      "\n",
+      "line",
+      " two",
+      "\r",
+      "\n"
+    ],
+    "reference": "line one\nline two\r\n",
+    "matched": true
+  },
+  {
+    "model": "microsoft/Phi-3.5-mini-instruct",
+    "text": "  multiple spaces and café",
+    "ids": [
+      259,
+      2999,
+      8162,
+      322,
+      274,
+      28059
+    ],
+    "fragments": [
+      " ",
+      " multiple",
+      " spaces",
+      " and",
+      " c",
+      "afé"
+    ],
+    "reference": "  multiple spaces and café",
+    "matched": true
+  }
+]

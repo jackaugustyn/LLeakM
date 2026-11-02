@@ -149,6 +149,7 @@ def _generate_missing_logs(
                 temperature=0.0,
                 top_p=1.0,
                 timeout=timeout,
+                log_dir=log_dir,
             )
             raw_log = wait_for_log(log_dir=log_dir, run_id=run_id, timeout_s=30.0)
             generated[prompt] = raw_log

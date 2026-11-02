@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-11-01T18:30:56.346805+00:00",
+  "status_at_launch": "running",
+  "supervisor_pid": 780998,
+  "expected_reconstructions": 6600,
+  "expected_queue_stages": 12,
+  "selector_sha256": "795bd9ad309b96573a448df9439cba88659c8ba61ccc9618be269eabf1f30234",
+  "preflight": {
+    "selector_tests": "preflight/selector_tests.json",
+    "independent_records": 9,
+    "independent_calls": 104,
+    "independent_candidates": 312,
+    "original_first_selections_reproduced": 9,
+    "base_verifier_primary_records": 2
+  },
+  "approximate_duration_hours": "9-12 based on previous campaign; subject to measured throughput",
+  "live_status": "queue/status.json",
+  "read_status_command": "python3 experiment_validation/selector_eos_20261101/status.py",
+  "completion_outputs": [
+    "completed_results.json",
+    "completed_manifest.json",
+    "WYNIKI.md"
+  ],
+  "article_status": "Previous manuscript remains unchanged until full results and checks are complete."
+}
